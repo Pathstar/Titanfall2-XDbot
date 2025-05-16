@@ -3154,24 +3154,6 @@ void function OnJSONFailure()
 }
 
 
-
-
-
-
-
-
-
-
-
-void function AddCallback_OnReceivedSayTextMessage( ClClient_MessageStruct functionref (ClClient_MessageStruct) callbackFunc )
-{
-	NsCustomCallbacksClient.OnReceivedSayTextMessageCallbacks.append(callbackFunc)
-}
-
-
-
-
-
 // ClClient_MessageStruct function MyChatFilter(ClClient_MessageStruct message)
 // {
 //     if (message.message.find("nft") != null)
