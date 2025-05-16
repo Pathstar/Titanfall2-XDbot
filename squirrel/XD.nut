@@ -49,38 +49,8 @@ global float lastPyTime = 0
 
 
 
-void function ClearKillCountFromRecordObituary(entity victim){
-	string victimName = victim.GetPlayerName()
-	for (int i = 0; i < playerObituary.len(); i++) {
-		if ( playerObituary[i][0] == victimName ){
-			playerObituary[i][2] = 0
-			// 可能有多个 不能break
-		}
-    }
-	for (int i = 0; i < playerTotalObituary.len(); i++) {
-		if ( playerTotalObituary[i][0] == victimName ){
-			playerTotalObituary[i][1] = 0
-			break
-		}
-    }
-	// 如果箭头的那个人复活，则往左挪
-	if ( IsWatchingSpecReplay() && isMeleePrint == false && victimName == arrowPlayerNow ){
-		thread specMoveleft()
-	}
-	// for ( int i = player.e.recentDamageHistory.len() - 1; i >= 0; i-- )
-	// {
-	// 	DamageHistoryStruct history = player.e.recentDamageHistory[ i ]
 
-	// 	if ( history.time > removeTime )
-	// 		return
-
-	// 	player.e.recentDamageHistory.remove( i )
-	// }
-			// if ( victimName == "Spacedog20062022" ){
-		// 	localPlayer.ClientCommand("say " + "复活了")
-		// }
-}
-
+	
 void function leftGameClearKillCountFromRecordObituary(string PlayerNameClan){
 	local start2 = PlayerNameClan.find("] ")
 	string leftGamePlayerName = PlayerNameClan
@@ -1269,6 +1239,48 @@ void function killedCount(entity victim, entity localPlayer) {
 
 
 
+
+
+void function ClearKillCountFromRecordObituary(entity victim){
+	string victimName = victim.GetPlayerName()
+	for (int i = 0; i < playerObituary.len(); i++) {
+		if ( playerObituary[i][0] == victimName ){
+			playerObituary[i][2] = 0
+			// 可能有多个 不能break
+		}
+    }
+	for (int i = 0; i < playerTotalObituary.len(); i++) {
+		if ( playerTotalObituary[i][0] == victimName ){
+			playerTotalObituary[i][1] = 0
+			break
+		}
+    }
+	// 如果箭头的那个人复活，则往左挪
+	if ( IsWatchingSpecReplay() && isMeleePrint == false && victimName == arrowPlayerNow ){
+		thread specMoveleft()
+	}
+	// for ( int i = player.e.recentDamageHistory.len() - 1; i >= 0; i-- )
+	// {
+	// 	DamageHistoryStruct history = player.e.recentDamageHistory[ i ]
+
+	// 	if ( history.time > removeTime )
+	// 		return
+
+	// 	player.e.recentDamageHistory.remove( i )
+	// }
+			// if ( victimName == "Spacedog20062022" ){
+		// 	localPlayer.ClientCommand("say " + "复活了")
+		// }
+}
+
+
+
+
+
+
+
+
+
 string function formatTime(float seconds) {
     int minutes = int(seconds / 60)
     float remainingSeconds = seconds % 60;
@@ -1442,60 +1454,7 @@ string function GetRandomColor(){
     string color = "" 
     print("【color】" + randomColor)
     switch(randomColor) {
-        case 1:
-            // color = "[38;2;254;218;185m";  // 淡桃色 (Peach Puff)
-            color = "[38;2;254;208;165m";  // 淡桃色 (Peach Puff)
-            break;
-        case 2:
-            color = "[38;2;135;206;235m";  // 浅天蓝色 (Sky Blue)
-            break;
-        case 3:
-            color = "[38;2;240;128;128m";  // 淡珊瑚色 (Light Coral)
-            break;
-        case 4:
-            color = "[38;2;165;238;238m";  // 浅绿松石色 (Turquoise)
-            break;
-        case 5:
-            color = "[38;2;254;209;173m";  // 浅橙色 (Papaya Whip)
-            break;
-        case 6:
-            color = "[38;2;216;171;216m";  // 淡紫罗兰色 (Thistle)
-            break;
-        case 7:
-            color = "[38;2;144;238;144m";  // 淡黄绿色 (Spring Green)
-            break;
-        case 8:
-            // color = "[38;2;245;254;250m";  // 粉青色 (Mint Cream)
-            color = "[38;2;165;204;200m";  // 粉青色 (Mint Cream)
-            break;
-        case 9:
-            color = "[38;2;221;160;221m";  // 柔和丁香紫 (Plum)
-            break;
-        case 10:
-            color = "[38;2;248;131;121m";  // 珊瑚粉色 (Coral Pink)
-            break;
-        case 11:
-            // color = "[38;2;254;228;225m";  // 浅玫瑰色 (Misty Rose)
-            color = "[38;2;254;188;185m";  // 浅玫瑰色 (Misty Rose)
-            break;
-        case 12:
-            // color = "[38;2;204;245;204m";  // 柔雾绿色 (Sea Mist)
-            color = "[38;2;184;245;184m";  // 柔雾绿色 (Sea Mist)
-            break;
-        case 13:
-            color = "[38;2;173;216;230m";  // 柔蓝 (Soft Blue)
-            break;
-        case 14:
-            // color = "[38;2;254;250;205m";  // 粉彩黄 (Lemon Chiffon)
-            color = "[38;2;254;250;165m"; 
-            break;
-        case 15:
-            // color = "[38;2;210;245;190m";  // 柔草绿 (Light Lime)
-            color = "[38;2;189;245;180m";  // 柔草绿 (Light Lime)
-            break;
-        default:
-            color = "[38;2;254;254;254m";  // 默认白色
-            break;
+        
     }
     return color
 }
@@ -1542,7 +1501,7 @@ void function ReplayHello(string say, string text){
             return;
         default:
             GetLocalClientPlayer().ClientCommand(say + "\" " + color + "今天也要开心哦！(≧▽≦)/ [0m[0m\"" + text);
-            return;
+            return
     }
 }
 
@@ -1566,7 +1525,6 @@ bool function ReplyBot(string command, string say, string fromPlayerName){
                 // for (int i = 0; i < 6; i++){
                 //     isMoveList[i] = false
                 // }
-                // command = "[38;2;125;125;254m" + command
                 return true
             case "sudo oiiai":
                 entity localPlayer = GetLocalClientPlayer()
@@ -1600,7 +1558,6 @@ bool function ReplyBot(string command, string say, string fromPlayerName){
             switch (isSudo){
                 case "sudo":
                     thread xdSudoCommand(command.slice(4))
-                    // command = "[38;2;125;125;254m" + command
                     return true
                     break
                 // case "stop":
@@ -1682,7 +1639,7 @@ bool function ReplyBot(string command, string say, string fromPlayerName){
                 fromPlayerNameNoClan = fromPlayerName.slice(start2 + 2)
             }
             
-            GetLocalClientPlayer().ClientCommand(say + "【XDbot】" + fromPlayerNameNoClan + " 摇到了 [33m" + randomChoice + "[0m 点！")
+            GetLocalClientPlayer().ClientCommand(say + "【XDbot】" + fromPlayerNameNoClan + " 摇到了 " + randomChoice + "[0m 点！")
             return true
         case "time":
 
@@ -1694,7 +1651,7 @@ bool function ReplyBot(string command, string say, string fromPlayerName){
             PyProcess(command, "", fromPlayerName, say, true)
 
             // Time() - GetScoreEndTime()) 这俩都无限增大导致无法知道过去多少时间
-            // GetLocalClientPlayer().ClientCommand(say + "【XDbot】游戏时间已经过去了 [33m" + formatTime(Time()) + "[0m ！")
+            // GetLocalClientPlayer().ClientCommand(say + "【XDbot】游戏时间已经过去了 " + formatTime(Time()) + "[0m ！")
             print("Time: " + Time() + " GetScoreEndTime() - Time(): " + (GetScoreEndTime() - Time()) )
             return true
         case "yay":
@@ -1703,61 +1660,7 @@ bool function ReplyBot(string command, string say, string fromPlayerName){
             string color = "" 
             // 1.051 1.001 接收信息时间会这样
             switch(randomColor) {
-                case 1:
-                    // color = "[38;2;254;218;185m";  // 淡桃色 (Peach Puff)
-                    color = "[38;2;254;208;175m";  // 淡桃色 (Peach Puff)
-                    break;
-                case 2:
-                    color = "[38;2;135;206;235m";  // 浅天蓝色 (Sky Blue)
-                    break;
-                case 3:
-                    color = "[38;2;240;128;128m";  // 淡珊瑚色 (Light Coral)
-                    break;
-                case 4:
-                    color = "[38;2;175;238;238m";  // 浅绿松石色 (Turquoise)
-                    break;
-                case 5:
-                    color = "[38;2;254;219;193m";  // 浅橙色 (Papaya Whip)
-                    break;
-                case 6:
-                    color = "[38;2;216;191;216m";  // 淡紫罗兰色 (Thistle)
-                    break;
-                case 7:
-                    color = "[38;2;144;238;144m";  // 淡黄绿色 (Spring Green)
-                    break;
-                case 8:
-                    // color = "[38;2;245;254;250m";  // 粉青色 (Mint Cream)
-                    color = "[38;2;205;214;210m";  // 粉青色 (Mint Cream)
-                    break;
-                case 9:
-                    color = "[38;2;221;160;221m";  // 柔和丁香紫 (Plum)
-                    break;
-                case 10:
-                    color = "[38;2;248;131;121m";  // 珊瑚粉色 (Coral Pink)
-                    break;
-                case 11:
-                    // color = "[38;2;254;228;225m";  // 浅玫瑰色 (Misty Rose)
-                    color = "[38;2;254;198;195m";  // 浅玫瑰色 (Misty Rose)
-                    break;
-                case 12:
-                    // color = "[38;2;204;245;204m";  // 柔雾绿色 (Sea Mist)
-                    color = "[38;2;194;245;194m";  // 柔雾绿色 (Sea Mist)
-                    break;
-                case 13:
-                    color = "[38;2;173;216;230m";  // 柔蓝 (Soft Blue)
-                    break;
-                case 14:
-                    // color = "[38;2;254;250;205m";  // 粉彩黄 (Lemon Chiffon)
-                    color = "[38;2;254;250;195m"; 
-
-                    break;
-                case 15:
-                    // color = "[38;2;210;245;190m";  // 柔草绿 (Light Lime)
-                    color = "[38;2;199;245;190m";  // 柔草绿 (Light Lime)
-                    break;
-                default:
-                    color = "[38;2;254;254;254m";  // 默认白色
-                    break;
+              
             }
             switch(randomChoice) {
                 case 1:
@@ -1820,11 +1723,7 @@ bool function ReplyBot(string command, string say, string fromPlayerName){
             }
             return true
             
-        // 
-        // 欢迎您！[38;5;81m Pathstar_XD[0m
-        //     您现在正在 [38;5;11m[0m 中进行游玩  script_ui EmitUISound("superspectre_step_light_solidmetal_3p")
-        //     交流群：[38;5;11mQQ群747829812[0m
-        //     [38;5;208m您可以在聊天框输入 !help 获取帮助[0m
+
         case "开启连杀播报":
         case "打开连杀播报":
             bool op = CheckOP(fromPlayerName)
@@ -3010,7 +2909,7 @@ void function OnPyMessageJSONSuccess( table jsonData )
                         }
                         break
                     case "time":
-                        GetLocalClientPlayer().ClientCommand(value["say"] + "【XDbot】现在是 北京时间 [33m" + value["pyMessage"] + " [0m！")
+                        GetLocalClientPlayer().ClientCommand(value["say"] + "【XDbot】现在是 北京时间 " + value["pyMessage"] + " [0m！")
                         break
                     case "ai":
                         foreach (idx, content in value["pyMessage"]){
@@ -3113,7 +3012,7 @@ bool function PinyinState(){
 
 void function OnFileFailure()
 {
-    NSChatWrite(1, "\n[38;2;125;125;254m[XDlog] FILE 加载失败")
+    NSChatWrite(1, "\n[XDlog] FILE 加载失败")
 }
 
 
@@ -3129,7 +3028,7 @@ void function OnJSONSuccess( table jsonData )
 
 void function OnJSONFailure()
 {
-    NSChatWrite(1, "\n[38;2;125;125;254m[XDlog] JSON 加载失败")
+    NSChatWrite(1, "\n[XDlog] JSON 加载失败")
 }
 
 
