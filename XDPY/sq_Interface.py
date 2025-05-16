@@ -27,23 +27,26 @@ def process_entry(timestamp, player_name, command, message, say):
     py_message = ""
 
     match command:
-        case "g_pinyin":
-            py_message = convert_pinyin_to_hanzi_with_preservation(message, True)
-            command = "pinyin"
-            isNoneFunc = True
-        case "pinyin":
-            py_message = convert_pinyin_to_hanzi_with_preservation(message, False)
-        case "time":
-            py_message = time.strftime("%H:%M:%S")
-        case "ai":
-            py_message = deepseek(player_name, message, True)
         case "new_chat":
             # chat_history = []
             chat_history.clear()
             return
         case _:
-            print(f"无此方法 {command}")
-            isNoneFunc = True
+            thread_count += 1
+            match command:
+                case "g_pinyin":
+                    py_message = convert_pinyin_to_hanzi_with_preservation(message, True)
+                    command = "pinyin"
+                    isNoneFunc = True
+                case "pinyin":
+                    py_message = convert_pinyin_to_hanzi_with_preservation(message, False)
+                case "time":
+                    py_message = time.strftime("%H:%M:%S")
+                case "ai":
+                    py_message = deepseek(player_name, message, True)
+                case _:
+                    print(f"无此方法 {command}")
+                    isNoneFunc = True
 
     end_time = time.time()
     # process_time = round(end_time - start_time, 1)
@@ -75,7 +78,7 @@ def process_entry(timestamp, player_name, command, message, say):
         if not isNoneFunc:
             print(f"[XDlog] \n {command} 返回为空 \n")
 
-    thread_count = thread_count - 1
+    thread_count -= 1
     if thread_count == 0:
         with open(state_file_path, 'w', encoding='utf-8') as f:
             f.write("0")
