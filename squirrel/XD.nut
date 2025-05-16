@@ -9,9 +9,114 @@ global function GetRandomColor
 global function PyXD_Init
 global function LoadChatJsonData
 global isPinyinOpen = 2
+	global function CountDamage
+global function killedToZero
+global function killedCount
+global function recordObituary
+global function recordTookDamage
+global function registerButton
+global function ClearKillCountFromRecordObituary
+global function leftGameClearKillCountFromRecordObituary
+global function getAFKMode
+global function getMeleePrint
+global function GetisYangLaoFu
+global function setAutoPrintRestrictedMod
+global function getWeaponChinese
+global function XD_Init
+global function firstWRFrames
+global function playCkickSound
+global function setIsMengXinFu
+global function setIsYangLaoFu
+
+global bool realAFK = false
+global int isAutoPrintRestrictedMod = 1
+global int AFKMode = 0
+// cl_main_hud
+
+// √ global function lastPlayerEnterGame 萌新服不能靠进入判定 偶然出现
+// √ todo 消息历史 rui调用64限制问题 解决完成
+// // 搜 DeregisterButtonPressedCallback RegisterButtonPressedCallback
+// √ todo 井字棋 yes
+// √ pinyin转文字
+
+
+
+// todo 查询武器 模糊名称(英文) car a盾 翻译查一遍 classname再查一遍 超过限制另起
+// todo 间隔方法字典
+
+
+// realAFK 挂机检测关键词 bot 挂机 小马 
+// 没有打开ai开关 没有启动AI  init启动检测py开启
+
+
+
+
+// 暂时不考虑
+// todo 萌新服非expect时间加音效
+// potplayer: 俄罗斯转盘游戏
+
+// 暂时完全不考虑
+// todo 养老服快被踢判定Soledad_snack 有截图规则
+// todo 观战往左时while检查是否对
+
+// NSGetCursorPosition
+// NSGetMasterServerAuthResult
+// MasterServerAuthResult
+// NSGetGameServers
+// NSGetLoadedMapNames
+
+
+global spitfireList = []
+global dmrList = []
+global smartList = []
+global doublelList = []
+
+global grenadeList = []
+global landmineList = []
+global coverList = []
+global cloakList = []
+global playerOccurrences = []
+global printedPlayers = []
+
+
+global isPrintSpitfire = false
+global isPrintDmr = false
+global isPrintSmart = false
+global isPrintDoublel = false
+
+global isPrintGrenade = false
+global isPrintLandmine = []
+global isPrintCover = false
+global isPrintCloak = false
+global isPrintCloakAndGrenade = false
+global isRealPrintCloakAndGrenade = true
+
+global randomNumber = 4
+global isXDbotEnabled = false
+global isRegister = true
+
+global genList = []
+global isCollectGen = false
+global isPrintGen = false
+global collectGenCount = 0
+global collectGenPreTime = 0
+global isConsoleGen = false
+
+global meleeList = []
+global bool isMeleePrint = true
+global buList = []
+global autosmartList = []
+
+global finalCountList = []
+global isPrintFinalCount = false
+global isNotAutoPrint = true
+// global isAutoFaTime = 0
+
+// global int isAutoPrintRestrictedMod = 1
+// global int AFKMode = 0
+global bool CkickSound = true
 // global table<string,var> XD_table = {}
 global controlList = []
-// key_9功能删掉后和删除↓列表
 global localMessageHistory = [["","say "],["","say "],["","say "],["","say "],["","say "],["","say "]]
 global int isControl = 0
 global isMoveList = [false,false,false,false,false,false,false,false ,false,false,false,false,false,false]
@@ -46,7 +151,66 @@ global bool isShouldPy = true
 global bool pyState = false
 global int pyWaitCount = 0
 global float lastPyTime = 0 
+global lastExecutedTime = 0
+global arrowPlayerNow = ""
+//global entityList = []
+global isChangeArrowPlayer = true
+global myTeam = -1
+global arrowMode = 0 //0关闭 1开启 2全局
+global isSaveArrowPlayer = false
+global saveArrowPlayerList = []
+global tempArrowPlayerList = []
+global tempArrowPlayerClearCount = 0
+global isArrowTeamate = false
+global sumDamage = 0
+global killedByMeVictimName = ""
+global isAfkVictimName = false
+global attackerNameLine = ""
+global killedInRow = 0
+global killed = 0
+global isAutoFa = false
+global deathCount = 0
+global deathCount2 = 0
+// global constAgain = ""
 
+// global table<string, array> playerObituary
+global playerObituary = []
+global playerTotalObituary = []
+global buObituary = []
+global buTimeObituary = 0
+global localPlayerTookDamageList = []
+global float localPlayerTookDamageStartTime = 0
+global localPlayerTookDamageSecondList = []
+global float localPlayerTookDamageSecondStartTime = 0
+global isTookDamageFirstList = true
+global viewPlayerTookDamageList = []
+global float viewPlayerTookDamageStartTime = 0
+global viewPlayerName = ""
+global localPlayerTitanTookDamageList = []
+global float localPlayerTitanTookDamageStartTime = 0
+global localPlayerAttackDamageList = []
+global float localPlayerAttackDamageStartTime = 0
+global viewPlayerAttackDamageList = []
+global float viewPlayerAttackDamageStartTime = 0
+global viewPlayerAttackerName = ""
+// attack 没有id
+
+global int ruiCount = 0
+global int sameTimeCount = 0
+global float switchTime = 0
+
+global lastPlayerInvalid = ["", 0, true]
+
+global int CkickCount = 0
+global bool Ckick = false
+global bool isMengXinFu = false
+global preventSecondInvaild = {}
+global bool isYangLaoFu = false
+
+global lastOutgoingTextRui = null
+
+global bool isInfiniteStim = false
+global bool isXiaoTu = false
 
 
 
@@ -419,41 +583,12 @@ void function recordObituary(string attackerName, string weaponName, string vict
 		if( attackerName != "" ){
 			if ( weaponName == "Melee" && (isAutoPrintRestrictedMod == 1 || isAutoPrintRestrictedMod == 3) ){
 				switch (attackerName) {
-					case "Quietmirror":
-						// for (int i = 0; i < 5; i++) {
-							localPlayer.ClientCommand("say 【XDbot】: 被杂鱼镜子肘击！Man!!!")
-						// }
-						break
-					case "xlxlxl24":
-						localPlayer.ClientCommand("say 【XDbot】: 被笨蛋小龙肘击！Man!!!")
-						break
-					case "ButterfI1es":
-						localPlayer.ClientCommand("say 【XDbot】: 被飞翔的河南人肘击！Man!!!")
-						break
-					case "cmggy":
-						localPlayer.ClientCommand("say 【XDbot】: 被吸爱慕积极歪肘击！Man!!!")
-						break
-					default:
-						localPlayer.ClientCommand("say 【XDbot】: 被" + attackerName + "肘击！Man!!!");
-						break
+
 				}
 			}
 			if ( weaponName == "Execution" && (isAutoPrintRestrictedMod == 1 || isAutoPrintRestrictedMod == 3) ){
 				switch (attackerName) {
-					case "Quietmirror":
-						// for (int i = 0; i < 5; i++) {
-							localPlayer.ClientCommand("say bruh，被杂鱼镜子处决力_(:з」∠)_")
-						// }
-						break
-					case "xlxlxl24":
-						localPlayer.ClientCommand("say bruh，被笨蛋小龙处决力_(:з」∠)_")
-						break
-					case "ButterfI1es":
-						localPlayer.ClientCommand("say bruh，被笨蛋540处决力_(:з」∠)_")
-						break
-					default:
-						localPlayer.ClientCommand("say bruh，被笨蛋" + attackerName + "处决力_(:з」∠)_");
-						break
+
 				}
 			}
 			if ( AFKMode == 5 ){
@@ -678,20 +813,7 @@ void function recordObituary(string attackerName, string weaponName, string vict
 			return
 		}
 
-		// test
-		// if ( attackerName == localPlayerName ) {
-		// 	print(attackerName + "使用「" + weaponName + "」" + "达成了" + playerWeaponKillInRowCount + "连杀！总共已经" + playerKillInRowCount + "连杀了！")
-		// }
 
-
-		// if ( attacker == "Spacedog20062022" ){
-		// 	if ( weaponName == "Frag Grenade" ){
-		// 		localPlayer.ClientCommand("say " + "太强了！" + "Spacedog20062022使用了捏雷炸死了一个人！")
-		// 	}
-		// }
-		// if ( victim == "Spacedog20062022" ){
-		// 	localPlayer.ClientCommand("say " + "诶你怎么似了")
-		// }
 
 		if ( weaponName == "炸彈無人機" ) {
 			local isBuObituaryDuplicate = false
