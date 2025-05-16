@@ -9,7 +9,7 @@ global function GetRandomColor
 global function PyXD_Init
 global function LoadChatJsonData
 global isPinyinOpen = 2
-	global function CountDamage
+global function CountDamage
 global function killedToZero
 global function killedCount
 global function recordObituary
