@@ -73,7 +73,7 @@
 | !wo #neng zhuan wen zi ma      | 失败     | (前两段首字符非字母)          |
 | @ you yi shi mo fa @           | 成功     | 友谊是魔法 (×  √  √  √  √  ×) |
 | wo yao !!! zhuan 0v0 wen zi XD | 成功     | 我要!!!转0v0文字XD (√√×√×√√×) |
-| biao dian.he shu zi1bu ying xiang? | 成功 | 标点.和数字1不影响?  |
+| biao dian.bu ying xiang?fen ge! | 成功 | 标点.不影响?分割!  |
 
 *对于拼音之间无空格的，分离拼音暂不支持，由于要考虑的因素过于多，易误判，使用CPU消耗过大*
 
