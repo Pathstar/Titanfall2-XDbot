@@ -1396,6 +1396,248 @@ void function ClearKillCountFromRecordObituary(entity victim){
 }
 
 
+void function specAFKTeam(){
+	if( isXiaoTu && realAFK && IsWatchingSpecReplay() ){
+		specAFKTeamCount ++
+		int localspecAFKTeamCount = specAFKTeamCount
+		while(specAFKTeamAdjustment(localspecAFKTeamCount)) {
+			specAFKTeamRightCount ++
+			if ( specAFKTeamRightCount > 9 ){
+				GetLocalClientPlayer().ClientCommand("CC_RespawnPlayer Pilot")
+			}
+			GetLocalClientPlayer().ClientCommand("+moveright")
+			wait 0.001
+			GetLocalClientPlayer().ClientCommand("-moveright")
+		}
+	}
+}
+
+
+bool function specAFKTeamAdjustment(count){
+	print("specAFKTeamAdjustment【防循环print】")
+	if ( specAFKTeamCount != count ){
+		return false
+	}
+	if ( IsWatchingSpecReplay() ){
+		if (GetScoreEndTime() - Time() > -7){
+			if(GetLocalClientPlayer() == GetLocalViewPlayer()){
+				return false
+			}
+			// 一般情况优先使用 in (更简洁)
+			// if (key in table) { ... }
+
+			// // 需要方法调用特性时使用 rawin
+			// table.rawin(key).someOtherMethod()
+			table<int,int> teamCount = {}
+			int myTeam = 0
+			wait 1
+			// COMPILE ERROR May not call "rawin" on complex type "table< int, int >"
+			foreach (player in GetPlayerArray() ){
+				if (player != null ){
+					int team = player.GetTeam()
+					if ( team in teamCount ){
+						teamCount[team]++
+					} else {
+						teamCount[team] <- 1
+					}
+					if (player == GetLocalClientPlayer() ){
+						myTeam = team
+					}
+				}
+			}
+			int each = 0
+			int myTeamCount = 0
+			int notMyTeamCount = 0
+			foreach(team, count in teamCount) {
+				if ( team == myTeam ){
+					myTeamCount = count
+				} else {
+					notMyTeamCount = count
+				}
+				each++
+				if ( each == 2 ){
+					break
+				}
+			}
+			if (myTeamCount <= notMyTeamCount){
+				return true
+			}
+		}
+	}
+	specAFKTeamRightCount = 0
+	return false
+}
+
+
+void function NullAttackerBan(){
+	if ( Time() - lastLeftGame[1] < 0.1 ){
+		local playerNameWithClanTag = lastLeftGame[0] 
+		local start = playerNameWithClanTag.find("] ")
+		local playerNameNoClan = playerNameWithClanTag
+		if (start != null ){
+			playerNameNoClan = playerNameWithClanTag.slice(start + 2)
+		}
+		GetLocalClientPlayer().ClientCommand("say 【XDbot】大笨蛋 " + playerNameNoClan + " 被踢出了游戏！")
+		thread XDPlaySound( "music_s2s_00a_intro" )
+		alreadyBanList.push(playerNameWithClanTag)
+
+		print("【Ban】null attacker 退出ban用时：" + (Time() - lastLeftGame[1]) )
+
+	}
+}
+
+void function setLastGlobalkill(string playerName, float time){
+	lastGlobalkill = [playerName, time]
+}
+
+
+void function isBanAnnunciate(string PlayerNameWithClanTag, bool isDisconnect){
+	if( !isDisconnect ){
+		foreach ( PlayerNameClan in alreadyBanList ){
+			if(PlayerNameWithClanTag == PlayerNameClan ){
+				local startA = PlayerNameWithClanTag.find("] ")
+				if (startA != null ){
+					PlayerNameWithClanTag = PlayerNameWithClanTag.slice(startA + 2)
+				}
+				GetLocalClientPlayer().ClientCommand("say 【XDbot】超级大笨蛋 " + PlayerNameWithClanTag + " 在被踢后尝试再次加入，未果") //字符串处理")
+				thread XDPlaySound( "music_s2s_00a_intro" )
+				print("【Ban】因已经被ban过：所以直接判定再次加入")
+				return
+				// 用时：0.0499878
+				// 【XDbot】超级大笨蛋 ARTnend 在被踢后尝试再次加入，未果
+			}
+		}
+	}
+
+	bool isBanNotDuplicate = true
+	int playerCount = 0
+	while (playerCount < isBanAnnunciateList.len() ) {
+		local playerName = isBanAnnunciateList[playerCount][0]
+		if ( playerName == PlayerNameWithClanTag ){
+			isBanNotDuplicate = false
+			if ( isDisconnect ){
+				if ( Time() - isBanAnnunciateList[playerCount][1] < 0.5 ){
+					
+					// [SCRIPT CL] [info] [ADV] 98465SSA has entered the game: 441.918 Level 16
+					// [SCRIPT CL] [info] [ADV] 98465SSA has left the game: 441.984
+					// [SCRIPT CL] [info] 检测到进出，遍历查看玩家在不在，触发这条如果没有被踢出就代表有点问题，而且kd服遇到过进出结果人就在没走的情况
+					// [SCRIPT CL] [info] 进出判定用时：0.0666504
+					// [SCRIPT CL] [info] ServerCallback_YouDied() healthFrac: 0.5
+					print("检测到进出，遍历查看玩家在不在，触发这条如果没有被踢出就代表有点问题，而且kd服遇到过进出结果人就在没走的情况")
+					wait 0.1
+					local start = PlayerNameWithClanTag.find("] ")
+					string playerNameNoClan = PlayerNameWithClanTag
+					if (start != null ){
+						playerNameNoClan = PlayerNameWithClanTag.slice(start + 2)
+					}
+					bool isPlayerLeave = true
+					foreach ( player in GetPlayerArray() ){
+						if(player.GetPlayerName() == playerNameNoClan){
+							isPlayerLeave = false
+							break
+						}
+					}
+					if ( isPlayerLeave ){
+						GetLocalClientPlayer().ClientCommand("say 【XDbot】超级大笨蛋 " + playerNameNoClan + " 在被踢后尝试再次加入，未果") //字符串处理")
+						thread XDPlaySound( "music_s2s_00a_intro" )	
+						// 如果确定遍历没问题再把这个搬回去 √没问题
+						print("【Ban】进出判定成功用时：" + (Time() - isBanAnnunciateList[playerCount][1]))
+						bool isNotInAlreadyBan = true
+						foreach( PlayerNameClan in alreadyBanList ){
+							if(PlayerNameWithClanTag == PlayerNameClan ){
+								isNotInAlreadyBan = false
+							}
+						}
+						if ( isNotInAlreadyBan ){
+							alreadyBanList.push(PlayerNameWithClanTag)
+						}
+						isBanAnnunciateList.remove(playerCount)
+						return
+					}
+
+				}
+				// if ( Time() - isBanAnnunciateList[playerCount][1] < 10 ){
+				// 	print("进出用时：" + (Time() - isBanAnnunciateList[playerCount][1]) )
+				// }
+				isBanAnnunciateList.remove(playerCount)
+				break
+			}
+			// 不break 需要继续清除过长
+			
+		}
+
+		// 过长清除
+		if ( Time() - isBanAnnunciateList[playerCount][1] > 10 ){
+			isBanAnnunciateList.remove(playerCount)
+			continue
+		}
+		playerCount++
+	}
+	if ( isDisconnect ){
+		if ( lastGlobalkill[0] == PlayerNameWithClanTag && Time() - lastGlobalkill[1] < 0.5 ){
+			local start = PlayerNameWithClanTag.find("] ")
+			string playerNameNoClan2 = PlayerNameWithClanTag
+			if (start != null ){
+				playerNameNoClan2 = PlayerNameWithClanTag.slice(start + 2)
+			}
+			GetLocalClientPlayer().ClientCommand("say 【XDbot】大笨蛋 " + playerNameNoClan2 + " 被踢出了游戏！")
+			thread XDPlaySound( "music_s2s_00a_intro" )
+			alreadyBanList.push(PlayerNameWithClanTag)
+	
+			print("【Ban】击杀退出判定用时：" + (Time() - lastGlobalkill[1]) )
+			// 用时：0.0333405
+			// 用时：0.0666504
+			// 好像就是延迟
+		}
+	} else{
+		if( isBanNotDuplicate ){
+			isBanAnnunciateList.push([PlayerNameWithClanTag, Time()])
+		}
+	}
+
+
+
+	// if ( lastGlobalkill[0] == PlayerNameWithClanTag && Time() - lastGlobalkill[1] < 10 ){
+	// 	print("击杀退出用时：" + (Time() - lastGlobalkill[1]) )
+	// }
+	// 萌新服浮动 3.5-4.5
+		// print("aafugsdafksdf" + (1.1 - 0.5))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
