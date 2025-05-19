@@ -153,8 +153,7 @@ def monitor_file():
 #     return pattern.sub(replacement, text)
 
 def preprocess_custom_words(text, pinyin_len_dict, fail_count_dict):
-    custom_keys_set = set(custom_dict.keys())
-    pattern = re.compile(r'\b(' + '|'.join(map(re.escape, custom_keys_set)) + r')\b', flags=re.IGNORECASE)
+    pattern = re.compile(r'\b(' + '|'.join(map(re.escape, custom_dict)) + r')\b', flags=re.IGNORECASE)
 
     def replacement(match):
         pinyin = match.group()
