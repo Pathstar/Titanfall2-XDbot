@@ -1,3 +1,4 @@
+import random
 import win32file
 import win32con
 import os
@@ -10,11 +11,12 @@ from Pinyin2Hanzi import dag
 import requests
 import emoji
 from unidecode import unidecode
-from datetime import datetime
+from datetime import datetime, timedelta
 
 chat_history_len = 5
 save_history = True
 AILimit = False
+
 
 def process_entry(timestamp, player_name, command, message, say):
     """Process a new entry asynchronously."""
@@ -44,6 +46,10 @@ def process_entry(timestamp, player_name, command, message, say):
                     py_message = time.strftime("%H:%M:%S")
                 case "ai":
                     py_message = deepseek(player_name, message, True)
+                case "server":
+                    py_message = get_server(message[0], message[1])
+                case "init":
+                    py_message = next_half_or_full_hour_final()
                 case _:
                     print(f"无此方法 {command}")
                     isNoneFunc = True
@@ -70,7 +76,7 @@ def process_entry(timestamp, player_name, command, message, say):
         with open(result_file_path, 'w', encoding='utf-8') as f:
             json.dump(existing_data, f, ensure_ascii=False, indent=4)
         end_strftime = time.strftime("%H:%M:%S")
-        print(f"[XDlog] {end_strftime} Finish: {player_name}: {message} use: {process_time}\n{py_message} ")
+        print(f"[XDlog] {end_strftime} Finish: {player_name}: {message} use: {process_time}\n{py_message}\n")
     except Exception as e:
         print("[XDlog] Failed to update result JSON:", e)
 
@@ -137,22 +143,41 @@ def monitor_file():
                     print(f"{time.strftime('%H:%M:%S')} Failed to read JSON:", e)
 
 
-# 转拼音：
-# def preprocess_custom_words(text, pinyin_len_dict, fail_count_dict):
-#     def replacement(match):
-#         # nonlocal count  # 允许修改外部变量
+def next_half_or_full_hour_final():
+    now = datetime.now()
+    # now = datetime(2024, 6, 30, 23, 40, 0)
+    h, m = now.hour, now.minute
+    if m < 30:
+        next_time = now.replace(minute=30, second=0, microsecond=0)
+        flag = False
+    else:
+        next_time = (now.replace(minute=0, second=0, microsecond=0) + timedelta(hours=1))
+        flag = True
+    seconds_to_next = int((next_time - now).total_seconds())
+    # seconds_to_next = 0
+    if flag:
+        result_str = next_time.strftime("\x1b[33m%H:%M:%S\x1b[0m 整！")
+    else:
+        result_str = next_time.strftime("\x1b[33m%H:%M:%S\x1b[0m！")
 
-#         pinyin = match.group()
-#         if (pinyin_lower := pinyin.lower()) in custom_dict:
-#             fail_count_dict["count"] -= 1
-#             pinyin_len_dict["count"] += values[1]
-#         return custom_dict.get(pinyin_lower, pinyin)
-#         # 只替换匹配的拼音，未匹配的保持原样
+    # 随机颜色
+    color = random.choice(COLORS)
 
-#     pattern = re.compile(r'\b(' + '|'.join(map(re.escape, custom_dict.keys())) + r')\b', flags=re.IGNORECASE)
-#     return pattern.sub(replacement, text)
+    # 判断是否为凌晨0点~6点
+    if 0 <= next_time.hour < 6 and random.random() < 0.99:
+        text_emoji = NIGHT_EMOJI
+    else:
+        text_emoji = random.choice(EMOJI_LIST)
+
+    # 拼接输出
+    result_str = f"{result_str}{color} {text_emoji}"
+
+    return [result_str, seconds_to_next]
+
 
 def preprocess_custom_words(text, pinyin_len_dict, fail_count_dict):
+    # custom_keys_set = set(custom_dict.keys())
+    # custom_keys_set = sorted(custom_dict.keys(), key=lambda x: custom_dict[x][1], reverse=True)
     pattern = re.compile(r'\b(' + '|'.join(map(re.escape, custom_dict)) + r')\b', flags=re.IGNORECASE)
 
     def replacement(match):
@@ -239,7 +264,7 @@ def deepseek(name, message, is_success):
     messages = [
         {
             "role": "system",
-            "content": "你是一个聊天机器人，处在non-thinking(enable_thinking=False)模式。请快速响应，不进行深度思考，直接回答问题，并准守以下规则：1.请严格限制回答字数在 160 字以内，省略思考过程；理性的问题请保证专业与准确性；感性的问题请高情商回答，富有感情和温暖。2.字符编码环境仅限最基本的字符，不要使用emoji，如需使用，请使用ASCII字符组成的颜文字代替emoji；user的话包括name(中括号内是玩家的前缀，后面是玩家名字)、content(玩家的问题)"
+            "content": "你是一个聊天机器人，处在non-thinking(enable_thinking=False)模式。请快速响应，不进行深度思考，直接回答问题，并准守以下规则：1.请严格限制回答字数在 160 字以内，省略思考过程；理性的问题请保证专业与准确性；感性的问题请高情商回答，富有感情和温暖。2.字符编码环境仅限最基本的符号，请使用ASCII字符；user的话包括name(中括号内是玩家的前缀，后面是玩家名字)、content(玩家的问题)"
         },
         {
             "role": "user",
@@ -258,7 +283,8 @@ def deepseek(name, message, is_success):
             data=json.dumps({
                 # "model": "deepseek/deepseek-r1:free",
                 # "model": "qwen/qwen3-14b:free",
-                "model": "qwen/qwen3-4b:free",
+                # "model": "qwen/qwen3-4b:free",
+                "model": "qwen/qwen-2.5-7b-instruct:free",
                 "messages": messages,
                 "enable_thinking": False,
                 "temperature": 1.4,
@@ -369,6 +395,195 @@ def emoji_to_ascii(text):
     return emoji_text
 
 
+def filter_data(servers):
+    filtered_data = []
+    for server in servers:
+        #                         pvp 军备竞赛 freeforall ？      ？     单挑       泰坦混战 幽灵猎杀
+        if (server["playlist"] in ["ps", "gg", "ffa", "fra", "mfd", "coliseum", "tffa", "hidden"]
+                and server["name"] not in [
+                    "[CN]坏逼们的服务器 #基于KD越高越容易丢子弹的萌新服",
+                    "[萌新专用]KD高踢出KD低加血-半夜咳嗽狼萌新服",
+                    "[NSCN] 北极星CN官方18k空速铁对铁#1",
+                    "[CN]坏逼们的服务器#超机动铁对铁",
+                    "[CN]坏逼们的服务器#感染军团对战 <ZDJ>",
+                    "[CN]坏逼们的服务器#恐怖炸猪人",
+                    "【超好玩】技能狂",
+                    "【超好玩】透视自瞄",
+                    "【超好玩】9级帝王混战"
+
+                    # 【超好玩】纯净版消耗战 【超好玩】技能狂 【超好玩】狙击战,超级机动铁驭 [摸鱼服]摸了
+                ]  # and server["ip"] not in ["134.175.88.218", "110.42.38.53", "110.42.51.209", "101.43.230.80"]
+        ):
+            filtered_data.append({
+                "playerCount": server["playerCount"],
+                "name": server["name"]
+            })
+    return filtered_data
+
+
+def get_server(query_type, message):
+    try:
+        global last_get_server_time
+        file_name = "servers.json"
+        filtered_data = []
+        # test = False
+        current_time = time.time()
+        if current_time - last_get_server_time > 10:
+            last_get_server_time = current_time
+            response = requests.get("https://nscn.wolf109909.top/client/servers")
+            servers = response.json()
+            with open(file_name, "w") as file:
+                json.dump(servers, file, indent=4)
+                # json.dump(servers, file)
+                print("[XDlog] Get服务器...")
+                # print("\n\n\nget\n\n\n")
+        else:
+            with open(file_name, "r") as file:
+                servers = json.load(file)
+                print("[XDlog] 内存读取...")
+                # test = True
+        match query_type:
+            case "mode" | "模式":
+                cleaned_data = filter_server_mod(servers, message)
+                if not cleaned_data:
+                    return f"查询模式 [{message}] 未找到有人的服务器"
+                filtered_data = sorted(
+                    (item for item in cleaned_data),
+                    key=lambda item: (-item['playerCount'], item['name'])
+                )
+            case "name" | "名称" | "名字":
+                cleaned_data = filter_name_mod(servers, message)
+                if not cleaned_data:
+                    return f"查询名称 [{message}] 未找到有人的服务器"
+                else:
+                    if len(cleaned_data) == 1 and cleaned_data[0]['playerCount'] == 0:
+                        return f"现在没有任何人！-> {cleaned_data[0]['name']}"
+                filtered_data = sorted(
+                    (item for item in cleaned_data if item['playerCount'] != 0),
+                    key=lambda item: (-item['playerCount'], item['name'])
+                )
+        # if test:
+        #     filtered_data.append({
+        #         "playerCount": -1,
+        #         "name": "内存读取"
+        #     })
+        if not filtered_data:
+            return ""
+        else:
+            return filtered_data
+    except Exception as e:
+        print(e)
+        return f"Get NS服务器错误: {e.__class__.__name__}"
+
+
+def filter_server_mod(servers, message):
+    filtered_data = []
+    match message:
+        case "xd":
+            xd_banned_names = {
+                "[CN]坏逼们的服务器 #基于KD越高越容易丢子弹的萌新服",
+                "[萌新专用]KD高踢出KD低加血-半夜咳嗽狼萌新服",
+                "[NSCN] 北极星CN官方18k空速铁对铁#1",
+                "[CN]坏逼们的服务器#超机动铁对铁",
+                "[CN]坏逼们的服务器#感染军团对战 <ZDJ>",
+                "[CN]坏逼们的服务器#恐怖炸猪人",
+                "【超好玩】技能狂",
+                "【超好玩】透视自瞄",
+                "【超好玩】9级帝王混战"
+            }
+            xd_playlists = {"ps", "gg", "ffa", "fra", "mfd", "coliseum", "tffa", "hidden"}
+            for server in servers:
+                name = server["name"]
+                playlist = server["playlist"]
+                player_count = server["playerCount"]
+                if (
+                        playlist in xd_playlists and
+                        name not in xd_banned_names and
+                        player_count != 0
+                ):
+                    filtered_data.append({
+                        "playerCount": player_count,
+                        "name": name
+                    })
+            return filtered_data
+        case "xdall":
+            for server in servers:
+                player_count = server["playerCount"]
+                if player_count != 0:
+                    filtered_data.append({
+                        "playerCount": player_count,
+                        "name": server["name"]
+                    })
+            return filtered_data
+    # 普通模式分支
+    for server_key in trans_to_gamemode:
+        if message in server_key:
+            filtered_list = trans_to_gamemode[server_key]
+            break
+    else:
+        # message不在server_key里，playlist直接查找
+        for server in servers:
+            playlist = server["playlist"]
+            player_count = server["playerCount"]
+            if message in playlist and player_count != 0:
+                filtered_data.append({
+                    "playerCount": player_count,
+                    "name": server["name"]
+                })
+        return filtered_data
+    flist_set = set(filtered_list)
+    for server in servers:
+        playlist = server["playlist"]
+        player_count = server["playerCount"]
+        if playlist in flist_set and player_count != 0:
+            filtered_data.append({
+                "playerCount": player_count,
+                "name": server["name"]
+            })
+    return filtered_data
+
+
+def filter_name_mod(servers, message):
+    # 预处理关键词，只保留非空字符串，全部转小写
+    keywords = [kw for kw in message.lower().split() if kw]
+    if len(keywords) > 9:
+        return [{"playerCount": -1, "name": "参数最多支持8个"}]
+    filtered_data = []
+    # 按长度降序排，避免短关键词被包含在长关键词里导致重叠
+    keywords.sort(key=len, reverse=True)
+    for server in servers:
+        name = server["name"]
+        name_lower = name.lower()
+        # 检查所有关键词都包含
+        if any(kw in name_lower for kw in keywords):
+            # 生成高亮的name（不会用正则，每次尽量长关键词优先匹配）
+            highlight = []
+            i = 0
+            N = len(name)
+            while i < N:
+                match = None
+                for kw in keywords:
+                    lkw = len(kw)
+                    if lkw == 0:
+                        continue
+                    if name_lower[i:i + lkw] == kw:
+                        match = lkw
+                        break
+                if match:
+                    highlight.append('\x1b[33m')
+                    highlight.append(name[i:i + match])
+                    highlight.append('\x1b[0m')
+                    i += match
+                else:
+                    highlight.append(name[i])
+                    i += 1
+            filtered_data.append({
+                "playerCount": server["playerCount"],
+                "name": ''.join(highlight)
+            })
+    return filtered_data
+
+
 _print = print
 
 
@@ -395,10 +610,35 @@ result_file_path = r'D:\SystemApps\Steam\steamapps\common\Titanfall2\R2Northstar
 state_file_path = r'D:\SystemApps\Steam\steamapps\common\Titanfall2\R2Northstar\save_data\Northstar.Client\state.txt'
 watch_dir = os.path.dirname(json_file_path)
 target_file = os.path.basename(json_file_path)
+last_get_server_time = 0
 
 processing_set = set()
 thread_count = 0
 chat_history = []
+
+# 彩色列表
+COLORS = [
+    "\033[38;2;254;208;175m",
+    "\033[38;2;135;206;235m",
+    "\033[38;2;240;128;128m",
+    "\033[38;2;175;238;238m",
+    "\033[38;2;254;219;193m",
+    "\033[38;2;216;191;216m",
+    "\033[38;2;144;238;144m",
+    "\033[38;2;205;214;210m",
+    "\033[38;2;221;160;221m",
+    "\033[38;2;248;131;121m",
+    "\033[38;2;254;198;195m",
+    "\033[38;2;194;245;194m",
+    "\033[38;2;173;216;230m",
+    "\033[38;2;254;250;195m",
+    "\033[38;2;199;245;190m"
+]
+EMOJI_LIST = [
+    "(≧▽≦)/", "(=^･ω･^=)", "(｡>ω<｡)", "(｡>﹏<｡)",
+    "～(つˆДˆ)つ", "(｀・ω・´)", "(ﾉ≧∀≦)ﾉ"
+]
+NIGHT_EMOJI = "(。-ω-)zzz"
 # 转拼音 初始化模型参数
 custom_dict = {
     "meng xin lei mu": ("萌新泪目", 3),
@@ -429,16 +669,16 @@ custom_dict = {
     "dian chong": ("电冲", 1),
     "dian bi": ("电笔", 1),
     "zi beng": ("滋嘣", 1),
-    "a dun": ("Α盾", 1),
-    "adun": ("Α盾", 1),
-    "c dun": ("Č盾", 1),
-    "cdun": ("Č盾", 1),
-    "r101": ("Ř301", 1),
-    "r201": ("Ř201", 1),
-    "r301": ("Ř101", 1),
-    "r97": ("Ř97", 1),
-    "p2016": ("Ṕ2016", 1),
-    "re45": ("ŘÉ97", 1),
+    "a dun": ("А盾", 1),
+    "adun": ("А盾", 1),
+    "c dun": ("Ϲ盾", 1),
+    "cdun": ("Ϲ盾", 1),
+    "r101": ("Ŕ301", 1),
+    "r201": ("Ŕ201", 1),
+    "r301": ("Ŕ101", 1),
+    "r97": ("Ŕ97", 1),
+    "p2016": ("Р2016", 1),
+    "re45": ("ŔЕ45", 1),
     "l star": ("LStar", 1),
     "zha nan": ("扎男", 1),
     "li zi": ("离子", 1),
@@ -446,6 +686,7 @@ custom_dict = {
     "lang meng": ("狼萌", 1),
     "meng xin": ("萌新", 1),
     "huai xiao": ("坏小", 1),
+    "ma le": ("马了", 1),
 
     "da yue": ("大约", 1),
     "bu que": ("不缺", 1),
@@ -485,10 +726,13 @@ custom_dict = {
 
     "que": ("却", 0),
     "yue": ("月", 0)
-}
 
+}
+# Ϲ 希腊字母
+# АВ ДЕFGНІЈКLМNОРQ ЅТUVWХYZ 西里尔字母
+# ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ 全角拉丁字母（Fullwidth Latin Letters）
 # input_text = "Á B́ Ć D́ É F́ Ǵ H́ Í J́ Ḱ Ĺ Ḿ Ń Ó Ṕ Q́ Ŕ Ś T́ Ú V́ Ẃ X́ Ý Ź" 拉丁大写字母带锐音符 抑扬符 ААᎪ𝔸 Č
-# input_text = "zhong li xing.ΑААᎪ𝔸 tai tan dian yan dian zi yan С LStar Ř97 chong feng qiang dian bi liu dan ke lai bo"
+# input_text = "zhong li xing.ΑААᎪ𝔸 tai tan dian yan dian zi yan С LStar Ŕ97 chong feng qiang dian bi liu dan ke lai bo"
 # input_text = "mai chong dao ji su yin shen gou zhua fen shen shuang chong san chong"
 # input_text = "li zi lie yan qiang li lang ren jun tuan di wang bei ji xing yang lao fu wu qi"
 
@@ -506,7 +750,21 @@ emoji_map = {
 chinese_chars = set("，。？！（）【】、；：") | set(chr(i) for i in range(0x4E00, 0x9FFF))
 # 将 转化为ASCII表情 例如"grinning_face": ":D",
 
+trans_to_gamemode = {
+    "铁对铁pvp": ["ps", "gg", "ffa", "fra", "mfd", "coliseum", "hidden"],
+    "泰坦争斗ttdm": ["tffa", "ttdm"],
+    "消耗战att": ["aitdm"],
+    "边境防御": ["fd_easy", "fd_normal", "fd_hard", "fd_insane", "fd_master", "private_match"],
+    "边境防御简单边境": ["fd_easy"],
+    "边境防御普通边境防御一般": ["fd_normal"],
+    "边境防御困难": ["fd_hard"],
+    "边境防御疯狂": ["fd_insane"],
+    "边境防御大师": ["fd_master"]
+}
+
+dag_params = DefaultDagParams()
+
 if __name__ == "__main__":
-    dag_params = DefaultDagParams()
+    
     # 检测文件
     monitor_file()
