@@ -189,7 +189,7 @@
 >
 > #### Python端
 >
-> - 使用 `watchdog` 监控 save.json
+> - 使用 `pywin32` 监控 save.json
 > - 有变更后立刻读取，并将 state.txt 设为处理中
 > - 多线程处理数据，完成后输出到 load.json
 > - 若所有处理线程全部完毕，将 state.txt 置为完毕
