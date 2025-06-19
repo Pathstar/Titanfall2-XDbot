@@ -428,7 +428,7 @@ def get_server(query_type, message):
         filtered_data = []
         # test = False
         current_time = time.time()
-        if current_time - last_get_server_time > 10:
+        if current_time - last_get_server_time > 15:
             last_get_server_time = current_time
             response = requests.get("https://nscn.wolf109909.top/client/servers")
             servers = response.json()
