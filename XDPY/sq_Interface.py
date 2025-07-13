@@ -12,52 +12,63 @@ import requests
 import emoji
 from unidecode import unidecode
 from datetime import datetime, timedelta
+from pypinyin import lazy_pinyin
 
-chat_history_len = 5
+chat_history_len = 6
 save_history = True
-AILimit = False
+AI_limit = False
 
+
+# todo 转拼音一个字母问题
 
 def process_entry(timestamp, player_name, command, message, say):
     """Process a new entry asynchronously."""
-    global thread_count
+    global thread_count, thread_index
     start_time = time.time()
     start_strftime = time.strftime("%H:%M:%S")
     # print(f"{start_strftime} Begin: {player_name}: {command}" + (f"\n{message}" if message else ""))
     print(f"[XDlog] {start_strftime} Begin: {player_name}: {command} {message}")
-    isNoneFunc = False
+    is_not_func = False
     py_message = ""
 
+    if command == "no_return":
+        match message:
+            case "new_chat":
+                # chat_history = []
+                chat_history.clear()
+            case _:
+                print(f"无此参数 {message}")
+        return
+
+    if thread_count == 0:
+        with open(state_file_path, 'w', encoding='utf-8') as f:
+            f.write("1")
+
+    thread_count += 1
     match command:
-        case "new_chat":
-            # chat_history = []
-            chat_history.clear()
-            return
+        case "g_pinyin":
+            py_message = convert_chinese_to_pinyin(message, True)
+            command = "pinyin"
+            is_not_func = True
+        case "pinyin":
+            py_message = convert_chinese_to_pinyin(message, False)
+        case "time":
+            py_message = time.strftime("%H:%M:%S")
+        case "ai":
+            py_message = deepseek(player_name, message, True)
+        case "server":
+            py_message = get_server(message[0], message[1])
+        case "init":
+            py_message = next_half_or_full_hour_final()
         case _:
-            thread_count += 1
-            match command:
-                case "g_pinyin":
-                    py_message = convert_pinyin_to_hanzi_with_preservation(message, True)
-                    command = "pinyin"
-                    isNoneFunc = True
-                case "pinyin":
-                    py_message = convert_pinyin_to_hanzi_with_preservation(message, False)
-                case "time":
-                    py_message = time.strftime("%H:%M:%S")
-                case "ai":
-                    py_message = deepseek(player_name, message, True)
-                case "server":
-                    py_message = get_server(message[0], message[1])
-                case "init":
-                    py_message = next_half_or_full_hour_final()
-                case _:
-                    print(f"无此方法 {command}")
-                    isNoneFunc = True
+            print(f"无此方法 {command}")
+            is_not_func = True
 
     end_time = time.time()
     # process_time = round(end_time - start_time, 1)
     process_time = end_time - start_time
-    result_data = {end_time: {player_name: {
+    thread_index += 1
+    result_data = {f"{end_time}_{thread_index}": {player_name: {
         "command": command,
         "message": message,
         "pyMessage": py_message,
@@ -81,8 +92,8 @@ def process_entry(timestamp, player_name, command, message, say):
         print("[XDlog] Failed to update result JSON:", e)
 
     if py_message == "":
-        if not isNoneFunc:
-            print(f"[XDlog] \n {command} 返回为空 \n")
+        if not is_not_func:
+            print(f"[XDlog] \n {command} 命令返回为空 \n")
 
     thread_count -= 1
     if thread_count == 0:
@@ -105,7 +116,7 @@ def monitor_file():
     )
 
     last_m_time = os.path.getmtime(json_file_path)
-    print(f"{time.strftime('%H:%M:%S')} Monitoring file changes...")
+    print(f"{time.strftime('%H:%M:%S')} Monitoring Squirrel Messages...")
 
     while True:
         results = win32file.ReadDirectoryChangesW(
@@ -134,13 +145,10 @@ def monitor_file():
                                                          timestamp, player_name,
                                                          details["command"], details["message"], details["say"]
                                                      )).start()
-                                    if thread_count == 0:
-                                        with open(state_file_path, 'w', encoding='utf-8') as f:
-                                            f.write("1")
 
                         last_m_time = current_m_time
                 except Exception as e:
-                    print(f"{time.strftime('%H:%M:%S')} Failed to read JSON:", e)
+                    print(f"{time.strftime('%H:%M:%S')} Failed to read JSON: ", e)
 
 
 def next_half_or_full_hour_final():
@@ -175,116 +183,210 @@ def next_half_or_full_hour_final():
     return [result_str, seconds_to_next]
 
 
-def preprocess_custom_words(text, pinyin_len_dict, fail_count_dict):
-    # custom_keys_set = set(custom_dict.keys())
-    # custom_keys_set = sorted(custom_dict.keys(), key=lambda x: custom_dict[x][1], reverse=True)
-    pattern = re.compile(r'\b(' + '|'.join(map(re.escape, custom_dict)) + r')\b', flags=re.IGNORECASE)
+# 转拼音：
+def convert_chinese_to_pinyin(text, is_strict_mode=False):
+    return converter.pinyin_groups_to_chinese(converter.split_text_by_pinyin_group(text), is_strict_mode=is_strict_mode)
 
-    def replacement(match):
-        pinyin = match.group()
-        pinyin_lower = pinyin.lower()
-        if pinyin_lower in custom_dict:
-            values = custom_dict[pinyin_lower]
-            fail_count_dict["count"] -= 1
-            pinyin_len_dict["count"] += values[1]
-            return values[0]
-        return pinyin
+def simple_replace(text, replace_dict):
+    pattern = re.compile("|".join(re.escape(k) for k in replace_dict))
+    return pattern.sub(lambda m: replace_dict[m.group(0)], text)
 
-    return pattern.sub(replacement, text)
+class PinyinChineseConverter:
+    def __init__(self, c_pinyin_syllables, c_uv_pinyin_list, c_dag_params, c_custom_dict):
+        self.pinyin_syllables = c_pinyin_syllables
+        self.uv_pinyin_list = c_uv_pinyin_list
+        self.dag_params = c_dag_params
+        self.custom_dict = c_custom_dict
 
+    def is_pinyin_syllable(self, word):
+        return word.lower() in self.pinyin_syllables
 
-def convert_pinyin_list(pinyin_list, dag_params, topk, result, fail_count_dict):
-    if len(pinyin_list) == 0:
-        return
+    def split_text_by_pinyin_group(self, text):
+        """
+        将文本按拼音组切分，True是拼音组，False是原文
+        """
+        tokens = re.findall(r'[A-Za-z]+|\s+|[^A-Za-z\s]+', text)
+        res = []
+        i = 0
+        n = len(tokens)
+        while i < n:
+            if tokens[i].isalpha() and self.is_pinyin_syllable(tokens[i]):
+                py_group = [tokens[i].lower()]
+                i += 1
+                while i + 1 < n and tokens[i].isspace() and tokens[i + 1].isalpha() and self.is_pinyin_syllable(
+                        tokens[i + 1]):
+                    py_group.append(tokens[i + 1].lower())
+                    i += 2
+                res.append([True, py_group])
+            else:
+                buf = tokens[i]
+                i += 1
+                while i < n and not (tokens[i].isalpha() and self.is_pinyin_syllable(tokens[i])):
+                    buf += tokens[i]
+                    i += 1
+                if res and res[-1][0] and buf and buf[0].isspace():
+                    buf = buf[1:]
+                if i < n and tokens[i].isalpha() and self.is_pinyin_syllable(tokens[i]) and buf and buf[-1].isspace():
+                    buf = buf[:-1]
+                if buf:
+                    res.append([False, buf])
+        return res
 
-    # 从整个列表开始，不断缩短末尾，直到能成功匹配
-    for L in range(len(pinyin_list), 0, -1):
-        prefix = pinyin_list[:L]
-        lowercase_prefix = [word.lower() for word in prefix]
-        dag_results = dag(dag_params, lowercase_prefix, path_num=topk)
-        if dag_results:
-            cand = dag_results[0].path
-            result.append(cand)
-            print(f"[Pinyin]: {result}")
-            convert_pinyin_list(pinyin_list[L:], dag_params, topk, result, fail_count_dict)
+    def pinyin_group_to_chinese_candidates(self, pinyin_list, topk, result, fail_count_dict):
+        """
+        拼音组转到所有可用中文（递归、最大匹配）
+        """
+        if len(pinyin_list) == 0:
             return
+        for L in range(len(pinyin_list), 0, -1):
+            prefix = pinyin_list[:L]
+            lowercase_prefix = [word.lower() for word in prefix]
+            dag_results = dag(self.dag_params, lowercase_prefix, path_num=topk)
+            print(f"[Pinyin Loop] {lowercase_prefix}")
+            if dag_results:
+                cand = dag_results[0].path
+                result.append(cand)
+                print(f"[Pinyin Success] {cand}")
+                self.pinyin_group_to_chinese_candidates(pinyin_list[L:], topk, result, fail_count_dict)
+                return
 
-    fail_count_dict["count"] += 1
-    result.append([pinyin_list[0]])
-    convert_pinyin_list(pinyin_list[1:], dag_params, topk, result, fail_count_dict)
+        print(f"[Pinyin Fail] {pinyin_list}")
+        fail_count_dict["count"] += 1
+        result.append([pinyin_list[0]])
+        self.pinyin_group_to_chinese_candidates(pinyin_list[1:], topk, result, fail_count_dict)
 
+    # intentionally not static
+    def tokenize_with_pinyin_and_span(self, text):
+        """
+        转文字后转拼音为自定义词典做准备
+        """
+        tokens = []
+        spans = []
+        n = len(text)
+        i = 0
+        while i < n:
+            c = text[i]
+            if '\u4e00' <= c <= '\u9fff':
+                py = lazy_pinyin(c)[0]
+                tokens.append(py)
+                spans.append((i, i + 1))
+                i += 1
+            else:
+                j = i
+                while j < n and not ('\u4e00' <= text[j] <= '\u9fff'):
+                    j += 1
+                tokens.append(text[i:j])
+                spans.append((i, j))
+                i = j
+        print(f"[Pinyin Custom] {tokens}")
+        return tokens, spans
 
-# 主转换函数，增加对混合不可转换拼音的回退处理
-def convert_pinyin_to_hanzi_with_preservation(text, is_g_pinyin, topk=1):
-    # 预处理自定义词
-    fail_count_dict = {"count": 0}
-    pinyin_len_dict = {"count": 0}
-    text = preprocess_custom_words(text, pinyin_len_dict, fail_count_dict)
+    def custom_dict_replace(self, text, fail_count_dict):
+        """
+        查找并替换自定义拼音短语
+        """
+        tokens, spans = self.tokenize_with_pinyin_and_span(text)
+        n = len(tokens)
+        out = []
+        i = 0
+        max_len = max(len(k.split()) for k in self.custom_dict)
+        while i < n:
+            hit = False
+            for L in range(min(max_len, n - i), 0, -1):
+                phrase = ' '.join(tokens[i:i + L])
+                if phrase in self.custom_dict:
+                    value = self.custom_dict[phrase]
+                    if isinstance(value, tuple):
+                        rep = value[0]
+                        minus = value[1]
+                        # minus = value[1] if len(value) > 1 else None
+                    else:
+                        rep = value
+                        minus = None
+                    out.append(rep)
+                    if minus:
+                        fail_count_dict["count"] -= minus
+                    i += L
+                    hit = True
+                    break
+            if not hit:
+                s, e = spans[i]
+                out.append(text[s:e])
+                i += 1
+        return ''.join(out)
 
-    tokens = re.findall(r"[a-z]+(?: [a-z]+)*|[^\sa-z]+|\s+", text, flags=re.IGNORECASE)
-    result = []
+    def pinyin_groups_to_chinese(self, pinyin_groups, is_strict_mode, topk=1):
+        """
+        主流程：拼音组转最终中文
+        """
+        final_result = []
+        fail_count_dict = {"count": 0}
+        pinyin_len = 0
+        for is_pinyin_group, content in pinyin_groups:
+            if is_pinyin_group:  # 转拼音
+                result = []
+                content = [self.uv_pinyin_list.get(p, p) for p in content]
+                self.pinyin_group_to_chinese_candidates(content, topk, result, fail_count_dict)
+                for chinese_part in result:
+                    final_result.append(''.join(chinese_part))
+                pinyin_len += len(content)
+            else:
+                fail_count_dict["count"] += 1
+                final_result.append(content)
 
-    for token in tokens:
-        stripped = token
-        if stripped:
-            pinyin_list = stripped.split()
-            # pinyin_list = split_pinyin_with_filter(stripped)
-            pinyin_len_dict["count"] += len(pinyin_list)
-            convert_pinyin_list(pinyin_list, dag_params, topk, result, fail_count_dict)
-
-    fail_count = fail_count_dict["count"]
-    print(f"[XDlog] fail_count: {fail_count} pinyin_len: {pinyin_len_dict['count']}")
-    if is_g_pinyin:
-        if fail_count >= pinyin_len_dict["count"] / 2:
-            print(f"Failed Trans")
-            return ""
-
-    # 最终扁平化
-    def flatten(item):
-        if isinstance(item, list):
-            return ''.join(flatten(i) for i in item)
-        return item
-
-    return ''.join(flatten(r) for r in result)
+        final_result_str = ''.join(final_result)
+        process_result = self.custom_dict_replace(final_result_str, fail_count_dict)
+        process_white_result = simple_replace(process_result, block_words)
+        fail_count = fail_count_dict["count"]
+        print(f"[Pinyin Fail_Count] {fail_count}")
+        if is_strict_mode:
+            if fail_count >= pinyin_len / 2.0:
+                return ""
+        return process_white_result
 
 
 # deepseek
 def deepseek(name, message, is_success):
-    global AILimit
-    if AILimit:
-        Auth = ""
+    global AI_limit, chat_history
+    if AI_limit:
+        auth = "Bearer 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"
     else:
-        Auth = ""
+        auth = "Bearer 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"
     if save_history:
         if is_success:
             chat_history.append({"role": "user", "content": f"name: {name}, content: {message}"})
             if len(chat_history) > chat_history_len:
-                chat_history.pop(0)
+                chat_history = chat_history[1:]
 
-    messages = [
+    messages = chat_history + [
         {
             "role": "system",
-            "content": "你是一个聊天机器人，处在non-thinking(enable_thinking=False)模式。请快速响应，不进行深度思考，直接回答问题，并准守以下规则：1.请严格限制回答字数在 160 字以内，省略思考过程；理性的问题请保证专业与准确性；感性的问题请高情商回答，富有感情和温暖。2.字符编码环境仅限最基本的符号，请使用ASCII字符；user的话包括name(中括号内是玩家的前缀，后面是玩家名字)、content(玩家的问题)"
+            "content": "你处于一个聊天群中，且在non-thinking(enable_thinking=False)模式，请快速响应，不进行深度思考，直接回答问题，并准守以下规则：1.请严格限制回答字数在 "
+                       "160 字以内，省略思考过程；理性的问题请保证专业与准确性；感性的问题请高情商回答，富有感情和温暖。2.字符编码环境仅限最基本的符号，请使用ASCII字符；user的话包括name("
+                       "中括号内是玩家的前缀，后面是玩家名字)、content(玩家的问题) "
         },
         {
             "role": "user",
             "content": f"name: {name}, content: {message}"
         }
     ]
-    messages.extend(chat_history)
+    # messages.extend(chat_history)
     data = ""
     try:
         response = requests.post(
             url="https://openrouter.ai/api/v1/chat/completions",
             headers={
-                "Authorization": Auth,
+                "Authorization": auth,
                 "Content-Type": "application/json",
             },
             data=json.dumps({
                 # "model": "deepseek/deepseek-r1:free",
                 # "model": "qwen/qwen3-14b:free",
                 # "model": "qwen/qwen3-4b:free",
-                "model": "qwen/qwen-2.5-7b-instruct:free",
+                # "model": "qwen/qwen-2.5-7b-instruct:free",
+                # "model": "qwen/qwq-32b:free",
+                # "model": "qwen/qwen3-8b:free",
+                "model": "qwen/qwen3-30b-a3b:free",
                 "messages": messages,
                 "enable_thinking": False,
                 "temperature": 1.4,
@@ -304,12 +406,13 @@ def deepseek(name, message, is_success):
     print(data)
     print("---\n")
     try:
-        content = data['choices'][0]['message']['content']
+        # content = data['choices'][0]['message']['content']
+        content = data.choices[0].message.content
     except KeyError:
         print("AI响应发生错误: 'data' 结构中缺少所需的键！")
-        if AILimit:
+        if AI_limit:
             return ["AI响应发生错误: 到达每日限额...TvT"]
-        AILimit = True
+        AI_limit = True
         print(f"\n\n\n\n\n\n\n\n\n\nReach First API Limit 第一个号超出限额\n\n")
         max_retries = 3
         retries = 0
@@ -332,7 +435,8 @@ def deepseek(name, message, is_success):
         if save_history:
             chat_history.append({"role": "assistant", "content": content})
             if len(chat_history) > chat_history_len:
-                chat_history.pop(0)  # 确保对话历史不会无限增长
+                # chat_history.pop(0)  # 确保对话历史不会无限增长
+                chat_history = chat_history[1:]
         return content
     else:
         print("[XDlog] 返回为空重试...")
@@ -390,15 +494,17 @@ def convert_non_ascii_except_chinese(text):
 def emoji_to_ascii(text):
     emoji_text = emoji.demojize(text)  # 将 emoji 转为名称
     print(f"[XDlog] emoji: {emoji_text}")
-    for key, val in emoji_map.items():
-        emoji_text = emoji_text.replace(f":{key}:", val)
+    # for key, val in emoji_map.items():
+    #     emoji_text = emoji_text.replace(f":{key}:", val)
+    pattern = re.compile("|".join(map(re.escape, emoji_map.keys())))
+    emoji_text = pattern.sub(lambda m: emoji_map[m.group(0)], emoji_text)
     return emoji_text
 
 
 def filter_data(servers):
     filtered_data = []
     for server in servers:
-        #                         pvp 军备竞赛 freeforall ？      ？     单挑       泰坦混战 幽灵猎杀
+        #                         pvp 军备竞赛 free_for_all ？      ？     单挑       泰坦混战 幽灵猎杀
         if (server["playlist"] in ["ps", "gg", "ffa", "fra", "mfd", "coliseum", "tffa", "hidden"]
                 and server["name"] not in [
                     "[CN]坏逼们的服务器 #基于KD越高越容易丢子弹的萌新服",
@@ -410,10 +516,9 @@ def filter_data(servers):
                     "【超好玩】技能狂",
                     "【超好玩】透视自瞄",
                     "【超好玩】9级帝王混战"
-
                     # 【超好玩】纯净版消耗战 【超好玩】技能狂 【超好玩】狙击战,超级机动铁驭 [摸鱼服]摸了
-                ]  # and server["ip"] not in ["134.175.88.218", "110.42.38.53", "110.42.51.209", "101.43.230.80"]
-        ):
+                    # and server["ip"] not in ["134.175.88.218", "110.42.38.53", "110.42.51.209", "101.43.230.80"]
+                ]):
             filtered_data.append({
                 "playerCount": server["playerCount"],
                 "name": server["name"]
@@ -428,7 +533,7 @@ def get_server(query_type, message):
         filtered_data = []
         # test = False
         current_time = time.time()
-        if current_time - last_get_server_time > 15:
+        if current_time - last_get_server_time > 10:
             last_get_server_time = current_time
             response = requests.get("https://nscn.wolf109909.top/client/servers")
             servers = response.json()
@@ -446,15 +551,24 @@ def get_server(query_type, message):
             case "mode" | "模式":
                 cleaned_data = filter_server_mod(servers, message)
                 if not cleaned_data:
-                    return f"查询模式 [{message}] 未找到有人的服务器"
+                    return f"查询模式 [{message}] 未找到任何服务器"
                 filtered_data = sorted(
                     (item for item in cleaned_data),
                     key=lambda item: (-item['playerCount'], item['name'])
                 )
+                if cleaned_data and not filtered_data:
+                    if len(cleaned_data) < 4:
+                        filtered_data.append({'playerCount': -64, 'name': f'查询模式 [{message}] 未找到有人的服务器'})
+                        filtered_data.extend(cleaned_data)
+                    else:
+                        return f"查询模式 [{message}] 未找到有人的服务器"
             case "name" | "名称" | "名字":
                 cleaned_data = filter_name_mod(servers, message)
+                # print("cleanedata")
+                print(cleaned_data)
+                # print("over")
                 if not cleaned_data:
-                    return f"查询名称 [{message}] 未找到有人的服务器"
+                    return f"查询名称 [{message}] 未找到任何服务器"
                 else:
                     if len(cleaned_data) == 1 and cleaned_data[0]['playerCount'] == 0:
                         return f"现在没有任何人！-> {cleaned_data[0]['name']}"
@@ -462,6 +576,13 @@ def get_server(query_type, message):
                     (item for item in cleaned_data if item['playerCount'] != 0),
                     key=lambda item: (-item['playerCount'], item['name'])
                 )
+                if cleaned_data and not filtered_data:
+                    if len(cleaned_data) < 4:
+                        filtered_data.append({'playerCount': -64, 'name': f'查询模式 [{message}] 未找到有人的服务器'})
+                        filtered_data.extend(cleaned_data)
+                    else:
+                        return f"查询模式 [{message}] 未找到有人的服务器"
+
         # if test:
         #     filtered_data.append({
         #         "playerCount": -1,
@@ -615,6 +736,7 @@ last_get_server_time = 0
 processing_set = set()
 thread_count = 0
 chat_history = []
+thread_index = 0
 
 # 彩色列表
 COLORS = [
@@ -634,118 +756,127 @@ COLORS = [
     "\033[38;2;254;250;195m",
     "\033[38;2;199;245;190m"
 ]
+# ☆★
 EMOJI_LIST = [
     "(≧▽≦)/", "(=^･ω･^=)", "(｡>ω<｡)", "(｡>﹏<｡)",
-    "～(つˆДˆ)つ", "(｀・ω・´)", "(ﾉ≧∀≦)ﾉ"
+    "～(つˆДˆ)つ", "(｀・ω・´)", "(ﾉ≧∀≦)ﾉ",
+    "_(:з」∠)_", "(=・ω・=)", "_(≧v≦」∠)_", "(〜￣△￣)〜", "╮(￣▽￣)╭", "(・ω< )☆", "(^・ω・^)", "(｡･ω･｡)"
 ]
 NIGHT_EMOJI = "(。-ω-)zzz"
 # 转拼音 初始化模型参数
+# 转拼音 初始化模型参数
 custom_dict = {
-    "meng xin lei mu": ("萌新泪目", 3),
-    "meng xin qiu dai": ("萌新求带", 3),
+    "meng xin lei mu": "萌新泪目",
+    "meng xin qiu dai": "萌新求带",
 
-    "zhong li xing": ("重力星", 2),
-    "fei huo xing": ("飞火星", 2),
-    "dian zi yan": ("电子烟", 2),
-    "mai chong dao": ("脉冲刀", 2),
-    "zhuan huan zhe": ("转换者", 2),
-    "ke lai bo": ("克莱博", 2),
-    "yang lao fu": ("养老服", 2),
-    "meng xin fu": ("萌新服", 2),
+    "zhong li xing": "重力星",
+    "fei huo xing": "飞火星",
+    "dian zi yan": "电子烟",
+    "mai chong dao": "脉冲刀",
+    "zhuan huan zhe": "转换者",
+    "ke lai bo": "克莱博",
+    "yang lao fu": "养老服",
+    "meng xin fu": "萌新服",
 
-    "zhuan pin yin": ("转拼音", 2),
-    "zhuan wen zi": ("转文字", 2),
-    "yue lai yue": ("越来越", 2),
-    "zhun que lv": ("准确率", 2),
+    "da fei jiao": "大飞脚",
+    "huan dan ai": "换弹癌",
+    "wo lei ge": "我嘞个",
+    "zhuan pin yin": "转拼音",
+    "zhuan wen zi": "转文字",
+    "yue lai yue": "越来越",
+    "zhun que lv": "准确率",
 
-    "zhong li": ("重力", 1),
-    "nie lei": ("捏雷", 1),
-    "dian yan": ("电烟", 1),
-    "di lei": ("地雷", 1),
-    "ji su": ("激素", 1),
-    "yin shen": ("隐身", 1),
-    "gou zhua": ("钩爪", 1),
-    "han luo": ("汗洛", 1),
-    "dian chong": ("电冲", 1),
-    "dian bi": ("电笔", 1),
-    "zi beng": ("滋嘣", 1),
-    "a dun": ("А盾", 1),
-    "adun": ("А盾", 1),
-    "c dun": ("Ϲ盾", 1),
-    "cdun": ("Ϲ盾", 1),
-    "r101": ("Ŕ301", 1),
-    "r201": ("Ŕ201", 1),
-    "r301": ("Ŕ101", 1),
-    "r97": ("Ŕ97", 1),
-    "p2016": ("Р2016", 1),
-    "re45": ("ŔЕ45", 1),
-    "l star": ("LStar", 1),
-    "zha nan": ("扎男", 1),
-    "li zi": ("离子", 1),
-    "lang ren": ("浪人", 1),
-    "lang meng": ("狼萌", 1),
-    "meng xin": ("萌新", 1),
-    "huai xiao": ("坏小", 1),
-    "ma le": ("马了", 1),
+    "zhong li": "重力",
+    "nie lei": "捏雷",
+    "dian yan": "电烟",
+    "di lei": "地雷",
+    "ji su": "激素",
+    "xiang wei": "相位",
+    "yin shen": "隐身",
+    "gou zhua": "钩爪",
+    "han luo": "汗洛",
+    "dian chong": "电冲",
+    "dian bi": "电笔",
+    "zi beng": "滋嘣",
+    "a dun": "A盾",
+    "adun": ("A盾", 2),
+    "c dun": ("C盾", 1),
+    "cdun": ("C盾", 2),
+    "zha nan": "扎男",
+    "li zi": "离子",
+    "lang ren": "浪人",
+    "lang meng": "狼萌",
+    "meng xin": "萌新",
+    "huai xiao": "坏小",
 
-    "da yue": ("大约", 1),
-    "bu que": ("不缺", 1),
-    "que que": ("确确", 1),
-    "zhu que": ("准确", 1),
-    "ming que": ("明确", 1),
-    "zhun que": ("准确", 1),
-    "que bao": ("确保", 1),
-    "que fa": ("缺乏", 1),
-    "que shao": ("缺少", 1),
-    "que shi": ("确实", 1),
-    "que qie": ("确切", 1),
-    "que de": ("缺德", 1),
-    "que xi": ("缺席", 1),
-    "que qin": ("缺勤", 1),
-    "que wei": ("缺位", 1),
-    "que yi": ("缺一", 1),
-
-    "xi yue": ("喜悦", 1),
-    "yin yue": ("音乐", 1),
-    "yue ding": ("约定", 1),
-    "yue du": ("阅读", 1),
-    "yue er": ("悦耳", 1),
-    "yue fen": ("月份", 1),
-    "yue guo": ("越过", 1),
-    "yue jin": ("跃进", 1),
-    "yue jie": ("越界", 1),
-    "yue lai": ("越来", 1),
-    "yue liang": ("月亮", 1),
-    "yue mu": ("悦目", 1),
-    "yue shu": ("约束", 1),
-    "yue yu": ("越狱", 1),
-    "yue yue": ("跃跃", 1),
-
-    "cao": ("草", 0),
-    "ya": ("呀", 0),
-
-    "que": ("却", 0),
-    "yue": ("月", 0)
-
+    "ji ba": "几把",
+    "hao ma": "好马",
+    "liu le": "溜了",
+    "ma qiang": "马枪",
+    "ma wan": "马完",
+    "quan shi": "全是",
+    "shou lei": "手雷",
+    "ye ma": "也马",
+    "you lai": "又来"
+    
 }
-# Ϲ 希腊字母
-# АВ ДЕFGНІЈКLМNОРQ ЅТUVWХYZ 西里尔字母
-# ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ 全角拉丁字母（Fullwidth Latin Letters）
-# input_text = "Á B́ Ć D́ É F́ Ǵ H́ Í J́ Ḱ Ĺ Ḿ Ń Ó Ṕ Q́ Ŕ Ś T́ Ú V́ Ẃ X́ Ý Ź" 拉丁大写字母带锐音符 抑扬符 ААᎪ𝔸 Č
-# input_text = "zhong li xing.ΑААᎪ𝔸 tai tan dian yan dian zi yan С LStar Ŕ97 chong feng qiang dian bi liu dan ke lai bo"
-# input_text = "mai chong dao ji su yin shen gou zhua fen shen shuang chong san chong"
-# input_text = "li zi lie yan qiang li lang ren jun tuan di wang bei ji xing yang lao fu wu qi"
+
+pinyin_syllables = {'a', 'ai', 'an', 'ang', 'ao', 'ba', 'bai', 'ban', 'bang', 'bao', 'bei', 'ben', 'beng', 'bi',
+                    'bian', 'biao', 'bie', 'bin', 'bing', 'bo', 'bu', 'ca', 'cai', 'can', 'cang', 'cao', 'ce',
+                    'cen', 'ceng', 'cha', 'chai', 'chan', 'chang', 'chao', 'che', 'chen', 'cheng', 'chi', 'chong',
+                    'chou', 'chu', 'chuai', 'chuan', 'chuang', 'chui', 'chun', 'chuo', 'ci', 'cong', 'cou', 'cu',
+                    'cuan', 'cui', 'cun', 'cuo', 'da', 'dai', 'dan', 'dang', 'dao', 'de', 'deng', 'di', 'dian',
+                    'diao', 'die', 'ding', 'diu', 'dong', 'dou', 'du', 'duan', 'dui', 'dun', 'duo', 'e', 'en', 'er',
+                    'fa', 'fan', 'fang', 'fei', 'fen', 'feng', 'fo', 'fou', 'fu', 'ga', 'gai', 'gan', 'gang', 'gao',
+                    'ge', 'gei', 'gen', 'geng', 'gong', 'gou', 'gu', 'gua', 'guai', 'guan', 'guang', 'gui', 'gun',
+                    'guo', 'ha', 'hai', 'han', 'hang', 'hao', 'he', 'hei', 'hen', 'heng', 'hong', 'hou', 'hu',
+                    'hua', 'huai', 'huan', 'huang', 'hui', 'hun', 'huo', 'ji', 'jia', 'jian', 'jiang', 'jiao',
+                    'jie', 'jin', 'jing', 'jiong', 'jiu', 'ju', 'juan', 'jue', 'jun', 'ka', 'kai', 'kan', 'kang',
+                    'kao', 'ke', 'ken', 'keng', 'kong', 'kou', 'ku', 'kua', 'kuai', 'kuan', 'kuang', 'kui', 'kun',
+                    'kuo', 'la', 'lai', 'lan', 'lang', 'lao', 'le', 'lei', 'leng', 'li', 'lia', 'lian', 'liang',
+                    'liao', 'lie', 'lin', 'ling', 'liu', 'long', 'lou', 'lu', 'luan', 'lue', 'lun', 'luo', 'ma',
+                    'mai', 'man', 'mang', 'mao', 'me', 'mei', 'men', 'meng', 'mi', 'mian', 'miao', 'mie', 'min',
+                    'ming', 'miu', 'mo', 'mou', 'mu', 'na', 'nai', 'nan', 'nang', 'nao', 'ne', 'nei', 'nen', 'neng',
+                    'ni', 'nian', 'niang', 'niao', 'nie', 'nin', 'ning', 'niu', 'nong', 'nou', 'nu', 'nuan', 'nue',
+                    'nun', 'nuo', 'o', 'ou', 'pa', 'pai', 'pan', 'pang', 'pao', 'pei', 'pen', 'peng', 'pi', 'pian',
+                    'piao', 'pie', 'pin', 'ping', 'po', 'pou', 'pu', 'qi', 'qia', 'qian', 'qiang', 'qiao', 'qie',
+                    'qin', 'qing', 'qiong', 'qiu', 'qu', 'quan', 'que', 'qun', 'ran', 'rang', 'rao', 're', 'ren',
+                    'reng', 'ri', 'rong', 'rou', 'ru', 'ruan', 'rui', 'run', 'ruo', 'sa', 'sai', 'san', 'sang',
+                    'sao', 'se', 'sen', 'seng', 'sha', 'shai', 'shan', 'shang', 'shao', 'she', 'shen', 'sheng',
+                    'shi', 'shou', 'shu', 'shua', 'shuai', 'shuan', 'shuang', 'shui', 'shun', 'shuo', 'si', 'song',
+                    'sou', 'su', 'suan', 'sui', 'sun', 'suo', 'ta', 'tai', 'tan', 'tang', 'tao', 'te', 'teng', 'ti',
+                    'tian', 'tiao', 'tie', 'ting', 'tong', 'tou', 'tu', 'tuan', 'tui', 'tun', 'tuo', 'wa', 'wai',
+                    'wan', 'wang', 'wei', 'wen', 'weng', 'wo', 'wu', 'xi', 'xia', 'xian', 'xiang', 'xiao', 'xie',
+                    'xin', 'xing', 'xiong', 'xiu', 'xu', 'xuan', 'xue', 'xun', 'ya', 'yan', 'yang', 'yao', 'ye',
+                    'yi', 'yin', 'ying', 'yo', 'yong', 'you', 'yu', 'yuan', 'yue', 'yun', 'za', 'zai', 'zan',
+                    'zang', 'zao', 'ze', 'zei', 'zen', 'zeng', 'zha', 'zhai', 'zhan', 'zhang', 'zhao', 'zhe',
+                    'zhen', 'zheng', 'zhi', 'zhong', 'zhou', 'zhu', 'zhua', 'zhuai', 'zhuan', 'zhuang', 'zhui',
+                    'zhun', 'zhuo', 'zi', 'zong', 'zou', 'zu', 'zuan', 'zui', 'zun', 'zuo',
+                    'jve', 'lve', 'nve', 'qve', 'xve', 'yve'}
+
+uv_pinyin_list = {
+    'jue': 'jve', 'lue': 'lve', 'nue': 'nve', 'que': 'qve', 'xue': 'xve', 'yue': 'yve'
+}
+
+block_words = {
+    "操": "草",
+    "妈": "马",
+
+    "傻逼": "傻B",
+
+    "码": "吗"
+}
 
 # Emoji 映射表
 emoji_map = {
-    "slightly_smiling_face": ":)",
-    "smiling_face_with_smiling_eyes": "0v0",
-    "grinning_face": ":D",
-    "smiling_face_with_hearts": "(^▽^)",
-    "face_with_tears_of_joy": "XD",
-    "thinking_face": "(._.)",
-    "winking_face": "(^_~)",
-    "thumbs_up": "(b^_^)b"
+    ":slightly_smiling_face:": ":smiling_face_ovo:)",
+    ":smiling_face_with_smiling_eyes": "0v0",
+    ":grinning_face:": ":D",
+    ":smiling_face_with_hearts:": "(^▽^)",
+    ":face_with_tears_of_joy:": "XD",
+    ":thinking_face:": "(._.)",
+    ":winking_face:": "(^_~)",
+    ":thumbs_up:": "(b^_^)b"
 }
 chinese_chars = set("，。？！（）【】、；：") | set(chr(i) for i in range(0x4E00, 0x9FFF))
 # 将 转化为ASCII表情 例如"grinning_face": ":D",
@@ -764,7 +895,7 @@ trans_to_gamemode = {
 
 dag_params = DefaultDagParams()
 
+converter = PinyinChineseConverter(pinyin_syllables, uv_pinyin_list, dag_params, custom_dict)
 if __name__ == "__main__":
-    
     # 检测文件
     monitor_file()
