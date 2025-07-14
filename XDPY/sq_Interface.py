@@ -19,8 +19,6 @@ save_history = True
 AI_limit = False
 
 
-# todo 转拼音一个字母问题
-
 def process_entry(timestamp, player_name, command, message, say):
     """Process a new entry asynchronously."""
     global thread_count, thread_index
@@ -46,20 +44,24 @@ def process_entry(timestamp, player_name, command, message, say):
 
     thread_count += 1
     match command:
+        case "init":
+            py_message = next_half_or_full_hour_final()
         case "g_pinyin":
-            py_message = convert_chinese_to_pinyin(message, True)
+            py_message = pinyin2hanzi_converter.pinyin_groups_to_chinese(message, True)
             command = "pinyin"
             is_not_func = True
-        case "pinyin":
-            py_message = convert_chinese_to_pinyin(message, False)
         case "time":
             py_message = time.strftime("%H:%M:%S")
         case "ai":
             py_message = deepseek(player_name, message, True)
         case "server":
             py_message = get_server(message[0], message[1])
-        case "init":
-            py_message = next_half_or_full_hour_final()
+        case "pinyin_add":
+            py_message = pinyin2hanzi_converter.add_pinyin_mapping(message)
+        case "pinyin_del":
+            py_message = pinyin2hanzi_converter.del_pinyin_mapping(message)
+        case "pinyin":
+            py_message = pinyin2hanzi_converter.pinyin_groups_to_chinese(message, False)
         case _:
             print(f"无此方法 {command}")
             is_not_func = True
@@ -173,7 +175,7 @@ def next_half_or_full_hour_final():
 
     # 判断是否为凌晨0点~6点
     if 0 <= next_time.hour < 6 and random.random() < 0.99:
-        text_emoji = NIGHT_EMOJI
+        text_emoji = "(。-ω-)zzz"
     else:
         text_emoji = random.choice(EMOJI_LIST)
 
@@ -184,26 +186,107 @@ def next_half_or_full_hour_final():
 
 
 # 转拼音：
-def convert_chinese_to_pinyin(text, is_strict_mode=False):
-    return converter.pinyin_groups_to_chinese(converter.split_text_by_pinyin_group(text), is_strict_mode=is_strict_mode)
-
 def simple_replace(text, replace_dict):
     pattern = re.compile("|".join(re.escape(k) for k in replace_dict))
     return pattern.sub(lambda m: replace_dict[m.group(0)], text)
 
+
 class PinyinChineseConverter:
-    def __init__(self, c_pinyin_syllables, c_uv_pinyin_list, c_dag_params, c_custom_dict):
+    def __init__(self, c_pinyin_syllables, c_uv_pinyin_list, c_dag_params, c_custom_dict, c_block_words,
+                 c_temp_pinyin_dict_path):
         self.pinyin_syllables = c_pinyin_syllables
         self.uv_pinyin_list = c_uv_pinyin_list
         self.dag_params = c_dag_params
-        self.custom_dict = c_custom_dict
+        self.block_words = c_block_words
+        self.temp_pinyin_dict_path = c_temp_pinyin_dict_path
+        self.temp_pinyin_dict = {}
+        self.load_temp_pinyin_dict()
+        self.basic_dict = c_custom_dict
+        self.custom_dict = c_custom_dict | self.temp_pinyin_dict
+
+    def reload_dict(self):
+        self.custom_dict = self.basic_dict | self.temp_pinyin_dict
+
+    def load_temp_pinyin_dict(self):
+        if os.path.exists(self.temp_pinyin_dict_path):
+            try:
+                with open(self.temp_pinyin_dict_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    d = data.get("temp_pinyin_dict", {})
+                    if not isinstance(d, dict):
+                        print("警告：temp_pinyin_dict不是一个字典对象，已重置为空字典。")
+                        self.temp_pinyin_dict = {}
+                    else:
+                        self.temp_pinyin_dict = d
+                return True
+            except Exception as e:
+                print(f"加载temp_pinyin_dict时出现异常: {e}，已重置为空字典。")
+                self.temp_pinyin_dict = {}
+                return False
+        else:
+            self.temp_pinyin_dict = {}
+            return False
+
+    def save_temp_pinyin_dict(self):
+        with open(self.temp_pinyin_dict_path, 'w', encoding='utf-8') as f:
+            json.dump({"temp_pinyin_dict": self.temp_pinyin_dict}, f, ensure_ascii=False, indent=4)
+
+    # 读入已有 temp_pinyin_dict
+
+    def add_pinyin_mapping(self, s):
+        s = s.strip()
+        # 查找第一个汉字
+        for idx, c in enumerate(s):
+            if is_chinese(c):
+                pinyin_raw = s[:idx].rstrip()
+                pin = ' '.join(pinyin_raw.split())
+                if pin in self.temp_pinyin_dict:
+                    str_dict = f"\"{pin}\": \"{self.temp_pinyin_dict[pin]}\""
+                    print(f"[Pinyin Add] Conflict {str_dict}")
+                    return f"已有: {str_dict}"
+                elif pin in self.basic_dict:
+                    str_dict = f"\"{pin}\": \"{self.basic_dict[pin]}\""
+                    print(f"[Pinyin Add] Conflict {str_dict}")
+                    return f"已有 (受保护): {str_dict}"
+                else:
+                    hz = s[idx:]
+                    self.temp_pinyin_dict[pin] = hz
+                    self.custom_dict[pin] = hz
+                    self.save_temp_pinyin_dict()
+                    str_dict = f"\"{pin}\": \"{hz}\""
+                    print(f"[Pinyin Add] Success {str_dict}")
+                    return f"添加成功: {str_dict}"
+        print(f"[Pinyin Add] Fail 未找到中文 {s}")
+        return f"添加拼音失败：未找到中文 {s}"
+
+    def del_pinyin_mapping(self, s):
+        s = s.strip()
+        # 只处理拼音部分，忽略后面是否有汉字
+        pin = ' '.join(s.split())
+        if pin in self.temp_pinyin_dict:
+            hz = self.temp_pinyin_dict[pin]
+            del self.temp_pinyin_dict[pin]
+            del self.custom_dict[pin]
+            self.save_temp_pinyin_dict()
+            str_dict = f"\"{pin}\": \"{hz}\""
+            print(f"[Pinyin Del] Success {str_dict}")
+            return f"已删除: {str_dict}"
+        elif pin in self.basic_dict:
+            str_dict = f"\"{pin}\": \"{self.basic_dict[pin]}\""
+            print(f"[Pinyin Del] Protect Fail {str_dict}")
+            return f"无法删除 (受保护): {str_dict}"
+        else:
+            print(f"[Pinyin Del] Fail \"{pin}\"")
+            return f"没有找到拼音 \"{pin}\"，无法删除"
+        # unreachable
+        # return "del_pinyin_mapping unreachable"
 
     def is_pinyin_syllable(self, word):
         return word.lower() in self.pinyin_syllables
 
     def split_text_by_pinyin_group(self, text):
         """
-        将文本按拼音组切分，True是拼音组，False是原文
+        第一步，将文本按拼音组切分，True是拼音组，False是原文
         """
         tokens = re.findall(r'[A-Za-z]+|\s+|[^A-Za-z\s]+', text)
         res = []
@@ -234,7 +317,7 @@ class PinyinChineseConverter:
 
     def pinyin_group_to_chinese_candidates(self, pinyin_list, topk, result, fail_count_dict):
         """
-        拼音组转到所有可用中文（递归、最大匹配）
+        第二步，拼音组转成中文（递归、最大匹配）
         """
         if len(pinyin_list) == 0:
             return
@@ -242,15 +325,15 @@ class PinyinChineseConverter:
             prefix = pinyin_list[:L]
             lowercase_prefix = [word.lower() for word in prefix]
             dag_results = dag(self.dag_params, lowercase_prefix, path_num=topk)
-            print(f"[Pinyin Loop] {lowercase_prefix}")
+            print(f"[Pinyin] Loop {lowercase_prefix}")
             if dag_results:
                 cand = dag_results[0].path
                 result.append(cand)
-                print(f"[Pinyin Success] {cand}")
+                print(f"[Pinyin] Success {cand}")
                 self.pinyin_group_to_chinese_candidates(pinyin_list[L:], topk, result, fail_count_dict)
                 return
 
-        print(f"[Pinyin Fail] {pinyin_list}")
+        print(f"[Pinyin] Fail {pinyin_list}")
         fail_count_dict["count"] += 1
         result.append([pinyin_list[0]])
         self.pinyin_group_to_chinese_candidates(pinyin_list[1:], topk, result, fail_count_dict)
@@ -258,7 +341,7 @@ class PinyinChineseConverter:
     # intentionally not static
     def tokenize_with_pinyin_and_span(self, text):
         """
-        转文字后转拼音为自定义词典做准备
+        第三步，转文字后进行转拼音为自定义词典做准备
         """
         tokens = []
         spans = []
@@ -278,18 +361,18 @@ class PinyinChineseConverter:
                 tokens.append(text[i:j])
                 spans.append((i, j))
                 i = j
-        print(f"[Pinyin Custom] {tokens}")
+        print(f"[Pinyin] Custom {tokens}")
         return tokens, spans
 
     def custom_dict_replace(self, text, fail_count_dict):
         """
-        查找并替换自定义拼音短语
+        第四步，在拼音串查找并替换自定义拼音短语
         """
         tokens, spans = self.tokenize_with_pinyin_and_span(text)
         n = len(tokens)
         out = []
         i = 0
-        max_len = max(len(k.split()) for k in self.custom_dict)
+        max_len = max(len(k) for k in self.custom_dict)
         while i < n:
             hit = False
             for L in range(min(max_len, n - i), 0, -1):
@@ -315,13 +398,15 @@ class PinyinChineseConverter:
                 i += 1
         return ''.join(out)
 
-    def pinyin_groups_to_chinese(self, pinyin_groups, is_strict_mode, topk=1):
+    def pinyin_groups_to_chinese(self, text, is_strict_mode, topk=1):
         """
         主流程：拼音组转最终中文
         """
+
         final_result = []
         fail_count_dict = {"count": 0}
         pinyin_len = 0
+        pinyin_groups = self.split_text_by_pinyin_group(text)
         for is_pinyin_group, content in pinyin_groups:
             if is_pinyin_group:  # 转拼音
                 result = []
@@ -331,16 +416,19 @@ class PinyinChineseConverter:
                     final_result.append(''.join(chinese_part))
                 pinyin_len += len(content)
             else:
+                pinyin_len += 1
                 fail_count_dict["count"] += 1
                 final_result.append(content)
 
         final_result_str = ''.join(final_result)
         process_result = self.custom_dict_replace(final_result_str, fail_count_dict)
-        process_white_result = simple_replace(process_result, block_words)
+        # 最后屏蔽词过滤
+        process_white_result = simple_replace(process_result, self.block_words)
         fail_count = fail_count_dict["count"]
-        print(f"[Pinyin Fail_Count] {fail_count}")
+        print(f"[Pinyin] Fail_Count {fail_count}/{pinyin_len}")
         if is_strict_mode:
             if fail_count >= pinyin_len / 2.0:
+                print(f"[Pinyin] Fail {fail_count}/{pinyin_len} {text}")
                 return ""
         return process_white_result
 
@@ -762,111 +850,123 @@ EMOJI_LIST = [
     "～(つˆДˆ)つ", "(｀・ω・´)", "(ﾉ≧∀≦)ﾉ",
     "_(:з」∠)_", "(=・ω・=)", "_(≧v≦」∠)_", "(〜￣△￣)〜", "╮(￣▽￣)╭", "(・ω< )☆", "(^・ω・^)", "(｡･ω･｡)"
 ]
-NIGHT_EMOJI = "(。-ω-)zzz"
+
+
+# NIGHT_EMOJI = "(。-ω-)zzz"
 # 转拼音 初始化模型参数
-# 转拼音 初始化模型参数
-custom_dict = {
-    "meng xin lei mu": "萌新泪目",
-    "meng xin qiu dai": "萌新求带",
+def pinyin2hanzi_init():
+    custom_dict = {
+        "meng xin lei mu": "萌新泪目",
+        "meng xin qiu dai": "萌新求带",
 
-    "zhong li xing": "重力星",
-    "fei huo xing": "飞火星",
-    "dian zi yan": "电子烟",
-    "mai chong dao": "脉冲刀",
-    "zhuan huan zhe": "转换者",
-    "ke lai bo": "克莱博",
-    "yang lao fu": "养老服",
-    "meng xin fu": "萌新服",
+        "zhong li xing": "重力星",
+        "fei huo xing": "飞火星",
+        "dian zi yan": "电子烟",
+        "mai chong dao": "脉冲刀",
+        "zhuan huan zhe": "转换者",
+        "ke lai bo": "克莱博",
+        "yang lao fu": "养老服",
+        "meng xin fu": "萌新服",
 
-    "da fei jiao": "大飞脚",
-    "huan dan ai": "换弹癌",
-    "wo lei ge": "我嘞个",
-    "zhuan pin yin": "转拼音",
-    "zhuan wen zi": "转文字",
-    "yue lai yue": "越来越",
-    "zhun que lv": "准确率",
+        "da fei jiao": "大飞脚",
+        "huan dan ai": "换弹癌",
+        "wo lei ge": "我嘞个",
+        "zhuan pin yin": "转拼音",
+        "zhuan wen zi": "转文字",
+        "yue lai yue": "越来越",
+        "zhun que lv": "准确率",
 
-    "zhong li": "重力",
-    "nie lei": "捏雷",
-    "dian yan": "电烟",
-    "di lei": "地雷",
-    "ji su": "激素",
-    "xiang wei": "相位",
-    "yin shen": "隐身",
-    "gou zhua": "钩爪",
-    "han luo": "汗洛",
-    "dian chong": "电冲",
-    "dian bi": "电笔",
-    "zi beng": "滋嘣",
-    "a dun": "A盾",
-    "adun": ("A盾", 2),
-    "c dun": ("C盾", 1),
-    "cdun": ("C盾", 2),
-    "zha nan": "扎男",
-    "li zi": "离子",
-    "lang ren": "浪人",
-    "lang meng": "狼萌",
-    "meng xin": "萌新",
-    "huai xiao": "坏小",
+        "zhong li": "重力",
+        "nie lei": "捏雷",
+        "dian yan": "电烟",
+        "di lei": "地雷",
+        "ji su": "激素",
+        "xiang wei": "相位",
+        "yin shen": "隐身",
+        "gou zhua": "钩爪",
+        "han luo": "汗洛",
+        "dian chong": "电冲",
+        "dian bi": "电笔",
+        "zi beng": "滋嘣",
+        "a dun": "A盾",
+        "adun": ("A盾", 2),
+        "c dun": ("C盾", 1),
+        "cdun": ("C盾", 2),
+        "zha nan": "扎男",
+        "li zi": "离子",
+        "lang ren": "浪人",
+        "lang meng": "狼萌",
+        "meng xin": "萌新",
+        "huai xiao": "坏小",
 
-    "ji ba": "几把",
-    "hao ma": "好马",
-    "liu le": "溜了",
-    "ma qiang": "马枪",
-    "ma wan": "马完",
-    "quan shi": "全是",
-    "shou lei": "手雷",
-    "ye ma": "也马",
-    "you lai": "又来"
-    
-}
+        "an dao": "按到",
+        "ji ba": "几把",
+        "hao ma": "好马",
+        "huan dan": "换弹",
+        "liu le": "溜了",
+        "ma qiang": "马枪",
+        "ma wan": "马完",
+        "quan shi": "全是",
+        "shou lei": "手雷",
+        "tun zi dan": "吞子弹",
+        "ye ma": "也马",
+        "you kai": "又开",
+        "you lai": "又来"
 
-pinyin_syllables = {'a', 'ai', 'an', 'ang', 'ao', 'ba', 'bai', 'ban', 'bang', 'bao', 'bei', 'ben', 'beng', 'bi',
-                    'bian', 'biao', 'bie', 'bin', 'bing', 'bo', 'bu', 'ca', 'cai', 'can', 'cang', 'cao', 'ce',
-                    'cen', 'ceng', 'cha', 'chai', 'chan', 'chang', 'chao', 'che', 'chen', 'cheng', 'chi', 'chong',
-                    'chou', 'chu', 'chuai', 'chuan', 'chuang', 'chui', 'chun', 'chuo', 'ci', 'cong', 'cou', 'cu',
-                    'cuan', 'cui', 'cun', 'cuo', 'da', 'dai', 'dan', 'dang', 'dao', 'de', 'deng', 'di', 'dian',
-                    'diao', 'die', 'ding', 'diu', 'dong', 'dou', 'du', 'duan', 'dui', 'dun', 'duo', 'e', 'en', 'er',
-                    'fa', 'fan', 'fang', 'fei', 'fen', 'feng', 'fo', 'fou', 'fu', 'ga', 'gai', 'gan', 'gang', 'gao',
-                    'ge', 'gei', 'gen', 'geng', 'gong', 'gou', 'gu', 'gua', 'guai', 'guan', 'guang', 'gui', 'gun',
-                    'guo', 'ha', 'hai', 'han', 'hang', 'hao', 'he', 'hei', 'hen', 'heng', 'hong', 'hou', 'hu',
-                    'hua', 'huai', 'huan', 'huang', 'hui', 'hun', 'huo', 'ji', 'jia', 'jian', 'jiang', 'jiao',
-                    'jie', 'jin', 'jing', 'jiong', 'jiu', 'ju', 'juan', 'jue', 'jun', 'ka', 'kai', 'kan', 'kang',
-                    'kao', 'ke', 'ken', 'keng', 'kong', 'kou', 'ku', 'kua', 'kuai', 'kuan', 'kuang', 'kui', 'kun',
-                    'kuo', 'la', 'lai', 'lan', 'lang', 'lao', 'le', 'lei', 'leng', 'li', 'lia', 'lian', 'liang',
-                    'liao', 'lie', 'lin', 'ling', 'liu', 'long', 'lou', 'lu', 'luan', 'lue', 'lun', 'luo', 'ma',
-                    'mai', 'man', 'mang', 'mao', 'me', 'mei', 'men', 'meng', 'mi', 'mian', 'miao', 'mie', 'min',
-                    'ming', 'miu', 'mo', 'mou', 'mu', 'na', 'nai', 'nan', 'nang', 'nao', 'ne', 'nei', 'nen', 'neng',
-                    'ni', 'nian', 'niang', 'niao', 'nie', 'nin', 'ning', 'niu', 'nong', 'nou', 'nu', 'nuan', 'nue',
-                    'nun', 'nuo', 'o', 'ou', 'pa', 'pai', 'pan', 'pang', 'pao', 'pei', 'pen', 'peng', 'pi', 'pian',
-                    'piao', 'pie', 'pin', 'ping', 'po', 'pou', 'pu', 'qi', 'qia', 'qian', 'qiang', 'qiao', 'qie',
-                    'qin', 'qing', 'qiong', 'qiu', 'qu', 'quan', 'que', 'qun', 'ran', 'rang', 'rao', 're', 'ren',
-                    'reng', 'ri', 'rong', 'rou', 'ru', 'ruan', 'rui', 'run', 'ruo', 'sa', 'sai', 'san', 'sang',
-                    'sao', 'se', 'sen', 'seng', 'sha', 'shai', 'shan', 'shang', 'shao', 'she', 'shen', 'sheng',
-                    'shi', 'shou', 'shu', 'shua', 'shuai', 'shuan', 'shuang', 'shui', 'shun', 'shuo', 'si', 'song',
-                    'sou', 'su', 'suan', 'sui', 'sun', 'suo', 'ta', 'tai', 'tan', 'tang', 'tao', 'te', 'teng', 'ti',
-                    'tian', 'tiao', 'tie', 'ting', 'tong', 'tou', 'tu', 'tuan', 'tui', 'tun', 'tuo', 'wa', 'wai',
-                    'wan', 'wang', 'wei', 'wen', 'weng', 'wo', 'wu', 'xi', 'xia', 'xian', 'xiang', 'xiao', 'xie',
-                    'xin', 'xing', 'xiong', 'xiu', 'xu', 'xuan', 'xue', 'xun', 'ya', 'yan', 'yang', 'yao', 'ye',
-                    'yi', 'yin', 'ying', 'yo', 'yong', 'you', 'yu', 'yuan', 'yue', 'yun', 'za', 'zai', 'zan',
-                    'zang', 'zao', 'ze', 'zei', 'zen', 'zeng', 'zha', 'zhai', 'zhan', 'zhang', 'zhao', 'zhe',
-                    'zhen', 'zheng', 'zhi', 'zhong', 'zhou', 'zhu', 'zhua', 'zhuai', 'zhuan', 'zhuang', 'zhui',
-                    'zhun', 'zhuo', 'zi', 'zong', 'zou', 'zu', 'zuan', 'zui', 'zun', 'zuo',
-                    'jve', 'lve', 'nve', 'qve', 'xve', 'yve'}
+    }
 
-uv_pinyin_list = {
-    'jue': 'jve', 'lue': 'lve', 'nue': 'nve', 'que': 'qve', 'xue': 'xve', 'yue': 'yve'
-}
+    pinyin_syllables = {'a', 'ai', 'an', 'ang', 'ao', 'ba', 'bai', 'ban', 'bang', 'bao', 'bei', 'ben', 'beng', 'bi',
+                        'bian', 'biao', 'bie', 'bin', 'bing', 'bo', 'bu', 'ca', 'cai', 'can', 'cang', 'cao', 'ce',
+                        'cen', 'ceng', 'cha', 'chai', 'chan', 'chang', 'chao', 'che', 'chen', 'cheng', 'chi', 'chong',
+                        'chou', 'chu', 'chuai', 'chuan', 'chuang', 'chui', 'chun', 'chuo', 'ci', 'cong', 'cou', 'cu',
+                        'cuan', 'cui', 'cun', 'cuo', 'da', 'dai', 'dan', 'dang', 'dao', 'de', 'deng', 'di', 'dian',
+                        'diao', 'die', 'ding', 'diu', 'dong', 'dou', 'du', 'duan', 'dui', 'dun', 'duo', 'e', 'en', 'er',
+                        'fa', 'fan', 'fang', 'fei', 'fen', 'feng', 'fo', 'fou', 'fu', 'ga', 'gai', 'gan', 'gang', 'gao',
+                        'ge', 'gei', 'gen', 'geng', 'gong', 'gou', 'gu', 'gua', 'guai', 'guan', 'guang', 'gui', 'gun',
+                        'guo', 'ha', 'hai', 'han', 'hang', 'hao', 'he', 'hei', 'hen', 'heng', 'hong', 'hou', 'hu',
+                        'hua', 'huai', 'huan', 'huang', 'hui', 'hun', 'huo', 'ji', 'jia', 'jian', 'jiang', 'jiao',
+                        'jie', 'jin', 'jing', 'jiong', 'jiu', 'ju', 'juan', 'jue', 'jun', 'ka', 'kai', 'kan', 'kang',
+                        'kao', 'ke', 'ken', 'keng', 'kong', 'kou', 'ku', 'kua', 'kuai', 'kuan', 'kuang', 'kui', 'kun',
+                        'kuo', 'la', 'lai', 'lan', 'lang', 'lao', 'le', 'lei', 'leng', 'li', 'lia', 'lian', 'liang',
+                        'liao', 'lie', 'lin', 'ling', 'liu', 'long', 'lou', 'lu', 'luan', 'lue', 'lun', 'luo', 'ma',
+                        'mai', 'man', 'mang', 'mao', 'me', 'mei', 'men', 'meng', 'mi', 'mian', 'miao', 'mie', 'min',
+                        'ming', 'miu', 'mo', 'mou', 'mu', 'na', 'nai', 'nan', 'nang', 'nao', 'ne', 'nei', 'nen', 'neng',
+                        'ni', 'nian', 'niang', 'niao', 'nie', 'nin', 'ning', 'niu', 'nong', 'nou', 'nu', 'nuan', 'nue',
+                        'nun', 'nuo', 'o', 'ou', 'pa', 'pai', 'pan', 'pang', 'pao', 'pei', 'pen', 'peng', 'pi', 'pian',
+                        'piao', 'pie', 'pin', 'ping', 'po', 'pou', 'pu', 'qi', 'qia', 'qian', 'qiang', 'qiao', 'qie',
+                        'qin', 'qing', 'qiong', 'qiu', 'qu', 'quan', 'que', 'qun', 'ran', 'rang', 'rao', 're', 'ren',
+                        'reng', 'ri', 'rong', 'rou', 'ru', 'ruan', 'rui', 'run', 'ruo', 'sa', 'sai', 'san', 'sang',
+                        'sao', 'se', 'sen', 'seng', 'sha', 'shai', 'shan', 'shang', 'shao', 'she', 'shen', 'sheng',
+                        'shi', 'shou', 'shu', 'shua', 'shuai', 'shuan', 'shuang', 'shui', 'shun', 'shuo', 'si', 'song',
+                        'sou', 'su', 'suan', 'sui', 'sun', 'suo', 'ta', 'tai', 'tan', 'tang', 'tao', 'te', 'teng', 'ti',
+                        'tian', 'tiao', 'tie', 'ting', 'tong', 'tou', 'tu', 'tuan', 'tui', 'tun', 'tuo', 'wa', 'wai',
+                        'wan', 'wang', 'wei', 'wen', 'weng', 'wo', 'wu', 'xi', 'xia', 'xian', 'xiang', 'xiao', 'xie',
+                        'xin', 'xing', 'xiong', 'xiu', 'xu', 'xuan', 'xue', 'xun', 'ya', 'yan', 'yang', 'yao', 'ye',
+                        'yi', 'yin', 'ying', 'yo', 'yong', 'you', 'yu', 'yuan', 'yue', 'yun', 'za', 'zai', 'zan',
+                        'zang', 'zao', 'ze', 'zei', 'zen', 'zeng', 'zha', 'zhai', 'zhan', 'zhang', 'zhao', 'zhe',
+                        'zhen', 'zheng', 'zhi', 'zhong', 'zhou', 'zhu', 'zhua', 'zhuai', 'zhuan', 'zhuang', 'zhui',
+                        'zhun', 'zhuo', 'zi', 'zong', 'zou', 'zu', 'zuan', 'zui', 'zun', 'zuo',
+                        'jve', 'lve', 'nve', 'qve', 'xve', 'yve'}
 
-block_words = {
-    "操": "草",
-    "妈": "马",
+    uv_pinyin_list = {
+        'jue': 'jve', 'lue': 'lve', 'nue': 'nve', 'que': 'qve', 'xue': 'xve', 'yue': 'yve'
+    }
 
-    "傻逼": "傻B",
+    block_words = {
+        "操": "草",
+        "妈": "马",
 
-    "码": "吗"
-}
+        "傻逼": "傻B",
 
+        "码": "吗"
+    }
+    dag_params = DefaultDagParams()
+    temp_pinyin_dict_path = 'temp/temp_dict.json'
+    return PinyinChineseConverter(pinyin_syllables, uv_pinyin_list, dag_params, custom_dict, block_words,
+                                  temp_pinyin_dict_path)
+
+
+pinyin2hanzi_converter = pinyin2hanzi_init()
 # Emoji 映射表
 emoji_map = {
     ":slightly_smiling_face:": ":smiling_face_ovo:)",
@@ -893,9 +993,7 @@ trans_to_gamemode = {
     "边境防御大师": ["fd_master"]
 }
 
-dag_params = DefaultDagParams()
 
-converter = PinyinChineseConverter(pinyin_syllables, uv_pinyin_list, dag_params, custom_dict)
 if __name__ == "__main__":
     # 检测文件
     monitor_file()
