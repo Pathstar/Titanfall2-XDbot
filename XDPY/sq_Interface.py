@@ -25,7 +25,7 @@ def process_entry(timestamp, player_name, command, message, say):
     start_time = time.time()
     start_strftime = time.strftime("%H:%M:%S")
     # print(f"{start_strftime} Begin: {player_name}: {command}" + (f"\n{message}" if message else ""))
-    print(f"[XDlog] {start_strftime} Begin: {player_name}: {command} {message}")
+    print(f"[XDlog] {start_strftime} Begin {{command}}: {player_name}: {message}")
     is_not_func = False
     py_message = ""
 
@@ -89,7 +89,7 @@ def process_entry(timestamp, player_name, command, message, say):
         with open(result_file_path, 'w', encoding='utf-8') as f:
             json.dump(existing_data, f, ensure_ascii=False, indent=4)
         end_strftime = time.strftime("%H:%M:%S")
-        print(f"[XDlog] {end_strftime} Finish: {player_name}: {message} use: {process_time}\n{py_message}\n")
+        print(f"[XDlog] {end_strftime} Finish {command}: {player_name}: {message} use: {process_time}\n{py_message}\n")
     except Exception as e:
         print("[XDlog] Failed to update result JSON:", e)
 
