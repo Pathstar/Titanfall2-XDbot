@@ -1,0 +1,111 @@
+meng xin lei mu: ('萌新泪目', 3)
+meng xin qiu dai: ('萌新求带', 3)
+zhong li xing: ('重力星', 2)
+fei huo xing: ('飞火星', 2)
+dian zi yan: ('电子烟', 2)
+mai chong dao: ('脉冲刀', 2)
+zhuan huan zhe: ('转换者', 2)
+ke lai bo: ('克莱博', 2)
+yang lao fu: ('养老服', 2)
+meng xin fu: ('萌新服', 2)
+zhuan pin yin: ('转拼音', 2)
+zhuan wen zi: ('转文字', 2)
+yue lai yue: ('越来越', 2)
+zhun que lv: ('准确率', 2)
+zhong li: ('重力', 1)
+nie lei: ('捏雷', 1)
+dian yan: ('电烟', 1)
+di lei: ('地雷', 1)
+ji su: ('激素', 1)
+yin shen: ('隐身', 1)
+gou zhua: ('钩爪', 1)
+han luo: ('汗洛', 1)
+dian chong: ('电冲', 1)
+dian bi: ('电笔', 1)
+zi beng: ('滋嘣', 1)
+a dun: ('А盾', 1)
+adun: ('А盾', 1)
+c dun: ('Ϲ盾', 1)
+cdun: ('Ϲ盾', 1)
+r101: ('Ř301', 1)
+r201: ('Ř201', 1)
+r301: ('Ř101', 1)
+r97: ('Ř97', 1)
+p2016: ('Р2016', 1)
+re45: ('ŘЕ45', 1)
+l star: ('LStar', 1)
+zha nan: ('扎男', 1)
+li zi: ('离子', 1)
+lang ren: ('浪人', 1)
+lang meng: ('狼萌', 1)
+meng xin: ('萌新', 1)
+huai xiao: ('坏小', 1)
+ma le: ('马了', 1)
+da yue: ('大约', 1)
+bu que: ('不缺', 1)
+que que: ('确确', 1)
+zhu que: ('准确', 1)
+ming que: ('明确', 1)
+zhun que: ('准确', 1)
+que bao: ('确保', 1)
+que fa: ('缺乏', 1)
+que shao: ('缺少', 1)
+que shi: ('确实', 1)
+que qie: ('确切', 1)
+que de: ('缺德', 1)
+que xi: ('缺席', 1)
+que qin: ('缺勤', 1)
+que wei: ('缺位', 1)
+que yi: ('缺一', 1)
+xi yue: ('喜悦', 1)
+yin yue: ('音乐', 1)
+yue ding: ('约定', 1)
+yue du: ('阅读', 1)
+yue er: ('悦耳', 1)
+yue fen: ('月份', 1)
+yue guo: ('越过', 1)
+yue jin: ('跃进', 1)
+yue jie: ('越界', 1)
+yue lai: ('越来', 1)
+yue liang: ('月亮', 1)
+yue mu: ('悦目', 1)
+yue shu: ('约束', 1)
+yue yu: ('越狱', 1)
+yue yue: ('跃跃', 1)
+cao: ('草', 0)
+ya: ('呀', 0)
+que: ('却', 0)
+yue: ('月', 0)
+18:36:43 Monitoring file changes...
+18:37:44 Monitoring file changes...
+[XDlog] 18:53:09 Begin: [BOT] Pathstar_XD: g_pinyin nie ma
+[Pinyin]: [['捏', '码']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 18:53:09 Finish: [BOT] Pathstar_XD: nie ma use: 0.003523111343383789
+捏码 
+[XDlog] 19:09:31 Begin: [新鲜薯条] ccser1145: g_pinyin tai bang le , 20 si ji nian QAQ
+[Pinyin]: [['钛棒', '了']]
+[Pinyin]: [['钛棒', '了'], [','], ['20'], ['司', '纪念']]
+[XDlog] fail_count: 3 pinyin_len: 9
+[XDlog] 19:09:31 Finish: [新鲜薯条] ccser1145: tai bang le , 20 si ji nian QAQ use: 0.007724761962890625
+钛棒了,20司纪念QAQ 
+[XDlog] 20:17:35 Begin: [保登心愛] fjdjm: g_pinyin chi fang
+[Pinyin]: [['持', '方']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 20:17:35 Finish: [保登心愛] fjdjm: chi fang use: 0.0028879642486572266
+持方 
+[XDlog] 20:17:41 Begin: [保登心愛] fjdjm: g_pinyin run le
+[Pinyin]: [['润', '了']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 20:17:41 Finish: [保登心愛] fjdjm: run le use: 0.001661062240600586
+润了 
+[XDlog] 20:17:54 Begin: [保登心愛] fjdjm: g_pinyin hai you zhe zhong gong neng
+[Pinyin]: [['还有', '这种', '功能']]
+[XDlog] fail_count: 0 pinyin_len: 6
+[XDlog] 20:17:54 Finish: [保登心愛] fjdjm: hai you zhe zhong gong neng use: 0.004674673080444336
+还有这种功能 
+[XDlog] 21:03:50 Begin: Pathstar_XD: g_pinyin car xiao jie
+[Pinyin]: [['car'], ['小姐']]
+[XDlog] fail_count: 1 pinyin_len: 3
+[XDlog] 21:03:50 Finish: Pathstar_XD: car xiao jie use: 0.0022742748260498047
+car小姐 

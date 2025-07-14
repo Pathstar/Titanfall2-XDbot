@@ -1,0 +1,291 @@
+20:27:14 Monitoring file changes...
+[XDlog] 21:07:38 Begin: : init 
+无此方法 init
+[XDlog] 21:07:38 Finish: :  use: 0.001712799072265625
+ 
+[XDlog] 21:09:59 Begin: : init 
+无此方法 init
+[XDlog] 21:09:59 Finish: :  use: 0.0009052753448486328
+ 
+[XDlog] 21:11:24 Begin: : init 
+无此方法 init
+[XDlog] 21:11:24 Finish: :  use: 0.0007462501525878906
+ 
+21:11:56 Monitoring file changes...
+[XDlog] 21:12:00 Begin: : init 
+[XDlog] 21:12:00 Finish: :  use: 0.0003008842468261719
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;135;206;235m(≧▽≦)/', 10] 
+[XDlog] 21:12:30 Begin: : init 
+[XDlog] 21:12:30 Finish: :  use: 0.0003170967102050781
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;194;245;194m(≧▽≦)/', 10] 
+[XDlog] 21:14:14 Begin: : init 
+[XDlog] 21:14:14 Finish: :  use: 0.0002741813659667969
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;135;206;235m(ﾉ≧∀≦)ﾉ', 10] 
+21:14:51 Monitoring file changes...
+[XDlog] 21:14:54 Begin: : init 
+[XDlog] 21:14:54 Finish: :  use: 0.00028252601623535156
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;135;206;235m(ﾉ≧∀≦)ﾉ', 3] 
+[XDlog] 21:15:48 Begin: : init 
+[XDlog] 21:15:48 Finish: :  use: 0.0003914833068847656
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;254;250;195m(=^･ω･^=)', 3] 
+[XDlog] 21:16:11 Begin: : init 
+[XDlog] 21:16:11 Finish: :  use: 0.0002970695495605469
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;205;214;210m(｡>﹏<｡)', 3] 
+[XDlog] 21:17:07 Begin: : init 
+[XDlog] 21:17:07 Finish: :  use: 0.0002875328063964844
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;173;216;230m(=^･ω･^=)', 3] 
+[XDlog] 21:17:43 Begin: : init 
+[XDlog] 21:17:43 Finish: :  use: 0.0003299713134765625
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;175;238;238m(｡>﹏<｡)', 3] 
+[XDlog] 21:17:50 Begin: : init 
+[XDlog] 21:17:50 Finish: :  use: 0.00026535987854003906
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;221;160;221m(｡>ω<｡)', 3] 
+[XDlog] 21:17:56 Begin: : init 
+[XDlog] 21:17:56 Finish: :  use: 0.00026416778564453125
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;216;191;216m(｡>ω<｡)', 3] 
+[XDlog] 21:17:59 Begin: : init 
+[XDlog] 21:17:59 Finish: :  use: 0.00026416778564453125
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;221;160;221m(｀・ω・´)', 3] 
+[XDlog] 21:18:22 Begin: Pathstar_XD: time 
+[XDlog] 21:18:22 Finish: Pathstar_XD:  use: 0.0002498626708984375
+21:18:22 
+[XDlog] 21:18:26 Begin: : init 
+[XDlog] 21:18:26 Finish: :  use: 0.00030112266540527344
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;194;245;194m(｡>﹏<｡)', 3] 
+21:19:32 Monitoring file changes...
+[XDlog] 21:19:47 Begin: : init 
+[XDlog] 21:19:47 Finish: :  use: 0.0002880096435546875
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;135;206;235m～(つˆДˆ)つ', 3] 
+[XDlog] 21:19:53 Begin: : init 
+[XDlog] 21:19:53 Finish: :  use: 0.0003070831298828125
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;205;214;210m(≧▽≦)/', 3] 
+[XDlog] 21:21:02 Begin: : init 
+[XDlog] 21:21:02 Finish: :  use: 0.0002739429473876953
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;254;219;193m(≧▽≦)/', 3] 
+[XDlog] 21:21:10 Begin: : init 
+[XDlog] 21:21:10 Finish: :  use: 0.0002970695495605469
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;254;219;193m(ﾉ≧∀≦)ﾉ', 3] 
+[XDlog] 21:21:20 Begin: : init 
+[XDlog] 21:21:20 Finish: :  use: 0.00025010108947753906
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;216;191;216m(≧▽≦)/', 3] 
+[XDlog] 21:21:31 Begin: : init 
+[XDlog] 21:21:31 Finish: :  use: 0.00025081634521484375
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;205;214;210m(｀・ω・´)', 3] 
+[XDlog] 21:21:39 Begin: : init 
+[XDlog] 21:21:39 Finish: :  use: 0.00025582313537597656
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;248;131;121m(｡>ω<｡)', 3] 
+[XDlog] 21:24:59 Begin: : init 
+[XDlog] 21:24:59 Finish: :  use: 0.0003707408905029297
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;240;128;128m(｡>ω<｡)', 3] 
+[XDlog] 21:25:12 Begin: : init 
+[XDlog] 21:25:12 Finish: :  use: 0.0003352165222167969
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;254;250;195m～(つˆДˆ)つ', 3] 
+[XDlog] 21:25:19 Begin: : init 
+[XDlog] 21:25:19 Finish: :  use: 0.00028824806213378906
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;175;238;238m(｀・ω・´)', 3] 
+[XDlog] 21:25:25 Begin: : init 
+[XDlog] 21:25:25 Finish: :  use: 0.0002930164337158203
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;240;128;128m(｡>﹏<｡)', 3] 
+[XDlog] 21:25:32 Begin: : init 
+[XDlog] 21:25:32 Finish: :  use: 0.00026488304138183594
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;194;245;194m(｀・ω・´)', 3] 
+21:25:38 Monitoring file changes...
+[XDlog] 21:25:43 Begin: : init 
+[XDlog] 21:25:43 Finish: :  use: 0.0004115104675292969
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;254;250;195m(｀・ω・´)', 0] 
+[XDlog] 21:25:48 Begin: : init 
+[XDlog] 21:25:48 Finish: :  use: 0.00028204917907714844
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;221;160;221m(ﾉ≧∀≦)ﾉ', 0] 
+[XDlog] 21:25:54 Begin: : init 
+[XDlog] 21:25:54 Finish: :  use: 0.00027942657470703125
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;144;238;144m(≧▽≦)/', 0] 
+[XDlog] 21:26:04 Begin: : init 
+[XDlog] 21:26:04 Finish: :  use: 0.00031280517578125
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;221;160;221m(｀・ω・´)', 0] 
+[XDlog] 21:26:22 Begin: : init 
+[XDlog] 21:26:22 Finish: :  use: 0.0003085136413574219
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;216;191;216m(ﾉ≧∀≦)ﾉ', 0] 
+[XDlog] 21:26:30 Begin: : init 
+[XDlog] 21:26:30 Finish: :  use: 0.0002624988555908203
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;248;131;121m(｀・ω・´)', 0] 
+[XDlog] 21:27:12 Begin: : init 
+[XDlog] 21:27:12 Finish: :  use: 0.0002994537353515625
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;254;250;195m(｡>ω<｡)', 0] 
+[XDlog] 21:27:20 Begin: : init 
+[XDlog] 21:27:20 Finish: :  use: 0.0003209114074707031
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;254;208;175m(｡>ω<｡)', 0] 
+[XDlog] 21:27:27 Begin: : init 
+[XDlog] 21:27:27 Finish: :  use: 0.00031828880310058594
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;205;214;210m(≧▽≦)/', 0] 
+[XDlog] 21:28:21 Begin: : init 
+[XDlog] 21:28:21 Finish: :  use: 0.00029277801513671875
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;221;160;221m～(つˆДˆ)つ', 0] 
+[XDlog] 21:28:46 Begin: : init 
+[XDlog] 21:28:46 Finish: :  use: 0.00033092498779296875
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;240;128;128m(ﾉ≧∀≦)ﾉ', 0] 
+[XDlog] 21:28:57 Begin: : init 
+[XDlog] 21:28:57 Finish: :  use: 0.0002906322479248047
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;254;198;195m(｀・ω・´)', 0] 
+[XDlog] 21:29:13 Begin: : init 
+[XDlog] 21:29:13 Finish: :  use: 0.0002925395965576172
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;254;219;193m～(つˆДˆ)つ', 0] 
+21:29:32 Monitoring file changes...
+[XDlog] 21:29:37 Begin: : init 
+[XDlog] 21:29:37 Finish: :  use: 0.0003402233123779297
+['\x1b[33m21:30:00\x1b[0m ！\x1b[38;2;216;191;216m(｡>ω<｡)', 22] 
+[XDlog] 21:30:36 Begin: : init 
+[XDlog] 21:30:36 Finish: :  use: 0.00034546852111816406
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;216;191;216m(｡>ω<｡)', 1763] 
+21:31:15 Monitoring file changes...
+[XDlog] 21:31:21 Begin: : init 
+[XDlog] 21:31:21 Finish: :  use: 0.0003902912139892578
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;205;214;210m(≧▽≦)/', 0] 
+[XDlog] 21:31:48 Begin: Pathstar_XD: time 
+[XDlog] 21:31:48 Finish: Pathstar_XD:  use: 0.0003323554992675781
+21:31:48 
+[XDlog] 21:32:44 Begin: Pathstar_XD: g_pinyin \033[38;2;254;219;193m  aa
+[Pinyin]: [['\\033[38;2;254;219;193'], ['霉']]
+[XDlog] fail_count: 2 pinyin_len: 3
+Failed Trans
+[XDlog] 21:32:44 Finish: Pathstar_XD: \033[38;2;254;219;193m  aa use: 0.0027811527252197266
+ 
+[XDlog] 21:34:44 Begin: : init 
+[XDlog] 21:34:44 Finish: :  use: 0.00035309791564941406
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;216;191;216m～(つˆДˆ)つ', 0] 
+[XDlog] 21:34:44 Begin: Pathstar_XD: time 
+[XDlog] 21:34:44 Finish: Pathstar_XD:  use: 0.00028777122497558594
+21:34:44 
+[XDlog] 21:35:11 Begin: : init 
+[XDlog] 21:35:11 Finish: :  use: 0.00026679039001464844
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;194;245;194m(｡>ω<｡)', 0] 
+[XDlog] 21:35:11 Begin: Pathstar_XD: time 
+[XDlog] 21:35:11 Finish: Pathstar_XD:  use: 0.0002646446228027344
+21:35:11 
+[XDlog] 21:35:25 Begin: : init 
+[XDlog] 21:35:25 Finish: :  use: 0.00034236907958984375
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;254;198;195m(ﾉ≧∀≦)ﾉ', 0] 
+[XDlog] 21:35:25 Begin: Pathstar_XD: time 
+[XDlog] 21:35:25 Finish: Pathstar_XD:  use: 0.0002613067626953125
+21:35:25 
+[XDlog] 21:36:59 Begin: : init 
+[XDlog] 21:36:59 Finish: :  use: 0.00035953521728515625
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;205;214;210m(｀・ω・´)', 0] 
+[XDlog] 21:36:59 Begin: Pathstar_XD: time 
+[XDlog] 21:36:59 Finish: Pathstar_XD:  use: 0.0002529621124267578
+21:36:59 
+[XDlog] 21:37:07 Begin: : init 
+[XDlog] 21:37:07 Finish: :  use: 0.00030303001403808594
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;199;245;190m(｡>ω<｡)', 0] 
+[XDlog] 21:37:07 Begin: Pathstar_XD: time 
+[XDlog] 21:37:07 Finish: Pathstar_XD:  use: 0.0002491474151611328
+21:37:07 
+[XDlog] 21:37:11 Begin: : init 
+[XDlog] 21:37:11 Finish: :  use: 0.0002892017364501953
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;221;160;221m(≧▽≦)/', 0] 
+[XDlog] 21:37:12 Begin: Pathstar_XD: time 
+[XDlog] 21:37:12 Finish: Pathstar_XD:  use: 0.0002765655517578125
+21:37:12 
+21:37:24 Monitoring file changes...
+[XDlog] 21:37:30 Begin: : init 
+[XDlog] 21:37:30 Finish: :  use: 0.0003075599670410156
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;248;131;121m(≧▽≦)/', 1349] 
+[XDlog] 21:38:27 Begin: : init 
+[XDlog] 21:38:27 Finish: :  use: 0.0003592967987060547
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;216;191;216m(≧▽≦)/', 1292] 
+[XDlog] 21:38:58 Begin: [ADV] Lunacultivator: g_pinyin BU YAO A
+[Pinyin]: [['不要啊']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 21:38:58 Finish: [ADV] Lunacultivator: BU YAO A use: 0.0026688575744628906
+不要啊 
+[XDlog] 21:42:51 Begin: : init 
+[XDlog] 21:42:51 Finish: :  use: 0.0003211498260498047
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;216;191;216m(｡>﹏<｡)', 1028] 
+[XDlog] 21:42:56 Begin: : init 
+[XDlog] 21:42:56 Finish: :  use: 0.0003714561462402344
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;194;245;194m(｀・ω・´)', 1023] 
+[XDlog] 21:47:52 Begin: : init 
+[XDlog] 21:47:52 Finish: :  use: 0.00037670135498046875
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;240;128;128m(｡>ω<｡)', 727] 
+[XDlog] 21:54:26 Begin: : init 
+[XDlog] 21:54:26 Finish: :  use: 0.00032138824462890625
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;135;206;235m(｡>﹏<｡)', 333] 
+[XDlog] 21:59:59 Begin: [BOT] Pathstar_XD: time 
+[XDlog] 21:59:59 Finish: [BOT] Pathstar_XD:  use: 0.00036978721618652344
+21:59:59 
+[XDlog] 22:04:16 Begin: : init 
+[XDlog] 22:04:16 Finish: :  use: 0.0003063678741455078
+['\x1b[33m22:30:00\x1b[0m ！\x1b[38;2;254;208;175m(｀・ω・´)', 1543] 
+[XDlog] 22:10:53 Begin: : init 
+[XDlog] 22:10:53 Finish: :  use: 0.00038743019104003906
+['\x1b[33m22:30:00\x1b[0m ！\x1b[38;2;221;160;221m(ﾉ≧∀≦)ﾉ', 1146] 
+[XDlog] 22:18:01 Begin: : init 
+[XDlog] 22:18:01 Finish: :  use: 0.0003478527069091797
+['\x1b[33m22:30:00\x1b[0m ！\x1b[38;2;254;250;195m(｡>﹏<｡)', 718] 
+[XDlog] 22:23:16 Begin: [ADV] Lunacultivator: g_pinyin MA LE
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 22:23:16 Finish: [ADV] Lunacultivator: MA LE use: 0.0009951591491699219
+马了 
+[XDlog] 22:23:29 Begin: : init 
+[XDlog] 22:23:29 Finish: :  use: 0.00032520294189453125
+['\x1b[33m22:30:00\x1b[0m ！\x1b[38;2;254;198;195m(｀・ω・´)', 390] 
+[XDlog] 22:23:33 Begin: : init 
+[XDlog] 22:23:33 Finish: :  use: 0.00031304359436035156
+['\x1b[33m22:30:00\x1b[0m ！\x1b[38;2;194;245;194m(=^･ω･^=)', 386] 
+[XDlog] 22:23:38 Begin: : init 
+[XDlog] 22:23:38 Finish: :  use: 0.0003688335418701172
+['\x1b[33m22:30:00\x1b[0m ！\x1b[38;2;175;238;238m(ﾉ≧∀≦)ﾉ', 381] 
+[XDlog] 22:31:51 Begin: [G514] thisiswhoID: g_pinyin ok ty
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 22:31:51 Finish: [G514] thisiswhoID: ok ty use: 0.0009229183197021484
+ 
+[XDlog] 22:34:42 Begin: : init 
+[XDlog] 22:34:42 Finish: :  use: 0.00033593177795410156
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;144;238;144m(≧▽≦)/', 1517] 
+[XDlog] 22:38:18 Begin: [BOT] Pathstar_XD: server ['name', '养老服']
+[XDlog] 22:38:18 Finish: [BOT] Pathstar_XD: ['name', '养老服'] use: 0.15143299102783203
+[{'playerCount': 8, 'name': '新时代\x1b[33m养老服\x1b[0m，高kd踢出'}] 
+[XDlog] 22:43:46 Begin: : init 
+[XDlog] 22:43:46 Finish: :  use: 0.0003914833068847656
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;248;131;121m(｀・ω・´)', 973] 
+[XDlog] 22:48:52 Begin: : init 
+[XDlog] 22:48:52 Finish: :  use: 0.00034689903259277344
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;240;128;128m(=^･ω･^=)', 667] 
+[XDlog] 22:53:34 Begin: : init 
+[XDlog] 22:53:34 Finish: :  use: 0.00033354759216308594
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;199;245;190m～(つˆДˆ)つ', 385] 
+[XDlog] 23:00:15 Begin: [收尾人] darksilence0: g_pinyin bing fei
+[Pinyin]: [['并非']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 23:00:15 Finish: [收尾人] darksilence0: bing fei use: 0.001856088638305664
+并非 
+[XDlog] 23:01:51 Begin: : init 
+[XDlog] 23:01:51 Finish: :  use: 0.0003170967102050781
+['\x1b[33m23:30:00\x1b[0m ！\x1b[38;2;199;245;190m(≧▽≦)/', 1688] 
+[XDlog] 23:05:17 Begin: : init 
+[XDlog] 23:05:17 Finish: :  use: 0.0005419254302978516
+['\x1b[33m23:30:00\x1b[0m ！\x1b[38;2;135;206;235m(≧▽≦)/', 1482] 
+[XDlog] 23:14:06 Begin: : init 
+[XDlog] 23:14:06 Finish: :  use: 0.00047087669372558594
+['\x1b[33m23:30:00\x1b[0m ！\x1b[38;2;221;160;221m(｀・ω・´)', 953] 
+[XDlog] 23:24:11 Begin: : init 
+[XDlog] 23:24:11 Finish: :  use: 0.0004067420959472656
+['\x1b[33m23:30:00\x1b[0m ！\x1b[38;2;221;160;221m(｡>﹏<｡)', 348] 
+[XDlog] 23:29:19 Begin: : init 
+[XDlog] 23:29:19 Finish: :  use: 0.0003447532653808594
+['\x1b[33m23:30:00\x1b[0m ！\x1b[38;2;205;214;210m(≧▽≦)/', 40] 
+[XDlog] 23:29:28 Begin: : init 
+[XDlog] 23:29:28 Finish: :  use: 0.00028967857360839844
+['\x1b[33m23:30:00\x1b[0m ！\x1b[38;2;248;131;121m(ﾉ≧∀≦)ﾉ', 31] 
+[XDlog] 23:33:43 Begin: : init 
+[XDlog] 23:33:43 Finish: :  use: 0.0004210472106933594
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;219;193m(。-ω-)zzz', 1576] 
+[XDlog] 23:43:09 Begin: : init 
+[XDlog] 23:43:09 Finish: :  use: 0.0004570484161376953
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;135;206;235m(。-ω-)zzz', 1010] 
+[XDlog] 23:52:31 Begin: : init 
+[XDlog] 23:52:31 Finish: :  use: 0.0005049705505371094
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;219;193m(。-ω-)zzz', 448] 
+[XDlog] 23:58:40 Begin: : init 
+[XDlog] 23:58:40 Finish: :  use: 0.00048089027404785156
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;198;195m(。-ω-)zzz', 79] 

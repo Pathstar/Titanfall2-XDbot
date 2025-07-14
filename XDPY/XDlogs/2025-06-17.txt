@@ -1,0 +1,76 @@
+23:28:20 Monitoring Squirrel Messages...
+[XDlog] 23:30:22 Begin: : init 
+[XDlog] 23:30:22 Finish: :  use: 0.0011227130889892578
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (。-ω-)zzz', 1777]
+
+[XDlog] 23:30:46 Begin: : init 
+[XDlog] 23:30:46 Finish: :  use: 0.0005807876586914062
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (。-ω-)zzz', 1753]
+
+[XDlog] 23:31:51 Begin: : init 
+[XDlog] 23:31:51 Finish: :  use: 0.0005724430084228516
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (。-ω-)zzz', 1688]
+
+[XDlog] 23:34:48 Begin: [BOT] Pathstar_XD: ai 打fps游戏时 腱鞘炎是低敏容易得还是高敏容易得
+{'error': {'message': 'No endpoints found for qwen/qwen-2.5-7b-instruct:free.', 'code': 404}, 'user_id': 'user_2wzbf3BGAy0XqHYndjQfOQ7mKKs'}
+---
+
+AI响应发生错误: 'data' 结构中缺少所需的键！
+
+
+
+
+
+
+
+
+
+
+Reach First API Limit 第一个号超出限额
+
+
+{'error': {'message': 'No auth credentials found', 'code': 401}}
+---
+
+AI响应发生错误: 'data' 结构中缺少所需的键！
+[XDlog] 23:34:50 Finish: [BOT] Pathstar_XD: 打fps游戏时 腱鞘炎是低敏容易得还是高敏容易得 use: 1.9505431652069092
+['AI响应发生错误: 到达每日限额...TvT']
+
+[XDlog] 23:38:12 Begin: : init 
+[XDlog] 23:38:12 Finish: :  use: 0.000591278076171875
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (。-ω-)zzz', 1307]
+
+[XDlog] 23:46:33 Begin: : init 
+[XDlog] 23:46:33 Finish: :  use: 0.0006976127624511719
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (。-ω-)zzz', 806]
+
+[XDlog] 23:52:24 Begin: [我來問道] Mag1cStrafe: g_pinyin shen me ji ba
+[Pinyin]: [['什么', '鸡巴']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 23:52:24 Finish: [我來問道] Mag1cStrafe: shen me ji ba use: 0.00363922119140625
+什么鸡巴
+
+[XDlog] 23:53:28 Begin: : init 
+[XDlog] 23:53:28 Finish: :  use: 0.007787466049194336
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (。-ω-)zzz', 391]
+
+[XDlog] 23:55:07 Begin: : init 
+[XDlog] 23:55:07 Finish: :  use: 0.0005896091461181641
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (。-ω-)zzz', 292]
+
+[XDlog] 23:55:11 Begin: : init 
+[XDlog] 23:55:11 Finish: :  use: 0.0006020069122314453
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (。-ω-)zzz', 288]
+
+[XDlog] 00:00:22 Begin: : init 
+[XDlog] 00:00:22 Finish: :  use: 0.0007257461547851562
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;205;214;210m (。-ω-)zzz', 1777]
+
+[XDlog] 00:04:02 Begin: [BOT] Pathstar_XD: ai 游玩fps游戏时 高敏更伤手腕还是低敏更伤手腕
+{'error': {'message': 'No auth credentials found', 'code': 401}}
+---
+
+AI响应发生错误: 'data' 结构中缺少所需的键！
+[XDlog] 00:04:03 Finish: [BOT] Pathstar_XD: 游玩fps游戏时 高敏更伤手腕还是低敏更伤手腕 use: 0.7405226230621338
+['AI响应发生错误: 到达每日限额...TvT']
+

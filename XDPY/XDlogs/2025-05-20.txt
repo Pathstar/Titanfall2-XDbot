@@ -1,0 +1,6 @@
+19:03:47 Monitoring file changes...
+[XDlog] 20:31:25 Begin: [ADV] 2824628: g_pinyin bei wen wo
+[Pinyin]: [['碑文', '我']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 20:31:25 Finish: [ADV] 2824628: bei wen wo use: 0.004079580307006836
+碑文我 

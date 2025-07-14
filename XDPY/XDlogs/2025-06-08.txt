@@ -1,0 +1,543 @@
+23:12:29 Monitoring Squirrel Messages...
+23:24:07 Monitoring Squirrel Messages...
+[XDlog] 23:24:11 Begin: : init 
+[XDlog] 23:24:11 Finish: :  use: 0.0006015300750732422
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;240;128;128m (^・ω・^)', 348]
+
+[XDlog] 23:24:19 Begin: : init 
+[XDlog] 23:24:19 Finish: :  use: 0.0005857944488525391
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;240;128;128m _(:з」∠)_', 340]
+
+[XDlog] 23:28:07 Begin: : init 
+[XDlog] 23:28:07 Finish: :  use: 0.0005614757537841797
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;254;198;195m (〜￣△￣)〜', 112]
+
+[XDlog] 23:28:42 Begin: [QAQ] Fire09-OwO: g_pinyin BEI JI XING FU A
+[Pinyin]: [['北极', '幸福', '阿']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 23:28:42 Finish: [QAQ] Fire09-OwO: BEI JI XING FU A use: 0.0032396316528320312
+北极幸福阿
+
+[XDlog] 23:28:56 Begin: [QAQ] Fire09-OwO: g_pinyin ZHE SHA
+[Pinyin]: [['这傻']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 23:28:56 Finish: [QAQ] Fire09-OwO: ZHE SHA use: 0.0025634765625
+这傻
+
+[XDlog] 23:30:02 Begin: [QAQ] Fire09-OwO: g_pinyin DA ZI TAI MAN LE
+[Pinyin]: [['大', '姿态', '满了']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 23:30:02 Finish: [QAQ] Fire09-OwO: DA ZI TAI MAN LE use: 0.006653785705566406
+大姿态满了
+
+[XDlog] 23:31:02 Begin: Pathstar_XD: g_pinyin zhe ge zhuan pin yin zhun que lv you shi hou gao, you shi hou di
+[Pinyin]: [['这个']]
+[Pinyin]: [['这个'], ['转拼音'], ['准确率'], ['有时候', '高']]
+[Pinyin]: [['这个'], ['转拼音'], ['准确率'], ['有时候', '高'], [','], ['有时候', '地']]
+[XDlog] fail_count: 1 pinyin_len: 17
+[XDlog] 23:31:02 Finish: Pathstar_XD: zhe ge zhuan pin yin zhun que lv you shi hou gao, you shi hou di use: 0.002401590347290039
+这个转拼音准确率有时候高,有时候地
+
+[XDlog] 23:37:27 Begin: : init 
+[XDlog] 23:37:27 Finish: :  use: 0.0005643367767333984
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (。-ω-)zzz', 1352]
+
+[XDlog] 23:53:04 Begin: : init 
+[XDlog] 23:53:04 Finish: :  use: 0.0006527900695800781
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (。-ω-)zzz', 415]
+
+[XDlog] 00:05:59 Begin: : init 
+[XDlog] 00:05:59 Finish: :  use: 0.0006844997406005859
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;205;214;210m (。-ω-)zzz', 1440]
+
+[XDlog] 00:06:46 Begin: Pathstar_XD: g_pinyin 一瞬间它就会产生大量的高能蛋白，俗称 UFO 。会严重影响经济的发展。
+[XDlog] fail_count: 3 pinyin_len: 3
+Failed Trans
+[XDlog] 00:06:46 Finish: Pathstar_XD: 一瞬间它就会产生大量的高能蛋白，俗称 UFO 。会严重影响经济的发展。 use: 0.001341104507446289
+
+
+[XDlog] 00:10:17 Begin: : init 
+[XDlog] 00:10:17 Finish: :  use: 0.0006234645843505859
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;240;128;128m (。-ω-)zzz', 1182]
+
+[XDlog] 00:10:22 Begin: : init 
+[XDlog] 00:10:22 Finish: :  use: 0.0006330013275146484
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;221;160;221m (。-ω-)zzz', 1177]
+
+[XDlog] 00:16:47 Begin: [QAQ] Fire09-OwO: g_pinyin da bu liao yi dian
+[Pinyin]: [['大不了', '一点']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 00:16:47 Finish: [QAQ] Fire09-OwO: da bu liao yi dian use: 0.005457878112792969
+大不了一点
+
+[XDlog] 00:17:15 Begin: [QAQ] Fire09-OwO: g_pinyin pa le
+[Pinyin]: [['怕了']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 00:17:15 Finish: [QAQ] Fire09-OwO: pa le use: 0.0018918514251708984
+怕了
+
+[XDlog] 00:20:04 Begin: [QAQ] Fire09-OwO: g_pinyin da lao
+[Pinyin]: [['大老']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 00:20:04 Finish: [QAQ] Fire09-OwO: da lao use: 0.001706838607788086
+大老
+
+[XDlog] 00:20:11 Begin: [QAQ] Fire09-OwO: g_pinyin za la qiang a
+[Pinyin]: [['杂', '拉', '强', '阿']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 00:20:11 Finish: [QAQ] Fire09-OwO: za la qiang a use: 0.0022025108337402344
+杂拉强阿
+
+[XDlog] 00:20:19 Begin: [QAQ] Fire09-OwO: g_pinyin gan jue ni hao zhun
+[Pinyin]: [['感']]
+[Pinyin]: [['感'], ['jue'], ['你好', '准']]
+[XDlog] fail_count: 1 pinyin_len: 5
+[XDlog] 00:20:19 Finish: [QAQ] Fire09-OwO: gan jue ni hao zhun use: 0.004656553268432617
+感jue你好准
+
+[XDlog] 00:21:30 Begin: : init 
+[XDlog] 00:21:30 Finish: :  use: 0.0008547306060791016
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;221;160;221m (。-ω-)zzz', 509]
+
+[XDlog] 00:22:51 Begin: : init 
+[XDlog] 00:22:51 Finish: :  use: 0.0006613731384277344
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;144;238;144m (。-ω-)zzz', 428]
+
+[XDlog] 00:23:00 Begin: : init 
+[XDlog] 00:23:00 Finish: :  use: 0.0005629062652587891
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;221;160;221m (。-ω-)zzz', 419]
+
+[XDlog] 00:23:06 Begin: : init 
+[XDlog] 00:23:06 Finish: :  use: 0.0005624294281005859
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;173;216;230m (。-ω-)zzz', 413]
+
+[XDlog] 00:25:37 Begin: : init 
+[XDlog] 00:25:37 Finish: :  use: 0.0006990432739257812
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;144;238;144m (。-ω-)zzz', 262]
+
+[XDlog] 00:25:44 Begin: : init 
+[XDlog] 00:25:44 Finish: :  use: 0.0006949901580810547
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;205;214;210m (。-ω-)zzz', 255]
+
+[XDlog] 00:25:50 Begin: : init 
+[XDlog] 00:25:50 Finish: :  use: 0.0006058216094970703
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;173;216;230m (。-ω-)zzz', 249]
+
+[XDlog] 00:25:50 Begin: [QAQ] Fire09-OwO: g_pinyin gang cai wo dong bu liao
+[Pinyin]: [['刚才', '我懂', '不了']]
+[XDlog] fail_count: 0 pinyin_len: 6
+[XDlog] 00:25:50 Finish: [QAQ] Fire09-OwO: gang cai wo dong bu liao use: 0.005229949951171875
+刚才我懂不了
+
+[XDlog] 00:26:02 Begin: [QAQ] Fire09-OwO: g_pinyin dan jian pan hai neng yong
+[Pinyin]: [['但见', '攀害', '能用']]
+[XDlog] fail_count: 0 pinyin_len: 6
+[XDlog] 00:26:02 Finish: [QAQ] Fire09-OwO: dan jian pan hai neng yong use: 0.0048673152923583984
+但见攀害能用
+
+[XDlog] 00:26:23 Begin: [QAQ] Fire09-OwO: g_pinyin gei wo zha chu qu le
+[Pinyin]: [['给我', '榨出', '去了']]
+[XDlog] fail_count: 0 pinyin_len: 6
+[XDlog] 00:26:23 Finish: [QAQ] Fire09-OwO: gei wo zha chu qu le use: 0.0039598941802978516
+给我榨出去了
+
+[XDlog] 00:26:34 Begin: [QAQ] Fire09-OwO: g_pinyin hui lai jiu mei ren le
+[Pinyin]: [['回来', '就没', '人了']]
+[XDlog] fail_count: 0 pinyin_len: 6
+[XDlog] 00:26:34 Finish: [QAQ] Fire09-OwO: hui lai jiu mei ren le use: 0.00957179069519043
+回来就没人了
+
+[XDlog] 00:26:39 Begin: [QAQ] Fire09-OwO: g_pinyin ku le
+[Pinyin]: [['苦乐']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 00:26:39 Finish: [QAQ] Fire09-OwO: ku le use: 0.0021507740020751953
+苦乐
+
+[XDlog] 00:27:08 Begin: [QAQ] Fire09-OwO: g_pinyin hao ba
+[Pinyin]: [['好吧']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 00:27:08 Finish: [QAQ] Fire09-OwO: hao ba use: 0.002049684524536133
+好吧
+
+[XDlog] 00:27:15 Begin: [QAQ] Fire09-OwO: g_pinyin ta hao li hai
+[Pinyin]: [['他好', '厉害']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 00:27:15 Finish: [QAQ] Fire09-OwO: ta hao li hai use: 0.005758047103881836
+他好厉害
+
+[XDlog] 00:27:50 Begin: [QAQ] Fire09-OwO: g_pinyin hao qiang
+[Pinyin]: [['好强']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 00:27:50 Finish: [QAQ] Fire09-OwO: hao qiang use: 0.0016443729400634766
+好强
+
+[XDlog] 00:28:08 Begin: [QAQ] Fire09-OwO: g_pinyin bu xiang ren
+[Pinyin]: [['不想', '人']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 00:28:08 Finish: [QAQ] Fire09-OwO: bu xiang ren use: 0.0030176639556884766
+不想人
+
+[XDlog] 00:28:20 Begin: : init 
+[XDlog] 00:28:20 Finish: :  use: 0.0005609989166259766
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;216;191;216m (。-ω-)zzz', 99]
+
+[XDlog] 00:29:01 Begin: [QAQ] Fire09-OwO: g_pinyin gan jue ni mei yong li
+[Pinyin]: [['感']]
+[Pinyin]: [['感'], ['jue'], ['你没', '用力']]
+[XDlog] fail_count: 1 pinyin_len: 6
+[XDlog] 00:29:01 Finish: [QAQ] Fire09-OwO: gan jue ni mei yong li use: 0.004122018814086914
+感jue你没用力
+
+[XDlog] 00:29:07 Begin: [QAQ] Fire09-OwO: g_pinyin kan bu chu lai
+[Pinyin]: [['看不', '出来']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 00:29:07 Finish: [QAQ] Fire09-OwO: kan bu chu lai use: 0.003144502639770508
+看不出来
+
+[XDlog] 00:29:20 Begin: [QAQ] Fire09-OwO: g_pinyin wo bu hui
+[Pinyin]: [['我不会']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 00:29:20 Finish: [QAQ] Fire09-OwO: wo bu hui use: 0.002172231674194336
+我不会
+
+[XDlog] 00:29:49 Begin: [QAQ] Fire09-OwO: g_pinyin rcx ye shi shu ren le
+[Pinyin]: [['rcx'], ['也是', '熟人', '了']]
+[XDlog] fail_count: 1 pinyin_len: 6
+[XDlog] 00:29:49 Finish: [QAQ] Fire09-OwO: rcx ye shi shu ren le use: 0.005875349044799805
+rcx也是熟人了
+
+[XDlog] 00:30:18 Begin: [QAQ] Fire09-OwO: g_pinyin wo ji de mei yi ge bao sha wo de ren
+[Pinyin]: [['我既', '德美', '一个', '薄纱', '我的', '人']]
+[XDlog] fail_count: 0 pinyin_len: 11
+[XDlog] 00:30:18 Finish: [QAQ] Fire09-OwO: wo ji de mei yi ge bao sha wo de ren use: 0.01125955581665039
+我既德美一个薄纱我的人
+
+[XDlog] 00:31:02 Begin: [QAQ] Fire09-OwO: g_pinyin hai pa
+[Pinyin]: [['害怕']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 00:31:02 Finish: [QAQ] Fire09-OwO: hai pa use: 0.0015368461608886719
+害怕
+
+[XDlog] 00:31:40 Begin: [QAQ] Fire09-OwO: g_pinyin ji su nie lei ne
+[Pinyin]: [['激素'], ['捏雷'], ['呢']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 00:31:40 Finish: [QAQ] Fire09-OwO: ji su nie lei ne use: 0.0014884471893310547
+激素捏雷呢
+
+[XDlog] 00:32:40 Begin: [QAQ] Fire09-OwO: g_pinyin beng bu zhu le
+[Pinyin]: [['蚌埠', '住了']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 00:32:40 Finish: [QAQ] Fire09-OwO: beng bu zhu le use: 0.0045566558837890625
+蚌埠住了
+
+[XDlog] 00:33:08 Begin: [QAQ] Fire09-OwO: g_pinyin wo da shen xian ju zhi dai ying xing
+[Pinyin]: [['我', '大神', '县局', '纸袋', '影星']]
+[XDlog] fail_count: 0 pinyin_len: 9
+[XDlog] 00:33:08 Finish: [QAQ] Fire09-OwO: wo da shen xian ju zhi dai ying xing use: 0.009148359298706055
+我大神县局纸袋影星
+
+[XDlog] 00:33:14 Begin: [QAQ] Fire09-OwO: g_pinyin he ke lai bo
+[Pinyin]: [['合']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 00:33:14 Finish: [QAQ] Fire09-OwO: he ke lai bo use: 0.0016012191772460938
+合克莱博
+
+[XDlog] 00:33:27 Begin: [QAQ] Fire09-OwO: g_pinyin yao bu ran da bu liao yi dian
+[Pinyin]: [['要不然', '大不了', '一点']]
+[XDlog] fail_count: 0 pinyin_len: 8
+[XDlog] 00:33:27 Finish: [QAQ] Fire09-OwO: yao bu ran da bu liao yi dian use: 0.003586292266845703
+要不然大不了一点
+
+[XDlog] 00:33:49 Begin: [QAQ] Fire09-OwO: g_pinyin kai da
+[Pinyin]: [['开打']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 00:33:49 Finish: [QAQ] Fire09-OwO: kai da use: 0.0018088817596435547
+开打
+
+[XDlog] 00:33:58 Begin: [QAQ] Fire09-OwO: g_pinyin kuai kuai kkuai
+[Pinyin]: [['快快']]
+[XDlog] fail_count: 1 pinyin_len: 3
+[XDlog] 00:33:58 Finish: [QAQ] Fire09-OwO: kuai kuai kkuai use: 0.002155780792236328
+快快kkuai
+
+[XDlog] 00:34:07 Begin: [BOT] Pathstar_XD: g_pinyin po bu ji die
+[Pinyin]: [['破布', '急跌']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 00:34:07 Finish: [BOT] Pathstar_XD: po bu ji die use: 0.0024499893188476562
+破布急跌
+
+[XDlog] 00:37:10 Begin: [QAQ] Fire09-OwO: g_pinyin han liu jie bei le
+[Pinyin]: [['韩流', '戒备', '了']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 00:37:10 Finish: [QAQ] Fire09-OwO: han liu jie bei le use: 0.004561185836791992
+韩流戒备了
+
+[XDlog] 00:38:59 Begin: : init 
+[XDlog] 00:38:59 Finish: :  use: 0.0008039474487304688
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (。-ω-)zzz', 1260]
+
+[XDlog] 00:39:05 Begin: [QAQ] Fire09-OwO: g_pinyin XIANG TIN LIU BEI WEN
+[Pinyin]: [['相']]
+[Pinyin]: [['相'], ['TIN'], ['刘备', '文']]
+[XDlog] fail_count: 1 pinyin_len: 5
+[XDlog] 00:39:05 Finish: [QAQ] Fire09-OwO: XIANG TIN LIU BEI WEN use: 0.0028533935546875
+相TIN刘备文
+
+[XDlog] 00:40:08 Begin: [QAQ] Fire09-OwO: g_pinyin zen me le
+[Pinyin]: [['怎么了']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 00:40:08 Finish: [QAQ] Fire09-OwO: zen me le use: 0.0026912689208984375
+怎么了
+
+[XDlog] 00:40:28 Begin: [QAQ] Fire09-OwO: g_pinyin wo jue de r97 ke yi bu chang zhun du
+[Pinyin]: [['我']]
+[Pinyin]: [['我'], ['jue'], ['的']]
+[Pinyin]: [['我'], ['jue'], ['的'], ['Ŕ97'], ['可以', '补偿', '准', '度']]
+[XDlog] fail_count: 1 pinyin_len: 11
+[XDlog] 00:40:28 Finish: [QAQ] Fire09-OwO: wo jue de r97 ke yi bu chang zhun du use: 0.0045239925384521484
+我jue的Ŕ97可以补偿准度
+
+[XDlog] 00:40:39 Begin: [QAQ] Fire09-OwO: g_pinyin dan liang duo ma
+[Pinyin]: [['胆量', '多']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 00:40:39 Finish: [QAQ] Fire09-OwO: dan liang duo ma use: 0.002318143844604492
+胆量多马
+
+[XDlog] 00:42:00 Begin: [QAQ] Fire09-OwO: g_pinyin gou suo hao wan
+[Pinyin]: [['购', '所', '好玩']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 00:42:00 Finish: [QAQ] Fire09-OwO: gou suo hao wan use: 0.0035822391510009766
+购所好玩
+
+[XDlog] 00:44:35 Begin: [QAQ] Fire09-OwO: g_pinyin zen me tou piao
+[Pinyin]: [['怎么', '投票']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 00:44:35 Finish: [QAQ] Fire09-OwO: zen me tou piao use: 0.0017919540405273438
+怎么投票
+
+[XDlog] 00:45:17 Begin: [QAQ] Fire09-OwO: g_pinyin qian mian duan xian ye yao ma
+[Pinyin]: [['前面', '短线', '也要']]
+[XDlog] fail_count: 0 pinyin_len: 7
+[XDlog] 00:45:17 Finish: [QAQ] Fire09-OwO: qian mian duan xian ye yao ma use: 0.006440877914428711
+前面短线也要马
+
+[XDlog] 00:47:33 Begin: [QAQ] Fire09-OwO: g_pinyin gou pi gu
+[Pinyin]: [['购', '屁股']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 00:47:33 Finish: [QAQ] Fire09-OwO: gou pi gu use: 0.0018379688262939453
+购屁股
+
+[XDlog] 00:48:07 Begin: [風又音理] Mashiro_CN_QAQ: g_pinyin zai shuo shen me
+[Pinyin]: [['再说', '什么']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 00:48:07 Finish: [風又音理] Mashiro_CN_QAQ: zai shuo shen me use: 0.0023276805877685547
+再说什么
+
+[XDlog] 00:48:48 Begin: [風又音理] Mashiro_CN_QAQ: g_pinyin wo qu ,da tai hai you xin wen kan
+[Pinyin]: [['我去']]
+[Pinyin]: [['我去'], [','], ['打胎', '还有', '新闻', '看']]
+[XDlog] fail_count: 1 pinyin_len: 10
+[XDlog] 00:48:48 Finish: [風又音理] Mashiro_CN_QAQ: wo qu ,da tai hai you xin wen kan use: 0.005388736724853516
+我去,打胎还有新闻看
+
+[XDlog] 00:48:55 Begin: [風又音理] Mashiro_CN_QAQ: g_pinyin ye shi hao qi lai le
+[Pinyin]: [['也是', '好奇', '来了']]
+[XDlog] fail_count: 0 pinyin_len: 6
+[XDlog] 00:48:55 Finish: [風又音理] Mashiro_CN_QAQ: ye shi hao qi lai le use: 0.002370595932006836
+也是好奇来了
+
+[XDlog] 00:49:37 Begin: : init 
+[XDlog] 00:49:37 Finish: :  use: 0.000766754150390625
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (。-ω-)zzz', 622]
+
+[XDlog] 00:49:44 Begin: [QAQ] Fire09-OwO: g_pinyin xiang da xiao tu
+[Pinyin]: [['湘大', '小图']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 00:49:44 Finish: [QAQ] Fire09-OwO: xiang da xiao tu use: 0.0031585693359375
+湘大小图
+
+[XDlog] 00:51:52 Begin: [QAQ] Fire09-OwO: g_pinyin xuan ya xia mian shi zhi ming di
+[Pinyin]: [['选']]
+[Pinyin]: [['选'], ['呀'], ['下面', '是指', '鸣笛']]
+[XDlog] fail_count: 0 pinyin_len: 8
+[XDlog] 00:51:52 Finish: [QAQ] Fire09-OwO: xuan ya xia mian shi zhi ming di use: 0.004328727722167969
+选呀下面是指鸣笛
+
+[XDlog] 00:52:52 Begin: [QAQ] Fire09-OwO: g_pinyin zhi ming di ye neng kan dao zhe li
+[Pinyin]: [['知名', '第页', '能看到', '这里']]
+[XDlog] fail_count: 0 pinyin_len: 9
+[XDlog] 00:52:52 Finish: [QAQ] Fire09-OwO: zhi ming di ye neng kan dao zhe li use: 0.005534648895263672
+知名第页能看到这里
+
+[XDlog] 00:54:29 Begin: [QAQ] Fire09-OwO: g_pinyin da jia yao bu yao qu huai xiao tu da
+[Pinyin]: [['大家', '要不', '要去']]
+[Pinyin]: [['大家', '要不', '要去'], ['坏小'], ['图', '大']]
+[XDlog] fail_count: 0 pinyin_len: 10
+[XDlog] 00:54:29 Finish: [QAQ] Fire09-OwO: da jia yao bu yao qu huai xiao tu da use: 0.005163431167602539
+大家要不要去坏小图大
+
+[XDlog] 00:54:54 Begin: [風又音理] Mashiro_CN_QAQ: g_pinyin mei ji su qi
+[Pinyin]: [['没']]
+[Pinyin]: [['没'], ['激素'], ['起']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 00:54:54 Finish: [風又音理] Mashiro_CN_QAQ: mei ji su qi use: 0.0014727115631103516
+没激素起
+
+[XDlog] 00:55:04 Begin: [風又音理] Mashiro_CN_QAQ: g_pinyin bu zhi dao deng le duo shao su
+[Pinyin]: [['不', '知道', '等了', '多少', '速']]
+[XDlog] fail_count: 0 pinyin_len: 8
+[XDlog] 00:55:04 Finish: [風又音理] Mashiro_CN_QAQ: bu zhi dao deng le duo shao su use: 0.004075288772583008
+不知道等了多少速
+
+[XDlog] 00:55:38 Begin: [QAQ] Fire09-OwO: g_pinyin zou ba
+[Pinyin]: [['走吧']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 00:55:38 Finish: [QAQ] Fire09-OwO: zou ba use: 0.0022246837615966797
+走吧
+
+[XDlog] 00:56:06 Begin: [BOT] Pathstar_XD: server ['name', '小图']
+[XDlog] Get服务器...
+[XDlog] 00:56:06 Finish: [BOT] Pathstar_XD: ['name', '小图'] use: 0.1819312572479248
+现在没有任何人！-> [CN]坏逼们的服务器#[33m小图[0m铁对铁
+
+[XDlog] 00:56:24 Begin: [BOT] Pathstar_XD: server ['mode', 'xdall']
+[XDlog] Get服务器...
+[XDlog] 00:56:24 Finish: [BOT] Pathstar_XD: ['mode', 'xdall'] use: 0.15082669258117676
+[{'playerCount': 7, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 2, 'name': '【超好玩】涡轮强化配件'}, {'playerCount': 1, 'name': '【超好玩】超级先锋泰坦'}]
+
+[XDlog] 00:58:40 Begin: [QAQ] Fire09-OwO: g_pinyin qu huai xiao tu wan
+[Pinyin]: [['去']]
+[Pinyin]: [['去'], ['坏小'], ['图', '完']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 00:58:40 Finish: [QAQ] Fire09-OwO: qu huai xiao tu wan use: 0.0013427734375
+去坏小图完
+
+[XDlog] 00:59:27 Begin: : init 
+[XDlog] 00:59:27 Finish: :  use: 0.0005848407745361328
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (。-ω-)zzz', 32]
+
+[XDlog] 00:59:32 Begin: : init 
+[XDlog] 00:59:32 Finish: :  use: 0.0006291866302490234
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (。-ω-)zzz', 27]
+
+[XDlog] 00:59:41 Begin: : init 
+[XDlog] 00:59:41 Finish: :  use: 0.00057220458984375
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (。-ω-)zzz', 18]
+
+[XDlog] 00:59:45 Begin: : init 
+[XDlog] 00:59:45 Finish: :  use: 0.0005486011505126953
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (。-ω-)zzz', 14]
+
+[XDlog] 00:59:50 Begin: : init 
+[XDlog] 00:59:50 Finish: :  use: 0.0005245208740234375
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (。-ω-)zzz', 9]
+
+[XDlog] 01:00:06 Begin: : init 
+[XDlog] 01:00:06 Finish: :  use: 0.0006062984466552734
+['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;175;238;238m (。-ω-)zzz', 1793]
+
+[XDlog] 01:00:10 Begin: : init 
+[XDlog] 01:00:10 Finish: :  use: 0.0005583763122558594
+['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;135;206;235m (。-ω-)zzz', 1789]
+
+[XDlog] 01:00:17 Begin: : init 
+[XDlog] 01:00:17 Finish: :  use: 0.0005657672882080078
+['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;144;238;144m (。-ω-)zzz', 1782]
+
+[XDlog] 01:00:21 Begin: : init 
+[XDlog] 01:00:21 Finish: :  use: 0.0005748271942138672
+['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;205;214;210m (。-ω-)zzz', 1778]
+
+[XDlog] 01:00:24 Begin: [QAQ] Fire09-OwO: g_pinyin dou guo lai li
+[Pinyin]: [['都', '过来', '理']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 01:00:24 Finish: [QAQ] Fire09-OwO: dou guo lai li use: 0.002808094024658203
+都过来理
+
+[XDlog] 01:00:32 Begin: : init 
+[XDlog] 01:00:32 Finish: :  use: 0.0006303787231445312
+['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;144;238;144m (。-ω-)zzz', 1767]
+
+[XDlog] 01:01:38 Begin: [BOT] Pathstar_XD: g_pinyin ei ya
+[Pinyin]: [['誒']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 01:01:38 Finish: [BOT] Pathstar_XD: ei ya use: 0.0018908977508544922
+誒呀
+
+[XDlog] 01:02:28 Begin: [風又音理] Mashiro_CN_QAQ: g_pinyin jia you
+[Pinyin]: [['加油']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 01:02:28 Finish: [風又音理] Mashiro_CN_QAQ: jia you use: 0.0011899471282958984
+加油
+
+[XDlog] 01:05:25 Begin: [QAQ] Fire09-OwO: g_pinyin bu shi ge meng
+[Pinyin]: [['不是', '个', '梦']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 01:05:25 Finish: [QAQ] Fire09-OwO: bu shi ge meng use: 0.0027625560760498047
+不是个梦
+
+[XDlog] 01:05:36 Begin: [QAQ] Fire09-OwO: g_pinyin xin wen lian bo ne
+[Pinyin]: [['新闻联播', '呢']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 01:05:36 Finish: [QAQ] Fire09-OwO: xin wen lian bo ne use: 0.0034897327423095703
+新闻联播呢
+
+[XDlog] 01:07:22 Begin: [QAQ] Fire09-OwO: g_pinyin wei ju le
+[Pinyin]: [['位居', '了']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 01:07:22 Finish: [QAQ] Fire09-OwO: wei ju le use: 0.001918792724609375
+位居了
+
+[XDlog] 01:08:15 Begin: [風又音理] Mashiro_CN_QAQ: g_pinyin zong zhi CHINA niu bi
+[Pinyin]: [['总之']]
+[Pinyin]: [['总之'], ['CHINA'], ['牛逼']]
+[XDlog] fail_count: 1 pinyin_len: 5
+[XDlog] 01:08:15 Finish: [風又音理] Mashiro_CN_QAQ: zong zhi CHINA niu bi use: 0.004092693328857422
+总之CHINA牛逼
+
+[XDlog] 01:12:04 Begin: : init 
+[XDlog] 01:12:04 Finish: :  use: 0.0006465911865234375
+['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;173;216;230m (。-ω-)zzz', 1075]
+
+[XDlog] 01:12:48 Begin: [風又音理] Mashiro_CN_QAQ: g_pinyin wo yao ting xin wen
+[Pinyin]: [['我', '要听', '新闻']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 01:12:48 Finish: [風又音理] Mashiro_CN_QAQ: wo yao ting xin wen use: 0.002523660659790039
+我要听新闻
+
+[XDlog] 01:12:58 Begin: [BOT] Pathstar_XD: g_pinyin omg ohh
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 01:12:58 Finish: [BOT] Pathstar_XD: omg ohh use: 0.0014562606811523438
+
+
+[XDlog] 01:14:29 Begin: [風又音理] Mashiro_CN_QAQ: g_pinyin qi tai shen me shi hou de shi
+[Pinyin]: [['气态', '什么', '时候', '的是']]
+[XDlog] fail_count: 0 pinyin_len: 8
+[XDlog] 01:14:29 Finish: [風又音理] Mashiro_CN_QAQ: qi tai shen me shi hou de shi use: 0.004121303558349609
+气态什么时候的是
+
+[XDlog] 01:14:41 Begin: [風又音理] Mashiro_CN_QAQ: g_pinyin wo qu ,wo shen me dou bu zhi dao
+[Pinyin]: [['我去']]
+[Pinyin]: [['我去'], [','], ['我', '什么都不', '知道']]
+[XDlog] fail_count: 1 pinyin_len: 10
+[XDlog] 01:14:41 Finish: [風又音理] Mashiro_CN_QAQ: wo qu ,wo shen me dou bu zhi dao use: 0.0038597583770751953
+我去,我什么都不知道
+
+[XDlog] 01:16:53 Begin: [風又音理] Mashiro_CN_QAQ: g_pinyin ttf2 zhen de hao qi lai le,hai neng ting xin wen
+[Pinyin]: [['ttf'], ['2'], ['震得', '好奇', '来了']]
+[Pinyin]: [['ttf'], ['2'], ['震得', '好奇', '来了'], [','], ['还能', '听', '新闻']]
+[XDlog] fail_count: 3 pinyin_len: 14
+[XDlog] 01:16:53 Finish: [風又音理] Mashiro_CN_QAQ: ttf2 zhen de hao qi lai le,hai neng ting xin wen use: 0.004968404769897461
+ttf2震得好奇来了,还能听新闻
+
+[XDlog] 01:25:08 Begin: [QAQ] Fire09-OwO: g_pinyin yong shou ji re dian
+[Pinyin]: [['用手挤', '热点']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 01:25:08 Finish: [QAQ] Fire09-OwO: yong shou ji re dian use: 0.003818511962890625
+用手挤热点
+
+[XDlog] 01:27:13 Begin: : init 
+[XDlog] 01:27:13 Finish: :  use: 0.0006070137023925781
+['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;254;198;195m (。-ω-)zzz', 166]
+

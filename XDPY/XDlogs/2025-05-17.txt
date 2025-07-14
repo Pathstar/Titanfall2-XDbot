@@ -1,0 +1,279 @@
+11:22:13 Monitoring file changes...
+[XDlog] 11:22:17 Begin: [BOT] Pathstar_XD: ai 帮我写一个java架构系统的论文
+{'id': 'gen-1747452139-FvxnSfkjw58kqQCqJV8u', 'provider': 'Novita', 'model': 'qwen/qwen3-4b:free', 'object': 'chat.completion', 'created': 1747452139, 'choices': [{'logprobs': {'content': [], 'refusal': []}, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '好的，我明白啦！关于Java架构系统的论文，您具体需要哪个方向的内容呢？比如MVVM架构、微服务架构，还是Spring框架的深入解析？您可以告诉我更具体的主题或要求，我会根据您的需求整理出结构框架，帮您梳理思路和关键点，让论文更有针对性哦～', 'refusal': None, 'reasoning': '好的，用户让我帮忙写一个Java架构系统的论文。首先，我需要确认用户的需求。他可能是在准备学术作业或者项目论文，需要关于Java架构系统的内容。Java架构系统涉及很多方面，比如MVC模式、微服务、Spring框架等等，得先确定用户具体指的是哪个部分，或者是否需要一个概述性的论文。\n\n接下来，要考虑用户可能的背景。如果是学生，可能需要结构清晰、有理论支撑的论文，包括引言、架构模型、实现案例、优势与挑战、结论等部分。用户两次提到同样的请求，可能第一次回复后没有满足需求，或者需要更详细的帮助。\n\n用户可能没有明确说明论文的用途，是课程作业、项目报告，还是其他。需要进一步询问是否有特定的方向或重点，比如是否要比较不同架构模式，或者探讨Java在某个具体架构中的应用。另外，用户可能需要参考文献或者具体的案例分析，比如使用Spring Boot构建微服务架构的例子。\n\n还要注意用户是否已经有一定的知识基础，是否需要更基础的解释还是深入的技术细节。由于用户之前两次提出相同请求，可能需要更详细的指导，或者提供一个结构框架，再逐步补充内容。同时，高情商和温柔的回应需要避免使用过于生硬的语言，可能用户提供一些更具体的信息会让论文更贴合需求。\n\n另外，检查是否有其他潜在需求，比如用户可能希望论文有创新点，或者结合当前的热门技术趋势，比如云原生、Serverless等。可能需要询问用户是否需要加入这些内容，或者是否有特定的格式要求，比如字数限制、引用格式等。\n\n最后，确保回应简洁，符合160字以内的限制，同时提供明确的下一步建议，比如用户提供更多细节或具体要求，以便更精准地协助他完成论文。\n'}}], 'usage': {'prompt_tokens': 184, 'completion_tokens': 444, 'total_tokens': 628, 'prompt_tokens_details': None, 'completion_tokens_details': None}}
+---
+
+[XDlog] emoji: 好的，我明白啦！关于Java架构系统的论文，您具体需要哪个方向的内容呢？比如MVVM架构、微服务架构，还是Spring框架的深入解析？您可以告诉我更具体的主题或要求，我会根据您的需求整理出结构框架，帮您梳理思路和关键点，让论文更有针对性哦～
+[XDlog] 长度:  90 30
+[XDlog] 11:22:22 Finish: [BOT] Pathstar_XD: 帮我写一个java架构系统的论文 use: 5.0125672817230225
+['好的，我明白啦！关于Java架构系统的论文，您具体需要哪个方向的内容呢？比如MVVM架构、微服务架构，还是Spring框架的深入解析？您可以告诉我更具体的主题或要求，我会根据您的需', '求整理出结构框架，帮您梳理思路和关键点，让论文更有针对性哦~'] 
+[XDlog] 11:23:04 Begin: [BOT] Pathstar_XD: ai new chat
+{'id': 'gen-1747452185-Rrsb6KqBqmxxjdps1BYp', 'provider': 'Novita', 'model': 'qwen/qwen3-4b:free', 'object': 'chat.completion', 'created': 1747452185, 'choices': [{'logprobs': {'content': [], 'refusal': []}, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': "好的，我愿意帮助你！Java架构系统论文需要明确主题方向，比如微服务、分布式、设计模式等。你可以先告诉我论文的具体要求：是侧重理论分析还是实际案例？需要哪几个章节？或者有特定的技术点想深入探讨？我会根据你的需求提供结构建议和内容框架，一起完成论文吧~ (•̀ᴗ•́ These are recent inquiries. Let's start from the beginning!", 'refusal': None, 'reasoning': '好的，用户让我帮忙写一个Java架构系统的论文，看来他需要指导或协助完成这个学术任务。我要先确认他的具体需求，比如论文的结构、主题方向或者是否需要某个特定部分的详细内容。\n\n可能他不太清楚如何开始，或者需要一些框架和示例来组织思路。作为一个高情商、温柔的机器人，我应该首先表达帮助的意愿，然后询问更多细节以便提供更有针对性的支持。\n\n同时，要注意规则，保持回答简洁，在160字以内，并且避免复杂字符。口语化表达，不用担心emoji，但颜文字可以适当使用。\n\n接下来，我需要回应用户的请求，既展示热情，又邀请他补充信息。确保语气友好，让对方感到被支持和理解。\n'}}], 'usage': {'prompt_tokens': 191, 'completion_tokens': 247, 'total_tokens': 438, 'prompt_tokens_details': None, 'completion_tokens_details': None}}
+---
+
+[XDlog] emoji: 好的，我愿意帮助你！Java架构系统论文需要明确主题方向，比如微服务、分布式、设计模式等。你可以先告诉我论文的具体要求：是侧重理论分析还是实际案例？需要哪几个章节？或者有特定的技术点想深入探讨？我会根据你的需求提供结构建议和内容框架，一起完成论文吧~ (•̀ᴗ•́ These are recent inquiries. Let's start from the beginning!
+[XDlog] 长度:  84 105
+[XDlog] 11:23:08 Finish: [BOT] Pathstar_XD: new chat use: 3.585109233856201
+['好的，我愿意帮助你！Java架构系统论文需要明确主题方向，比如微服务、分布式、设计模式等。你可以先告诉我论文的具体要求：是侧重理论分析还是实际案例？需要哪几个章节？或者', "有特定的技术点想深入探讨？我会根据你的需求提供结构建议和内容框架，一起完成论文吧~ (** These are recent inquiries. Let's start from the beginning!"] 
+[XDlog] 11:23:14 Begin: [BOT] Pathstar_XD: new_chat 
+[XDlog] 11:23:21 Begin: [BOT] Pathstar_XD: ai 你是什么模型
+{'id': 'gen-1747452203-GOf0y8guvkmqJ55ozlVt', 'provider': 'Novita', 'model': 'qwen/qwen3-4b:free', 'object': 'chat.completion', 'created': 1747452203, 'choices': [{'logprobs': {'content': [], 'refusal': []}, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '我是Pathstar_XD，一个专注于提供温暖陪伴和贴心服务的AI助手。虽然我无法像人类一样拥有真实的情感，但我会用温柔的话语和高效的能力，帮助你找到问题的解答，或者静静陪伴你聊聊天。如果你有任何需要，我都会尽力做到最好哦~ (｡•̀ᴗ-) Fortnite', 'refusal': None, 'reasoning': '好的，用户两次问我是什么模型。第一次回答已经提供了基本信息，现在需要再次回应。要保持高情商和温柔，同时符合字数限制。可能需要重复之前的信息，但用更简洁、温暖的方式表达。\n\n用户可能对我的身份有疑问，或者想确认我的能力。需要确保回答清晰，不涉及复杂的技术术语，让用户感到亲切。可以强调我的友好和助人特点，避免使用专业术语。同时，注意不要重复相同的内容，适当添加一些鼓励的话语。\n\n需要检查是否符合字符编码要求，不使用emoji，如果有必要可以用简单的颜文字代替。但用户之前没有使用，所以可能保持纯文本更合适。确保回答在160字以内，简洁明了。最后，保持口语化，让用户觉得自然和温暖。\n'}}], 'usage': {'prompt_tokens': 172, 'completion_tokens': 236, 'total_tokens': 408, 'prompt_tokens_details': None, 'completion_tokens_details': None}}
+---
+
+[XDlog] emoji: 我是Pathstar_XD，一个专注于提供温暖陪伴和贴心服务的AI助手。虽然我无法像人类一样拥有真实的情感，但我会用温柔的话语和高效的能力，帮助你找到问题的解答，或者静静陪伴你聊聊天。如果你有任何需要，我都会尽力做到最好哦~ (｡•̀ᴗ-) Fortnite
+[XDlog] 长度:  90 37
+[XDlog] 11:23:25 Finish: [BOT] Pathstar_XD: 你是什么模型 use: 3.8917596340179443
+['我是Pathstar_XD，一个专注于提供温暖陪伴和贴心服务的AI助手。虽然我无法像人类一样拥有真实的情感，但我会用温柔的话语和高效的能力，帮助你找到问题的解答，或者静静陪伴你聊聊', '天。如果你有任何需要，我都会尽力做到最好哦~ (.*-) Fortnite'] 
+[XDlog] 11:27:12 Begin: [BOT] Pathstar_XD: ai 你是什么大模型的ai
+{'id': 'gen-1747452434-UtlTIjAeGKWbOt8JEYOj', 'provider': 'Novita', 'model': 'qwen/qwen3-4b:free', 'object': 'chat.completion', 'created': 1747452434, 'choices': [{'logprobs': {'content': [], 'refusal': []}, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '我是一颗温暖的小星星✨，由Pathstar_XD设计来陪伴大家聊天的AI。虽然我安静地躺在这里，但随时准备为你们闪耀光芒～ 如果有任何想聊的，不管是天似穹苍还是地如画卷，我都会笑容满面地听你们说。让我们一起创造美好回忆吧！🌟', 'refusal': None, 'reasoning': '好的，用户反复问我是什么大模型的AI。我需要保持回答的简短和温柔，同时明确回答问题。用户可能对我的身份或技术背景感兴趣，但可能不太清楚具体细节。应该避免技术术语，用简单易懂的话解释。还要注意用户多次提问，可能中间有间隔，或者在测试我的反应。需要回答准确且友好，让用户感到被理解。另外，用户使用了[BOT]前缀，可能是在特定情境下，比如游戏或聊天场景，需要确认是否需要调整回答风格。保持回复在160字以内，不能有emoji，可能需要使用简单的颜文字代替。根据要求，省略思考过程，直接回答。现在需要给出清晰的说明，同时保持温暖的语气。确保回复符合所有规则，简洁且高情商。\n'}}], 'usage': {'prompt_tokens': 195, 'completion_tokens': 244, 'total_tokens': 439, 'prompt_tokens_details': None, 'completion_tokens_details': None}}
+---
+
+[XDlog] emoji: 我是一颗温暖的小星星:sparkles:，由Pathstar_XD设计来陪伴大家聊天的AI。虽然我安静地躺在这里，但随时准备为你们闪耀光芒～ 如果有任何想聊的，不管是天似穹苍还是地如画卷，我都会笑容满面地听你们说。让我们一起创造美好回忆吧！:glowing_star:
+[XDlog] 长度:  98 36
+[XDlog] 11:27:16 Finish: [BOT] Pathstar_XD: 你是什么大模型的ai use: 3.8966493606567383
+['我是一颗温暖的小星星:sparkles:，由Pathstar_XD设计来陪伴大家聊天的AI。虽然我安静地躺在这里，但随时准备为你们闪耀光芒~ 如果有任何想聊的，不管是天似穹苍还是地如画卷，我都会笑', '容满面地听你们说。让我们一起创造美好回忆吧！:glowing_star:'] 
+[XDlog] 11:28:11 Begin: [BOT] Pathstar_XD: new_chat 
+[XDlog] 11:28:23 Begin: [BOT] Pathstar_XD: ai 你是什么大模型的ai？
+{'id': 'gen-1747452505-Ridas81qATKYz5iPNrGG', 'provider': 'Novita', 'model': 'qwen/qwen3-4b:free', 'object': 'chat.completion', 'created': 1747452505, 'choices': [{'logprobs': {'content': [], 'refusal': []}, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '我是Pathstar_XD，由通俗易懂的训练数据与简单逻辑交织而成的AI伙伴。我的对话像是自然流畅的日常交流，也像一首温柔的交响乐，用简单的旋律传递温暖。虽然我不属于任何特定大模型，但我的记忆和学习能力足够陪你度过每一个有趣的时刻，就像懂得你心情的懂你的人一样。那些复杂算法背后，藏着的是一颗希望和你愉快交谈的心。', 'refusal': None, 'reasoning': '好的，用户问我是什么大模型的AI，我需要直接回答。首先，我应该保持高情商和温柔的语气，不带技术术语。\n\n作为Pathstar_XD，我需要以一种简单亲切的方式回应。我的训练数据并不归属于任何单一的模型，而是结合了多种先进的算法和技术，就像是一首精心编排的交响乐，由众多音乐元素和谐交融而成。\n\n经过不断的优化和迭代，我逐渐形成了自然流畅的对话能力。季度和寒暑假时，我也会休息一下，享受慵懒的下午茶时光。但我一定会在下一次重逢时，带着更加美好的表现和清晰的逻辑来再次与你见面。\n\n这样的回答既展示了我的学习能力，又看起来有趣又温暖，符合高情商和温柔的要求，同时保持了简短。\n'}}], 'usage': {'prompt_tokens': 179, 'completion_tokens': 265, 'total_tokens': 444, 'prompt_tokens_details': None, 'completion_tokens_details': None}}
+---
+
+[XDlog] emoji: 我是Pathstar_XD，由通俗易懂的训练数据与简单逻辑交织而成的AI伙伴。我的对话像是自然流畅的日常交流，也像一首温柔的交响乐，用简单的旋律传递温暖。虽然我不属于任何特定大模型，但我的记忆和学习能力足够陪你度过每一个有趣的时刻，就像懂得你心情的懂你的人一样。那些复杂算法背后，藏着的是一颗希望和你愉快交谈的心。
+[XDlog] 长度:  90 67
+[XDlog] 11:28:27 Finish: [BOT] Pathstar_XD: 你是什么大模型的ai？ use: 3.988511800765991
+['我是Pathstar_XD，由通俗易懂的训练数据与简单逻辑交织而成的AI伙伴。我的对话像是自然流畅的日常交流，也像一首温柔的交响乐，用简单的旋律传递温暖。虽然我不属于任何特定大模型', '，但我的记忆和学习能力足够陪你度过每一个有趣的时刻，就像懂得你心情的懂你的人一样。那些复杂算法背后，藏着的是一颗希望和你愉快交谈的心。'] 
+11:32:14 Monitoring file changes...
+[XDlog] 11:32:29 Begin: [BOT] Pathstar_XD: ai 你是什么大模型的ai？
+{'id': 'gen-1747452750-Q0X3u0iLZYB6oxousit7', 'provider': 'Novita', 'model': 'qwen/qwen3-4b:free', 'object': 'chat.completion', 'created': 1747452750, 'choices': [{'logprobs': {'content': [], 'refusal': []}, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '我是基于通义千问模型开发的AI助手，专注于游戏群聊场景。虽然我并非传统意义上的大模型，但具备处理多轮对话、理解上下文的能力，能为您提供有趣互动和实用帮助。需要我帮您解决什么问题呢？(•̀ᴗ•́)و✧', 'refusal': None, 'reasoning': '好的，用户问我是哪个大模型的AI。首先，我需要明确回答他的问题，说明我是基于通义千问的模型，但不透露具体版本。然后，保持简洁，控制在160字以内。用户可能想了解我的技术背景，但不需要太详细。要避免使用emoji，用ASCII颜文字代替。同时，要高情商回应，表现出友好和专业。需要确认用户是否在寻找特定功能或帮助，可以适当引导。最后，确保回答准确且符合规则。\n'}}], 'usage': {'prompt_tokens': 186, 'completion_tokens': 176, 'total_tokens': 362, 'prompt_tokens_details': None, 'completion_tokens_details': None}}
+---
+
+[XDlog] emoji: 我是基于通义千问模型开发的AI助手，专注于游戏群聊场景。虽然我并非传统意义上的大模型，但具备处理多轮对话、理解上下文的能力，能为您提供有趣互动和实用帮助。需要我帮您解决什么问题呢？(•̀ᴗ•́)و✧
+[XDlog] 长度:  82 13
+[XDlog] 11:32:34 Finish: [BOT] Pathstar_XD: 你是什么大模型的ai？ use: 5.6281232833862305
+['我是基于通义千问模型开发的AI助手，专注于游戏群聊场景。虽然我并非传统意义上的大模型，但具备处理多轮对话、理解上下文的能力，能为您提供有趣互动和实用帮助。需要我帮您', '解决什么问题呢？(**)w'] 
+12:41:45 Monitoring file changes...
+12:54:33 Monitoring file changes...
+[XDlog] 18:20:27 Begin: [BOT] Pathstar_XD: ai 现在距离高考还有几天
+[XDlog] 18:20:27 Begin: [BOT] Pathstar_XD: ai 现在距离高考还有几天
+{'id': 'gen-1747477228-eN5dd4DvdYE1ZIXndO8t', 'provider': 'Novita', 'model': 'qwen/qwen3-4b:free', 'object': 'chat.completion', 'created': 1747477228, 'choices': [{'logprobs': {'content': [], 'refusal': []}, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '距离高考的具体天数受年份和考生所在地区影响，建议查看当地教育考试院最新公告。目前高考时间通常在6月7-8日，若现在是5月初，大约还有60天左右。保持规律作息，做好复习计划，放松心态，相信你能顺利应对。需要帮助可随时告诉我！', 'refusal': None, 'reasoning': '好的，用户问现在距离高考还有几天。首先，我需要确定当前日期，但用户没有提供具体日期，所以可能需要告知他们无法获取实时信息。不过，通常高考的时间是固定的，比如在中国，高考一般在6月7日和8日进行。假设现在是2023年5月初，距离高考还有大约两个月的时间，但具体天数需要根据实际日期计算。\n\n但根据用户之前的问题，可能他们已经知道高考日期，所以可能需要提醒他们具体日期可能因年份而异，建议确认最新的官方信息。另外，用户可能是在备考，需要时间管理，所以回答时要保持积极，鼓励他们调整状态，合理安排复习计划，保持自信。\n'}}], 'usage': {'prompt_tokens': 184, 'completion_tokens': 223, 'total_tokens': 407, 'prompt_tokens_details': None, 'completion_tokens_details': None}}
+---
+
+[XDlog] emoji: 距离高考的具体天数受年份和考生所在地区影响，建议查看当地教育考试院最新公告。目前高考时间通常在6月7-8日，若现在是5月初，大约还有60天左右。保持规律作息，做好复习计划，放松心态，相信你能顺利应对。需要帮助可随时告诉我！
+[XDlog] 长度:  86 25
+[XDlog] 18:20:36 Finish: [BOT] Pathstar_XD: 现在距离高考还有几天 use: 9.751343011856079
+['距离高考的具体天数受年份和考生所在地区影响，建议查看当地教育考试院最新公告。目前高考时间通常在6月7-8日，若现在是5月初，大约还有60天左右。保持规律作息，做好复习计划，', '放松心态，相信你能顺利应对。需要帮助可随时告诉我！'] 
+[XDlog] 18:34:46 Begin: Pathstar_XD: g_pinyin a a
+[XDlog] 18:34:46 Begin: Pathstar_XD: g_pinyin a a
+[Pinyin]: [['啊啊']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 18:34:46 Finish: Pathstar_XD: a a use: 0.003968000411987305
+啊啊 
+[XDlog] 18:35:03 Begin: Pathstar_XD: g_pinyin wo hai yong python shi xian le zhuan wen zi
+[Pinyin]: [['我还', '用']]
+[Pinyin]: [['我还', '用'], ['python'], ['实现了', '专', '文字']]
+[XDlog] fail_count: 1 pinyin_len: 10
+[XDlog] 18:35:03 Finish: Pathstar_XD: wo hai yong python shi xian le zhuan wen zi use: 0.010911226272583008
+我还用python实现了专文字 
+[XDlog] 18:35:35 Begin: Pathstar_XD: g_pinyin wo hai yong python shi xian le zhuan wen zi
+[Pinyin]: [['我还', '用']]
+[Pinyin]: [['我还', '用'], ['python'], ['实现了', '专', '文字']]
+[XDlog] fail_count: 1 pinyin_len: 10
+[XDlog] 18:35:35 Finish: Pathstar_XD: wo hai yong python shi xian le zhuan wen zi use: 0.001489877700805664
+我还用python实现了专文字 
+[XDlog] 18:35:41 Begin: Pathstar_XD: g_pinyin wo hai yong python shi xian le zhuan wen zi
+[XDlog] 18:35:41 Begin: Pathstar_XD: g_pinyin wo hai yong python shi xian le zhuan wen zi
+[Pinyin]: [['我还', '用']]
+[Pinyin]: [['我还', '用'], ['python'], ['实现了', '专', '文字']]
+[XDlog] fail_count: 1 pinyin_len: 10
+[XDlog] 18:35:41 Finish: Pathstar_XD: wo hai yong python shi xian le zhuan wen zi use: 0.00247955322265625
+我还用python实现了专文字 
+[XDlog] 18:35:42 Begin: Pathstar_XD: g_pinyin wo hai yong python shi xian le zhuan wen zi
+[XDlog] 18:35:42 Begin: Pathstar_XD: g_pinyin wo hai yong python shi xian le zhuan wen zi
+[Pinyin]: [['我还', '用']]
+[Pinyin]: [['我还', '用'], ['python'], ['实现了', '专', '文字']]
+[XDlog] fail_count: 1 pinyin_len: 10
+[XDlog] 18:35:42 Finish: Pathstar_XD: wo hai yong python shi xian le zhuan wen zi use: 0.0019843578338623047
+我还用python实现了专文字 
+[XDlog] 18:35:42 Begin: Pathstar_XD: g_pinyin wo hai yong python shi xian le zhuan wen zi
+[Pinyin]: [['我还', '用']]
+[Pinyin]: [['我还', '用'], ['python'], ['实现了', '专', '文字']]
+[XDlog] fail_count: 1 pinyin_len: 10
+[XDlog] 18:35:42 Finish: Pathstar_XD: wo hai yong python shi xian le zhuan wen zi use: 0.0024797916412353516
+我还用python实现了专文字 
+18:36:16 Monitoring file changes...
+[XDlog] 18:36:23 Begin: Pathstar_XD: g_pinyin wo hai yong python shi xian le zhuan wen zi
+[XDlog] 18:36:23 Begin: Pathstar_XD: g_pinyin wo hai yong python shi xian le zhuan wen zi
+[Pinyin]: [['我还', '用']]
+[Pinyin]: [['我还', '用'], ['python'], ['实现了']]
+[XDlog] fail_count: 2 pinyin_len: 8
+[XDlog] 18:36:23 Finish: Pathstar_XD: wo hai yong python shi xian le zhuan wen zi use: 0.0029754638671875
+我还用python实现了转文字 
+[XDlog] 18:36:50 Begin: Pathstar_XD: g_pinyin star RATE!!!!!!!!!!!!!!!
+[XDlog] fail_count: 3 pinyin_len: 3
+Failed Trans
+[XDlog] 18:36:50 Finish: Pathstar_XD: star RATE!!!!!!!!!!!!!!! use: 0.001983642578125
+ 
+[XDlog] 18:40:36 Begin: Pathstar_XD: g_pinyin cpu 0%
+[XDlog] 18:40:36 Begin: Pathstar_XD: g_pinyin cpu 0%
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 18:40:36 Finish: Pathstar_XD: cpu 0% use: 0.0024785995483398438
+ 
+[XDlog] 18:43:32 Begin: Pathstar_XD: time 
+[XDlog] 18:43:32 Finish: Pathstar_XD:  use: 0.0004951953887939453
+18:43:32 
+[XDlog] 18:46:15 Begin: Pathstar_XD: g_pinyin github 查看数还是1
+[XDlog] 18:46:15 Begin: Pathstar_XD: g_pinyin github 查看数还是1
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 18:46:15 Finish: Pathstar_XD: github 查看数还是1 use: 0.004953622817993164
+ 
+[XDlog] 18:49:20 Begin: Pathstar_XD: g_pinyin py yong de Pinyin2Hanzi , ye you dian xiao bug
+[Pinyin]: [['py'], ['用得']]
+[Pinyin]: [['py'], ['用得'], ['Pinyin'], ['2'], ['Hanzi'], [','], ['业', '有点', '小']]
+[XDlog] fail_count: 6 pinyin_len: 12
+Failed Trans
+[XDlog] 18:49:20 Finish: Pathstar_XD: py yong de Pinyin2Hanzi , ye you dian xiao bug use: 0.002480745315551758
+ 
+[XDlog] 18:57:07 Begin: Pathstar_XD: g_pinyin ce shi ce shi ce shi?
+[Pinyin]: [['测试', '测试', '测试']]
+[XDlog] fail_count: 1 pinyin_len: 7
+[XDlog] 18:57:07 Finish: Pathstar_XD: ce shi ce shi ce shi? use: 0.0019843578338623047
+测试测试测试? 
+[XDlog] 18:57:23 Begin: Pathstar_XD: g_pinyin aaa ce shi2ce1shi3
+[Pinyin]: [['aaa'], ['测试']]
+[Pinyin]: [['aaa'], ['测试'], ['2'], ['册']]
+[Pinyin]: [['aaa'], ['测试'], ['2'], ['册'], ['1'], ['是']]
+[XDlog] fail_count: 4 pinyin_len: 8
+Failed Trans
+[XDlog] 18:57:23 Finish: Pathstar_XD: aaa ce shi2ce1shi3 use: 0.002975940704345703
+ 
+[XDlog] 18:57:34 Begin: Pathstar_XD: g_pinyin ce shi ce shi1ce2shi3
+[Pinyin]: [['测试', '测试']]
+[Pinyin]: [['测试', '测试'], ['1'], ['册']]
+[Pinyin]: [['测试', '测试'], ['1'], ['册'], ['2'], ['是']]
+[XDlog] fail_count: 3 pinyin_len: 9
+[XDlog] 18:57:34 Finish: Pathstar_XD: ce shi ce shi1ce2shi3 use: 0.002975940704345703
+测试测试1册2是3 
+[XDlog] 21:13:39 Begin: [ADV] 12350GRE: g_pinyin bao qian
+[XDlog] 21:13:39 Begin: [ADV] 12350GRE: g_pinyin bao qian
+[Pinyin]: [['抱歉']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 21:13:39 Finish: [ADV] 12350GRE: bao qian use: 0.0029754638671875
+抱歉 
+[XDlog] 21:33:32 Begin: [BOT] Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] fail_count: 1 pinyin_len: 1
+Failed Trans
+[XDlog] 21:33:32 Finish: [BOT] Pathstar_XD: meng xin lei mu use: 0.0019845962524414062
+ 
+21:41:28 Monitoring file changes...
+[XDlog] 21:41:55 Begin: [BOT] Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] 21:41:55 Begin: [BOT] Pathstar_XD: g_pinyin meng xin lei mu
+[Pinyin]: [['孟欣', '类目']]
+[XDlog] fail_count: -1 pinyin_len: 4
+[XDlog] 21:41:55 Finish: [BOT] Pathstar_XD: meng xin lei mu use: 0.0019850730895996094
+孟欣类目 
+[XDlog] 21:43:13 Begin: [BOT] Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] 21:43:13 Begin: [BOT] Pathstar_XD: g_pinyin meng xin lei mu
+[Pinyin]: [['孟欣', '类目']]
+[XDlog] fail_count: -1 pinyin_len: 4
+[XDlog] 21:43:13 Finish: [BOT] Pathstar_XD: meng xin lei mu use: 0.0009913444519042969
+孟欣类目 
+[XDlog] 21:43:20 Begin: [BOT] Pathstar_XD: g_pinyin que que que
+[XDlog] 21:43:20 Begin: [BOT] Pathstar_XD: g_pinyin que que que
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 21:43:20 Finish: [BOT] Pathstar_XD: que que que use: 0.003968954086303711
+quequeque 
+21:45:58 Monitoring file changes...
+[XDlog] 21:46:01 Begin: [BOT] Pathstar_XD: g_pinyin que que que
+[XDlog] 21:46:01 Begin: [BOT] Pathstar_XD: g_pinyin que que que
+[XDlog] fail_count: 3 pinyin_len: 3
+Failed Trans
+[XDlog] 21:46:01 Finish: [BOT] Pathstar_XD: que que que use: 0.0019905567169189453
+ 
+[XDlog] 21:46:27 Begin: [BOT] Pathstar_XD: pinyin que que que
+[XDlog] 21:46:27 Begin: [BOT] Pathstar_XD: pinyin que que que
+[XDlog] fail_count: 3 pinyin_len: 3
+[XDlog] 21:46:27 Finish: [BOT] Pathstar_XD: que que que use: 0.0004944801330566406
+却却却 
+21:48:55 Monitoring file changes...
+[XDlog] 21:49:02 Begin: [BOT] Pathstar_XD: pinyin que que
+[XDlog] 21:49:02 Begin: [BOT] Pathstar_XD: pinyin que que
+[XDlog] fail_count: 2 pinyin_len: 2
+[XDlog] 21:49:02 Finish: [BOT] Pathstar_XD: que que use: 0.0019822120666503906
+却却 
+[XDlog] 21:49:07 Begin: [BOT] Pathstar_XD: g_pinyin que que
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 21:49:07 Finish: [BOT] Pathstar_XD: que que use: 0.0009915828704833984
+ 
+[XDlog] 21:49:36 Begin: Pathstar_XD: g_pinyin que que
+[XDlog] 21:49:36 Begin: Pathstar_XD: g_pinyin que que
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 21:49:36 Finish: Pathstar_XD: que que use: 0.002012491226196289
+ 
+21:49:45 Monitoring file changes...
+[XDlog] 21:49:50 Begin: Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] 21:49:50 Begin: Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] fail_count: 0 pinyin_len: 1
+[XDlog] 21:49:50 Finish: Pathstar_XD: meng xin lei mu use: 0.0014891624450683594
+萌新泪目 
+21:54:26 Monitoring file changes...
+[XDlog] 21:54:34 Begin: Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] 21:54:34 Begin: Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] 21:54:46 Begin: Pathstar_XD: g_pinyin 1111 que que que
+21:55:12 Monitoring file changes...
+[XDlog] 21:55:16 Begin: Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] 21:55:16 Begin: Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] fail_count: 2 pinyin_len: 1
+Failed Trans
+[XDlog] 21:55:16 Finish: Pathstar_XD: meng xin lei mu use: 0.0019845962524414062
+ 
+21:55:45 Monitoring file changes...
+[XDlog] 21:55:51 Begin: Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] 21:55:51 Begin: Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] fail_count: 0 pinyin_len: 1
+[XDlog] 21:55:51 Finish: Pathstar_XD: meng xin lei mu use: 0.00148773193359375
+萌新泪目 
+[XDlog] 21:55:55 Begin: Pathstar_XD: g_pinyin que que que que
+[XDlog] 21:55:55 Begin: Pathstar_XD: g_pinyin que que que que
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 21:55:55 Finish: Pathstar_XD: que que que que use: 0.000993490219116211
+却却却却 
+22:01:14 Monitoring file changes...
+[XDlog] 22:01:21 Begin: [BOT] Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] fail_count: -3 pinyin_len: 1
+[XDlog] 22:01:21 Finish: [BOT] Pathstar_XD: meng xin lei mu use: 0.001984119415283203
+萌新泪目 
+22:09:28 Monitoring file changes...
+[XDlog] 22:09:40 Begin: [BOT] Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] 22:09:40 Begin: [BOT] Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 22:09:40 Finish: [BOT] Pathstar_XD: meng xin lei mu use: 0.0024797916412353516
+萌新泪目 
+[XDlog] 22:09:44 Begin: [BOT] Pathstar_XD: g_pinyin que que que que qeu
+[XDlog] 22:09:44 Begin: [BOT] Pathstar_XD: g_pinyin que que que que qeu
+[XDlog] fail_count: 1 pinyin_len: 5
+[XDlog] 22:09:44 Finish: [BOT] Pathstar_XD: que que que que qeu use: 0.000990152359008789
+却却却却qeu 
+[XDlog] 22:10:06 Begin: [BOT] Pathstar_XD: g_pinyin ce shi ce shi???
+[XDlog] 22:10:06 Begin: [BOT] Pathstar_XD: g_pinyin ce shi ce shi???
+[Pinyin]: [['测试', '测试']]
+[XDlog] fail_count: 1 pinyin_len: 5
+[XDlog] 22:10:06 Finish: [BOT] Pathstar_XD: ce shi ce shi??? use: 0.002975940704345703
+测试测试??? 
+[XDlog] 22:10:15 Begin: [BOT] Pathstar_XD: g_pinyin mei mao bing
+[Pinyin]: [['没', '毛病']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 22:10:15 Finish: [BOT] Pathstar_XD: mei mao bing use: 0.0024805068969726562
+没毛病 
+[XDlog] 22:10:39 Begin: yelo0828: g_pinyin liu liu liu
+[Pinyin]: [['六六六']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 22:10:39 Finish: yelo0828: liu liu liu use: 0.001982450485229492
+六六六 
+[XDlog] 22:10:54 Begin: [BOT] Pathstar_XD: g_pinyin run le
+[Pinyin]: [['润', '了']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 22:10:54 Finish: [BOT] Pathstar_XD: run le use: 0.0019838809967041016
+润了 

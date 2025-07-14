@@ -1,0 +1,1671 @@
+11:06:11 Monitoring file changes...
+[XDlog] 11:21:10 Begin: : init 
+[XDlog] 11:21:10 Finish: :  use: 0.0004000663757324219
+['\x1b[33m11:30:00\x1b[0m！\x1b[38;2;194;245;194m (ﾉ≧∀≦)ﾉ', 529]
+
+[XDlog] 11:21:18 Begin: : init 
+[XDlog] 11:21:18 Finish: :  use: 0.0003352165222167969
+['\x1b[33m11:30:00\x1b[0m！\x1b[38;2;194;245;194m (=^･ω･^=)', 521]
+
+[XDlog] 11:23:01 Begin: : init 
+[XDlog] 11:23:01 Finish: :  use: 0.0003905296325683594
+['\x1b[33m11:30:00\x1b[0m！\x1b[38;2;254;250;195m (ﾉ≧∀≦)ﾉ', 418]
+
+[XDlog] 11:23:16 Begin: : init 
+[XDlog] 11:23:16 Finish: :  use: 0.0003941059112548828
+['\x1b[33m11:30:00\x1b[0m！\x1b[38;2;205;214;210m (｀・ω・´)', 403]
+
+[XDlog] 11:23:28 Begin: [BOT] Pathstar_XD: server ['mode', 'asdasgfakhf']
+[XDlog] 11:23:28 Finish: [BOT] Pathstar_XD: ['mode', 'asdasgfakhf'] use: 0.1374189853668213
+查询模式 [asdasgfakhf] 未找到服务器
+
+[XDlog] 11:23:36 Begin: [BOT] Pathstar_XD: server ['name', 'asfiaufkasfhahfshf']
+[XDlog] 11:23:36 Finish: [BOT] Pathstar_XD: ['name', 'asfiaufkasfhahfshf'] use: 0.1262037754058838
+查询名称 [asfiaufkasfhahfshf] 未找到服务器
+
+[XDlog] 11:24:04 Begin: [BOT] Pathstar_XD: server ['name', '单挑']
+[XDlog] 11:24:04 Finish: [BOT] Pathstar_XD: ['name', '单挑'] use: 0.12680411338806152
+查询名称 [单挑] 未找到服务器
+
+[XDlog] 11:24:39 Begin: [BOT] Pathstar_XD: server ['name', '9级帝王消耗战']
+[XDlog] 11:24:39 Finish: [BOT] Pathstar_XD: ['name', '9级帝王消耗战'] use: 0.11722540855407715
+查询名称 [9级帝王消耗战] 未找到服务器
+
+[XDlog] 11:25:28 Begin: [BOT] Pathstar_XD: server ['name', '养老']
+[XDlog] 11:25:28 Finish: [BOT] Pathstar_XD: ['name', '养老'] use: 0.13276410102844238
+[{'playerCount': 2, 'name': '新时代\x1b[33m养老\x1b[0m服，高kd踢出'}]
+
+[XDlog] 11:25:43 Begin: [BOT] Pathstar_XD: server ['name', '9级别']
+[XDlog] 11:25:43 Finish: [BOT] Pathstar_XD: ['name', '9级别'] use: 0.12665367126464844
+查询名称 [9级别] 未找到服务器
+
+[XDlog] 11:25:53 Begin: [BOT] Pathstar_XD: server ['name', '9级']
+[XDlog] 11:25:53 Finish: [BOT] Pathstar_XD: ['name', '9级'] use: 0.12444305419921875
+查询名称 [9级] 未找到服务器
+
+[XDlog] 11:26:27 Begin: [範式起源] Pol_Pot0721: server ['name', '九级']
+[XDlog] 11:26:27 Finish: [範式起源] Pol_Pot0721: ['name', '九级'] use: 0.12557196617126465
+查询名称 [九级] 未找到服务器
+
+[XDlog] 11:27:03 Begin: [BOT] Pathstar_XD: server ['mode', '边境']
+[XDlog] 11:27:03 Finish: [BOT] Pathstar_XD: ['mode', '边境'] use: 0.12616205215454102
+[{'playerCount': 5, 'name': '[SL5+ 无限火力]5人简单服'}, {'playerCount': 3, 'name': '[NSCN] 北极星CN官方边境防御[简单]#1'}, {'playerCount': 2, 'name': '【超好玩】超级先锋泰坦'}]
+
+[XDlog] 11:27:20 Begin: [BOT] Pathstar_XD: server ['name', '超级']
+[XDlog] 11:27:20 Finish: [BOT] Pathstar_XD: ['name', '超级'] use: 0.12096238136291504
+[{'playerCount': 2, 'name': '【超好玩】\x1b[33m超级\x1b[0m先锋泰坦'}]
+
+11:28:13 Monitoring file changes...
+[XDlog] 11:28:29 Begin: [BOT] Pathstar_XD: server ['name', '单挑']
+[XDlog] 11:28:29 Finish: [BOT] Pathstar_XD: ['name', '单挑'] use: 0.12374472618103027
+查询名称 [单挑] 未找到服务器
+
+11:30:01 Monitoring file changes...
+[XDlog] 11:31:17 Begin: [BOT] Pathstar_XD: server ['name', '单挑']
+[XDlog] 11:31:17 Finish: [BOT] Pathstar_XD: ['name', '单挑'] use: 0.12279748916625977
+现在没有任何人！-> 【超好玩】[33m单挑[0m战
+
+[XDlog] 11:38:47 Begin: : init 
+[XDlog] 11:38:47 Finish: :  use: 0.00034928321838378906
+['\x1b[33m12:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (｡>﹏<｡)', 1272]
+
+[XDlog] 11:54:15 Begin: : init 
+[XDlog] 11:54:15 Finish: :  use: 0.00033593177795410156
+['\x1b[33m12:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (｀・ω・´)', 344]
+
+[XDlog] 12:09:47 Begin: : init 
+[XDlog] 12:09:47 Finish: :  use: 0.0003387928009033203
+['\x1b[33m12:30:00\x1b[0m！\x1b[38;2;173;216;230m (｡>ω<｡)', 1212]
+
+12:12:39 Monitoring file changes...
+[XDlog] 12:12:54 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a a a']
+[XDlog] 12:12:54 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a a a'] use: 0.1331477165222168
+Get NS服务器错误: TypeError
+
+[XDlog] 12:13:56 Begin: [BOT] Pathstar_XD: server ['name', '萌新']
+[XDlog] 12:13:56 Finish: [BOT] Pathstar_XD: ['name', '萌新'] use: 0.12686443328857422
+[{'playerCount': 11, 'name': '[CN]坏逼培训营 \x1b[33m萌新\x1b[0m房'}]
+
+[XDlog] 12:14:36 Begin: : init 
+[XDlog] 12:14:36 Finish: :  use: 0.00032067298889160156
+['\x1b[33m12:30:00\x1b[0m！\x1b[38;2;240;128;128m (≧▽≦)/', 923]
+
+[XDlog] 12:14:50 Begin: : init 
+[XDlog] 12:14:50 Finish: :  use: 0.000293731689453125
+['\x1b[33m12:30:00\x1b[0m！\x1b[38;2;254;208;175m (｡>ω<｡)', 909]
+
+[XDlog] 12:15:00 Begin: [BOT] Pathstar_XD: server ['name', 'nscn']
+[XDlog] 12:15:01 Finish: [BOT] Pathstar_XD: ['name', 'nscn'] use: 0.1341416835784912
+[{'playerCount': 3, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[简单]#1'}, {'playerCount': 2, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[大师]#1'}]
+
+[XDlog] 12:15:05 Begin: [BOT] Pathstar_XD: server ['name', 'nscn']
+[XDlog] 12:15:05 Finish: [BOT] Pathstar_XD: ['name', 'nscn'] use: 0.0008676052093505859
+[{'playerCount': 3, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[简单]#1'}, {'playerCount': 2, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[大师]#1'}]
+
+[XDlog] 12:15:19 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a aa']
+[XDlog] 12:15:20 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a aa'] use: 0.1264181137084961
+查询名称 [a a a a a a aa] 未找到服务器
+
+[XDlog] 12:15:30 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a aaa a a']
+[XDlog] 12:15:31 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a aaa a a'] use: 0.12082767486572266
+Get NS服务器错误: TypeError
+
+12:15:59 Monitoring file changes...
+[XDlog] 12:16:02 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a aaa a a']
+[XDlog] 12:16:02 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a aaa a a'] use: 0.0007741451263427734
+Get NS服务器错误: TypeError
+
+12:16:30 Monitoring file changes...
+[XDlog] 12:16:32 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a aaa a a']
+[XDlog] 12:16:32 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a aaa a a'] use: 0.0008063316345214844
+Get NS服务器错误: TypeError
+
+12:16:53 Monitoring file changes...
+[XDlog] 12:16:54 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a aaa a a']
+'int' object is not subscriptable
+[XDlog] 12:16:54 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a aaa a a'] use: 0.001056671142578125
+Get NS服务器错误: TypeError
+
+[XDlog] 12:16:59 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a aaa a a']
+'int' object is not subscriptable
+[XDlog] 12:16:59 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a aaa a a'] use: 0.0017094612121582031
+Get NS服务器错误: TypeError
+
+[XDlog] 12:21:00 Begin: : init 
+[XDlog] 12:21:00 Finish: :  use: 0.0003323554992675781
+['\x1b[33m12:30:00\x1b[0m！\x1b[38;2;205;214;210m (≧▽≦)/', 539]
+
+[XDlog] 12:21:33 Begin: : init 
+[XDlog] 12:21:33 Finish: :  use: 0.000278472900390625
+['\x1b[33m12:30:00\x1b[0m！\x1b[38;2;248;131;121m (=^･ω･^=)', 506]
+
+[XDlog] 12:21:39 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+'int' object is not subscriptable
+[XDlog] 12:21:39 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.1264960765838623
+Get NS服务器错误: TypeError
+
+12:21:51 Monitoring file changes...
+[XDlog] 12:21:54 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:21:54 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.00083160400390625
+[{'playerCount': -1, 'name': '参数最多支持8个'}]
+
+12:23:50 Monitoring file changes...
+[XDlog] 12:23:51 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+bad operand type for unary -: 'str'
+[XDlog] 12:23:51 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0010020732879638672
+Get NS服务器错误: TypeError
+
+12:23:58 Monitoring file changes...
+[XDlog] 12:23:58 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:23:58 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0008571147918701172
+[{'playerCount': -1, 'name': '参数最多支持8个'}]
+
+12:25:11 Monitoring file changes...
+[XDlog] 12:25:12 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+'str' object has no attribute 'append'
+[XDlog] 12:25:12 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0009407997131347656
+Get NS服务器错误: AttributeError
+
+[XDlog] 12:25:13 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+'str' object has no attribute 'append'
+[XDlog] 12:25:13 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0009210109710693359
+Get NS服务器错误: AttributeError
+
+[XDlog] 12:25:14 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+'str' object has no attribute 'append'
+[XDlog] 12:25:14 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0009603500366210938
+Get NS服务器错误: AttributeError
+
+12:25:43 Monitoring file changes...
+[XDlog] 12:25:48 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:25:48 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007882118225097656
+[{'playerCount': -1, 'name': '参数最多支持8个'}]
+
+[XDlog] 12:25:53 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:25:53 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007655620574951172
+[{'playerCount': -1, 'name': '参数最多支持8个'}]
+
+[XDlog] 12:25:54 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:25:55 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.12675929069519043
+[{'playerCount': -1, 'name': '参数最多支持8个'}]
+
+[XDlog] 12:25:55 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:25:55 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007305145263671875
+[{'playerCount': -1, 'name': '参数最多支持8个'}]
+
+[XDlog] 12:25:55 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:25:55 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007774829864501953
+[{'playerCount': -1, 'name': '参数最多支持8个'}]
+
+[XDlog] 12:25:55 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:25:55 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007202625274658203
+[{'playerCount': -1, 'name': '参数最多支持8个'}]
+
+[XDlog] 12:25:55 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:25:55 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007221698760986328
+[{'playerCount': -1, 'name': '参数最多支持8个'}]
+
+[XDlog] 12:25:55 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:25:55 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007357597351074219
+[{'playerCount': -1, 'name': '参数最多支持8个'}]
+
+12:27:12 Monitoring file changes...
+[XDlog] 12:27:13 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:13 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0008034706115722656
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:15 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:15 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007455348968505859
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:16 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:16 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0009064674377441406
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:16 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:16 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007281303405761719
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:16 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:16 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007100105285644531
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:16 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:16 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007371902465820312
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:16 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:16 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007510185241699219
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:26 Begin: [BOT] Pathstar_XD: server ['name', 'a']
+[XDlog] 12:27:26 Finish: [BOT] Pathstar_XD: ['name', 'a'] use: 0.12430620193481445
+查询名称 [a] 未找到服务器
+
+[XDlog] 12:27:46 Begin: [BOT] Pathstar_XD: server ['name', 'aaa']
+[XDlog] 12:27:46 Finish: [BOT] Pathstar_XD: ['name', 'aaa'] use: 0.12810325622558594
+查询名称 [aaa] 未找到服务器
+
+[XDlog] 12:27:47 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:47 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007083415985107422
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:48 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:48 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007355213165283203
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:48 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:48 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007131099700927734
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:48 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:48 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0008399486541748047
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:48 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:48 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0007607936859130859
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:48 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:48 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.000843048095703125
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:51 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:27:51 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.0008590221405029297
+[{'playerCount': -1, 'name': '参数最多支持8个'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:27:55 Begin: [BOT] Pathstar_XD: server ['name', 'aaa']
+[XDlog] 12:27:55 Finish: [BOT] Pathstar_XD: ['name', 'aaa'] use: 0.0007491111755371094
+查询名称 [aaa] 未找到服务器
+
+[XDlog] 12:27:56 Begin: [BOT] Pathstar_XD: server ['name', 'aaa']
+[XDlog] 12:27:56 Finish: [BOT] Pathstar_XD: ['name', 'aaa'] use: 0.0007417201995849609
+查询名称 [aaa] 未找到服务器
+
+[XDlog] 12:27:57 Begin: [BOT] Pathstar_XD: server ['name', 'aaa']
+[XDlog] 12:27:57 Finish: [BOT] Pathstar_XD: ['name', 'aaa'] use: 0.11890554428100586
+查询名称 [aaa] 未找到服务器
+
+[XDlog] 12:28:01 Begin: [範式起源] Pol_Pot0721: server ['name', 'kd']
+[XDlog] 12:28:01 Finish: [範式起源] Pol_Pot0721: ['name', 'kd'] use: 0.0007812976837158203
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:28:07 Begin: [BOT] Pathstar_XD: server ['name', 'aaa']
+[XDlog] 12:28:07 Finish: [BOT] Pathstar_XD: ['name', 'aaa'] use: 0.1273343563079834
+查询名称 [aaa] 未找到服务器
+
+[XDlog] 12:28:16 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+[XDlog] 12:28:16 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.0007681846618652344
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:28:18 Begin: [BOT] Pathstar_XD: server ['name', 'a a a a a a a a a a']
+[XDlog] 12:28:18 Finish: [BOT] Pathstar_XD: ['name', 'a a a a a a a a a a'] use: 0.12659931182861328
+[{'playerCount': -1, 'name': '参数最多支持8个'}]
+
+[XDlog] 12:28:21 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+[XDlog] 12:28:21 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.0008237361907958984
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:28:25 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+[XDlog] 12:28:25 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.0008413791656494141
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:28:27 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+[XDlog] 12:28:27 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.0008175373077392578
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:28:29 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+[XDlog] 12:28:29 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.12013697624206543
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}]
+
+[XDlog] 12:28:32 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+[XDlog] 12:28:32 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.0007512569427490234
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}, {'playerCount': -1, 'name': '内存读取'}]
+
+12:29:45 Monitoring file changes...
+[XDlog] 12:29:51 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+[XDlog] 12:29:51 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.0008516311645507812
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:29:57 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+
+
+
+get
+
+
+
+[XDlog] 12:29:57 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.13824057579040527
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}]
+
+[XDlog] 12:29:59 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+[XDlog] 12:29:59 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.0009925365447998047
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:30:03 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+[XDlog] 12:30:03 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.0007677078247070312
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:30:06 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+[XDlog] 12:30:06 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.0007703304290771484
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:30:09 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+
+
+
+get
+
+
+
+[XDlog] 12:30:09 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.12556791305541992
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}]
+
+[XDlog] 12:30:10 Begin: [BOT] Pathstar_XD: server ['name', 'kd']
+[XDlog] 12:30:10 Finish: [BOT] Pathstar_XD: ['name', 'kd'] use: 0.0007390975952148438
+[{'playerCount': 3, 'name': '新时代养老服，高\x1b[33mkd\x1b[0m踢出'}, {'playerCount': -1, 'name': '内存读取'}]
+
+[XDlog] 12:32:08 Begin: : init 
+[XDlog] 12:32:08 Finish: :  use: 0.0003304481506347656
+['\x1b[33m13:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (｡>﹏<｡)', 1671]
+
+12:32:16 Monitoring file changes...
+[XDlog] 12:32:24 Begin: [BOT] Pathstar_XD: server ['name', '小图']
+[XDlog] 内存读取...
+[XDlog] 12:32:24 Finish: [BOT] Pathstar_XD: ['name', '小图'] use: 0.00102996826171875
+现在没有任何人！-> [CN]坏逼们的服务器#[33m小图[0m铁对铁
+
+[XDlog] 12:32:38 Begin: [BOT] Pathstar_XD: server ['name', '小图']
+[XDlog] Get服务器...
+[XDlog] 12:32:38 Finish: [BOT] Pathstar_XD: ['name', '小图'] use: 0.13535833358764648
+现在没有任何人！-> [CN]坏逼们的服务器#[33m小图[0m铁对铁
+
+[XDlog] 12:33:05 Begin: [BOT] Pathstar_XD: server ['name', '小图']
+[XDlog] Get服务器...
+[XDlog] 12:33:05 Finish: [BOT] Pathstar_XD: ['name', '小图'] use: 0.1565239429473877
+现在没有任何人！-> [CN]坏逼们的服务器#[33m小图[0m铁对铁
+
+[XDlog] 12:33:16 Begin: [BOT] Pathstar_XD: server ['name', '小图']
+[XDlog] Get服务器...
+[XDlog] 12:33:17 Finish: [BOT] Pathstar_XD: ['name', '小图'] use: 0.12687230110168457
+现在没有任何人！-> [CN]坏逼们的服务器#[33m小图[0m铁对铁
+
+[XDlog] 12:33:19 Begin: [BOT] Pathstar_XD: server ['name', '小图']
+[XDlog] 内存读取...
+[XDlog] 12:33:19 Finish: [BOT] Pathstar_XD: ['name', '小图'] use: 0.0015282630920410156
+现在没有任何人！-> [CN]坏逼们的服务器#[33m小图[0m铁对铁
+
+[XDlog] 12:33:25 Begin: : init 
+[XDlog] 12:33:25 Finish: :  use: 0.0003325939178466797
+['\x1b[33m13:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (｡>﹏<｡)', 1594]
+
+12:33:42 Monitoring file changes...
+[XDlog] 12:33:49 Begin: Pathstar_XD: server ['mode', 'xd']
+[XDlog] Get服务器...
+[XDlog] 12:33:49 Finish: Pathstar_XD: ['mode', 'xd'] use: 0.13411855697631836
+[{'playerCount': 12, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 2, 'name': '新时代养老服，高kd踢出'}]
+
+[XDlog] 12:33:56 Begin: Pathstar_XD: server ['mode', 'xd']
+[XDlog] 内存读取...
+[XDlog] 12:33:56 Finish: Pathstar_XD: ['mode', 'xd'] use: 0.0016198158264160156
+[{'playerCount': 12, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 2, 'name': '新时代养老服，高kd踢出'}]
+
+[XDlog] 12:33:57 Begin: Pathstar_XD: server ['mode', 'xd']
+[XDlog] 内存读取...
+[XDlog] 12:33:57 Finish: Pathstar_XD: ['mode', 'xd'] use: 0.0010881423950195312
+[{'playerCount': 12, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 2, 'name': '新时代养老服，高kd踢出'}]
+
+[XDlog] 12:34:05 Begin: Pathstar_XD: server ['mode', 'xdall']
+[XDlog] Get服务器...
+[XDlog] 12:34:05 Finish: Pathstar_XD: ['mode', 'xdall'] use: 0.13268685340881348
+[{'playerCount': 12, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 12, 'name': '[摸鱼服]强化配件泰坦争斗抽象平衡3.7'}, {'playerCount': 9, 'name': '【超好玩】随时切换泰坦，体验X88'}, {'playerCount': 4, 'name': '[NSCN] 北极星CN官方边境防御[简单]#1'}, {'playerCount': 3, 'name': '[SL5+ 无限火力]5人简单服'}, {'playerCount': 3, 'name': '【超好玩】9级帝王边境战争'}, {'playerCount': 2, 'name': '[NSCN] 北极星CN官方边境防御[大师]#1'}, {'playerCount': 2, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 1, 'name': '[NSCN] 北极星CN官方边境防御[简单]#2'}, {'playerCount': 1, 'name': '[SL1+无限火力]5人边境大厅服'}, {'playerCount': 1, 'name': '[SL6+ 无限火力]5人一般服'}, {'playerCount': 1, 'name': '【超好玩】超级先锋泰坦'}]
+
+[XDlog] 12:35:45 Begin: : init 
+[XDlog] 12:35:45 Finish: :  use: 0.0002887248992919922
+['\x1b[33m13:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (=^･ω･^=)', 1454]
+
+[XDlog] 12:35:54 Begin: Pathstar_XD: server ['mode', 'all']
+[XDlog] Get服务器...
+[XDlog] 12:35:54 Finish: Pathstar_XD: ['mode', 'all'] use: 0.13306188583374023
+查询模式 [all] 未找到服务器
+
+[XDlog] 12:36:01 Begin: Pathstar_XD: server ['mode', 'xdall']
+[XDlog] 内存读取...
+[XDlog] 12:36:01 Finish: Pathstar_XD: ['mode', 'xdall'] use: 0.001039743423461914
+[{'playerCount': 14, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 12, 'name': '[摸鱼服]强化配件泰坦争斗抽象平衡3.7'}, {'playerCount': 5, 'name': '【超好玩】9级帝王边境战争'}, {'playerCount': 4, 'name': '[NSCN] 北极星CN官方边境防御[简单]#1'}, {'playerCount': 3, 'name': '[SL5+ 无限火力]5人简单服'}, {'playerCount': 3, 'name': '【超好玩】随时切换泰坦，体验X88'}, {'playerCount': 2, 'name': '[NSCN] 北极星CN官方边境防御[大师]#1'}, {'playerCount': 2, 'name': '[NSCN] 北极星CN官方边境防御[简单]#2'}, {'playerCount': 2, 'name': '【超好玩】超级先锋泰坦'}, {'playerCount': 2, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 1, 'name': '[SL1+无限火力]5人边境大厅服'}, {'playerCount': 1, 'name': '[SL6+ 无限火力]5人一般服'}, {'playerCount': 1, 'name': '[摸鱼服]边境攻坚战'}]
+
+[XDlog] 12:39:07 Begin: : init 
+[XDlog] 12:39:07 Finish: :  use: 0.00047779083251953125
+['\x1b[33m13:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (｡>ω<｡)', 1252]
+
+[XDlog] 12:39:13 Begin: Pathstar_XD: server ['mode', 'xdall']
+[XDlog] Get服务器...
+[XDlog] 12:39:13 Finish: Pathstar_XD: ['mode', 'xdall'] use: 0.1197059154510498
+[{'playerCount': 10, 'name': '[摸鱼服]强化配件泰坦争斗抽象平衡3.7'}, {'playerCount': 9, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 7, 'name': '【超好玩】9级帝王边境战争'}, {'playerCount': 4, 'name': '[NSCN] 北极星CN官方边境防御[简单]#1'}, {'playerCount': 3, 'name': '[SL5+ 无限火力]5人简单服'}, {'playerCount': 3, 'name': '【超好玩】随时切换泰坦，体验X88'}, {'playerCount': 3, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 2, 'name': '[NSCN] 北极星CN官方边境防御[大师]#1'}, {'playerCount': 2, 'name': '[NSCN] 北极星CN官方边境防御[简单]#2'}, {'playerCount': 2, 'name': '【超好玩】超级先锋泰坦'}, {'playerCount': 1, 'name': '[SL6+ 无限火力]5人一般服'}, {'playerCount': 1, 'name': '〔糯米大猪大排档〕高配置纯净5v5ttdm'}]
+
+[XDlog] 12:39:58 Begin: Pathstar_XD: server ['name', '小图']
+[XDlog] Get服务器...
+[XDlog] 12:39:58 Finish: Pathstar_XD: ['name', '小图'] use: 0.12220931053161621
+现在没有任何人！-> [CN]坏逼们的服务器#[33m小图[0m铁对铁
+
+[XDlog] 12:40:14 Begin: Pathstar_XD: server ['name', 'cn 边境']
+[XDlog] Get服务器...
+[XDlog] 12:40:14 Finish: Pathstar_XD: ['name', 'cn 边境'] use: 0.12251091003417969
+[{'playerCount': 10, 'name': '[\x1b[33mCN\x1b[0m]坏逼培训营 萌新房'}, {'playerCount': 8, 'name': '【超好玩】9级帝王\x1b[33m边境\x1b[0m战争'}, {'playerCount': 4, 'name': '[NS\x1b[33mCN\x1b[0m] 北极星\x1b[33mCN\x1b[0m官方\x1b[33m边境\x1b[0m防御[简单]#1'}, {'playerCount': 2, 'name': '[NS\x1b[33mCN\x1b[0m] 北极星\x1b[33mCN\x1b[0m官方\x1b[33m边境\x1b[0m防御[简单]#2'}]
+
+[XDlog] 12:40:31 Begin: Pathstar_XD: server ['mode', 'fd']
+[XDlog] Get服务器...
+[XDlog] 12:40:31 Finish: Pathstar_XD: ['mode', 'fd'] use: 0.11992192268371582
+[{'playerCount': 4, 'name': '[NSCN] 北极星CN官方边境防御[简单]#1'}, {'playerCount': 3, 'name': '[SL5+ 无限火力]5人简单服'}, {'playerCount': 2, 'name': '[NSCN] 北极星CN官方边境防御[简单]#2'}, {'playerCount': 2, 'name': '【超好玩】超级先锋泰坦'}, {'playerCount': 1, 'name': '[SL6+ 无限火力]5人一般服'}]
+
+[XDlog] 12:40:44 Begin: Pathstar_XD: server ['mode', 'hard']
+[XDlog] Get服务器...
+[XDlog] 12:40:44 Finish: Pathstar_XD: ['mode', 'hard'] use: 0.12194538116455078
+查询模式 [hard] 未找到服务器
+
+[XDlog] 12:40:57 Begin: Pathstar_XD: server ['mode', 'ins']
+[XDlog] Get服务器...
+[XDlog] 12:40:58 Finish: Pathstar_XD: ['mode', 'ins'] use: 0.13345575332641602
+[{'playerCount': 2, 'name': '【超好玩】超级先锋泰坦'}]
+
+12:41:34 Monitoring file changes...
+[XDlog] 12:41:36 Begin: Pathstar_XD: server ['mode', 'att']
+[XDlog] Get服务器...
+[XDlog] 12:41:37 Finish: Pathstar_XD: ['mode', 'att'] use: 0.12768888473510742
+查询模式 [att] 未找到服务器
+
+[XDlog] 12:41:41 Begin: [G514] thisiswhoID: server ['name', '全北极星']
+[XDlog] 内存读取...
+[XDlog] 12:41:41 Finish: [G514] thisiswhoID: ['name', '全北极星'] use: 0.0010809898376464844
+现在没有任何人！-> [若智服]昨夜臭 [33m全北极星[0mTTDM
+
+[XDlog] 12:42:45 Begin: : init 
+[XDlog] 12:42:45 Finish: :  use: 0.0003180503845214844
+['\x1b[33m13:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (ﾉ≧∀≦)ﾉ', 1034]
+
+12:43:20 Monitoring file changes...
+[XDlog] 12:43:42 Begin: Pathstar_XD: server ['mode', 'pvp']
+[XDlog] Get服务器...
+[XDlog] 12:43:42 Finish: Pathstar_XD: ['mode', 'pvp'] use: 0.13249540328979492
+[{'playerCount': 13, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 3, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 1, 'name': '[NSCN] 北极星CN官方原版铁对铁#1'}]
+
+[XDlog] 12:43:49 Begin: Pathstar_XD: server ['mode', 'ttdm']
+[XDlog] 内存读取...
+[XDlog] 12:43:49 Finish: Pathstar_XD: ['mode', 'ttdm'] use: 0.001039266586303711
+[{'playerCount': 11, 'name': '[摸鱼服]强化配件泰坦争斗抽象平衡3.7'}, {'playerCount': 7, 'name': '【超好玩】随时切换泰坦，体验X88'}]
+
+[XDlog] 12:44:02 Begin: Pathstar_XD: server ['名字', '养老']
+[XDlog] Get服务器...
+[XDlog] 12:44:02 Finish: Pathstar_XD: ['名字', '养老'] use: 0.13157129287719727
+[{'playerCount': 3, 'name': '新时代\x1b[33m养老\x1b[0m服，高kd踢出'}]
+
+[XDlog] 12:44:35 Begin: Pathstar_XD: server ['模式', '风控']
+[XDlog] Get服务器...
+[XDlog] 12:44:35 Finish: Pathstar_XD: ['模式', '风控'] use: 0.16007757186889648
+查询模式 [风控] 未找到有人的服务器
+
+[XDlog] 12:46:45 Begin: [範式起源] Pol_Pot0721: g_pinyin 为什么松鼠语言的文件后缀名都是nut gnut
+[XDlog] fail_count: 3 pinyin_len: 3
+Failed Trans
+[XDlog] 12:46:45 Finish: [範式起源] Pol_Pot0721: 为什么松鼠语言的文件后缀名都是nut gnut use: 0.002742767333984375
+
+
+[XDlog] 12:52:10 Begin: : init 
+[XDlog] 12:52:10 Finish: :  use: 0.00034880638122558594
+['\x1b[33m13:00:00\x1b[0m 整！\x1b[38;2;254;198;195m ～(つˆДˆ)つ', 469]
+
+[XDlog] 12:52:17 Begin: : init 
+[XDlog] 12:52:17 Finish: :  use: 0.0003070831298828125
+['\x1b[33m13:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (｀・ω・´)', 462]
+
+[XDlog] 12:53:03 Begin: [BOT] Pathstar_XD: g_pinyin cao hhhhh
+[XDlog] fail_count: 1 pinyin_len: 2
+Failed Trans
+[XDlog] 12:53:03 Finish: [BOT] Pathstar_XD: cao hhhhh use: 0.0008492469787597656
+
+
+[XDlog] 12:53:23 Begin: : init 
+[XDlog] 12:53:23 Finish: :  use: 0.00034737586975097656
+['\x1b[33m13:00:00\x1b[0m 整！\x1b[38;2;221;160;221m ～(つˆДˆ)つ', 396]
+
+[XDlog] 12:53:51 Begin: [BOT] Pathstar_XD: server ['mode', 'xdall']
+[XDlog] Get服务器...
+[XDlog] 12:53:51 Finish: [BOT] Pathstar_XD: ['mode', 'xdall'] use: 0.12444567680358887
+[{'playerCount': 11, 'name': '[摸鱼服]强化配件泰坦争斗抽象平衡3.7'}, {'playerCount': 10, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 6, 'name': '【超好玩】随时切换泰坦，体验X88'}, {'playerCount': 5, 'name': '【超好玩】9级帝王边境战争'}, {'playerCount': 4, 'name': '[NSCN] 北极星CN官方边境防御[简单]#1'}, {'playerCount': 4, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 3, 'name': '[NSCN] 北极星CN官方边境防御[简单]#2'}, {'playerCount': 3, 'name': '[摸鱼服]抽象rouge泰坦争斗，第11期BUFF更新'}, {'playerCount': 2, 'name': '[SL1+无限火力]5人边境大厅服'}, {'playerCount': 2, 'name': '【超好玩】超级先锋泰坦'}, {'playerCount': 1, 'name': '[SL5+ 无限火力]5人简单服'}]
+
+[XDlog] 12:59:25 Begin: : init 
+[XDlog] 12:59:25 Finish: :  use: 0.0003452301025390625
+['\x1b[33m13:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (≧▽≦)/', 34]
+
+[XDlog] 12:59:34 Begin: : init 
+[XDlog] 12:59:34 Finish: :  use: 0.0002830028533935547
+['\x1b[33m13:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (｀・ω・´)', 25]
+
+[XDlog] 12:59:58 Begin: [BOT] Pathstar_XD: server ['mode', 'xdall']
+[XDlog] Get服务器...
+[XDlog] 12:59:58 Finish: [BOT] Pathstar_XD: ['mode', 'xdall'] use: 0.13375115394592285
+[{'playerCount': 14, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 12, 'name': '[摸鱼服]抽象rouge泰坦争斗，第11期BUFF更新'}, {'playerCount': 5, 'name': '[摸鱼服]强化配件泰坦争斗抽象平衡3.7'}, {'playerCount': 4, 'name': '[NSCN] 北极星CN官方边境防御[简单]#1'}, {'playerCount': 4, 'name': '[SL1+无限火力]5人边境大厅服'}, {'playerCount': 4, 'name': '[摸鱼服]边境攻坚战'}, {'playerCount': 4, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 3, 'name': '[NSCN] 北极星CN官方边境防御[简单]#2'}, {'playerCount': 2, 'name': '【超好玩】超级先锋泰坦'}, {'playerCount': 1, 'name': '[CN]坏逼们的服务器#小图铁对铁'}]
+
+[XDlog] 13:00:46 Begin: : init 
+[XDlog] 13:00:46 Finish: :  use: 0.0002918243408203125
+['\x1b[33m13:30:00\x1b[0m！\x1b[38;2;254;250;195m (｡>ω<｡)', 1753]
+
+[XDlog] 13:01:12 Begin: : init 
+[XDlog] 13:01:12 Finish: :  use: 0.000301361083984375
+['\x1b[33m13:30:00\x1b[0m！\x1b[38;2;254;208;175m ～(つˆДˆ)つ', 1727]
+
+[XDlog] 13:04:02 Begin: : init 
+[XDlog] 13:04:02 Finish: :  use: 0.00036525726318359375
+['\x1b[33m13:30:00\x1b[0m！\x1b[38;2;175;238;238m (ﾉ≧∀≦)ﾉ', 1557]
+
+[XDlog] 13:15:13 Begin: : init 
+[XDlog] 13:15:13 Finish: :  use: 0.00035119056701660156
+['\x1b[33m13:30:00\x1b[0m！\x1b[38;2;254;198;195m (≧▽≦)/', 886]
+
+[XDlog] 13:18:27 Begin: [船長] WE-QingFeng: g_pinyin shen me yi si
+[Pinyin]: [['什么意思']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 13:18:27 Finish: [船長] WE-QingFeng: shen me yi si use: 0.0010437965393066406
+什么意思
+
+[XDlog] 13:18:40 Begin: [船長] WE-QingFeng: g_pinyin zhuan wen zi ke yi a
+[Pinyin]: [['转文字'], ['可以', '阿']]
+[XDlog] fail_count: 0 pinyin_len: 6
+[XDlog] 13:18:40 Finish: [船長] WE-QingFeng: zhuan wen zi ke yi a use: 0.0009217262268066406
+转文字可以阿
+
+[XDlog] 13:18:46 Begin: binbinkksk: g_pinyin bu shi za yu jiu shi shu bu qi de
+[Pinyin]: [['不是', '杂', '于', '就是', '恕不', '气得']]
+[XDlog] fail_count: 0 pinyin_len: 10
+[XDlog] 13:18:46 Finish: binbinkksk: bu shi za yu jiu shi shu bu qi de use: 0.0014755725860595703
+不是杂于就是恕不气得
+
+[XDlog] 13:19:21 Begin: [傻逼吾軍] XperiaXZ1Compact: g_pinyin que shi ni tian
+[Pinyin]: [['确实'], ['逆天']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 13:19:21 Finish: [傻逼吾軍] XperiaXZ1Compact: que shi ni tian use: 0.001035928726196289
+确实逆天
+
+[XDlog] 13:19:23 Begin: [船長] WE-QingFeng: g_pinyin tai de shen ren yi zhi hen duo
+[Pinyin]: [['泰德', '神人', '一直', '很多']]
+[XDlog] fail_count: 0 pinyin_len: 8
+[XDlog] 13:19:23 Finish: [船長] WE-QingFeng: tai de shen ren yi zhi hen duo use: 0.0010576248168945312
+泰德神人一直很多
+
+[XDlog] 13:19:33 Begin: [傻逼吾軍] XperiaXZ1Compact: g_pinyin zhe ge gong neng hao hao yong
+[Pinyin]: [['这个', '功能', '好好', '用']]
+[XDlog] fail_count: 0 pinyin_len: 7
+[XDlog] 13:19:33 Finish: [傻逼吾軍] XperiaXZ1Compact: zhe ge gong neng hao hao yong use: 0.0011963844299316406
+这个功能好好用
+
+[XDlog] 13:19:38 Begin: [傻逼吾軍] XperiaXZ1Compact: g_pinyin gan xie XD
+[Pinyin]: [['感谢']]
+[XDlog] fail_count: 1 pinyin_len: 3
+[XDlog] 13:19:38 Finish: [傻逼吾軍] XperiaXZ1Compact: gan xie XD use: 0.001157999038696289
+感谢XD
+
+[XDlog] 13:21:22 Begin: [傻逼吾軍] XperiaXZ1Compact: g_pinyin ni men de yan chi bu gao ma
+[Pinyin]: [['你们的', '延迟', '不高', '码']]
+[XDlog] fail_count: 0 pinyin_len: 8
+[XDlog] 13:21:22 Finish: [傻逼吾軍] XperiaXZ1Compact: ni men de yan chi bu gao ma use: 0.0011065006256103516
+你们的延迟不高码
+
+[XDlog] 13:21:57 Begin: [傻逼吾軍] XperiaXZ1Compact: g_pinyin bi yang de ROG
+[Pinyin]: [['泌阳', '的']]
+[XDlog] fail_count: 1 pinyin_len: 4
+[XDlog] 13:21:57 Finish: [傻逼吾軍] XperiaXZ1Compact: bi yang de ROG use: 0.0011570453643798828
+泌阳的ROG
+
+[XDlog] 13:24:16 Begin: [船長] WE-QingFeng: g_pinyin zhe jiu shi tai tan yun luo
+[Pinyin]: [['这就是', '泰坦', '陨落']]
+[XDlog] fail_count: 0 pinyin_len: 7
+[XDlog] 13:24:16 Finish: [船長] WE-QingFeng: zhe jiu shi tai tan yun luo use: 0.000985860824584961
+这就是泰坦陨落
+
+[XDlog] 13:24:21 Begin: [船長] WE-QingFeng: g_pinyin wan dao zhen de l
+[Pinyin]: [['玩到', '震得', '邋']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 13:24:21 Finish: [船長] WE-QingFeng: wan dao zhen de l use: 0.0010080337524414062
+玩到震得邋
+
+[XDlog] 13:26:17 Begin: : init 
+[XDlog] 13:26:17 Finish: :  use: 0.0003261566162109375
+['\x1b[33m13:30:00\x1b[0m！\x1b[38;2;254;250;195m (｀・ω・´)', 222]
+
+[XDlog] 13:27:10 Begin: [船長] WE-QingFeng: g_pinyin wan car de
+[Pinyin]: [['完']]
+[Pinyin]: [['完'], ['car'], ['的']]
+[XDlog] fail_count: 1 pinyin_len: 3
+[XDlog] 13:27:10 Finish: [船長] WE-QingFeng: wan car de use: 0.0012688636779785156
+完car的
+
+[XDlog] 13:27:12 Begin: [船長] WE-QingFeng: g_pinyin bu dong
+[Pinyin]: [['不懂']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 13:27:12 Finish: [船長] WE-QingFeng: bu dong use: 0.0011143684387207031
+不懂
+
+[XDlog] 13:32:47 Begin: [BOT] Pathstar_XD: g_pinyin LitCae 达成了5连杀！
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 13:32:47 Finish: [BOT] Pathstar_XD: LitCae 达成了5连杀！ use: 0.0008435249328613281
+
+
+[XDlog] 13:37:04 Begin: : init 
+[XDlog] 13:37:04 Finish: :  use: 0.00034308433532714844
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (≧▽≦)/', 1375]
+
+[XDlog] 13:48:09 Begin: : init 
+[XDlog] 13:48:09 Finish: :  use: 0.0006380081176757812
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (ﾉ≧∀≦)ﾉ', 710]
+
+[XDlog] 13:50:11 Begin: [ADV] Lunacultivator: g_pinyin hao le
+[Pinyin]: [['好了']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 13:50:11 Finish: [ADV] Lunacultivator: hao le use: 0.0010831356048583984
+好了
+
+[XDlog] 13:58:49 Begin: : init 
+[XDlog] 13:58:49 Finish: :  use: 0.0004031658172607422
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (ﾉ≧∀≦)ﾉ', 70]
+
+[XDlog] 14:09:21 Begin: : init 
+[XDlog] 14:09:21 Finish: :  use: 0.0004696846008300781
+['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;194;245;194m (｀・ω・´)', 1238]
+
+14:18:08 Monitoring file changes...
+[XDlog] 14:18:36 Begin: [BOT] Pathstar_XD: ai 测试响应速度
+{'id': 'gen-1748067517-oxK8Fjsu0VMpS74jGrH2', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748067518, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '测试成功，响应迅速！有什么我可以帮助你的吗？', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 94, 'completion_tokens': 13, 'total_tokens': 107}}
+---
+
+[XDlog] emoji: 测试成功，响应迅速！有什么我可以帮助你的吗？
+[XDlog] 长度:  22
+[XDlog] 14:18:38 Finish: [BOT] Pathstar_XD: 测试响应速度 use: 2.5056328773498535
+['测试成功，响应迅速！有什么我可以帮助你的吗？']
+
+[XDlog] 14:18:55 Begin: [BOT] Pathstar_XD: ai 你知道泰坦陨落的北极星社区吗
+{'id': 'gen-1748067536-A8GWPAGxwWtzT5Nt0cR9', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748067536, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '泰坦陨落的北极星社区是一个爱好者聚集地，大家交流游戏心得和技术分享。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 108, 'completion_tokens': 21, 'total_tokens': 129}}
+---
+
+[XDlog] emoji: 泰坦陨落的北极星社区是一个爱好者聚集地，大家交流游戏心得和技术分享。
+[XDlog] 长度:  34
+[XDlog] 14:18:57 Finish: [BOT] Pathstar_XD: 你知道泰坦陨落的北极星社区吗 use: 2.2962772846221924
+['泰坦陨落的北极星社区是一个爱好者聚集地，大家交流游戏心得和技术分享。']
+
+[XDlog] 14:19:50 Begin: : init 
+[XDlog] 14:19:50 Finish: :  use: 0.0003628730773925781
+['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;254;250;195m ～(つˆДˆ)つ', 609]
+
+[XDlog] 14:19:58 Begin: [ADV] Lunacultivator: g_pinyin wu hu
+[Pinyin]: [['芜湖']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 14:19:58 Finish: [ADV] Lunacultivator: wu hu use: 0.0028696060180664062
+芜湖
+
+[XDlog] 14:20:07 Begin: [ADV] Lunacultivator: g_pinyin xiao tu tie dui tie
+[Pinyin]: [['小', '图贴', '对', '帖']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 14:20:07 Finish: [ADV] Lunacultivator: xiao tu tie dui tie use: 0.0008962154388427734
+小图贴对帖
+
+[XDlog] 14:30:20 Begin: : init 
+[XDlog] 14:30:20 Finish: :  use: 0.00031065940856933594
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (ﾉ≧∀≦)ﾉ', 1779]
+
+[XDlog] 14:37:01 Begin: : init 
+[XDlog] 14:37:01 Finish: :  use: 0.0003921985626220703
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (=^･ω･^=)', 1378]
+
+[XDlog] 14:37:07 Begin: : init 
+[XDlog] 14:37:07 Finish: :  use: 0.0003063678741455078
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (｡>﹏<｡)', 1372]
+
+[XDlog] 14:38:09 Begin: [BOT] Pathstar_XD: g_pinyin QQ iron_sights这个是不是机瞄如果带机瞄viewmodel_offset_ads""0 -2 -.55写里面
+[XDlog] fail_count: 13 pinyin_len: 13
+Failed Trans
+[XDlog] 14:38:09 Finish: [BOT] Pathstar_XD: QQ iron_sights这个是不是机瞄如果带机瞄viewmodel_offset_ads""0 -2 -.55写里面 use: 0.0008816719055175781
+
+
+[XDlog] 14:45:51 Begin: : init 
+[XDlog] 14:45:51 Finish: :  use: 0.00032520294189453125
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (=^･ω･^=)', 848]
+
+[XDlog] 14:45:58 Begin: : init 
+[XDlog] 14:45:58 Finish: :  use: 0.0002803802490234375
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;216;191;216m ～(つˆДˆ)つ', 841]
+
+[XDlog] 14:46:12 Begin: : init 
+[XDlog] 14:46:12 Finish: :  use: 0.0003077983856201172
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (｡>ω<｡)', 827]
+
+[XDlog] 14:47:33 Begin: : init 
+[XDlog] 14:47:33 Finish: :  use: 0.00035572052001953125
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (=^･ω･^=)', 746]
+
+[XDlog] 14:52:12 Begin: : init 
+[XDlog] 14:52:12 Finish: :  use: 0.00037789344787597656
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (｡>ω<｡)', 467]
+
+[XDlog] 14:52:20 Begin: : init 
+[XDlog] 14:52:20 Finish: :  use: 0.0003104209899902344
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (≧▽≦)/', 459]
+
+[XDlog] 14:54:43 Begin: : init 
+[XDlog] 14:54:43 Finish: :  use: 0.00036787986755371094
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (｡>ω<｡)', 316]
+
+[XDlog] 14:55:03 Begin: : init 
+[XDlog] 14:55:03 Finish: :  use: 0.00030803680419921875
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;254;219;193m ～(つˆДˆ)つ', 296]
+
+[XDlog] 14:55:20 Begin: : init 
+[XDlog] 14:55:20 Finish: :  use: 0.000339508056640625
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (ﾉ≧∀≦)ﾉ', 279]
+
+[XDlog] 14:56:04 Begin: : init 
+[XDlog] 14:56:04 Finish: :  use: 0.0003139972686767578
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (｀・ω・´)', 235]
+
+[XDlog] 14:56:20 Begin: : init 
+[XDlog] 14:56:20 Finish: :  use: 0.0003209114074707031
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;248;131;121m ～(つˆДˆ)つ', 219]
+
+[XDlog] 15:04:01 Begin: : init 
+[XDlog] 15:04:01 Finish: :  use: 0.0003383159637451172
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;173;216;230m (｀・ω・´)', 1558]
+
+[XDlog] 15:04:08 Begin: : init 
+[XDlog] 15:04:08 Finish: :  use: 0.0004303455352783203
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;240;128;128m (｡>ω<｡)', 1551]
+
+[XDlog] 15:04:41 Begin: : init 
+[XDlog] 15:04:41 Finish: :  use: 0.00029659271240234375
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;254;208;175m (｀・ω・´)', 1518]
+
+[XDlog] 15:04:49 Begin: : init 
+[XDlog] 15:04:49 Finish: :  use: 0.00028395652770996094
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;205;214;210m (｡>﹏<｡)', 1510]
+
+[XDlog] 15:07:43 Begin: : init 
+[XDlog] 15:07:43 Finish: :  use: 0.0004150867462158203
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;144;238;144m ～(つˆДˆ)つ', 1336]
+
+[XDlog] 15:10:02 Begin: : init 
+[XDlog] 15:10:02 Finish: :  use: 0.0002925395965576172
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;240;128;128m (｡>ω<｡)', 1197]
+
+[XDlog] 15:10:11 Begin: : init 
+[XDlog] 15:10:11 Finish: :  use: 0.00029754638671875
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;254;219;193m (｡>ω<｡)', 1188]
+
+[XDlog] 15:12:16 Begin: : init 
+[XDlog] 15:12:16 Finish: :  use: 0.00028514862060546875
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;254;198;195m (｡>﹏<｡)', 1063]
+
+[XDlog] 15:12:24 Begin: : init 
+[XDlog] 15:12:24 Finish: :  use: 0.0003077983856201172
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;254;198;195m (｀・ω・´)', 1055]
+
+[XDlog] 15:13:01 Begin: : init 
+[XDlog] 15:13:01 Finish: :  use: 0.0002846717834472656
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;175;238;238m (≧▽≦)/', 1018]
+
+[XDlog] 15:14:10 Begin: : init 
+[XDlog] 15:14:11 Finish: :  use: 0.0003917217254638672
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;205;214;210m (=^･ω･^=)', 949]
+
+[XDlog] 15:14:23 Begin: : init 
+[XDlog] 15:14:23 Finish: :  use: 0.0003330707550048828
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;173;216;230m (ﾉ≧∀≦)ﾉ', 936]
+
+[XDlog] 15:14:50 Begin: : init 
+[XDlog] 15:14:50 Finish: :  use: 0.00028777122497558594
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;194;245;194m (=^･ω･^=)', 909]
+
+[XDlog] 15:23:24 Begin: : init 
+[XDlog] 15:23:24 Finish: :  use: 0.00039124488830566406
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;221;160;221m (｀・ω・´)', 395]
+
+[XDlog] 15:28:15 Begin: Pathstar_XD: server ['name', '小图']
+[XDlog] Get服务器...
+[XDlog] 15:28:15 Finish: Pathstar_XD: ['name', '小图'] use: 0.14906001091003418
+[{'playerCount': 5, 'name': '[CN]坏逼们的服务器#\x1b[33m小图\x1b[0m铁对铁'}]
+
+[XDlog] 15:28:36 Begin: : init 
+[XDlog] 15:28:36 Finish: :  use: 0.000347137451171875
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;173;216;230m (=^･ω･^=)', 83]
+
+[XDlog] 15:28:41 Begin: : init 
+[XDlog] 15:28:41 Finish: :  use: 0.0002677440643310547
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;144;238;144m (ﾉ≧∀≦)ﾉ', 78]
+
+[XDlog] 15:33:32 Begin: : init 
+[XDlog] 15:33:32 Finish: :  use: 0.0003478527069091797
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;205;214;210m ～(つˆДˆ)つ', 1587]
+
+[XDlog] 15:49:03 Begin: : init 
+[XDlog] 15:49:03 Finish: :  use: 0.0005712509155273438
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (｡>﹏<｡)', 656]
+
+[XDlog] 15:54:54 Begin: : init 
+[XDlog] 15:54:54 Finish: :  use: 0.0003669261932373047
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (ﾉ≧∀≦)ﾉ', 305]
+
+[XDlog] 15:55:01 Begin: : init 
+[XDlog] 15:55:01 Finish: :  use: 0.0003001689910888672
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (ﾉ≧∀≦)ﾉ', 298]
+
+[XDlog] 15:58:13 Begin: [BOT] Pathstar_XD: g_pinyin OMG yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeees
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 15:58:13 Finish: [BOT] Pathstar_XD: OMG yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeees use: 0.0016863346099853516
+
+
+[XDlog] 15:59:34 Begin: [BOT] Pathstar_XD: g_pinyin l star r201
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 15:59:34 Finish: [BOT] Pathstar_XD: l star r201 use: 0.0008301734924316406
+LStarŔ201
+
+[XDlog] 16:04:33 Begin: : init 
+[XDlog] 16:04:33 Finish: :  use: 0.0004980564117431641
+['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;240;128;128m (=^･ω･^=)', 1526]
+
+[XDlog] 16:19:02 Begin: : init 
+[XDlog] 16:19:02 Finish: :  use: 0.000385284423828125
+['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;254;250;195m (｡>ω<｡)', 657]
+
+[XDlog] 16:26:28 Begin: : init 
+[XDlog] 16:26:28 Finish: :  use: 0.0004329681396484375
+['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;173;216;230m ～(つˆДˆ)つ', 211]
+
+[XDlog] 16:35:39 Begin: : init 
+[XDlog] 16:35:39 Finish: :  use: 0.0003437995910644531
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (｡>﹏<｡)', 1460]
+
+[XDlog] 16:41:32 Begin: : init 
+[XDlog] 16:41:32 Finish: :  use: 0.0003941059112548828
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (≧▽≦)/', 1107]
+
+[XDlog] 16:47:19 Begin: : init 
+[XDlog] 16:47:19 Finish: :  use: 0.0006709098815917969
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (≧▽≦)/', 760]
+
+[XDlog] 16:53:09 Begin: : init 
+[XDlog] 16:53:09 Finish: :  use: 0.0005016326904296875
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (=^･ω･^=)', 410]
+
+[XDlog] 16:53:51 Begin: : init 
+[XDlog] 16:53:51 Finish: :  use: 0.0005488395690917969
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;254;219;193m ～(つˆДˆ)つ', 368]
+
+[XDlog] 16:59:13 Begin: : init 
+[XDlog] 16:59:13 Finish: :  use: 0.00046062469482421875
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (ﾉ≧∀≦)ﾉ', 46]
+
+[XDlog] 17:06:21 Begin: : init 
+[XDlog] 17:06:21 Finish: :  use: 0.0003883838653564453
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;254;250;195m (｡>ω<｡)', 1418]
+
+[XDlog] 17:06:36 Begin: : init 
+[XDlog] 17:06:36 Finish: :  use: 0.0006473064422607422
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;221;160;221m ～(つˆДˆ)つ', 1403]
+
+[XDlog] 17:06:52 Begin: [BOT] _wwQwQww1: time 
+[XDlog] 17:06:52 Finish: [BOT] _wwQwQww1:  use: 0.0002472400665283203
+17:06:52
+
+[XDlog] 17:06:54 Begin: [BOT] _wwQwQww1: time 
+[XDlog] 17:06:54 Finish: [BOT] _wwQwQww1:  use: 0.0003209114074707031
+17:06:54
+
+[XDlog] 17:14:46 Begin: : init 
+[XDlog] 17:14:46 Finish: :  use: 0.0003693103790283203
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;221;160;221m (≧▽≦)/', 913]
+
+[XDlog] 17:24:38 Begin: : init 
+[XDlog] 17:24:38 Finish: :  use: 0.0003380775451660156
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;248;131;121m (｀・ω・´)', 321]
+
+[XDlog] 17:24:49 Begin: : init 
+[XDlog] 17:24:49 Finish: :  use: 0.0003273487091064453
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;248;131;121m (｀・ω・´)', 310]
+
+[XDlog] 17:24:56 Begin: : init 
+[XDlog] 17:24:56 Finish: :  use: 0.0003008842468261719
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;221;160;221m (｀・ω・´)', 303]
+
+[XDlog] 17:27:23 Begin: : init 
+[XDlog] 17:27:23 Finish: :  use: 0.0003218650817871094
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;221;160;221m (ﾉ≧∀≦)ﾉ', 156]
+
+[XDlog] 17:27:33 Begin: : init 
+[XDlog] 17:27:33 Finish: :  use: 0.000308990478515625
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;248;131;121m ～(つˆДˆ)つ', 146]
+
+[XDlog] 17:39:13 Begin: : init 
+[XDlog] 17:39:13 Finish: :  use: 0.0003521442413330078
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (≧▽≦)/', 1246]
+
+[XDlog] 17:39:24 Begin: : init 
+[XDlog] 17:39:24 Finish: :  use: 0.0003223419189453125
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (｀・ω・´)', 1235]
+
+[XDlog] 17:39:38 Begin: : init 
+[XDlog] 17:39:38 Finish: :  use: 0.0002868175506591797
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (ﾉ≧∀≦)ﾉ', 1221]
+
+[XDlog] 17:41:37 Begin: : init 
+[XDlog] 17:41:37 Finish: :  use: 0.0002961158752441406
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (｡>ω<｡)', 1102]
+
+[XDlog] 17:46:58 Begin: : init 
+[XDlog] 17:46:58 Finish: :  use: 0.0003170967102050781
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;205;214;210m ～(つˆДˆ)つ', 781]
+
+[XDlog] 17:47:05 Begin: : init 
+[XDlog] 17:47:05 Finish: :  use: 0.00028824806213378906
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;221;160;221m ～(つˆДˆ)つ', 774]
+
+[XDlog] 17:47:31 Begin: : init 
+[XDlog] 17:47:31 Finish: :  use: 0.00031566619873046875
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (=^･ω･^=)', 748]
+
+[XDlog] 17:47:39 Begin: Pathstar_XD: ai 测试响应速度
+{'id': 'gen-1748080060-rsEkM3PwfE1XthpErr9A', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080061, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '测试响应速度正常，没有延迟。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 114, 'completion_tokens': 9, 'total_tokens': 123}}
+---
+
+[XDlog] emoji: 测试响应速度正常，没有延迟。
+[XDlog] 长度:  14
+[XDlog] 17:47:42 Finish: Pathstar_XD: 测试响应速度 use: 2.4052999019622803
+['测试响应速度正常，没有延迟。']
+
+[XDlog] 17:47:44 Begin: Pathstar_XD: ai 测试响应速度
+[XDlog] 17:47:45 Begin: Pathstar_XD: ai 测试响应速度
+[XDlog] 17:47:46 Begin: Pathstar_XD: ai 测试响应速度
+[XDlog] 17:47:46 Begin: Pathstar_XD: ai 测试响应速度
+[XDlog] 17:47:46 Begin: Pathstar_XD: ai 测试响应速度
+{'id': 'gen-1748080065-hZ0f8U08M19G0FsnhDuj', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080066, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '测试收到，响应迅速！有什么问题可以随时问我。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 112, 'completion_tokens': 13, 'total_tokens': 125}}
+---
+
+[XDlog] emoji: 测试收到，响应迅速！有什么问题可以随时问我。
+[XDlog] 长度:  22
+[XDlog] 17:47:47 Finish: Pathstar_XD: 测试响应速度 use: 2.1588938236236572
+['测试收到，响应迅速！有什么问题可以随时问我。']
+
+{'id': 'gen-1748080066-O3zKL745dviJmdIJxxyI', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080067, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '响应正常，速度快！有其他问题可以问我哦！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 109, 'completion_tokens': 13, 'total_tokens': 122}}
+---
+
+[XDlog] emoji: 响应正常，速度快！有其他问题可以问我哦！
+[XDlog] 长度:  20
+[XDlog] 17:47:47 Finish: Pathstar_XD: 测试响应速度 use: 2.045823335647583
+['响应正常，速度快！有其他问题可以问我哦！']
+
+{'id': 'gen-1748080066-WiYU7CkPYgp0GniX0gHf', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080067, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '收到啦～测试响应速度中，保持高效回复。希望您对我们的速度满意！继续提问吧~', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 117, 'completion_tokens': 24, 'total_tokens': 141}}
+---
+
+[XDlog] emoji: 收到啦～测试响应速度中，保持高效回复。希望您对我们的速度满意！继续提问吧~
+[XDlog] 长度:  37
+[XDlog] 17:47:48 Finish: Pathstar_XD: 测试响应速度 use: 2.213777780532837
+['收到啦~测试响应速度中，保持高效回复。希望您对我们的速度满意！继续提问吧~']
+
+{'id': 'gen-1748080067-99D0axym7eSchwDMVy1b', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080067, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '测试通过，响应迅速！感谢你的测试，Pathstar_XD。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 126, 'completion_tokens': 16, 'total_tokens': 142}}
+---
+
+[XDlog] emoji: 测试通过，响应迅速！感谢你的测试，Pathstar_XD。
+[XDlog] 长度:  29
+[XDlog] 17:47:48 Finish: Pathstar_XD: 测试响应速度 use: 2.0672314167022705
+['测试通过，响应迅速！感谢你的测试，Pathstar_XD。']
+
+{'id': 'gen-1748080066-MEny3FZGuVewBvzDFS92', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080067, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '好的，测试完成，响应速度正常。有其他需要测试的地方吗？', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 197, 'completion_tokens': 17, 'total_tokens': 214}}
+---
+
+[XDlog] emoji: 好的，测试完成，响应速度正常。有其他需要测试的地方吗？
+[XDlog] 长度:  27
+[XDlog] 17:47:49 Finish: Pathstar_XD: 测试响应速度 use: 3.3016068935394287
+['好的，测试完成，响应速度正常。有其他需要测试的地方吗？']
+
+[XDlog] 17:48:05 Begin: : init 
+[XDlog] 17:48:05 Finish: :  use: 0.000362396240234375
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (ﾉ≧∀≦)ﾉ', 714]
+
+[XDlog] 17:50:43 Begin: : init 
+[XDlog] 17:50:43 Finish: :  use: 0.0003097057342529297
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (=^･ω･^=)', 556]
+
+[XDlog] 17:50:50 Begin: [BOT] Pathstar_XD: ai 测试延迟~
+{'id': 'gen-1748080251-q1Ul4X1t7Jw5X8dxYncD', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080251, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '您的延迟测试结果显示正常，网络连接稳定。如果有什么其他问题，随时告诉我！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 94, 'completion_tokens': 19, 'total_tokens': 113}}
+---
+
+[XDlog] emoji: 您的延迟测试结果显示正常，网络连接稳定。如果有什么其他问题，随时告诉我！
+[XDlog] 长度:  36
+[XDlog] 17:50:52 Finish: [BOT] Pathstar_XD: 测试延迟~ use: 2.316445827484131
+['您的延迟测试结果显示正常，网络连接稳定。如果有什么其他问题，随时告诉我！']
+
+[XDlog] 17:50:54 Begin: [BOT] Pathstar_XD: ai 测试延迟~
+[XDlog] 17:50:54 Begin: [BOT] Pathstar_XD: ai 测试延迟~
+[XDlog] 17:50:56 Begin: [BOT] Pathstar_XD: ai 测试延迟~
+{'id': 'gen-1748080255-XhitsxwtMBm48MAQZlDh', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080255, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '您好！您的延迟似乎很低，测试顺利。如果还有其他需求或疑问，欢迎随时告诉我！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 104, 'completion_tokens': 22, 'total_tokens': 126}}
+---
+
+[XDlog] emoji: 您好！您的延迟似乎很低，测试顺利。如果还有其他需求或疑问，欢迎随时告诉我！
+[XDlog] 长度:  37
+[XDlog] 17:50:57 Finish: [BOT] Pathstar_XD: 测试延迟~ use: 2.8879144191741943
+['您好！您的延迟似乎很低，测试顺利。如果还有其他需求或疑问，欢迎随时告诉我！']
+
+{'id': 'gen-1748080255-m23TVYI5DFMeY6Fi6oE2', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080256, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '您好！看来您是在测试延迟，目前看起来一切正常。有什么其他可以帮到您的吗？', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 114, 'completion_tokens': 22, 'total_tokens': 136}}
+---
+
+[XDlog] emoji: 您好！看来您是在测试延迟，目前看起来一切正常。有什么其他可以帮到您的吗？
+[XDlog] 长度:  36
+[XDlog] 17:50:57 Finish: [BOT] Pathstar_XD: 测试延迟~ use: 2.8583829402923584
+['您好！看来您是在测试延迟，目前看起来一切正常。有什么其他可以帮到您的吗？']
+
+{'id': 'gen-1748080257-LkyTAsfRDuDNh0gVYWtA', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080258, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '您好，Pathstar_XD！看来您正在测试延迟，网络状况良好。有什么需要帮助的地方吗？', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 124, 'completion_tokens': 24, 'total_tokens': 148}}
+---
+
+[XDlog] emoji: 您好，Pathstar_XD！看来您正在测试延迟，网络状况良好。有什么需要帮助的地方吗？
+[XDlog] 长度:  44
+[XDlog] 17:50:58 Finish: [BOT] Pathstar_XD: 测试延迟~ use: 2.181563377380371
+['您好，Pathstar_XD！看来您正在测试延迟，网络状况良好。有什么需要帮助的地方吗？']
+
+[XDlog] 17:51:20 Begin: : init 
+[XDlog] 17:51:20 Finish: :  use: 0.00029206275939941406
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;254;208;175m ～(つˆДˆ)つ', 519]
+
+[XDlog] 17:54:04 Begin: : init 
+[XDlog] 17:54:04 Finish: :  use: 0.00034618377685546875
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (ﾉ≧∀≦)ﾉ', 355]
+
+[XDlog] 17:54:13 Begin: : init 
+[XDlog] 17:54:13 Finish: :  use: 0.0003204345703125
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (ﾉ≧∀≦)ﾉ', 346]
+
+[XDlog] 17:56:57 Begin: : init 
+[XDlog] 17:56:57 Finish: :  use: 0.0005185604095458984
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (ﾉ≧∀≦)ﾉ', 182]
+
+[XDlog] 17:57:05 Begin: : init 
+[XDlog] 17:57:05 Finish: :  use: 0.0002636909484863281
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (｡>ω<｡)', 174]
+
+[XDlog] 17:57:11 Begin: [BOT] Pathstar_XD: ai 测试延迟！
+{'id': 'gen-1748080632-bDPKHKVigTlFOIfqeGor', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080633, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '你好~ 您是想测试一下我们的网络延迟吗？当前延迟正常，可以顺畅交流哦。如果有任何卡顿情况，可以告诉我，我会尽力帮您调整。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 104, 'completion_tokens': 38, 'total_tokens': 142}}
+---
+
+[XDlog] emoji: 你好~ 您是想测试一下我们的网络延迟吗？当前延迟正常，可以顺畅交流哦。如果有任何卡顿情况，可以告诉我，我会尽力帮您调整。
+[XDlog] 长度:  60
+[XDlog] 17:57:14 Finish: [BOT] Pathstar_XD: 测试延迟！ use: 2.35852313041687
+['你好~ 您是想测试一下我们的网络延迟吗？当前延迟正常，可以顺畅交流哦。如果有任何卡顿情况，可以告诉我，我会尽力帮您调整。']
+
+[XDlog] 17:57:15 Begin: [BOT] Pathstar_XD: ai 测试延迟！
+{'id': 'gen-1748080636-8rRX5RLaReNMaYR4pcHg', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080636, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '您好，连续三次测试延迟了。建议检查一下网络连接是否稳定哦！如果持续有问题，可以尝试重启设备或更换网络环境试试看。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 104, 'completion_tokens': 33, 'total_tokens': 137}}
+---
+
+[XDlog] emoji: 您好，连续三次测试延迟了。建议检查一下网络连接是否稳定哦！如果持续有问题，可以尝试重启设备或更换网络环境试试看。
+[XDlog] 长度:  56
+[XDlog] 17:57:17 Finish: [BOT] Pathstar_XD: 测试延迟！ use: 2.258403778076172
+['您好，连续三次测试延迟了。建议检查一下网络连接是否稳定哦！如果持续有问题，可以尝试重启设备或更换网络环境试试看。']
+
+[XDlog] 17:57:18 Begin: [BOT] Pathstar_XD: ai 测试延迟！
+{'id': 'gen-1748080638-7TxGyhg2PGYNNn40itGh', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080639, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '您好，多次测试可能表明网络连接不稳定。建议检查您的网络情况，或者稍后再试。如果有其他问题，欢迎告知！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 114, 'completion_tokens': 29, 'total_tokens': 143}}
+---
+
+[XDlog] emoji: 您好，多次测试可能表明网络连接不稳定。建议检查您的网络情况，或者稍后再试。如果有其他问题，欢迎告知！
+[XDlog] 长度:  50
+[XDlog] 17:57:20 Finish: [BOT] Pathstar_XD: 测试延迟！ use: 1.9780542850494385
+['您好，多次测试可能表明网络连接不稳定。建议检查您的网络情况，或者稍后再试。如果有其他问题，欢迎告知！']
+
+[XDlog] 17:57:20 Begin: [BOT] Pathstar_XD: ai 测试延迟！
+{'id': 'gen-1748080641-iwekRFUCyO0a0cPRDQty', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748080641, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': 'Pathstar_XD，您的测试延迟现象可能需要检查网络连接或联系技术客服哦。希望您使用愉快！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 195, 'completion_tokens': 26, 'total_tokens': 221}}
+---
+
+[XDlog] emoji: Pathstar_XD，您的测试延迟现象可能需要检查网络连接或联系技术客服哦。希望您使用愉快！
+[XDlog] 长度:  47
+[XDlog] 17:57:23 Finish: [BOT] Pathstar_XD: 测试延迟！ use: 2.8053548336029053
+['Pathstar_XD，您的测试延迟现象可能需要检查网络连接或联系技术客服哦。希望您使用愉快！']
+
+17:58:36 Monitoring file changes...
+[XDlog] 17:58:51 Begin: : init 
+[XDlog] 17:58:51 Finish: :  use: 0.00031447410583496094
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (=^･ω･^=)', 68]
+
+[XDlog] 17:58:57 Begin: : init 
+[XDlog] 17:58:57 Finish: :  use: 0.0003170967102050781
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (≧▽≦)/', 62]
+
+[XDlog] 17:59:06 Begin: : init 
+[XDlog] 17:59:06 Finish: :  use: 0.0002961158752441406
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (｀・ω・´)', 53]
+
+[XDlog] 18:02:44 Begin: : init 
+[XDlog] 18:02:44 Finish: :  use: 0.0003185272216796875
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;254;250;195m (｡>ω<｡)', 1635]
+
+[XDlog] 18:09:48 Begin: : init 
+[XDlog] 18:09:48 Finish: :  use: 0.00032138824462890625
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;199;245;190m (≧▽≦)/', 1211]
+
+[XDlog] 18:11:38 Begin: : init 
+[XDlog] 18:11:38 Finish: :  use: 0.00029659271240234375
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;248;131;121m (ﾉ≧∀≦)ﾉ', 1101]
+
+[XDlog] 18:11:48 Begin: : init 
+[XDlog] 18:11:48 Finish: :  use: 0.00029754638671875
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;254;250;195m ～(つˆДˆ)つ', 1091]
+
+[XDlog] 18:15:27 Begin: : init 
+[XDlog] 18:15:27 Finish: :  use: 0.0003490447998046875
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;175;238;238m (｡>﹏<｡)', 872]
+
+[XDlog] 18:15:32 Begin: : init 
+[XDlog] 18:15:32 Finish: :  use: 0.00029277801513671875
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;173;216;230m (≧▽≦)/', 867]
+
+[XDlog] 18:15:38 Begin: : init 
+[XDlog] 18:15:38 Finish: :  use: 0.000293731689453125
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;254;250;195m (｡>﹏<｡)', 861]
+
+[XDlog] 18:15:41 Begin: : init 
+[XDlog] 18:15:41 Finish: :  use: 0.00029397010803222656
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;205;214;210m (=^･ω･^=)', 858]
+
+[XDlog] 18:15:47 Begin: : init 
+[XDlog] 18:15:47 Finish: :  use: 0.00026726722717285156
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;144;238;144m ～(つˆДˆ)つ', 852]
+
+[XDlog] 18:15:51 Begin: : init 
+[XDlog] 18:15:51 Finish: :  use: 0.00030159950256347656
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;216;191;216m (｡>ω<｡)', 848]
+
+[XDlog] 18:21:26 Begin: : init 
+[XDlog] 18:21:26 Finish: :  use: 0.00033473968505859375
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;175;238;238m ～(つˆДˆ)つ', 513]
+
+[XDlog] 18:27:05 Begin: : init 
+[XDlog] 18:27:05 Finish: :  use: 0.0003254413604736328
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;194;245;194m ～(つˆДˆ)つ', 174]
+
+[XDlog] 18:27:15 Begin: : init 
+[XDlog] 18:27:15 Finish: :  use: 0.0002758502960205078
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;254;198;195m (=^･ω･^=)', 164]
+
+[XDlog] 18:27:19 Begin: : init 
+[XDlog] 18:27:19 Finish: :  use: 0.0002732276916503906
+['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;175;238;238m (=^･ω･^=)', 160]
+
+[XDlog] 18:32:46 Begin: : init 
+[XDlog] 18:32:46 Finish: :  use: 0.00035881996154785156
+['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (｡>ω<｡)', 1633]
+
+[XDlog] 18:36:45 Begin: : init 
+[XDlog] 18:36:45 Finish: :  use: 0.0003409385681152344
+['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (≧▽≦)/', 1394]
+
+[XDlog] 18:36:57 Begin: : init 
+[XDlog] 18:36:57 Finish: :  use: 0.0002765655517578125
+['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (=^･ω･^=)', 1382]
+
+[XDlog] 18:38:48 Begin: : init 
+[XDlog] 18:38:48 Finish: :  use: 0.00027871131896972656
+['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (｡>﹏<｡)', 1271]
+
+[XDlog] 18:47:32 Begin: : init 
+[XDlog] 18:47:32 Finish: :  use: 0.0003218650817871094
+['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (ﾉ≧∀≦)ﾉ', 747]
+
+[XDlog] 19:03:01 Begin: : init 
+[XDlog] 19:03:01 Finish: :  use: 0.0003447532653808594
+['\x1b[33m19:30:00\x1b[0m！\x1b[38;2;194;245;194m (｀・ω・´)', 1618]
+
+[XDlog] 19:03:49 Begin: [BOT] Pathstar_XD: time 
+[XDlog] 19:03:49 Finish: [BOT] Pathstar_XD:  use: 0.00027751922607421875
+19:03:49
+
+19:27:02 Monitoring file changes...
+[XDlog] 19:27:09 Begin: : init 
+[XDlog] 19:27:09 Finish: :  use: 0.00040459632873535156
+['\x1b[33m19:30:00\x1b[0m！\x1b[38;2;240;128;128m (｡>﹏<｡)', 170]
+
+[XDlog] 19:33:59 Begin: : init 
+[XDlog] 19:33:59 Finish: :  use: 0.00040793418884277344
+['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (=^･ω･^=)', 1560]
+
+[XDlog] 19:42:42 Begin: : init 
+[XDlog] 19:42:42 Finish: :  use: 0.0004200935363769531
+['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (ﾉ≧∀≦)ﾉ', 1037]
+
+[XDlog] 19:50:44 Begin: : init 
+[XDlog] 19:50:44 Finish: :  use: 0.0004277229309082031
+['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (=^･ω･^=)', 555]
+
+[XDlog] 19:57:28 Begin: : init 
+[XDlog] 19:57:28 Finish: :  use: 0.00040149688720703125
+['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (｡>﹏<｡)', 151]
+
+[XDlog] 19:58:06 Begin: : init 
+[XDlog] 19:58:06 Finish: :  use: 0.0003314018249511719
+['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;254;250;195m ～(つˆДˆ)つ', 113]
+
+[XDlog] 20:04:17 Begin: : init 
+[XDlog] 20:04:17 Finish: :  use: 0.0004162788391113281
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;175;238;238m (｡>ω<｡)', 1542]
+
+[XDlog] 20:04:25 Begin: [诺痕] Syx2244: g_pinyin zhe huan ying yong de
+[Pinyin]: [['这', '欢迎', '用得']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 20:04:25 Finish: [诺痕] Syx2244: zhe huan ying yong de use: 0.0035545825958251953
+这欢迎用得
+
+[XDlog] 20:13:56 Begin: : init 
+[XDlog] 20:13:56 Finish: :  use: 0.0005195140838623047
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;254;208;175m (≧▽≦)/', 963]
+
+[XDlog] 20:23:25 Begin: : init 
+[XDlog] 20:23:25 Finish: :  use: 0.0003693103790283203
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;254;250;195m (｡>ω<｡)', 394]
+
+[XDlog] 20:33:54 Begin: : init 
+[XDlog] 20:33:54 Finish: :  use: 0.00041747093200683594
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (｡>﹏<｡)', 1565]
+
+[XDlog] 20:42:17 Begin: : init 
+[XDlog] 20:42:17 Finish: :  use: 0.0006048679351806641
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;216;191;216m ～(つˆДˆ)つ', 1062]
+
+[XDlog] 20:51:09 Begin: : init 
+[XDlog] 20:51:09 Finish: :  use: 0.00041365623474121094
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (=^･ω･^=)', 530]
+
+[XDlog] 21:00:44 Begin: : init 
+[XDlog] 21:00:44 Finish: :  use: 0.0005450248718261719
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;194;245;194m (｡>ω<｡)', 1755]
+
+[XDlog] 21:02:52 Begin: [真夜中] Ivanesce: g_pinyin wan DMR(
+[Pinyin]: [['完']]
+[XDlog] fail_count: 2 pinyin_len: 3
+Failed Trans
+[XDlog] 21:02:52 Finish: [真夜中] Ivanesce: wan DMR( use: 0.0047914981842041016
+
+
+[XDlog] 21:07:53 Begin: : init 
+[XDlog] 21:07:53 Finish: :  use: 0.00041866302490234375
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;216;191;216m (｀・ω・´)', 1326]
+
+[XDlog] 21:15:27 Begin: : init 
+[XDlog] 21:15:27 Finish: :  use: 0.0004482269287109375
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;221;160;221m (=^･ω･^=)', 872]
+
+[XDlog] 21:19:11 Begin: : init 
+[XDlog] 21:19:11 Finish: :  use: 0.00040149688720703125
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;199;245;190m (｀・ω・´)', 648]
+
+[XDlog] 21:20:30 Begin: : init 
+[XDlog] 21:20:30 Finish: :  use: 0.0004322528839111328
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;198;195m (｡>﹏<｡)', 569]
+
+[XDlog] 21:21:58 Begin: : init 
+[XDlog] 21:21:58 Finish: :  use: 0.00047850608825683594
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;205;214;210m (｀・ω・´)', 481]
+
+[XDlog] 21:22:16 Begin: : init 
+[XDlog] 21:22:16 Finish: :  use: 0.0004680156707763672
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;250;195m (≧▽≦)/', 463]
+
+[XDlog] 21:22:25 Begin: : init 
+[XDlog] 21:22:25 Finish: :  use: 0.00036835670471191406
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;240;128;128m (｀・ω・´)', 454]
+
+[XDlog] 21:22:44 Begin: : init 
+[XDlog] 21:22:44 Finish: :  use: 0.0003376007080078125
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;221;160;221m (｀・ω・´)', 435]
+
+[XDlog] 21:22:51 Begin: [BOT] Pathstar_XD: server ['name', '躲猫猫']
+[XDlog] Get服务器...
+[XDlog] 21:22:51 Finish: [BOT] Pathstar_XD: ['name', '躲猫猫'] use: 0.1645069122314453
+[{'playerCount': 1, 'name': '[CN]坏逼们的服务器#\x1b[33m躲猫猫\x1b[0m'}]
+
+[XDlog] 21:23:03 Begin: [BOT] Pathstar_XD: server ['name', '#']
+[XDlog] Get服务器...
+[XDlog] 21:23:03 Finish: [BOT] Pathstar_XD: ['name', '#'] use: 0.12870383262634277
+[{'playerCount': 12, 'name': '[CN]坏逼们的服务器\x1b[33m#\x1b[0m小图铁对铁'}, {'playerCount': 8, 'name': '[NSCN] 北极星CN官方原版消耗战\x1b[33m#\x1b[0m1'}, {'playerCount': 3, 'name': '[CN]坏逼们的服务器 感染超人守护边境\x1b[33m#\x1b[0m2'}, {'playerCount': 1, 'name': '[CN]坏逼们的服务器\x1b[33m#\x1b[0m躲猫猫'}]
+
+[XDlog] 21:23:16 Begin: : init 
+[XDlog] 21:23:16 Finish: :  use: 0.00033354759216308594
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;219;193m (≧▽≦)/', 403]
+
+[XDlog] 21:23:21 Begin: : init 
+[XDlog] 21:23:21 Finish: :  use: 0.00034356117248535156
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;248;131;121m (｡>ω<｡)', 398]
+
+[XDlog] 21:28:55 Begin: : init 
+[XDlog] 21:28:55 Finish: :  use: 0.0004520416259765625
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;248;131;121m (｡>﹏<｡)', 64]
+
+[XDlog] 21:29:00 Begin: : init 
+[XDlog] 21:29:00 Finish: :  use: 0.00032401084899902344
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;199;245;190m (｡>﹏<｡)', 59]
+
+[XDlog] 21:29:04 Begin: : init 
+[XDlog] 21:29:04 Finish: :  use: 0.00041294097900390625
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;216;191;216m (ﾉ≧∀≦)ﾉ', 55]
+
+[XDlog] 21:32:48 Begin: : init 
+[XDlog] 21:32:48 Finish: :  use: 0.0003936290740966797
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (=^･ω･^=)', 1631]
+
+[XDlog] 21:39:47 Begin: : init 
+[XDlog] 21:39:47 Finish: :  use: 0.00040078163146972656
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (｡>﹏<｡)', 1212]
+
+[XDlog] 21:40:37 Begin: [真夜中] Ivanesce: g_pinyin que shi
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 21:40:37 Finish: [真夜中] Ivanesce: que shi use: 0.0009038448333740234
+确实
+
+[XDlog] 21:46:41 Begin: : init 
+[XDlog] 21:46:41 Finish: :  use: 0.00042176246643066406
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (ﾉ≧∀≦)ﾉ', 798]
+
+[XDlog] 21:49:30 Begin: [真夜中] Ivanesce: g_pinyin wo tongy yi
+[Pinyin]: [['我']]
+[Pinyin]: [['我'], ['tongy'], ['一']]
+[XDlog] fail_count: 1 pinyin_len: 3
+[XDlog] 21:49:30 Finish: [真夜中] Ivanesce: wo tongy yi use: 0.002168416976928711
+我tongy一
+
+[XDlog] 21:50:36 Begin: [真夜中] Ivanesce: g_pinyin que shi
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 21:50:36 Finish: [真夜中] Ivanesce: que shi use: 0.0011570453643798828
+确实
+
+[XDlog] 21:52:40 Begin: [真夜中] Ivanesce: g_pinyin shi zhe yang de
+[Pinyin]: [['是这样', '的']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 21:52:40 Finish: [真夜中] Ivanesce: shi zhe yang de use: 0.0019593238830566406
+是这样的
+
+[XDlog] 21:53:22 Begin: [雨中槍手] OZCT_cheems: g_pinyin zhen de jia de
+[Pinyin]: [['震得', '加德']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 21:53:22 Finish: [雨中槍手] OZCT_cheems: zhen de jia de use: 0.002512216567993164
+震得加德
+
+[XDlog] 21:53:43 Begin: [雨中槍手] OZCT_cheems: g_pinyin hai you kou yin
+[Pinyin]: [['还有', '口音']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 21:53:43 Finish: [雨中槍手] OZCT_cheems: hai you kou yin use: 0.001745462417602539
+还有口音
+
+[XDlog] 21:54:17 Begin: [结城希雅] MAXsteel913555: g_pinyin what are you doing
+[Pinyin]: [['what'], ['are'], ['有']]
+[XDlog] fail_count: 3 pinyin_len: 4
+Failed Trans
+[XDlog] 21:54:17 Finish: [结城希雅] MAXsteel913555: what are you doing use: 0.004060506820678711
+
+
+[XDlog] 21:54:58 Begin: [真夜中] Ivanesce: g_pinyin hao qiang
+[Pinyin]: [['好强']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 21:54:58 Finish: [真夜中] Ivanesce: hao qiang use: 0.0010993480682373047
+好强
+
+[XDlog] 21:55:35 Begin: : init 
+[XDlog] 21:55:35 Finish: :  use: 0.0003731250762939453
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (｡>﹏<｡)', 264]
+
+[XDlog] 21:56:16 Begin: [真夜中] Ivanesce: g_pinyin bu yao shi jian wo
+[Pinyin]: [['不要', '时间', '我']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 21:56:16 Finish: [真夜中] Ivanesce: bu yao shi jian wo use: 0.0017900466918945312
+不要时间我
+
+[XDlog] 21:58:28 Begin: [雨中槍手] OZCT_cheems: g_pinyin qiao mi mi
+[Pinyin]: [['巧', '秘密']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 21:58:28 Finish: [雨中槍手] OZCT_cheems: qiao mi mi use: 0.0014317035675048828
+巧秘密
+
+[XDlog] 22:26:57 Begin: : init 
+[XDlog] 22:26:57 Finish: :  use: 0.00041484832763671875
+['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;194;245;194m (｡>ω<｡)', 182]
+
+[XDlog] 22:27:06 Begin: : init 
+[XDlog] 22:27:06 Finish: :  use: 0.00037860870361328125
+['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;254;219;193m (｡>ω<｡)', 173]
+
+[XDlog] 22:34:26 Begin: : init 
+[XDlog] 22:34:26 Finish: :  use: 0.0004506111145019531
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (｡>ω<｡)', 1533]
+
+[XDlog] 22:41:24 Begin: : init 
+[XDlog] 22:41:24 Finish: :  use: 0.00048089027404785156
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (ﾉ≧∀≦)ﾉ', 1115]
+
+[XDlog] 22:47:22 Begin: : init 
+[XDlog] 22:47:22 Finish: :  use: 0.000431060791015625
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (≧▽≦)/', 757]
+
+[XDlog] 22:53:01 Begin: : init 
+[XDlog] 22:53:01 Finish: :  use: 0.0004107952117919922
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (=^･ω･^=)', 418]
+
+[XDlog] 23:00:38 Begin: : init 
+[XDlog] 23:00:38 Finish: :  use: 0.00045561790466308594
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;254;219;193m (≧▽≦)/', 1761]
+
+[XDlog] 23:01:35 Begin: : init 
+[XDlog] 23:01:35 Finish: :  use: 0.0003573894500732422
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;205;214;210m (≧▽≦)/', 1704]
+
+[XDlog] 23:01:41 Begin: : init 
+[XDlog] 23:01:41 Finish: :  use: 0.00037479400634765625
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;194;245;194m (｡>ω<｡)', 1698]
+
+[XDlog] 23:08:53 Begin: : init 
+[XDlog] 23:08:53 Finish: :  use: 0.0004074573516845703
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;254;219;193m (｀・ω・´)', 1266]
+
+[XDlog] 23:10:16 Begin: : init 
+[XDlog] 23:10:16 Finish: :  use: 0.0003204345703125
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;240;128;128m (=^･ω･^=)', 1183]
+
+[XDlog] 23:11:26 Begin: : init 
+[XDlog] 23:11:26 Finish: :  use: 0.0003476142883300781
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;254;250;195m (｡>﹏<｡)', 1113]
+
+[XDlog] 23:19:00 Begin: : init 
+[XDlog] 23:19:00 Finish: :  use: 0.00038433074951171875
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;194;245;194m (｡>ω<｡)', 659]
+
+[XDlog] 23:25:43 Begin: opinlong: g_pinyin zheshi sha
+[Pinyin]: [['zheshi'], ['杀']]
+[XDlog] fail_count: 1 pinyin_len: 2
+Failed Trans
+[XDlog] 23:25:43 Finish: opinlong: zheshi sha use: 0.0044422149658203125
+
+
+[XDlog] 23:28:04 Begin: : init 
+[XDlog] 23:28:04 Finish: :  use: 0.0003905296325683594
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;254;208;175m ～(つˆДˆ)つ', 115]
+
+23:30:10 Monitoring file changes...
+[XDlog] 23:31:41 Begin: : init 
+[XDlog] 23:31:41 Finish: :  use: 0.0026688575744628906
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (。-ω-)zzz', 1698]
+
+[XDlog] 23:31:47 Begin: : init 
+[XDlog] 23:31:47 Finish: :  use: 0.0019521713256835938
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (。-ω-)zzz', 1692]
+
+[XDlog] 23:43:08 Begin: : init 
+[XDlog] 23:43:08 Finish: :  use: 0.002165555953979492
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (。-ω-)zzz', 1011]
+
+[XDlog] 23:43:12 Begin: : init 
+[XDlog] 23:43:12 Finish: :  use: 0.0019428730010986328
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (。-ω-)zzz', 1007]
+
+[XDlog] 23:53:21 Begin: : init 
+[XDlog] 23:53:21 Finish: :  use: 0.002635478973388672
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (。-ω-)zzz', 398]
+
+[XDlog] 23:59:39 Begin: [BOT] Pathstar_XD: g_pinyin 共7人，XDbot：Like and Subscribe XDbot first, Hope u enjoy!
+[XDlog] fail_count: 13 pinyin_len: 13
+Failed Trans
+[XDlog] 23:59:39 Finish: [BOT] Pathstar_XD: 共7人，XDbot：Like and Subscribe XDbot first, Hope u enjoy! use: 0.01598334312438965
+
+
+[XDlog] 00:01:08 Begin: [蔚蓝档案] 435715: g_pinyin noob team
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 00:01:08 Finish: [蔚蓝档案] 435715: noob team use: 0.0025081634521484375
+
+
+[XDlog] 00:01:19 Begin: : init 
+[XDlog] 00:01:19 Finish: :  use: 0.0019652843475341797
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;144;238;144m (。-ω-)zzz', 1720]
+
+[XDlog] 00:09:25 Begin: [蔚蓝档案] 435715: g_pinyin noob team
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 00:09:25 Finish: [蔚蓝档案] 435715: noob team use: 0.003602266311645508
+
+
+[XDlog] 00:09:39 Begin: : init 
+[XDlog] 00:09:39 Finish: :  use: 0.0022983551025390625
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;135;206;235m (。-ω-)zzz', 1220]
+
+[XDlog] 00:21:07 Begin: [BOT] Pathstar_XD: g_pinyin Geometry Dash
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 00:21:07 Finish: [BOT] Pathstar_XD: Geometry Dash use: 0.003286600112915039
+
+
+[XDlog] 00:25:10 Begin: : init 
+[XDlog] 00:25:10 Finish: :  use: 0.0023772716522216797
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;194;245;194m (。-ω-)zzz', 289]
+
+[XDlog] 00:26:00 Begin: [BOT] Pathstar_XD: server ['name', '针锋相对']
+[XDlog] Get服务器...
+[XDlog] 00:26:00 Finish: [BOT] Pathstar_XD: ['name', '针锋相对'] use: 0.17735052108764648
+[{'playerCount': 4, 'name': '[1.5.0新模式] 4 复活点竞技场-\x1b[33m针锋相对\x1b[0m'}]
+
+[XDlog] 00:29:36 Begin: [凱爾希] Kaltsit0000: g_pinyin 感觉at the speed of light已经成了gd必不可少的一环了
+[XDlog] fail_count: 9 pinyin_len: 9
+Failed Trans
+[XDlog] 00:29:36 Finish: [凱爾希] Kaltsit0000: 感觉at the speed of light已经成了gd必不可少的一环了 use: 0.0047795772552490234
+
+
+[XDlog] 00:29:42 Begin: [BOT] Pathstar_XD: g_pinyin que shi
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 00:29:42 Finish: [BOT] Pathstar_XD: que shi use: 0.003194570541381836
+确实
+
+[XDlog] 00:34:04 Begin: : init 
+[XDlog] 00:34:04 Finish: :  use: 0.0025436878204345703
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (。-ω-)zzz', 1555]
+
+[XDlog] 00:38:34 Begin: [BOT] FADURANE: g_pinyin what can i say
+[Pinyin]: [['what'], ['参']]
+[XDlog] fail_count: 3 pinyin_len: 4
+Failed Trans
+[XDlog] 00:38:34 Finish: [BOT] FADURANE: what can i say use: 0.00565648078918457
+
+
+[XDlog] 00:43:41 Begin: : init 
+[XDlog] 00:43:41 Finish: :  use: 0.0024094581604003906
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (。-ω-)zzz', 978]
+
+[XDlog] 00:45:05 Begin: : init 
+[XDlog] 00:45:05 Finish: :  use: 0.002771615982055664
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (。-ω-)zzz', 894]
+
+[XDlog] 00:45:25 Begin: : init 
+[XDlog] 00:45:25 Finish: :  use: 0.0019042491912841797
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (。-ω-)zzz', 874]
+
+[XDlog] 00:47:14 Begin: : init 
+[XDlog] 00:47:14 Finish: :  use: 0.002025604248046875
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (。-ω-)zzz', 765]
+
+[XDlog] 00:49:55 Begin: Pathstar_XD: server ['name', '针锋']
+[XDlog] Get服务器...
+[XDlog] 00:49:55 Finish: Pathstar_XD: ['name', '针锋'] use: 0.12883424758911133
+[{'playerCount': 5, 'name': '[1.5.0新模式] 4 复活点竞技场-\x1b[33m针锋\x1b[0m相对'}]
+
+[XDlog] 00:50:02 Begin: : init 
+[XDlog] 00:50:02 Finish: :  use: 0.0018417835235595703
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (。-ω-)zzz', 597]
+
+[XDlog] 00:56:05 Begin: : init 
+[XDlog] 00:56:05 Finish: :  use: 0.002593994140625
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (。-ω-)zzz', 234]
+
+[XDlog] 01:00:24 Begin: : init 
+[XDlog] 01:00:24 Finish: :  use: 0.0026159286499023438
+['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;254;250;195m (。-ω-)zzz', 1775]
+
+[XDlog] 01:06:34 Begin: : init 
+[XDlog] 01:06:34 Finish: :  use: 0.002418994903564453
+['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;205;214;210m (。-ω-)zzz', 1405]
+
+[XDlog] 01:15:26 Begin: : init 
+[XDlog] 01:15:26 Finish: :  use: 0.002743959426879883
+['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;205;214;210m (。-ω-)zzz', 873]
+
+[XDlog] 01:16:02 Begin: : init 
+[XDlog] 01:16:02 Finish: :  use: 0.002002239227294922
+['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;144;238;144m (。-ω-)zzz', 837]
+
+[XDlog] 01:16:07 Begin: : init 
+[XDlog] 01:16:07 Finish: :  use: 0.0036804676055908203
+['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;144;238;144m (。-ω-)zzz', 832]
+
+[XDlog] 01:24:45 Begin: [BOT] Pathstar_XD: server ['name', '针锋']
+[XDlog] Get服务器...
+[XDlog] 01:24:45 Finish: [BOT] Pathstar_XD: ['name', '针锋'] use: 0.15831446647644043
+[{'playerCount': 4, 'name': '[1.5.0新模式] 4 复活点竞技场-\x1b[33m针锋\x1b[0m相对'}]
+
+[XDlog] 01:30:57 Begin: : init 
+[XDlog] 01:30:57 Finish: :  use: 0.0024695396423339844
+['\x1b[33m02:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (。-ω-)zzz', 1742]
+
+[XDlog] 01:31:54 Begin: [BOT] Pathstar_XD: g_pinyin meng xin lei mu
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 01:31:54 Finish: [BOT] Pathstar_XD: meng xin lei mu use: 0.003368854522705078
+萌新泪目
+
+[XDlog] 01:46:28 Begin: : init 
+[XDlog] 01:46:28 Finish: :  use: 0.0030159950256347656
+['\x1b[33m02:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (。-ω-)zzz', 811]
+
+[XDlog] 01:49:37 Begin: [BOT] Pathstar_XD: g_pinyin head shot
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 01:49:37 Finish: [BOT] Pathstar_XD: head shot use: 0.004816293716430664
+
+
+[XDlog] 02:01:59 Begin: : init 
+[XDlog] 02:01:59 Finish: :  use: 0.0026328563690185547
+['\x1b[33m02:30:00\x1b[0m！\x1b[38;2;221;160;221m (。-ω-)zzz', 1680]
+
+[XDlog] 02:16:39 Begin: [BOT] Pathstar_XD: time 
+[XDlog] 02:16:39 Finish: [BOT] Pathstar_XD:  use: 0.0026464462280273438
+02:16:39
+
+[XDlog] 02:17:05 Begin: : init 
+[XDlog] 02:17:05 Finish: :  use: 0.0021584033966064453
+['\x1b[33m02:30:00\x1b[0m！\x1b[38;2;216;191;216m (。-ω-)zzz', 774]
+
+[XDlog] 02:17:32 Begin: : init 
+[XDlog] 02:17:32 Finish: :  use: 0.002105712890625
+['\x1b[33m02:30:00\x1b[0m！\x1b[38;2;254;208;175m (。-ω-)zzz', 747]
+
+[XDlog] 02:19:29 Begin: : init 
+[XDlog] 02:19:29 Finish: :  use: 0.002955198287963867
+['\x1b[33m02:30:00\x1b[0m！\x1b[38;2;199;245;190m (。-ω-)zzz', 630]
+
+[XDlog] 02:19:40 Begin: : init 
+[XDlog] 02:19:40 Finish: :  use: 0.0021941661834716797
+['\x1b[33m02:30:00\x1b[0m！\x1b[38;2;240;128;128m (。-ω-)zzz', 619]
+

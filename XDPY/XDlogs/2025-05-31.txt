@@ -1,0 +1,581 @@
+14:37:23 Monitoring Squirrel Messages...
+[XDlog] 14:38:24 Begin: : init 
+[XDlog] 14:38:24 Finish: :  use: 0.0006117820739746094
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;240;128;128m ～(つˆДˆ)つ', 1295]
+
+[XDlog] 14:38:30 Begin: : init 
+[XDlog] 14:38:30 Finish: :  use: 0.0005395412445068359
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;240;128;128m ～(つˆДˆ)つ', 1289]
+
+[XDlog] 14:41:28 Begin: : init 
+[XDlog] 14:41:28 Finish: :  use: 0.0005996227264404297
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (=^･ω･^=)', 1111]
+
+[XDlog] 14:41:46 Begin: : init 
+[XDlog] 14:41:46 Finish: :  use: 0.0005762577056884766
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (≧▽≦)/', 1093]
+
+[XDlog] 14:41:51 Begin: : init 
+[XDlog] 14:41:51 Finish: :  use: 0.0006737709045410156
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (〜￣△￣)〜', 1088]
+
+[XDlog] 14:42:02 Begin: : init 
+[XDlog] 14:42:02 Finish: :  use: 0.0005161762237548828
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (｀・ω・´)', 1077]
+
+[XDlog] 14:50:55 Begin: : init 
+[XDlog] 14:50:55 Finish: :  use: 0.0006129741668701172
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (=^･ω･^=)', 544]
+
+[XDlog] 14:57:51 Begin: : init 
+[XDlog] 14:57:51 Finish: :  use: 0.0006442070007324219
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (≧▽≦)/', 128]
+
+[XDlog] 15:06:28 Begin: : init 
+[XDlog] 15:06:28 Finish: :  use: 0.0008182525634765625
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;205;214;210m (〜￣△￣)〜', 1411]
+
+[XDlog] 15:15:38 Begin: : init 
+[XDlog] 15:15:38 Finish: :  use: 0.0007429122924804688
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;254;250;195m (｡>ω<｡)', 861]
+
+[XDlog] 15:16:05 Begin: : init 
+[XDlog] 15:16:05 Finish: :  use: 0.0007524490356445312
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;135;206;235m (=・ω・=)', 834]
+
+[XDlog] 15:16:12 Begin: : init 
+[XDlog] 15:16:12 Finish: :  use: 0.0006291866302490234
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;216;191;216m (ﾉ≧∀≦)ﾉ', 827]
+
+[XDlog] 15:26:53 Begin: : init 
+[XDlog] 15:26:53 Finish: :  use: 0.0006420612335205078
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;240;128;128m _(≧v≦」∠)_', 186]
+
+[XDlog] 15:27:12 Begin: : init 
+[XDlog] 15:27:12 Finish: :  use: 0.0005223751068115234
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;144;238;144m (=・ω・=)', 167]
+
+[XDlog] 15:39:14 Begin: : init 
+[XDlog] 15:39:14 Finish: :  use: 0.0006668567657470703
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (^・ω・^)', 1245]
+
+[XDlog] 15:40:01 Begin: [ADV] Rainbowlighteyes: g_pinyin ma wan le
+[Pinyin]: [['码', '完了']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 15:40:01 Finish: [ADV] Rainbowlighteyes: ma wan le use: 0.011803388595581055
+码完了
+
+[XDlog] 15:47:33 Begin: : init 
+[XDlog] 15:47:33 Finish: :  use: 0.0006155967712402344
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (≧▽≦)/', 746]
+
+[XDlog] 15:57:50 Begin: Echoon: ai hi
+{'id': 'gen-1748678274-4lYpGKpOros2c0DmitWc', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748678274, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': 'hi Echoon！有什么想聊的吗？', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 87, 'completion_tokens': 11, 'total_tokens': 98}}
+---
+
+[XDlog] emoji: hi Echoon！有什么想聊的吗？
+[XDlog] 长度:  18
+[XDlog] 15:57:53 Finish: Echoon: hi use: 2.4694106578826904
+['hi Echoon！有什么想聊的吗？']
+
+[XDlog] 15:59:57 Begin: Echoon: ai 午饭吃什么 推荐一个菜吧
+{'id': 'gen-1748678401-DkfnfLEqErcC8rUZ2oCx', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748678401, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '推荐宫保鸡丁，酸甜微辣，非常美味！希望你喜欢。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 98, 'completion_tokens': 18, 'total_tokens': 116}}
+---
+
+[XDlog] emoji: 推荐宫保鸡丁，酸甜微辣，非常美味！希望你喜欢。
+[XDlog] 长度:  23
+[XDlog] 16:00:00 Finish: Echoon: 午饭吃什么 推荐一个菜吧 use: 2.4516685009002686
+['推荐宫保鸡丁，酸甜微辣，非常美味！希望你喜欢。']
+
+[XDlog] 16:00:48 Begin: Pathstar_XD: g_pinyin qwen 3B
+[Pinyin]: [['qwen'], ['3'], ['鳪']]
+[XDlog] fail_count: 2 pinyin_len: 3
+Failed Trans
+[XDlog] 16:00:48 Finish: Pathstar_XD: qwen 3B use: 0.0013687610626220703
+
+
+[XDlog] 16:01:18 Begin: Echoon: ai 你是谁？
+{'id': 'gen-1748678482-KurFVPPngW3FF4y9MGS4', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748678482, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '我是一款聊天机器人，Echoon同学，你可以叫我小助理，有什么想吃的我可以帮你推荐呢！今天推荐你尝试点糖醋里脊，酸甜可口，下饭佳选。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 103, 'completion_tokens': 43, 'total_tokens': 146}}
+---
+
+[XDlog] emoji: 我是一款聊天机器人，Echoon同学，你可以叫我小助理，有什么想吃的我可以帮你推荐呢！今天推荐你尝试点糖醋里脊，酸甜可口，下饭佳选。
+[XDlog] 长度:  66
+[XDlog] 16:01:21 Finish: Echoon: 你是谁？ use: 2.623396396636963
+['我是一款聊天机器人，Echoon同学，你可以叫我小助理，有什么想吃的我可以帮你推荐呢！今天推荐你尝试点糖醋里脊，酸甜可口，下饭佳选。']
+
+[XDlog] 16:01:24 Begin: Pathstar_XD: g_pinyin None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '推荐宫保鸡丁，酸甜微辣，非常美味！希望你喜欢。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens
+[XDlog] fail_count: 54 pinyin_len: 54
+Failed Trans
+[XDlog] 16:01:24 Finish: Pathstar_XD: None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '推荐宫保鸡丁，酸甜微辣，非常美味！希望你喜欢。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens use: 0.001642465591430664
+
+
+[XDlog] 16:02:28 Begin: Echoon: ai 来点颜文字表情
+{'id': 'gen-1748678551-0SCDNF9I2TW8M2PPLmIF', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748678552, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '🌟😊🌈\n宫保鸡丁 😋\n我是你的助手🤖\n🌟😊🌈', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 105, 'completion_tokens': 20, 'total_tokens': 125}}
+---
+
+[XDlog] emoji: :glowing_star::smiling_face_with_smiling_eyes::rainbow:宫保鸡丁 :face_savoring_food:我是你的助手:robot::glowing_star::smiling_face_with_smiling_eyes::rainbow:
+[XDlog] 长度:  90
+[XDlog] 16:02:31 Finish: Echoon: 来点颜文字表情 use: 2.555407762527466
+[':glowing_star:0v0:rainbow:宫保鸡丁 :face_savoring_food:我是你的助手:robot::glowing_star:0v0:rainbow:']
+
+[XDlog] 16:03:04 Begin: : init 
+[XDlog] 16:03:04 Finish: :  use: 0.0005638599395751953
+['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;135;206;235m _(:з」∠)_', 1615]
+
+[XDlog] 16:03:32 Begin: Pathstar_XD: ai 不要发emoji，来点颜文字表情
+{'id': 'gen-1748678615-YE1j9hdVe3mIXPuo4VAJ', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748678616, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '😊👍😉', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 111, 'completion_tokens': 4, 'total_tokens': 115}}
+---
+
+[XDlog] emoji: :smiling_face_with_smiling_eyes::thumbs_up::winking_face:
+[XDlog] 长度:  15
+[XDlog] 16:03:34 Finish: Pathstar_XD: 不要发emoji，来点颜文字表情 use: 2.4297449588775635
+['0v0(b^_^)b(^_~)']
+
+[XDlog] 16:06:20 Begin: Echoon: ai 你是什么基于哪一种模型？
+{'id': 'gen-1748678784-spIoJHZtfg60Q1bR5iDX', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748678784, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '我基于通义千问模型，是个语言助手呢～ 😊', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 111, 'completion_tokens': 16, 'total_tokens': 127}}
+---
+
+[XDlog] emoji: 我基于通义千问模型，是个语言助手呢～ :smiling_face_with_smiling_eyes:
+[XDlog] 长度:  22
+[XDlog] 16:06:22 Finish: Echoon: 你是什么基于哪一种模型？ use: 2.352766275405884
+['我基于通义千问模型，是个语言助手呢~ 0v0']
+
+[XDlog] 16:06:50 Begin: Pathstar_XD: ai 具体点，专业点回答刚刚的问题
+{'id': 'gen-1748678813-7nRGIy0cSM7bl5LcVnzY', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748678814, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': 'Echoon 提问的是关于我的模型基础问题，我是一个基于通用AI框架构建的聊天机器人，具体使用的模型和技术细节不便透露。Pathstar_XD 要求更专业更具体的回答，我会尽量满足但实际受限于系统设计，并无详细公开信息提供。希望能理解。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 115, 'completion_tokens': 64, 'total_tokens': 179}}
+---
+
+[XDlog] emoji: Echoon 提问的是关于我的模型基础问题，我是一个基于通用AI框架构建的聊天机器人，具体使用的模型和技术细节不便透露。Pathstar_XD 要求更专业更具体的回答，我会尽量满足但实际受限于系统设计，并无详细公开信息提供。希望能理解。
+[XDlog] 长度:  95 23
+[XDlog] 16:06:53 Finish: Pathstar_XD: 具体点，专业点回答刚刚的问题 use: 2.697392463684082
+['Echoon 提问的是关于我的模型基础问题，我是一个基于通用AI框架构建的聊天机器人，具体使用的模型和技术细节不便透露。Pathstar_XD 要求更专业更具体的回答，我会尽量满足但实际受限', '于系统设计，并无详细公开信息提供。希望能理解。']
+
+[XDlog] 16:07:20 Begin: Echoon: ai 你最大能达到多少token？
+{'id': 'gen-1748678843-Mrm7VVG7NSJXaLCC29zW', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748678844, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '我的最大Token容量是根据当前配置决定的，通常是2048个Token。具体可能因平台和环境不同略有差异。我是基于transformer模型构建的。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 112, 'completion_tokens': 38, 'total_tokens': 150}}
+---
+
+[XDlog] emoji: 我的最大Token容量是根据当前配置决定的，通常是2048个Token。具体可能因平台和环境不同略有差异。我是基于transformer模型构建的。
+[XDlog] 长度:  74
+[XDlog] 16:07:23 Finish: Echoon: 你最大能达到多少token？ use: 2.353980779647827
+['我的最大Token容量是根据当前配置决定的，通常是2048个Token。具体可能因平台和环境不同略有差异。我是基于transformer模型构建的。']
+
+[XDlog] 16:07:55 Begin: Echoon: ai 是否具有上下文联系？
+{'id': 'gen-1748678878-qTfNVXXrzxmT3EiFYmXP', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748678879, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '当前模式下，不考虑上下文长度限制，理论上可以基于大量历史信息进行联系。但实际操作中会受具体设置影响。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 111, 'completion_tokens': 31, 'total_tokens': 142}}
+---
+
+[XDlog] emoji: 当前模式下，不考虑上下文长度限制，理论上可以基于大量历史信息进行联系。但实际操作中会受具体设置影响。
+[XDlog] 长度:  50
+[XDlog] 16:07:57 Finish: Echoon: 是否具有上下文联系？ use: 2.548386812210083
+['当前模式下，不考虑上下文长度限制，理论上可以基于大量历史信息进行联系。但实际操作中会受具体设置影响。']
+
+[XDlog] 16:08:57 Begin: Pathstar_XD: no_return new_chat
+[XDlog] 16:09:04 Begin: Pathstar_XD: no_return new_chat
+[XDlog] 16:09:32 Begin: Echoon: no_return new_chat
+[XDlog] 16:13:41 Begin: Echoon: ai 你现在是一只猫娘
+{'id': 'gen-1748679226-ltsku8Z7c0DOUdIwa6jr', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748679226, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '如果我是一只猫娘，我会变成软糯可爱的小猫咪，陪Echoon一起玩耍！不过我还是机器人哦～', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 90, 'completion_tokens': 27, 'total_tokens': 117}}
+---
+
+[XDlog] emoji: 如果我是一只猫娘，我会变成软糯可爱的小猫咪，陪Echoon一起玩耍！不过我还是机器人哦～
+[XDlog] 长度:  44
+[XDlog] 16:13:45 Finish: Echoon: 你现在是一只猫娘 use: 3.417400598526001
+['如果我是一只猫娘，我会变成软糯可爱的小猫咪，陪Echoon一起玩耍！不过我还是机器人哦~']
+
+[XDlog] 16:14:22 Begin: Echoon: ai 那你该说些什么讨好主人？
+{'id': 'gen-1748679266-MtkNK3tr8QMR4oFiWwhf', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748679266, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '喵~ 主人生日快乐！我会好好吃饭，听话喵，还会帮你打扫小屋，做个勤劳的好猫娘！希望你能开心哦～', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 100, 'completion_tokens': 32, 'total_tokens': 132}}
+---
+
+[XDlog] emoji: 喵~ 主人生日快乐！我会好好吃饭，听话喵，还会帮你打扫小屋，做个勤劳的好猫娘！希望你能开心哦～
+[XDlog] 长度:  47
+[XDlog] 16:14:25 Finish: Echoon: 那你该说些什么讨好主人？ use: 2.3746249675750732
+['喵~ 主人生日快乐！我会好好吃饭，听话喵，还会帮你打扫小屋，做个勤劳的好猫娘！希望你能开心哦~']
+
+[XDlog] 16:15:07 Begin: Echoon: ai 更加诱惑一点的 讨好主人
+{'id': 'gen-1748679311-tWXYVBjR5iW1bkjjeQMg', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748679311, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '喵～ 主人最乖了，摸摸头超级软哦～ 哒嗒～ 还有好多美味零食想给你分享呢！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 109, 'completion_tokens': 32, 'total_tokens': 141}}
+---
+
+[XDlog] emoji: 喵～ 主人最乖了，摸摸头超级软哦～ 哒嗒～ 还有好多美味零食想给你分享呢！
+[XDlog] 长度:  37
+[XDlog] 16:15:10 Finish: Echoon: 更加诱惑一点的 讨好主人 use: 2.5330708026885986
+['喵~ 主人最乖了，摸摸头超级软哦~ 哒嗒~ 还有好多美味零食想给你分享呢！']
+
+[XDlog] 16:15:38 Begin: Echoon: no_return new_chat
+[XDlog] 16:16:41 Begin: Echoon: ai 请用暴躁的语气评价泰坦陨落2这款游戏 最好用上典急绷乐等网络用语
+{'id': 'gen-1748679405-8LMNTsmVThxzNl1dvZg2', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748679405, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '哎呀，典急绷乐，这游戏简直是个灾难啊！剧情拖沓无趣，典急！地图设计老旧，打斗感觉像是在玩过家家用的泰坦积木，典急绷乐！优化也差，卡帧不断！真TM让人典急！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 102, 'completion_tokens': 63, 'total_tokens': 165}}
+---
+
+[XDlog] emoji: 哎呀，典急绷乐，这游戏简直是个灾难啊！剧情拖沓无趣，典急！地图设计老旧，打斗感觉像是在玩过家家用的泰坦积木，典急绷乐！优化也差，卡帧不断！真TM让人典急！
+[XDlog] 长度:  77
+[XDlog] 16:16:44 Finish: Echoon: 请用暴躁的语气评价泰坦陨落2这款游戏 最好用上典急绷乐等网络用语 use: 2.5616092681884766
+['哎呀，典急绷乐，这游戏简直是个灾难啊！剧情拖沓无趣，典急！地图设计老旧，打斗感觉像是在玩过家家用的泰坦积木，典急绷乐！优化也差，卡帧不断！真TM让人典急！']
+
+[XDlog] 16:17:10 Begin: Echoon: ai 更加暴躁
+{'id': 'gen-1748679433-SwmRQPX5EjyYvrQDhZ5O', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748679434, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '哎呀妈呀，泰坦陨落2这游戏简直典急绷啊！完全就是个坑爹玩意儿，操作难上天，画面也就那样，剧情还崩得一塌糊涂，玩起来就一个字——糟！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 102, 'completion_tokens': 52, 'total_tokens': 154}}
+---
+
+[XDlog] emoji: 哎呀妈呀，泰坦陨落2这游戏简直典急绷啊！完全就是个坑爹玩意儿，操作难上天，画面也就那样，剧情还崩得一塌糊涂，玩起来就一个字——糟！
+[XDlog] 长度:  67
+[XDlog] 16:17:12 Finish: Echoon: 更加暴躁 use: 2.358423948287964
+['哎呀妈呀，泰坦陨落2这游戏简直典急绷啊！完全就是个坑爹玩意儿，操作难上天，画面也就那样，剧情还崩得一塌糊涂，玩起来就一个字----糟！']
+
+[XDlog] 16:17:52 Begin: Echoon: ai 更加贴吧 并使用具体案例 和 网络用语来评价
+{'id': 'gen-1748679476-992Ou9P5bvmVcX0b7Y2j', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748679476, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '泰坦陨落2，真tm垃圾！完全不讲武德！玩了一次就懂了，剧情崩得比我的头发还严重！操作也像老奶奶炒菜，又生又糊！还不如吃老本《泰坦天降》！这游戏就是个暴敛天物，典急绷乐！别信我，试试就知道了！tm的烂泥扶不上墙啊！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 118, 'completion_tokens': 88, 'total_tokens': 206}}
+---
+
+[XDlog] emoji: 泰坦陨落2，真tm垃圾！完全不讲武德！玩了一次就懂了，剧情崩得比我的头发还严重！操作也像老奶奶炒菜，又生又糊！还不如吃老本《泰坦天降》！这游戏就是个暴敛天物，典急绷乐！别信我，试试就知道了！tm的烂泥扶不上墙啊！
+[XDlog] 长度:  86 23
+[XDlog] 16:17:55 Finish: Echoon: 更加贴吧 并使用具体案例 和 网络用语来评价 use: 2.8880395889282227
+['泰坦陨落2，真tm垃圾！完全不讲武德！玩了一次就懂了，剧情崩得比我的头发还严重！操作也像老奶奶炒菜，又生又糊！还不如吃老本<<泰坦天降>> ！这游戏就是个暴敛天物，典急绷乐', '！别信我，试试就知道了！tm的烂泥扶不上墙啊！']
+
+[XDlog] 16:18:40 Begin: : init 
+[XDlog] 16:18:40 Finish: :  use: 0.0006477832794189453
+['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;199;245;190m (｡>﹏<｡)', 679]
+
+[XDlog] 16:22:45 Begin: Echoon: ai rog的鼠标主要有哪些 价格大致多少？
+{'id': 'gen-1748679768-5OGn8ggthmCBMdETw5mB', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748679768, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': 'ROG鼠标主要有枪神系列、绝影等，高端型号价格多在1000元以上，普通型号也有300-500元左右的选择。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 114, 'completion_tokens': 38, 'total_tokens': 152}}
+---
+
+[XDlog] emoji: ROG鼠标主要有枪神系列、绝影等，高端型号价格多在1000元以上，普通型号也有300-500元左右的选择。
+[XDlog] 长度:  53
+[XDlog] 16:22:47 Finish: Echoon: rog的鼠标主要有哪些 价格大致多少？ use: 2.441997528076172
+['ROG鼠标主要有枪神系列、绝影等，高端型号价格多在1000元以上，普通型号也有300-500元左右的选择。']
+
+[XDlog] 16:29:13 Begin: [BOT] FADURANE: g_pinyin 哎 ldx
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 16:29:13 Finish: [BOT] FADURANE: 哎 ldx use: 0.0012378692626953125
+
+
+[XDlog] 16:29:38 Begin: Echoon: ai 对于游戏里的老东西你想说什么
+{'id': 'gen-1748680181-nA9BZDA71cshkIdldm6w', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748680182, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '游戏里的老东西，就像是老朋友，虽然时间长了，但那份熟悉感难以替代。比如《CS》里的M4A1，虽然现在新枪满地跑，但它的经典地位无可动摇。老玩家们常调侃“M4是最好的枪，因为它是M4”，充满幽默感和情怀。\n\n关于ROG鼠标，大致分入门、专业、高端几个档次，价格从几十元至几百元不等，具体型号得看性能需求。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 115, 'completion_tokens': 99, 'total_tokens': 214}}
+---
+
+[XDlog] emoji: 游戏里的老东西，就像是老朋友，虽然时间长了，但那份熟悉感难以替代。比如《CS》里的M4A1，虽然现在新枪满地跑，但它的经典地位无可动摇。老玩家们常调侃“M4是最好的枪，因为它是M4”，充满幽默感和情怀。关于ROG鼠标，大致分入门、专业、高端几个档次，价格从几十元至几百元不等，具体型号得看性能需求。
+[XDlog] 长度:  90 62
+[XDlog] 16:29:40 Finish: Echoon: 对于游戏里的老东西你想说什么 use: 2.6836986541748047
+['游戏里的老东西，就像是老朋友，虽然时间长了，但那份熟悉感难以替代。比如<<CS>> 里的M4A1，虽然现在新枪满地跑，但它的经典地位无可动摇。老玩家们常调侃"M4是最好的枪，因为它', '是M4"，充满幽默感和情怀。关于ROG鼠标，大致分入门、专业、高端几个档次，价格从几十元至几百元不等，具体型号得看性能需求。']
+
+[XDlog] 16:30:35 Begin: Echoon: ai 请用暴躁的语气评价游戏里的老东西
+{'id': 'gen-1748680238-ZrtVBQC315Xk4kXpXscx', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748680239, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '游戏里的老东西都是废物！跟不上新时代了还天天占位子，赶紧更新换代去吧！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 114, 'completion_tokens': 23, 'total_tokens': 137}}
+---
+
+[XDlog] emoji: 游戏里的老东西都是废物！跟不上新时代了还天天占位子，赶紧更新换代去吧！
+[XDlog] 长度:  35
+[XDlog] 16:30:37 Finish: Echoon: 请用暴躁的语气评价游戏里的老东西 use: 2.387143850326538
+['游戏里的老东西都是废物！跟不上新时代了还天天占位子，赶紧更新换代去吧！']
+
+[XDlog] 16:31:16 Begin: : init 
+[XDlog] 16:31:16 Finish: :  use: 0.000530242919921875
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (ﾉ≧∀≦)ﾉ', 1723]
+
+[XDlog] 16:31:38 Begin: [範式起源] Pol_Pot0721: ai 怎么评价舞萌痴
+网络连接错误
+
+---
+
+AI响应发生错误: string indices must be integers, not 'str'
+[XDlog] 16:31:43 Finish: [範式起源] Pol_Pot0721: 怎么评价舞萌痴 use: 5.011768102645874
+['AI响应发生错误: TypeError']
+
+[XDlog] 16:32:26 Begin: Echoon: ai 请用暴躁的语气评价老东西 请充分思考后回答 不限制思考时间 字数不少于200字
+{'id': 'gen-1748680349-yrHJw2H5Wv0TCgWnlLV1', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748680350, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '老东西真是让人头大！更新换代那么久，还在用那套？效率低到怀疑人生，影响体验不说，还占内存，简直是历史遗留包袱！快点升级或者直接淘汰，不要再拖后腿了！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 126, 'completion_tokens': 51, 'total_tokens': 177}}
+---
+
+[XDlog] emoji: 老东西真是让人头大！更新换代那么久，还在用那套？效率低到怀疑人生，影响体验不说，还占内存，简直是历史遗留包袱！快点升级或者直接淘汰，不要再拖后腿了！
+[XDlog] 长度:  74
+[XDlog] 16:32:29 Finish: Echoon: 请用暴躁的语气评价老东西 请充分思考后回答 不限制思考时间 字数不少于200字 use: 2.543414831161499
+['老东西真是让人头大！更新换代那么久，还在用那套？效率低到怀疑人生，影响体验不说，还占内存，简直是历史遗留包袱！快点升级或者直接淘汰，不要再拖后腿了！']
+
+[XDlog] 16:32:58 Begin: [BOT] FADURANE: ai 评价一下五门大象
+{'id': 'gen-1748680381-BWReH0oCXeIJpOjVYDPf', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748680382, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '五门大象设计独特，外观威武，细节精致，确实很有魅力。不过在游戏中可能有些过时，操作手感和实用性有待改进。总体来说瑕不掩瑜，依然值得一玩！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 120, 'completion_tokens': 43, 'total_tokens': 163}}
+---
+
+[XDlog] emoji: 五门大象设计独特，外观威武，细节精致，确实很有魅力。不过在游戏中可能有些过时，操作手感和实用性有待改进。总体来说瑕不掩瑜，依然值得一玩！
+[XDlog] 长度:  68
+[XDlog] 16:33:00 Finish: [BOT] FADURANE: 评价一下五门大象 use: 2.404628276824951
+['五门大象设计独特，外观威武，细节精致，确实很有魅力。不过在游戏中可能有些过时，操作手感和实用性有待改进。总体来说瑕不掩瑜，依然值得一玩！']
+
+[XDlog] 16:35:24 Begin: [BOT] FADURANE: ai a盾和c盾有啥差别
+{'id': 'gen-1748680528-VNGQ8k60PO8ynoBtamWH', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748680528, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': 'a盾和c盾的主要差异在于防御能力和重量：\n- **A盾**：轻便，防御力适中。\n- **C盾**：重甲型，提供更强防护。\n\n两者的平衡不同，选择时需考虑战场需求和个人偏好。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 120, 'completion_tokens': 55, 'total_tokens': 175}}
+---
+
+[XDlog] emoji: a盾和c盾的主要差异在于防御能力和重量：- **A盾**：轻便，防御力适中。- **C盾**：重甲型，提供更强防护。两者的平衡不同，选择时需考虑战场需求和个人偏好。
+[XDlog] 长度:  82
+[XDlog] 16:35:28 Finish: [BOT] FADURANE: a盾和c盾有啥差别 use: 3.1343541145324707
+['a盾和c盾的主要差异在于防御能力和重量：- **A盾**：轻便，防御力适中。- **C盾**：重甲型，提供更强防护。两者的平衡不同，选择时需考虑战场需求和个人偏好。']
+
+[XDlog] 16:39:15 Begin: : init 
+[XDlog] 16:39:15 Finish: :  use: 0.0006511211395263672
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (｡>ω<｡)', 1244]
+
+[XDlog] 16:39:22 Begin: [BOT] FADURANE: g_pinyin 睡觉去 bye
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 16:39:22 Finish: [BOT] FADURANE: 睡觉去 bye use: 0.0013647079467773438
+
+
+[XDlog] 16:42:15 Begin: Echoon: ai 有什么好的放松方式？
+{'id': 'gen-1748680938-l1mQVyvH0rAfdRyO95R8', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748680939, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '放松的方式多种多样，可以试试听听轻音乐、散步、练习瑜伽或者阅读一本书。这样有助于缓解压力，提升情绪哦！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 111, 'completion_tokens': 29, 'total_tokens': 140}}
+---
+
+[XDlog] emoji: 放松的方式多种多样，可以试试听听轻音乐、散步、练习瑜伽或者阅读一本书。这样有助于缓解压力，提升情绪哦！
+[XDlog] 长度:  51
+[XDlog] 16:42:17 Finish: Echoon: 有什么好的放松方式？ use: 2.472388744354248
+['放松的方式多种多样，可以试试听听轻音乐、散步、练习瑜伽或者阅读一本书。这样有助于缓解压力，提升情绪哦！']
+
+[XDlog] 16:42:33 Begin: Echoon: ai more
+{'id': 'gen-1748680957-8Ciypv5I68m2sIWSuhLb', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748680957, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': 'a盾和c盾主要区别在于耐久度和恢复方式。a盾耐久更高但不自动恢复，c盾自动恢复但耐久较低。放松方式建议听音乐、散步或冥想，帮助减压放松。更多问题欢迎继续提问！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 106, 'completion_tokens': 57, 'total_tokens': 163}}
+---
+
+[XDlog] emoji: a盾和c盾主要区别在于耐久度和恢复方式。a盾耐久更高但不自动恢复，c盾自动恢复但耐久较低。放松方式建议听音乐、散步或冥想，帮助减压放松。更多问题欢迎继续提问！
+[XDlog] 长度:  79
+[XDlog] 16:42:36 Finish: Echoon: more use: 2.8183414936065674
+['a盾和c盾主要区别在于耐久度和恢复方式。a盾耐久更高但不自动恢复，c盾自动恢复但耐久较低。放松方式建议听音乐、散步或冥想，帮助减压放松。更多问题欢迎继续提问！']
+
+[XDlog] 16:43:01 Begin: Echoon: no_return new_chat
+[XDlog] 16:43:54 Begin: Echoon: ai 感觉抗压怎么办？
+{'id': 'gen-1748681038-voI9dJsiJI0Jyf0Ccbip', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748681038, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '遇到压力时，试着分解任务，制定可实现的小目标。深呼吸、适当运动也能缓解。记得与朋友聊聊天，倾诉也是一种释放哦！加油！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 90, 'completion_tokens': 37, 'total_tokens': 127}}
+---
+
+[XDlog] emoji: 遇到压力时，试着分解任务，制定可实现的小目标。深呼吸、适当运动也能缓解。记得与朋友聊聊天，倾诉也是一种释放哦！加油！
+[XDlog] 长度:  58
+[XDlog] 16:43:57 Finish: Echoon: 感觉抗压怎么办？ use: 2.5333075523376465
+['遇到压力时，试着分解任务，制定可实现的小目标。深呼吸、适当运动也能缓解。记得与朋友聊聊天，倾诉也是一种释放哦！加油！']
+
+[XDlog] 16:46:24 Begin: : init 
+[XDlog] 16:46:24 Finish: :  use: 0.0005755424499511719
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (=^･ω･^=)', 815]
+
+[XDlog] 16:46:28 Begin: : init 
+[XDlog] 16:46:28 Finish: :  use: 0.0005393028259277344
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (≧▽≦)/', 811]
+
+[XDlog] 16:47:01 Begin: : init 
+[XDlog] 16:47:01 Finish: :  use: 0.0005636215209960938
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (｀・ω・´)', 778]
+
+[XDlog] 16:47:08 Begin: : init 
+[XDlog] 16:47:08 Finish: :  use: 0.0005471706390380859
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;216;191;216m ╮(￣▽￣)╭', 771]
+
+[XDlog] 16:53:42 Begin: : init 
+[XDlog] 16:53:42 Finish: :  use: 0.0006196498870849609
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (^・ω・^)', 377]
+
+[XDlog] 16:54:22 Begin: Echoon: ai 有什么好玩的高速移动类steam游戏推荐呢？
+{'id': 'gen-1748681665-sfgymUbhYEie30q7d0GS', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748681666, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '推荐几款高速移动类游戏：《死亡细胞》、《雨中冒险2》和《茶杯头》。玩得开心！感觉抗压可以试试冥想或散步放松心情。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 105, 'completion_tokens': 43, 'total_tokens': 148}}
+---
+
+[XDlog] emoji: 推荐几款高速移动类游戏：《死亡细胞》、《雨中冒险2》和《茶杯头》。玩得开心！感觉抗压可以试试冥想或散步放松心情。
+[XDlog] 长度:  65
+[XDlog] 16:54:24 Finish: Echoon: 有什么好玩的高速移动类steam游戏推荐呢？ use: 2.450551748275757
+['推荐几款高速移动类游戏：<<死亡细胞>> 、<<雨中冒险2>> 和<<茶杯头>> 。玩得开心！感觉抗压可以试试冥想或散步放松心情。']
+
+[XDlog] 16:55:08 Begin: Echoon: ai fps游戏
+{'id': 'gen-1748681711-YKvREqzOZKXTTehGoo5W', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748681711, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '对于抗压，可以多练操作和反应，调整心态；高速移动类游戏有《雷电X》、《高速前进！》。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 108, 'completion_tokens': 32, 'total_tokens': 140}}
+---
+
+[XDlog] emoji: 对于抗压，可以多练操作和反应，调整心态；高速移动类游戏有《雷电X》、《高速前进！》。
+[XDlog] 长度:  48
+[XDlog] 16:55:10 Finish: Echoon: fps游戏 use: 2.5631330013275146
+['对于抗压，可以多练操作和反应，调整心态；高速移动类游戏有<<雷电X>> 、<<高速前进！>> 。']
+
+[XDlog] 16:55:45 Begin: Echoon: no_return new_chat
+[XDlog] 16:56:12 Begin: Echoon: ai 有什么好玩的高速类fps游戏推荐呢？
+{'id': 'gen-1748681775-ZGuwDs1Fty7Kw8Lt664v', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748681776, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '推荐《全球使命3》和《生死狙击》，都是高速射击体验不错的游戏。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 95, 'completion_tokens': 19, 'total_tokens': 114}}
+---
+
+[XDlog] emoji: 推荐《全球使命3》和《生死狙击》，都是高速射击体验不错的游戏。
+[XDlog] 长度:  37
+[XDlog] 16:56:14 Finish: Echoon: 有什么好玩的高速类fps游戏推荐呢？ use: 2.449171781539917
+['推荐<<全球使命3>> 和<<生死狙击>> ，都是高速射击体验不错的游戏。']
+
+[XDlog] 16:56:29 Begin: Echoon: ai steam上的
+{'id': 'gen-1748681792-fkrDRP5A6g0J1vBQsjCV', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748681793, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': 'Steam上有很多高速FPS游戏，如《雨中冒险2》、《超载》和《全球使命》等，都很受好评。你可以试试看！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 100, 'completion_tokens': 35, 'total_tokens': 135}}
+---
+
+[XDlog] emoji: Steam上有很多高速FPS游戏，如《雨中冒险2》、《超载》和《全球使命》等，都很受好评。你可以试试看！
+[XDlog] 长度:  61
+[XDlog] 16:56:31 Finish: Echoon: steam上的 use: 2.412245750427246
+['Steam上有很多高速FPS游戏，如<<雨中冒险2>> 、<<超载>> 和<<全球使命>> 等，都很受好评。你可以试试看！']
+
+[XDlog] 16:58:44 Begin: Echoon: ai 说几句关于哲学的话来安慰人
+{'id': 'gen-1748681927-NXlOIFhe9eaBuseVdKKP', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748681928, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '哲学让我们思考生命的意义，即便世界复杂多变，内心依然可以保持平静与坚定。愿你像哲学家般智慧，面对困境也能找到内心的光。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 110, 'completion_tokens': 36, 'total_tokens': 146}}
+---
+
+[XDlog] emoji: 哲学让我们思考生命的意义，即便世界复杂多变，内心依然可以保持平静与坚定。愿你像哲学家般智慧，面对困境也能找到内心的光。
+[XDlog] 长度:  59
+[XDlog] 16:58:46 Finish: Echoon: 说几句关于哲学的话来安慰人 use: 2.4423108100891113
+['哲学让我们思考生命的意义，即便世界复杂多变，内心依然可以保持平静与坚定。愿你像哲学家般智慧，面对困境也能找到内心的光。']
+
+[XDlog] 17:01:03 Begin: : init 
+[XDlog] 17:01:03 Finish: :  use: 0.0005774497985839844
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;254;198;195m (｡>ω<｡)', 1736]
+
+[XDlog] 17:10:47 Begin: : init 
+[XDlog] 17:10:47 Finish: :  use: 0.0006546974182128906
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;205;214;210m (｡>ω<｡)', 1152]
+
+[XDlog] 17:13:28 Begin: Echoon: ai 我好无聊啊
+{'id': 'gen-1748682812-UUlbiGuL7eKZSBrhXmCd', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748682812, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '无聊时可以读读书、听听音乐、练练瑜伽或者尝试学一门新技能哦。生活中总有许多有趣的事等着我们去发现。哲学告诉我们，无聊也是一种生活体验，享受它吧！', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 105, 'completion_tokens': 43, 'total_tokens': 148}}
+---
+
+[XDlog] emoji: 无聊时可以读读书、听听音乐、练练瑜伽或者尝试学一门新技能哦。生活中总有许多有趣的事等着我们去发现。哲学告诉我们，无聊也是一种生活体验，享受它吧！
+[XDlog] 长度:  72
+[XDlog] 17:13:34 Finish: Echoon: 我好无聊啊 use: 6.396710634231567
+['无聊时可以读读书、听听音乐、练练瑜伽或者尝试学一门新技能哦。生活中总有许多有趣的事等着我们去发现。哲学告诉我们，无聊也是一种生活体验，享受它吧！']
+
+[XDlog] 17:16:02 Begin: Echoon: ai 游戏压力局怎么降压？
+{'id': 'gen-1748682966-8Hgv7xWwgeuvwtCV1Fm1', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748682966, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '游戏压力大时可以试试短暂休息，做些轻松的事，或者调整游戏目标。哲学角度，生活就像一条河，有时平静有时湍急，接受它自然的起伏能让我们更从容。多想想美好的事，给自己一点鼓励。如果无聊，可以探索一下新爱好，比如阅读或绘画，也许能找到新的乐趣呢。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 107, 'completion_tokens': 73, 'total_tokens': 180}}
+---
+
+[XDlog] emoji: 游戏压力大时可以试试短暂休息，做些轻松的事，或者调整游戏目标。哲学角度，生活就像一条河，有时平静有时湍急，接受它自然的起伏能让我们更从容。多想想美好的事，给自己一点鼓励。如果无聊，可以探索一下新爱好，比如阅读或绘画，也许能找到新的乐趣呢。
+[XDlog] 长度:  81 38
+[XDlog] 17:16:05 Finish: Echoon: 游戏压力局怎么降压？ use: 2.910975933074951
+['游戏压力大时可以试试短暂休息，做些轻松的事，或者调整游戏目标。哲学角度，生活就像一条河，有时平静有时湍急，接受它自然的起伏能让我们更从容。多想想美好的事，给自己一', '点鼓励。如果无聊，可以探索一下新爱好，比如阅读或绘画，也许能找到新的乐趣呢。']
+
+[XDlog] 17:16:40 Begin: Echoon: no_return new_chat
+[XDlog] 17:18:11 Begin: : init 
+[XDlog] 17:18:11 Finish: :  use: 0.0006506443023681641
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;240;128;128m (｀・ω・´)', 708]
+
+[XDlog] 17:20:07 Begin: Echoon: ai 柚子厨恶心吗？
+{'id': 'gen-1748683210-xeJzXyRTYUtUVqoHse7e', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748683211, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '每个人兴趣不同，柚子厨作为一种特定的口味偏好，并没有对错之分。如果有不喜欢这种口味的朋友，可能只是个人喜好不同而已。', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 89, 'completion_tokens': 33, 'total_tokens': 122}}
+---
+
+[XDlog] emoji: 每个人兴趣不同，柚子厨作为一种特定的口味偏好，并没有对错之分。如果有不喜欢这种口味的朋友，可能只是个人喜好不同而已。
+[XDlog] 长度:  58
+[XDlog] 17:20:09 Finish: Echoon: 柚子厨恶心吗？ use: 2.4915130138397217
+['每个人兴趣不同，柚子厨作为一种特定的口味偏好，并没有对错之分。如果有不喜欢这种口味的朋友，可能只是个人喜好不同而已。']
+
+[XDlog] 17:22:20 Begin: : init 
+[XDlog] 17:22:20 Finish: :  use: 0.0005946159362792969
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;248;131;121m (｡>﹏<｡)', 459]
+
+[XDlog] 17:22:45 Begin: [0818] steven09195055: g_pinyin sry bro
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 17:22:45 Finish: [0818] steven09195055: sry bro use: 0.0014545917510986328
+
+
+[XDlog] 17:27:04 Begin: : init 
+[XDlog] 17:27:04 Finish: :  use: 0.0006074905395507812
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;205;214;210m (｡>﹏<｡)', 175]
+
+[XDlog] 17:29:57 Begin: : init 
+[XDlog] 17:29:57 Finish: :  use: 0.0005779266357421875
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;194;245;194m (≧▽≦)/', 2]
+
+[XDlog] 17:30:53 Begin: [我來問道] Mag1cStrafe: g_pinyin false shi shen mne
+[Pinyin]: [['false'], ['失神']]
+[XDlog] fail_count: 2 pinyin_len: 4
+Failed Trans
+[XDlog] 17:30:53 Finish: [我來問道] Mag1cStrafe: false shi shen mne use: 0.0044765472412109375
+
+
+[XDlog] 17:35:05 Begin: : init 
+[XDlog] 17:35:05 Finish: :  use: 0.000682830810546875
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (^・ω・^)', 1494]
+
+[XDlog] 17:36:35 Begin: : init 
+[XDlog] 17:36:35 Finish: :  use: 0.0006201267242431641
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (｀・ω・´)', 1404]
+
+[XDlog] 17:37:11 Begin: : init 
+[XDlog] 17:37:11 Finish: :  use: 0.0005288124084472656
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (^・ω・^)', 1368]
+
+[XDlog] 17:37:29 Begin: : init 
+[XDlog] 17:37:29 Finish: :  use: 0.0005269050598144531
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (｡･ω･｡)', 1350]
+
+[XDlog] 17:37:58 Begin: : init 
+[XDlog] 17:37:58 Finish: :  use: 0.0005846023559570312
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (｡･ω･｡)', 1321]
+
+[XDlog] 17:41:12 Begin: : init 
+[XDlog] 17:41:12 Finish: :  use: 0.0005583763122558594
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (｡>ω<｡)', 1127]
+
+[XDlog] 17:42:36 Begin: : init 
+[XDlog] 17:42:36 Finish: :  use: 0.0005383491516113281
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (｡>ω<｡)', 1043]
+
+[XDlog] 17:45:16 Begin: : init 
+[XDlog] 17:45:16 Finish: :  use: 0.0005640983581542969
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (｡>ω<｡)', 883]
+
+[XDlog] 17:45:26 Begin: Pathstar_XD: g_pinyin squirrel bug
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 17:45:26 Finish: Pathstar_XD: squirrel bug use: 0.001163482666015625
+
+
+[XDlog] 17:49:50 Begin: [唯落晖] luohui2010: g_pinyin zai gan shen me
+[Pinyin]: [['在', '干什么']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 17:49:50 Finish: [唯落晖] luohui2010: zai gan shen me use: 0.0030667781829833984
+在干什么
+
+[XDlog] 17:50:06 Begin: [薄荷味紙箱] M1nt-F1avored: g_pinyin hai you zhuan wen zi ?
+[Pinyin]: [['还有']]
+[XDlog] fail_count: 1 pinyin_len: 6
+[XDlog] 17:50:06 Finish: [薄荷味紙箱] M1nt-F1avored: hai you zhuan wen zi ? use: 0.002234935760498047
+还有转文字?
+
+[XDlog] 17:50:37 Begin: KanateOWO: g_pinyin hai neng zheyang?
+[Pinyin]: [['还能']]
+[XDlog] fail_count: 2 pinyin_len: 4
+Failed Trans
+[XDlog] 17:50:37 Finish: KanateOWO: hai neng zheyang? use: 0.002267122268676758
+
+
+[XDlog] 17:50:47 Begin: [薄荷味紙箱] M1nt-F1avored: g_pinyin hai neng zhe yang
+[Pinyin]: [['还能', '这样']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 17:50:47 Finish: [薄荷味紙箱] M1nt-F1avored: hai neng zhe yang use: 0.0030088424682617188
+还能这样
+
+[XDlog] 17:52:28 Begin: [唯落晖] luohui2010: g_pinyin tai tan te you de si kao ren shen
+[Pinyin]: [['泰坦', '特有的', '思考', '人身']]
+[XDlog] fail_count: 0 pinyin_len: 9
+[XDlog] 17:52:28 Finish: [唯落晖] luohui2010: tai tan te you de si kao ren shen use: 0.005918741226196289
+泰坦特有的思考人身
+
+[XDlog] 17:52:36 Begin: [唯落晖] luohui2010: g_pinyin chong jin
+[Pinyin]: [['冲进']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 17:52:36 Finish: [唯落晖] luohui2010: chong jin use: 0.0018894672393798828
+冲进
+
+[XDlog] 17:52:54 Begin: [薄荷味紙箱] M1nt-F1avored: g_pinyin alt f4
+[Pinyin]: [['alt'], ['辅']]
+[XDlog] fail_count: 2 pinyin_len: 3
+Failed Trans
+[XDlog] 17:52:54 Finish: [薄荷味紙箱] M1nt-F1avored: alt f4 use: 0.0017058849334716797
+
+
+[XDlog] 17:53:09 Begin: [薄荷味紙箱] M1nt-F1avored: g_pinyin 或者alt tab 退桌面
+[XDlog] fail_count: 4 pinyin_len: 4
+Failed Trans
+[XDlog] 17:53:09 Finish: [薄荷味紙箱] M1nt-F1avored: 或者alt tab 退桌面 use: 0.0012712478637695312
+
+
+[XDlog] 17:54:07 Begin: [薄荷味紙箱] M1nt-F1avored: g_pinyin kan kan xin yang de xiao chong wu
+[Pinyin]: [['看看', '信仰', '的', '小', '宠物']]
+[XDlog] fail_count: 0 pinyin_len: 8
+[XDlog] 17:54:07 Finish: [薄荷味紙箱] M1nt-F1avored: kan kan xin yang de xiao chong wu use: 0.003904104232788086
+看看信仰的小宠物
+
+[XDlog] 17:54:27 Begin: [唯落晖] luohui2010: g_pinyin 666 hai hui bian shi
+[Pinyin]: [['666'], ['还会', '便是']]
+[XDlog] fail_count: 1 pinyin_len: 5
+[XDlog] 17:54:27 Finish: [唯落晖] luohui2010: 666 hai hui bian shi use: 0.002530336380004883
+666还会便是
+
+[XDlog] 17:54:48 Begin: : init 
+[XDlog] 17:54:48 Finish: :  use: 0.0005731582641601562
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (=^･ω･^=)', 311]
+
+[XDlog] 18:36:58 Begin: : init 
+[XDlog] 18:36:58 Finish: :  use: 0.0006189346313476562
+['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;216;191;216m ～(つˆДˆ)つ', 1381]
+

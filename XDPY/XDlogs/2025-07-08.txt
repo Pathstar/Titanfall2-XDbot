@@ -1,0 +1,75 @@
+19:52:09 Monitoring Squirrel Messages...
+[XDlog] 19:55:47 Begin: : init 
+[XDlog] 19:55:47 Finish: :  use: 0.0006585121154785156
+['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (｡>﹏<｡)', 252]
+
+[XDlog] 19:57:41 Begin: : init 
+[XDlog] 19:57:41 Finish: :  use: 0.0006146430969238281
+['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;175;238;238m ╮(￣▽￣)╭', 138]
+
+[XDlog] 20:00:31 Begin: : init 
+[XDlog] 20:00:31 Finish: :  use: 0.0005908012390136719
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;205;214;210m (ﾉ≧∀≦)ﾉ', 1768]
+
+[XDlog] 20:04:38 Begin: : init 
+[XDlog] 20:04:38 Finish: :  use: 0.0005548000335693359
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;254;198;195m ～(つˆДˆ)つ', 1521]
+
+[XDlog] 20:12:07 Begin: : init 
+[XDlog] 20:12:07 Finish: :  use: 0.0007772445678710938
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;254;250;195m (ﾉ≧∀≦)ﾉ', 1072]
+
+[XDlog] 20:12:56 Begin: [BOT] Pathstar_XD: g_pinyin void function recordObituary(string attackerName, string weaponName, string victimName, entity attacker, entity victim, bool isHeadShot){
+[Pinyin] Tokens: ['void function recordObituary', '(', 'string attackerName', ',', ' ', 'string weaponName', ',', ' ', 'string victimName', ',', ' ', 'entity attacker', ',', ' ', 'entity victim', ',', ' ', 'bool isHeadShot', '){']
+[XDlog] fail_count: 22 pinyin_len: 22
+Failed Trans
+[XDlog] 20:12:56 Finish: [BOT] Pathstar_XD: void function recordObituary(string attackerName, string weaponName, string victimName, entity attacker, entity victim, bool isHeadShot){ use: 0.010084867477416992
+
+
+[XDlog] 20:18:01 Begin: : init 
+[XDlog] 20:18:01 Finish: :  use: 0.0005657672882080078
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;135;206;235m (｀・ω・´)', 718]
+
+[XDlog] 20:25:26 Begin: : init 
+[XDlog] 20:25:26 Finish: :  use: 0.0006253719329833984
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;205;214;210m (=^･ω･^=)', 273]
+
+[XDlog] 20:31:20 Begin: : init 
+[XDlog] 20:31:20 Finish: :  use: 0.0007364749908447266
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (｡>ω<｡)', 1719]
+
+[XDlog] 21:03:32 Begin: : init 
+[XDlog] 21:03:32 Finish: :  use: 0.0006325244903564453
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;198;195m (=^･ω･^=)', 1587]
+
+[XDlog] 21:03:47 Begin: : init 
+[XDlog] 21:03:47 Finish: :  use: 0.0007760524749755859
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;221;160;221m _(:з」∠)_', 1572]
+
+[XDlog] 21:04:04 Begin: : init 
+[XDlog] 21:04:04 Finish: :  use: 0.0007178783416748047
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;219;193m _(≧v≦」∠)_', 1555]
+
+[XDlog] 21:15:58 Begin: : init 
+[XDlog] 21:15:58 Finish: :  use: 0.0007581710815429688
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;208;175m (〜￣△￣)〜', 841]
+
+[XDlog] 21:26:32 Begin: : init 
+[XDlog] 21:26:32 Finish: :  use: 0.0006320476531982422
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;240;128;128m ╮(￣▽￣)╭', 207]
+
+[XDlog] 21:34:35 Begin: : init 
+[XDlog] 21:34:35 Finish: :  use: 0.0007398128509521484
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;194;245;194m _(≧v≦」∠)_', 1524]
+
+[XDlog] 21:36:05 Begin: [收尾人] darksilence0: g_pinyin HAO BI
+[Pinyin] Tokens: ['HAO BI']
+[Pinyin]: [['好比']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 21:36:05 Finish: [收尾人] darksilence0: HAO BI use: 0.0039408206939697266
+好比
+
+[XDlog] 21:36:55 Begin: : init 
+[XDlog] 21:36:55 Finish: :  use: 0.0006804466247558594
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (=^･ω･^=)', 1384]
+

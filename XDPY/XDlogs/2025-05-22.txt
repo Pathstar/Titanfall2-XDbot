@@ -1,0 +1,178 @@
+21:28:21 Monitoring file changes...
+21:42:51 Monitoring file changes...
+[XDlog] 21:48:48 Begin: [ADV] LingHsvan: g_pinyin HOW OL;D ARE YOU
+[Pinyin]: [['HOW'], ['OL'], [';'], ['砀']]
+[Pinyin]: [['HOW'], ['OL'], [';'], ['砀'], ['ARE'], ['有']]
+[XDlog] fail_count: 4 pinyin_len: 6
+Failed Trans
+[XDlog] 21:48:48 Finish: [ADV] LingHsvan: HOW OL;D ARE YOU use: 0.003204822540283203
+ 
+[XDlog] 21:48:48 Begin: [ADV] LingHsvan: g_pinyin HOW OL;D ARE YOU
+[Pinyin]: [['HOW'], ['OL'], [';'], ['砀']]
+[Pinyin]: [['HOW'], ['OL'], [';'], ['砀'], ['ARE'], ['有']]
+[XDlog] fail_count: 4 pinyin_len: 6
+Failed Trans
+[XDlog] 21:48:48 Finish: [ADV] LingHsvan: HOW OL;D ARE YOU use: 0.009370565414428711
+ 
+[XDlog] 21:49:15 Begin: [BOT] Pathstar_XD: g_pinyin 999 years old
+[XDlog] 21:49:15 Begin: [BOT] Pathstar_XD: g_pinyin 999 years old
+[XDlog] fail_count: 3 pinyin_len: 3
+Failed Trans
+[XDlog] fail_count: 3 pinyin_len: 3
+Failed Trans
+[XDlog] 21:49:15 Finish: [BOT] Pathstar_XD: 999 years old use: 0.0011322498321533203
+ 
+[XDlog] 21:49:15 Finish: [BOT] Pathstar_XD: 999 years old use: 0.0013740062713623047
+ 
+[XDlog] 21:49:27 Begin: [BOT] Pathstar_XD: g_pinyin how Ol,d. are u
+[Pinyin]: [['how'], ['Ol'], [','], ['砀']]
+[Pinyin]: [['how'], ['Ol'], [','], ['砀']]
+[XDlog] fail_count: 6 pinyin_len: 7
+Failed Trans
+ount: 6 pinyin_len: 7
+Failed Trans
+[XDlog] 21:49:27 Finish: [BOT] Pathstar_XD: how Ol,d. are u use: 0.0012340545654296875
+ 
+[XDlog] Failed to update result JSON: Expecting value: line 1 column 1 (char 0)
+[XDlog] 21:52:14 Begin: Pathstar_XD: server ['server', 'name']
+[XDlog] 21:52:14 Begin: Pathstar_XD: server ['server', 'name']
+无此方法 server
+[XDlog] 21:52:14 Finish: Pathstar_XD: ['server', 'name'] use: 0.0007669925689697266
+ 
+[XDlog] 21:52:14 Finish: Pathstar_XD: ['server', 'name'] use: 0.16631317138671875
+ 
+[XDlog] 
+ server 返回为空 
+
+[XDlog] 21:54:34 Begin: Pathstar_XD: server ['serv', 'r name 小图']
+无此方法 server
+[XDlog] 21:54:34 Finish: Pathstar_XD: ['serv', 'r name 小图'] use: 0.0008533000946044922
+ 
+[XDlog] 21:54:34 Finish: Pathstar_XD: ['serv', 'r name 小图'] use: 0.1236429214477539
+ 
+[XDlog] 
+ server 返回为空 
+
+[XDlog] 21:57:41 Begin: [BOT] Pathstar_XD: server ['name', '小图']
+[XDlog] 21:57:41 Begin: [BOT] Pathstar_XD: server ['name', '小图']
+无此方法 server
+[XDlog] 21:57:41 Finish: [BOT] Pathstar_XD: ['name', '小图'] use: 0.0006744861602783203
+ 
+[XDlog] 21:57:41 Finish: [BOT] Pathstar_XD: ['name', '小图'] use: 0.12417340278625488
+[{'playerCount': 5, 'name': '[CN]坏逼们的服务器#\x1b[33m小图\x1b[0m铁对铁'}] 
+[XDlog] 21:58:06 Begin: [BOT] Pathstar_XD: server ['name', '小图']
+无此方法 server
+[XDlog] 21:58:06 Finish: [BOT] Pathstar_XD: ['name', '小图'] use: 0.0009279251098632812
+ 
+[XDlog] 21:58:06 Finish: [BOT] Pathstar_XD: ['name', '小图'] use: 0.12886548042297363
+[{'playerCount': 5, 'name': '[CN]坏逼们的服务器#\x1b[33m小图\x1b[0m铁对铁'}] 
+[XDlog] 21:59:54 Begin: [BOT] Pathstar_XD: server ['name', '小图']
+[XDlog] 21:59:54 Begin: [BOT] Pathstar_XD: server ['name', '小图']
+无此方法 server
+[XDlog] 21:59:54 Finish: [BOT] Pathstar_XD: ['name', '小图'] use: 0.0010325908660888672
+ 
+[XDlog] 21:59:54 Finish: [BOT] Pathstar_XD: ['name', '小图'] use: 0.12726140022277832
+[{'playerCount': 6, 'name': '[CN]坏逼们的服务器#\x1b[33m小图\x1b[0m铁对铁'}] 
+[XDlog] 22:02:06 Begin: [BOT] Pathstar_XD: time 
+[XDlog] 22:02:06 Finish: [BOT] Pathstar_XD:  use: 0.0003294944763183594
+22:02:06 
+[XDlog] 22:02:06 Finish: [BOT] Pathstar_XD:  use: 0.0005095005035400391
+22:02:06 
+[XDlog] 22:02:10 Begin: [BOT] Pathstar_XD: time 
+[XDlog] 22:02:10 Begin: [BOT] Pathstar_XD: time 
+[XDlog] 22:02:10 Finish: [BOT] Pathstar_XD:  use: 0.0002923011779785156
+22:02:10 
+[XDlog] 22:02:10 Finish: [BOT] Pathstar_XD:  use: 0.0005686283111572266
+22:02:10 
+[XDlog] 22:02:15 Begin: [BOT] Pathstar_XD: time 
+[XDlog] 22:02:15 Finish: [BOT] Pathstar_XD:  use: 0.00032639503479003906
+22:02:15 
+[XDlog] Failed to update result JSON: Expecting value: line 1 column 1 (char 0)
+[XDlog] 22:02:23 Begin: [BOT] Pathstar_XD: time 
+[XDlog] Failed to update result JSON: Expecting value: line 1 column 1 (char 0)
+[XDlog] 22:02:23 Finish: [BOT] Pathstar_XD:  use: 0.00041604042053222656
+22:02:23 
+[XDlog] 22:02:26 Begin: [BOT] Pathstar_XD: time 
+[XDlog] Failed to update result JSON: Expecting value: line 1 column 1 (char 0)
+[XDlog] 22:02:26 Finish: [BOT] Pathstar_XD:  use: 0.0002658367156982422
+22:02:26 
+[XDlog] 22:04:52 Begin: [BOT] Pathstar_XD: server ['mode', 'xd']
+[XDlog] 22:04:52 Begin: [BOT] Pathstar_XD: server ['mode', 'xd']
+无此方法 server
+[XDlog] 22:04:52 Finish: [BOT] Pathstar_XD: ['mode', 'xd'] use: 0.0007433891296386719
+ 
+[XDlog] 22:04:52 Finish: [BOT] Pathstar_XD: ['mode', 'xd'] use: 0.12554407119750977
+[{'playerCount': 15, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 12, 'name': '[NSCN] 北极星CN官方原版铁对铁#1'}, {'playerCount': 5, 'name': '[CN]坏逼们的服务器#小图铁对铁'}, {'playerCount': 1, 'name': '新时代养老服，高kd踢出'}] 
+[XDlog] 22:07:25 Begin: Pathstar_XD: time 
+[XDlog] Failed to update result JSON: Expecting value: line 1 column 1 (char 0)
+[XDlog] 22:07:25 Finish: Pathstar_XD:  use: 0.0004093647003173828
+22:07:25 
+[XDlog] 22:07:36 Begin: Pathstar_XD: server ['name', 'nscn']
+[XDlog] 22:07:36 Begin: Pathstar_XD: server ['name', 'nscn']
+无此方法 server
+[XDlog] 22:07:36 Finish: Pathstar_XD: ['name', 'nscn'] use: 0.0007238388061523438
+ 
+[XDlog] 22:07:36 Finish: Pathstar_XD: ['name', 'nscn'] use: 0.13021159172058105
+[{'playerCount': 13, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方原版铁对铁#1'}, {'playerCount': 3, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[疯狂]#1'}] 
+[XDlog] 22:07:55 Begin: Pathstar_XD: server ['name', '小图']
+无此方法 server
+[XDlog] 22:07:55 Finish: Pathstar_XD: ['name', '小图'] use: 0.0007197856903076172
+ 
+[XDlog] 22:07:56 Finish: Pathstar_XD: ['name', '小图'] use: 0.11768221855163574
+[{'playerCount': 5, 'name': '[CN]坏逼们的服务器#\x1b[33m小图\x1b[0m铁对铁'}] 
+[XDlog] 22:08:49 Begin: Pathstar_XD: server ['name', 'cn 小图 铁对铁']
+无此方法 server
+[XDlog] 22:08:49 Finish: Pathstar_XD: ['name', 'cn 小图 铁对铁'] use: 0.0007967948913574219
+ 
+[XDlog] 22:08:49 Finish: Pathstar_XD: ['name', 'cn 小图 铁对铁'] use: 0.1265869140625
+[{'playerCount': 13, 'name': '[NS\x1b[33mCN\x1b[0m] 北极星\x1b[33mCN\x1b[0m官方原版\x1b[33m铁对铁\x1b[0m#1'}, {'playerCount': 10, 'name': '[\x1b[33mCN\x1b[0m]坏逼培训营 萌新房'}, {'playerCount': 6, 'name': '[\x1b[33mCN\x1b[0m]坏逼们的服务器#\x1b[33m小图\x1b[0m\x1b[33m铁对铁\x1b[0m'}, {'playerCount': 3, 'name': '[NS\x1b[33mCN\x1b[0m] 北极星\x1b[33mCN\x1b[0m官方边境防御[疯狂]#1'}] 
+[XDlog] 22:10:09 Begin: Pathstar_XD: server ['name', '单挑']
+[XDlog] 22:10:09 Begin: Pathstar_XD: server ['name', '单挑']
+无此方法 server
+[XDlog] 22:10:09 Finish: Pathstar_XD: ['name', '单挑'] use: 0.0011394023895263672
+ 
+[XDlog] 22:10:09 Finish: Pathstar_XD: ['name', '单挑'] use: 0.12746477127075195
+查询名称 [单挑] 未找到服务器 
+[XDlog] 22:10:36 Begin: Pathstar_XD: server ['name', '小图']
+无此方法 server
+[XDlog] 22:10:36 Finish: Pathstar_XD: ['name', '小图'] use: 0.0007483959197998047
+ 
+[XDlog] 22:10:36 Finish: Pathstar_XD: ['name', '小图'] use: 0.13115549087524414
+[{'playerCount': 6, 'name': '[CN]坏逼们的服务器#\x1b[33m小图\x1b[0m铁对铁'}] 
+[XDlog] 22:11:41 Begin: Pathstar_XD: server ['name', 'nscn']
+[XDlog] 22:11:41 Begin: Pathstar_XD: server ['name', 'nscn']
+无此方法 server
+[XDlog] 22:11:41 Finish: Pathstar_XD: ['name', 'nscn'] use: 0.0008454322814941406
+ 
+[XDlog] 22:11:41 Finish: Pathstar_XD: ['name', 'nscn'] use: 0.11989068984985352
+[{'playerCount': 16, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方原版铁对铁#1'}, {'playerCount': 3, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[疯狂]#1'}] 
+[XDlog] 22:12:00 Begin: Pathstar_XD: server ['name', 'nscn']
+无此方法 server
+[XDlog] 22:12:00 Finish: Pathstar_XD: ['name', 'nscn'] use: 0.0008261203765869141
+ 
+[XDlog] 22:12:00 Finish: Pathstar_XD: ['name', 'nscn'] use: 0.12334656715393066
+[{'playerCount': 15, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方原版铁对铁#1'}, {'playerCount': 3, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[疯狂]#1'}] 
+22:13:12 Monitoring file changes...
+[XDlog] 22:13:21 Begin: Pathstar_XD: server ['name', 'nscn']
+无此方法 server
+[XDlog] 22:13:21 Begin: Pathstar_XD: server ['name', 'nscn']
+[XDlog] 22:13:21 Finish: Pathstar_XD: ['name', 'nscn'] use: 0.0007922649383544922
+ 
+?????
+[XDlog] 22:13:21 Finish: Pathstar_XD: ['name', 'nscn'] use: 0.12877821922302246
+[{'playerCount': 9, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方原版铁对铁#1'}, {'playerCount': 3, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[疯狂]#1'}, {'playerCount': 2, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[简单]#1'}] 
+[XDlog] 22:14:47 Begin: Pathstar_XD: server ['name', 'nscn']
+?????
+[XDlog] 22:14:47 Finish: Pathstar_XD: ['name', 'nscn'] use: 0.12899541854858398
+[{'playerCount': 9, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方原版铁对铁#1'}, {'playerCount': 3, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[疯狂]#1'}, {'playerCount': 1, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[简单]#1'}] 
+[XDlog] 22:16:14 Begin: [BOT] Pathstar_XD: server ['name', 'nscn 铁对铁']
+?????
+[XDlog] 22:16:14 Finish: [BOT] Pathstar_XD: ['name', 'nscn 铁对铁'] use: 0.13222622871398926
+[{'playerCount': 9, 'name': '[CN]坏逼们的服务器#小图\x1b[33m铁对铁\x1b[0m'}, {'playerCount': 9, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方原版\x1b[33m铁对铁\x1b[0m#1'}, {'playerCount': 4, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[疯狂]#1'}, {'playerCount': 1, 'name': '[\x1b[33mNSCN\x1b[0m] 北极星CN官方边境防御[简单]#1'}] 
+22:19:12 Monitoring file changes...
+[XDlog] 22:19:46 Begin: [BOT] Pathstar_XD: server ['名称', '小图']
+[XDlog] 22:19:47 Finish: [BOT] Pathstar_XD: ['名称', '小图'] use: 0.1249854564666748
+[{'playerCount': 8, 'name': '[CN]坏逼们的服务器#\x1b[33m小图\x1b[0m铁对铁'}] 
+[XDlog] 22:19:57 Begin: [BOT] Pathstar_XD: server ['模式', '边境']
+[XDlog] 22:19:57 Finish: [BOT] Pathstar_XD: ['模式', '边境'] use: 0.12633061408996582
+[{'playerCount': 5, 'name': '[摸鱼服]边境攻坚战'}, {'playerCount': 5, 'name': '[SL5+ 无限火力]5人简单服'}, {'playerCount': 5, 'name': '[摸鱼服]边境摸鱼战'}, {'playerCount': 4, 'name': '【超好玩】超级先锋泰坦'}, {'playerCount': 4, 'name': '[NSCN] 北极星CN官方边境防御[疯狂]#1'}, {'playerCount': 2, 'name': '[NSCN] 北极星CN官方边境防御[简单]#1'}] 

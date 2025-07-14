@@ -1,0 +1,104 @@
+18:56:02 Monitoring file changes...
+18:59:56 Monitoring file changes...
+20:31:12 Monitoring file changes...
+20:42:54 Monitoring file changes...
+[XDlog] 20:43:58 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 20:43:59 Finish: [BOT] Pathstar_XD:  use: 0.14889001846313477
+[{'playerCount': 3, 'name': '[CN]坏逼们的服务器#小图铁对铁'}, {'playerCount': 15, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 3, 'name': '新时代养老服，高kd踢出'}] 
+[XDlog] 20:44:08 Begin: [BOT] Pathstar_XD: time 
+[XDlog] 20:44:08 Finish: [BOT] Pathstar_XD:  use: 0.0003485679626464844
+20:44:08 
+20:45:19 Monitoring file changes...
+[XDlog] 20:52:28 Begin: player_name: pvp_server message
+[XDlog] 20:52:28 Finish: player_name: message use: 0.12176179885864258
+[{'playerCount': 5, 'name': '[CN]坏逼们的服务器#小图铁对铁'}, {'playerCount': 16, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 3, 'name': '新时代养老服，高kd踢出'}] 
+[XDlog] 20:56:07 Begin: player_name: pvp_server message
+[XDlog] 20:56:07 Finish: player_name: message use: 0.16179108619689941
+[{'playerCount': 4, 'name': '[CN]坏逼们的服务器#小图铁对铁'}, {'playerCount': 15, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 5, 'name': '新时代养老服，高kd踢出'}] 
+[XDlog] 20:56:50 Begin: player_name: pvp_server message
+[XDlog] Failed to update result JSON: Expecting value: line 1 column 1 (char 0)
+[XDlog] 20:57:00 Begin: player_name: pvp_server message
+[XDlog] Failed to update result JSON: Expecting value: line 1 column 1 (char 0)
+[XDlog] 20:57:07 Begin: player_name: pvp_server message
+[XDlog] 20:57:07 Finish: player_name: message use: 0.12857961654663086
+Get NS服务器错误: TypeError 
+[XDlog] 20:57:24 Begin: player_name: pvp_server message
+[XDlog] 20:57:24 Finish: player_name: message use: 0.1610107421875
+Get NS服务器错误: TypeError 
+[XDlog] 21:05:41 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 21:05:41 Finish: [BOT] Pathstar_XD:  use: 0.12479448318481445
+[{'playerCount': 8, 'name': '[CN]坏逼们的服务器#小图铁对铁'}, {'playerCount': 11, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 9, 'name': '新时代养老服，高kd踢出'}] 
+21:07:09 Monitoring file changes...
+[XDlog] 21:07:13 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 21:07:14 Finish: [BOT] Pathstar_XD:  use: 1.0238316059112549
+[{'playerCount': 7, 'name': '[CN]坏逼们的服务器#小图铁对铁'}, {'playerCount': 13, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 8, 'name': '新时代养老服，高kd踢出'}] 
+[XDlog] 21:07:23 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 21:07:24 Finish: [BOT] Pathstar_XD:  use: 1.0321204662322998
+[{'playerCount': 7, 'name': '[CN]坏逼们的服务器#小图铁对铁'}, {'playerCount': 13, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 8, 'name': '新时代养老服，高kd踢出'}] 
+[XDlog] 21:07:53 Begin: Pathstar_XD: time 
+[XDlog] 21:07:53 Finish: Pathstar_XD:  use: 0.00038170814514160156
+21:07:53 
+[XDlog] 21:07:58 Begin: Pathstar_XD: time 
+[XDlog] 21:07:58 Finish: Pathstar_XD:  use: 0.0003788471221923828
+21:07:58 
+[XDlog] 21:08:15 Begin: Pathstar_XD: pvp_server 
+[XDlog] 21:08:16 Finish: Pathstar_XD:  use: 1.0180692672729492
+[{'playerCount': 7, 'name': '[CN]坏逼们的服务器#小图铁对铁'}, {'playerCount': 13, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 7, 'name': '新时代养老服，高kd踢出'}] 
+21:11:25 Monitoring file changes...
+[XDlog] 21:11:58 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 21:11:59 Finish: [BOT] Pathstar_XD:  use: 1.0624568462371826
+[{'playerCount': 6, 'name': '[CN]坏逼们的服务器#小图铁对铁'}, {'playerCount': 8, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 16, 'name': '[CN]坏逼培训营 萌新房'}] 
+21:12:16 Monitoring file changes...
+[XDlog] 21:12:21 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 21:12:22 Finish: [BOT] Pathstar_XD:  use: 1.0442054271697998
+[{'playerCount': 16, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 8, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 6, 'name': '[CN]坏逼们的服务器#小图铁对铁'}] 
+[XDlog] 21:12:31 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 21:12:32 Finish: [BOT] Pathstar_XD:  use: 1.0298967361450195
+[{'playerCount': 16, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 8, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 5, 'name': '[CN]坏逼们的服务器#小图铁对铁'}] 
+[XDlog] 21:12:50 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 21:12:50 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 21:12:51 Finish: [BOT] Pathstar_XD:  use: 1.0224299430847168
+[{'playerCount': 16, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 7, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 5, 'name': '[CN]坏逼们的服务器#小图铁对铁'}] 
+[XDlog] 21:12:51 Finish: [BOT] Pathstar_XD:  use: 1.0339696407318115
+[{'playerCount': 16, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 7, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 5, 'name': '[CN]坏逼们的服务器#小图铁对铁'}] 
+[XDlog] 21:12:53 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 21:12:54 Finish: [BOT] Pathstar_XD:  use: 1.024108648300171
+[{'playerCount': 16, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 7, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 5, 'name': '[CN]坏逼们的服务器#小图铁对铁'}] 
+[XDlog] 21:14:41 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 21:14:42 Finish: [BOT] Pathstar_XD:  use: 1.0300734043121338
+[{'playerCount': 15, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 8, 'name': '新时代养老服，高kd踢出'}, {'playerCount': 7, 'name': '[CN]坏逼们的服务器#小图铁对铁'}] 
+21:19:28 Monitoring file changes...
+[XDlog] 22:16:09 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 22:16:09 Finish: [BOT] Pathstar_XD:  use: 0.17975807189941406
+[{'playerCount': 12, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 4, 'name': '[CN]坏逼们的服务器#小图铁对铁'}] 
+[XDlog] 22:16:45 Begin: [BOT] FADURANE: g_pinyin gang chong zhuang wan xi tong jian wei quan luan le
+[Pinyin]: [['刚', '冲撞', '惋惜', '通鉴', '维权', '乱', '了']]
+[XDlog] fail_count: 0 pinyin_len: 11
+[XDlog] 22:16:45 Finish: [BOT] FADURANE: gang chong zhuang wan xi tong jian wei quan luan le use: 0.0032587051391601562
+刚冲撞惋惜通鉴维权乱了 
+[XDlog] 22:17:53 Begin: [BOT] FADURANE: g_pinyin ai ya yi dui bug wo man man gao liu le xian
+[Pinyin]: [['爱']]
+[Pinyin]: [['爱'], ['呀'], ['一对']]
+[Pinyin]: [['爱'], ['呀'], ['一对'], ['bug'], ['我', '慢慢', '高', '留了', '现']]
+[XDlog] fail_count: 1 pinyin_len: 12
+[XDlog] 22:17:53 Finish: [BOT] FADURANE: ai ya yi dui bug wo man man gao liu le xian use: 0.003060579299926758
+爱呀一对bug我慢慢高留了现 
+[XDlog] 22:23:54 Begin: [BOT] Pathstar_XD: pvp_server 
+[XDlog] 22:23:54 Finish: [BOT] Pathstar_XD:  use: 0.12554931640625
+[{'playerCount': 15, 'name': '[CN]坏逼培训营 萌新房'}, {'playerCount': 4, 'name': '[CN]坏逼们的服务器#小图铁对铁'}, {'playerCount': 1, 'name': '新时代养老服，高kd踢出'}] 
+[XDlog] 22:25:11 Begin: 1492667338: g_pinyin wo mei an Fa
+[Pinyin]: [['我没', '案发']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 22:25:11 Finish: 1492667338: wo mei an Fa use: 0.0011565685272216797
+我没案发 
+[XDlog] 22:25:51 Begin: 1492667338: g_pinyin wo mei you an  F jian a
+[Pinyin]: [['我没', '幽暗']]
+[Pinyin]: [['我没', '幽暗'], ['辅', '间', '阿']]
+[XDlog] fail_count: 0 pinyin_len: 7
+[XDlog] 22:25:51 Finish: 1492667338: wo mei you an  F jian a use: 0.0010876655578613281
+我没幽暗辅间阿 
+[XDlog] 22:37:45 Begin: 1492667338: g_pinyin zhe hai da niu zi
+[Pinyin]: [['这还', '大', '纽子']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 22:37:45 Finish: 1492667338: zhe hai da niu zi use: 0.008298158645629883
+这还大纽子 

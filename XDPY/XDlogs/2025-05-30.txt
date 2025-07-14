@@ -1,0 +1,354 @@
+20:50:41 Monitoring Squirrel Messages...
+[XDlog] 20:52:55 Begin: : init 
+[XDlog] 20:52:55 Finish: :  use: 0.0005910396575927734
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (=^･ω･^=)', 424]
+
+[XDlog] 20:53:01 Begin: : init 
+[XDlog] 20:53:01 Finish: :  use: 0.0006134510040283203
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;194;245;194m _(≧v≦」∠)_', 418]
+
+[XDlog] 20:53:25 Begin: : init 
+[XDlog] 20:53:25 Finish: :  use: 0.0005631446838378906
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (=^･ω･^=)', 394]
+
+[XDlog] 20:54:11 Begin: [ADV] c1b04229felt: g_pinyin duo shao?123????
+[Pinyin]: [['多少']]
+[XDlog] fail_count: 1 pinyin_len: 3
+[XDlog] 20:54:11 Finish: [ADV] c1b04229felt: duo shao?123???? use: 0.0047605037689208984
+多少?123????
+
+[XDlog] 20:55:10 Begin: [ADV] c1b04229felt: g_pinyin 50ji xiao shu tiao xia ku la
+[Pinyin]: [['50'], ['绩效', '薯条', '下', '苦辣']]
+[XDlog] fail_count: 1 pinyin_len: 8
+[XDlog] 20:55:10 Finish: [ADV] c1b04229felt: 50ji xiao shu tiao xia ku la use: 0.0012562274932861328
+50绩效薯条下苦辣
+
+[XDlog] 20:57:06 Begin: [唯落晖] luohui2010: g_pinyin heng bu cuo le
+[Pinyin]: [['横步', '错了']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 20:57:06 Finish: [唯落晖] luohui2010: heng bu cuo le use: 0.0018606185913085938
+横步错了
+
+[XDlog] 20:57:27 Begin: [唯落晖] luohui2010: g_pinyin zhong kao sheng
+[Pinyin]: [['中', '考生']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 20:57:27 Finish: [唯落晖] luohui2010: zhong kao sheng use: 0.0011293888092041016
+中考生
+
+[XDlog] 20:57:42 Begin: [唯落晖] luohui2010: g_pinyin fang jia cai neng wan
+[Pinyin]: [['房价', '才能', '完']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 20:57:42 Finish: [唯落晖] luohui2010: fang jia cai neng wan use: 0.0012590885162353516
+房价才能完
+
+[XDlog] 20:58:17 Begin: [唯落晖] luohui2010: g_pinyin shi de
+[Pinyin]: [['使得']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 20:58:17 Finish: [唯落晖] luohui2010: shi de use: 0.001155853271484375
+使得
+
+[XDlog] 20:58:32 Begin: [唯落晖] luohui2010: g_pinyin deng wo hao xiao xi
+[Pinyin]: [['等我', '好消息']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 20:58:32 Finish: [唯落晖] luohui2010: deng wo hao xiao xi use: 0.0013880729675292969
+等我好消息
+
+[XDlog] 20:58:54 Begin: [唯落晖] luohui2010: g_pinyin kao shang zhong dian hui lai dang
+[Pinyin]: [['考上', '中', '电汇', '来当']]
+[XDlog] fail_count: 0 pinyin_len: 7
+[XDlog] 20:58:54 Finish: [唯落晖] luohui2010: kao shang zhong dian hui lai dang use: 0.0013935565948486328
+考上中电汇来当
+
+[XDlog] 21:00:40 Begin: [ADV] c1b04229felt: g_pinyin zhe bot shi zhen ren jia ban de
+[Pinyin]: [['这']]
+[Pinyin]: [['这'], ['bot'], ['湿疹', '人家', '办得']]
+[XDlog] fail_count: 1 pinyin_len: 8
+[XDlog] 21:00:40 Finish: [ADV] c1b04229felt: zhe bot shi zhen ren jia ban de use: 0.0017254352569580078
+这bot湿疹人家办得
+
+[XDlog] 21:02:53 Begin: [BOT] Pathstar_XD: ai bot是真人假扮的吗
+{'id': 'gen-1748610175-HmMXFWrt3HuVxLa14xlc', 'provider': 'Nineteen', 'model': 'qwen/qwen-2.5-7b-instruct:free', 'object': 'chat.completion', 'created': 1748610175, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '不是哦，我是来自阿里云的AI助手，没有具体的样子和真人哦~', 'refusal': None, 'reasoning': None}}], 'usage': {'prompt_tokens': 96, 'completion_tokens': 19, 'total_tokens': 115}}
+---
+
+[XDlog] emoji: 不是哦，我是来自阿里云的AI助手，没有具体的样子和真人哦~
+[XDlog] 长度:  29
+[XDlog] 21:02:55 Finish: [BOT] Pathstar_XD: bot是真人假扮的吗 use: 2.016069173812866
+['不是哦，我是来自阿里云的AI助手，没有具体的样子和真人哦~']
+
+[XDlog] 21:03:04 Begin: [唯落晖] luohui2010: g_pinyin wo qu
+[Pinyin]: [['我去']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 21:03:04 Finish: [唯落晖] luohui2010: wo qu use: 0.001194000244140625
+我去
+
+[XDlog] 21:03:20 Begin: [唯落晖] luohui2010: g_pinyin gao ji shi li
+[Pinyin]: [['高级', '实力']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 21:03:20 Finish: [唯落晖] luohui2010: gao ji shi li use: 0.0012469291687011719
+高级实力
+
+[XDlog] 21:04:08 Begin: [ADV] c1b04229felt: g_pinyin 555 bei lao ma la
+[Pinyin]: [['555'], ['北佬', '麻辣']]
+[XDlog] fail_count: 1 pinyin_len: 5
+[XDlog] 21:04:08 Finish: [ADV] c1b04229felt: 555 bei lao ma la use: 0.0012650489807128906
+555北佬麻辣
+
+[XDlog] 21:04:56 Begin: : init 
+[XDlog] 21:04:56 Finish: :  use: 0.0005998611450195312
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;175;238;238m (・ω< )☆', 1503]
+
+[XDlog] 21:07:51 Begin: [ADV] c1b04229felt: g_pinyin ldx hao ke pa
+[Pinyin]: [['ldx'], ['好可怕']]
+[XDlog] fail_count: 1 pinyin_len: 4
+[XDlog] 21:07:51 Finish: [ADV] c1b04229felt: ldx hao ke pa use: 0.0015292167663574219
+ldx好可怕
+
+[XDlog] 21:09:15 Begin: [唯落晖] luohui2010: g_pinyin wo lei ge sao gang
+[Pinyin]: [['我', '类', '个', '扫', '刚']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 21:09:15 Finish: [唯落晖] luohui2010: wo lei ge sao gang use: 0.0012137889862060547
+我类个扫刚
+
+[XDlog] 21:09:23 Begin: [ADV] c1b04229felt: g_pinyin hao ke pa wo yao wan pen huo a dun
+[Pinyin]: [['毫克', '怕我', '药丸', '喷火']]
+[XDlog] fail_count: 0 pinyin_len: 10
+[XDlog] 21:09:23 Finish: [ADV] c1b04229felt: hao ke pa wo yao wan pen huo a dun use: 0.002826213836669922
+毫克怕我药丸喷火А盾
+
+[XDlog] 21:11:36 Begin: [唯落晖] luohui2010: g_pinyin jian zhi xie e
+[Pinyin]: [['简直', '邪恶']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 21:11:36 Finish: [唯落晖] luohui2010: jian zhi xie e use: 0.0013549327850341797
+简直邪恶
+
+[XDlog] 21:14:17 Begin: [ADV] c1b04229felt: g_pinyin hao le pa 5555
+[Pinyin]: [['好了', '怕']]
+[XDlog] fail_count: 1 pinyin_len: 4
+[XDlog] 21:14:17 Finish: [ADV] c1b04229felt: hao le pa 5555 use: 0.0015740394592285156
+好了怕5555
+
+[XDlog] 21:15:10 Begin: [ADV] c1b04229felt: g_pinyin ldx hao ke pa
+[Pinyin]: [['ldx'], ['好可怕']]
+[XDlog] fail_count: 1 pinyin_len: 4
+[XDlog] 21:15:10 Finish: [ADV] c1b04229felt: ldx hao ke pa use: 0.0015180110931396484
+ldx好可怕
+
+[XDlog] 21:15:52 Begin: : init 
+[XDlog] 21:15:52 Finish: :  use: 0.0006725788116455078
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;199;245;190m (ﾉ≧∀≦)ﾉ', 847]
+
+[XDlog] 21:18:45 Begin: [ADV] c1b04229felt: g_pinyin bu yao lao wo(TAT)
+[Pinyin]: [['不要', '老挝']]
+[XDlog] fail_count: 3 pinyin_len: 7
+[XDlog] 21:18:45 Finish: [ADV] c1b04229felt: bu yao lao wo(TAT) use: 0.0020599365234375
+不要老挝(TAT)
+
+[XDlog] 21:19:49 Begin: [唯落晖] luohui2010: g_pinyin wo de tian na
+[Pinyin]: [['我的', '天那']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 21:19:49 Finish: [唯落晖] luohui2010: wo de tian na use: 0.0019066333770751953
+我的天那
+
+[XDlog] 21:19:56 Begin: [唯落晖] luohui2010: g_pinyin a dun da ren
+[Pinyin]: [['А盾'], ['大人']]
+[XDlog] fail_count: 0 pinyin_len: 4
+[XDlog] 21:19:56 Finish: [唯落晖] luohui2010: a dun da ren use: 0.0014858245849609375
+А盾大人
+
+[XDlog] 21:20:21 Begin: [ADV] c1b04229felt: g_pinyin shi zai da bu guo la(TaT)
+[Pinyin]: [['是在', '打不过', '拉']]
+[XDlog] fail_count: 3 pinyin_len: 9
+[XDlog] 21:20:21 Finish: [ADV] c1b04229felt: shi zai da bu guo la(TaT) use: 0.0021314620971679688
+是在打不过拉(TaT)
+
+[XDlog] 21:20:46 Begin: [ADV] c1b04229felt: g_pinyin wo j sbskaidun
+[Pinyin]: [['我', '撃']]
+[XDlog] fail_count: 1 pinyin_len: 3
+[XDlog] 21:20:46 Finish: [ADV] c1b04229felt: wo j sbskaidun use: 0.0014204978942871094
+我撃sbskaidun
+
+[XDlog] 21:21:13 Begin: [ADV] c1b04229felt: g_pinyin wo ping shi dou bu zen mo kai dun
+[Pinyin]: [['我', '平时', '都不', '怎', '模', '开', '顿']]
+[XDlog] fail_count: 0 pinyin_len: 9
+[XDlog] 21:21:13 Finish: [ADV] c1b04229felt: wo ping shi dou bu zen mo kai dun use: 0.0028076171875
+我平时都不怎模开顿
+
+[XDlog] 21:21:54 Begin: [唯落晖] luohui2010: g_pinyin ju ji wan jia kai jing zhi wei yi shi gan
+[Pinyin]: [['聚集', '玩家', '开镜', '职位', '一', '实干']]
+[XDlog] fail_count: 0 pinyin_len: 11
+[XDlog] 21:21:54 Finish: [唯落晖] luohui2010: ju ji wan jia kai jing zhi wei yi shi gan use: 0.0022809505462646484
+聚集玩家开镜职位一实干
+
+[XDlog] 21:23:49 Begin: : init 
+[XDlog] 21:23:49 Finish: :  use: 0.0006225109100341797
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;144;238;144m ╮(￣▽￣)╭', 370]
+
+[XDlog] 21:25:03 Begin: [唯落晖] luohui2010: g_pinyin wo nu ben qwq
+[Pinyin]: [['倭奴', '本']]
+[XDlog] fail_count: 1 pinyin_len: 4
+[XDlog] 21:25:03 Finish: [唯落晖] luohui2010: wo nu ben qwq use: 0.0013930797576904297
+倭奴本qwq
+
+[XDlog] 21:26:33 Begin: [唯落晖] luohui2010: g_pinyin jie le
+[Pinyin]: [['接了']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 21:26:33 Finish: [唯落晖] luohui2010: jie le use: 0.001361846923828125
+接了
+
+[XDlog] 21:30:31 Begin: [唯落晖] luohui2010: g_pinyin xiu xi qu le min tian hai you ke
+[Pinyin]: [['休息', '去了', '民', '填海', '游客']]
+[XDlog] fail_count: 0 pinyin_len: 9
+[XDlog] 21:30:31 Finish: [唯落晖] luohui2010: xiu xi qu le min tian hai you ke use: 0.002072572708129883
+休息去了民填海游客
+
+[XDlog] 21:30:45 Begin: [唯落晖] luohui2010: g_pinyin ming tian hai you ke
+[Pinyin]: [['明天', '还有', '可']]
+[XDlog] fail_count: 0 pinyin_len: 5
+[XDlog] 21:30:45 Finish: [唯落晖] luohui2010: ming tian hai you ke use: 0.0017266273498535156
+明天还有可
+
+[XDlog] 21:30:57 Begin: [唯落晖] luohui2010: g_pinyin hao hao xue xi
+[Pinyin]: [['好好']]
+[Pinyin]: [['好好'], ['xue'], ['系']]
+[XDlog] fail_count: 1 pinyin_len: 4
+[XDlog] 21:30:57 Finish: [唯落晖] luohui2010: hao hao xue xi use: 0.0030324459075927734
+好好xue系
+
+[XDlog] 21:31:29 Begin: [BOT] Pathstar_XD: g_pinyin 这破转文字怎么 xue 也转不了文字
+[XDlog] fail_count: 3 pinyin_len: 3
+Failed Trans
+[XDlog] 21:31:29 Finish: [BOT] Pathstar_XD: 这破转文字怎么 xue 也转不了文字 use: 0.0014307498931884766
+
+
+[XDlog] 21:32:48 Begin: [ADV] c1b04229felt: g_pinyin 555 da bu guo
+[Pinyin]: [['555'], ['打不过']]
+[XDlog] fail_count: 1 pinyin_len: 4
+[XDlog] 21:32:48 Finish: [ADV] c1b04229felt: 555 da bu guo use: 0.0014622211456298828
+555打不过
+
+[XDlog] 21:33:03 Begin: : init 
+[XDlog] 21:33:03 Finish: :  use: 0.0006241798400878906
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;135;206;235m _(:з」∠)_', 1616]
+
+[XDlog] 21:38:16 Begin: [ADV] c1b04229felt: g_pinyin 555 wan shen mo dou da bu guo
+[Pinyin]: [['555'], ['弯身', '魔豆', '打不过']]
+[XDlog] fail_count: 1 pinyin_len: 8
+[XDlog] 21:38:16 Finish: [ADV] c1b04229felt: 555 wan shen mo dou da bu guo use: 0.0018329620361328125
+555弯身魔豆打不过
+
+[XDlog] 21:41:19 Begin: : init 
+[XDlog] 21:41:19 Finish: :  use: 0.0007758140563964844
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (｡･ω･｡)', 1120]
+
+[XDlog] 21:50:25 Begin: : init 
+[XDlog] 21:50:25 Finish: :  use: 0.0006232261657714844
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;254;208;175m ╮(￣▽￣)╭', 574]
+
+[XDlog] 21:50:30 Begin: : init 
+[XDlog] 21:50:30 Finish: :  use: 0.0007016658782958984
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (≧▽≦)/', 569]
+
+[XDlog] 21:56:15 Begin: : init 
+[XDlog] 21:56:15 Finish: :  use: 0.0006902217864990234
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (ﾉ≧∀≦)ﾉ', 224]
+
+[XDlog] 22:04:30 Begin: : init 
+[XDlog] 22:04:30 Finish: :  use: 0.0007157325744628906
+['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;221;160;221m _(≧v≦」∠)_', 1529]
+
+[XDlog] 22:11:15 Begin: : init 
+[XDlog] 22:11:15 Finish: :  use: 0.0007066726684570312
+['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;194;245;194m (｡･ω･｡)', 1124]
+
+[XDlog] 22:19:31 Begin: : init 
+[XDlog] 22:19:31 Finish: :  use: 0.0007464885711669922
+['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;144;238;144m (｡>ω<｡)', 628]
+
+[XDlog] 22:25:54 Begin: : init 
+[XDlog] 22:25:54 Finish: :  use: 0.0006670951843261719
+['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;254;198;195m (｀・ω・´)', 245]
+
+[XDlog] 22:46:06 Begin: : init 
+[XDlog] 22:46:06 Finish: :  use: 0.0007741451263427734
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;199;245;190m ～(つˆДˆ)つ', 833]
+
+[XDlog] 22:46:12 Begin: : init 
+[XDlog] 22:46:12 Finish: :  use: 0.0006334781646728516
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (｡>﹏<｡)', 827]
+
+[XDlog] 22:46:42 Begin: : init 
+[XDlog] 22:46:42 Finish: :  use: 0.0006461143493652344
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (｡>﹏<｡)', 797]
+
+[XDlog] 22:53:41 Begin: : init 
+[XDlog] 22:53:41 Finish: :  use: 0.0007066726684570312
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;175;238;238m ～(つˆДˆ)つ', 378]
+
+[XDlog] 23:03:53 Begin: : init 
+[XDlog] 23:03:53 Finish: :  use: 0.0006873607635498047
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;240;128;128m (^・ω・^)', 1566]
+
+[XDlog] 23:13:42 Begin: : init 
+[XDlog] 23:13:42 Finish: :  use: 0.0007200241088867188
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;248;131;121m ～(つˆДˆ)つ', 977]
+
+[XDlog] 23:20:10 Begin: Aureliano_Dorogo: g_pinyin choose life？
+[XDlog] fail_count: 3 pinyin_len: 3
+Failed Trans
+[XDlog] 23:20:10 Finish: Aureliano_Dorogo: choose life？ use: 0.0026443004608154297
+
+
+[XDlog] 23:23:30 Begin: : init 
+[XDlog] 23:23:30 Finish: :  use: 0.0007560253143310547
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;248;131;121m (=^･ω･^=)', 389]
+
+[XDlog] 23:25:22 Begin: : init 
+[XDlog] 23:25:22 Finish: :  use: 0.000690460205078125
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;144;238;144m (〜￣△￣)〜', 277]
+
+[XDlog] 23:26:32 Begin: : init 
+[XDlog] 23:26:32 Finish: :  use: 0.0007390975952148438
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;240;128;128m ╮(￣▽￣)╭', 207]
+
+[XDlog] 23:26:39 Begin: : init 
+[XDlog] 23:26:39 Finish: :  use: 0.0005886554718017578
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;216;191;216m _(≧v≦」∠)_', 200]
+
+[XDlog] 23:31:59 Begin: : init 
+[XDlog] 23:31:59 Finish: :  use: 0.0007054805755615234
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (。-ω-)zzz', 1680]
+
+[XDlog] 23:35:51 Begin: [BOT] ARTnend: g_pinyin WUHU !
+[XDlog] fail_count: 2 pinyin_len: 2
+Failed Trans
+[XDlog] 23:35:51 Finish: [BOT] ARTnend: WUHU ! use: 0.0013723373413085938
+
+
+[XDlog] 23:40:24 Begin: : init 
+[XDlog] 23:40:24 Finish: :  use: 0.0006396770477294922
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (。-ω-)zzz', 1175]
+
+[XDlog] 23:41:55 Begin: : init 
+[XDlog] 23:41:55 Finish: :  use: 0.0007030963897705078
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (。-ω-)zzz', 1084]
+
+[XDlog] 23:41:59 Begin: : init 
+[XDlog] 23:41:59 Finish: :  use: 0.0006511211395263672
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (。-ω-)zzz', 1080]
+
+[XDlog] 23:46:49 Begin: : init 
+[XDlog] 23:46:49 Finish: :  use: 0.0007822513580322266
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (。-ω-)zzz', 790]
+
+[XDlog] 23:55:09 Begin: : init 
+[XDlog] 23:55:09 Finish: :  use: 0.0007183551788330078
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (。-ω-)zzz', 290]
+
+[XDlog] 00:09:56 Begin: : init 
+[XDlog] 00:09:56 Finish: :  use: 0.0007474422454833984
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;254;208;175m (。-ω-)zzz', 1203]
+
+[XDlog] 00:12:01 Begin: : init 
+[XDlog] 00:12:01 Finish: :  use: 0.0007917881011962891
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;135;206;235m (。-ω-)zzz', 1078]
+

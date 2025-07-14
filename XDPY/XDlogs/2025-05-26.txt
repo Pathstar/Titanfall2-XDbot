@@ -1,0 +1,60 @@
+21:01:25 Monitoring Squirrel Messages...
+[XDlog] 21:02:48 Begin: : init 
+[XDlog] 21:02:48 Finish: :  use: 0.0005450248718261719
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;205;214;210m (^・ω・^)', 1631]
+
+[XDlog] 21:02:59 Begin: : init 
+[XDlog] 21:02:59 Finish: :  use: 0.0005624294281005859
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;219;193m (=・ω・=)', 1620]
+
+[XDlog] 21:03:13 Begin: [ADV] GL_SUPER: g_pinyin kii me
+[Pinyin]: [['kii'], ['么']]
+[XDlog] fail_count: 1 pinyin_len: 2
+Failed Trans
+[XDlog] 21:03:13 Finish: [ADV] GL_SUPER: kii me use: 0.0031974315643310547
+
+
+[XDlog] 21:03:41 Begin: : init 
+[XDlog] 21:03:41 Finish: :  use: 0.0005481243133544922
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;216;191;216m (^・ω・^)', 1578]
+
+[XDlog] 21:03:47 Begin: : init 
+[XDlog] 21:03:47 Finish: :  use: 0.0005409717559814453
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;199;245;190m _(≧v≦」∠)_', 1572]
+
+[XDlog] 21:08:17 Begin: [BOT] Pathstar_XD: g_pinyin na ne
+[Pinyin]: [['那', '呢']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 21:08:17 Finish: [BOT] Pathstar_XD: na ne use: 0.0014660358428955078
+那呢
+
+[XDlog] 21:15:31 Begin: : init 
+[XDlog] 21:15:31 Finish: :  use: 0.0006244182586669922
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;205;214;210m _(≧v≦」∠)_', 868]
+
+[XDlog] 21:23:37 Begin: : init 
+[XDlog] 21:23:37 Finish: :  use: 0.0005817413330078125
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;173;216;230m _(≧v≦」∠)_', 382]
+
+[XDlog] 21:31:24 Begin: : init 
+[XDlog] 21:31:24 Finish: :  use: 0.0006005764007568359
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;199;245;190m _(:з」∠)_', 1715]
+
+[XDlog] 21:33:54 Begin: : init 
+[XDlog] 21:33:54 Finish: :  use: 0.0005347728729248047
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;144;238;144m _(:з」∠)_', 1565]
+
+[XDlog] 21:37:06 Begin: thisiswhoID: g_pinyin hmm 突然发现伺服器消息出了个bug
+[XDlog] fail_count: 3 pinyin_len: 3
+Failed Trans
+[XDlog] 21:37:06 Finish: thisiswhoID: hmm 突然发现伺服器消息出了个bug use: 0.0043752193450927734
+
+
+[XDlog] 21:44:11 Begin: : init 
+[XDlog] 21:44:11 Finish: :  use: 0.0006563663482666016
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;144;238;144m ～(つˆДˆ)つ', 948]
+
+[XDlog] 21:48:31 Begin: : init 
+[XDlog] 21:48:31 Finish: :  use: 0.0006425380706787109
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (｡･ω･｡)', 688]
+

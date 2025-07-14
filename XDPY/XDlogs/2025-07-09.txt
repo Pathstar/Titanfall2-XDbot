@@ -1,0 +1,302 @@
+18:56:26 Monitoring Squirrel Messages...
+[XDlog] 18:58:10 Begin: : init 
+[XDlog] 18:58:10 Finish: :  use: 0.0006093978881835938
+['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (｡･ω･｡)', 109]
+
+[XDlog] 18:58:18 Begin: : init 
+[XDlog] 18:58:18 Finish: :  use: 0.0005452632904052734
+['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (=・ω・=)', 101]
+
+[XDlog] 18:59:08 Begin: : init 
+[XDlog] 18:59:08 Finish: :  use: 0.0006198883056640625
+['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (=^･ω･^=)', 51]
+
+[XDlog] 19:04:14 Begin: : init 
+[XDlog] 19:04:14 Finish: :  use: 0.0007073879241943359
+['\x1b[33m19:30:00\x1b[0m！\x1b[38;2;254;250;195m (｡>ω<｡)', 1545]
+
+[XDlog] 19:10:41 Begin: : init 
+[XDlog] 19:10:41 Finish: :  use: 0.0007083415985107422
+['\x1b[33m19:30:00\x1b[0m！\x1b[38;2;254;208;175m (・ω< )☆', 1158]
+
+[XDlog] 19:17:03 Begin: : init 
+[XDlog] 19:17:03 Finish: :  use: 0.0007021427154541016
+['\x1b[33m19:30:00\x1b[0m！\x1b[38;2;248;131;121m (｡･ω･｡)', 776]
+
+[XDlog] 19:47:38 Begin: : init 
+[XDlog] 19:47:38 Finish: :  use: 0.0009362697601318359
+['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (=・ω・=)', 741]
+
+[XDlog] 19:50:40 Begin: : init 
+[XDlog] 19:50:40 Finish: :  use: 0.0007288455963134766
+['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (≧▽≦)/', 559]
+
+[XDlog] 19:50:46 Begin: : init 
+[XDlog] 19:50:46 Finish: :  use: 0.0008151531219482422
+['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;173;216;230m _(:з」∠)_', 553]
+
+[XDlog] 20:01:43 Begin: : init 
+[XDlog] 20:01:43 Finish: :  use: 0.0006275177001953125
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;254;219;193m ～(つˆДˆ)つ', 1696]
+
+[XDlog] 20:01:51 Begin: [夜鶯] YeYing_Makas: g_pinyin mei shi
+[Pinyin] Tokens: ['mei shi']
+[Pinyin]: [['没事']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 20:01:51 Finish: [夜鶯] YeYing_Makas: mei shi use: 0.013797760009765625
+没事
+
+[XDlog] 20:02:10 Begin: : init 
+[XDlog] 20:02:10 Finish: :  use: 0.0005984306335449219
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;248;131;121m (=^･ω･^=)', 1669]
+
+[XDlog] 20:02:17 Begin: : init 
+[XDlog] 20:02:17 Finish: :  use: 0.0006823539733886719
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;254;198;195m _(≧v≦」∠)_', 1662]
+
+[XDlog] 20:03:48 Begin: : init 
+[XDlog] 20:03:48 Finish: :  use: 0.0005476474761962891
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;254;198;195m (^・ω・^)', 1571]
+
+[XDlog] 20:03:55 Begin: : init 
+[XDlog] 20:03:55 Finish: :  use: 0.0005700588226318359
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;175;238;238m (・ω< )☆', 1564]
+
+[XDlog] 20:10:04 Begin: : init 
+[XDlog] 20:10:04 Finish: :  use: 0.0005655288696289062
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;175;238;238m ～(つˆДˆ)つ', 1195]
+
+[XDlog] 20:17:25 Begin: : init 
+[XDlog] 20:17:25 Finish: :  use: 0.0006155967712402344
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;248;131;121m (≧▽≦)/', 754]
+
+[XDlog] 20:17:30 Begin: : init 
+[XDlog] 20:17:30 Finish: :  use: 0.0005528926849365234
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;194;245;194m _(:з」∠)_', 749]
+
+[XDlog] 20:19:35 Begin: : init 
+[XDlog] 20:19:35 Finish: :  use: 0.0005826950073242188
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;199;245;190m _(:з」∠)_', 624]
+
+[XDlog] 20:19:40 Begin: : init 
+[XDlog] 20:19:40 Finish: :  use: 0.0007152557373046875
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;221;160;221m (｡>﹏<｡)', 619]
+
+[XDlog] 20:19:55 Begin: : init 
+[XDlog] 20:19:55 Finish: :  use: 0.000606536865234375
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;135;206;235m (〜￣△￣)〜', 604]
+
+[XDlog] 20:20:27 Begin: : init 
+[XDlog] 20:20:27 Finish: :  use: 0.0005168914794921875
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;254;208;175m (｡>ω<｡)', 572]
+
+[XDlog] 20:25:26 Begin: : init 
+[XDlog] 20:25:26 Finish: :  use: 0.0005817413330078125
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;194;245;194m (=・ω・=)', 273]
+
+[XDlog] 20:25:30 Begin: : init 
+[XDlog] 20:25:30 Finish: :  use: 0.0006189346313476562
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;194;245;194m _(:з」∠)_', 269]
+
+[XDlog] 20:26:12 Begin: : init 
+[XDlog] 20:26:12 Finish: :  use: 0.0005385875701904297
+['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;175;238;238m (ﾉ≧∀≦)ﾉ', 227]
+
+[XDlog] 20:32:39 Begin: : init 
+[XDlog] 20:32:39 Finish: :  use: 0.0006597042083740234
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (=^･ω･^=)', 1640]
+
+[XDlog] 20:35:18 Begin: : init 
+[XDlog] 20:35:18 Finish: :  use: 0.0005998611450195312
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (｀・ω・´)', 1481]
+
+[XDlog] 20:44:49 Begin: : init 
+[XDlog] 20:44:49 Finish: :  use: 0.0006048679351806641
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;199;245;190m ～(つˆДˆ)つ', 910]
+
+[XDlog] 20:45:59 Begin: : init 
+[XDlog] 20:45:59 Finish: :  use: 0.000553131103515625
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (=・ω・=)', 840]
+
+[XDlog] 20:46:07 Begin: : init 
+[XDlog] 20:46:07 Finish: :  use: 0.0005190372467041016
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;216;191;216m _(:з」∠)_', 832]
+
+[XDlog] 20:48:19 Begin: : init 
+[XDlog] 20:48:19 Finish: :  use: 0.0006232261657714844
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (=^･ω･^=)', 700]
+
+[XDlog] 20:48:28 Begin: : init 
+[XDlog] 20:48:28 Finish: :  use: 0.0005197525024414062
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (｡>﹏<｡)', 691]
+
+[XDlog] 20:48:34 Begin: : init 
+[XDlog] 20:48:34 Finish: :  use: 0.0005583763122558594
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (≧▽≦)/', 685]
+
+[XDlog] 20:55:02 Begin: : init 
+[XDlog] 20:55:02 Finish: :  use: 0.0006172657012939453
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (〜￣△￣)〜', 297]
+
+[XDlog] 20:59:33 Begin: : init 
+[XDlog] 20:59:33 Finish: :  use: 0.0006246566772460938
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (・ω< )☆', 26]
+
+[XDlog] 20:59:41 Begin: : init 
+[XDlog] 20:59:41 Finish: :  use: 0.0005116462707519531
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (｡>﹏<｡)', 18]
+
+[XDlog] 21:02:52 Begin: : init 
+[XDlog] 21:02:52 Finish: :  use: 0.0006351470947265625
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;240;128;128m (ﾉ≧∀≦)ﾉ', 1627]
+
+[XDlog] 21:03:01 Begin: : init 
+[XDlog] 21:03:01 Finish: :  use: 0.0005965232849121094
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;175;238;238m (｡･ω･｡)', 1618]
+
+[XDlog] 21:03:07 Begin: : init 
+[XDlog] 21:03:07 Finish: :  use: 0.0005300045013427734
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;216;191;216m (^・ω・^)', 1612]
+
+[XDlog] 21:03:17 Begin: : init 
+[XDlog] 21:03:17 Finish: :  use: 0.0005900859832763672
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;173;216;230m (ﾉ≧∀≦)ﾉ', 1602]
+
+[XDlog] 21:03:23 Begin: : init 
+[XDlog] 21:03:23 Finish: :  use: 0.0005705356597900391
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;198;195m (=・ω・=)', 1596]
+
+[XDlog] 21:08:34 Begin: : init 
+[XDlog] 21:08:34 Finish: :  use: 0.0006470680236816406
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;221;160;221m _(≧v≦」∠)_', 1285]
+
+[XDlog] 21:08:55 Begin: : init 
+[XDlog] 21:08:55 Finish: :  use: 0.0006175041198730469
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;144;238;144m (｡>ω<｡)', 1264]
+
+[XDlog] 21:09:01 Begin: : init 
+[XDlog] 21:09:01 Finish: :  use: 0.0005743503570556641
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;199;245;190m (≧▽≦)/', 1258]
+
+[XDlog] 21:11:09 Begin: : init 
+[XDlog] 21:11:09 Finish: :  use: 0.0007522106170654297
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;199;245;190m _(≧v≦」∠)_', 1130]
+
+[XDlog] 21:17:47 Begin: : init 
+[XDlog] 21:17:47 Finish: :  use: 0.0006642341613769531
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;221;160;221m (｡･ω･｡)', 732]
+
+[XDlog] 21:21:56 Begin: : init 
+[XDlog] 21:21:56 Finish: :  use: 0.0008959770202636719
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;205;214;210m (｡>﹏<｡)', 483]
+
+[XDlog] 21:25:52 Begin: : init 
+[XDlog] 21:25:52 Finish: :  use: 0.0007157325744628906
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;216;191;216m (=・ω・=)', 247]
+
+[XDlog] 21:33:00 Begin: : init 
+[XDlog] 21:33:00 Finish: :  use: 0.0007383823394775391
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (≧▽≦)/', 1619]
+
+[XDlog] 21:36:39 Begin: [刃下心] M01ybdenum: g_pinyin ei 身法
+[Pinyin] Tokens: ['ei', ' ', '身法']
+[Pinyin]: [['誒']]
+[XDlog] fail_count: 1 pinyin_len: 2
+Failed Trans
+[XDlog] 21:36:39 Finish: [刃下心] M01ybdenum: ei 身法 use: 0.0035996437072753906
+
+
+[XDlog] 21:39:30 Begin: : init 
+[XDlog] 21:39:30 Finish: :  use: 0.0005974769592285156
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (〜￣△￣)〜', 1229]
+
+[XDlog] 21:47:55 Begin: : init 
+[XDlog] 21:47:55 Finish: :  use: 0.0007116794586181641
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (｀・ω・´)', 724]
+
+[XDlog] 21:57:06 Begin: : init 
+[XDlog] 21:57:06 Finish: :  use: 0.0005986690521240234
+['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (^・ω・^)', 173]
+
+[XDlog] 21:57:21 Begin: tingyuanziyi: g_pinyin zhe you xi ye you shou ji shang tai？
+[Pinyin] Tokens: ['zhe you xi ye you shou ji shang tai', '？']
+[Pinyin]: [['这', '游戏', '也有', '手机', '上台']]
+[XDlog] fail_count: 1 pinyin_len: 10
+[XDlog] 21:57:21 Finish: tingyuanziyi: zhe you xi ye you shou ji shang tai？ use: 0.011857271194458008
+这游戏也有手机上台？
+
+[XDlog] 22:05:56 Begin: : init 
+[XDlog] 22:05:56 Finish: :  use: 0.0006124973297119141
+['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;254;208;175m (｀・ω・´)', 1443]
+
+[XDlog] 22:12:59 Begin: : init 
+[XDlog] 22:12:59 Finish: :  use: 0.0007030963897705078
+['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;254;198;195m (｡>﹏<｡)', 1020]
+
+[XDlog] 22:20:48 Begin: : init 
+[XDlog] 22:20:48 Finish: :  use: 0.0008294582366943359
+['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;254;198;195m _(:з」∠)_', 551]
+
+[XDlog] 22:22:38 Begin: [藤蔓] Pliot_Tengwan: g_pinyin lao ba
+[Pinyin] Tokens: ['lao ba']
+[Pinyin]: [['老爸']]
+[XDlog] fail_count: 0 pinyin_len: 2
+[XDlog] 22:22:38 Finish: [藤蔓] Pliot_Tengwan: lao ba use: 0.0020694732666015625
+老爸
+
+[XDlog] 22:28:26 Begin: : init 
+[XDlog] 22:28:26 Finish: :  use: 0.000728607177734375
+['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;254;208;175m _(:з」∠)_', 93]
+
+[XDlog] 22:33:31 Begin: [八奈见] baiquanbanaijian: g_pinyin zhe  za  da
+[Pinyin] Tokens: ['zhe', '  ', 'za', '  ', 'da']
+[Pinyin]: [['这']]
+[Pinyin]: [['这'], ['杂']]
+[Pinyin]: [['这'], ['杂'], ['大']]
+[XDlog] fail_count: 0 pinyin_len: 3
+[XDlog] 22:33:31 Finish: [八奈见] baiquanbanaijian: zhe  za  da use: 0.0022668838500976562
+这杂大
+
+[XDlog] 22:34:59 Begin: : init 
+[XDlog] 22:34:59 Finish: :  use: 0.001394510269165039
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;205;214;210m ～(つˆДˆ)つ', 1500]
+
+[XDlog] 22:43:35 Begin: [帽子猫] capcatOwO: g_pinyin fei qi lai!
+[Pinyin] Tokens: ['fei qi lai', '!']
+[Pinyin]: [['费', '起来']]
+[XDlog] fail_count: 1 pinyin_len: 4
+[XDlog] 22:43:35 Finish: [帽子猫] capcatOwO: fei qi lai! use: 0.003442525863647461
+费起来!
+
+[XDlog] 22:53:28 Begin: : init 
+[XDlog] 22:53:28 Finish: :  use: 0.0008428096771240234
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;173;216;230m ～(つˆДˆ)つ', 391]
+
+[XDlog] 22:56:06 Begin: : init 
+[XDlog] 22:56:06 Finish: :  use: 0.0005669593811035156
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;240;128;128m _(≧v≦」∠)_', 233]
+
+[XDlog] 22:59:34 Begin: : init 
+[XDlog] 22:59:34 Finish: :  use: 0.00061798095703125
+['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (≧▽≦)/', 25]
+
+[XDlog] 23:00:18 Begin: : init 
+[XDlog] 23:00:18 Finish: :  use: 0.0005843639373779297
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;194;245;194m (ﾉ≧∀≦)ﾉ', 1781]
+
+[XDlog] 23:00:23 Begin: : init 
+[XDlog] 23:00:23 Finish: :  use: 0.0006787776947021484
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;173;216;230m (｡>ω<｡)', 1776]
+
+[XDlog] 23:00:27 Begin: : init 
+[XDlog] 23:00:27 Finish: :  use: 0.0005776882171630859
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;135;206;235m (^・ω・^)', 1772]
+
+[XDlog] 23:07:17 Begin: : init 
+[XDlog] 23:07:17 Finish: :  use: 0.0006320476531982422
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;205;214;210m (ﾉ≧∀≦)ﾉ', 1362]
+
+[XDlog] 23:15:09 Begin: : init 
+[XDlog] 23:15:09 Finish: :  use: 0.0007431507110595703
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;199;245;190m (｡･ω･｡)', 890]
+

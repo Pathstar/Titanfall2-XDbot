@@ -1,0 +1,994 @@
+12:51:50 Monitoring Squirrel Messages...
+[XDlog] 12:52:48 Begin: : init 
+[XDlog] 12:52:48 Finish: :  use: 0.000591278076171875
+['\x1b[33m13:00:00\x1b[0m 整！\x1b[38;2;240;128;128m _(:з」∠)_', 431]
+
+[XDlog] 13:01:48 Begin: : init 
+[XDlog] 13:01:48 Finish: :  use: 0.0005626678466796875
+['\x1b[33m13:30:00\x1b[0m！\x1b[38;2;173;216;230m (=・ω・=)', 1691]
+
+[XDlog] 13:01:52 Begin: : init 
+[XDlog] 13:01:52 Finish: :  use: 0.0005424022674560547
+['\x1b[33m13:30:00\x1b[0m！\x1b[38;2;248;131;121m _(:з」∠)_', 1687]
+
+[XDlog] 13:01:58 Begin: : init 
+[XDlog] 13:01:58 Finish: :  use: 0.000606536865234375
+['\x1b[33m13:30:00\x1b[0m！\x1b[38;2;199;245;190m (｡>ω<｡)', 1681]
+
+[XDlog] 13:43:52 Begin: : init 
+[XDlog] 13:43:52 Finish: :  use: 0.0012612342834472656
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;199;245;190m ╮(￣▽￣)╭', 967]
+
+[XDlog] 13:47:36 Begin: : init 
+[XDlog] 13:47:36 Finish: :  use: 0.0008394718170166016
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (=・ω・=)', 743]
+
+[XDlog] 13:47:50 Begin: : init 
+[XDlog] 13:47:50 Finish: :  use: 0.0007550716400146484
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (≧▽≦)/', 729]
+
+[XDlog] 13:48:55 Begin: : init 
+[XDlog] 13:48:55 Finish: :  use: 0.0008769035339355469
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (=・ω・=)', 664]
+
+[XDlog] 13:49:04 Begin: : init 
+[XDlog] 13:49:04 Finish: :  use: 0.0006806850433349609
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (^・ω・^)', 655]
+
+[XDlog] 13:49:22 Begin: : init 
+[XDlog] 13:49:22 Finish: :  use: 0.0006890296936035156
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (〜￣△￣)〜', 637]
+
+[XDlog] 13:49:32 Begin: : init 
+[XDlog] 13:49:32 Finish: :  use: 0.0007746219635009766
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (〜￣△￣)〜', 627]
+
+[XDlog] 13:49:37 Begin: : init 
+[XDlog] 13:49:37 Finish: :  use: 0.0006263256072998047
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (｡>﹏<｡)', 622]
+
+[XDlog] 13:49:54 Begin: : init 
+[XDlog] 13:49:54 Finish: :  use: 0.0007884502410888672
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (・ω< )☆', 605]
+
+[XDlog] 13:50:02 Begin: : init 
+[XDlog] 13:50:02 Finish: :  use: 0.0006802082061767578
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (=^･ω･^=)', 597]
+
+[XDlog] 13:50:10 Begin: : init 
+[XDlog] 13:50:10 Finish: :  use: 0.0005397796630859375
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (≧▽≦)/', 589]
+
+[XDlog] 13:50:20 Begin: : init 
+[XDlog] 13:50:20 Finish: :  use: 0.0006768703460693359
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;175;238;238m ╮(￣▽￣)╭', 579]
+
+[XDlog] 13:50:26 Begin: : init 
+[XDlog] 13:50:26 Finish: :  use: 0.0006070137023925781
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (｡･ω･｡)', 573]
+
+[XDlog] 13:50:35 Begin: : init 
+[XDlog] 13:50:35 Finish: :  use: 0.000804901123046875
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (｡･ω･｡)', 564]
+
+[XDlog] 13:50:45 Begin: : init 
+[XDlog] 13:50:45 Finish: :  use: 0.0006196498870849609
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;175;238;238m ╮(￣▽￣)╭', 554]
+
+[XDlog] 13:50:55 Begin: : init 
+[XDlog] 13:50:55 Finish: :  use: 0.0006783008575439453
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (｡>ω<｡)', 544]
+
+[XDlog] 13:58:30 Begin: : init 
+[XDlog] 13:58:30 Finish: :  use: 0.0006372928619384766
+['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;144;238;144m _(:з」∠)_', 89]
+
+[XDlog] 14:04:23 Begin: : init 
+[XDlog] 14:04:23 Finish: :  use: 0.0006537437438964844
+['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;216;191;216m (≧▽≦)/', 1536]
+
+[XDlog] 14:04:32 Begin: : init 
+[XDlog] 14:04:32 Finish: :  use: 0.0006189346313476562
+['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;254;250;195m (ﾉ≧∀≦)ﾉ', 1527]
+
+[XDlog] 14:04:44 Begin: : init 
+[XDlog] 14:04:44 Finish: :  use: 0.0006425380706787109
+['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;175;238;238m (｡>﹏<｡)', 1515]
+
+[XDlog] 14:05:16 Begin: : init 
+[XDlog] 14:05:16 Finish: :  use: 0.0007073879241943359
+['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;216;191;216m ╮(￣▽￣)╭', 1483]
+
+[XDlog] 14:06:16 Begin: : init 
+[XDlog] 14:06:16 Finish: :  use: 0.0005738735198974609
+['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;173;216;230m (｡>ω<｡)', 1423]
+
+[XDlog] 14:08:18 Begin: : init 
+[XDlog] 14:08:18 Finish: :  use: 0.0006127357482910156
+['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;144;238;144m (｀・ω・´)', 1301]
+
+[XDlog] 14:12:36 Begin: : init 
+[XDlog] 14:12:36 Finish: :  use: 0.0007116794586181641
+['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;173;216;230m (｡>﹏<｡)', 1043]
+
+[XDlog] 14:12:41 Begin: : init 
+[XDlog] 14:12:41 Finish: :  use: 0.0006563663482666016
+['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;199;245;190m ～(つˆДˆ)つ', 1038]
+
+[XDlog] 14:18:47 Begin: : init 
+[XDlog] 14:18:47 Finish: :  use: 0.000640869140625
+['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;254;208;175m ～(つˆДˆ)つ', 672]
+
+[XDlog] 14:19:18 Begin: [我是傻逼] w14sl: g_pinyin ma wan le
+[Pinyin Loop] ['ma', 'wan', 'le']
+[Pinyin Success] ['码', '完了']
+[Pinyin Custom] ['ma', 'wan', 'le']
+[Pinyin Fail_Count] 0
+[XDlog] 14:19:18 Finish: [我是傻逼] w14sl: ma wan le use: 0.016263723373413086
+吗完了
+
+[XDlog] 14:19:53 Begin: [纯良萌新] Capricornus7117: g_pinyin wo ye ma
+[Pinyin Loop] ['wo', 'ye', 'ma']
+[Pinyin Success] ['我', '页码']
+[Pinyin Custom] ['wo', 'ye', 'ma']
+[Pinyin Fail_Count] 0
+[XDlog] 14:19:53 Finish: [纯良萌新] Capricornus7117: wo ye ma use: 0.0051021575927734375
+我页吗
+
+[XDlog] 14:25:54 Begin: : init 
+[XDlog] 14:25:54 Finish: :  use: 0.0007035732269287109
+['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;205;214;210m (ﾉ≧∀≦)ﾉ', 245]
+
+[XDlog] 14:28:12 Begin: [繁星] Twink1ingStars: g_pinyin bind bu f1
+[Pinyin Loop] ['bu']
+[Pinyin Success] ['不']
+[Pinyin Custom] ['bind', 'bu', 'f1']
+[Pinyin Fail_Count] 2
+[XDlog] 14:28:12 Finish: [繁星] Twink1ingStars: bind bu f1 use: 0.004354000091552734
+
+
+[XDlog] 14:31:05 Begin: [传奇卡比] Asante-ss: g_pinyin let me try
+[Pinyin Loop] ['me']
+[Pinyin Success] ['么']
+[Pinyin Custom] ['let', 'me', 'try']
+[Pinyin Fail_Count] 2
+[XDlog] 14:31:05 Finish: [传奇卡比] Asante-ss: let me try use: 0.003363370895385742
+
+
+[XDlog] 14:33:27 Begin: : init 
+[XDlog] 14:33:27 Finish: :  use: 0.0006537437438964844
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;216;191;216m _(≧v≦」∠)_', 1592]
+
+[XDlog] 14:35:14 Begin: : init 
+[XDlog] 14:35:14 Finish: :  use: 0.0007064342498779297
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (ﾉ≧∀≦)ﾉ', 1485]
+
+[XDlog] 14:35:18 Begin: : init 
+[XDlog] 14:35:18 Finish: :  use: 0.0007216930389404297
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (｡>﹏<｡)', 1481]
+
+[XDlog] 14:35:52 Begin: [我是傻逼] w14sl: g_pinyin yao bu yao gan tan hao de
+[Pinyin Loop] ['yao', 'bu', 'yao', 'gan', 'tan', 'hao', 'de']
+[Pinyin Success] ['要不要', '感叹号', '的']
+[Pinyin Custom] ['yao', 'bu', 'yao', 'gan', 'tan', 'hao', 'de']
+[Pinyin Fail_Count] 0
+[XDlog] 14:35:52 Finish: [我是傻逼] w14sl: yao bu yao gan tan hao de use: 0.010982513427734375
+要不要感叹号的
+
+[XDlog] 14:36:33 Begin: [我是傻逼] w14sl: g_pinyin gei wo da cheng sha bi le
+[Pinyin Loop] ['gei', 'wo', 'da', 'cheng', 'sha', 'bi', 'le']
+[Pinyin Success] ['给我', '达成', '煞笔', '了']
+[Pinyin Custom] ['gei', 'wo', 'da', 'cheng', 'sha', 'bi', 'le']
+[Pinyin Fail_Count] 0
+[XDlog] 14:36:33 Finish: [我是傻逼] w14sl: gei wo da cheng sha bi le use: 0.010908842086791992
+给我达成煞笔了
+
+[XDlog] 14:39:42 Begin: [传奇卡比] Asante-ss: g_pinyin bind f1 bu
+[Pinyin Loop] ['bu']
+[Pinyin Success] ['不']
+[Pinyin Custom] ['bind f1', 'bu']
+[Pinyin Fail_Count] 1
+[XDlog] 14:39:42 Finish: [传奇卡比] Asante-ss: bind f1 bu use: 0.0020835399627685547
+
+
+[XDlog] 14:40:05 Begin: [夢悠然] Mingxi_Lin: g_pinyin bind "你要绑的键位" "say bu"
+[Pinyin Loop] ['bu']
+[Pinyin Success] ['不']
+[Pinyin Custom] ['bind "', 'ni', 'yao', 'bang', 'de', 'jian', 'wei', '" "say', 'bu', '"']
+[Pinyin Fail_Count] 2
+[XDlog] 14:40:05 Finish: [夢悠然] Mingxi_Lin: bind "你要绑的键位" "say bu" use: 0.0057070255279541016
+
+
+[XDlog] 14:40:29 Begin: [我是傻逼] w14sl: g_pinyin bind f1 say bu
+[Pinyin Loop] ['bu']
+[Pinyin Success] ['不']
+[Pinyin Custom] ['bind f1 say', 'bu']
+[Pinyin Fail_Count] 1
+[XDlog] 14:40:29 Finish: [我是傻逼] w14sl: bind f1 say bu use: 0.0021429061889648438
+
+
+[XDlog] 14:40:40 Begin: [我是傻逼] w14sl: g_pinyin !bind f1 say bu
+[Pinyin Loop] ['bu']
+[Pinyin Success] ['不']
+[Pinyin Custom] ['!bind f1 say', 'bu']
+[Pinyin Fail_Count] 1
+[XDlog] 14:40:40 Finish: [我是傻逼] w14sl: !bind f1 say bu use: 0.001672983169555664
+
+
+[XDlog] 14:41:01 Begin: [我是傻逼] w14sl: g_pinyin mei you yong ya ,yao bu yao shuang yin hao de
+[Pinyin Loop] ['mei', 'you', 'yong', 'ya']
+[Pinyin Success] ['没有用', '压']
+[Pinyin Loop] ['yao', 'bu', 'yao', 'shuang', 'yin', 'hao', 'de']
+[Pinyin Success] ['要不要', '双引号', '的']
+[Pinyin Custom] ['mei', 'you', 'yong', 'ya', ',', 'yao', 'bu', 'yao', 'shuang', 'yin', 'hao', 'de']
+[Pinyin Fail_Count] 1
+[XDlog] 14:41:01 Finish: [我是傻逼] w14sl: mei you yong ya ,yao bu yao shuang yin hao de use: 0.009223461151123047
+没有用压,要不要双引号的
+
+[XDlog] 14:41:28 Begin: [BOT] Pathstar_XD: g_pinyin say bu 要双引号 有空格加双引号
+[Pinyin Loop] ['bu']
+[Pinyin Success] ['不']
+[Pinyin Custom] ['say', 'bu', 'yao', 'shuang', 'yin', 'hao', ' ', 'you', 'kong', 'ge', 'jia', 'shuang', 'yin', 'hao']
+[Pinyin Fail_Count] 2
+[XDlog] 14:41:28 Finish: [BOT] Pathstar_XD: say bu 要双引号 有空格加双引号 use: 0.002742767333984375
+
+
+[XDlog] 14:41:50 Begin: [我是傻逼] w14sl: g_pinyin bind f1 "say bu"
+[Pinyin Loop] ['bu']
+[Pinyin Success] ['不']
+[Pinyin Custom] ['bind f1 "say', 'bu', '"']
+[Pinyin Fail_Count] 2
+[XDlog] 14:41:50 Finish: [我是傻逼] w14sl: bind f1 "say bu" use: 0.001617431640625
+
+
+[XDlog] 14:42:51 Begin: [我是傻逼] w14sl: g_pinyin bind "f1" "say bu"
+[Pinyin Loop] ['bu']
+[Pinyin Success] ['不']
+[Pinyin Custom] ['bind "f1" "say', 'bu', '"']
+[Pinyin Fail_Count] 2
+[XDlog] 14:42:51 Finish: [我是傻逼] w14sl: bind "f1" "say bu" use: 0.0016913414001464844
+
+
+[XDlog] 14:43:04 Begin: : init 
+[XDlog] 14:43:04 Finish: :  use: 0.0006868839263916016
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (｡>ω<｡)', 1015]
+
+[XDlog] 14:44:04 Begin: [我是傻逼] w14sl: g_pinyin hao le
+[Pinyin Loop] ['hao', 'le']
+[Pinyin Success] ['好了']
+[Pinyin Custom] ['hao', 'le']
+[Pinyin Fail_Count] 0
+[XDlog] 14:44:04 Finish: [我是傻逼] w14sl: hao le use: 0.0021698474884033203
+好了
+
+[XDlog] 14:44:20 Begin: [我是傻逼] w14sl: g_pinyin yuan lai yao zai kong zhi tai nong
+[Pinyin Loop] ['yuan', 'lai', 'yao', 'zai', 'kong', 'zhi', 'tai', 'nong']
+[Pinyin Success] ['原来', '要在', '控制', '太浓']
+[Pinyin Custom] ['yuan', 'lai', 'yao', 'zai', 'kong', 'zhi', 'tai', 'nong']
+[Pinyin Fail_Count] 0
+[XDlog] 14:44:20 Finish: [我是傻逼] w14sl: yuan lai yao zai kong zhi tai nong use: 0.00690770149230957
+原来要在控制太浓
+
+[XDlog] 14:45:45 Begin: [我是傻逼] w14sl: g_pinyin wo jiu su ru le liang ci
+[Pinyin Loop] ['wo', 'jiu', 'su', 'ru', 'le', 'liang', 'ci']
+[Pinyin Success] ['我就', '宿儒', '了', '两次']
+[Pinyin Custom] ['wo', 'jiu', 'su', 'ru', 'le', 'liang', 'ci']
+[Pinyin Fail_Count] 0
+[XDlog] 14:45:45 Finish: [我是傻逼] w14sl: wo jiu su ru le liang ci use: 0.005898475646972656
+我就宿儒了两次
+
+[XDlog] 14:46:40 Begin: [我是傻逼] w14sl: g_pinyin you dian kun luan
+[Pinyin Loop] ['you', 'dian', 'kun', 'luan']
+[Pinyin Success] ['有点', '困', '乱']
+[Pinyin Custom] ['you', 'dian', 'kun', 'luan']
+[Pinyin Fail_Count] 0
+[XDlog] 14:46:40 Finish: [我是傻逼] w14sl: you dian kun luan use: 0.003558635711669922
+有点困乱
+
+[XDlog] 14:48:31 Begin: : init 
+[XDlog] 14:48:31 Finish: :  use: 0.0006132125854492188
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (｡>﹏<｡)', 688]
+
+[XDlog] 14:49:13 Begin: : init 
+[XDlog] 14:49:13 Finish: :  use: 0.0005888938903808594
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (｀・ω・´)', 646]
+
+[XDlog] 14:49:19 Begin: : init 
+[XDlog] 14:49:19 Finish: :  use: 0.0005698204040527344
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (^・ω・^)', 640]
+
+[XDlog] 14:49:25 Begin: : init 
+[XDlog] 14:49:25 Finish: :  use: 0.0005478858947753906
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (≧▽≦)/', 634]
+
+[XDlog] 14:59:46 Begin: : init 
+[XDlog] 14:59:46 Finish: :  use: 0.0006806850433349609
+['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (・ω< )☆', 13]
+
+[XDlog] 15:01:54 Begin: [我是傻逼] w14sl: g_pinyin liu le liu le
+[Pinyin Loop] ['liu', 'le', 'liu', 'le']
+[Pinyin Success] ['留了', '留了']
+[Pinyin Custom] ['liu', 'le', 'liu', 'le']
+[Pinyin Fail_Count] 0
+[XDlog] 15:01:54 Finish: [我是傻逼] w14sl: liu le liu le use: 0.0034172534942626953
+留了留了
+
+[XDlog] 15:06:24 Begin: : init 
+[XDlog] 15:06:24 Finish: :  use: 0.000720977783203125
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;173;216;230m (｀・ω・´)', 1415]
+
+[XDlog] 15:13:52 Begin: : init 
+[XDlog] 15:13:52 Finish: :  use: 0.0006070137023925781
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;144;238;144m _(:з」∠)_', 967]
+
+[XDlog] 15:16:55 Begin: [我來問道] Mag1cStrafe: g_pinyin ji ba ka bi shou
+[Pinyin Loop] ['ji', 'ba', 'ka', 'bi', 'shou']
+[Pinyin Success] ['鸡巴', '卡比', '手']
+[Pinyin Custom] ['ji', 'ba', 'ka', 'bi', 'shou']
+[Pinyin Fail_Count] 0
+[XDlog] 15:16:55 Finish: [我來問道] Mag1cStrafe: ji ba ka bi shou use: 0.005172014236450195
+鸡巴卡比手
+
+[XDlog] 15:18:56 Begin: [我來問道] Mag1cStrafe: g_pinyin ni ji ba ka chou chu le = =
+[Pinyin Loop] ['ni', 'ji', 'ba', 'ka', 'chou', 'chu', 'le']
+[Pinyin Success] ['你', '鸡巴', '卡', '抽', '除了']
+[Pinyin Custom] ['ni', 'ji', 'ba', 'ka', 'chou', 'chu', 'le', '= =']
+[Pinyin Fail_Count] 1
+[XDlog] 15:18:56 Finish: [我來問道] Mag1cStrafe: ni ji ba ka chou chu le = = use: 0.006403684616088867
+你鸡巴卡抽除了= =
+
+[XDlog] 15:19:30 Begin: [我來問道] Mag1cStrafe: g_pinyin lian xu dai bu xiao long
+[Pinyin Loop] ['lian', 'xu', 'dai', 'bu', 'xiao', 'long']
+[Pinyin Success] ['连续', '逮捕', '枭龙']
+[Pinyin Custom] ['lian', 'xu', 'dai', 'bu', 'xiao', 'long']
+[Pinyin Fail_Count] 0
+[XDlog] 15:19:30 Finish: [我來問道] Mag1cStrafe: lian xu dai bu xiao long use: 0.006867170333862305
+连续逮捕枭龙
+
+[XDlog] 15:20:54 Begin: : init 
+[XDlog] 15:20:54 Finish: :  use: 0.0006020069122314453
+['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;144;238;144m (・ω< )☆', 545]
+
+[XDlog] 15:20:55 Begin: [我來問道] Mag1cStrafe: g_pinyin ni shi ka wang
+[Pinyin Loop] ['ni', 'shi', 'ka', 'wang']
+[Pinyin Success] ['你是', '卡', '网']
+[Pinyin Custom] ['ni', 'shi', 'ka', 'wang']
+[Pinyin Fail_Count] 0
+[XDlog] 15:20:55 Finish: [我來問道] Mag1cStrafe: ni shi ka wang use: 0.003202199935913086
+你是卡网
+
+[XDlog] 15:21:05 Begin: [BOT] Pathstar_XD: g_pinyin ji ba 要换个替代词吗
+[Pinyin Loop] ['ji', 'ba']
+[Pinyin Success] ['鸡巴']
+[Pinyin Custom] ['ji', 'ba', 'yao', 'huan', 'ge', 'ti', 'dai', 'ci', 'ma']
+[Pinyin Fail_Count] 1
+[XDlog] 15:21:05 Finish: [BOT] Pathstar_XD: ji ba 要换个替代词吗 use: 0.0037670135498046875
+
+
+[XDlog] 15:21:13 Begin: [我來問道] Mag1cStrafe: g_pinyin ke yti
+[Pinyin Loop] ['ke']
+[Pinyin Success] ['可']
+[Pinyin Custom] ['ke', 'yti']
+[Pinyin Fail_Count] 1
+[XDlog] 15:21:13 Finish: [我來問道] Mag1cStrafe: ke yti use: 0.0020406246185302734
+
+
+[XDlog] 15:21:18 Begin: [我來問道] Mag1cStrafe: g_pinyin ji ge de ji
+[Pinyin Loop] ['ji', 'ge', 'de', 'ji']
+[Pinyin Success] ['几个', '的', '机']
+[Pinyin Custom] ['ji', 'ge', 'de', 'ji']
+[Pinyin Fail_Count] 0
+[XDlog] 15:21:18 Finish: [我來問道] Mag1cStrafe: ji ge de ji use: 0.00347137451171875
+几个的机
+
+[XDlog] 15:21:55 Begin: [我來問道] Mag1cStrafe: g_pinyin jiu shi
+[Pinyin Loop] ['jiu', 'shi']
+[Pinyin Success] ['就是']
+[Pinyin Custom] ['jiu', 'shi']
+[Pinyin Fail_Count] 0
+[XDlog] 15:21:55 Finish: [我來問道] Mag1cStrafe: jiu shi use: 0.008575677871704102
+就是
+
+15:22:01 Monitoring Squirrel Messages...
+[XDlog] 15:22:05 Begin: [BOT] Pathstar_XD: g_pinyin ji ba
+[Pinyin Loop] ['ji', 'ba']
+[Pinyin Success] ['鸡巴']
+[Pinyin Custom] ['ji', 'ba']
+[Pinyin Fail_Count] 0
+[XDlog] 15:22:05 Finish: [BOT] Pathstar_XD: ji ba use: 0.0020761489868164062
+几把
+
+[XDlog] 15:22:07 Begin: [BOT] Pathstar_XD: g_pinyin ni ji ba
+[Pinyin Loop] ['ni', 'ji', 'ba']
+[Pinyin Success] ['你', '鸡巴']
+[Pinyin Custom] ['ni', 'ji', 'ba']
+[Pinyin Fail_Count] 0
+[XDlog] 15:22:07 Finish: [BOT] Pathstar_XD: ni ji ba use: 0.001920938491821289
+你几把
+
+[XDlog] 15:22:08 Begin: [仙众夜叉] ZeroSeven233: g_pinyin ji ba
+[Pinyin Loop] ['ji', 'ba']
+[Pinyin Success] ['鸡巴']
+[Pinyin Custom] ['ji', 'ba']
+[Pinyin Fail_Count] 0
+[XDlog] 15:22:08 Finish: [仙众夜叉] ZeroSeven233: ji ba use: 0.002470731735229492
+几把
+
+[XDlog] 15:22:10 Begin: [我來問道] Mag1cStrafe: g_pinyin ni bu shi zi dai xiang wei ma
+[Pinyin Loop] ['ni', 'bu', 'shi', 'zi', 'dai', 'xiang', 'wei', 'ma']
+[Pinyin Success] ['你不是', '自带', '相', '威玛']
+[Pinyin Custom] ['ni', 'bu', 'shi', 'zi', 'dai', 'xiang', 'wei', 'ma']
+[Pinyin Fail_Count] 0
+[XDlog] 15:22:10 Finish: [我來問道] Mag1cStrafe: ni bu shi zi dai xiang wei ma use: 0.0025587081909179688
+你不是自带相威玛
+
+15:23:17 Monitoring Squirrel Messages...
+[XDlog] 15:26:27 Begin: [我來問道] Mag1cStrafe: g_pinyin ni ye shi G100?
+[Pinyin Loop] ['ni', 'ye', 'shi']
+[Pinyin Success] ['你', '也是']
+[Pinyin Custom] ['ni', 'ye', 'shi', 'G100?']
+[Pinyin Fail_Count] 1
+[XDlog] 15:26:27 Finish: [我來問道] Mag1cStrafe: ni ye shi G100? use: 0.002254009246826172
+你也是G100?
+
+[XDlog] 15:26:34 Begin: [我來問道] Mag1cStrafe: g_pinyin oo bu hao yi si ni wang tai ka le
+[Pinyin Loop] ['bu', 'hao', 'yi', 'si', 'ni', 'wang', 'tai', 'ka', 'le']
+[Pinyin Success] ['不好意思', '你', '王台', '卡', '了']
+[Pinyin Custom] ['oo', 'bu', 'hao', 'yi', 'si', 'ni', 'wang', 'tai', 'ka', 'le']
+[Pinyin Fail_Count] 1
+[XDlog] 15:26:34 Finish: [我來問道] Mag1cStrafe: oo bu hao yi si ni wang tai ka le use: 0.002200603485107422
+oo不好意思你王台卡了
+
+[XDlog] 15:26:40 Begin: [我來問道] Mag1cStrafe: g_pinyin zhi kan dao le G1
+[Pinyin Loop] ['zhi', 'kan', 'dao', 'le']
+[Pinyin Success] ['只看', '到了']
+[Pinyin Custom] ['zhi', 'kan', 'dao', 'le', 'G1']
+[Pinyin Fail_Count] 1
+[XDlog] 15:26:40 Finish: [我來問道] Mag1cStrafe: zhi kan dao le G1 use: 0.0023593902587890625
+只看到了G1
+
+[XDlog] 15:26:42 Begin: [我來問道] Mag1cStrafe: g_pinyin 00ka mei le
+[Pinyin Loop] ['ka', 'mei', 'le']
+[Pinyin Success] ['卡', '没了']
+[Pinyin Custom] ['00', 'ka', 'mei', 'le']
+[Pinyin Fail_Count] 1
+[XDlog] 15:26:42 Finish: [我來問道] Mag1cStrafe: 00ka mei le use: 0.0030930042266845703
+00卡没了
+
+[XDlog] 15:28:46 Begin: [我來問道] Mag1cStrafe: g_pinyin ni shi wang ka G100
+[Pinyin Loop] ['ni', 'shi', 'wang', 'ka']
+[Pinyin Success] ['你是', '网卡']
+[Pinyin Custom] ['ni', 'shi', 'wang', 'ka', 'G100']
+[Pinyin Fail_Count] 1
+[XDlog] 15:28:46 Finish: [我來問道] Mag1cStrafe: ni shi wang ka G100 use: 0.003983736038208008
+你是网卡G100
+
+[XDlog] 15:30:08 Begin: : init 
+[XDlog] 15:30:08 Finish: :  use: 0.0005714893341064453
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (〜￣△￣)〜', 1791]
+
+[XDlog] 15:32:47 Begin: [我來問道] Mag1cStrafe: g_pinyin ji ba ka bi shou
+[Pinyin Loop] ['ji', 'ba', 'ka', 'bi', 'shou']
+[Pinyin Success] ['鸡巴', '卡比', '手']
+[Pinyin Custom] ['ji', 'ba', 'ka', 'bi', 'shou']
+[Pinyin Fail_Count] 0
+[XDlog] 15:32:47 Finish: [我來問道] Mag1cStrafe: ji ba ka bi shou use: 0.0032439231872558594
+几把卡比手
+
+[XDlog] 15:33:46 Begin: [我來問道] Mag1cStrafe: g_pinyin zhe ji ba ka bi shou
+[Pinyin Loop] ['zhe', 'ji', 'ba', 'ka', 'bi', 'shou']
+[Pinyin Success] ['这', '鸡巴', '卡比', '手']
+[Pinyin Custom] ['zhe', 'ji', 'ba', 'ka', 'bi', 'shou']
+[Pinyin Fail_Count] 0
+[XDlog] 15:33:46 Finish: [我來問道] Mag1cStrafe: zhe ji ba ka bi shou use: 0.0028977394104003906
+这几把卡比手
+
+[XDlog] 15:34:21 Begin: [我來問道] Mag1cStrafe: g_pinyin ye shi kai shang tai tan le ka bi shou
+[Pinyin Loop] ['ye', 'shi', 'kai', 'shang', 'tai', 'tan', 'le', 'ka', 'bi', 'shou']
+[Pinyin Success] ['也是', '开', '上台', '叹了', '卡比', '手']
+[Pinyin Custom] ['ye', 'shi', 'kai', 'shang', 'tai', 'tan', 'le', 'ka', 'bi', 'shou']
+[Pinyin Fail_Count] 0
+[XDlog] 15:34:21 Finish: [我來問道] Mag1cStrafe: ye shi kai shang tai tan le ka bi shou use: 0.002297639846801758
+也是开上台叹了卡比手
+
+[XDlog] 15:35:05 Begin: [我來問道] Mag1cStrafe: g_pinyin wang ka dao zhi de
+[Pinyin Loop] ['wang', 'ka', 'dao', 'zhi', 'de']
+[Pinyin Success] ['网卡', '导致', '的']
+[Pinyin Custom] ['wang', 'ka', 'dao', 'zhi', 'de']
+[Pinyin Fail_Count] 0
+[XDlog] 15:35:05 Finish: [我來問道] Mag1cStrafe: wang ka dao zhi de use: 0.003154277801513672
+网卡导致的
+
+[XDlog] 15:35:22 Begin: [我來問道] Mag1cStrafe: g_pinyin bu rang ta da wa jiu bian cheng zhe yang le
+[Pinyin Loop] ['bu', 'rang', 'ta', 'da', 'wa', 'jiu', 'bian', 'cheng', 'zhe', 'yang', 'le']
+[Pinyin Success] ['不', '让他', '大洼', '就', '变成', '这样', '了']
+[Pinyin Custom] ['bu', 'rang', 'ta', 'da', 'wa', 'jiu', 'bian', 'cheng', 'zhe', 'yang', 'le']
+[Pinyin Fail_Count] 0
+[XDlog] 15:35:22 Finish: [我來問道] Mag1cStrafe: bu rang ta da wa jiu bian cheng zhe yang le use: 0.0027582645416259766
+不让他大洼就变成这样了
+
+[XDlog] 15:36:44 Begin: [劲风] c1b04229felt: g_pinyin zai ye bu wan mo zu fu la
+[Pinyin Loop] ['zai', 'ye', 'bu', 'wan', 'mo', 'zu', 'fu', 'la']
+[Pinyin Success] ['再也', '不完', '魔族', '弗拉']
+[Pinyin Custom] ['zai', 'ye', 'bu', 'wan', 'mo', 'zu', 'fu', 'la']
+[Pinyin Fail_Count] 0
+[XDlog] 15:36:44 Finish: [劲风] c1b04229felt: zai ye bu wan mo zu fu la use: 0.003489971160888672
+再也不完魔族弗拉
+
+[XDlog] 15:37:30 Begin: : init 
+[XDlog] 15:37:30 Finish: :  use: 0.0005991458892822266
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (｡>ω<｡)', 1349]
+
+[XDlog] 15:45:26 Begin: : init 
+[XDlog] 15:45:26 Finish: :  use: 0.0005817413330078125
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;248;131;121m _(:з」∠)_', 873]
+
+[XDlog] 15:51:39 Begin: : init 
+[XDlog] 15:51:39 Finish: :  use: 0.0007066726684570312
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;240;128;128m ╮(￣▽￣)╭', 500]
+
+[XDlog] 15:51:52 Begin: : init 
+[XDlog] 15:51:52 Finish: :  use: 0.0005712509155273438
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (^・ω・^)', 487]
+
+[XDlog] 15:51:56 Begin: : init 
+[XDlog] 15:51:56 Finish: :  use: 0.0005331039428710938
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;175;238;238m ╮(￣▽￣)╭', 483]
+
+[XDlog] 15:53:16 Begin: cu6f6yjtqsow: g_pinyin da liang tu
+[Pinyin Loop] ['da', 'liang', 'tu']
+[Pinyin Success] ['大', '良图']
+[Pinyin Custom] ['da', 'liang', 'tu']
+[Pinyin Fail_Count] 0
+[XDlog] 15:53:16 Finish: cu6f6yjtqsow: da liang tu use: 0.0024423599243164062
+大良图
+
+[XDlog] 15:53:32 Begin: cu6f6yjtqsow: g_pinyin wo tai tou sha ye kan bu jian
+[Pinyin Loop] ['wo', 'tai', 'tou', 'sha', 'ye', 'kan', 'bu', 'jian']
+[Pinyin Success] ['我太', '头纱', '也看', '不见']
+[Pinyin Custom] ['wo', 'tai', 'tou', 'sha', 'ye', 'kan', 'bu', 'jian']
+[Pinyin Fail_Count] 0
+[XDlog] 15:53:32 Finish: cu6f6yjtqsow: wo tai tou sha ye kan bu jian use: 0.002623319625854492
+我太头纱也看不见
+
+[XDlog] 15:57:51 Begin: : init 
+[XDlog] 15:57:51 Finish: :  use: 0.0007696151733398438
+['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (｀・ω・´)', 128]
+
+[XDlog] 16:03:55 Begin: : init 
+[XDlog] 16:03:55 Finish: :  use: 0.0007486343383789062
+['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;194;245;194m (=^･ω･^=)', 1564]
+
+[XDlog] 16:08:26 Begin: s001king: g_pinyin JB TU
+[Pinyin Loop] ['tu']
+[Pinyin Success] ['图']
+[Pinyin Custom] ['JB', 'tu']
+[Pinyin Fail_Count] 1
+[XDlog] 16:08:26 Finish: s001king: JB TU use: 0.004106998443603516
+
+
+[XDlog] 16:09:33 Begin: s001king: g_pinyin IM SORRY
+[Pinyin Custom] ['IM SORRY']
+[Pinyin Fail_Count] 1
+[XDlog] 16:09:33 Finish: s001king: IM SORRY use: 0.0035173892974853516
+
+
+[XDlog] 16:09:49 Begin: : init 
+[XDlog] 16:09:49 Finish: :  use: 0.0006101131439208984
+['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;135;206;235m (｡>﹏<｡)', 1210]
+
+[XDlog] 16:09:57 Begin: : init 
+[XDlog] 16:09:57 Finish: :  use: 0.0005381107330322266
+['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;221;160;221m (｡･ω･｡)', 1202]
+
+[XDlog] 16:10:06 Begin: [我來問道] Mag1cStrafe: g_pinyin kai jing da hai ting li hai
+[Pinyin Loop] ['kai', 'jing', 'da', 'hai', 'ting', 'li', 'hai']
+[Pinyin Success] ['开镜', '大', '还挺', '厉害']
+[Pinyin Custom] ['kai', 'jing', 'da', 'hai', 'ting', 'li', 'hai']
+[Pinyin Fail_Count] 0
+[XDlog] 16:10:06 Finish: [我來問道] Mag1cStrafe: kai jing da hai ting li hai use: 0.007925033569335938
+开镜大还挺厉害
+
+[XDlog] 16:10:28 Begin: : init 
+[XDlog] 16:10:28 Finish: :  use: 0.000568389892578125
+['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;135;206;235m ～(つˆДˆ)つ', 1171]
+
+[XDlog] 16:10:57 Begin: [我來問道] Mag1cStrafe: g_pinyin ji ba ka bi shou
+[Pinyin Loop] ['ji', 'ba', 'ka', 'bi', 'shou']
+[Pinyin Success] ['鸡巴', '卡比', '手']
+[Pinyin Custom] ['ji', 'ba', 'ka', 'bi', 'shou']
+[Pinyin Fail_Count] 0
+[XDlog] 16:10:57 Finish: [我來問道] Mag1cStrafe: ji ba ka bi shou use: 0.002714872360229492
+几把卡比手
+
+[XDlog] 16:12:33 Begin: [我來問道] Mag1cStrafe: g_pinyin fa dong jineng le
+[Pinyin Loop] ['fa', 'dong']
+[Pinyin Success] ['发动']
+[Pinyin Loop] ['le']
+[Pinyin Success] ['了']
+[Pinyin Custom] ['fa', 'dong', 'jineng', 'le']
+[Pinyin Fail_Count] 1
+[XDlog] 16:12:33 Finish: [我來問道] Mag1cStrafe: fa dong jineng le use: 0.0031719207763671875
+发动jineng了
+
+[XDlog] 16:12:37 Begin: cu6f6yjtqsow: g_pinyin sui shou yi diu
+[Pinyin Loop] ['sui', 'shou', 'yi', 'diu']
+[Pinyin Success] ['随手', '一', '丢']
+[Pinyin Custom] ['sui', 'shou', 'yi', 'diu']
+[Pinyin Fail_Count] 0
+[XDlog] 16:12:37 Finish: cu6f6yjtqsow: sui shou yi diu use: 0.002995014190673828
+随手一丢
+
+[XDlog] 16:12:44 Begin: cu6f6yjtqsow: g_pinyin ni shi dao mei dan
+[Pinyin Loop] ['ni', 'shi', 'dao', 'mei', 'dan']
+[Pinyin Success] ['你是', '倒霉蛋']
+[Pinyin Custom] ['ni', 'shi', 'dao', 'mei', 'dan']
+[Pinyin Fail_Count] 0
+[XDlog] 16:12:44 Finish: cu6f6yjtqsow: ni shi dao mei dan use: 0.003567934036254883
+你是倒霉蛋
+
+[XDlog] 16:13:06 Begin: [斯哈] fangjunzhe2: g_pinyin bu shi ge men
+[Pinyin Loop] ['bu', 'shi', 'ge', 'men']
+[Pinyin Success] ['不是', '哥们']
+[Pinyin Custom] ['bu', 'shi', 'ge', 'men']
+[Pinyin Fail_Count] 0
+[XDlog] 16:13:06 Finish: [斯哈] fangjunzhe2: bu shi ge men use: 0.0031833648681640625
+不是哥们
+
+[XDlog] 16:14:01 Begin: [我來問道] Mag1cStrafe: g_pinyin wan quan bu shi ren ji ba ka bi shou
+[Pinyin Loop] ['wan', 'quan', 'bu', 'shi', 'ren', 'ji', 'ba', 'ka', 'bi', 'shou']
+[Pinyin Success] ['完全', '不是', '人', '鸡巴', '卡比', '手']
+[Pinyin Custom] ['wan', 'quan', 'bu', 'shi', 'ren', 'ji', 'ba', 'ka', 'bi', 'shou']
+[Pinyin Fail_Count] 0
+[XDlog] 16:14:01 Finish: [我來問道] Mag1cStrafe: wan quan bu shi ren ji ba ka bi shou use: 0.007856607437133789
+完全不是人几把卡比手
+
+[XDlog] 16:14:22 Begin: [斯哈] fangjunzhe2: g_pinyin wo shi sha bi
+[Pinyin Loop] ['wo', 'shi', 'sha', 'bi']
+[Pinyin Success] ['我是', '煞笔']
+[Pinyin Custom] ['wo', 'shi', 'sha', 'bi']
+[Pinyin Fail_Count] 0
+[XDlog] 16:14:22 Finish: [斯哈] fangjunzhe2: wo shi sha bi use: 0.0028481483459472656
+我是煞笔
+
+[XDlog] 16:14:26 Begin: [我來問道] Mag1cStrafe: g_pinyin tai jun wen ni hua ne
+[Pinyin Loop] ['tai', 'jun', 'wen', 'ni', 'hua', 'ne']
+[Pinyin Success] ['台军', '问你', '话', '呢']
+[Pinyin Custom] ['tai', 'jun', 'wen', 'ni', 'hua', 'ne']
+[Pinyin Fail_Count] 0
+[XDlog] 16:14:26 Finish: [我來問道] Mag1cStrafe: tai jun wen ni hua ne use: 0.004541158676147461
+台军问你话呢
+
+[XDlog] 16:15:04 Begin: [我來問道] Mag1cStrafe: g_pinyin na bi 540 li hai le
+[Pinyin Loop] ['na', 'bi']
+[Pinyin Success] ['那', '比']
+[Pinyin Loop] ['li', 'hai', 'le']
+[Pinyin Success] ['厉害', '了']
+[Pinyin Custom] ['na', 'bi', '540', 'li', 'hai', 'le']
+[Pinyin Fail_Count] 1
+[XDlog] 16:15:04 Finish: [我來問道] Mag1cStrafe: na bi 540 li hai le use: 0.0029757022857666016
+那比540厉害了
+
+[XDlog] 16:16:25 Begin: [仙众夜叉] ZeroSeven233: g_pinyin ka ;e
+[Pinyin Loop] ['ka']
+[Pinyin Success] ['卡']
+[Pinyin Loop] ['e']
+[Pinyin Success] ['额']
+[Pinyin Custom] ['ka', ';', 'e']
+[Pinyin Fail_Count] 1
+[XDlog] 16:16:25 Finish: [仙众夜叉] ZeroSeven233: ka ;e use: 0.0023009777069091797
+
+
+[XDlog] 16:16:50 Begin: Arona-pal: g_pinyin wo yi wei shi wo de wen ti
+[Pinyin Loop] ['wo', 'yi', 'wei', 'shi', 'wo', 'de', 'wen', 'ti']
+[Pinyin Success] ['我一', '卫视', '我的', '问题']
+[Pinyin Custom] ['wo', 'yi', 'wei', 'shi', 'wo', 'de', 'wen', 'ti']
+[Pinyin Fail_Count] 0
+[XDlog] 16:16:50 Finish: Arona-pal: wo yi wei shi wo de wen ti use: 0.0062029361724853516
+我一卫视我的问题
+
+[XDlog] 16:17:06 Begin: [斯哈] fangjunzhe2: g_pinyin zai zhe yang xia qv guan fu dou bi bei ji xing liu chang le
+[Pinyin Loop] ['zai', 'zhe', 'yang', 'xia']
+[Pinyin Success] ['在这', '养虾']
+[Pinyin Loop] ['guan', 'fu', 'dou', 'bi', 'bei', 'ji', 'xing', 'liu', 'chang', 'le']
+[Pinyin Success] ['官府', '都比', '北极星', '刘长乐']
+[Pinyin Custom] ['zai', 'zhe', 'yang', 'xia', 'qv', 'guan', 'fu', 'dou', 'bi', 'bei', 'ji', 'xing', 'liu', 'zhang', 'le']
+[Pinyin Fail_Count] 1
+[XDlog] 16:17:06 Finish: [斯哈] fangjunzhe2: zai zhe yang xia qv guan fu dou bi bei ji xing liu chang le use: 0.010563135147094727
+在这养虾qv官府都比北极星刘长乐
+
+[XDlog] 16:17:11 Begin: [我來問道] Mag1cStrafe: g_pinyin ka bi shou de wen ti
+[Pinyin Loop] ['ka', 'bi', 'shou', 'de', 'wen', 'ti']
+[Pinyin Success] ['卡比', '手', '的', '问题']
+[Pinyin Custom] ['ka', 'bi', 'shou', 'de', 'wen', 'ti']
+[Pinyin Fail_Count] 0
+[XDlog] 16:17:11 Finish: [我來問道] Mag1cStrafe: ka bi shou de wen ti use: 0.0032486915588378906
+卡比手的问题
+
+[XDlog] 16:17:13 Begin: [我來問道] Mag1cStrafe: g_pinyin ka bi shou quan ze
+[Pinyin Loop] ['ka', 'bi', 'shou', 'quan', 'ze']
+[Pinyin Success] ['卡比', '授权', '责']
+[Pinyin Custom] ['ka', 'bi', 'shou', 'quan', 'ze']
+[Pinyin Fail_Count] 0
+[XDlog] 16:17:13 Finish: [我來問道] Mag1cStrafe: ka bi shou quan ze use: 0.003317594528198242
+卡比授权责
+
+[XDlog] 16:18:10 Begin: s001king: g_pinyin WO YAO
+[Pinyin Loop] ['wo', 'yao']
+[Pinyin Success] ['我要']
+[Pinyin Custom] ['wo', 'yao']
+[Pinyin Fail_Count] 0
+[XDlog] 16:18:10 Finish: s001king: WO YAO use: 0.0022118091583251953
+我要
+
+[XDlog] 16:19:07 Begin: : init 
+[XDlog] 16:19:07 Finish: :  use: 0.0007064342498779297
+['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;240;128;128m ╮(￣▽￣)╭', 652]
+
+[XDlog] 16:19:12 Begin: : init 
+[XDlog] 16:19:12 Finish: :  use: 0.0005743503570556641
+['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;254;250;195m (ﾉ≧∀≦)ﾉ', 647]
+
+[XDlog] 16:19:17 Begin: cu6f6yjtqsow: g_pinyin 101kai jing zhe mo nan zhuan dong ma
+[Pinyin Loop] ['kai', 'jing', 'zhe', 'mo', 'nan', 'zhuan', 'dong', 'ma']
+[Pinyin Success] ['开镜', '这', '磨难', '转动', '码']
+[Pinyin Custom] ['101', 'kai', 'jing', 'zhe', 'mo', 'nan', 'zhuan', 'dong', 'ma']
+[Pinyin Fail_Count] 1
+[XDlog] 16:19:17 Finish: cu6f6yjtqsow: 101kai jing zhe mo nan zhuan dong ma use: 0.006952524185180664
+101开镜这磨难转动吗
+
+[XDlog] 16:19:26 Begin: [斯哈] fangjunzhe2: g_pinyin qq tan tan
+[Pinyin Loop] ['tan', 'tan']
+[Pinyin Success] ['谈谈']
+[Pinyin Custom] ['qq', 'tan', 'tan']
+[Pinyin Fail_Count] 1
+[XDlog] 16:19:26 Finish: [斯哈] fangjunzhe2: qq tan tan use: 0.0020623207092285156
+
+
+[XDlog] 16:21:41 Begin: [我來問道] Mag1cStrafe: g_pinyin you lai yi ge ka bi shou
+[Pinyin Loop] ['you', 'lai', 'yi', 'ge', 'ka', 'bi', 'shou']
+[Pinyin Success] ['由来', '一个', '卡比', '手']
+[Pinyin Custom] ['you', 'lai', 'yi', 'ge', 'ka', 'bi', 'shou']
+[Pinyin Fail_Count] 0
+[XDlog] 16:21:41 Finish: [我來問道] Mag1cStrafe: you lai yi ge ka bi shou use: 0.004939556121826172
+由来一个卡比手
+
+[XDlog] 16:22:13 Begin: [我來問道] Mag1cStrafe: g_pinyin zhe ge HBWa
+[Pinyin Loop] ['zhe', 'ge']
+[Pinyin Success] ['这个']
+[Pinyin Custom] ['zhe', 'ge', 'HBWa']
+[Pinyin Fail_Count] 1
+[XDlog] 16:22:13 Finish: [我來問道] Mag1cStrafe: zhe ge HBWa use: 0.002316713333129883
+
+
+[XDlog] 16:22:28 Begin: [BOT] Pathstar_XD: g_pinyin "you lai": "又来"
+[Pinyin Loop] ['you', 'lai']
+[Pinyin Success] ['由来']
+[Pinyin Custom] ['"', 'you', 'lai', '": "', 'you', 'lai', '"']
+[Pinyin Fail_Count] 2
+[XDlog] 16:22:28 Finish: [BOT] Pathstar_XD: "you lai": "又来" use: 0.0017635822296142578
+
+
+[XDlog] 16:24:33 Begin: cu6f6yjtqsow: g_pinyin bang de jian wei
+[Pinyin Loop] ['bang', 'de', 'jian', 'wei']
+[Pinyin Success] ['邦德', '建委']
+[Pinyin Custom] ['bang', 'de', 'jian', 'wei']
+[Pinyin Fail_Count] 0
+[XDlog] 16:24:33 Finish: cu6f6yjtqsow: bang de jian wei use: 0.003187417984008789
+邦德建委
+
+[XDlog] 16:25:34 Begin: : init 
+[XDlog] 16:25:34 Finish: :  use: 0.0005517005920410156
+['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;254;198;195m (｀・ω・´)', 265]
+
+[XDlog] 16:26:36 Begin: Ivutilus: g_pinyin zhe fu huo dian ye tai la ji le
+[Pinyin Loop] ['zhe', 'fu', 'huo', 'dian', 'ye', 'tai', 'la', 'ji', 'le']
+[Pinyin Success] ['这副', '火电', '也太', '垃圾', '了']
+[Pinyin Custom] ['zhe', 'fu', 'huo', 'dian', 'ye', 'tai', 'la', 'ji', 'le']
+[Pinyin Fail_Count] 0
+[XDlog] 16:26:36 Finish: Ivutilus: zhe fu huo dian ye tai la ji le use: 0.006409883499145508
+这副火电也太垃圾了
+
+[XDlog] 16:30:05 Begin: Ivutilus: g_pinyin kong zhi tai zhen me kaio
+[Pinyin Loop] ['kong', 'zhi', 'tai', 'zhen', 'me']
+[Pinyin Success] ['控制台', '真', '么']
+[Pinyin Custom] ['kong', 'zhi', 'tai', 'zhen', 'me', 'kaio']
+[Pinyin Fail_Count] 1
+[XDlog] 16:30:05 Finish: Ivutilus: kong zhi tai zhen me kaio use: 0.004426002502441406
+控制台真么kaio
+
+16:31:16 Monitoring Squirrel Messages...
+[XDlog] 16:31:51 Begin: : init 
+[XDlog] 16:31:51 Finish: :  use: 0.0005958080291748047
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (｀・ω・´)', 1688]
+
+[XDlog] 16:32:25 Begin: cu6f6yjtqsow: g_pinyin tun zi dan yan zhong
+[Pinyin Loop] ['tun', 'zi', 'dan', 'yan', 'zhong']
+[Pinyin Success] ['屯子', '单眼', '中']
+[Pinyin Custom] ['tun', 'zi', 'dan', 'yan', 'zhong']
+[Pinyin Fail_Count] 0
+[XDlog] 16:32:25 Finish: cu6f6yjtqsow: tun zi dan yan zhong use: 0.002566099166870117
+屯子单眼中
+
+[XDlog] 16:35:37 Begin: s001king: g_pinyin BU XIXI
+[Pinyin Loop] ['bu']
+[Pinyin Success] ['不']
+[Pinyin Custom] ['bu', 'XIXI']
+[Pinyin Fail_Count] 1
+[XDlog] 16:35:37 Finish: s001king: BU XIXI use: 0.002261638641357422
+
+
+[XDlog] 16:36:10 Begin: cu6f6yjtqsow: g_pinyin lao deng
+[Pinyin Loop] ['lao', 'deng']
+[Pinyin Success] ['老', '等']
+[Pinyin Custom] ['lao', 'deng']
+[Pinyin Fail_Count] 0
+[XDlog] 16:36:10 Finish: cu6f6yjtqsow: lao deng use: 0.0027534961700439453
+老等
+
+16:36:56 Monitoring Squirrel Messages...
+[XDlog] 16:36:58 Begin: Ivutilus: g_pinyin quan shi meng xing
+[Pinyin Loop] ['quan', 'shi', 'meng', 'xing']
+[Pinyin Success] ['全市', '梦醒']
+[Pinyin Custom] ['quan', 'shi', 'meng', 'xing']
+[Pinyin Fail_Count] 0
+[XDlog] 16:36:58 Finish: Ivutilus: quan shi meng xing use: 0.002537250518798828
+全市梦醒
+
+[XDlog] 16:37:00 Begin: Ivutilus: g_pinyin hai zai jia g2
+[Pinyin Loop] ['hai', 'zai', 'jia']
+[Pinyin Success] ['还在', '家']
+[Pinyin Custom] ['hai', 'zai', 'jia', 'g2']
+[Pinyin Fail_Count] 1
+[XDlog] 16:37:00 Finish: Ivutilus: hai zai jia g2 use: 0.0018460750579833984
+还在家g2
+
+[XDlog] 16:37:20 Begin: s001king: g_pinyin YOU SHI NNI
+[Pinyin Loop] ['you', 'shi']
+[Pinyin Success] ['优势']
+[Pinyin Custom] ['you', 'shi', 'NNI']
+[Pinyin Fail_Count] 1
+[XDlog] 16:37:20 Finish: s001king: YOU SHI NNI use: 0.0027518272399902344
+
+
+[XDlog] 16:38:05 Begin: : init 
+[XDlog] 16:38:05 Finish: :  use: 0.0006392002105712891
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (・ω< )☆', 1314]
+
+[XDlog] 16:45:05 Begin: : init 
+[XDlog] 16:45:05 Finish: :  use: 0.0007600784301757812
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (=^･ω･^=)', 894]
+
+[XDlog] 16:47:56 Begin: cu6f6yjtqsow: g_pinyin you kai shi tun zi dan l
+[Pinyin Loop] ['you', 'kai', 'shi', 'tun', 'zi', 'dan']
+[Pinyin Success] ['有', '开始', '屯子', '单']
+[Pinyin Custom] ['you', 'kai', 'shi', 'tun', 'zi', 'dan', 'l']
+[Pinyin Fail_Count] 1
+[XDlog] 16:47:56 Finish: cu6f6yjtqsow: you kai shi tun zi dan l use: 0.0022764205932617188
+有开始屯子单l
+
+[XDlog] 16:48:07 Begin: cu6f6yjtqsow: g_pinyin wo han da bu liao zhong wen
+[Pinyin Loop] ['wo', 'han', 'da', 'bu', 'liao', 'zhong', 'wen']
+[Pinyin Success] ['我', '喊打', '不了', '中文']
+[Pinyin Custom] ['wo', 'han', 'da', 'bu', 'le', 'zhong', 'wen']
+[Pinyin Fail_Count] 0
+[XDlog] 16:48:07 Finish: cu6f6yjtqsow: wo han da bu liao zhong wen use: 0.0020585060119628906
+我喊打不了中文
+
+[XDlog] 16:52:10 Begin: [我來問道] Mag1cStrafe: g_pinyin tmd zen me lao shi huan dan an dao F
+[Pinyin Loop] ['zen', 'me', 'lao', 'shi', 'huan', 'dan', 'an', 'dao']
+[Pinyin Success] ['怎么', '老师', '换单', '暗道']
+[Pinyin Custom] ['tmd', 'zen', 'me', 'lao', 'shi', 'huan', 'dan', 'an', 'dao', 'F']
+[Pinyin Fail_Count] 2
+[XDlog] 16:52:10 Finish: [我來問道] Mag1cStrafe: tmd zen me lao shi huan dan an dao F use: 0.00385284423828125
+tmd怎么老师换单暗道F
+
+[XDlog] 16:52:22 Begin: : init 
+[XDlog] 16:52:22 Finish: :  use: 0.0005934238433837891
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (｡>ω<｡)', 457]
+
+[XDlog] 16:55:13 Begin: Ivutilus: g_pinyin wo yi jin chan tou bei fu le
+[Pinyin Loop] ['wo', 'yi', 'jin', 'chan', 'tou', 'bei', 'fu', 'le']
+[Pinyin Success] ['我', '一进', '缠头', '背负', '了']
+[Pinyin Custom] ['wo', 'yi', 'jin', 'chan', 'tou', 'bei', 'fu', 'le']
+[Pinyin Fail_Count] 0
+[XDlog] 16:55:13 Finish: Ivutilus: wo yi jin chan tou bei fu le use: 0.0020318031311035156
+我一进缠头背负了
+
+[XDlog] 16:55:18 Begin: Ivutilus: g_pinyin lian ti
+[Pinyin Loop] ['lian', 'ti']
+[Pinyin Success] ['连体']
+[Pinyin Custom] ['lian', 'ti']
+[Pinyin Fail_Count] 0
+[XDlog] 16:55:18 Finish: Ivutilus: lian ti use: 0.0016846656799316406
+连体
+
+[XDlog] 16:58:52 Begin: : init 
+[XDlog] 16:58:52 Finish: :  use: 0.0006210803985595703
+['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;254;250;195m _(:з」∠)_', 67]
+
+[XDlog] 17:05:01 Begin: : init 
+[XDlog] 17:05:01 Finish: :  use: 0.0006055831909179688
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;144;238;144m (・ω< )☆', 1498]
+
+[XDlog] 17:12:06 Begin: : init 
+[XDlog] 17:12:06 Finish: :  use: 0.0006000995635986328
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;173;216;230m (≧▽≦)/', 1073]
+
+[XDlog] 17:26:04 Begin: : init 
+[XDlog] 17:26:04 Finish: :  use: 0.0007123947143554688
+['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;175;238;238m (ﾉ≧∀≦)ﾉ', 235]
+
+[XDlog] 17:31:24 Begin: [我是傻逼] w14sl: g_pinyin xi jie bu sha sheng
+[Pinyin Loop] ['xi', 'jie', 'bu', 'sha', 'sheng']
+[Pinyin Success] ['细节', '不杀生']
+[Pinyin Custom] ['xi', 'jie', 'bu', 'sha', 'sheng']
+[Pinyin Fail_Count] 0
+[XDlog] 17:31:24 Finish: [我是傻逼] w14sl: xi jie bu sha sheng use: 0.008478641510009766
+细节不杀生
+
+[XDlog] 17:34:29 Begin: : init 
+[XDlog] 17:34:29 Finish: :  use: 0.0007407665252685547
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;254;198;195m _(:з」∠)_', 1530]
+
+[XDlog] 17:38:56 Begin: [我是傻逼] w14sl: g_pinyin tu ran bian de hao ka
+[Pinyin Loop] ['tu', 'ran', 'bian', 'de', 'hao', 'ka']
+[Pinyin Success] ['突然', '变得', '好', '卡']
+[Pinyin Custom] ['tu', 'ran', 'bian', 'de', 'hao', 'ka']
+[Pinyin Fail_Count] 0
+[XDlog] 17:38:56 Finish: [我是傻逼] w14sl: tu ran bian de hao ka use: 0.008192300796508789
+突然变得好卡
+
+[XDlog] 17:42:35 Begin: : init 
+[XDlog] 17:42:35 Finish: :  use: 0.0012576580047607422
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (・ω< )☆', 1044]
+
+[XDlog] 17:42:40 Begin: : init 
+[XDlog] 17:42:40 Finish: :  use: 0.0005702972412109375
+['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (=^･ω･^=)', 1039]
+
+20:56:44 Monitoring Squirrel Messages...
+[XDlog] 20:56:48 Begin: : init 
+[XDlog] 20:56:48 Finish: :  use: 0.003199338912963867
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (・ω< )☆', 191]
+
+[XDlog] 20:56:56 Begin: : init 
+[XDlog] 20:56:56 Finish: :  use: 0.002009153366088867
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;248;131;121m _(:з」∠)_', 183]
+
+[XDlog] 20:57:00 Begin: : init 
+[XDlog] 20:57:00 Finish: :  use: 0.002655506134033203
+['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (｡>ω<｡)', 179]
+
+[XDlog] 21:00:38 Begin: : init 
+[XDlog] 21:00:38 Finish: :  use: 0.0025000572204589844
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;240;128;128m _(:з」∠)_', 1761]
+
+[XDlog] 21:06:31 Begin: : init 
+[XDlog] 21:06:31 Finish: :  use: 0.0054781436920166016
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;208;175m _(≧v≦」∠)_', 1408]
+
+[XDlog] 21:12:30 Begin: : init 
+[XDlog] 21:12:30 Finish: :  use: 0.00411677360534668
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;173;216;230m (｡･ω･｡)', 1049]
+
+[XDlog] 21:13:08 Begin: : init 
+[XDlog] 21:13:08 Finish: :  use: 0.002343416213989258
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;199;245;190m (｡>ω<｡)', 1011]
+
+[XDlog] 21:13:29 Begin: : init 
+[XDlog] 21:13:29 Finish: :  use: 0.0025184154510498047
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;221;160;221m ～(つˆДˆ)つ', 990]
+
+[XDlog] 21:25:07 Begin: : init 
+[XDlog] 21:25:07 Finish: :  use: 0.004896402359008789
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;205;214;210m (〜￣△￣)〜', 292]
+
+[XDlog] 21:25:13 Begin: : init 
+[XDlog] 21:25:13 Finish: :  use: 0.0032491683959960938
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;175;238;238m (=^･ω･^=)', 286]
+
+[XDlog] 21:25:24 Begin: : init 
+[XDlog] 21:25:24 Finish: :  use: 0.0023872852325439453
+['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;173;216;230m (^・ω・^)', 275]
+
