@@ -1,18 +1,19 @@
-import random
-import win32file
-import win32con
-import os
+from datetime import datetime, timedelta
+import emoji
 import json
+import os
+from Pinyin2Hanzi import dag, DefaultDagParams
+from pypinyin import lazy_pinyin
+import random
+import re
+import requests
 import time
 import threading
-import re
-from Pinyin2Hanzi import DefaultDagParams
-from Pinyin2Hanzi import dag
-import requests
-import emoji
 from unidecode import unidecode
-from datetime import datetime, timedelta
-from pypinyin import lazy_pinyin
+import win32file
+import win32con
+
+# pip install emoji Pinyin2Hanzi pywin32 pypinyin requests unidecode
 
 chat_history_len = 6
 save_history = True
@@ -21,14 +22,6 @@ AI_limit = False
 
 def process_entry(timestamp, player_name, command, message, say):
     """Process a new entry asynchronously."""
-    global thread_count, thread_index
-    start_time = time.time()
-    start_strftime = time.strftime("%H:%M:%S")
-    # print(f"{start_strftime} Begin: {player_name}: {command}" + (f"\n{message}" if message else ""))
-    print(f"[XDlog] {start_strftime} Begin {{command}}: {player_name}: {message}")
-    is_not_func = False
-    py_message = ""
-
     if command == "no_return":
         match message:
             case "new_chat":
@@ -36,12 +29,19 @@ def process_entry(timestamp, player_name, command, message, say):
                 chat_history.clear()
             case _:
                 print(f"无此参数 {message}")
+        print(f"[XDlog] {time.strftime('%H:%M:%S')} | {player_name} : {message}")
         return
 
+    global thread_count, thread_index
     if thread_count == 0:
         with open(state_file_path, 'w', encoding='utf-8') as f:
             f.write("1")
-
+    start_time = time.time()
+    start_strftime = time.strftime("%H:%M:%S")
+    # print(f"{start_strftime} Begin: {player_name}: {command}" + (f"\n{message}" if message else ""))
+    print(f"[XDlog] {start_strftime} Begin {command} | {player_name} : {message}")
+    is_func = True
+    py_message = ""
     thread_count += 1
     match command:
         case "init":
@@ -49,7 +49,7 @@ def process_entry(timestamp, player_name, command, message, say):
         case "g_pinyin":
             py_message = pinyin2hanzi_converter.pinyin_groups_to_chinese(message, True)
             command = "pinyin"
-            is_not_func = True
+            is_func = False
         case "time":
             py_message = time.strftime("%H:%M:%S")
         case "ai":
@@ -64,7 +64,7 @@ def process_entry(timestamp, player_name, command, message, say):
             py_message = pinyin2hanzi_converter.pinyin_groups_to_chinese(message, False)
         case _:
             print(f"无此方法 {command}")
-            is_not_func = True
+            is_func = False
 
     end_time = time.time()
     # process_time = round(end_time - start_time, 1)
@@ -88,20 +88,20 @@ def process_entry(timestamp, player_name, command, message, say):
 
         with open(result_file_path, 'w', encoding='utf-8') as f:
             json.dump(existing_data, f, ensure_ascii=False, indent=4)
-        end_strftime = time.strftime("%H:%M:%S")
-        print(f"[XDlog] {end_strftime} Finish {command}: {player_name}: {message} use: {process_time}\n{py_message}\n")
+
     except Exception as e:
         print("[XDlog] Failed to update result JSON:", e)
-
-    if py_message == "":
-        if not is_not_func:
-            print(f"[XDlog] \n {command} 命令返回为空 \n")
 
     thread_count -= 1
     if thread_count == 0:
         with open(state_file_path, 'w', encoding='utf-8') as f:
             f.write("0")
     processing_set.remove((timestamp, player_name))
+    end_strftime = time.strftime("%H:%M:%S")
+    print(f"[XDlog] {end_strftime} Finish {command} | {player_name} : {message} | Result: {py_message} | Used: {process_time}\n")
+
+    if py_message == "" and is_func:
+        print(f"[XDlog] Error {command} 命令返回为空 \n")
 
 
 def monitor_file():
@@ -237,7 +237,10 @@ class PinyinChineseConverter:
         s = s.strip()
         # 查找第一个汉字
         for idx, c in enumerate(s):
-            if is_chinese(c):
+            is_h_cmd = False
+            if c == "-" and s[idx+1] == "h":
+                is_h_cmd = True
+            if is_chinese(c) or is_h_cmd:
                 pinyin_raw = s[:idx].rstrip()
                 pin = ' '.join(pinyin_raw.split())
                 if pin in self.temp_pinyin_dict:
@@ -249,7 +252,7 @@ class PinyinChineseConverter:
                     print(f"[Pinyin Add] Conflict {str_dict}")
                     return f"已有 (受保护): {str_dict}"
                 else:
-                    hz = s[idx:]
+                    hz = s[idx + 2:].lstrip() if is_h_cmd else s[idx:]
                     self.temp_pinyin_dict[pin] = hz
                     self.custom_dict[pin] = hz
                     self.save_temp_pinyin_dict()
@@ -425,10 +428,10 @@ class PinyinChineseConverter:
         # 最后屏蔽词过滤
         process_white_result = simple_replace(process_result, self.block_words)
         fail_count = fail_count_dict["count"]
-        print(f"[Pinyin] Fail_Count {fail_count}/{pinyin_len}")
+        print(f"[Pinyin] Count Fail/All: {fail_count}/{pinyin_len}")
         if is_strict_mode:
             if fail_count >= pinyin_len / 2.0:
-                print(f"[Pinyin] Fail {fail_count}/{pinyin_len} {text}")
+                print(f"[Pinyin] Failed to Convert: {text}")
                 return ""
         return process_white_result
 
