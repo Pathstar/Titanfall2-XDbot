@@ -3,9 +3,16 @@ import json
 import time
 
 json_file_path = r'D:\SystemApps\Steam\steamapps\common\Titanfall2\R2Northstar\save_data\Northstar.Client\XD.json'
-
+json_file_folder = os.path.dirname(json_file_path)
 player_name = "Pathstar_XD"
 last_command = ""
+
+# 检查文件是否存在，如果不存在则新建空JSON文件
+if not os.path.exists(json_file_folder):
+    os.makedirs(json_file_folder)
+    if not os.path.exists(json_file_path):
+        with open(json_file_path, 'w', encoding='utf-8') as f:
+            json.dump({}, f, indent=4)
 
 while True:
     command = input("command: ")
@@ -14,10 +21,7 @@ while True:
     else:
         last_command = command
     message = input("message: ")
-    # 检查文件是否存在，如果不存在则新建空JSON文件
-    # if not os.path.exists(json_file_path):
-    #     with open(json_file_path, 'w', encoding='utf-8') as f:
-    #        json.dump({}, f, indent=4)
+
     data = {}
     # # 读取原有内容
     # with open(json_file_path, 'r', encoding='utf-8') as f:
