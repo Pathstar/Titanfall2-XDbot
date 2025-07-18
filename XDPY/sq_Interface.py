@@ -17,6 +17,7 @@ import win32file
 import win32con
 
 # pip install emoji Pinyin2Hanzi pywin32 pypinyin requests unidecode
+
 chat_history_len = 6
 save_history = True
 ai_limit = False
@@ -84,9 +85,11 @@ def process_entry(timestamp, player_name, command, message, say):
             existing_data = json.load(f)
         existing_data.update(result_data)
         with open(result_file_path, 'w', encoding='utf-8') as f:
+            # noinspection PyTypeChecker
             json.dump(existing_data, f, ensure_ascii=False, indent=4)
     except FileNotFoundError:
         with open(result_file_path, 'w', encoding='utf-8') as f:
+            # noinspection PyTypeChecker
             json.dump(result_data, f, ensure_ascii=False, indent=4)
         print(f"[XDlog] \033[33mWarning result JSON NOT found, created\033[0m")
     except Exception as e:
@@ -151,6 +154,7 @@ def monitor_file():
                         last_m_time = current_m_time
                 except FileNotFoundError:
                     with open(json_file_path, 'w', encoding='utf-8') as f:
+                        # noinspection PyTypeChecker
                         json.dump({}, f, ensure_ascii=False)
                     print(f"[XDlog] \033[33mWarning result JSON NOT found, created\033[0m")
                 except Exception as e:
@@ -170,28 +174,20 @@ def next_half_or_full_hour_final():
     h, m = now.hour, now.minute
     if m < 30:
         next_time = now.replace(minute=30, second=0, microsecond=0)
-        flag = False
+        result_str = next_time.strftime("\x1b[33m%H:%M:%S\x1b[0m！")
     else:
         next_time = (now.replace(minute=0, second=0, microsecond=0) + timedelta(hours=1))
-        flag = True
-    seconds_to_next = int((next_time - now).total_seconds())
-    # seconds_to_next = 0
-    if flag:
         result_str = next_time.strftime("\x1b[33m%H:%M:%S\x1b[0m 整！")
-    else:
-        result_str = next_time.strftime("\x1b[33m%H:%M:%S\x1b[0m！")
+    seconds_to_next = int((next_time - now).total_seconds())
 
     # 随机颜色
-    color = random.choice(COLORS)
-
     # 判断是否为凌晨0点~6点
     if 0 <= next_time.hour < 6 and random.random() < 0.99:
         text_emoji = "(。-ω-)zzz"
     else:
         text_emoji = random.choice(EMOJI_LIST)
-
     # 拼接输出
-    result_str = f"{result_str}{color} {text_emoji}"
+    result_str = f"{result_str}{random.choice(ansi_colors)} {text_emoji}"
 
     return [result_str, seconds_to_next]
 
@@ -221,6 +217,7 @@ class PinyinChineseConverter:
         timestamp = datetime.now().strftime("%Y%m%d_%H-%M-%S")
         output_file = f"temp/{timestamp}_xd_data.json"
         with open(output_file, 'w', encoding='utf-8') as f:
+            # noinspection PyTypeChecker
             json.dump(self.data, f, ensure_ascii=False, indent=4)
 
     def load_custom_pinyin_dict(self):
@@ -262,6 +259,7 @@ class PinyinChineseConverter:
 
     def save_xd_data(self):
         with open(self.pinyin_data_path, 'w', encoding='utf-8') as f:
+            # noinspection PyTypeChecker
             json.dump(self.data, f, ensure_ascii=False, indent=4)
 
     # 读入已有 temp_pinyin_dict
@@ -302,7 +300,7 @@ class PinyinChineseConverter:
                         else:
                             # 不在dag表第一个，如果这个词权重高于0.21应当在init中提醒
                             if dag_params.phrase_dict[pin][0][1] > self.weight:
-                                print(f"[Pinyin Add] \033[33mWarning higher weight {str_dict} {dag_params.phrase_dict[pin][0][1]} > {self.weight}\033[0m")
+                                print(f"[Pinyin Add] \033[33mWarning merge higher weight {str_dict} {dag_params.phrase_dict[pin][0][1]} > {self.weight}\033[0m")
                             dag_params.phrase_dict[pin] = [[hz, self.weight]] + dag_params.phrase_dict[pin]
                             print(f"[Pinyin Add] Success merge add {str_dict} {self.weight}")
                     else:
@@ -315,7 +313,7 @@ class PinyinChineseConverter:
                 else:
                     self.custom_pinyin_dict[pin_space] = hz
                     str_dict = f"\"{pin_space}\": \"{hz}\""
-                    print(f"[Pinyin Add] Success Custom {str_dict}")
+                    print(f"[Pinyin Add] Success custom {str_dict}")
                     self.save_xd_data()
                     return f"添加成功: {str_dict}"
         print(f"[Pinyin Add] Failed chinese OR -h param NOT found: {s}")
@@ -331,27 +329,50 @@ class PinyinChineseConverter:
             del self.custom_pinyin_dict[pin_space]
             self.save_xd_data()
             str_dict = f"\"{pin_space}\": \"{hz}\""
-            print(f"[Pinyin Del] Success {str_dict}")
+            print(f"[Pinyin Del] Success custom {str_dict}")
             return f"已删除: {str_dict}"
         pin = ','.join(pinyin_list)
         if pin in self.merge_pinyin_dict:
+            # print(dag_params.phrase_dict[pin])
             pin_info = self.merge_pinyin_dict[pin].pop(0)
             hz = pin_info[0]
             if not self.merge_pinyin_dict[pin]:
                 del self.merge_pinyin_dict[pin]
+            # print(dag_params.phrase_dict[pin])
             self.save_xd_data()
             str_dict = f"\"{pin}\": \"{hz}\""
+            return_str = f"已删除: {str_dict}"
             if pin in dag_params.phrase_dict:
-                dag_pin_info = dag_params.phrase_dict[pin][0]
-                if hz == dag_pin_info[0]:
-                    # 删除无问题 这里不能使用删 dag_pin_info
-                    del dag_params.phrase_dict[pin][0]
+                # print(dag_params.phrase_dict[pin])
+                # 如果init中dag表是从merge_pinyin_dict赋值的，则直接都删了，进行判断是不是
+                if dag_params.phrase_dict[pin]:
+                    dag_pin_info = dag_params.phrase_dict[pin][0]
+                    if hz == dag_pin_info[0]:
+                        # 删除无问题 这里不能使用删 dag_pin_info
+                        del dag_params.phrase_dict[pin][0]
+                        if len(dag_params.phrase_dict[pin]) >= 1:
+                            print(f"[Pinyin Del] Success merge {str_dict} {pin_info[1]} | Next \"{dag_params.phrase_dict[pin][0][0]}\"")
+                            return return_str
+                        else:
+                            # 如果真的只有一个元素按理不会走到这，应该是下面的Become EMPTY，除非init时没有绑定
+                            del dag_params.phrase_dict[pin]
+                            print(f"[Pinyin Del] Success merge and Become EMPTY after pop {str_dict} {pin_info[1]}")
+                            return return_str
+                    else:
+                        # 有问题，在自定义表却不在dag表
+                        print(f"[Pinyin Del] \033[33mWarning merge hanzi NOT found in dag_params {str_dict} {pin_info[1]}\033[0m")
+                        print(f"[Pinyin Del] Success merge {str_dict} {pin_info[1]}")
+                        return return_str
                 else:
-                    # 有问题，在自定义表却不在dag表
-                    print(f"[Pinyin Del] \033[33mWarning NOT in dag_params {str_dict} {pin_info[1]}\033[0m")
-                print(f"[Pinyin Del] Success {str_dict} {pin_info[1]}")
-                return f"已删除: {str_dict}"
-        print(f"[Pinyin Del] Fail \"{pin_space}\"")
+                    # print("list empty")
+                    del dag_params.phrase_dict[pin]
+                    print(f"[Pinyin Del] Success merge and Become EMPTY {str_dict} {pin_info[1]}")
+                    return return_str
+            else:
+                print(f"[Pinyin Del] \033[33mWarning merge key NOT found in dag_params {str_dict} {pin_info[1]}\033[0m")
+                print(f"[Pinyin Del] Success merge {str_dict} {pin_info[1]}")
+                return return_str
+        print(f"[Pinyin Del] Fail NOT found \"{pin_space}\"")
         return f"没有找到拼音 \"{pin_space}\"，无法删除"
 
     def preprocess_custom_words(self, text, fail_count_dict):
@@ -372,7 +393,8 @@ class PinyinChineseConverter:
 
         return pattern.sub(replacement, text)
 
-    def split_text_by_pinyin_group(self, text):
+    @staticmethod
+    def split_text_by_pinyin_group(text):
         """
         第二步，将文本按拼音组切分，True是拼音组，False是原文
         """
@@ -655,10 +677,9 @@ def get_server(query_type, message):
             response = requests.get("https://nscn.wolf109909.top/client/servers")
             servers = response.json()
             with open(file_name, "w") as file:
+                # noinspection PyTypeChecker
                 json.dump(servers, file, indent=4)
-                # json.dump(servers, file)
                 print("[XDlog] Get服务器...")
-                # print("\n\n\nget\n\n\n")
         else:
             with open(file_name, "r") as file:
                 servers = json.load(file)
@@ -681,9 +702,7 @@ def get_server(query_type, message):
                         return f"查询模式 [{message}] 未找到有人的服务器"
             case "name" | "名称" | "名字":
                 cleaned_data = filter_name_mod(servers, message)
-                # print("cleanedata")
-                print(cleaned_data)
-                # print("over")
+                # print(cleaned_data)
                 if not cleaned_data:
                     return f"查询名称 [{message}] 未找到任何服务器"
                 else:
@@ -700,11 +719,6 @@ def get_server(query_type, message):
                     else:
                         return f"查询模式 [{message}] 未找到有人的服务器"
 
-        # if test:
-        #     filtered_data.append({
-        #         "playerCount": -1,
-        #         "name": "内存读取"
-        #     })
         if not filtered_data:
             return ""
         else:
@@ -821,20 +835,6 @@ def filter_name_mod(servers, message):
             })
     return filtered_data
 
-
-_print = print
-
-
-# 自定义print，同时写入日志文件
-def print(*args, **kwargs):
-    message = " ".join(map(str, args))
-    with open(log_file_path, "a", encoding="utf-8") as log_file:
-        log_file.write(message + "\n")
-    _print(*args, **kwargs)
-    return print
-
-
-# 获取当前日期，格式：YYYY-MM-DD
 log_filename = datetime.now().strftime("%Y-%m-%d") + ".txt"
 # 指定日志目录
 log_dir = os.path.join(os.path.dirname(__file__), "XDlogs")
@@ -842,6 +842,15 @@ log_dir = os.path.join(os.path.dirname(__file__), "XDlogs")
 os.makedirs(log_dir, exist_ok=True)
 # 日志文件完整路径
 log_file_path = os.path.join(log_dir, log_filename)
+
+_print = print
+# 自定义print，同时写入日志文件
+def print(*args, **kwargs):
+    message = " ".join(map(str, args))
+    with open(log_file_path, "a", encoding="utf-8") as log_file:
+        log_file.write(message + "\n")
+    _print(*args, **kwargs)
+    return print
 
 ttf_data_path = r'D:\SystemApps\Steam\steamapps\common\Titanfall2\R2Northstar\save_data\Northstar.Client'
 json_file_path = os.path.join(ttf_data_path, 'XD.json')
@@ -851,15 +860,12 @@ private_file_path = os.path.join(ttf_data_path, 'private_data.json')
 
 watch_dir = os.path.dirname(json_file_path)
 target_file = os.path.basename(json_file_path)
-last_get_server_time = 0
 
 processing_set = set()
 thread_count = 0
-chat_history = []
 thread_index = 0
-
 # init 报时 彩色列表
-COLORS = [
+ansi_colors = [
     "\033[38;2;254;208;175m",
     "\033[38;2;135;206;235m",
     "\033[38;2;240;128;128m",
@@ -947,6 +953,7 @@ def pinyin2hanzi_init():
 pinyin2hanzi_converter = pinyin2hanzi_init()
 
 # AI
+chat_history = []
 try:
     with open(private_file_path, 'r', encoding='utf-8') as f_private_data:
         private_data = json.load(f_private_data)
@@ -976,6 +983,7 @@ emoji_map = {
 chinese_chars = set("，。？！（）【】、；：") | set(chr(i) for i in range(0x4E00, 0x9FFF))
 # 将 转化为ASCII表情 例如"grinning_face": ":D",
 
+last_get_server_time = 0
 trans_to_gamemode = {
     "铁对铁pvp": ["ps", "gg", "ffa", "fra", "mfd", "coliseum", "hidden"],
     "泰坦争斗ttdm": ["tffa", "ttdm"],
