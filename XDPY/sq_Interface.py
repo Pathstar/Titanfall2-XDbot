@@ -185,7 +185,7 @@ def next_half_or_full_hour_final():
     if 0 <= next_time.hour < 6 and random.random() < 0.99:
         text_emoji = "(。-ω-)zzz"
     else:
-        text_emoji = random.choice(EMOJI_LIST)
+        text_emoji = random.choice(emoji_list)
     # 拼接输出
     result_str = f"{result_str}{random.choice(ansi_colors)} {text_emoji}"
 
@@ -883,7 +883,7 @@ ansi_colors = [
     "\033[38;2;199;245;190m"
 ]
 # ☆★
-EMOJI_LIST = [
+emoji_list = [
     "(≧▽≦)/", "(=^･ω･^=)", "(｡>ω<｡)", "(｡>﹏<｡)",
     "～(つˆДˆ)つ", "(｀・ω・´)", "(ﾉ≧∀≦)ﾉ",
     "_(:з」∠)_", "(=・ω・=)", "_(≧v≦」∠)_", "(〜￣△￣)〜", "╮(￣▽￣)╭", "(・ω< )☆", "(^・ω・^)", "(｡･ω･｡)"
