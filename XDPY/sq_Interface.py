@@ -1,9 +1,12 @@
+
+import os
+# cmd颜色显示刷新 Windows：cls Linux/Unix/macOS终端的清屏命令是：clear
+os.system('cls' if os.name == 'nt' else 'clear')
 from datetime import datetime, timedelta
 import emoji
 import json
-import os
 from Pinyin2Hanzi import dag, DefaultDagParams
-from pypinyin import lazy_pinyin
+# from pypinyin import lazy_pinyin
 import random
 import re
 import requests
@@ -14,10 +17,9 @@ import win32file
 import win32con
 
 # pip install emoji Pinyin2Hanzi pywin32 pypinyin requests unidecode
-
 chat_history_len = 6
 save_history = True
-AI_limit = False
+ai_limit = False
 
 
 def process_entry(timestamp, player_name, command, message, say):
@@ -78,19 +80,17 @@ def process_entry(timestamp, player_name, command, message, say):
         "process_time": process_time
     }}}
     try:
-        if os.path.exists(result_file_path):
-            with open(result_file_path, 'r', encoding='utf-8') as f:
-                existing_data = json.load(f)
-        else:
-            existing_data = {}
-
+        with open(result_file_path, 'r', encoding='utf-8') as f:
+            existing_data = json.load(f)
         existing_data.update(result_data)
-
         with open(result_file_path, 'w', encoding='utf-8') as f:
             json.dump(existing_data, f, ensure_ascii=False, indent=4)
-
+    except FileNotFoundError:
+        with open(result_file_path, 'w', encoding='utf-8') as f:
+            json.dump(result_data, f, ensure_ascii=False, indent=4)
+        print(f"[XDlog] \033[33mWarning result JSON NOT found, created\033[0m")
     except Exception as e:
-        print("[XDlog] Failed to update result JSON:", e)
+        print(f"[XDlog] \033[31mError Failed to update result JSON: {e}\033[0m")
 
     thread_count -= 1
     if thread_count == 0:
@@ -101,7 +101,7 @@ def process_entry(timestamp, player_name, command, message, say):
     print(f"[XDlog] {end_strftime} Finish {command} | {player_name} : {message} | Result: {py_message} | Used: {process_time}\n")
 
     if py_message == "" and is_func:
-        print(f"[XDlog] Error {command} 命令返回为空 \n")
+        print(f"[XDlog] \033[31mError {command} returned EMPTY \n\033[0m")
 
 
 def monitor_file():
@@ -118,7 +118,7 @@ def monitor_file():
     )
 
     last_m_time = os.path.getmtime(json_file_path)
-    print(f"{time.strftime('%H:%M:%S')} Monitoring Squirrel Messages...")
+    print(f"[XDlog] {time.strftime('%H:%M:%S')} Monitoring Squirrel Messages...")
 
     while True:
         results = win32file.ReadDirectoryChangesW(
@@ -149,9 +149,20 @@ def monitor_file():
                                                      )).start()
 
                         last_m_time = current_m_time
+                except FileNotFoundError:
+                    with open(json_file_path, 'w', encoding='utf-8') as f:
+                        json.dump({}, f, ensure_ascii=False)
+                    print(f"[XDlog] \033[33mWarning result JSON NOT found, created\033[0m")
                 except Exception as e:
-                    print(f"{time.strftime('%H:%M:%S')} Failed to read JSON: ", e)
+                    print(f"[XDlog] {time.strftime('%H:%M:%S')} \033[31mError Failed to read JSON {os.path.basename(json_file_path)}: {e}\033[0m")
+                    save_temp_data("load_message_error", data)
 
+def save_temp_data(name, data):
+    timestamp = datetime.now().strftime("%Y%m%d_%H-%M-%S")
+    output_file = f"temp/{timestamp}_{name}.txt"
+    # os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    with open(output_file, "a", encoding="utf-8") as f:
+        f.write(data)
 
 def next_half_or_full_hour_final():
     now = datetime.now()
@@ -191,48 +202,69 @@ def simple_replace(text, replace_dict):
     return pattern.sub(lambda m: replace_dict[m.group(0)], text)
 
 
+def is_pinyin_syllable(word):
+    return word.lower() in pinyin_syllables
+
+
 class PinyinChineseConverter:
-    def __init__(self, c_pinyin_syllables, c_uv_pinyin_list, c_dag_params, c_custom_dict, c_block_words,
-                 c_temp_pinyin_dict_path):
-        self.pinyin_syllables = c_pinyin_syllables
-        self.uv_pinyin_list = c_uv_pinyin_list
-        self.dag_params = c_dag_params
+    def __init__(self, c_block_words, c_pinyin_data_path):
         self.block_words = c_block_words
-        self.temp_pinyin_dict_path = c_temp_pinyin_dict_path
-        self.temp_pinyin_dict = {}
-        self.load_temp_pinyin_dict()
-        self.basic_dict = c_custom_dict
-        self.custom_dict = c_custom_dict | self.temp_pinyin_dict
+        self.pinyin_data_path = c_pinyin_data_path
+        self.data = {}
+        self.merge_pinyin_dict = {}
+        self.custom_pinyin_dict = {}
+        self.weight = 0.21
+        self.load_custom_pinyin_dict()
+        self.xd_data_backup()
 
-    def reload_dict(self):
-        self.custom_dict = self.basic_dict | self.temp_pinyin_dict
+    def xd_data_backup(self):
+        timestamp = datetime.now().strftime("%Y%m%d_%H-%M-%S")
+        output_file = f"temp/{timestamp}_xd_data.json"
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(self.data, f, ensure_ascii=False, indent=4)
 
-    def load_temp_pinyin_dict(self):
-        if os.path.exists(self.temp_pinyin_dict_path):
+    def load_custom_pinyin_dict(self):
+        if os.path.exists(self.pinyin_data_path):
             try:
-                with open(self.temp_pinyin_dict_path, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    d = data.get("temp_pinyin_dict", {})
-                    if not isinstance(d, dict):
-                        print("警告：temp_pinyin_dict不是一个字典对象，已重置为空字典。")
-                        self.temp_pinyin_dict = {}
+                with open(self.pinyin_data_path, 'r', encoding='utf-8') as f:
+                    self.data = json.load(f)
+                    self.merge_pinyin_dict = self.data.get("merge_pinyin_dict", {})
+                    # 排序的权重也很高,相同系数取第一个，如果第一个权重及其低则拆分
+                    # 如果在第二个以及之后权重很高，无用，所以第一个append就行，高于0.21说明常用，在init中提醒，add中直接加
+                    if isinstance(self.merge_pinyin_dict, dict):
+                        # merge
+                        for key, merge_list in self.merge_pinyin_dict.items():
+                            if key in dag_params.phrase_dict:
+                                weight = merge_list[0][1]
+                                dag_weight = dag_params.phrase_dict[key][0][1]
+                                if dag_weight > weight:
+                                    print(f"[Pinyin Init] \033[33mWarning higher weight \"{key}\": \"{dag_params.phrase_dict[key][0][0]}\" {dag_weight} > {weight}\033[0m")
+                                dag_params.phrase_dict[key] = merge_list + dag_params.phrase_dict[key]
+
+                            else:
+                                dag_params.phrase_dict[key] = merge_list
                     else:
-                        self.temp_pinyin_dict = d
+                        print("[Pinyin Init] \033[31mError merge_pinyin_dict NOT a dict\033[0m")
+                        self.merge_pinyin_dict = {}
+
+                    self.custom_pinyin_dict = self.data.get("custom_pinyin_dict", {})
+                    if not isinstance(self.custom_pinyin_dict, dict):
+                        print("[Pinyin Init] \033[31mError custom_pinyin_dict NOT a dict\033[0m")
+                        self.custom_pinyin_dict = {}
                 return True
+            except FileNotFoundError:
+                print(f"[Pinyin Init] \033[33mWarning custom pinyin data NOT found\033[0m")
             except Exception as e:
-                print(f"加载temp_pinyin_dict时出现异常: {e}，已重置为空字典。")
-                self.temp_pinyin_dict = {}
+                print(f"[Pinyin Init] \033[31mError {self.pinyin_data_path}: {e}\033[0m")
                 return False
         else:
-            self.temp_pinyin_dict = {}
             return False
 
-    def save_temp_pinyin_dict(self):
-        with open(self.temp_pinyin_dict_path, 'w', encoding='utf-8') as f:
-            json.dump({"temp_pinyin_dict": self.temp_pinyin_dict}, f, ensure_ascii=False, indent=4)
+    def save_xd_data(self):
+        with open(self.pinyin_data_path, 'w', encoding='utf-8') as f:
+            json.dump(self.data, f, ensure_ascii=False, indent=4)
 
     # 读入已有 temp_pinyin_dict
-
     def add_pinyin_mapping(self, s):
         s = s.strip()
         # 查找第一个汉字
@@ -242,64 +274,117 @@ class PinyinChineseConverter:
                 is_h_cmd = True
             if is_chinese(c) or is_h_cmd:
                 pinyin_raw = s[:idx].rstrip()
-                pin = ' '.join(pinyin_raw.split())
-                if pin in self.temp_pinyin_dict:
-                    str_dict = f"\"{pin}\": \"{self.temp_pinyin_dict[pin]}\""
+                pinyin_list = pinyin_raw.split()
+                pinyin_list_len = len(pinyin_list)
+                hz = s[idx + 2:].lstrip() if is_h_cmd else s[idx:]
+                # 可以merge: 拼音长度不是1，与汉字长度相同，所有拼音标准，hz都是汉字
+                pin = ','.join(pinyin_list)
+                if pin in self.merge_pinyin_dict:
+                    pin_info = self.merge_pinyin_dict[pin][0]
+                    str_dict = f"\"{pin}\": \"{pin_info[0]}\""
+                    print(f"[Pinyin Add] Conflict {str_dict}, {pin_info[1]}")
+                    return f"已有: {str_dict}"
+                pin_space = ' '.join(pinyin_list)
+                if pin_space in self.custom_pinyin_dict:
+                    str_dict = f"\"{pin_space}\": \"{self.custom_pinyin_dict[pin_space]}\""
                     print(f"[Pinyin Add] Conflict {str_dict}")
                     return f"已有: {str_dict}"
-                elif pin in self.basic_dict:
-                    str_dict = f"\"{pin}\": \"{self.basic_dict[pin]}\""
-                    print(f"[Pinyin Add] Conflict {str_dict}")
-                    return f"已有 (受保护): {str_dict}"
-                else:
-                    hz = s[idx + 2:].lstrip() if is_h_cmd else s[idx:]
-                    self.temp_pinyin_dict[pin] = hz
-                    self.custom_dict[pin] = hz
-                    self.save_temp_pinyin_dict()
+                if pinyin_list_len != 1 and len(hz) == pinyin_list_len and all(pinyin in pinyin_syllables for pinyin in pinyin_list) and all(is_chinese(char) for char in hz):
+                    self.weight = 0.21
+                    # merge到dag表，有权重冲突也放进去，init时提醒
                     str_dict = f"\"{pin}\": \"{hz}\""
-                    print(f"[Pinyin Add] Success {str_dict}")
+                    if pin in dag_params.phrase_dict:
+                        dag_pin_info = dag_params.phrase_dict[pin][0]
+                        if hz == dag_pin_info[0]:
+                            # 这个映射在dag表第一个已经有了，拒绝添加，比如添加常用映射
+                            print(f"[Pinyin Add] Conflict merge {str_dict} {dag_pin_info[1]}")
+                            return f"已有 (受保护): {str_dict}"
+                        else:
+                            # 不在dag表第一个，如果这个词权重高于0.21应当在init中提醒
+                            if dag_params.phrase_dict[pin][0][1] > self.weight:
+                                print(f"[Pinyin Add] \033[33mWarning higher weight {str_dict} {dag_params.phrase_dict[pin][0][1]} > {self.weight}\033[0m")
+                            dag_params.phrase_dict[pin] = [[hz, self.weight]] + dag_params.phrase_dict[pin]
+                            print(f"[Pinyin Add] Success merge add {str_dict} {self.weight}")
+                    else:
+                        # 没有找到 赋值
+                        dag_params.phrase_dict[pin] = [[hz, self.weight]]
+                        print(f"[Pinyin Add] Success merge new {str_dict}")
+                    self.merge_pinyin_dict[pin] = [[hz, self.weight]]
+                    self.save_xd_data()
                     return f"添加成功: {str_dict}"
-        print(f"[Pinyin Add] Fail 未找到中文 {s}")
+                else:
+                    self.custom_pinyin_dict[pin_space] = hz
+                    str_dict = f"\"{pin_space}\": \"{hz}\""
+                    print(f"[Pinyin Add] Success Custom {str_dict}")
+                    self.save_xd_data()
+                    return f"添加成功: {str_dict}"
+        print(f"[Pinyin Add] Failed chinese OR -h param NOT found: {s}")
         return f"添加拼音失败：未找到中文 {s}"
 
     def del_pinyin_mapping(self, s):
         s = s.strip()
         # 只处理拼音部分，忽略后面是否有汉字
-        pin = ' '.join(s.split())
-        if pin in self.temp_pinyin_dict:
-            hz = self.temp_pinyin_dict[pin]
-            del self.temp_pinyin_dict[pin]
-            del self.custom_dict[pin]
-            self.save_temp_pinyin_dict()
-            str_dict = f"\"{pin}\": \"{hz}\""
+        pinyin_list = s.split()
+        pin_space = ' '.join(pinyin_list)
+        if pin_space in self.custom_pinyin_dict:
+            hz = self.custom_pinyin_dict[pin_space]
+            del self.custom_pinyin_dict[pin_space]
+            self.save_xd_data()
+            str_dict = f"\"{pin_space}\": \"{hz}\""
             print(f"[Pinyin Del] Success {str_dict}")
             return f"已删除: {str_dict}"
-        elif pin in self.basic_dict:
-            str_dict = f"\"{pin}\": \"{self.basic_dict[pin]}\""
-            print(f"[Pinyin Del] Protect Fail {str_dict}")
-            return f"无法删除 (受保护): {str_dict}"
-        else:
-            print(f"[Pinyin Del] Fail \"{pin}\"")
-            return f"没有找到拼音 \"{pin}\"，无法删除"
-        # unreachable
-        # return "del_pinyin_mapping unreachable"
+        pin = ','.join(pinyin_list)
+        if pin in self.merge_pinyin_dict:
+            pin_info = self.merge_pinyin_dict[pin].pop(0)
+            hz = pin_info[0]
+            if not self.merge_pinyin_dict[pin]:
+                del self.merge_pinyin_dict[pin]
+            self.save_xd_data()
+            str_dict = f"\"{pin}\": \"{hz}\""
+            if pin in dag_params.phrase_dict:
+                dag_pin_info = dag_params.phrase_dict[pin][0]
+                if hz == dag_pin_info[0]:
+                    # 删除无问题 这里不能使用删 dag_pin_info
+                    del dag_params.phrase_dict[pin][0]
+                else:
+                    # 有问题，在自定义表却不在dag表
+                    print(f"[Pinyin Del] \033[33mWarning NOT in dag_params {str_dict} {pin_info[1]}\033[0m")
+                print(f"[Pinyin Del] Success {str_dict} {pin_info[1]}")
+                return f"已删除: {str_dict}"
+        print(f"[Pinyin Del] Fail \"{pin_space}\"")
+        return f"没有找到拼音 \"{pin_space}\"，无法删除"
 
-    def is_pinyin_syllable(self, word):
-        return word.lower() in self.pinyin_syllables
+    def preprocess_custom_words(self, text, fail_count_dict):
+        """
+        第一步，替换custom词典
+        """
+        pattern = re.compile(r'\b(' + '|'.join(map(re.escape, self.custom_pinyin_dict)) + r')\b', flags=re.IGNORECASE)
+
+        def replacement(match):
+            pinyin = match.group()
+            pinyin_lower = pinyin.lower()
+            if pinyin_lower in self.custom_pinyin_dict:
+                values = self.custom_pinyin_dict[pinyin_lower]
+                # fail_count_dict["count"] -= len(pinyin_lower.split())
+                fail_count_dict["count"] -= 2
+                return values
+            return pinyin
+
+        return pattern.sub(replacement, text)
 
     def split_text_by_pinyin_group(self, text):
         """
-        第一步，将文本按拼音组切分，True是拼音组，False是原文
+        第二步，将文本按拼音组切分，True是拼音组，False是原文
         """
         tokens = re.findall(r'[A-Za-z]+|\s+|[^A-Za-z\s]+', text)
         res = []
         i = 0
         n = len(tokens)
         while i < n:
-            if tokens[i].isalpha() and self.is_pinyin_syllable(tokens[i]):
+            if tokens[i].isalpha() and is_pinyin_syllable(tokens[i]):
                 py_group = [tokens[i].lower()]
                 i += 1
-                while i + 1 < n and tokens[i].isspace() and tokens[i + 1].isalpha() and self.is_pinyin_syllable(
+                while i + 1 < n and tokens[i].isspace() and tokens[i + 1].isalpha() and is_pinyin_syllable(
                         tokens[i + 1]):
                     py_group.append(tokens[i + 1].lower())
                     i += 2
@@ -307,12 +392,12 @@ class PinyinChineseConverter:
             else:
                 buf = tokens[i]
                 i += 1
-                while i < n and not (tokens[i].isalpha() and self.is_pinyin_syllable(tokens[i])):
+                while i < n and not (tokens[i].isalpha() and is_pinyin_syllable(tokens[i])):
                     buf += tokens[i]
                     i += 1
                 if res and res[-1][0] and buf and buf[0].isspace():
                     buf = buf[1:]
-                if i < n and tokens[i].isalpha() and self.is_pinyin_syllable(tokens[i]) and buf and buf[-1].isspace():
+                if i < n and tokens[i].isalpha() and is_pinyin_syllable(tokens[i]) and buf and buf[-1].isspace():
                     buf = buf[:-1]
                 if buf:
                     res.append([False, buf])
@@ -320,14 +405,14 @@ class PinyinChineseConverter:
 
     def pinyin_group_to_chinese_candidates(self, pinyin_list, topk, result, fail_count_dict):
         """
-        第二步，拼音组转成中文（递归、最大匹配）
+        第三步，拼音组转成中文（递归、最大匹配）
         """
         if len(pinyin_list) == 0:
             return
         for L in range(len(pinyin_list), 0, -1):
             prefix = pinyin_list[:L]
             lowercase_prefix = [word.lower() for word in prefix]
-            dag_results = dag(self.dag_params, lowercase_prefix, path_num=topk)
+            dag_results = dag(dag_params, lowercase_prefix, path_num=topk)
             print(f"[Pinyin] Loop {lowercase_prefix}")
             if dag_results:
                 cand = dag_results[0].path
@@ -341,79 +426,19 @@ class PinyinChineseConverter:
         result.append([pinyin_list[0]])
         self.pinyin_group_to_chinese_candidates(pinyin_list[1:], topk, result, fail_count_dict)
 
-    # intentionally not static
-    def tokenize_with_pinyin_and_span(self, text):
-        """
-        第三步，转文字后进行转拼音为自定义词典做准备
-        """
-        tokens = []
-        spans = []
-        n = len(text)
-        i = 0
-        while i < n:
-            c = text[i]
-            if '\u4e00' <= c <= '\u9fff':
-                py = lazy_pinyin(c)[0]
-                tokens.append(py)
-                spans.append((i, i + 1))
-                i += 1
-            else:
-                j = i
-                while j < n and not ('\u4e00' <= text[j] <= '\u9fff'):
-                    j += 1
-                tokens.append(text[i:j])
-                spans.append((i, j))
-                i = j
-        print(f"[Pinyin] Custom {tokens}")
-        return tokens, spans
-
-    def custom_dict_replace(self, text, fail_count_dict):
-        """
-        第四步，在拼音串查找并替换自定义拼音短语
-        """
-        tokens, spans = self.tokenize_with_pinyin_and_span(text)
-        n = len(tokens)
-        out = []
-        i = 0
-        max_len = max(len(k) for k in self.custom_dict)
-        while i < n:
-            hit = False
-            for L in range(min(max_len, n - i), 0, -1):
-                phrase = ' '.join(tokens[i:i + L])
-                if phrase in self.custom_dict:
-                    value = self.custom_dict[phrase]
-                    if isinstance(value, tuple):
-                        rep = value[0]
-                        minus = value[1]
-                        # minus = value[1] if len(value) > 1 else None
-                    else:
-                        rep = value
-                        minus = None
-                    out.append(rep)
-                    if minus:
-                        fail_count_dict["count"] -= minus
-                    i += L
-                    hit = True
-                    break
-            if not hit:
-                s, e = spans[i]
-                out.append(text[s:e])
-                i += 1
-        return ''.join(out)
-
     def pinyin_groups_to_chinese(self, text, is_strict_mode, topk=1):
         """
         主流程：拼音组转最终中文
         """
-
         final_result = []
         fail_count_dict = {"count": 0}
         pinyin_len = 0
+        text = self.preprocess_custom_words(text, fail_count_dict)
         pinyin_groups = self.split_text_by_pinyin_group(text)
         for is_pinyin_group, content in pinyin_groups:
             if is_pinyin_group:  # 转拼音
                 result = []
-                content = [self.uv_pinyin_list.get(p, p) for p in content]
+                content = [uv_pinyin_list.get(p, p) for p in content]
                 self.pinyin_group_to_chinese_candidates(content, topk, result, fail_count_dict)
                 for chinese_part in result:
                     final_result.append(''.join(chinese_part))
@@ -424,25 +449,26 @@ class PinyinChineseConverter:
                 final_result.append(content)
 
         final_result_str = ''.join(final_result)
-        process_result = self.custom_dict_replace(final_result_str, fail_count_dict)
+        # process_result = self.custom_dict_replace(final_result_str, fail_count_dict)
         # 最后屏蔽词过滤
-        process_white_result = simple_replace(process_result, self.block_words)
+        process_result = simple_replace(final_result_str, self.block_words)
         fail_count = fail_count_dict["count"]
         print(f"[Pinyin] Count Fail/All: {fail_count}/{pinyin_len}")
         if is_strict_mode:
             if fail_count >= pinyin_len / 2.0:
                 print(f"[Pinyin] Failed to Convert: {text}")
                 return ""
-        return process_white_result
-
+        return process_result
 
 # deepseek
 def deepseek(name, message, is_success):
-    global AI_limit, chat_history
-    if AI_limit:
-        auth = "Bearer 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"
+    global ai_limit, chat_history
+    if ai_limit:
+        auth = ai_smurf_account
     else:
-        auth = "Bearer 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"
+        auth = ai_main_account
+    if not auth:
+        return ["AI响应发生错误: 未配置账号..."]
     if save_history:
         if is_success:
             chat_history.append({"role": "user", "content": f"name: {name}, content: {message}"})
@@ -501,9 +527,9 @@ def deepseek(name, message, is_success):
         content = data.choices[0].message.content
     except KeyError:
         print("AI响应发生错误: 'data' 结构中缺少所需的键！")
-        if AI_limit:
+        if ai_limit:
             return ["AI响应发生错误: 到达每日限额...TvT"]
-        AI_limit = True
+        ai_limit = True
         print(f"\n\n\n\n\n\n\n\n\n\nReach First API Limit 第一个号超出限额\n\n")
         max_retries = 3
         retries = 0
@@ -771,8 +797,8 @@ def filter_name_mod(servers, message):
             # 生成高亮的name（不会用正则，每次尽量长关键词优先匹配）
             highlight = []
             i = 0
-            N = len(name)
-            while i < N:
+            n = len(name)
+            while i < n:
                 match = None
                 for kw in keywords:
                     lkw = len(kw)
@@ -817,9 +843,12 @@ os.makedirs(log_dir, exist_ok=True)
 # 日志文件完整路径
 log_file_path = os.path.join(log_dir, log_filename)
 
-json_file_path = r'D:\SystemApps\Steam\steamapps\common\Titanfall2\R2Northstar\save_data\Northstar.Client\XD.json'
-result_file_path = r'D:\SystemApps\Steam\steamapps\common\Titanfall2\R2Northstar\save_data\Northstar.Client\py_XD.json'
-state_file_path = r'D:\SystemApps\Steam\steamapps\common\Titanfall2\R2Northstar\save_data\Northstar.Client\state.txt'
+ttf_data_path = r'D:\SystemApps\Steam\steamapps\common\Titanfall2\R2Northstar\save_data\Northstar.Client'
+json_file_path = os.path.join(ttf_data_path, 'XD.json')
+result_file_path = os.path.join(ttf_data_path, 'py_XD.json')
+state_file_path = os.path.join(ttf_data_path, 'state.txt')
+private_file_path = os.path.join(ttf_data_path, 'private_data.json')
+
 watch_dir = os.path.dirname(json_file_path)
 target_file = os.path.basename(json_file_path)
 last_get_server_time = 0
@@ -829,7 +858,7 @@ thread_count = 0
 chat_history = []
 thread_index = 0
 
-# 彩色列表
+# init 报时 彩色列表
 COLORS = [
     "\033[38;2;254;208;175m",
     "\033[38;2;135;206;235m",
@@ -853,122 +882,86 @@ EMOJI_LIST = [
     "～(つˆДˆ)つ", "(｀・ω・´)", "(ﾉ≧∀≦)ﾉ",
     "_(:з」∠)_", "(=・ω・=)", "_(≧v≦」∠)_", "(〜￣△￣)〜", "╮(￣▽￣)╭", "(・ω< )☆", "(^・ω・^)", "(｡･ω･｡)"
 ]
-
-
 # NIGHT_EMOJI = "(。-ω-)zzz"
+
 # 转拼音 初始化模型参数
+pinyin_syllables = {'a', 'ai', 'an', 'ang', 'ao', 'ba', 'bai', 'ban', 'bang', 'bao', 'bei', 'ben', 'beng', 'bi',
+                    'bian', 'biao', 'bie', 'bin', 'bing', 'bo', 'bu', 'ca', 'cai', 'can', 'cang', 'cao', 'ce',
+                    'cen', 'ceng', 'cha', 'chai', 'chan', 'chang', 'chao', 'che', 'chen', 'cheng', 'chi', 'chong',
+                    'chou', 'chu', 'chuai', 'chuan', 'chuang', 'chui', 'chun', 'chuo', 'ci', 'cong', 'cou', 'cu',
+                    'cuan', 'cui', 'cun', 'cuo', 'da', 'dai', 'dan', 'dang', 'dao', 'de', 'deng', 'di', 'dian',
+                    'diao', 'die', 'ding', 'diu', 'dong', 'dou', 'du', 'duan', 'dui', 'dun', 'duo', 'e', 'en', 'er',
+                    'fa', 'fan', 'fang', 'fei', 'fen', 'feng', 'fo', 'fou', 'fu', 'ga', 'gai', 'gan', 'gang', 'gao',
+                    'ge', 'gei', 'gen', 'geng', 'gong', 'gou', 'gu', 'gua', 'guai', 'guan', 'guang', 'gui', 'gun',
+                    'guo', 'ha', 'hai', 'han', 'hang', 'hao', 'he', 'hei', 'hen', 'heng', 'hong', 'hou', 'hu',
+                    'hua', 'huai', 'huan', 'huang', 'hui', 'hun', 'huo', 'ji', 'jia', 'jian', 'jiang', 'jiao',
+                    'jie', 'jin', 'jing', 'jiong', 'jiu', 'ju', 'juan', 'jue', 'jun', 'ka', 'kai', 'kan', 'kang',
+                    'kao', 'ke', 'ken', 'keng', 'kong', 'kou', 'ku', 'kua', 'kuai', 'kuan', 'kuang', 'kui', 'kun',
+                    'kuo', 'la', 'lai', 'lan', 'lang', 'lao', 'le', 'lei', 'leng', 'li', 'lia', 'lian', 'liang',
+                    'liao', 'lie', 'lin', 'ling', 'liu', 'long', 'lou', 'lu', 'luan', 'lue', 'lun', 'luo', 'lv', 'ma',
+                    'mai', 'man', 'mang', 'mao', 'me', 'mei', 'men', 'meng', 'mi', 'mian', 'miao', 'mie', 'min',
+                    'ming', 'miu', 'mo', 'mou', 'mu', 'na', 'nai', 'nan', 'nang', 'nao', 'ne', 'nei', 'nen', 'neng',
+                    'ni', 'nian', 'niang', 'niao', 'nie', 'nin', 'ning', 'niu', 'nong', 'nou', 'nu', 'nuan', 'nue',
+                    'nun', 'nuo', 'o', 'ou', 'pa', 'pai', 'pan', 'pang', 'pao', 'pei', 'pen', 'peng', 'pi', 'pian',
+                    'piao', 'pie', 'pin', 'ping', 'po', 'pou', 'pu', 'qi', 'qia', 'qian', 'qiang', 'qiao', 'qie',
+                    'qin', 'qing', 'qiong', 'qiu', 'qu', 'quan', 'que', 'qun', 'ran', 'rang', 'rao', 're', 'ren',
+                    'reng', 'ri', 'rong', 'rou', 'ru', 'ruan', 'rui', 'run', 'ruo', 'sa', 'sai', 'san', 'sang',
+                    'sao', 'se', 'sen', 'seng', 'sha', 'shai', 'shan', 'shang', 'shao', 'she', 'shen', 'sheng',
+                    'shi', 'shou', 'shu', 'shua', 'shuai', 'shuan', 'shuang', 'shui', 'shun', 'shuo', 'si', 'song',
+                    'sou', 'su', 'suan', 'sui', 'sun', 'suo', 'ta', 'tai', 'tan', 'tang', 'tao', 'te', 'teng', 'ti',
+                    'tian', 'tiao', 'tie', 'ting', 'tong', 'tou', 'tu', 'tuan', 'tui', 'tun', 'tuo', 'wa', 'wai',
+                    'wan', 'wang', 'wei', 'wen', 'weng', 'wo', 'wu', 'xi', 'xia', 'xian', 'xiang', 'xiao', 'xie',
+                    'xin', 'xing', 'xiong', 'xiu', 'xu', 'xuan', 'xue', 'xun', 'ya', 'yan', 'yang', 'yao', 'ye',
+                    'yi', 'yin', 'ying', 'yo', 'yong', 'you', 'yu', 'yuan', 'yue', 'yun', 'za', 'zai', 'zan',
+                    'zang', 'zao', 'ze', 'zei', 'zen', 'zeng', 'zha', 'zhai', 'zhan', 'zhang', 'zhao', 'zhe',
+                    'zhen', 'zheng', 'zhi', 'zhong', 'zhou', 'zhu', 'zhua', 'zhuai', 'zhuan', 'zhuang', 'zhui',
+                    'zhun', 'zhuo', 'zi', 'zong', 'zou', 'zu', 'zuan', 'zui', 'zun', 'zuo',
+                    'jve', 'lve', 'nve', 'qve', 'xve', 'yve'}
+
+uv_pinyin_list = {
+    'jue': 'jve', 'lue': 'lve', 'nue': 'nve', 'que': 'qve', 'xue': 'xve', 'yue': 'yve'
+}
+
+class CustomDagParams(DefaultDagParams):
+    def readjson(self, filename):
+        with open(filename, encoding='utf-8') as f:
+            return json.load(f)
+
+dag_params = CustomDagParams()
 def pinyin2hanzi_init():
-    custom_dict = {
-        "meng xin lei mu": "萌新泪目",
-        "meng xin qiu dai": "萌新求带",
-
-        "zhong li xing": "重力星",
-        "fei huo xing": "飞火星",
-        "dian zi yan": "电子烟",
-        "mai chong dao": "脉冲刀",
-        "zhuan huan zhe": "转换者",
-        "ke lai bo": "克莱博",
-        "yang lao fu": "养老服",
-        "meng xin fu": "萌新服",
-
-        "da fei jiao": "大飞脚",
-        "huan dan ai": "换弹癌",
-        "wo lei ge": "我嘞个",
-        "zhuan pin yin": "转拼音",
-        "zhuan wen zi": "转文字",
-        "yue lai yue": "越来越",
-        "zhun que lv": "准确率",
-
-        "zhong li": "重力",
-        "nie lei": "捏雷",
-        "dian yan": "电烟",
-        "di lei": "地雷",
-        "ji su": "激素",
-        "xiang wei": "相位",
-        "yin shen": "隐身",
-        "gou zhua": "钩爪",
-        "han luo": "汗洛",
-        "dian chong": "电冲",
-        "dian bi": "电笔",
-        "zi beng": "滋嘣",
-        "a dun": "A盾",
-        "adun": ("A盾", 2),
-        "c dun": ("C盾", 1),
-        "cdun": ("C盾", 2),
-        "zha nan": "扎男",
-        "li zi": "离子",
-        "lang ren": "浪人",
-        "lang meng": "狼萌",
-        "meng xin": "萌新",
-        "huai xiao": "坏小",
-
-        "an dao": "按到",
-        "ji ba": "几把",
-        "hao ma": "好马",
-        "huan dan": "换弹",
-        "liu le": "溜了",
-        "ma qiang": "马枪",
-        "ma wan": "马完",
-        "quan shi": "全是",
-        "shou lei": "手雷",
-        "tun zi dan": "吞子弹",
-        "ye ma": "也马",
-        "you kai": "又开",
-        "you lai": "又来"
-
-    }
-
-    pinyin_syllables = {'a', 'ai', 'an', 'ang', 'ao', 'ba', 'bai', 'ban', 'bang', 'bao', 'bei', 'ben', 'beng', 'bi',
-                        'bian', 'biao', 'bie', 'bin', 'bing', 'bo', 'bu', 'ca', 'cai', 'can', 'cang', 'cao', 'ce',
-                        'cen', 'ceng', 'cha', 'chai', 'chan', 'chang', 'chao', 'che', 'chen', 'cheng', 'chi', 'chong',
-                        'chou', 'chu', 'chuai', 'chuan', 'chuang', 'chui', 'chun', 'chuo', 'ci', 'cong', 'cou', 'cu',
-                        'cuan', 'cui', 'cun', 'cuo', 'da', 'dai', 'dan', 'dang', 'dao', 'de', 'deng', 'di', 'dian',
-                        'diao', 'die', 'ding', 'diu', 'dong', 'dou', 'du', 'duan', 'dui', 'dun', 'duo', 'e', 'en', 'er',
-                        'fa', 'fan', 'fang', 'fei', 'fen', 'feng', 'fo', 'fou', 'fu', 'ga', 'gai', 'gan', 'gang', 'gao',
-                        'ge', 'gei', 'gen', 'geng', 'gong', 'gou', 'gu', 'gua', 'guai', 'guan', 'guang', 'gui', 'gun',
-                        'guo', 'ha', 'hai', 'han', 'hang', 'hao', 'he', 'hei', 'hen', 'heng', 'hong', 'hou', 'hu',
-                        'hua', 'huai', 'huan', 'huang', 'hui', 'hun', 'huo', 'ji', 'jia', 'jian', 'jiang', 'jiao',
-                        'jie', 'jin', 'jing', 'jiong', 'jiu', 'ju', 'juan', 'jue', 'jun', 'ka', 'kai', 'kan', 'kang',
-                        'kao', 'ke', 'ken', 'keng', 'kong', 'kou', 'ku', 'kua', 'kuai', 'kuan', 'kuang', 'kui', 'kun',
-                        'kuo', 'la', 'lai', 'lan', 'lang', 'lao', 'le', 'lei', 'leng', 'li', 'lia', 'lian', 'liang',
-                        'liao', 'lie', 'lin', 'ling', 'liu', 'long', 'lou', 'lu', 'luan', 'lue', 'lun', 'luo', 'ma',
-                        'mai', 'man', 'mang', 'mao', 'me', 'mei', 'men', 'meng', 'mi', 'mian', 'miao', 'mie', 'min',
-                        'ming', 'miu', 'mo', 'mou', 'mu', 'na', 'nai', 'nan', 'nang', 'nao', 'ne', 'nei', 'nen', 'neng',
-                        'ni', 'nian', 'niang', 'niao', 'nie', 'nin', 'ning', 'niu', 'nong', 'nou', 'nu', 'nuan', 'nue',
-                        'nun', 'nuo', 'o', 'ou', 'pa', 'pai', 'pan', 'pang', 'pao', 'pei', 'pen', 'peng', 'pi', 'pian',
-                        'piao', 'pie', 'pin', 'ping', 'po', 'pou', 'pu', 'qi', 'qia', 'qian', 'qiang', 'qiao', 'qie',
-                        'qin', 'qing', 'qiong', 'qiu', 'qu', 'quan', 'que', 'qun', 'ran', 'rang', 'rao', 're', 'ren',
-                        'reng', 'ri', 'rong', 'rou', 'ru', 'ruan', 'rui', 'run', 'ruo', 'sa', 'sai', 'san', 'sang',
-                        'sao', 'se', 'sen', 'seng', 'sha', 'shai', 'shan', 'shang', 'shao', 'she', 'shen', 'sheng',
-                        'shi', 'shou', 'shu', 'shua', 'shuai', 'shuan', 'shuang', 'shui', 'shun', 'shuo', 'si', 'song',
-                        'sou', 'su', 'suan', 'sui', 'sun', 'suo', 'ta', 'tai', 'tan', 'tang', 'tao', 'te', 'teng', 'ti',
-                        'tian', 'tiao', 'tie', 'ting', 'tong', 'tou', 'tu', 'tuan', 'tui', 'tun', 'tuo', 'wa', 'wai',
-                        'wan', 'wang', 'wei', 'wen', 'weng', 'wo', 'wu', 'xi', 'xia', 'xian', 'xiang', 'xiao', 'xie',
-                        'xin', 'xing', 'xiong', 'xiu', 'xu', 'xuan', 'xue', 'xun', 'ya', 'yan', 'yang', 'yao', 'ye',
-                        'yi', 'yin', 'ying', 'yo', 'yong', 'you', 'yu', 'yuan', 'yue', 'yun', 'za', 'zai', 'zan',
-                        'zang', 'zao', 'ze', 'zei', 'zen', 'zeng', 'zha', 'zhai', 'zhan', 'zhang', 'zhao', 'zhe',
-                        'zhen', 'zheng', 'zhi', 'zhong', 'zhou', 'zhu', 'zhua', 'zhuai', 'zhuan', 'zhuang', 'zhui',
-                        'zhun', 'zhuo', 'zi', 'zong', 'zou', 'zu', 'zuan', 'zui', 'zun', 'zuo',
-                        'jve', 'lve', 'nve', 'qve', 'xve', 'yve'}
-
-    uv_pinyin_list = {
-        'jue': 'jve', 'lue': 'lve', 'nue': 'nve', 'que': 'qve', 'xue': 'xve', 'yue': 'yve'
-    }
-
     block_words = {
         "傻逼": "傻B",
         "操": "草",
         "妈": "马",
-
         "码": "吗"
     }
-    dag_params = DefaultDagParams()
-    temp_pinyin_dict_path = 'temp/temp_dict.json'
-    return PinyinChineseConverter(pinyin_syllables, uv_pinyin_list, dag_params, custom_dict, block_words,
-                                  temp_pinyin_dict_path)
 
+    '''
+    [Pinyin Init] Warning higher weight "quan,shi": "全市" 0.22156168278920124 > 0.21
+    [Pinyin Init] Warning higher weight "hao,ma": "号码" 0.24482260114384166 > 0.21
+    [Pinyin Init] Warning higher weight "li,zi": "例子" 0.21393632473420088 > 0.21
+    '''
+    pinyin_data_path = 'data/xd_data.json'
+    return PinyinChineseConverter(block_words, pinyin_data_path)
 
 pinyin2hanzi_converter = pinyin2hanzi_init()
+
+# AI
+try:
+    with open(private_file_path, 'r', encoding='utf-8') as f_private_data:
+        private_data = json.load(f_private_data)
+    ai_account = private_data.get("ai_auth", {})
+    ai_main_account = ai_account.get("main_account", "")
+    ai_smurf_account = ai_account.get("smurf_account", "")
+except FileNotFoundError:
+    print(f"[XDlog Init] \033[33mWarning AI account data NOT found\033[0m")
+    ai_main_account = ""
+    ai_smurf_account = ""
+except Exception as e_private_data:
+    print(f"[XDlog Init] \033[31mError Failed to load private_data: {e_private_data}\033[0m")
+    ai_main_account = ""
+    ai_smurf_account = ""
+
 # Emoji 映射表
 emoji_map = {
     ":slightly_smiling_face:": ":smiling_face_ovo:)",
@@ -994,7 +987,6 @@ trans_to_gamemode = {
     "边境防御疯狂": ["fd_insane"],
     "边境防御大师": ["fd_master"]
 }
-
 
 if __name__ == "__main__":
     # 检测文件
