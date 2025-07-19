@@ -1,4 +1,3 @@
-
 import os
 # cmd颜色显示刷新 Windows：cls Linux/Unix/macOS终端的清屏命令是：clear
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -101,7 +100,8 @@ def process_entry(timestamp, player_name, command, message, say):
             f.write("0")
     processing_set.remove((timestamp, player_name))
     end_strftime = time.strftime("%H:%M:%S")
-    print(f"[XDlog] {end_strftime} Finish {command} | {player_name} : {message} | Result: {py_message} | Used: {process_time}\n")
+    print(
+        f"[XDlog] {end_strftime} Finish {command} | {player_name} : {message} | Result: {py_message} | Used: {process_time}\n")
 
     if py_message == "" and is_func:
         print(f"[XDlog] \033[31mError {command} returned EMPTY \n\033[0m")
@@ -158,8 +158,10 @@ def monitor_file():
                         json.dump({}, f, ensure_ascii=False)
                     print(f"[XDlog] \033[33mWarning result JSON NOT found, created\033[0m")
                 except Exception as e:
-                    print(f"[XDlog] {time.strftime('%H:%M:%S')} \033[31mError Failed to read JSON {os.path.basename(json_file_path)}: {e}\033[0m")
+                    print(
+                        f"[XDlog] {time.strftime('%H:%M:%S')} \033[31mError Failed to read JSON {os.path.basename(json_file_path)}: {e}\033[0m")
                     save_temp_data("load_message_error", data)
+
 
 def save_temp_data(name, data):
     timestamp = datetime.now().strftime("%Y%m%d_%H-%M-%S")
@@ -167,6 +169,7 @@ def save_temp_data(name, data):
     # os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "a", encoding="utf-8") as f:
         f.write(data)
+
 
 def next_half_or_full_hour_final():
     now = datetime.now()
@@ -210,17 +213,17 @@ class PinyinChineseConverter:
         self.merge_pinyin_dict = {}
         self.custom_pinyin_dict = {}
         self.weight = 0.21
-        self.load_custom_pinyin_dict()
-        self.xd_data_backup()
+        self.load_pinyin_custom_dict()
+        self.pinyin_custom_data_backup()
 
-    def xd_data_backup(self):
+    def pinyin_custom_data_backup(self):
         timestamp = datetime.now().strftime("%Y%m%d_%H-%M-%S")
-        output_file = f"temp/{timestamp}_xd_data.json"
+        output_file = f"temp/{timestamp}_pinyin_custom_data.json"
         with open(output_file, 'w', encoding='utf-8') as f:
             # noinspection PyTypeChecker
             json.dump(self.data, f, ensure_ascii=False, indent=4)
 
-    def load_custom_pinyin_dict(self):
+    def load_pinyin_custom_dict(self):
         if os.path.exists(self.pinyin_data_path):
             try:
                 with open(self.pinyin_data_path, 'r', encoding='utf-8') as f:
@@ -233,9 +236,9 @@ class PinyinChineseConverter:
                         for key, merge_list in self.merge_pinyin_dict.items():
                             if key in dag_params.phrase_dict:
                                 weight = merge_list[0][1]
-                                dag_weight = dag_params.phrase_dict[key][0][1]
-                                if dag_weight > weight:
-                                    print(f"[Pinyin Init] \033[33mWarning higher weight \"{key}\": \"{dag_params.phrase_dict[key][0][0]}\" {dag_weight} > {weight}\033[0m")
+                                dag_info = dag_params.phrase_dict[key][0]
+                                if dag_info[1] > weight:
+                                    print(f"[Pinyin Init] \033[33mWarning higher weight \"{key}\": \"{dag_info[0]}\" {dag_info[1]} > {weight}\033[0m")
                                 dag_params.phrase_dict[key] = merge_list + dag_params.phrase_dict[key]
 
                             else:
@@ -268,7 +271,7 @@ class PinyinChineseConverter:
         # 查找第一个汉字
         for idx, c in enumerate(s):
             is_h_cmd = False
-            if c == "-" and s[idx+1] == "h":
+            if c == "-" and s[idx + 1] == "h":
                 is_h_cmd = True
             if is_chinese(c) or is_h_cmd:
                 pinyin_raw = s[:idx].rstrip()
@@ -287,7 +290,8 @@ class PinyinChineseConverter:
                     str_dict = f"\"{pin_space}\": \"{self.custom_pinyin_dict[pin_space]}\""
                     print(f"[Pinyin Add] Conflict {str_dict}")
                     return f"已有: {str_dict}"
-                if pinyin_list_len != 1 and len(hz) == pinyin_list_len and all(pinyin in pinyin_syllables for pinyin in pinyin_list) and all(is_chinese(char) for char in hz):
+                if pinyin_list_len != 1 and len(hz) == pinyin_list_len and all(
+                        pinyin in pinyin_syllables for pinyin in pinyin_list) and all(is_chinese(char) for char in hz):
                     self.weight = 0.21
                     # merge到dag表，有权重冲突也放进去，init时提醒
                     str_dict = f"\"{pin}\": \"{hz}\""
@@ -300,7 +304,8 @@ class PinyinChineseConverter:
                         else:
                             # 不在dag表第一个，如果这个词权重高于0.21应当在init中提醒
                             if dag_params.phrase_dict[pin][0][1] > self.weight:
-                                print(f"[Pinyin Add] \033[33mWarning merge higher weight {str_dict} {dag_params.phrase_dict[pin][0][1]} > {self.weight}\033[0m")
+                                print(
+                                    f"[Pinyin Add] \033[33mWarning merge higher weight {str_dict} {dag_params.phrase_dict[pin][0][1]} > {self.weight}\033[0m")
                             dag_params.phrase_dict[pin] = [[hz, self.weight]] + dag_params.phrase_dict[pin]
                             print(f"[Pinyin Add] Success merge add {str_dict} {self.weight}")
                     else:
@@ -351,7 +356,8 @@ class PinyinChineseConverter:
                         # 删除无问题 这里不能使用删 dag_pin_info
                         del dag_params.phrase_dict[pin][0]
                         if len(dag_params.phrase_dict[pin]) >= 1:
-                            print(f"[Pinyin Del] Success merge {str_dict} {pin_info[1]} | Next \"{dag_params.phrase_dict[pin][0][0]}\"")
+                            print(
+                                f"[Pinyin Del] Success merge {str_dict} {pin_info[1]} | Next \"{dag_params.phrase_dict[pin][0][0]}\"")
                             return return_str
                         else:
                             # 如果真的只有一个元素按理不会走到这，应该是下面的Become EMPTY，除非init时没有绑定
@@ -360,7 +366,8 @@ class PinyinChineseConverter:
                             return return_str
                     else:
                         # 有问题，在自定义表却不在dag表
-                        print(f"[Pinyin Del] \033[33mWarning merge hanzi NOT found in dag_params {str_dict} {pin_info[1]}\033[0m")
+                        print(
+                            f"[Pinyin Del] \033[33mWarning merge hanzi NOT found in dag_params {str_dict} {pin_info[1]}\033[0m")
                         print(f"[Pinyin Del] Success merge {str_dict} {pin_info[1]}")
                         return return_str
                 else:
@@ -481,6 +488,7 @@ class PinyinChineseConverter:
                 print(f"[Pinyin] Failed to Convert: {text}")
                 return ""
         return process_result
+
 
 # deepseek
 def deepseek(name, message, is_success):
@@ -835,6 +843,7 @@ def filter_name_mod(servers, message):
             })
     return filtered_data
 
+
 log_filename = datetime.now().strftime("%Y-%m-%d") + ".txt"
 # 指定日志目录
 log_dir = os.path.join(os.path.dirname(__file__), "XDlogs")
@@ -844,6 +853,8 @@ os.makedirs(log_dir, exist_ok=True)
 log_file_path = os.path.join(log_dir, log_filename)
 
 _print = print
+
+
 # 自定义print，同时写入日志文件
 def print(*args, **kwargs):
     message = " ".join(map(str, args))
@@ -851,6 +862,7 @@ def print(*args, **kwargs):
         log_file.write(message + "\n")
     _print(*args, **kwargs)
     return print
+
 
 ttf_data_path = r'D:\SystemApps\Steam\steamapps\common\Titanfall2\R2Northstar\save_data\Northstar.Client'
 json_file_path = os.path.join(ttf_data_path, 'XD.json')
@@ -928,17 +940,27 @@ uv_pinyin_list = {
     'jue': 'jve', 'lue': 'lve', 'nue': 'nve', 'que': 'qve', 'xue': 'xve', 'yue': 'yve'
 }
 
+
 class CustomDagParams(DefaultDagParams):
+    def __init__(self):
+        self.char_dict = self.readjson("data\\dag\\dag_char_ttf.json")
+        self.phrase_dict = self.readjson("data\\dag\\dag_phrase_ttf.json")
+
     def readjson(self, filename):
         with open(filename, encoding='utf-8') as f:
             return json.load(f)
 
+
 dag_params = CustomDagParams()
+
+
 def pinyin2hanzi_init():
     block_words = {
         "傻逼": "傻B",
         "操": "草",
         "妈": "马",
+
+        "阿盾": "A盾",
         "码": "吗"
     }
 
@@ -947,8 +969,9 @@ def pinyin2hanzi_init():
     [Pinyin Init] Warning higher weight "hao,ma": "号码" 0.24482260114384166 > 0.21
     [Pinyin Init] Warning higher weight "li,zi": "例子" 0.21393632473420088 > 0.21
     '''
-    pinyin_data_path = 'data/xd_data.json'
+    pinyin_data_path = 'data/pinyin_custom_data.json'
     return PinyinChineseConverter(block_words, pinyin_data_path)
+
 
 pinyin2hanzi_converter = pinyin2hanzi_init()
 

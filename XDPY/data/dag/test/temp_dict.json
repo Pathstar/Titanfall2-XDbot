@@ -1,0 +1,69 @@
+{
+    "merge_pinyin_dict": {
+        "meng xin lei mu": "萌新泪目",
+        "meng xin qiu dai": "萌新求带",
+
+        "zhong li xing": "重力星",
+        "fei huo xing": "飞火星",
+        "dian zi yan": "电子烟",
+        "mai chong dao": "脉冲刀",
+        "zhuan huan zhe": "转换者",
+        "ke lai bo": "克莱博",
+        "yang lao fu": "养老服",
+        "meng xin fu": "萌新服",
+
+        "da fei jiao": "大飞脚",
+        "huan dan ai": "换弹癌",
+        "wo lei ge": "我嘞个",
+        "zhuan pin yin": "转拼音",
+        "zhuan wen zi": "转文字",
+        "yue lai yue": "越来越",
+        "zhun que lv": "准确率",
+
+        "zhong li": "重力",
+        "nie lei": "捏雷",
+        "dian yan": "电烟",
+        "di lei": "地雷",
+        "ji su": "激素",
+        "xiang wei": "相位",
+        "yin shen": "隐身",
+        "gou zhua": "钩爪",
+        "han luo": "汗洛",
+        "dian chong": "电冲",
+        "dian bi": "电笔",
+        "zi beng": "滋嘣",
+        "zha nan": "扎男",
+        "li zi": "离子",
+        "lang ren": "浪人",
+        "lang meng": "狼萌",
+        "meng xin": "萌新",
+        "huai xiao": "坏小",
+
+        "an dao": "按到",
+        "ji ba": "几把",
+        "hao ma": "好马",
+        "huan dan": "换弹",
+        "liu le": "溜了",
+        "ma qiang": "马枪",
+        "ma wan": "马完",
+        "quan shi": "全是",
+        "shou lei": "手雷",
+        "tun zi dan": "吞子弹",
+        "ye ma": "也马",
+        "you kai": "又开",
+        "you lai": "又来",
+        "zhen de": "真的",
+        "jia de": "假的",
+        "ti yu sheng": "体育生",
+        "xia ku le": "吓哭了",
+        "qun xian bi zhi": "群贤毕至",
+        "zha zhu": "炸猪",
+        "li da gong": "立大功"
+    },
+    "custom_pinyin_dict": {
+
+    },
+    "temp_pinyin_dict": {
+        "a dun": "A盾"
+    }
+}
