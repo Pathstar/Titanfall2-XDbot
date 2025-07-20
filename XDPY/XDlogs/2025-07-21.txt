@@ -1,0 +1,57 @@
+[XDlog] 00:24:54 Monitoring Squirrel Messages...
+[XDlog] 00:25:16 Begin g_pinyin | Pathstar_XD : 改好了 dei dei dei
+[Pinyin] Loop ['dei', 'dei', 'dei']
+[Pinyin] Success ['得', '得', '得']
+[Pinyin] Count Fail/All: 1/4
+[XDlog] 00:25:16 Finish pinyin | Pathstar_XD : 改好了 dei dei dei | Result: 改好了得得得 | Used: 0.001741647720336914
+
+[XDlog] 00:26:22 Begin pinyin_add | Pathstar_XD : kong su 空速
+[Pinyin Add] Success merge add "kong,su": "空速" 0.21
+[XDlog] 00:26:22 Finish pinyin_add | Pathstar_XD : kong su 空速 | Result: 添加成功: "kong,su": "空速" | Used: 0.0022068023681640625
+
+[XDlog] 00:26:45 Begin pinyin_add | Pathstar_XD : da bu zhong 打不中
+[Pinyin Add] Success merge new "da,bu,zhong": "打不中"
+[XDlog] 00:26:45 Finish pinyin_add | Pathstar_XD : da bu zhong 打不中 | Result: 添加成功: "da,bu,zhong": "打不中" | Used: 0.0017402172088623047
+
+[XDlog] 00:31:03 Begin init |  : 
+[XDlog] 00:31:03 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (。-ω-)zzz', 1736] | Used: 0.00035572052001953125
+
+[XDlog] 00:31:17 Begin g_pinyin | [ADV] kliiddddi : wo bu hui
+[Pinyin] Loop ['wo', 'bu', 'hui']
+[Pinyin] Success ['我不会']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 00:31:17 Finish pinyin | [ADV] kliiddddi : wo bu hui | Result: 我不会 | Used: 0.0021910667419433594
+
+[XDlog] 00:32:28 Begin g_pinyin | [ADV] kliiddddi : ke yi jiao wo wu pian cha er duan tiao ma
+[Pinyin] Loop ['ke', 'yi', 'jiao', 'wo', 'wu', 'pian', 'cha', 'er', 'duan', 'tiao', 'ma']
+[Pinyin] Success ['可以', '叫我', '务', '偏差', '二段', '条码']
+[Pinyin] Count Fail/All: 0/11
+[XDlog] 00:32:28 Finish pinyin | [ADV] kliiddddi : ke yi jiao wo wu pian cha er duan tiao ma | Result: 可以叫我务偏差二段条吗 | Used: 0.0013589859008789062
+
+[XDlog] 00:34:16 Begin g_pinyin | [ADV] kliiddddi : hao ba wo tu ran hui l
+[Pinyin] Loop ['hao', 'ba', 'wo', 'tu', 'ran', 'hui']
+[Pinyin] Success ['好吧', '我突然', '会']
+[Pinyin] Count Fail/All: 1/7
+[XDlog] 00:34:16 Finish pinyin | [ADV] kliiddddi : hao ba wo tu ran hui l | Result: 好吧我突然会l | Used: 0.001234292984008789
+
+[XDlog] 00:36:25 Begin g_pinyin | [ADV] kliiddddi : wo tu ran jue xing le hao xiang
+[Pinyin] Loop ['wo', 'tu', 'ran', 'jve', 'xing', 'le', 'hao', 'xiang']
+[Pinyin] Success ['我突然', '觉醒', '了', '好像']
+[Pinyin] Count Fail/All: 0/8
+[XDlog] 00:36:25 Finish pinyin | [ADV] kliiddddi : wo tu ran jue xing le hao xiang | Result: 我突然觉醒了好像 | Used: 0.0011434555053710938
+
+[XDlog] 00:37:02 Begin g_pinyin | [PRTS] warfarin_06 : san ti yun dong
+[Pinyin] Loop ['san', 'ti', 'yun', 'dong']
+[Pinyin] Success ['散体', '运动']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 00:37:02 Finish pinyin | [PRTS] warfarin_06 : san ti yun dong | Result: 散体运动 | Used: 0.001070261001586914
+
+[XDlog] 00:39:18 Begin g_pinyin | Pathstar_XD : wan an
+[Pinyin] Loop ['wan', 'an']
+[Pinyin] Success ['晚安']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 00:39:18 Finish pinyin | Pathstar_XD : wan an | Result: 晚安 | Used: 0.0014286041259765625
+
+[XDlog] 00:41:19 Begin init |  : 
+[XDlog] 00:41:19 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (。-ω-)zzz', 1120] | Used: 0.00047516822814941406
+

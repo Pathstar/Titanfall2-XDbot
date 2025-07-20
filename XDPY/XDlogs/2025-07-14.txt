@@ -776,3 +776,173 @@ zm只有我了(
 [XDlog] 22:46:33 Finish: :  use: 0.0005412101745605469
 ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (｡>﹏<｡)', 806]
 
+[XDlog] 22:52:42 Begin: [BOT] Pathstar_XD: pinyin_add tai tan 泰坦
+[Pinyin Add] Success "tai tan": "泰坦"
+[XDlog] 22:52:42 Finish: [BOT] Pathstar_XD: tai tan 泰坦 use: 0.0011126995086669922
+添加成功: "tai tan": "泰坦"
+
+[XDlog] 23:00:24 Begin: : init 
+[XDlog] 23:00:24 Finish: :  use: 0.0008156299591064453
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;216;191;216m (≧▽≦)/', 1775]
+
+23:03:48 Monitoring Squirrel Messages...
+[XDlog] 23:04:24 Begin {command}: : 
+[XDlog] 23:04:24 Finish init: :  use: 0.0005946159362792969
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;205;214;210m (≧▽≦)/', 1535]
+
+[XDlog] 23:04:30 Begin {command}: : 
+[XDlog] 23:04:30 Finish init: :  use: 0.0005612373352050781
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;221;160;221m _(:з」∠)_', 1529]
+
+[XDlog] 23:08:26 Begin {command}: : 
+[XDlog] 23:08:26 Finish init: :  use: 0.0005483627319335938
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;135;206;235m (・ω< )☆', 1293]
+
+[XDlog] 23:11:04 Begin {command}: Ivutilus: NI HAO KA
+[Pinyin] Loop ['ni', 'hao', 'ka']
+[Pinyin] Success ['你好', '卡']
+[Pinyin] Custom ['ni', 'hao', 'ka']
+[Pinyin] Fail_Count 0/3
+[XDlog] 23:11:04 Finish pinyin: Ivutilus: NI HAO KA use: 0.002463102340698242
+你好卡
+
+[XDlog] 23:15:12 Begin {command}: : 
+[XDlog] 23:15:12 Finish init: :  use: 0.00061798095703125
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;205;214;210m (｡･ω･｡)', 887]
+
+[XDlog] 23:19:14 Begin {command}: [鏡] Quietmirror: hao ka
+[Pinyin] Loop ['hao', 'ka']
+[Pinyin] Success ['好', '卡']
+[Pinyin] Custom ['hao', 'ka']
+[Pinyin] Fail_Count 0/2
+[XDlog] 23:19:14 Finish pinyin: [鏡] Quietmirror: hao ka use: 0.0021414756774902344
+好卡
+
+[XDlog] 23:19:34 Begin {command}: [鏡] Quietmirror: wo chongqi dian nao qu
+[Pinyin] Loop ['wo']
+[Pinyin] Success ['我']
+[Pinyin] Loop ['dian', 'nao', 'qu']
+[Pinyin] Success ['电脑', '去']
+[Pinyin] Custom ['wo', 'chongqi', 'dian', 'nao', 'qu']
+[Pinyin] Fail_Count 1/5
+[XDlog] 23:19:34 Finish pinyin: [鏡] Quietmirror: wo chongqi dian nao qu use: 0.002178192138671875
+我chongqi电脑去
+
+[XDlog] 23:19:56 Begin {command}: silence966: xd 这个功能很好欸
+[Pinyin] Custom ['xd ', 'zhe', 'ge', 'gong', 'neng', 'hen', 'hao', 'ai']
+[Pinyin] Fail_Count 1/1
+[Pinyin] Fail 1/1 xd 这个功能很好欸
+[XDlog] 23:19:56 Finish pinyin: silence966: xd 这个功能很好欸 use: 0.0021123886108398438
+
+
+[XDlog] 23:23:33 Begin {command}: [鏡] Quietmirror: chong qi qu le
+[Pinyin] Loop ['chong', 'qi', 'qu', 'le']
+[Pinyin] Success ['重启', '去了']
+[Pinyin] Custom ['zhong', 'qi', 'qu', 'le']
+[Pinyin] Fail_Count 0/4
+[XDlog] 23:23:33 Finish pinyin: [鏡] Quietmirror: chong qi qu le use: 0.0018131732940673828
+重启去了
+
+[XDlog] 23:23:50 Begin {command}: : 
+[XDlog] 23:23:50 Finish init: :  use: 0.0005939006805419922
+['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;254;208;175m _(≧v≦」∠)_', 369]
+
+[XDlog] 23:31:44 Begin {command}: : 
+[XDlog] 23:31:44 Finish init: :  use: 0.0006949901580810547
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (。-ω-)zzz', 1695]
+
+[XDlog] 23:38:38 Begin {command}: : 
+[XDlog] 23:38:38 Finish init: :  use: 0.0006670951843261719
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (。-ω-)zzz', 1281]
+
+[XDlog] 23:44:41 Begin {command}: silence966: bie lao le
+[Pinyin] Loop ['bie', 'lao', 'le']
+[Pinyin] Success ['别', '老', '了']
+[Pinyin] Custom ['bie', 'lao', 'le']
+[Pinyin] Fail_Count 0/3
+[XDlog] 23:44:41 Finish pinyin: silence966: bie lao le use: 0.0031452178955078125
+别老了
+
+[XDlog] 23:47:04 Begin {command}: : 
+[XDlog] 23:47:04 Finish init: :  use: 0.000579833984375
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (。-ω-)zzz', 775]
+
+[XDlog] 23:57:06 Begin {command}: : 
+[XDlog] 23:57:06 Finish init: :  use: 0.0007486343383789062
+['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (。-ω-)zzz', 173]
+
+[XDlog] 00:03:50 Begin {command}: : 
+[XDlog] 00:03:50 Finish init: :  use: 0.0006630420684814453
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;248;131;121m (。-ω-)zzz', 1569]
+
+[XDlog] 00:04:08 Begin {command}: : 
+[XDlog] 00:04:08 Finish init: :  use: 0.0008528232574462891
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;205;214;210m (。-ω-)zzz', 1551]
+
+[XDlog] 00:04:12 Begin {command}: : 
+[XDlog] 00:04:12 Finish init: :  use: 0.0007483959197998047
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;254;208;175m (。-ω-)zzz', 1547]
+
+[XDlog] 00:04:20 Begin {command}: : 
+[XDlog] 00:04:20 Finish init: :  use: 0.0005905628204345703
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;175;238;238m (。-ω-)zzz', 1539]
+
+[XDlog] 00:04:25 Begin {command}: : 
+[XDlog] 00:04:25 Finish init: :  use: 0.0005533695220947266
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;135;206;235m (。-ω-)zzz', 1534]
+
+[XDlog] 00:04:31 Begin {command}: : 
+[XDlog] 00:04:31 Finish init: :  use: 0.0006959438323974609
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;240;128;128m (。-ω-)zzz', 1528]
+
+[XDlog] 00:04:38 Begin {command}: : 
+[XDlog] 00:04:38 Finish init: :  use: 0.0005371570587158203
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;216;191;216m (。-ω-)zzz', 1521]
+
+[XDlog] 00:11:34 Begin {command}: : 
+[XDlog] 00:11:34 Finish init: :  use: 0.0006997585296630859
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;248;131;121m (。-ω-)zzz', 1105]
+
+[XDlog] 00:12:59 Begin {command}: [燈祥TV] Tze414: nice shot
+[Pinyin] Custom ['nice shot']
+[Pinyin] Fail_Count 1/1
+[Pinyin] Fail 1/1 nice shot
+[XDlog] 00:12:59 Finish pinyin: [燈祥TV] Tze414: nice shot use: 0.0031452178955078125
+
+
+[XDlog] 00:19:42 Begin {command}: silence966: NICE MOVEMENT
+[Pinyin] Custom ['NICE MOVEMENT']
+[Pinyin] Fail_Count 1/1
+[Pinyin] Fail 1/1 NICE MOVEMENT
+[XDlog] 00:19:42 Finish pinyin: silence966: NICE MOVEMENT use: 0.004698753356933594
+
+
+[XDlog] 00:20:53 Begin {command}: : 
+[XDlog] 00:20:53 Finish init: :  use: 0.0008728504180908203
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;248;131;121m (。-ω-)zzz', 546]
+
+[XDlog] 00:23:57 Begin {command}: silence966: yin gai shi
+[Pinyin] Loop ['yin', 'gai', 'shi']
+[Pinyin] Success ['因', '该市']
+[Pinyin] Custom ['yin', 'gai', 'shi']
+[Pinyin] Fail_Count 0/3
+[XDlog] 00:23:57 Finish pinyin: silence966: yin gai shi use: 0.008805990219116211
+因该市
+
+[XDlog] 00:24:03 Begin {command}: [空间系] SpaceSystemX: only you~
+[Pinyin] Loop ['you']
+[Pinyin] Success ['有']
+[Pinyin] Custom ['only', 'you', '~']
+[Pinyin] Fail_Count 2/3
+[Pinyin] Fail 2/3 only you~
+[XDlog] 00:24:03 Finish pinyin: [空间系] SpaceSystemX: only you~ use: 0.004556894302368164
+
+
+[XDlog] 00:29:13 Begin {command}: : 
+[XDlog] 00:29:13 Finish init: :  use: 0.0006492137908935547
+['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;194;245;194m (。-ω-)zzz', 46]
+
+[XDlog] 00:38:51 Begin {command}: : 
+[XDlog] 00:38:51 Finish init: :  use: 0.0006263256072998047
+['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (。-ω-)zzz', 1268]
+
