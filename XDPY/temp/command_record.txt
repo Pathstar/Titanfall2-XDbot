@@ -1,0 +1,3 @@
+添加成功: "da,lao": "大佬"
+pinyin_add Pathstar_XD: kong su 空速 | 添加成功: "kong,su": "空速"
+pinyin_add Pathstar_XD: da bu zhong 打不中 | 添加成功: "da,bu,zhong": "打不中"

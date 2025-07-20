@@ -1,4 +1,5 @@
 import os
+
 # cmd颜色显示刷新 Windows：cls Linux/Unix/macOS终端的清屏命令是：clear
 os.system('cls' if os.name == 'nt' else 'clear')
 from datetime import datetime, timedelta
@@ -17,7 +18,9 @@ import win32con
 
 # pip install emoji Pinyin2Hanzi pywin32 pypinyin requests unidecode
 
+#  向下去偶数
 chat_history_len = 6
+
 save_history = True
 ai_limit = False
 
@@ -60,8 +63,12 @@ def process_entry(timestamp, player_name, command, message, say):
             py_message = get_server(message[0], message[1])
         case "pinyin_add":
             py_message = pinyin2hanzi_converter.add_pinyin_mapping(message)
+            with open("temp\\command_record.txt", "a", encoding="utf-8") as command_record:
+                command_record.write(f"{command} {player_name}: {message} | {py_message}\n")
         case "pinyin_del":
             py_message = pinyin2hanzi_converter.del_pinyin_mapping(message)
+            with open("temp\\command_record.txt", "a", encoding="utf-8") as command_record:
+                command_record.write(f"{command} {player_name}: {message} | {py_message}\n")
         case "pinyin":
             py_message = pinyin2hanzi_converter.pinyin_groups_to_chinese(message, False)
         case _:
@@ -238,7 +245,8 @@ class PinyinChineseConverter:
                                 weight = merge_list[0][1]
                                 dag_info = dag_params.phrase_dict[key][0]
                                 if dag_info[1] > weight:
-                                    print(f"[Pinyin Init] \033[33mWarning higher weight \"{key}\": \"{dag_info[0]}\" {dag_info[1]} > {weight}\033[0m")
+                                    print(
+                                        f"[Pinyin Init] \033[33mWarning higher weight \"{key}\": \"{dag_info[0]}\" {dag_info[1]} > {weight}\033[0m")
                                 dag_params.phrase_dict[key] = merge_list + dag_params.phrase_dict[key]
 
                             else:
@@ -499,11 +507,6 @@ def deepseek(name, message, is_success):
         auth = ai_main_account
     if not auth:
         return ["AI响应发生错误: 未配置账号..."]
-    if save_history:
-        if is_success:
-            chat_history.append({"role": "user", "content": f"name: {name}, content: {message}"})
-            if len(chat_history) > chat_history_len:
-                chat_history = chat_history[1:]
 
     messages = chat_history + [
         {
@@ -517,6 +520,12 @@ def deepseek(name, message, is_success):
             "content": f"name: {name}, content: {message}"
         }
     ]
+    # 历史记录添加问题
+    if save_history:
+        if is_success:
+            chat_history.append({"role": "user", "content": f"name: {name}, content: {message}"})
+            # if len(chat_history) > chat_history_len:
+            #     chat_history = chat_history[2:]
     # messages.extend(chat_history)
     data = ""
     try:
@@ -526,14 +535,16 @@ def deepseek(name, message, is_success):
                 "Authorization": auth,
                 "Content-Type": "application/json",
             },
-            data=json.dumps({
                 # "model": "deepseek/deepseek-r1:free",
                 # "model": "qwen/qwen3-14b:free",
                 # "model": "qwen/qwen3-4b:free",
                 # "model": "qwen/qwen-2.5-7b-instruct:free",
                 # "model": "qwen/qwq-32b:free",
                 # "model": "qwen/qwen3-8b:free",
-                "model": "qwen/qwen3-30b-a3b:free",
+                # "model": "qwen/qwen3-30b-a3b:free",
+                # "model": "qwen/qwen3-4b:free",
+            data=json.dumps({
+                "model": "qwen/qwen2.5-vl-72b-instruct:free",
                 "messages": messages,
                 "enable_thinking": False,
                 "temperature": 1.4,
@@ -554,7 +565,8 @@ def deepseek(name, message, is_success):
     print("---\n")
     try:
         # content = data['choices'][0]['message']['content']
-        content = data.choices[0].message.content
+        # content = data.get('choices', [{}])[0].get('message', {}).get('content', '')
+        content = data.get('choices', [{}])[0].get('message', {}).get('content')
     except KeyError:
         print("AI响应发生错误: 'data' 结构中缺少所需的键！")
         if ai_limit:
@@ -578,12 +590,14 @@ def deepseek(name, message, is_success):
         return [f"AI响应发生错误: {e.__class__.__name__}"]
 
     if content:
+        messages[len(messages)-1]["content"] = content
         content = split_string_limited(content)
+        # 历史记录添加回答
         if save_history:
             chat_history.append({"role": "assistant", "content": content})
             if len(chat_history) > chat_history_len:
                 # chat_history.pop(0)  # 确保对话历史不会无限增长
-                chat_history = chat_history[1:]
+                chat_history = chat_history[2:]
         return content
     else:
         print("[XDlog] 返回为空重试...")
@@ -594,37 +608,65 @@ def deepseek(name, message, is_success):
             return ["AI重试响应后失败..."]
 
 
-def split_string_limited(s, max_length=244):
-    """优化后的字符串分割方法，转换非 ASCII 字符和 emoji，同时限制长度"""
-    s = s.replace("\n", "").replace("\r", "")  # 去除换行符
-
-    # 先转换非 ASCII 字符和 emoji
+def split_string_limited(s, max_length=230):
+    """字符串分割方法，转换非 ASCII 字符和 emoji，同时限制长度"""
+    # 25.7.19 21:00:00 merge ai动态换行 todo 测试
+    s = s.replace('\n', '').replace('\r', '')
     s = emoji_to_ascii(s)
     s = convert_non_ascii_except_chinese(s)
-
-    current_length = 0
-    temp_list = []
     result = []
-    # exceeded_once = False  # 标记是否已经超出一次
-
-    for char in s:
-        char_length = 3 if char in chinese_chars else 1
-        if current_length + char_length > max_length:
-            # if exceeded_once:  # 如果已经超出一次，则返回空字符串
-            #     return ""
-            result.append(''.join(temp_list))
-            temp_list = [char]
-            current_length = char_length
-            # exceeded_once = True  # 标记已超出
-        else:
-            temp_list.append(char)
-            current_length += char_length
-
-    if temp_list:
-        result.append(''.join(temp_list))
-
-    print("[XDlog] 长度: ", " ".join(str(len(substring)) for substring in result))
+    buffer = []
+    current_length = 0
+    current_length_list = []
+    # 记录最近标点位置
+    last_punctuation_idx = -1
+    last_punctuation_is_comma = False
+    for i, char in enumerate(s):
+        char_length = 3 if is_chinese(char) else 1
+        buffer.append(char)
+        current_length += char_length
+        # 记录最近的标点，且当前片段长度仍未超限
+        if char in punctuation:
+            last_punctuation_idx = len(buffer) - 1
+            last_punctuation_is_comma = char in [',', '，']
+        # 如果超过长度
+        if current_length > max_length:
+            # 优先在最近标点处分段
+            if last_punctuation_idx != -1:
+                # 以逗号分隔，要去除逗号
+                if last_punctuation_is_comma:
+                    segment = ''.join(buffer[:last_punctuation_idx])
+                    result.append(segment)
+                else:
+                    # 其他标点，包含标点
+                    segment = ''.join(buffer[:last_punctuation_idx + 1])
+                    result.append(segment)
+                # 留下剩余部分
+                buffer = buffer[last_punctuation_idx + 1:]
+                # 重新计长度
+                current_length = sum(3 if is_chinese(c) else 1 for c in buffer)
+                current_length_list.append(current_length)
+            else:
+                result.append(''.join(buffer[:-1]))
+                buffer = [char]
+                current_length_list.append(current_length)
+                current_length = char_length
+            # 每次切分后都要重置标点追踪
+            last_punctuation_idx = -1
+            last_punctuation_is_comma = False
+            
+    if buffer:
+        result.append(''.join(buffer))
+    print("[XDlog] sq长度: ", " ".join(str(length) for length in current_length_list))
+    print("[XDlog] py长度: ", " ".join(str(len(substring)) for substring in result))
     return result
+
+# 'content': '练习lurchstrafe，先掌握基本的strafe技巧。在游戏里找平坦开阔区域
+# ，设置低敏感度。开始时，慢慢移动，逐渐加快速度，注意身体和鼠标同步。多练习
+# ，感受节奏，调整按键和鼠标移动的协调。观看高手视频，模仿他们的动作。保持耐
+# 心，不断尝试，你会逐渐掌握。加油！', 'refusal': None, 'reasoning': None}}],
+#  'system_fingerprint': None, 'usage': {'prompt_tokens': 215, 'completion_to
+# kens': 99, 'total_tokens': 314}}
 
 
 # 判断是否为中文字符
@@ -902,12 +944,12 @@ emoji_list = [
 ]
 # NIGHT_EMOJI = "(。-ω-)zzz"
 
-# 转拼音 初始化模型参数
+# 转拼音 初始化模型参数 是你的
 pinyin_syllables = {'a', 'ai', 'an', 'ang', 'ao', 'ba', 'bai', 'ban', 'bang', 'bao', 'bei', 'ben', 'beng', 'bi',
                     'bian', 'biao', 'bie', 'bin', 'bing', 'bo', 'bu', 'ca', 'cai', 'can', 'cang', 'cao', 'ce',
                     'cen', 'ceng', 'cha', 'chai', 'chan', 'chang', 'chao', 'che', 'chen', 'cheng', 'chi', 'chong',
                     'chou', 'chu', 'chuai', 'chuan', 'chuang', 'chui', 'chun', 'chuo', 'ci', 'cong', 'cou', 'cu',
-                    'cuan', 'cui', 'cun', 'cuo', 'da', 'dai', 'dan', 'dang', 'dao', 'de', 'deng', 'di', 'dian',
+                    'cuan', 'cui', 'cun', 'cuo', 'da', 'dai', 'dan', 'dang', 'dao', 'de', 'dei', 'deng', 'di', 'dian',
                     'diao', 'die', 'ding', 'diu', 'dong', 'dou', 'du', 'duan', 'dui', 'dun', 'duo', 'e', 'en', 'er',
                     'fa', 'fan', 'fang', 'fei', 'fen', 'feng', 'fo', 'fou', 'fu', 'ga', 'gai', 'gan', 'gang', 'gao',
                     'ge', 'gei', 'gen', 'geng', 'gong', 'gou', 'gu', 'gua', 'guai', 'guan', 'guang', 'gui', 'gun',
@@ -920,7 +962,8 @@ pinyin_syllables = {'a', 'ai', 'an', 'ang', 'ao', 'ba', 'bai', 'ban', 'bang', 'b
                     'mai', 'man', 'mang', 'mao', 'me', 'mei', 'men', 'meng', 'mi', 'mian', 'miao', 'mie', 'min',
                     'ming', 'miu', 'mo', 'mou', 'mu', 'na', 'nai', 'nan', 'nang', 'nao', 'ne', 'nei', 'nen', 'neng',
                     'ni', 'nian', 'niang', 'niao', 'nie', 'nin', 'ning', 'niu', 'nong', 'nou', 'nu', 'nuan', 'nue',
-                    'nun', 'nuo', 'o', 'ou', 'pa', 'pai', 'pan', 'pang', 'pao', 'pei', 'pen', 'peng', 'pi', 'pian',
+                    'nun', 'nuo', 'nv', 'o', 'ou', 'pa', 'pai', 'pan', 'pang', 'pao', 'pei', 'pen', 'peng', 'pi',
+                    'pian',
                     'piao', 'pie', 'pin', 'ping', 'po', 'pou', 'pu', 'qi', 'qia', 'qian', 'qiang', 'qiao', 'qie',
                     'qin', 'qing', 'qiong', 'qiu', 'qu', 'quan', 'que', 'qun', 'ran', 'rang', 'rao', 're', 'ren',
                     'reng', 'ri', 'rong', 'rou', 'ru', 'ruan', 'rui', 'run', 'ruo', 'sa', 'sai', 'san', 'sang',
@@ -934,15 +977,19 @@ pinyin_syllables = {'a', 'ai', 'an', 'ang', 'ao', 'ba', 'bai', 'ban', 'bang', 'b
                     'zang', 'zao', 'ze', 'zei', 'zen', 'zeng', 'zha', 'zhai', 'zhan', 'zhang', 'zhao', 'zhe',
                     'zhen', 'zheng', 'zhi', 'zhong', 'zhou', 'zhu', 'zhua', 'zhuai', 'zhuan', 'zhuang', 'zhui',
                     'zhun', 'zhuo', 'zi', 'zong', 'zou', 'zu', 'zuan', 'zui', 'zun', 'zuo',
-                    'jve', 'lve', 'nve', 'qve', 'xve', 'yve'}
+                    'jve', 'lve', 'nve', 'qve', 'xve', 'yve', 'qv'}
 
+# uv test: jv律女qvxvyv
 uv_pinyin_list = {
-    'jue': 'jve', 'lue': 'lve', 'nue': 'nve', 'que': 'qve', 'xue': 'xve', 'yue': 'yve'
+    'jue': 'jve', 'lue': 'lve', 'nue': 'nve', 'que': 'qve', 'xue': 'xve', 'yue': 'yve',
+    'qv': "qu"
 }
 
 
 class CustomDagParams(DefaultDagParams):
+    # noinspection PyMissingConstructor
     def __init__(self):
+        # Intentionally not calling super().__init__() to override parent logic
         self.char_dict = self.readjson("data\\dag\\dag_char_ttf.json")
         self.phrase_dict = self.readjson("data\\dag\\dag_phrase_ttf.json")
 
@@ -1003,6 +1050,7 @@ emoji_map = {
     ":winking_face:": "(^_~)",
     ":thumbs_up:": "(b^_^)b"
 }
+punctuation = set(",.!?，。！？；、,")
 chinese_chars = set("，。？！（）【】、；：") | set(chr(i) for i in range(0x4E00, 0x9FFF))
 # 将 转化为ASCII表情 例如"grinning_face": ":D",
 
