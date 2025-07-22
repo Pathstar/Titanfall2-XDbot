@@ -1,0 +1,413 @@
+[XDlog] 22:04:38 Monitoring Squirrel Messages...
+[XDlog] 22:05:36 Begin init |  : 
+[XDlog] 22:05:36 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;254;250;195m (〜￣△￣)〜', 1463] | Used: 0.000377655029296875
+
+[XDlog] 22:05:46 Begin init |  : 
+[XDlog] 22:05:46 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;254;198;195m (・ω< )☆', 1453] | Used: 0.0002853870391845703
+
+[XDlog] 22:07:00 Begin init |  : 
+[XDlog] 22:07:00 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;175;238;238m (=・ω・=)', 1379] | Used: 0.0005626678466796875
+
+[XDlog] 22:08:48 Begin g_pinyin | [ＡＡＡＡ] K4rbin : wo shi cai ji TAT
+[Pinyin] Loop ['wo', 'shi', 'cai', 'ji']
+[Pinyin] Success ['我是', '采集']
+[Pinyin] Count Fail/All: 1/5
+[XDlog] 22:08:48 Finish pinyin | [ＡＡＡＡ] K4rbin : wo shi cai ji TAT | Result: 我是采集TAT | Used: 0.0019249916076660156
+
+[XDlog] 22:09:02 Begin g_pinyin | [小登] cyh20120312 : shen me dong xi?
+[Pinyin] Loop ['shen', 'me', 'dong', 'xi']
+[Pinyin] Success ['什么东西']
+[Pinyin] Count Fail/All: 1/5
+[XDlog] 22:09:02 Finish pinyin | [小登] cyh20120312 : shen me dong xi? | Result: 什么东西? | Used: 0.0014679431915283203
+
+[XDlog] 22:16:33 Begin init |  : 
+[XDlog] 22:16:33 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;254;250;195m (〜￣△￣)〜', 806] | Used: 0.0003457069396972656
+
+[XDlog] 22:25:24 Begin init |  : 
+[XDlog] 22:25:24 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;216;191;216m (^・ω・^)', 275] | Used: 0.0003445148468017578
+
+[XDlog] 22:31:54 Begin init |  : 
+[XDlog] 22:31:54 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (^・ω・^)', 1685] | Used: 0.00037670135498046875
+
+[XDlog] 22:35:57 Begin g_pinyin | ATEXT : cha dian
+[Pinyin] Loop ['cha', 'dian']
+[Pinyin] Success ['差点']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 22:35:57 Finish pinyin | ATEXT : cha dian | Result: 差点 | Used: 0.0018792152404785156
+
+[XDlog] 22:40:48 Begin g_pinyin | ATEXT : ha ren
+[Pinyin] Loop ['ha', 'ren']
+[Pinyin] Success ['哈', '人']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 22:40:48 Finish pinyin | ATEXT : ha ren | Result: 哈人 | Used: 0.001461029052734375
+
+[XDlog] 22:41:00 Begin init |  : 
+[XDlog] 22:41:00 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (｀・ω・´)', 1139] | Used: 0.0004673004150390625
+
+[XDlog] 22:42:08 Begin g_pinyin | ATEXT : bu hao
+[Pinyin] Loop ['bu', 'hao']
+[Pinyin] Success ['不好']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 22:42:08 Finish pinyin | ATEXT : bu hao | Result: 不好 | Used: 0.001680135726928711
+
+[XDlog] 22:48:17 Begin init |  : 
+[XDlog] 22:48:17 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (=^･ω･^=)', 702] | Used: 0.00048422813415527344
+
+[XDlog] 22:52:55 Begin g_pinyin | ATEXT : tai huai le
+[Pinyin] Loop ['tai', 'huai', 'le']
+[Pinyin] Success ['太坏', '了']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 22:52:55 Finish pinyin | ATEXT : tai huai le | Result: 太坏了 | Used: 0.0027036666870117188
+
+[XDlog] 22:55:28 Begin init |  : 
+[XDlog] 22:55:28 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (^・ω・^)', 271] | Used: 0.0003521442413330078
+
+[XDlog] 22:55:41 Begin init |  : 
+[XDlog] 22:55:41 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (｡･ω･｡)', 258] | Used: 0.0006976127624511719
+
+[XDlog] 22:58:20 Begin init |  : 
+[XDlog] 22:58:20 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (・ω< )☆', 99] | Used: 0.0004298686981201172
+
+[XDlog] 22:58:27 Begin init |  : 
+[XDlog] 22:58:27 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (〜￣△￣)〜', 92] | Used: 0.00034046173095703125
+
+[XDlog] 22:58:32 Begin init |  : 
+[XDlog] 22:58:32 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (=^･ω･^=)', 87] | Used: 0.00035190582275390625
+
+[XDlog] 22:58:39 Begin init |  : 
+[XDlog] 22:58:39 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (｀・ω・´)', 80] | Used: 0.0003230571746826172
+
+[XDlog] 23:04:03 Begin init |  : 
+[XDlog] 23:04:03 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;216;191;216m (｡>﹏<｡)', 1556] | Used: 0.00045037269592285156
+
+[XDlog] 23:10:40 Begin init |  : 
+[XDlog] 23:10:40 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;254;208;175m _(≧v≦」∠)_', 1159] | Used: 0.000392913818359375
+
+[XDlog] 23:19:57 Begin init |  : 
+[XDlog] 23:19:57 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;175;238;238m (｡･ω･｡)', 602] | Used: 0.0004932880401611328
+
+[XDlog] 23:27:38 Begin g_pinyin | [ADV] Gideonqwertyuiop : tai qiang la
+[Pinyin] Loop ['tai', 'qiang', 'la']
+[Pinyin] Success ['太', '强拉']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 23:27:38 Finish pinyin | [ADV] Gideonqwertyuiop : tai qiang la | Result: 太强拉 | Used: 0.0035102367401123047
+
+[XDlog] 23:27:51 Begin init |  : 
+[XDlog] 23:27:51 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;240;128;128m _(:з」∠)_', 128] | Used: 0.0004062652587890625
+
+[XDlog] 23:30:22 Begin g_pinyin | [BOT] Pathstar_XD : dui de
+[Pinyin] Loop ['dui', 'de']
+[Pinyin] Success ['对', '的']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 23:30:22 Finish pinyin | [BOT] Pathstar_XD : dui de | Result: 对的 | Used: 0.0016868114471435547
+
+[XDlog] 23:34:20 Begin init |  : 
+[XDlog] 23:34:20 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (。-ω-)zzz', 1539] | Used: 0.00054931640625
+
+[XDlog] 23:35:18 Begin init |  : 
+[XDlog] 23:35:18 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (。-ω-)zzz', 1481] | Used: 0.0004646778106689453
+
+[XDlog] 23:38:05 Begin init |  : 
+[XDlog] 23:38:05 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (。-ω-)zzz', 1314] | Used: 0.0004935264587402344
+
+[XDlog] 23:40:37 Begin g_pinyin | [QAQ] Fire09-OwO : shi de
+[Pinyin] Loop ['shi', 'de']
+[Pinyin] Success ['使得']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 23:40:37 Finish pinyin | [QAQ] Fire09-OwO : shi de | Result: 使得 | Used: 0.0032646656036376953
+
+[XDlog] 23:40:55 Begin pinyin_add | [BOT] Pathstar_XD : shi de 是的
+[Pinyin Add] [33mWarning merge higher weight "shi,de": "是的" 0.2322329109197694 > 0.21[0m
+[Pinyin Add] Success merge add "shi,de": "是的" 0.21
+[XDlog] 23:40:55 Finish pinyin_add | [BOT] Pathstar_XD : shi de 是的 | Result: 添加成功: "shi,de": "是的" | Used: 0.00483250617980957
+
+[XDlog] 23:41:56 Begin g_pinyin | [QAQ] Fire09-OwO : he gou zhua hen xiang
+[Pinyin] Loop ['he', 'gou', 'zhua', 'hen', 'xiang']
+[Pinyin] Success ['合', '钩爪', '很想']
+[Pinyin] Count Fail/All: 0/5
+[XDlog] 23:41:56 Finish pinyin | [QAQ] Fire09-OwO : he gou zhua hen xiang | Result: 合钩爪很想 | Used: 0.0037348270416259766
+
+[XDlog] 23:43:57 Begin g_pinyin | [QAQ] Fire09-OwO : gou zhua dong de
+[Pinyin] Loop ['gou', 'zhua', 'dong', 'de']
+[Pinyin] Success ['钩爪', '懂得']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 23:43:57 Finish pinyin | [QAQ] Fire09-OwO : gou zhua dong de | Result: 钩爪懂得 | Used: 0.0026865005493164062
+
+[XDlog] 23:44:13 Begin g_pinyin | [QAQ] Fire09-OwO : wo yong gou zhua zhua si hao duo ren
+[Pinyin] Loop ['wo', 'yong', 'gou', 'zhua', 'zhua', 'si', 'hao', 'duo', 'ren']
+[Pinyin] Success ['我用', '钩爪', '抓', '丝毫', '夺人']
+[Pinyin] Count Fail/All: 0/9
+[XDlog] 23:44:13 Finish pinyin | [QAQ] Fire09-OwO : wo yong gou zhua zhua si hao duo ren | Result: 我用钩爪抓丝毫夺人 | Used: 0.008526325225830078
+
+[XDlog] 23:44:45 Begin init |  : 
+[XDlog] 23:44:45 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (。-ω-)zzz', 914] | Used: 0.0003592967987060547
+
+[XDlog] 23:44:50 Begin init |  : 
+[XDlog] 23:44:50 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (。-ω-)zzz', 909] | Used: 0.0003571510314941406
+
+[XDlog] 23:48:31 Begin init |  : 
+[XDlog] 23:48:31 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (。-ω-)zzz', 688] | Used: 0.0006163120269775391
+
+[XDlog] 23:51:38 Begin g_pinyin | [QAQ] Fire09-OwO : ming bai
+[Pinyin] Loop ['ming', 'bai']
+[Pinyin] Success ['明白']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 23:51:38 Finish pinyin | [QAQ] Fire09-OwO : ming bai | Result: 明白 | Used: 0.002612590789794922
+
+[XDlog] 23:52:09 Begin g_pinyin | [QAQ] Fire09-OwO : tie yu ji neng ne
+[Pinyin] Loop ['tie', 'yu', 'ji', 'neng', 'ne']
+[Pinyin] Success ['帖', '预计', '能', '呢']
+[Pinyin] Count Fail/All: 0/5
+[XDlog] 23:52:09 Finish pinyin | [QAQ] Fire09-OwO : tie yu ji neng ne | Result: 帖预计能呢 | Used: 0.0033402442932128906
+
+[XDlog] 23:53:02 Begin g_pinyin | [QAQ] Fire09-OwO : zhe ge hao
+[Pinyin] Loop ['zhe', 'ge', 'hao']
+[Pinyin] Success ['这个', '好']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 23:53:03 Finish pinyin | [QAQ] Fire09-OwO : zhe ge hao | Result: 这个好 | Used: 0.0024423599243164062
+
+[XDlog] 23:53:25 Begin pinyin_add | [BOT] Pathstar_XD : tie yu 铁驭
+[Pinyin Add] Success merge new "tie,yu": "铁驭"
+[XDlog] 23:53:25 Finish pinyin_add | [BOT] Pathstar_XD : tie yu 铁驭 | Result: 添加成功: "tie,yu": "铁驭" | Used: 0.0026493072509765625
+
+[XDlog] 23:53:55 Begin g_pinyin | [QAQ] Fire09-OwO : hao de
+[Pinyin] Loop ['hao', 'de']
+[Pinyin] Success ['好', '的']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 23:53:55 Finish pinyin | [QAQ] Fire09-OwO : hao de | Result: 好的 | Used: 0.0011739730834960938
+
+[XDlog] 23:54:00 Begin g_pinyin | [QAQ] Fire09-OwO : gan xie da lao
+[Pinyin] Loop ['gan', 'xie', 'da', 'lao']
+[Pinyin] Success ['感谢', '大佬']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 23:54:00 Finish pinyin | [QAQ] Fire09-OwO : gan xie da lao | Result: 感谢大佬 | Used: 0.0027403831481933594
+
+[XDlog] 23:54:17 Begin g_pinyin | [QAQ] Fire09-OwO : smg zai huai xiao dou da bu guo
+[Pinyin] Loop ['zai', 'huai', 'xiao', 'dou', 'da', 'bu', 'guo']
+[Pinyin] Success ['在', '坏小', '都打', '不过']
+[Pinyin] Count Fail/All: 1/8
+[XDlog] 23:54:17 Finish pinyin | [QAQ] Fire09-OwO : smg zai huai xiao dou da bu guo | Result: smg在坏小都打不过 | Used: 0.004950523376464844
+
+[XDlog] 23:54:20 Begin g_pinyin | [QAQ] Fire09-OwO : bu qu le
+[Pinyin] Loop ['bu', 'qu', 'le']
+[Pinyin] Success ['不去了']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 23:54:20 Finish pinyin | [QAQ] Fire09-OwO : bu qu le | Result: 不去了 | Used: 0.0017518997192382812
+
+[XDlog] 23:58:50 Begin g_pinyin | [QAQ] Fire09-OwO : zhen de tai gan xie le
+[Pinyin] Loop ['zhen', 'de', 'tai', 'gan', 'xie', 'le']
+[Pinyin] Success ['真的', '太', '感谢', '了']
+[Pinyin] Count Fail/All: 0/6
+[XDlog] 23:58:50 Finish pinyin | [QAQ] Fire09-OwO : zhen de tai gan xie le | Result: 真的太感谢了 | Used: 0.004487276077270508
+
+[XDlog] 23:58:57 Begin g_pinyin | [ADV] Gideonqwertyuiop : xiexie dalao
+[Pinyin] Count Fail/All: 1/1
+[Pinyin] Failed to Convert: xiexie dalao
+[XDlog] 23:58:57 Finish pinyin | [ADV] Gideonqwertyuiop : xiexie dalao | Result:  | Used: 0.0007116794586181641
+
+[XDlog] 23:59:08 Begin init |  : 
+[XDlog] 23:59:08 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (。-ω-)zzz', 51] | Used: 0.0004494190216064453
+
+[XDlog] 23:59:18 Begin g_pinyin | [ADV] Gideonqwertyuiop : xiexie dalao
+[Pinyin] Count Fail/All: 1/1
+[Pinyin] Failed to Convert: xiexie dalao
+[XDlog] 23:59:18 Finish pinyin | [ADV] Gideonqwertyuiop : xiexie dalao | Result:  | Used: 0.0008120536804199219
+
+[XDlog] 00:00:09 Begin pinyin_add | [BOT] Pathstar_XD : ji neng 技能
+[Pinyin Add] Conflict merge "ji,neng": "技能" 0.23730749030589843
+[XDlog] 00:00:09 Finish pinyin_add | [BOT] Pathstar_XD : ji neng 技能 | Result: 已有 (受保护): "ji,neng": "技能" | Used: 0.0007269382476806641
+
+[XDlog] 00:00:39 Begin g_pinyin | [BOT] Pathstar_XD : shi de ji neng
+[Pinyin] Loop ['shi', 'de', 'ji', 'neng']
+[Pinyin] Success ['是的', '技能']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 00:00:39 Finish pinyin | [BOT] Pathstar_XD : shi de ji neng | Result: 是的技能 | Used: 0.0023546218872070312
+
+[XDlog] 00:00:42 Begin g_pinyin | [BOT] Pathstar_XD : shi de
+[Pinyin] Loop ['shi', 'de']
+[Pinyin] Success ['是的']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 00:00:42 Finish pinyin | [BOT] Pathstar_XD : shi de | Result: 是的 | Used: 0.0010111331939697266
+
+[XDlog] 00:02:07 Begin pinyin_del | [BOT] Pathstar_XD : shi de
+[Pinyin Del] Success merge "shi,de": "是的" 0.21 | Next "使得"
+[XDlog] 00:02:07 Finish pinyin_del | [BOT] Pathstar_XD : shi de | Result: 已删除: "shi,de": "是的" | Used: 0.002029895782470703
+
+[XDlog] 00:02:10 Begin g_pinyin | [BOT] Pathstar_XD : shi de
+[Pinyin] Loop ['shi', 'de']
+[Pinyin] Success ['使得']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 00:02:10 Finish pinyin | [BOT] Pathstar_XD : shi de | Result: 使得 | Used: 0.0010802745819091797
+
+[XDlog] 00:02:22 Begin pinyin_add | [BOT] Pathstar_XD : shi de 是的
+[Pinyin Add] [33mWarning merge higher weight "shi,de": "是的" 0.2322329109197694 > 0.21[0m
+[Pinyin Add] Success merge add "shi,de": "是的" 0.21
+[XDlog] 00:02:22 Finish pinyin_add | [BOT] Pathstar_XD : shi de 是的 | Result: 添加成功: "shi,de": "是的" | Used: 0.0018429756164550781
+
+[XDlog] 00:04:55 Begin g_pinyin | [QAQ] Fire09-OwO : mei a
+[Pinyin] Loop ['mei', 'a']
+[Pinyin] Success ['没', '阿']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 00:04:55 Finish pinyin | [QAQ] Fire09-OwO : mei a | Result: 没阿 | Used: 0.0017075538635253906
+
+[XDlog] 00:05:05 Begin g_pinyin | [QAQ] Fire09-OwO : zhi shi wo he mao zai lain
+[Pinyin] Loop ['zhi', 'shi', 'wo', 'he', 'mao', 'zai']
+[Pinyin] Success ['只是', '我和', '贸', '在']
+[Pinyin] Count Fail/All: 1/7
+[XDlog] 00:05:05 Finish pinyin | [QAQ] Fire09-OwO : zhi shi wo he mao zai lain | Result: 只是我和贸在lain | Used: 0.0039103031158447266
+
+[XDlog] 00:05:24 Begin g_pinyin | [QAQ] Fire09-OwO : hao duo ma wen
+[Pinyin] Loop ['hao', 'duo', 'ma', 'wen']
+[Pinyin] Success ['好多', '马文']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 00:05:24 Finish pinyin | [QAQ] Fire09-OwO : hao duo ma wen | Result: 好多马文 | Used: 0.002053976058959961
+
+[XDlog] 00:06:22 Begin g_pinyin | [QAQ] Fire09-OwO : klb si hu xia dun yao she hui gen zhun
+[Pinyin] Loop ['si', 'hu', 'xia', 'dun', 'yao', 'she', 'hui', 'gen', 'zhun']
+[Pinyin] Success ['似乎', '下蹲', '要', '社会', '根', '准']
+[Pinyin] Count Fail/All: 1/10
+[XDlog] 00:06:22 Finish pinyin | [QAQ] Fire09-OwO : klb si hu xia dun yao she hui gen zhun | Result: klb似乎下蹲要社会根准 | Used: 0.005777597427368164
+
+[XDlog] 00:07:02 Begin pinyin_add | [BOT] Pathstar_XD : yao she 腰射
+[Pinyin Add] Success merge new "yao,she": "腰射"
+[XDlog] 00:07:02 Finish pinyin_add | [BOT] Pathstar_XD : yao she 腰射 | Result: 添加成功: "yao,she": "腰射" | Used: 0.0017459392547607422
+
+[XDlog] 00:07:41 Begin g_pinyin | [ADV] LRK112233 : bu za zhun dan hai hao
+[Pinyin] Loop ['bu', 'za', 'zhun', 'dan', 'hai', 'hao']
+[Pinyin] Success ['不', '杂', '准', '但还', '好']
+[Pinyin] Count Fail/All: 0/6
+[XDlog] 00:07:41 Finish pinyin | [ADV] LRK112233 : bu za zhun dan hai hao | Result: 不杂准但还好 | Used: 0.003278970718383789
+
+[XDlog] 00:07:49 Begin g_pinyin | [凱爾希] Kaltsit0000 : ni jiu ti ba
+[Pinyin] Loop ['ni', 'jiu', 'ti', 'ba']
+[Pinyin] Success ['你就', '提拔']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 00:07:49 Finish pinyin | [凱爾希] Kaltsit0000 : ni jiu ti ba | Result: 你就提拔 | Used: 0.0023827552795410156
+
+[XDlog] 00:07:54 Begin g_pinyin | [凱爾希] Kaltsit0000 : xi xi
+[Pinyin] Loop ['xi', 'xi']
+[Pinyin] Success ['嘻嘻']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 00:07:54 Finish pinyin | [凱爾希] Kaltsit0000 : xi xi | Result: 嘻嘻 | Used: 0.0015683174133300781
+
+[XDlog] 00:08:33 Begin g_pinyin | [QAQ] Fire09-OwO : ku le
+[Pinyin] Loop ['ku', 'le']
+[Pinyin] Success ['苦乐']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 00:08:33 Finish pinyin | [QAQ] Fire09-OwO : ku le | Result: 苦乐 | Used: 0.0019617080688476562
+
+[XDlog] 00:08:58 Begin init |  : 
+[XDlog] 00:08:58 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;240;128;128m (。-ω-)zzz', 1261] | Used: 0.0004928112030029297
+
+[XDlog] 00:09:06 Begin init |  : 
+[XDlog] 00:09:06 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;205;214;210m (。-ω-)zzz', 1253] | Used: 0.0003180503845214844
+
+[XDlog] 00:09:50 Begin init |  : 
+[XDlog] 00:09:50 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;221;160;221m (。-ω-)zzz', 1209] | Used: 0.00029659271240234375
+
+[XDlog] 00:11:15 Begin g_pinyin | [QAQ] Fire09-OwO : wo fa xian
+[Pinyin] Loop ['wo', 'fa', 'xian']
+[Pinyin] Success ['我发现']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 00:11:15 Finish pinyin | [QAQ] Fire09-OwO : wo fa xian | Result: 我发现 | Used: 0.0019140243530273438
+
+[XDlog] 00:11:24 Begin g_pinyin | [QAQ] Fire09-OwO : tie yu zhi kong hui dun zhu
+[Pinyin] Loop ['tie', 'yu', 'zhi', 'kong', 'hui', 'dun', 'zhu']
+[Pinyin] Success ['铁驭', '指控', '会', '趸柱']
+[Pinyin] Count Fail/All: 0/7
+[XDlog] 00:11:24 Finish pinyin | [QAQ] Fire09-OwO : tie yu zhi kong hui dun zhu | Result: 铁驭指控会趸柱 | Used: 0.004025697708129883
+
+[XDlog] 00:11:33 Begin g_pinyin | [QAQ] Fire09-OwO : zhe shi hou da hen hao
+[Pinyin] Loop ['zhe', 'shi', 'hou', 'da', 'hen', 'hao']
+[Pinyin] Success ['这时候', '大', '很好']
+[Pinyin] Count Fail/All: 0/6
+[XDlog] 00:11:33 Finish pinyin | [QAQ] Fire09-OwO : zhe shi hou da hen hao | Result: 这时候大很好 | Used: 0.0029435157775878906
+
+[XDlog] 00:11:50 Begin g_pinyin | [QAQ] Fire09-OwO : kong zhai
+[Pinyin] Loop ['kong', 'zhai']
+[Pinyin] Success ['空', '债']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 00:11:50 Finish pinyin | [QAQ] Fire09-OwO : kong zhai | Result: 空债 | Used: 0.001268148422241211
+
+[XDlog] 00:11:58 Begin g_pinyin | [凱爾希] Kaltsit0000 : ha ha
+[Pinyin] Loop ['ha', 'ha']
+[Pinyin] Success ['哈哈']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 00:11:58 Finish pinyin | [凱爾希] Kaltsit0000 : ha ha | Result: 哈哈 | Used: 0.0012276172637939453
+
+[XDlog] 00:12:59 Begin pinyin | [凱爾希] Kaltsit0000 : kong zhai 空摘
+[Pinyin] Loop ['kong', 'zhai']
+[Pinyin] Success ['空', '债']
+[Pinyin] Count Fail/All: 1/3
+[XDlog] 00:12:59 Finish pinyin | [凱爾希] Kaltsit0000 : kong zhai 空摘 | Result: 空债空摘 | Used: 0.001049041748046875
+
+[XDlog] 00:13:36 Begin pinyin_add | [凱爾希] Kaltsit0000 : kong zhai 空摘
+[Pinyin Add] Success merge new "kong,zhai": "空摘"
+[XDlog] 00:13:36 Finish pinyin_add | [凱爾希] Kaltsit0000 : kong zhai 空摘 | Result: 添加成功: "kong,zhai": "空摘" | Used: 0.0020399093627929688
+
+[XDlog] 00:13:42 Begin g_pinyin | [QAQ] Fire09-OwO : zan ji xu
+[Pinyin] Loop ['zan', 'ji', 'xu']
+[Pinyin] Success ['暂', '继续']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 00:13:42 Finish pinyin | [QAQ] Fire09-OwO : zan ji xu | Result: 暂继续 | Used: 0.0017240047454833984
+
+[XDlog] 00:15:08 Begin pinyin_add | [凱爾希] Kaltsit0000 : >:( 怒了
+[Pinyin Add] Success custom ">:(": "怒了"
+[XDlog] 00:15:08 Finish pinyin_add | [凱爾希] Kaltsit0000 : >:( 怒了 | Result: 添加成功: ">:(": "怒了" | Used: 0.0015344619750976562
+
+[XDlog] 00:15:35 Begin g_pinyin | [QAQ] Fire09-OwO : huan di tu zhi ling shi shen me
+[Pinyin] Loop ['huan', 'di', 'tu', 'zhi', 'ling', 'shi', 'shen', 'me']
+[Pinyin] Success ['浣涤', '图纸', '零食', '什么']
+[Pinyin] Count Fail/All: 0/8
+[XDlog] 00:15:35 Finish pinyin | [QAQ] Fire09-OwO : huan di tu zhi ling shi shen me | Result: 浣涤图纸零食什么 | Used: 0.0059282779693603516
+
+[XDlog] 00:16:12 Begin g_pinyin | [QAQ] Fire09-OwO : hao ba
+[Pinyin] Loop ['hao', 'ba']
+[Pinyin] Success ['好吧']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 00:16:12 Finish pinyin | [QAQ] Fire09-OwO : hao ba | Result: 好吧 | Used: 0.001192331314086914
+
+[XDlog] 00:16:23 Begin g_pinyin | [BOT] Pathstar_XD : a >:(
+[Pinyin] Loop ['a']
+[Pinyin] Success ['阿']
+[Pinyin] Count Fail/All: 1/2
+[Pinyin] Failed to Convert: a >:(
+[XDlog] 00:16:23 Finish pinyin | [BOT] Pathstar_XD : a >:( | Result:  | Used: 0.001321554183959961
+
+[XDlog] 00:16:36 Begin g_pinyin | [BOT] Pathstar_XD : a a >:(
+[Pinyin] Loop ['a', 'a']
+[Pinyin] Success ['啊啊']
+[Pinyin] Count Fail/All: 1/3
+[XDlog] 00:16:36 Finish pinyin | [BOT] Pathstar_XD : a a >:( | Result: 啊啊>:( | Used: 0.0011792182922363281
+
+[XDlog] 00:17:45 Begin g_pinyin | [BOT] Pathstar_XD : a a >:( a a
+[Pinyin] Loop ['a', 'a']
+[Pinyin] Success ['啊啊']
+[Pinyin] Loop ['a', 'a']
+[Pinyin] Success ['啊啊']
+[Pinyin] Count Fail/All: 1/5
+[XDlog] 00:17:45 Finish pinyin | [BOT] Pathstar_XD : a a >:( a a | Result: 啊啊>:(啊啊 | Used: 0.0028848648071289062
+
+[XDlog] 00:19:23 Begin g_pinyin | [凱爾希] Kaltsit0000 : qian lang jia mei , gai yi you di
+[Pinyin] Loop ['qian', 'lang', 'jia', 'mei']
+[Pinyin] Success ['前廊', '佳美']
+[Pinyin] Loop ['gai', 'yi', 'you', 'di']
+[Pinyin] Success ['盖伊', '邮递']
+[Pinyin] Count Fail/All: 1/9
+[XDlog] 00:19:23 Finish pinyin | [凱爾希] Kaltsit0000 : qian lang jia mei , gai yi you di | Result: 前廊佳美,盖伊邮递 | Used: 0.003209829330444336
+
+[XDlog] 00:20:29 Begin init |  : 
+[XDlog] 00:20:29 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;221;160;221m (。-ω-)zzz', 570] | Used: 0.0004303455352783203
+
+[XDlog] 00:29:20 Begin g_pinyin | [QAQ] Fire09-OwO : lian ge lao mao
+[Pinyin] Loop ['lian', 'ge', 'lao', 'mao']
+[Pinyin] Success ['连个', '老猫']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 00:29:20 Finish pinyin | [QAQ] Fire09-OwO : lian ge lao mao | Result: 连个老猫 | Used: 0.0020067691802978516
+
+[XDlog] 00:29:54 Begin g_pinyin | [QAQ] Fire09-OwO : wo chu qu yi xia
+[Pinyin] Loop ['wo', 'chu', 'qu', 'yi', 'xia']
+[Pinyin] Success ['我', '出去', '一下']
+[Pinyin] Count Fail/All: 0/5
+[XDlog] 00:29:54 Finish pinyin | [QAQ] Fire09-OwO : wo chu qu yi xia | Result: 我出去一下 | Used: 0.004090547561645508
+

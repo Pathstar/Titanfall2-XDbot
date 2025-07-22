@@ -55,3 +55,169 @@
 [XDlog] 00:41:19 Begin init |  : 
 [XDlog] 00:41:19 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (。-ω-)zzz', 1120] | Used: 0.00047516822814941406
 
+[XDlog] 21:47:09 Monitoring Squirrel Messages...
+[XDlog] 21:48:21 Begin init |  : 
+[XDlog] 21:48:21 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;254;250;195m ～(つˆДˆ)つ', 698] | Used: 0.0003485679626464844
+
+[XDlog] 21:48:29 Begin init |  : 
+[XDlog] 21:48:29 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (｀・ω・´)', 690] | Used: 0.00039505958557128906
+
+[XDlog] 21:48:53 Begin init |  : 
+[XDlog] 21:48:53 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (｡･ω･｡)', 666] | Used: 0.0003216266632080078
+
+[XDlog] 21:54:56 Begin init |  : 
+[XDlog] 21:54:56 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (=^･ω･^=)', 303] | Used: 0.00037598609924316406
+
+[XDlog] 22:01:36 Begin init |  : 
+[XDlog] 22:01:36 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;173;216;230m (≧▽≦)/', 1703] | Used: 0.00033974647521972656
+
+[XDlog] 22:07:06 Begin init |  : 
+[XDlog] 22:07:06 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;135;206;235m ╮(￣▽￣)╭', 1373] | Used: 0.0003497600555419922
+
+[XDlog] 22:07:57 Begin init |  : 
+[XDlog] 22:07:57 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;194;245;194m (=^･ω･^=)', 1322] | Used: 0.0002963542938232422
+
+[XDlog] 22:08:01 Begin init |  : 
+[XDlog] 22:08:01 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;173;216;230m (｡>﹏<｡)', 1318] | Used: 0.0002892017364501953
+
+[XDlog] 22:14:36 Begin init |  : 
+[XDlog] 22:14:36 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;254;198;195m (=・ω・=)', 923] | Used: 0.0005376338958740234
+
+[XDlog] 22:15:29 Begin g_pinyin | [ADV] sillywillows : reticle offset killswitch是on还是off
+[Pinyin] Count Fail/All: 1/1
+[Pinyin] Failed to Convert: reticle offset killswitch是on还是off
+[XDlog] 22:15:29 Finish pinyin | [ADV] sillywillows : reticle offset killswitch是on还是off | Result:  | Used: 0.005360603332519531
+
+[XDlog] 22:16:32 Begin g_pinyin | [ADV] sillywillows : hk560 fj
+[Pinyin] Count Fail/All: 1/1
+[Pinyin] Failed to Convert: hk560 fj
+[XDlog] 22:16:32 Finish pinyin | [ADV] sillywillows : hk560 fj | Result:  | Used: 0.0008256435394287109
+
+[XDlog] 22:21:31 Begin init |  : 
+[XDlog] 22:21:31 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;240;128;128m (｡･ω･｡)', 508] | Used: 0.0004584789276123047
+
+[XDlog] 22:28:24 Begin init |  : 
+[XDlog] 22:28:24 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;248;131;121m (≧▽≦)/', 95] | Used: 0.0004050731658935547
+
+[XDlog] 22:34:04 Begin init |  : 
+[XDlog] 22:34:04 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (｀・ω・´)', 1555] | Used: 0.0003695487976074219
+
+[XDlog] 22:34:17 Begin init |  : 
+[XDlog] 22:34:17 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (〜￣△￣)〜', 1542] | Used: 0.0003726482391357422
+
+[XDlog] 22:42:42 Begin init |  : 
+[XDlog] 22:42:42 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (=・ω・=)', 1037] | Used: 0.0004029273986816406
+
+[XDlog] 22:52:52 Begin init |  : 
+[XDlog] 22:52:52 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (｡>﹏<｡)', 427] | Used: 0.0003502368927001953
+
+[XDlog] 22:53:02 Begin init |  : 
+[XDlog] 22:53:02 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (｡>ω<｡)', 417] | Used: 0.00029015541076660156
+
+[XDlog] 22:53:07 Begin init |  : 
+[XDlog] 22:53:07 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;216;191;216m _(≧v≦」∠)_', 412] | Used: 0.00030541419982910156
+
+[XDlog] 22:54:23 Begin init |  : 
+[XDlog] 22:54:23 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (・ω< )☆', 336] | Used: 0.0003376007080078125
+
+[XDlog] 23:08:31 Begin init |  : 
+[XDlog] 23:08:31 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;254;219;193m (｡>ω<｡)', 1288] | Used: 0.0003509521484375
+
+[XDlog] 23:09:34 Begin init |  : 
+[XDlog] 23:09:34 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;135;206;235m (｡･ω･｡)', 1225] | Used: 0.00032210350036621094
+
+[XDlog] 23:09:41 Begin init |  : 
+[XDlog] 23:09:41 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;248;131;121m (^・ω・^)', 1218] | Used: 0.00029277801513671875
+
+[XDlog] 23:09:50 Begin init |  : 
+[XDlog] 23:09:50 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;254;250;195m (〜￣△￣)〜', 1209] | Used: 0.0002932548522949219
+
+[XDlog] 23:11:45 Begin g_pinyin | namayiwa6 : good night  good day bye
+[Pinyin] Count Fail/All: 1/1
+[Pinyin] Failed to Convert: good night  good day bye
+[XDlog] 23:11:45 Finish pinyin | namayiwa6 : good night  good day bye | Result:  | Used: 0.0017070770263671875
+
+[XDlog] 23:12:06 Begin init |  : 
+[XDlog] 23:12:06 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;135;206;235m (=^･ω･^=)', 1073] | Used: 0.00031280517578125
+
+[XDlog] 23:12:14 Begin init |  : 
+[XDlog] 23:12:14 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;240;128;128m (ﾉ≧∀≦)ﾉ', 1065] | Used: 0.0002894401550292969
+
+[XDlog] 23:20:19 Begin init |  : 
+[XDlog] 23:20:19 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;173;216;230m (｡･ω･｡)', 580] | Used: 0.00032901763916015625
+
+[XDlog] 23:30:31 Begin init |  : 
+[XDlog] 23:30:31 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (。-ω-)zzz', 1768] | Used: 0.00036454200744628906
+
+[XDlog] 23:30:59 Begin init |  : 
+[XDlog] 23:30:59 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (。-ω-)zzz', 1740] | Used: 0.0003311634063720703
+
+[XDlog] 23:31:49 Begin init |  : 
+[XDlog] 23:31:49 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (。-ω-)zzz', 1690] | Used: 0.00029659271240234375
+
+[XDlog] 23:31:57 Begin init |  : 
+[XDlog] 23:31:57 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (。-ω-)zzz', 1682] | Used: 0.00030875205993652344
+
+[XDlog] 23:33:43 Begin init |  : 
+[XDlog] 23:33:43 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (。-ω-)zzz', 1576] | Used: 0.0003228187561035156
+
+[XDlog] 23:34:21 Begin init |  : 
+[XDlog] 23:34:21 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (。-ω-)zzz', 1538] | Used: 0.0003864765167236328
+
+[XDlog] 23:34:27 Begin init |  : 
+[XDlog] 23:34:27 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (。-ω-)zzz', 1532] | Used: 0.000316619873046875
+
+[XDlog] 23:35:37 Begin init |  : 
+[XDlog] 23:35:37 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (。-ω-)zzz', 1462] | Used: 0.0003960132598876953
+
+[XDlog] 23:35:47 Begin init |  : 
+[XDlog] 23:35:47 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (。-ω-)zzz', 1452] | Used: 0.0003018379211425781
+
+[XDlog] 23:38:09 Begin init |  : 
+[XDlog] 23:38:09 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (。-ω-)zzz', 1310] | Used: 0.00037097930908203125
+
+[XDlog] 23:38:14 Begin init |  : 
+[XDlog] 23:38:14 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (。-ω-)zzz', 1305] | Used: 0.0002982616424560547
+
+[XDlog] 23:39:14 Begin init |  : 
+[XDlog] 23:39:14 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (。-ω-)zzz', 1245] | Used: 0.0004601478576660156
+
+[XDlog] 23:41:54 Begin init |  : 
+[XDlog] 23:41:54 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (。-ω-)zzz', 1085] | Used: 0.0005092620849609375
+
+[XDlog] 23:42:57 Begin init |  : 
+[XDlog] 23:42:57 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (｡>ω<｡)', 1022] | Used: 0.0003345012664794922
+
+[XDlog] 23:43:18 Begin init |  : 
+[XDlog] 23:43:18 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (。-ω-)zzz', 1001] | Used: 0.0003490447998046875
+
+[XDlog] 23:53:57 Begin init |  : 
+[XDlog] 23:53:57 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (。-ω-)zzz', 362] | Used: 0.00042176246643066406
+
+[XDlog] 00:21:46 Begin init |  : 
+[XDlog] 00:21:46 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;173;216;230m (。-ω-)zzz', 493] | Used: 0.0005538463592529297
+
+[XDlog] 00:21:59 Begin init |  : 
+[XDlog] 00:21:59 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;254;250;195m (。-ω-)zzz', 480] | Used: 0.0005273818969726562
+
+[XDlog] 00:30:20 Begin init |  : 
+[XDlog] 00:30:20 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (。-ω-)zzz', 1779] | Used: 0.0005328655242919922
+
+[XDlog] 00:30:29 Begin init |  : 
+[XDlog] 00:30:29 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (。-ω-)zzz', 1770] | Used: 0.00032138824462890625
+
+[XDlog] 00:33:19 Begin init |  : 
+[XDlog] 00:33:19 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (。-ω-)zzz', 1600] | Used: 0.0006821155548095703
+
+[XDlog] 00:33:30 Begin init |  : 
+[XDlog] 00:33:30 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (。-ω-)zzz', 1589] | Used: 0.0003218650817871094
+
+[XDlog] 00:33:43 Begin init |  : 
+[XDlog] 00:33:43 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (。-ω-)zzz', 1576] | Used: 0.00029540061950683594
+
+[XDlog] 00:38:07 Begin init |  : 
+[XDlog] 00:38:07 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (。-ω-)zzz', 1312] | Used: 0.0008511543273925781
+
+[XDlog] 00:38:18 Begin init |  : 
+[XDlog] 00:38:18 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (。-ω-)zzz', 1301] | Used: 0.00036835670471191406
+
