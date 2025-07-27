@@ -2,6 +2,20 @@ import os
 
 # cmd颜色显示刷新 Windows：cls Linux/Unix/macOS终端的清屏命令是：clear
 os.system('cls' if os.name == 'nt' else 'clear')
+import time
+
+start_time_dict = {"init": time.time()}
+use_time_dict = {}
+start_time_dict["import"] = start_time_dict.get("init", 0)
+log_buffer = []
+
+
+def print_use_time(log_prefix, time_name):
+    use_time = time.time() - start_time_dict.get(time_name, 0)
+    print(f"[{log_prefix}] {time_name} Time Used: {use_time}")
+    use_time_dict[time_name] = use_time
+
+
 from datetime import datetime, timedelta
 import emoji
 import json
@@ -10,108 +24,144 @@ from Pinyin2Hanzi import dag, DefaultDagParams
 import random
 import re
 import requests
-import time
 import threading
 from unidecode import unidecode
 import win32file
 import win32con
 
+# 环境安装：
 # pip install emoji Pinyin2Hanzi pywin32 pypinyin requests unidecode
 
-#  向下去偶数
-chat_history_len = 6
+# 实际长度：向下取偶数
+chat_history_len = 16
+ai_len = 200
+# 最大 500
 
 save_history = True
 ai_limit = False
 
+print_use_time("XDInit", "import")
 
-def process_entry(timestamp, player_name, command, message, say):
+
+def process_entry(timestamp: str, player_name: str, command: str, message: str, is_return: bool, say: str):
     """Process a new entry asynchronously."""
-    if command == "no_return":
-        match message:
-            case "new_chat":
-                # chat_history = []
-                chat_history.clear()
-            case _:
-                print(f"无此参数 {message}")
-        print(f"[XDlog] {time.strftime('%H:%M:%S')} | {player_name} : {message}")
-        return
-
-    global thread_count, thread_index
-    if thread_count == 0:
-        with open(state_file_path, 'w', encoding='utf-8') as f:
-            f.write("1")
-    start_time = time.time()
-    start_strftime = time.strftime("%H:%M:%S")
-    # print(f"{start_strftime} Begin: {player_name}: {command}" + (f"\n{message}" if message else ""))
-    print(f"[XDlog] {start_strftime} Begin {command} | {player_name} : {message}")
-    is_func = True
-    py_message = ""
-    thread_count += 1
-    match command:
-        case "init":
-            py_message = next_half_or_full_hour_final()
-        case "g_pinyin":
-            py_message = pinyin2hanzi_converter.pinyin_groups_to_chinese(message, True)
-            command = "pinyin"
-            is_func = False
-        case "time":
-            py_message = time.strftime("%H:%M:%S")
-        case "ai":
-            py_message = deepseek(player_name, message, True)
-        case "server":
-            py_message = get_server(message[0], message[1])
-        case "pinyin_add":
-            py_message = pinyin2hanzi_converter.add_pinyin_mapping(message)
-            with open("temp\\command_record.txt", "a", encoding="utf-8") as command_record:
-                command_record.write(f"{command} {player_name}: {message} | {py_message}\n")
-        case "pinyin_del":
-            py_message = pinyin2hanzi_converter.del_pinyin_mapping(message)
-            with open("temp\\command_record.txt", "a", encoding="utf-8") as command_record:
-                command_record.write(f"{command} {player_name}: {message} | {py_message}\n")
-        case "pinyin":
-            py_message = pinyin2hanzi_converter.pinyin_groups_to_chinese(message, False)
-        case _:
-            print(f"无此方法 {command}")
-            is_func = False
-
-    end_time = time.time()
-    # process_time = round(end_time - start_time, 1)
-    process_time = end_time - start_time
-    thread_index += 1
-    result_data = {f"{end_time}_{thread_index}": {player_name: {
-        "command": command,
-        "message": message,
-        "pyMessage": py_message,
-        "say": say,
-        "process_time": process_time
-    }}}
     try:
-        with open(result_file_path, 'r', encoding='utf-8') as f:
-            existing_data = json.load(f)
-        existing_data.update(result_data)
-        with open(result_file_path, 'w', encoding='utf-8') as f:
-            # noinspection PyTypeChecker
-            json.dump(existing_data, f, ensure_ascii=False, indent=4)
-    except FileNotFoundError:
-        with open(result_file_path, 'w', encoding='utf-8') as f:
-            # noinspection PyTypeChecker
-            json.dump(result_data, f, ensure_ascii=False, indent=4)
-        print(f"[XDlog] \033[33mWarning result JSON NOT found, created\033[0m")
+        if not is_return:
+            match command:
+                case "new_chat":
+                    # chat_history = []
+                    chat_history.clear()
+                case "set_ai_new_chat":
+                    # chat_history = []
+                    chat_history.clear()
+                case "pinyin_reload":
+                    pinyin2hanzi_converter.reload_dag()
+                case "set_ai_chat_len":
+                    global chat_history_len
+                    try:
+                        chat_history_len = int(message)
+                    except ValueError:
+                        print(f"[XDAI] \033[31mError set_ai_chat_len: '{message}' is not a valid integer\033[0m")
+                case "set_ai_chars_len":
+                    global ai_len
+                    try:
+                        ai_len = int(message)
+                    except ValueError:
+                        print(f"[XDAI] \033[31mError set_ai_chars_len: '{message}' is not a valid integer\033[0m")
+                case "set_is_ai_limit":
+                    global ai_limit
+                    if message == "true":
+                        ai_limit = True
+                    elif message == "false":
+                        ai_limit = False
+                    else:
+                        print(f"[XDAI] \033[31mError set_is_ai_limit: '{message}' is not a valid boolean\033[0m")
+                case _:
+                    print(f"无此参数 {message}")
+            print(f"[XDlog] {time.strftime('%H:%M:%S')} | {player_name} : {message}")
+            return
+
+        global thread_count, thread_index
+        if thread_count == 0:
+            with open(state_file_path, 'w', encoding='utf-8') as f:
+                f.write("1")
+        start_time = time.time()
+        start_strftime = time.strftime("%H:%M:%S")
+        # print(f"{start_strftime} Begin: {player_name}: {command}" + (f"\n{message}" if message else ""))
+        print(f"[XDlog] {start_strftime} Begin {command} | {player_name} : {message}")
+        is_func = True
+        py_message = ""
+        thread_count += 1
+        match command:
+            case "init":
+                py_message = next_half_or_full_hour_final()
+            case "g_pinyin":
+                py_message = pinyin2hanzi_converter.pinyin_to_chinese(message, True)
+                command = "pinyin"
+                is_func = False
+            case "time":
+                py_message = time.strftime("%H:%M:%S")
+            case "ai":
+                py_message = deepseek(player_name, message)
+            case "server_mode":
+                py_message = get_server("mode", message)
+            case "server_name":
+                py_message = get_server("name", message)
+            case "pinyin_add":
+                py_message = pinyin2hanzi_converter.add_pinyin_mapping(message)
+            case "pinyin_del":
+                py_message = pinyin2hanzi_converter.del_pinyin_mapping(message)
+            case "pinyin":
+                py_message = pinyin2hanzi_converter.pinyin_to_chinese(message, False)
+            case _:
+                print(f"无此方法 {command}")
+                is_func = False
+
+        end_time = time.time()
+        # process_time = round(end_time - start_time, 1)
+        process_time = end_time - start_time
+        thread_index += 1
+        result_data = {f"{end_time}_{thread_index}": {player_name: {
+            "command": command,
+            "message": message,
+            "pyMessage": py_message,
+            "say": say,
+            "process_time": process_time
+        }}}
+        try:
+            with open(result_file_path, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+            existing_data.update(result_data)
+            with open(result_file_path, 'w', encoding='utf-8') as f:
+                # noinspection PyTypeChecker
+                json.dump(existing_data, f, ensure_ascii=False, indent=4)
+        except FileNotFoundError:
+            with open(result_file_path, 'w', encoding='utf-8') as f:
+                # noinspection PyTypeChecker
+                json.dump(result_data, f, ensure_ascii=False, indent=4)
+            print(f"[XDlog] \033[33mWarning result JSON NOT found, created\033[0m")
+        except Exception as e:
+            print(f"[XDlog] \033[31mError Failed to update result JSON: {e}\033[0m")
+
+        thread_count -= 1
+        if thread_count == 0:
+            with open(state_file_path, 'w', encoding='utf-8') as f:
+                f.write("0")
+        processing_set.remove((timestamp, player_name))
+        end_strftime = time.strftime("%H:%M:%S")
+
+        if py_message == "" and is_func:
+            print(f"[XDlog] \033[31mError {command} returned EMPTY \n\033[0m")
+
+        print(
+            f"[XDlog] {end_strftime} Finish {command} | {player_name} : {message} | Result: {py_message} | Used: {process_time}\n")
+        save_command_record(f"{log_date}\t{start_strftime}\t{command}\t{player_name}\t{message}\t{py_message}\n")
+        write_log()
     except Exception as e:
-        print(f"[XDlog] \033[31mError Failed to update result JSON: {e}\033[0m")
-
-    thread_count -= 1
-    if thread_count == 0:
-        with open(state_file_path, 'w', encoding='utf-8') as f:
-            f.write("0")
-    processing_set.remove((timestamp, player_name))
-    end_strftime = time.strftime("%H:%M:%S")
-    print(
-        f"[XDlog] {end_strftime} Finish {command} | {player_name} : {message} | Result: {py_message} | Used: {process_time}\n")
-
-    if py_message == "" and is_func:
-        print(f"[XDlog] \033[31mError {command} returned EMPTY \n\033[0m")
+        print(
+            f"[XDlog] {time.strftime('%H:%M:%S')} \033[31mError Failed to Process {command} | {player_name} : {message}\n{e}\033[0m")
+        save_temp_data("load_message_error", '\n'.join(log_buffer))
+        write_log()
 
 
 def monitor_file():
@@ -127,9 +177,9 @@ def monitor_file():
         None
     )
 
-    last_m_time = os.path.getmtime(json_file_path)
-    print(f"[XDlog] {time.strftime('%H:%M:%S')} Monitoring Squirrel Messages...")
-
+    last_m_time = 0
+    print(f"[XDlog] {time.strftime('%H:%M:%S')} Monitoring Squirrel Messages...\n")
+    write_log()
     while True:
         results = win32file.ReadDirectoryChangesW(
             h_dir,
@@ -155,27 +205,62 @@ def monitor_file():
                                     threading.Thread(target=process_entry,
                                                      args=(
                                                          timestamp, player_name,
-                                                         details["command"], details["message"], details["say"]
+                                                         details["command"], details["message"],
+                                                         details["is_return"], details["say"]
                                                      )).start()
 
                         last_m_time = current_m_time
                 except FileNotFoundError:
+                    # should be unreachable
                     with open(json_file_path, 'w', encoding='utf-8') as f:
                         # noinspection PyTypeChecker
                         json.dump({}, f, ensure_ascii=False)
                     print(f"[XDlog] \033[33mWarning result JSON NOT found, created\033[0m")
+                    write_log()
                 except Exception as e:
                     print(
-                        f"[XDlog] {time.strftime('%H:%M:%S')} \033[31mError Failed to read JSON {os.path.basename(json_file_path)}: {e}\033[0m")
-                    save_temp_data("load_message_error", data)
+                        f"[XDlog] {time.strftime('%H:%M:%S')} \033[31mError Failed to read JSON {os.path.basename(json_file_path)}\n{e}\033[0m")
+                    save_temp_data("load_message_error", '\n'.join(log_buffer) + "\n\n" + (
+                        json.dumps(data, ensure_ascii=False) if 'data' in locals() else "data not defined"))
+                    write_log()
+
+
+def save_command_record(message):
+    with open("data\\command_record.txt", "a", encoding="utf-8") as command_record:
+        command_record.write(message)
 
 
 def save_temp_data(name, data):
-    timestamp = datetime.now().strftime("%Y%m%d_%H-%M-%S")
-    output_file = f"temp/{timestamp}_{name}.txt"
+    output_file = f"temp\\{date_timestamp}_{name}.txt"
     # os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "a", encoding="utf-8") as f:
         f.write(data)
+
+
+# file size: 0MB, write: 1.9 ms
+# file size: 100MB, write: 2.0 ms
+# file size: 1GB, write: 2.1 ms
+# file size: 2GB, write: 2.2 ms
+# file size: 4GB, write: 2.4 ms
+# file size: 8GB, write: 2.7 ms
+# file size: 16GB, write: 3.2 ms
+# file size: 32GB, write: 3.8 ms
+# file size: 64GB, write: 4.4 ms
+# file size: 128GB, write: 8.3 ms
+# file size: 256GB, write: 20 ms
+
+
+def read_json(filename, log_prefix):
+    try:
+        with open(filename, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"[{log_prefix}] \033[31mError: File not found \"{filename}\"\033[0m")
+    except PermissionError:
+        print(f"[{log_prefix}] \033[31mError: Permission denied for file \"{filename}\"\033[0m")
+    except Exception as e:
+        print(f"[{log_prefix}] \033[31mError: Failed to load \"{filename}\", details: {str(e)}\033[0m")
+    return {}
 
 
 def next_half_or_full_hour_final():
@@ -220,15 +305,22 @@ class PinyinChineseConverter:
         self.merge_pinyin_dict = {}
         self.custom_pinyin_dict = {}
         self.weight = 0.21
+        # start_time_dict["pinyin_custom"] = time.time()
         self.load_pinyin_custom_dict()
         self.pinyin_custom_data_backup()
+        # print_use_time("Pinyin Init", "pinyin_custom")
+        # 0.002371072769165039
 
     def pinyin_custom_data_backup(self):
-        timestamp = datetime.now().strftime("%Y%m%d_%H-%M-%S")
-        output_file = f"temp/{timestamp}_pinyin_custom_data.json"
+        output_file = f"temp\\{date_timestamp}_pinyin_custom_data.json"
         with open(output_file, 'w', encoding='utf-8') as f:
             # noinspection PyTypeChecker
             json.dump(self.data, f, ensure_ascii=False, indent=4)
+
+    def reload_dag(self):
+        dag_params.char_dict = read_json("data\\dag\\dag_char_ttf.json", "Pinyin Init")
+        dag_params.phrase_dict = read_json("data\\dag\\dag_phrase_ttf.json", "Pinyin Init")
+        self.load_pinyin_custom_dict()
 
     def load_pinyin_custom_dict(self):
         if os.path.exists(self.pinyin_data_path):
@@ -246,9 +338,8 @@ class PinyinChineseConverter:
                                 dag_info = dag_params.phrase_dict[key][0]
                                 if dag_info[1] > weight:
                                     print(
-                                        f"[Pinyin Init] \033[33mWarning higher weight \"{key}\": \"{dag_info[0]}\" {dag_info[1]} > {weight}\033[0m")
+                                        f"[Pinyin Init] \033[33mWarning higher weight \"{key}\": \"{merge_list[0][0]}\" | {dag_info[0]} {dag_info[1]} > {weight}\033[0m")
                                 dag_params.phrase_dict[key] = merge_list + dag_params.phrase_dict[key]
-
                             else:
                                 dag_params.phrase_dict[key] = merge_list
                     else:
@@ -263,7 +354,7 @@ class PinyinChineseConverter:
             except FileNotFoundError:
                 print(f"[Pinyin Init] \033[33mWarning custom pinyin data NOT found\033[0m")
             except Exception as e:
-                print(f"[Pinyin Init] \033[31mError {self.pinyin_data_path}: {e}\033[0m")
+                print(f"[Pinyin Init] \033[31mError {self.pinyin_data_path}\n{e}\033[0m")
                 return False
         else:
             return False
@@ -311,9 +402,9 @@ class PinyinChineseConverter:
                             return f"已有 (受保护): {str_dict}"
                         else:
                             # 不在dag表第一个，如果这个词权重高于0.21应当在init中提醒
-                            if dag_params.phrase_dict[pin][0][1] > self.weight:
+                            if dag_pin_info[1] > self.weight:
                                 print(
-                                    f"[Pinyin Add] \033[33mWarning merge higher weight {str_dict} {dag_params.phrase_dict[pin][0][1]} > {self.weight}\033[0m")
+                                    f"[Pinyin Add] \033[33mWarning merge higher weight {str_dict} | {dag_pin_info[0]} {dag_pin_info[1]} > {self.weight}\033[0m")
                             dag_params.phrase_dict[pin] = [[hz, self.weight]] + dag_params.phrase_dict[pin]
                             print(f"[Pinyin Add] Success merge add {str_dict} {self.weight}")
                     else:
@@ -368,7 +459,9 @@ class PinyinChineseConverter:
                                 f"[Pinyin Del] Success merge {str_dict} {pin_info[1]} | Next \"{dag_params.phrase_dict[pin][0][0]}\"")
                             return return_str
                         else:
-                            # 如果真的只有一个元素按理不会走到这，应该是下面的Become EMPTY，除非init时没有绑定
+                            # 如果真的只有一个元素按理不会走到这，应该是下面的Become EMPTY
+                            # del self.merge_pinyin_dict[pin]时dag_params.phrase_dict[pin]就也跟着没了
+                            # 除非init时这个拼音只有一个词，而且还走的还不是直接赋值
                             del dag_params.phrase_dict[pin]
                             print(f"[Pinyin Del] Success merge and Become EMPTY after pop {str_dict} {pin_info[1]}")
                             return return_str
@@ -394,6 +487,7 @@ class PinyinChineseConverter:
         """
         第一步，替换custom词典
         """
+        # \b 表示单词边界，用于确保匹配的是完整的单词。
         pattern = re.compile(r'\b(' + '|'.join(map(re.escape, self.custom_pinyin_dict)) + r')\b', flags=re.IGNORECASE)
 
         def replacement(match):
@@ -463,7 +557,7 @@ class PinyinChineseConverter:
         result.append([pinyin_list[0]])
         self.pinyin_group_to_chinese_candidates(pinyin_list[1:], topk, result, fail_count_dict)
 
-    def pinyin_groups_to_chinese(self, text, is_strict_mode, topk=1):
+    def pinyin_to_chinese(self, text, is_strict_mode, topk=1):
         """
         主流程：拼音组转最终中文
         """
@@ -499,7 +593,7 @@ class PinyinChineseConverter:
 
 
 # deepseek
-def deepseek(name, message, is_success):
+def deepseek(name, message):
     global ai_limit, chat_history
     if ai_limit:
         auth = ai_smurf_account
@@ -507,25 +601,26 @@ def deepseek(name, message, is_success):
         auth = ai_main_account
     if not auth:
         return ["AI响应发生错误: 未配置账号..."]
-
-    messages = chat_history + [
+    messages = [
         {
             "role": "system",
-            "content": "你处于一个聊天群中，且在non-thinking(enable_thinking=False)模式，请快速响应，不进行深度思考，直接回答问题，并准守以下规则：1.请严格限制回答字数在 "
-                       "160 字以内，省略思考过程；理性的问题请保证专业与准确性；感性的问题请高情商回答，富有感情和温暖。2.字符编码环境仅限最基本的符号，请使用ASCII字符；user的话包括name("
-                       "中括号内是玩家的前缀，后面是玩家名字)、content(玩家的问题) "
+            "content": f"""
+                    你处于一个聊天群中，且在non-thinking(enable_thinking=False)模式，请快速响应，不进行深度思考，直接回答问题，并准守以下规则：
+                    1.回答字数在 {ai_len} 字以内，不包含思考过程；理性的问题请保证专业与准确；感性的问题请高情商回答，富有感情与温暖。
+                    2.符号使用限制：仅允许使用中文符号、ASCII中的符号
+                    3.消息中包括name(中括号内是玩家的前缀名称，后面是玩家名字)、content(玩家的问题)
+                    """
         },
         {
             "role": "user",
             "content": f"name: {name}, content: {message}"
         }
     ]
-    # 历史记录添加问题
     if save_history:
-        if is_success:
-            chat_history.append({"role": "user", "content": f"name: {name}, content: {message}"})
-            # if len(chat_history) > chat_history_len:
-            #     chat_history = chat_history[2:]
+        messages = chat_history + messages
+
+        # if len(chat_history) > chat_history_len:
+        #     chat_history = chat_history[2:]
     # messages.extend(chat_history)
     data = ""
     try:
@@ -535,14 +630,14 @@ def deepseek(name, message, is_success):
                 "Authorization": auth,
                 "Content-Type": "application/json",
             },
-                # "model": "deepseek/deepseek-r1:free",
-                # "model": "qwen/qwen3-14b:free",
-                # "model": "qwen/qwen3-4b:free",
-                # "model": "qwen/qwen-2.5-7b-instruct:free",
-                # "model": "qwen/qwq-32b:free",
-                # "model": "qwen/qwen3-8b:free",
-                # "model": "qwen/qwen3-30b-a3b:free",
-                # "model": "qwen/qwen3-4b:free",
+            # "model": "deepseek/deepseek-r1:free",
+            # "model": "qwen/qwen3-14b:free",
+            # "model": "qwen/qwen3-4b:free",
+            # "model": "qwen/qwen-2.5-7b-instruct:free",
+            # "model": "qwen/qwq-32b:free",
+            # "model": "qwen/qwen3-8b:free",
+            # "model": "qwen/qwen3-30b-a3b:free",
+            # "model": "qwen/qwen3-4b:free",
             data=json.dumps({
                 "model": "qwen/qwen2.5-vl-72b-instruct:free",
                 "messages": messages,
@@ -576,7 +671,7 @@ def deepseek(name, message, is_success):
         max_retries = 3
         retries = 0
         while retries < max_retries:
-            content = deepseek(name, message, False)
+            content = deepseek(name, message)
             if content:
                 return content
             retries += 1
@@ -590,30 +685,49 @@ def deepseek(name, message, is_success):
         return [f"AI响应发生错误: {e.__class__.__name__}"]
 
     if content:
-        messages[len(messages)-1]["content"] = content
+        # messages[len(messages) - 1]["content"] = content
+        if len(content) > ai_len * 3:
+            print(f"[XDAI] \033[33mWarning 消息过长... {len(content)} -> {ai_len * 3}\033[0m")
+            # content = deepseek(name, message)
+            # 不继续重试了生成的长拖得时间长
+            # 230/3*5=383.333333333 五条全中
+            if len(content) > ai_len * 3:
+                content = content[:ai_len * 3]
+                # 不进行保存
+                return split_string_limited(content)
         content = split_string_limited(content)
-        # 历史记录添加回答
-        if save_history:
-            chat_history.append({"role": "assistant", "content": content})
-            if len(chat_history) > chat_history_len:
-                # chat_history.pop(0)  # 确保对话历史不会无限增长
-                chat_history = chat_history[2:]
+        # 历史记录添加
+
+        # chat_history.append({"role": "user", "content": f"name: {name}, content: {message}"})
+        # chat_history.append({"role": "assistant", "content": content})
+        chat_history.extend([
+            {"role": "user", "content": f"name: {name}, content: {message}"},
+            {"role": "assistant", "content": content}
+        ])
+        if len(chat_history) > chat_history_len:
+            # chat_history.pop(0)
+            chat_history = chat_history[2:]
         return content
     else:
         print("[XDlog] 返回为空重试...")
-        content = deepseek(name, message, False)
+        content = deepseek(name, message)
         if content:
             return content
         else:
             return ["AI重试响应后失败..."]
 
 
+# max_length会向上超出至多3
 def split_string_limited(s, max_length=230):
     """字符串分割方法，转换非 ASCII 字符和 emoji，同时限制长度"""
-    # 25.7.19 21:00:00 merge ai动态换行 todo 测试
+    # 25.7.19 21:00:00 merge ai动态换行功能
+    # 换行转换
     s = s.replace('\n', '').replace('\r', '')
+    # de emoji ze
     s = emoji_to_ascii(s)
+    # unidecode ze
     s = convert_non_ascii_except_chinese(s)
+
     result = []
     buffer = []
     current_length = 0
@@ -622,7 +736,7 @@ def split_string_limited(s, max_length=230):
     last_punctuation_idx = -1
     last_punctuation_is_comma = False
     for i, char in enumerate(s):
-        char_length = 3 if is_chinese(char) else 1
+        char_length = 3 if is_not_ascii(char) else 1
         buffer.append(char)
         current_length += char_length
         # 记录最近的标点，且当前片段长度仍未超限
@@ -637,52 +751,67 @@ def split_string_limited(s, max_length=230):
                 if last_punctuation_is_comma:
                     segment = ''.join(buffer[:last_punctuation_idx])
                     result.append(segment)
+                    record_length = current_length
                 else:
                     # 其他标点，包含标点
                     segment = ''.join(buffer[:last_punctuation_idx + 1])
                     result.append(segment)
+                    record_length = current_length
                 # 留下剩余部分
                 buffer = buffer[last_punctuation_idx + 1:]
                 # 重新计长度
-                current_length = sum(3 if is_chinese(c) else 1 for c in buffer)
-                current_length_list.append(current_length)
+
+                current_length = sum(3 if is_not_ascii(c) else 1 for c in buffer)
+                # current_length_list[-1] -= current_length
+                current_length_list.append(record_length - current_length)
             else:
                 result.append(''.join(buffer[:-1]))
                 buffer = [char]
-                current_length_list.append(current_length)
+                record_length = current_length
                 current_length = char_length
+                current_length_list.append(record_length - current_length)
             # 每次切分后都要重置标点追踪
             last_punctuation_idx = -1
             last_punctuation_is_comma = False
-            
+    # 统计最后剩余的长度
+    if current_length != 0:
+        current_length_list.append(current_length)
     if buffer:
         result.append(''.join(buffer))
-    print("[XDlog] sq长度: ", " ".join(str(length) for length in current_length_list))
-    print("[XDlog] py长度: ", " ".join(str(len(substring)) for substring in result))
+    result_max_len = ai_len * 3 / max_length
+    result_max_len = int(result_max_len) + (1 if result_max_len != int(result_max_len) else 0)
+
+    if len(result) > result_max_len:
+        print(f"[XDAI] \033[33mWarning 消息段落数量过多... {len(result)} -> {result_max_len}\033[0m")
+        result = result[:result_max_len]
+    print("[XDAI] sq长度: ", " ".join(str(length) for length in current_length_list))
+    print("[XDAI] py长度: ", " ".join(str(len(substring)) for substring in result))
     return result
 
-# 'content': '练习lurchstrafe，先掌握基本的strafe技巧。在游戏里找平坦开阔区域
-# ，设置低敏感度。开始时，慢慢移动，逐渐加快速度，注意身体和鼠标同步。多练习
-# ，感受节奏，调整按键和鼠标移动的协调。观看高手视频，模仿他们的动作。保持耐
-# 心，不断尝试，你会逐渐掌握。加油！', 'refusal': None, 'reasoning': None}}],
-#  'system_fingerprint': None, 'usage': {'prompt_tokens': 215, 'completion_to
-# kens': 99, 'total_tokens': 314}}
 
-
-# 判断是否为中文字符
 def is_chinese(char):
-    return '\u4e00' <= char <= '\u9fff'
+    # 常用中文字符范围
+    if '\u4E00' <= char <= '\u9FFF':
+        return True
+    # 常用中文标点范围
+    if '\u3000' <= char <= '\u303F':
+        return True
+    return False
+
+
+def is_not_ascii(char):
+    return ord(char) > 127
 
 
 # 非 ASCII 转换（保留中文）
 def convert_non_ascii_except_chinese(text):
-    return ''.join(char if char in chinese_chars or ord(char) < 128 else unidecode(char) for char in text)
+    return ''.join(char if is_chinese(char) or ord(char) < 128 else unidecode(char) for char in text)
 
 
 # Emoji 转换
 def emoji_to_ascii(text):
     emoji_text = emoji.demojize(text)  # 将 emoji 转为名称
-    print(f"[XDlog] emoji: {emoji_text}")
+    print(f"[XDAI] demojize: {emoji_text}")
     # for key, val in emoji_map.items():
     #     emoji_text = emoji_text.replace(f":{key}:", val)
     pattern = re.compile("|".join(map(re.escape, emoji_map.keys())))
@@ -690,6 +819,15 @@ def emoji_to_ascii(text):
     return emoji_text
 
 
+# 判断是否为中文字符
+# def is_chinese(char):
+#     if '\u4e00' <= char <= '\u9fff':
+#         return True
+#     if char in set("，。？！（）【】、；：")
+#         return True
+# chinese_chars = set("，。！？；、：’”〞—）›》】」』…～【《〈‹«（＜") | set(chr(i) for i in range(0x4E00, 0x9FFF))
+
+# @xd server 服务器查询
 def filter_data(servers):
     filtered_data = []
     for server in servers:
@@ -718,25 +856,33 @@ def filter_data(servers):
 def get_server(query_type, message):
     try:
         global last_get_server_time
-        file_name = "servers.json"
+        servers_json = "temp\\servers.json"
         filtered_data = []
         # test = False
         current_time = time.time()
         if current_time - last_get_server_time > 10:
             last_get_server_time = current_time
-            response = requests.get("https://nscn.wolf109909.top/client/servers")
-            servers = response.json()
-            with open(file_name, "w") as file:
-                # noinspection PyTypeChecker
-                json.dump(servers, file, indent=4)
-                print("[XDlog] Get服务器...")
+            try:
+                response = requests.get("https://nscn.wolf109909.top/client/servers")
+                servers = response.json()
+                with open(servers_json, "w") as file:
+                    # noinspection PyTypeChecker
+                    json.dump(servers, file, indent=4)
+                    print("[XDlog] Get服务器...")
+            # except ConnectionError as conn_err:
+            except Exception as conn_err:
+                print(f"连接错误: {conn_err}")
+                return f"连接错误: {conn_err.__class__.__name__}"
+            # else:
+            #     print("请求成功")
+            #     print(response.text)
         else:
-            with open(file_name, "r") as file:
+            with open(servers_json, "r") as file:
                 servers = json.load(file)
                 print("[XDlog] 内存读取...")
                 # test = True
         match query_type:
-            case "mode" | "模式":
+            case "mode":
                 cleaned_data = filter_server_mod(servers, message)
                 if not cleaned_data:
                     return f"查询模式 [{message}] 未找到任何服务器"
@@ -750,7 +896,7 @@ def get_server(query_type, message):
                         filtered_data.extend(cleaned_data)
                     else:
                         return f"查询模式 [{message}] 未找到有人的服务器"
-            case "name" | "名称" | "名字":
+            case "name":
                 cleaned_data = filter_name_mod(servers, message)
                 # print(cleaned_data)
                 if not cleaned_data:
@@ -886,25 +1032,45 @@ def filter_name_mod(servers, message):
     return filtered_data
 
 
-log_filename = datetime.now().strftime("%Y-%m-%d") + ".txt"
+datetime_now = datetime.now()
+date_timestamp = datetime_now.strftime("%Y-%m-%d_%H-%M-%S")
+log_date = datetime_now.strftime("%Y-%m-%d")
 # 指定日志目录
 log_dir = os.path.join(os.path.dirname(__file__), "XDlogs")
 # 创建日志文件夹（如果不存在）
 os.makedirs(log_dir, exist_ok=True)
 # 日志文件完整路径
-log_file_path = os.path.join(log_dir, log_filename)
+log_file_path = os.path.join(log_dir, f"{log_date}.txt")
 
-_print = print
+ori_print = print
 
 
 # 自定义print，同时写入日志文件
 def print(*args, **kwargs):
+    ori_print(*args, **kwargs)
     message = " ".join(map(str, args))
-    with open(log_file_path, "a", encoding="utf-8") as log_file:
-        log_file.write(message + "\n")
-    _print(*args, **kwargs)
+    log_buffer.append(message)
     return print
 
+
+# with open(log_file_path, "a", encoding="utf-8") as log_file:
+#     log_file.write(message + "\n")
+
+def write_log():
+    with open(log_file_path, "a", encoding="utf-8") as log_file:
+        for message in log_buffer:
+            log_file.write(f"{message}\n")
+    log_buffer.clear()
+    # file.writelines("\n".join(lines) + "\n") 需手动添加换行符
+
+
+if not os.path.exists("data"):
+    os.makedirs("data")
+    print(f"[XDlog Init] \033[33mWarning First init | Directory created at: {os.path.abspath('data')}\033[0m")
+
+if not os.path.exists("temp"):
+    os.makedirs("temp")
+    print(f"[XDlog Init] \033[33mWarning First init | Directory created at: {os.path.abspath('temp')}\033[0m")
 
 ttf_data_path = r'D:\SystemApps\Steam\steamapps\common\Titanfall2\R2Northstar\save_data\Northstar.Client'
 json_file_path = os.path.join(ttf_data_path, 'XD.json')
@@ -944,7 +1110,8 @@ emoji_list = [
 ]
 # NIGHT_EMOJI = "(。-ω-)zzz"
 
-# 转拼音 初始化模型参数 是你的
+# 转拼音 初始化模型参数 todo 是你的
+start_time_dict["pinyin"] = time.time()
 pinyin_syllables = {'a', 'ai', 'an', 'ang', 'ao', 'ba', 'bai', 'ban', 'bang', 'bao', 'bei', 'ben', 'beng', 'bi',
                     'bian', 'biao', 'bie', 'bin', 'bing', 'bo', 'bu', 'ca', 'cai', 'can', 'cang', 'cao', 'ce',
                     'cen', 'ceng', 'cha', 'chai', 'chan', 'chang', 'chao', 'che', 'chen', 'cheng', 'chi', 'chong',
@@ -963,11 +1130,11 @@ pinyin_syllables = {'a', 'ai', 'an', 'ang', 'ao', 'ba', 'bai', 'ban', 'bang', 'b
                     'ming', 'miu', 'mo', 'mou', 'mu', 'na', 'nai', 'nan', 'nang', 'nao', 'ne', 'nei', 'nen', 'neng',
                     'ni', 'nian', 'niang', 'niao', 'nie', 'nin', 'ning', 'niu', 'nong', 'nou', 'nu', 'nuan', 'nue',
                     'nun', 'nuo', 'nv', 'o', 'ou', 'pa', 'pai', 'pan', 'pang', 'pao', 'pei', 'pen', 'peng', 'pi',
-                    'pian',
-                    'piao', 'pie', 'pin', 'ping', 'po', 'pou', 'pu', 'qi', 'qia', 'qian', 'qiang', 'qiao', 'qie',
+                    'pian', 'piao', 'pie', 'pin', 'ping', 'po', 'pou', 'pu', 'qi', 'qia', 'qian', 'qiang', 'qiao',
+                    'qie',
                     'qin', 'qing', 'qiong', 'qiu', 'qu', 'quan', 'que', 'qun', 'ran', 'rang', 'rao', 're', 'ren',
                     'reng', 'ri', 'rong', 'rou', 'ru', 'ruan', 'rui', 'run', 'ruo', 'sa', 'sai', 'san', 'sang',
-                    'sao', 'se', 'sen', 'seng', 'sha', 'shai', 'shan', 'shang', 'shao', 'she', 'shen', 'sheng',
+                    'sao', 'se', 'sen', 'seng', 'sha', 'shai', 'shan', 'shang', 'shao', 'she', 'shei', 'shen', 'sheng',
                     'shi', 'shou', 'shu', 'shua', 'shuai', 'shuan', 'shuang', 'shui', 'shun', 'shuo', 'si', 'song',
                     'sou', 'su', 'suan', 'sui', 'sun', 'suo', 'ta', 'tai', 'tan', 'tang', 'tao', 'te', 'teng', 'ti',
                     'tian', 'tiao', 'tie', 'ting', 'tong', 'tou', 'tu', 'tuan', 'tui', 'tun', 'tuo', 'wa', 'wai',
@@ -977,12 +1144,12 @@ pinyin_syllables = {'a', 'ai', 'an', 'ang', 'ao', 'ba', 'bai', 'ban', 'bang', 'b
                     'zang', 'zao', 'ze', 'zei', 'zen', 'zeng', 'zha', 'zhai', 'zhan', 'zhang', 'zhao', 'zhe',
                     'zhen', 'zheng', 'zhi', 'zhong', 'zhou', 'zhu', 'zhua', 'zhuai', 'zhuan', 'zhuang', 'zhui',
                     'zhun', 'zhuo', 'zi', 'zong', 'zou', 'zu', 'zuan', 'zui', 'zun', 'zuo',
-                    'jve', 'lve', 'nve', 'qve', 'xve', 'yve', 'qv'}
+                    'jve', 'lve', 'nve', 'qve', 'xve', 'yve', 'jv', 'qv'}
 
 # uv test: jv律女qvxvyv
 uv_pinyin_list = {
     'jue': 'jve', 'lue': 'lve', 'nue': 'nve', 'que': 'qve', 'xue': 'xve', 'yue': 'yve',
-    'qv': "qu"
+    'jv': 'ju', 'qv': "qu"
 }
 
 
@@ -990,12 +1157,12 @@ class CustomDagParams(DefaultDagParams):
     # noinspection PyMissingConstructor
     def __init__(self):
         # Intentionally not calling super().__init__() to override parent logic
-        self.char_dict = self.readjson("data\\dag\\dag_char_ttf.json")
-        self.phrase_dict = self.readjson("data\\dag\\dag_phrase_ttf.json")
+        self.char_dict = read_json("data\\dag\\dag_char_ttf.json", "Pinyin Init")
+        self.phrase_dict = read_json("data\\dag\\dag_phrase_ttf.json", "Pinyin Init")
 
-    def readjson(self, filename):
-        with open(filename, encoding='utf-8') as f:
-            return json.load(f)
+    # def readjson(self, filename):
+    #     with open(filename, encoding='utf-8') as f:
+    #         return json.load(f)
 
 
 dag_params = CustomDagParams()
@@ -1022,6 +1189,7 @@ def pinyin2hanzi_init():
 
 pinyin2hanzi_converter = pinyin2hanzi_init()
 
+print_use_time("Pinyin Init", "pinyin")
 # AI
 chat_history = []
 try:
@@ -1050,9 +1218,8 @@ emoji_map = {
     ":winking_face:": "(^_~)",
     ":thumbs_up:": "(b^_^)b"
 }
-punctuation = set(",.!?，。！？；、,")
-chinese_chars = set("，。？！（）【】、；：") | set(chr(i) for i in range(0x4E00, 0x9FFF))
-# 将 转化为ASCII表情 例如"grinning_face": ":D",
+# 用于动态换行标记的标点
+punctuation = set(",.!?:)]}>~，。！？；、：’”〞—﹞〕＞）›»〉》】」』…～")
 
 last_get_server_time = 0
 trans_to_gamemode = {
@@ -1067,6 +1234,10 @@ trans_to_gamemode = {
     "边境防御大师": ["fd_master"]
 }
 
+print(f"[XDInit] ----init Finished----")
+print_use_time("XDInit", "init")
+print(
+    f"[XDInit] else Time Used: {use_time_dict.get('init', 0) - sum(value for key, value in use_time_dict.items() if key != 'init')}")
 if __name__ == "__main__":
     # 检测文件
     monitor_file()
