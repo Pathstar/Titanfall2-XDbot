@@ -1,0 +1,223 @@
+[XDlog] 20:56:43 Monitoring Squirrel Messages...
+[XDlog Init] [33mWarning First init | Directory created at: D:\111Pathstar111\LearningXD\garbages\Pycharm\Wordsheep\Fun\Titanfall\squirrel\data[0m
+[Pinyin Init] pinyin Time Used: 0.3017587661743164
+[XDInit] ----init Finished----
+[XDInit] init Time Used: 0.8734190464019775
+[XDInit] else Time Used: 0.0019545555114746094
+[XDlog] 21:00:09 Monitoring Squirrel Messages...
+
+[Pinyin Init] pinyin Time Used: 0.30614686012268066
+[XDInit] ----init Finished----
+[XDInit] init Time Used: 0.9959721565246582
+[XDInit] else Time Used: 0.0007088184356689453
+[XDlog] 21:14:39 Monitoring Squirrel Messages...
+
+[Pinyin Init] pinyin Time Used: 0.38113975524902344
+[XDInit] ----init Finished----
+[XDInit] init Time Used: 1.0449938774108887
+[XDInit] else Time Used: 0.0008478164672851562
+[XDlog] 21:14:49 Monitoring Squirrel Messages...
+
+[Pinyin Init] pinyin Time Used: 0.3253297805786133
+[XDInit] ----init Finished----
+[XDInit] init Time Used: 0.9489216804504395
+[XDInit] else Time Used: 0.0007801055908203125
+[XDlog] 21:14:58 Monitoring Squirrel Messages...
+
+[Pinyin Init] pinyin Time Used: 0.35036659240722656
+[XDInit] ----init Finished----
+[XDInit] init Time Used: 0.9831042289733887
+[XDInit] else Time Used: 0.0008254051208496094
+[XDlog] 21:15:03 Monitoring Squirrel Messages...
+
+[Pinyin Init] pinyin Time Used: 0.3012096881866455
+[XDInit] ----init Finished----
+[XDInit] init Time Used: 0.8727202415466309
+[XDInit] else Time Used: 0.0007727146148681641
+[XDlog] 21:15:10 Monitoring Squirrel Messages...
+
+[XDlog] 21:17:27 Begin init |  : 
+[XDlog] 21:17:27 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;198;195m ～(つˆДˆ)つ', 752] | Used: 0.00019288063049316406
+
+[XDlog] 21:17:27 Begin init |  : 
+[XDlog] 21:17:27 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;221;160;221m (｀・ω・´)', 752] | Used: 0.00018906593322753906
+
+[XDlog] 21:17:27 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:17:27 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;240;128;128m (・ω< )☆', 752] | Used: 0.0019273757934570312
+
+[XDlog] 21:17:35 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:17:35 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;221;160;221m (｡>﹏<｡)', 744] | Used: 0.00030922889709472656
+
+[XDlog] 21:17:35 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:17:35 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;248;131;121m (｡>﹏<｡)', 744] | Used: 0.00010204315185546875
+
+[XDlog] 21:17:35 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:17:35 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;250;195m (≧▽≦)/', 744] | Used: 0.00011038780212402344
+
+[XDlog] 21:17:42 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:17:42 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;208;175m ～(つˆДˆ)つ', 737] | Used: 0.0003008842468261719
+
+[XDlog] 21:17:42 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:17:42 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;248;131;121m (｡>ω<｡)', 737] | Used: 0.0001049041748046875
+
+[XDlog] 21:17:42 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:17:42 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;216;191;216m _(≧v≦」∠)_', 737] | Used: 0.00010013580322265625
+
+[XDlog] 21:18:56 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:18:56 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;221;160;221m (ﾉ≧∀≦)ﾉ', 663] | Used: 0.00046515464782714844
+
+[XDlog] 21:18:56 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:18:56 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;216;191;216m (｡･ω･｡)', 663] | Used: 0.0001373291015625
+
+[XDlog] 21:18:56 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:18:56 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;250;195m (｡>ω<｡)', 663] | Used: 0.000148773193359375
+
+[XDlog] 21:19:10 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:19:10 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;173;216;230m (^・ω・^)', 649] | Used: 0.0004131793975830078
+
+[XDlog] 21:19:10 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:19:10 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;175;238;238m (｡･ω･｡)', 649] | Used: 0.00013709068298339844
+
+[XDlog] 21:19:10 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 15 column 1 (char 338)[0m
+[XDlog] 21:19:10 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;144;238;144m (〜￣△￣)〜', 649] | Used: 0.00011324882507324219
+
+[XDlog] 21:20:12 Begin init |  : 
+[XDlog] 21:20:12 Begin init |  : 
+[XDlog] 21:20:12 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;175;238;238m (≧▽≦)/', 587] | Used: 0.0003750324249267578
+
+[XDlog] 21:20:12 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;205;214;210m (｡･ω･｡)', 587] | Used: 0.0005772113800048828
+
+[XDlog] 21:20:12 Begin init |  : 
+[XDlog] 21:20:12 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;219;193m (｡>ω<｡)', 587] | Used: 0.00013709068298339844
+
+[XDlog] 21:24:32 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 14 column 2 (char 335)[0m
+[XDlog] 21:24:32 Begin init |  : 
+[XDlog] 21:24:32 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;205;214;210m (≧▽≦)/', 327] | Used: 0.0001323223114013672
+
+[XDlog] 21:24:32 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;248;131;121m (^・ω・^)', 327] | Used: 0.0005249977111816406
+
+[XDlog] 21:24:32 Begin init |  : 
+[XDlog] 21:24:32 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;248;131;121m ～(つˆДˆ)つ', 327] | Used: 0.000171661376953125
+
+[XDlog] 21:24:50 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 14 column 2 (char 335)[0m
+[XDlog] 21:24:50 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;199;245;190m (≧▽≦)/', 309] | Used: 0.0005071163177490234
+
+[XDlog] 21:24:50 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 14 column 2 (char 335)[0m
+[XDlog] 21:24:50 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;198;195m (=・ω・=)', 309] | Used: 0.00015091896057128906
+
+[XDlog] 21:24:50 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Extra data: line 14 column 2 (char 335)[0m
+[XDlog] 21:24:50 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;219;193m _(≧v≦」∠)_', 309] | Used: 0.00011944770812988281
+
+[XDlog] 21:25:01 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Expecting value: line 1 column 1 (char 0)[0m
+[XDlog] 21:25:01 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;135;206;235m (〜￣△￣)〜', 298] | Used: 0.00040650367736816406
+
+[XDlog] 21:25:01 Begin init |  : 
+[XDlog] 21:25:01 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;216;191;216m (〜￣△￣)〜', 298] | Used: 0.00015997886657714844
+
+[XDlog] 21:25:01 Begin init |  : 
+[XDlog] 21:25:01 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;144;238;144m (ﾉ≧∀≦)ﾉ', 298] | Used: 0.0001480579376220703
+
+[XDlog] 21:25:17 Begin init |  : 
+[XDlog] 21:25:17 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;173;216;230m (〜￣△￣)〜', 282] | Used: 0.0005700588226318359
+
+[XDlog] 21:25:17 Begin init |  : 
+[XDlog] 21:25:17 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;205;214;210m (｡>﹏<｡)', 282] | Used: 0.00015425682067871094
+
+[XDlog] 21:25:17 Begin init |  : 
+[XDlog] 21:25:17 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;219;193m (=^･ω･^=)', 282] | Used: 0.00019097328186035156
+
+[XDlog] 21:27:06 Begin init |  : 
+[XDlog] 21:27:06 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;216;191;216m (=^･ω･^=)', 173] | Used: 0.0003376007080078125
+
+[XDlog] 21:27:06 Begin init |  : 
+[XDlog] 21:27:06 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;216;191;216m (=・ω・=)', 173] | Used: 0.00015473365783691406
+
+[XDlog] 21:27:06 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Expecting value: line 1 column 1 (char 0)[0m
+[XDlog] 21:27:06 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;221;160;221m ～(つˆДˆ)つ', 173] | Used: 0.0002675056457519531
+
+[XDlog] 21:27:14 Begin init |  : 
+[XDlog] 21:27:14 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;208;175m _(≧v≦」∠)_', 165] | Used: 0.0005183219909667969
+
+[XDlog] 21:27:14 Begin init |  : 
+[XDlog] 21:27:14 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;221;160;221m (^・ω・^)', 165] | Used: 0.0001304149627685547
+
+[XDlog] 21:27:14 Begin init |  : 
+[XDlog] 21:27:14 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;219;193m (〜￣△￣)〜', 165] | Used: 0.00011491775512695312
+
+[XDlog] 21:29:52 Begin init |  : 
+[XDlog] 21:29:52 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;199;245;190m (ﾉ≧∀≦)ﾉ', 7] | Used: 0.0004024505615234375
+
+[XDlog] 21:29:52 Begin init |  : 
+[XDlog] 21:29:52 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;199;245;190m (=・ω・=)', 7] | Used: 0.0001285076141357422
+
+[XDlog] 21:35:23 Begin init |  : 
+[XDlog] 21:35:23 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (^・ω・^)', 1476] | Used: 0.0004813671112060547
+
+[XDlog] 21:35:23 Begin init |  : 
+[XDlog] 21:35:23 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;240;128;128m (ﾉ≧∀≦)ﾉ', 1476] | Used: 0.00016832351684570312
+
+[XDlog] 21:35:28 Begin init |  : 
+[XDlog] [31mError Failed to update result JSON: Expecting value: line 1 column 1 (char 0)[0m
+[XDlog] 21:35:28 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (ﾉ≧∀≦)ﾉ', 1471] | Used: 0.0004279613494873047
+
+[XDlog] 21:35:28 Begin init |  : 
+[XDlog] 21:35:28 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;173;216;230m _(:з」∠)_', 1471] | Used: 0.00014019012451171875
+
+[XDlog] 21:38:34 Begin g_pinyin | [虫子] fnane1234 : kan bu dong
+[XDlog] 21:38:34 Begin g_pinyin | [虫子] fnane1234 : kan bu dong
+[Pinyin] Loop ['kan', 'bu', 'dong']
+[Pinyin] Success ['看不懂']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 21:38:34 Finish pinyin | [虫子] fnane1234 : kan bu dong | Result: 看不懂 | Used: 0.0024421215057373047
+
+[Pinyin] Loop ['kan', 'bu', 'dong']
+[Pinyin] Success ['看不懂']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 21:38:34 Finish pinyin | [虫子] fnane1234 : kan bu dong | Result: 看不懂 | Used: 0.00699305534362793
+
+[XDlog] 21:38:55 Begin g_pinyin | [25時] A_Log1c : ni tian zi bao
+[XDlog] 21:38:55 Begin g_pinyin | [25時] A_Log1c : ni tian zi bao
+[Pinyin] Loop ['ni', 'tian', 'zi', 'bao']
+[Pinyin] Success ['逆天', '自保']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 21:38:55 Finish pinyin | [25時] A_Log1c : ni tian zi bao | Result: 逆天自保 | Used: 0.0017766952514648438
+
+[Pinyin] Loop ['ni', 'tian', 'zi', 'bao']
+[Pinyin] Success ['逆天', '自保']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 21:38:55 Finish pinyin | [25時] A_Log1c : ni tian zi bao | Result: 逆天自保 | Used: 0.005232334136962891
+
+[XDlog] 21:41:12 Begin init |  : 
+[XDlog] 21:41:12 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (｡>﹏<｡)', 1127] | Used: 0.00044226646423339844
+
+[Pinyin Init] pinyin Time Used: 0.30563855171203613
+[XDInit] ----init Finished----
+[XDInit] init Time Used: 0.9094729423522949
+[XDInit] else Time Used: 0.0007789134979248047
+[XDlog] 21:42:45 Monitoring Squirrel Messages...
+
+[XDlog] 21:52:20 Begin init |  : 
+[XDlog] 21:52:20 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;248;131;121m ～(つˆДˆ)つ', 459] | Used: 0.00016427040100097656
+
+[XDlog] 21:59:49 Begin init |  : 
+[XDlog] 21:59:49 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (｡>ω<｡)', 10] | Used: 0.0001552104949951172
+

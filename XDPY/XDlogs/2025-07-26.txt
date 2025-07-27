@@ -1,0 +1,1125 @@
+[Pinyin Init] pinyin Time Used: 0.3777902126312256
+[XDInit] ----init Finished----
+[XDInit] init Time Used: 1.1853973865509033
+[XDInit] else Time Used: 0.0018079280853271484
+[XDlog] 13:37:40 Monitoring Squirrel Messages...
+
+[XDlog] 13:39:11 Begin init |  : 
+[XDlog] 13:39:11 Finish init |  :  | Result: ['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;216;191;216m _(:з」∠)_', 1248] | Used: 0.0001418590545654297
+
+[XDlog] 13:41:22 Begin init |  : 
+[XDlog] 13:41:22 Finish init |  :  | Result: ['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (=・ω・=)', 1117] | Used: 0.0001347064971923828
+
+[XDlog] 13:47:59 Begin init |  : 
+[XDlog] 13:47:59 Finish init |  :  | Result: ['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;199;245;190m _(:з」∠)_', 720] | Used: 0.000152587890625
+
+[XDlog] 13:48:03 Begin g_pinyin | [BOT] Pathstar_XD : SHI NI MA
+[Pinyin] Loop ['shi', 'ni', 'ma']
+[Pinyin] Success ['是', '你妈']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 13:48:03 Finish pinyin | [BOT] Pathstar_XD : SHI NI MA | Result: 是你马 | Used: 0.0011744499206542969
+
+[XDlog] 13:48:21 Begin pinyin_add | [BOT] Pathstar_XD : shi ni ma 是你吗
+[Pinyin Add] Success merge new "shi,ni,ma": "是你吗"
+[XDlog] 13:48:21 Finish pinyin_add | [BOT] Pathstar_XD : shi ni ma 是你吗 | Result: 添加成功: "shi,ni,ma": "是你吗" | Used: 0.0012886524200439453
+
+[XDlog] 13:48:28 Begin init |  : 
+[XDlog] 13:48:28 Finish init |  :  | Result: ['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;240;128;128m _(:з」∠)_', 691] | Used: 0.00013494491577148438
+
+[XDlog] 13:49:39 Begin init |  : 
+[XDlog] 13:49:39 Finish init |  :  | Result: ['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (｡･ω･｡)', 620] | Used: 0.00013709068298339844
+
+[XDlog] 13:51:18 Begin g_pinyin | [忍野忍] O_Sh1n0bu_O : zen me dou wan smg
+[Pinyin] Loop ['zen', 'me', 'dou', 'wan']
+[Pinyin] Success ['怎么', '都', '完']
+[Pinyin] Count Fail/All: 1/5
+[XDlog] 13:51:18 Finish pinyin | [忍野忍] O_Sh1n0bu_O : zen me dou wan smg | Result: 怎么都完smg | Used: 0.0008966922760009766
+
+[XDlog] 13:51:28 Begin g_pinyin | [忍野忍] O_Sh1n0bu_O : hao qiang de gong neng
+[Pinyin] Loop ['hao', 'qiang', 'de', 'gong', 'neng']
+[Pinyin] Success ['好强', '的', '功能']
+[Pinyin] Count Fail/All: 0/5
+[XDlog] 13:51:28 Finish pinyin | [忍野忍] O_Sh1n0bu_O : hao qiang de gong neng | Result: 好强的功能 | Used: 0.0007691383361816406
+
+[XDlog] 13:54:57 Begin init |  : 
+[XDlog] 13:54:57 Finish init |  :  | Result: ['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (｀・ω・´)', 302] | Used: 0.00016641616821289062
+
+[XDlog] 13:55:28 Begin init |  : 
+[XDlog] 13:55:28 Finish init |  :  | Result: ['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (｡>﹏<｡)', 271] | Used: 0.00012159347534179688
+
+[XDlog] 13:55:53 Begin pinyin_add | [BOT] Pathstar_XD : awa -h >:((((
+[Pinyin Add] Success custom "awa": ">:(((("
+[XDlog] 13:55:53 Finish pinyin_add | [BOT] Pathstar_XD : awa -h >:(((( | Result: 添加成功: "awa": ">:((((" | Used: 0.00141143798828125
+
+[XDlog] 13:55:57 Begin g_pinyin | [BOT] Pathstar_XD : awa awa
+[Pinyin] Count Fail/All: -3/1
+[XDlog] 13:55:57 Finish pinyin | [BOT] Pathstar_XD : awa awa | Result: >:(((( >:(((( | Used: 0.0003566741943359375
+
+[XDlog] 13:56:00 Begin g_pinyin | [BOT] Pathstar_XD : a awa
+[Pinyin] Loop ['a']
+[Pinyin] Success ['阿']
+[Pinyin] Count Fail/All: -1/2
+[XDlog] 13:56:00 Finish pinyin | [BOT] Pathstar_XD : a awa | Result: 阿>:(((( | Used: 0.0009262561798095703
+
+[XDlog] 13:56:06 Begin g_pinyin | [BOT] Pathstar_XD : a awa
+[Pinyin] Loop ['a']
+[Pinyin] Success ['阿']
+[Pinyin] Count Fail/All: -1/2
+[XDlog] 13:56:06 Finish pinyin | [BOT] Pathstar_XD : a awa | Result: 阿>:(((( | Used: 0.0009238719940185547
+
+[XDlog] 13:56:13 Begin pinyin_del | [BOT] Pathstar_XD : awa
+[Pinyin Del] Success custom "awa": ">:(((("
+[XDlog] 13:56:13 Finish pinyin_del | [BOT] Pathstar_XD : awa | Result: 已删除: "awa": ">:((((" | Used: 0.0009644031524658203
+
+[XDlog] 13:56:46 Begin init |  : 
+[XDlog] 13:56:46 Finish init |  :  | Result: ['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (・ω< )☆', 193] | Used: 0.00011157989501953125
+
+[XDlog] 13:59:31 Begin init |  : 
+[XDlog] 13:59:31 Finish init |  :  | Result: ['\x1b[33m14:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (・ω< )☆', 28] | Used: 0.00012803077697753906
+
+[XDlog] 13:59:54 Begin server_name | [BOT] Pathstar_XD : 养老
+[XDlog] Get服务器...
+[XDlog] 13:59:54 Finish server_name | [BOT] Pathstar_XD : 养老 | Result: [{'playerCount': 9, 'name': '新时代\x1b[33m养老\x1b[0m服，高kd踢出'}] | Used: 0.17671418190002441
+
+[XDlog] 14:00:12 Begin server_name | [BOT] Pathstar_XD : 养老
+[XDlog] Get服务器...
+[XDlog] 14:00:12 Finish server_name | [BOT] Pathstar_XD : 养老 | Result: [{'playerCount': 10, 'name': '新时代\x1b[33m养老\x1b[0m服，高kd踢出'}] | Used: 0.13593125343322754
+
+[XDlog] 14:00:16 Begin server_name | [BOT] Pathstar_XD : 养老
+[XDlog] 内存读取...
+[XDlog] 14:00:16 Finish server_name | [BOT] Pathstar_XD : 养老 | Result: [{'playerCount': 10, 'name': '新时代\x1b[33m养老\x1b[0m服，高kd踢出'}] | Used: 0.001317739486694336
+
+[XDlog] 14:01:55 Begin init |  : 
+[XDlog] 14:01:55 Finish init |  :  | Result: ['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;135;206;235m (=^･ω･^=)', 1684] | Used: 0.00013327598571777344
+
+[XDlog] 14:03:57 Begin init |  : 
+[XDlog] 14:03:57 Finish init |  :  | Result: ['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;135;206;235m (｀・ω・´)', 1562] | Used: 0.0001277923583984375
+
+[XDlog] 14:04:04 Begin init |  : 
+[XDlog] 14:04:04 Finish init |  :  | Result: ['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;221;160;221m (｡･ω･｡)', 1555] | Used: 0.00013828277587890625
+
+[XDlog] 14:06:47 Begin init |  : 
+[XDlog] 14:06:47 Finish init |  :  | Result: ['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;254;198;195m (・ω< )☆', 1392] | Used: 0.00020432472229003906
+
+[XDlog] 14:08:27 Begin init |  : 
+[XDlog] 14:08:27 Finish init |  :  | Result: ['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;173;216;230m (・ω< )☆', 1292] | Used: 0.0001437664031982422
+
+[XDlog] 14:17:55 Begin init |  : 
+[XDlog] 14:17:55 Finish init |  :  | Result: ['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;248;131;121m (≧▽≦)/', 724] | Used: 0.0001838207244873047
+
+[XDlog] 14:19:08 Begin g_pinyin | s001king : ZHE SHA A ?
+[Pinyin] Loop ['zhe', 'sha', 'a']
+[Pinyin] Success ['这傻', '阿']
+[Pinyin] Count Fail/All: 1/4
+[XDlog] 14:19:08 Finish pinyin | s001king : ZHE SHA A ? | Result: 这傻阿? | Used: 0.0038385391235351562
+
+[XDlog] 14:19:22 Begin g_pinyin | s001king : ZHE SHEN ME A ?
+[Pinyin] Loop ['zhe', 'shen', 'me', 'a']
+[Pinyin] Success ['这', '什么', '阿']
+[Pinyin] Count Fail/All: 1/5
+[XDlog] 14:19:22 Finish pinyin | s001king : ZHE SHEN ME A ? | Result: 这什么阿? | Used: 0.0027654170989990234
+
+[XDlog] 14:20:33 Begin g_pinyin | [忍野忍] O_Sh1n0bu_O : zhe ge ping yin zhuan han zi shi zen me zuo dao de
+[Pinyin] Loop ['zhe', 'ge', 'ping', 'yin', 'zhuan', 'han', 'zi', 'shi', 'zen', 'me', 'zuo', 'dao', 'de']
+[Pinyin] Success ['这个', '平印', '专', '汉字', '是', '怎么做', '道德']
+[Pinyin] Count Fail/All: 0/13
+[XDlog] 14:20:33 Finish pinyin | [忍野忍] O_Sh1n0bu_O : zhe ge ping yin zhuan han zi shi zen me zuo dao de | Result: 这个平印专汉字是怎么做道德 | Used: 0.014683961868286133
+
+[XDlog] 14:20:49 Begin g_pinyin | [忍野忍] O_Sh1n0bu_O : mei shi le
+[Pinyin] Loop ['mei', 'shi', 'le']
+[Pinyin] Success ['没事了']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 14:20:49 Finish pinyin | [忍野忍] O_Sh1n0bu_O : mei shi le | Result: 没事了 | Used: 0.0015828609466552734
+
+[XDlog] 14:23:51 Begin g_pinyin | [忍野忍] O_Sh1n0bu_O : shou bing ma
+[Pinyin] Loop ['shou', 'bing', 'ma']
+[Pinyin] Success ['手', '兵马']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 14:23:51 Finish pinyin | [忍野忍] O_Sh1n0bu_O : shou bing ma | Result: 手兵马 | Used: 0.0019986629486083984
+
+[XDlog] 14:23:56 Begin g_pinyin | [忍野忍] O_Sh1n0bu_O : shou bing
+[Pinyin] Loop ['shou', 'bing']
+[Pinyin] Success ['手柄']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 14:23:56 Finish pinyin | [忍野忍] O_Sh1n0bu_O : shou bing | Result: 手柄 | Used: 0.0026543140411376953
+
+[XDlog] 14:24:06 Begin g_pinyin | s001king : INIU MO DE XD()
+[Pinyin] Loop ['mo', 'de']
+[Pinyin] Success ['蓦地']
+[Pinyin] Count Fail/All: 2/4
+[Pinyin] Failed to Convert: INIU MO DE XD()
+[XDlog] 14:24:06 Finish pinyin | s001king : INIU MO DE XD() | Result:  | Used: 0.002280712127685547
+
+[XDlog] 14:28:36 Begin init |  : 
+[XDlog] 14:28:36 Finish init |  :  | Result: ['\x1b[33m14:30:00\x1b[0m！\x1b[38;2;254;198;195m (^・ω・^)', 83] | Used: 0.00024580955505371094
+
+[XDlog] 14:28:56 Begin pinyin_add | [BOT] Pathstar_XD : pin yin 拼音
+[Pinyin Add] Conflict merge "pin,yin": "拼音" 0.2059248702246042
+[XDlog] 14:28:56 Finish pinyin_add | [BOT] Pathstar_XD : pin yin 拼音 | Result: 已有 (受保护): "pin,yin": "拼音" | Used: 0.0011854171752929688
+
+[XDlog] 14:29:04 Begin g_pinyin | [BOT] Pathstar_XD : zhuan pin yin
+[Pinyin] Loop ['zhuan', 'pin', 'yin']
+[Pinyin] Success ['转拼音']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 14:29:04 Finish pinyin | [BOT] Pathstar_XD : zhuan pin yin | Result: 转拼音 | Used: 0.0007243156433105469
+
+[XDlog] 14:29:17 Begin g_pinyin | [BOT] Pathstar_XD : pin yin zhuan wen zi
+[Pinyin] Loop ['pin', 'yin', 'zhuan', 'wen', 'zi']
+[Pinyin] Success ['拼音', '转文字']
+[Pinyin] Count Fail/All: 0/5
+[XDlog] 14:29:17 Finish pinyin | [BOT] Pathstar_XD : pin yin zhuan wen zi | Result: 拼音转文字 | Used: 0.0016827583312988281
+
+[XDlog] 14:33:38 Begin g_pinyin | [忍野忍] O_Sh1n0bu_O : zhe shi sha
+[Pinyin] Loop ['zhe', 'shi', 'sha']
+[Pinyin] Success ['这是', '杀']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 14:33:38 Finish pinyin | [忍野忍] O_Sh1n0bu_O : zhe shi sha | Result: 这是杀 | Used: 0.002689838409423828
+
+[XDlog] 14:39:03 Begin time | [BOT] _wwQwQww1 : 
+[XDlog] 14:39:03 Finish time | [BOT] _wwQwQww1 :  | Result: 14:39:03 | Used: 0.00014328956604003906
+
+[XDlog] 14:39:03 Begin time | [BOT] _wwQwQww1 : 
+[XDlog] 14:39:03 Finish time | [BOT] _wwQwQww1 :  | Result: 14:39:03 | Used: 7.772445678710938e-05
+
+[XDlog] 14:39:04 Begin time | [BOT] _wwQwQww1 : 
+[XDlog] 14:39:04 Finish time | [BOT] _wwQwQww1 :  | Result: 14:39:04 | Used: 9.059906005859375e-05
+
+[XDlog] 14:39:05 Begin time | [BOT] _wwQwQww1 : 
+[XDlog] 14:39:05 Finish time | [BOT] _wwQwQww1 :  | Result: 14:39:05 | Used: 9.250640869140625e-05
+
+[XDlog] 14:39:05 Begin time | [BOT] _wwQwQww1 : 
+[XDlog] 14:39:05 Finish time | [BOT] _wwQwQww1 :  | Result: 14:39:05 | Used: 8.082389831542969e-05
+
+[XDlog] 14:39:06 Begin time | [BOT] _wwQwQww1 : 
+[XDlog] 14:39:06 Finish time | [BOT] _wwQwQww1 :  | Result: 14:39:06 | Used: 7.748603820800781e-05
+
+[XDlog] 14:39:27 Begin init |  : 
+[XDlog] 14:39:27 Finish init |  :  | Result: ['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;194;245;194m ～(つˆДˆ)つ', 1232] | Used: 0.0002727508544921875
+
+[XDlog] 14:39:35 Begin time | [BOT] _wwQwQww1 : 
+[XDlog] 14:39:35 Finish time | [BOT] _wwQwQww1 :  | Result: 14:39:35 | Used: 8.130073547363281e-05
+
+[XDlog] 14:40:27 Begin ai | [BOT] Pathstar_XD : 面对高并发轰炸应该怎么办
+{'id': 'gen-1753512028-Blx69oloahsFpcHMMDjn', 'provider': 'Alibaba', 'model': 'qwen/qwen2.5-vl-72b-instruct:free', 'object': 'chat.completion', 'created': 1753512029, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '面对高并发轰炸，首先需要优化服务器架构，采用负载均衡技术分散请求压力。其次，可以使用缓存技术减少数据库访问，提高响应速度。同时，设置合理的请求频率限制，防止恶意攻击。此外，增强服务器硬件配置，提升处理能力也是关键。最后，定期进行压力测试，确保系统在高并发情况下的稳定运行。这样多管齐下，能有效应对高并发带来的挑战。', 'refusal': None, 'reasoning': None}}], 'system_fingerprint': None, 'usage': {'prompt_tokens': 171, 'completion_tokens': 102, 'total_tokens': 273}}
+---
+
+[XDAI] demojize: 面对高并发轰炸，首先需要优化服务器架构，采用负载均衡技术分散请求压力。其次，可以使用缓存技术减少数据库访问，提高响应速度。同时，设置合理的请求频率限制，防止恶意攻击。此外，增强服务器硬件配置，提升处理能力也是关键。最后，定期进行压力测试，确保系统在高并发情况下的稳定运行。这样多管齐下，能有效应对高并发带来的挑战。
+[XDAI] sq长度:  216 233
+[XDAI] py长度:  75 81
+[XDlog] 14:40:34 Finish ai | [BOT] Pathstar_XD : 面对高并发轰炸应该怎么办 | Result: ['面对高并发轰炸,首先需要优化服务器架构,采用负载均衡技术分散请求压力。其次,可以使用缓存技术减少数据库访问,提高响应速度。同时,设置合理的请求频率限制', '防止恶意攻击。此外,增强服务器硬件配置,提升处理能力也是关键。最后,定期进行压力测试,确保系统在高并发情况下的稳定运行。这样多管齐下,能有效应对高并发带来的挑战。'] | Used: 7.074213266372681
+
+[XDlog] 14:43:10 Begin server_name | [BOT] Pathstar_XD : 小图
+[XDlog] Get服务器...
+[XDlog] 14:43:11 Finish server_name | [BOT] Pathstar_XD : 小图 | Result: [{'playerCount': 3, 'name': '[CN]坏逼们的服务器#\x1b[33m小图\x1b[0m铁对铁'}] | Used: 0.12779927253723145
+
+[XDlog] 14:43:38 Begin init |  : 
+[XDlog] 14:43:38 Finish init |  :  | Result: ['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;194;245;194m ╮(￣▽￣)╭', 981] | Used: 0.0001437664031982422
+
+[XDlog] 14:43:43 Begin init |  : 
+[XDlog] 14:43:43 Finish init |  :  | Result: ['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;194;245;194m ～(つˆДˆ)つ', 976] | Used: 0.00012063980102539062
+
+[XDlog] 14:51:51 Begin init |  : 
+[XDlog] 14:51:51 Finish init |  :  | Result: ['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (〜￣△￣)〜', 488] | Used: 0.00017452239990234375
+
+[XDlog] 14:58:21 Begin init |  : 
+[XDlog] 14:58:21 Finish init |  :  | Result: ['\x1b[33m15:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (ﾉ≧∀≦)ﾉ', 98] | Used: 0.00015926361083984375
+
+[XDlog] 15:04:31 Begin g_pinyin | [雲托守一] Yuntuo_Honkai : zhuan wen zi
+[Pinyin] Loop ['zhuan', 'wen', 'zi']
+[Pinyin] Success ['转文字']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 15:04:31 Finish pinyin | [雲托守一] Yuntuo_Honkai : zhuan wen zi | Result: 转文字 | Used: 0.0005950927734375
+
+[XDlog] 15:06:10 Begin init |  : 
+[XDlog] 15:06:10 Finish init |  :  | Result: ['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;254;250;195m _(:з」∠)_', 1429] | Used: 0.0001842975616455078
+
+[XDlog] 15:08:28 Begin g_pinyin | s001king : SHEI ?
+[Pinyin] Count Fail/All: 1/1
+[Pinyin] Failed to Convert: SHEI ?
+[XDlog] 15:08:28 Finish pinyin | s001king : SHEI ? | Result:  | Used: 0.0004172325134277344
+
+[XDlog] 15:09:04 Begin g_pinyin | s001king : DUI DE
+[Pinyin] Loop ['dui', 'de']
+[Pinyin] Success ['对', '的']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 15:09:04 Finish pinyin | s001king : DUI DE | Result: 对的 | Used: 0.0005085468292236328
+
+[XDlog] 15:09:28 Begin g_pinyin | [雲托守一] Yuntuo_Honkai : lu guan diu shi de shou gan zeng me zhao hui lai
+[Pinyin] Loop ['lu', 'guan', 'diu', 'shi', 'de', 'shou', 'gan', 'zeng', 'me', 'zhao', 'hui', 'lai']
+[Pinyin] Success ['炉管', '丢失', '的', '手感', '增', '么', '找回', '来']
+[Pinyin] Count Fail/All: 0/12
+[XDlog] 15:09:28 Finish pinyin | [雲托守一] Yuntuo_Honkai : lu guan diu shi de shou gan zeng me zhao hui lai | Result: 炉管丢失的手感增么找回来 | Used: 0.002725362777709961
+
+[XDlog] 15:11:43 Begin init |  : 
+[XDlog] 15:11:43 Finish init |  :  | Result: ['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;254;198;195m (=・ω・=)', 1096] | Used: 0.000152587890625
+
+[XDlog] 15:18:06 Begin g_pinyin | [凱爾希] Kaltsit0000 : quake live的中文名就叫雷神之锤吗
+[Pinyin] Count Fail/All: 1/1
+[Pinyin] Failed to Convert: quake live的中文名就叫雷神之锤吗
+[XDlog] 15:18:06 Finish pinyin | [凱爾希] Kaltsit0000 : quake live的中文名就叫雷神之锤吗 | Result:  | Used: 0.0027408599853515625
+
+[XDlog] 15:18:55 Begin g_pinyin | [G514] thisiswhoID : quake是雷神之锤 quake live是雷神之锤的其中一个系列 但我还没见过live的翻译就是
+[Pinyin] Count Fail/All: 1/1
+[Pinyin] Failed to Convert: quake是雷神之锤 quake live是雷神之锤的其中一个系列 但我还没见过live的翻译就是
+[XDlog] 15:18:55 Finish pinyin | [G514] thisiswhoID : quake是雷神之锤 quake live是雷神之锤的其中一个系列 但我还没见过live的翻译就是 | Result:  | Used: 0.0027959346771240234
+
+[XDlog] 15:19:30 Begin init |  : 
+[XDlog] 15:19:30 Finish init |  :  | Result: ['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;254;219;193m (｡>﹏<｡)', 629] | Used: 0.00014972686767578125
+
+[XDlog] 15:22:02 Begin g_pinyin | s001king : WO ZHEN A
+[Pinyin] Loop ['wo', 'zhen', 'a']
+[Pinyin] Success ['我真', '阿']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 15:22:02 Finish pinyin | s001king : WO ZHEN A | Result: 我真阿 | Used: 0.0010783672332763672
+
+[XDlog] 15:28:15 Begin init |  : 
+[XDlog] 15:28:15 Finish init |  :  | Result: ['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;240;128;128m (^・ω・^)', 104] | Used: 0.00014090538024902344
+
+[XDlog] 15:28:23 Begin init |  : 
+[XDlog] 15:28:23 Finish init |  :  | Result: ['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;199;245;190m ╮(￣▽￣)╭', 96] | Used: 0.00010752677917480469
+
+[XDlog] 15:28:28 Begin init |  : 
+[XDlog] 15:28:28 Finish init |  :  | Result: ['\x1b[33m15:30:00\x1b[0m！\x1b[38;2;248;131;121m (=・ω・=)', 91] | Used: 0.0001475811004638672
+
+[XDlog] 15:28:57 Begin g_pinyin | [G514] thisiswhoID : bad news
+[Pinyin] Count Fail/All: 1/1
+[Pinyin] Failed to Convert: bad news
+[XDlog] 15:28:57 Finish pinyin | [G514] thisiswhoID : bad news | Result:  | Used: 0.0006709098815917969
+
+[XDlog] 15:36:18 Begin init |  : 
+[XDlog] 15:36:18 Finish init |  :  | Result: ['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (ﾉ≧∀≦)ﾉ', 1421] | Used: 0.00025534629821777344
+
+[XDlog] 15:41:51 Begin g_pinyin | [ADV] kawayi_yukino : XD de smg yao zai wo zhe bian da
+[Pinyin] Loop ['de']
+[Pinyin] Success ['的']
+[Pinyin] Loop ['yao', 'zai', 'wo', 'zhe', 'bian', 'da']
+[Pinyin] Success ['要在', '我这', '变大']
+[Pinyin] Count Fail/All: 2/9
+[XDlog] 15:41:51 Finish pinyin | [ADV] kawayi_yukino : XD de smg yao zai wo zhe bian da | Result: XD的smg要在我这变大 | Used: 0.004354715347290039
+
+[XDlog] 15:41:58 Begin g_pinyin | [BOT] Pathstar_XD : mei wan guo
+[Pinyin] Loop ['mei', 'wan', 'guo']
+[Pinyin] Success ['没玩过']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 15:41:58 Finish pinyin | [BOT] Pathstar_XD : mei wan guo | Result: 没玩过 | Used: 0.0010137557983398438
+
+[XDlog] 15:42:30 Begin g_pinyin | [ADV] kawayi_yukino : bian jing?
+[Pinyin] Loop ['bian', 'jing']
+[Pinyin] Success ['边境']
+[Pinyin] Count Fail/All: 1/3
+[XDlog] 15:42:30 Finish pinyin | [ADV] kawayi_yukino : bian jing? | Result: 边境? | Used: 0.0007369518280029297
+
+[XDlog] 15:43:43 Begin g_pinyin | [ADV] kawayi_yukino : bian jing bu tai xiang wan
+[Pinyin] Loop ['bian', 'jing', 'bu', 'tai', 'xiang', 'wan']
+[Pinyin] Success ['边境', '不太', '香丸']
+[Pinyin] Count Fail/All: 0/6
+[XDlog] 15:43:43 Finish pinyin | [ADV] kawayi_yukino : bian jing bu tai xiang wan | Result: 边境不太香丸 | Used: 0.003920078277587891
+
+[XDlog] 15:46:55 Begin server_mode | [BOT] Pathstar_XD : fd
+[XDlog] Get服务器...
+[XDlog] 15:46:55 Finish server_mode | [BOT] Pathstar_XD : fd | Result: [{'playerCount': 5, 'name': '[KS4+ 边境防御] 魔改泰坦进行中'}, {'playerCount': 5, 'name': '[SL1+无限火力]5人边境大厅服'}, {'playerCount': 5, 'name': '[SL5+ 无限火力]5人简单服边境'}, {'playerCount': 5, 'name': '[摸鱼服]边境攻坚战'}] | Used: 0.15262866020202637
+
+[XDlog] 15:51:50 Begin init |  : 
+[XDlog] 15:51:50 Finish init |  :  | Result: ['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;254;198;195m _(:з」∠)_', 489] | Used: 0.00018072128295898438
+
+[XDlog] 15:57:23 Begin g_pinyin | [島風酱] Shimakazetorpedo : wo gang kai de qiang hua a
+[Pinyin] Loop ['wo', 'gang', 'kai', 'de', 'qiang', 'hua', 'a']
+[Pinyin] Success ['我刚', '开得', '强化', '阿']
+[Pinyin] Count Fail/All: 0/7
+[XDlog] 15:57:23 Finish pinyin | [島風酱] Shimakazetorpedo : wo gang kai de qiang hua a | Result: 我刚开得强化阿 | Used: 0.0041179656982421875
+
+[XDlog] 15:57:59 Begin server_name | [BOT] Pathstar_XD : 摸鱼服
+[XDlog] Get服务器...
+[XDlog] 15:57:59 Finish server_name | [BOT] Pathstar_XD : 摸鱼服 | Result: [{'playerCount': 3, 'name': '[\x1b[33m摸鱼服\x1b[0m]抽象rouge泰坦争斗，第11期BUFF更新'}] | Used: 0.16020965576171875
+
+[XDlog] 15:58:30 Begin server_name | [BOT] Pathstar_XD : 边境攻坚
+[XDlog] Get服务器...
+[XDlog] 15:58:30 Finish server_name | [BOT] Pathstar_XD : 边境攻坚 | Result: 现在没有任何人！-> [摸鱼服][33m边境攻坚[0m战 | Used: 0.13034868240356445
+
+[XDlog] 15:59:06 Begin init |  : 
+[XDlog] 15:59:06 Finish init |  :  | Result: ['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (｡･ω･｡)', 53] | Used: 0.00017118453979492188
+
+[XDlog] 16:01:27 Begin init |  : 
+[XDlog] 16:01:27 Finish init |  :  | Result: ['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;248;131;121m (=・ω・=)', 1712] | Used: 0.00012922286987304688
+
+[XDlog] 16:03:01 Begin init |  : 
+[XDlog] 16:03:01 Finish init |  :  | Result: ['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;173;216;230m (≧▽≦)/', 1618] | Used: 0.00016045570373535156
+
+[XDlog] 16:04:42 Begin init |  : 
+[XDlog] 16:04:42 Finish init |  :  | Result: ['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;254;208;175m _(≧v≦」∠)_', 1517] | Used: 0.00016760826110839844
+
+[XDlog] 16:36:37 Begin g_pinyin | [BOT] Pathstar_XD : 《hao jue》
+[Pinyin] Loop ['hao', 'jve']
+[Pinyin] Success ['豪爵']
+[Pinyin] Count Fail/All: 2/4
+[Pinyin] Failed to Convert: 《hao jue》
+[XDlog] 16:36:37 Finish pinyin | [BOT] Pathstar_XD : 《hao jue》 | Result:  | Used: 0.001405954360961914
+
+[XDlog] 16:44:08 Begin init |  : 
+[XDlog] 16:44:08 Finish init |  :  | Result: ['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (｡>﹏<｡)', 951] | Used: 0.0005934238433837891
+
+[XDlog] 16:46:17 Begin init |  : 
+[XDlog] 16:46:17 Finish init |  :  | Result: ['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (・ω< )☆', 822] | Used: 0.0002040863037109375
+
+[XDlog] 16:47:54 Begin init |  : 
+[XDlog] 16:47:54 Finish init |  :  | Result: ['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (｡･ω･｡)', 725] | Used: 0.00016570091247558594
+
+[XDlog] 16:47:59 Begin init |  : 
+[XDlog] 16:47:59 Finish init |  :  | Result: ['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (ﾉ≧∀≦)ﾉ', 720] | Used: 0.00011157989501953125
+
+[XDlog] 16:49:21 Begin init |  : 
+[XDlog] 16:49:21 Finish init |  :  | Result: ['\x1b[33m17:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (｀・ω・´)', 638] | Used: 0.0001766681671142578
+
+[XDlog] 17:00:49 Begin init |  : 
+[XDlog] 17:00:49 Finish init |  :  | Result: ['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;194;245;194m (=^･ω･^=)', 1750] | Used: 0.00022745132446289062
+
+[XDlog] 17:01:39 Begin init |  : 
+[XDlog] 17:01:39 Finish init |  :  | Result: ['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;248;131;121m (^・ω・^)', 1700] | Used: 0.00016450881958007812
+
+[XDlog] 17:01:43 Begin init |  : 
+[XDlog] 17:01:43 Finish init |  :  | Result: ['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;144;238;144m (｡>﹏<｡)', 1696] | Used: 0.00016450881958007812
+
+[XDlog] 17:11:23 Begin init |  : 
+[XDlog] 17:11:23 Finish init |  :  | Result: ['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;248;131;121m (｡>ω<｡)', 1116] | Used: 0.00022745132446289062
+
+[XDlog] 17:14:03 Begin init |  : 
+[XDlog] 17:14:03 Finish init |  :  | Result: ['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;240;128;128m (=^･ω･^=)', 956] | Used: 0.00015687942504882812
+
+[XDlog] 17:14:12 Begin init |  : 
+[XDlog] 17:14:12 Finish init |  :  | Result: ['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;254;198;195m ～(つˆДˆ)つ', 947] | Used: 0.00011706352233886719
+
+[XDlog] 17:14:24 Begin init |  : 
+[XDlog] 17:14:24 Finish init |  :  | Result: ['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;254;198;195m (｡>ω<｡)', 935] | Used: 0.00014162063598632812
+
+[XDlog] 17:14:31 Begin init |  : 
+[XDlog] 17:14:31 Finish init |  :  | Result: ['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;221;160;221m (｡･ω･｡)', 928] | Used: 0.000110626220703125
+
+[XDlog] 17:14:48 Begin init |  : 
+[XDlog] 17:14:48 Finish init |  :  | Result: ['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;254;250;195m (=・ω・=)', 911] | Used: 0.00010895729064941406
+
+[XDlog] 17:20:15 Begin init |  : 
+[XDlog] 17:20:15 Finish init |  :  | Result: ['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;175;238;238m (・ω< )☆', 584] | Used: 0.0001747608184814453
+
+[XDlog] 17:26:06 Begin init |  : 
+[XDlog] 17:26:06 Finish init |  :  | Result: ['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;135;206;235m (｡>﹏<｡)', 233] | Used: 0.00031828880310058594
+
+[XDlog] 17:26:14 Begin init |  : 
+[XDlog] 17:26:14 Finish init |  :  | Result: ['\x1b[33m17:30:00\x1b[0m！\x1b[38;2;254;198;195m ～(つˆДˆ)つ', 225] | Used: 0.00012111663818359375
+
+[XDlog] 17:30:06 Begin init |  : 
+[XDlog] 17:30:06 Finish init |  :  | Result: ['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (・ω< )☆', 1793] | Used: 0.00018405914306640625
+
+[XDlog] 17:30:45 Begin init |  : 
+[XDlog] 17:30:45 Finish init |  :  | Result: ['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (・ω< )☆', 1754] | Used: 0.00011754035949707031
+
+[XDlog] 17:30:51 Begin init |  : 
+[XDlog] 17:30:51 Finish init |  :  | Result: ['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (ﾉ≧∀≦)ﾉ', 1748] | Used: 0.00012803077697753906
+
+[XDlog] 17:36:40 Begin init |  : 
+[XDlog] 17:36:40 Finish init |  :  | Result: ['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (^・ω・^)', 1399] | Used: 0.00019049644470214844
+
+[XDlog] 17:44:50 Begin init |  : 
+[XDlog] 17:44:50 Finish init |  :  | Result: ['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (=・ω・=)', 909] | Used: 0.00023245811462402344
+
+[XDlog] 17:59:02 Begin init |  : 
+[XDlog] 17:59:02 Finish init |  :  | Result: ['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (｡･ω･｡)', 57] | Used: 0.0001990795135498047
+
+[XDlog] 17:59:07 Begin init |  : 
+[XDlog] 17:59:07 Finish init |  :  | Result: ['\x1b[33m18:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (｀・ω・´)', 52] | Used: 0.00029850006103515625
+
+[XDlog] 18:05:13 Begin init |  : 
+[XDlog] 18:05:13 Finish init |  :  | Result: ['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;144;238;144m _(≧v≦」∠)_', 1486] | Used: 0.0002391338348388672
+
+[XDlog] 18:13:13 Begin init |  : 
+[XDlog] 18:13:13 Finish init |  :  | Result: ['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;254;208;175m (｡･ω･｡)', 1006] | Used: 0.00019788742065429688
+
+[XDlog] 18:20:55 Begin init |  : 
+[XDlog] 18:20:55 Finish init |  :  | Result: ['\x1b[33m18:30:00\x1b[0m！\x1b[38;2;254;219;193m _(≧v≦」∠)_', 544] | Used: 0.0001742839813232422
+
+[XDlog] 18:30:12 Begin init |  : 
+[XDlog] 18:30:12 Finish init |  :  | Result: ['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;175;238;238m ╮(￣▽￣)╭', 1787] | Used: 0.0001742839813232422
+
+[XDlog] 18:37:22 Begin init |  : 
+[XDlog] 18:37:22 Finish init |  :  | Result: ['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (=^･ω･^=)', 1357] | Used: 0.00016736984252929688
+
+[XDlog] 18:43:08 Begin init |  : 
+[XDlog] 18:43:08 Finish init |  :  | Result: ['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (=・ω・=)', 1011] | Used: 0.00048470497131347656
+
+[XDlog] 18:46:58 Begin g_pinyin | Linddss : shou ba ye
+[Pinyin] Loop ['shou', 'ba', 'ye']
+[Pinyin] Success ['手把', '业']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 18:46:58 Finish pinyin | Linddss : shou ba ye | Result: 手把业 | Used: 0.002199411392211914
+
+[XDlog] 18:47:07 Begin g_pinyin | Linddss : bie suo wo le
+[Pinyin] Loop ['bie', 'suo', 'wo', 'le']
+[Pinyin] Success ['别', '所', '我了']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 18:47:07 Finish pinyin | Linddss : bie suo wo le | Result: 别所我了 | Used: 0.0023550987243652344
+
+[XDlog] 18:47:28 Begin g_pinyin | s001king : SHOU BA ZHE GE FU MIE YOU FU MIAO BA
+[Pinyin] Loop ['shou', 'ba', 'zhe', 'ge', 'fu', 'mie', 'you', 'fu', 'miao', 'ba']
+[Pinyin] Success ['手把', '这个', '覆灭', '有福', '描', '把']
+[Pinyin] Count Fail/All: 0/10
+[XDlog] 18:47:28 Finish pinyin | s001king : SHOU BA ZHE GE FU MIE YOU FU MIAO BA | Result: 手把这个覆灭有福描把 | Used: 0.008313894271850586
+
+[XDlog] 18:47:51 Begin g_pinyin | Linddss : zhe yang ma]
+[Pinyin] Loop ['zhe', 'yang', 'ma']
+[Pinyin] Success ['这样', '码']
+[Pinyin] Count Fail/All: 1/4
+[XDlog] 18:47:51 Finish pinyin | Linddss : zhe yang ma] | Result: 这样吗] | Used: 0.0010886192321777344
+
+[XDlog] 18:49:06 Begin g_pinyin | s001king : JB ZHONG LI XING(((((((((((((((((((((((((
+[Pinyin] Loop ['zhong', 'li', 'xing']
+[Pinyin] Success ['重力星']
+[Pinyin] Count Fail/All: 2/5
+[XDlog] 18:49:06 Finish pinyin | s001king : JB ZHONG LI XING((((((((((((((((((((((((( | Result: JB重力星((((((((((((((((((((((((( | Used: 0.0018296241760253906
+
+[XDlog] 18:49:17 Begin g_pinyin | Linddss : li hai
+[Pinyin] Loop ['li', 'hai']
+[Pinyin] Success ['厉害']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 18:49:17 Finish pinyin | Linddss : li hai | Result: 厉害 | Used: 0.0007264614105224609
+
+[XDlog] 18:49:32 Begin init |  : 
+[XDlog] 18:49:32 Finish init |  :  | Result: ['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;240;128;128m _(≧v≦」∠)_', 627] | Used: 0.00014162063598632812
+
+[XDlog] 18:51:46 Begin g_pinyin | [心神不寧] Grey-Elenna : ni diao jin xian jing le (
+[Pinyin] Loop ['ni', 'diao', 'jin', 'xian', 'jing', 'le']
+[Pinyin] Success ['你', '掉进', '陷阱', '了']
+[Pinyin] Count Fail/All: 1/7
+[XDlog] 18:51:46 Finish pinyin | [心神不寧] Grey-Elenna : ni diao jin xian jing le ( | Result: 你掉进陷阱了( | Used: 0.002744436264038086
+
+[XDlog] 18:53:35 Begin g_pinyin | s001king : DU IDE
+[Pinyin] Loop ['du']
+[Pinyin] Success ['度']
+[Pinyin] Count Fail/All: 1/2
+[Pinyin] Failed to Convert: DU IDE
+[XDlog] 18:53:35 Finish pinyin | s001king : DU IDE | Result:  | Used: 0.0007967948913574219
+
+[XDlog] 18:55:45 Begin g_pinyin | [心神不寧] Grey-Elenna : bu gan gen shi ba(
+[Pinyin] Loop ['bu', 'gan', 'gen', 'shi', 'ba']
+[Pinyin] Success ['不敢', '根', '十八']
+[Pinyin] Count Fail/All: 1/6
+[XDlog] 18:55:45 Finish pinyin | [心神不寧] Grey-Elenna : bu gan gen shi ba( | Result: 不敢根十八( | Used: 0.0022721290588378906
+
+[XDlog] 18:55:59 Begin init |  : 
+[XDlog] 18:55:59 Finish init |  :  | Result: ['\x1b[33m19:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (〜￣△￣)〜', 240] | Used: 0.00013494491577148438
+
+[XDlog] 18:57:08 Begin g_pinyin | s001king : MAO SI SHI DE
+[Pinyin] Loop ['mao', 'si', 'shi', 'de']
+[Pinyin] Success ['貌似', '是的']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 18:57:08 Finish pinyin | s001king : MAO SI SHI DE | Result: 貌似是的 | Used: 0.001107931137084961
+
+[XDlog] 19:00:02 Begin g_pinyin | Linddss : tun zi dan a
+[Pinyin] Loop ['tun', 'zi', 'dan', 'a']
+[Pinyin] Success ['吞子弹', '阿']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 19:00:02 Finish pinyin | Linddss : tun zi dan a | Result: 吞子弹阿 | Used: 0.001787424087524414
+
+[XDlog] 19:02:38 Begin g_pinyin | s001king : MY ASSSSS
+[Pinyin] Count Fail/All: 1/1
+[Pinyin] Failed to Convert: MY ASSSSS
+[XDlog] 19:02:38 Finish pinyin | s001king : MY ASSSSS | Result:  | Used: 0.0004627704620361328
+
+[XDlog] 19:04:27 Begin g_pinyin | s001king : KANG YA
+[Pinyin] Loop ['kang', 'ya']
+[Pinyin] Success ['抗压']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 19:04:27 Finish pinyin | s001king : KANG YA | Result: 抗压 | Used: 0.0008108615875244141
+
+[XDlog] 19:04:40 Begin init |  : 
+[XDlog] 19:04:40 Finish init |  :  | Result: ['\x1b[33m19:30:00\x1b[0m！\x1b[38;2;173;216;230m _(:з」∠)_', 1519] | Used: 0.00017452239990234375
+
+[XDlog] 19:20:11 Begin init |  : 
+[XDlog] 19:20:11 Finish init |  :  | Result: ['\x1b[33m19:30:00\x1b[0m！\x1b[38;2;254;208;175m (≧▽≦)/', 588] | Used: 0.0002512931823730469
+
+[XDlog] 19:28:54 Begin g_pinyin | [MAV] LChenY77 : lao wan le
+[Pinyin] Loop ['lao', 'wan', 'le']
+[Pinyin] Success ['老', '完了']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 19:28:54 Finish pinyin | [MAV] LChenY77 : lao wan le | Result: 老完了 | Used: 0.0007634162902832031
+
+[XDlog] 19:29:33 Begin g_pinyin | Linddss : ni meng duo fei fei
+[Pinyin] Loop ['ni', 'meng', 'duo', 'fei', 'fei']
+[Pinyin] Success ['你', '梦', '多', '菲菲']
+[Pinyin] Count Fail/All: 0/5
+[XDlog] 19:29:33 Finish pinyin | Linddss : ni meng duo fei fei | Result: 你梦多菲菲 | Used: 0.0019404888153076172
+
+[XDlog] 19:29:40 Begin g_pinyin | Linddss : wo xiang lian qiang
+[Pinyin] Loop ['wo', 'xiang', 'lian', 'qiang']
+[Pinyin] Success ['我', '项链', '强']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 19:29:40 Finish pinyin | Linddss : wo xiang lian qiang | Result: 我项链强 | Used: 0.0009114742279052734
+
+[XDlog] 19:35:04 Begin g_pinyin | [绪山真寻] Lotus_xiaochen61 : wo shi ren ji
+[Pinyin] Loop ['wo', 'shi', 'ren', 'ji']
+[Pinyin] Success ['我是', '人际']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 19:35:04 Finish pinyin | [绪山真寻] Lotus_xiaochen61 : wo shi ren ji | Result: 我是人际 | Used: 0.001994609832763672
+
+[XDlog] 19:35:30 Begin g_pinyin | Linddss : ni dao 100g
+[Pinyin] Loop ['ni', 'dao']
+[Pinyin] Success ['你到']
+[Pinyin] Count Fail/All: 1/3
+[XDlog] 19:35:30 Finish pinyin | Linddss : ni dao 100g | Result: 你到100g | Used: 0.0006475448608398438
+
+[XDlog] 19:35:34 Begin g_pinyin | Linddss : ni ye xing
+[Pinyin] Loop ['ni', 'ye', 'xing']
+[Pinyin] Success ['你也', '行']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 19:35:34 Finish pinyin | Linddss : ni ye xing | Result: 你也行 | Used: 0.0012738704681396484
+
+[XDlog] 19:35:41 Begin init |  : 
+[XDlog] 19:35:41 Finish init |  :  | Result: ['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (｡･ω･｡)', 1458] | Used: 0.00017404556274414062
+
+[XDlog] 19:48:08 Begin init |  : 
+[XDlog] 19:48:08 Finish init |  :  | Result: ['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (｡>ω<｡)', 711] | Used: 0.00019979476928710938
+
+[XDlog] 19:48:12 Begin g_pinyin | Linddss : ke lai bo hen zhun a
+[Pinyin] Loop ['ke', 'lai', 'bo', 'hen', 'zhun', 'a']
+[Pinyin] Success ['克莱博', '很', '准', '阿']
+[Pinyin] Count Fail/All: 0/6
+[XDlog] 19:48:12 Finish pinyin | Linddss : ke lai bo hen zhun a | Result: 克莱博很准阿 | Used: 0.0020208358764648438
+
+[XDlog] 19:51:12 Begin g_pinyin | Linddss : wo ke lai bo jiu shi yi tuo
+[Pinyin] Loop ['wo', 'ke', 'lai', 'bo', 'jiu', 'shi', 'yi', 'tuo']
+[Pinyin] Success ['我', '克莱博', '就是', '依托']
+[Pinyin] Count Fail/All: 0/8
+[XDlog] 19:51:12 Finish pinyin | Linddss : wo ke lai bo jiu shi yi tuo | Result: 我克莱博就是依托 | Used: 0.004326581954956055
+
+[XDlog] 19:54:21 Begin init |  : 
+[XDlog] 19:54:21 Finish init |  :  | Result: ['\x1b[33m20:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (〜￣△￣)〜', 338] | Used: 0.00022649765014648438
+
+[XDlog] 20:01:33 Begin init |  : 
+[XDlog] 20:01:33 Finish init |  :  | Result: ['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;216;191;216m (｀・ω・´)', 1706] | Used: 0.0002689361572265625
+
+[XDlog] 20:09:26 Begin init |  : 
+[XDlog] 20:09:26 Finish init |  :  | Result: ['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;254;208;175m ～(つˆДˆ)つ', 1233] | Used: 0.00018143653869628906
+
+[XDlog] 20:09:39 Begin init |  : 
+[XDlog] 20:09:39 Finish init |  :  | Result: ['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;144;238;144m (｡>ω<｡)', 1220] | Used: 0.00019073486328125
+
+[XDlog] 20:19:05 Begin init |  : 
+[XDlog] 20:19:05 Finish init |  :  | Result: ['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;254;198;195m (ﾉ≧∀≦)ﾉ', 654] | Used: 0.0001971721649169922
+
+[XDlog] 20:27:13 Begin init |  : 
+[XDlog] 20:27:13 Finish init |  :  | Result: ['\x1b[33m20:30:00\x1b[0m！\x1b[38;2;175;238;238m ～(つˆДˆ)つ', 166] | Used: 0.0003657341003417969
+
+[XDlog] 20:35:07 Begin init |  : 
+[XDlog] 20:35:07 Finish init |  :  | Result: ['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;199;245;190m ╮(￣▽￣)╭', 1492] | Used: 0.0002052783966064453
+
+[XDlog] 20:40:37 Begin init |  : 
+[XDlog] 20:40:37 Finish init |  :  | Result: ['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (=・ω・=)', 1162] | Used: 0.00020051002502441406
+
+[XDlog] 20:48:31 Begin init |  : 
+[XDlog] 20:48:31 Finish init |  :  | Result: ['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (≧▽≦)/', 688] | Used: 0.0002186298370361328
+
+[XDlog] 20:50:26 Begin g_pinyin | [BOT] ARTnend : rang wo kan kan shei xiang dang xiao chan mao
+[Pinyin] Loop ['rang', 'wo', 'kan', 'kan']
+[Pinyin] Success ['让我', '看看']
+[Pinyin] Loop ['xiang', 'dang', 'xiao', 'chan', 'mao']
+[Pinyin] Success ['相当', '小产', '猫']
+[Pinyin] Count Fail/All: 1/10
+[XDlog] 20:50:26 Finish pinyin | [BOT] ARTnend : rang wo kan kan shei xiang dang xiao chan mao | Result: 让我看看shei相当小产猫 | Used: 0.005702495574951172
+
+[XDlog] 20:50:48 Begin g_pinyin | [BOT] ARTnend : BIE XIAO'
+[Pinyin] Loop ['bie', 'xiao']
+[Pinyin] Success ['别笑']
+[Pinyin] Count Fail/All: 1/3
+[XDlog] 20:50:48 Finish pinyin | [BOT] ARTnend : BIE XIAO' | Result: 别笑' | Used: 0.0006158351898193359
+
+[XDlog] 20:51:11 Begin g_pinyin | [BOT] ARTnend : mo yu deng bian jing
+[Pinyin] Loop ['mo', 'yu', 'deng', 'bian', 'jing']
+[Pinyin] Success ['摸鱼', '等边', '经']
+[Pinyin] Count Fail/All: 0/5
+[XDlog] 20:51:11 Finish pinyin | [BOT] ARTnend : mo yu deng bian jing | Result: 摸鱼等边经 | Used: 0.002022266387939453
+
+[XDlog] 20:51:31 Begin g_pinyin | [BOT] ARTnend : zhun bei qu rang ren hong wen de bian jing gong jian
+[Pinyin] Loop ['zhun', 'bei', 'qu', 'rang', 'ren', 'hong', 'wen', 'de', 'bian', 'jing', 'gong', 'jian']
+[Pinyin] Success ['准备', '去', '让人', '红', '问得', '边境', '共建']
+[Pinyin] Count Fail/All: 0/12
+[XDlog] 20:51:31 Finish pinyin | [BOT] ARTnend : zhun bei qu rang ren hong wen de bian jing gong jian | Result: 准备去让人红问得边境共建 | Used: 0.008754491806030273
+
+[Pinyin Init] pinyin Time Used: 0.32912278175354004
+[XDInit] ----init Finished----
+[XDInit] init Time Used: 1.0172884464263916
+[XDInit] else Time Used: 0.0011391639709472656
+[XDlog] 20:52:56 Monitoring Squirrel Messages...
+
+[XDlog] 20:53:13 Begin g_pinyin | [BOT] Pathstar_XD : shei shei
+[Pinyin] Loop ['shei', 'shei']
+[Pinyin] Success ['谁', '谁']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 20:53:13 Finish pinyin | [BOT] Pathstar_XD : shei shei | Result: 谁谁 | Used: 0.0009551048278808594
+
+[XDlog] 20:53:39 Begin g_pinyin | [BOT] ARTnend : gan rao wo da zi le
+[Pinyin] Loop ['gan', 'rao', 'wo', 'da', 'zi', 'le']
+[Pinyin] Success ['干扰', '我打', '自乐']
+[Pinyin] Count Fail/All: 0/6
+[XDlog] 20:53:39 Finish pinyin | [BOT] ARTnend : gan rao wo da zi le | Result: 干扰我打自乐 | Used: 0.0005133152008056641
+
+[XDlog] 20:53:57 Begin g_pinyin | [BOT] ARTnend : deng bian jing gong jian zhan
+[Pinyin] Loop ['deng', 'bian', 'jing', 'gong', 'jian', 'zhan']
+[Pinyin] Success ['等边', '精工', '建站']
+[Pinyin] Count Fail/All: 0/6
+[XDlog] 20:53:57 Finish pinyin | [BOT] ARTnend : deng bian jing gong jian zhan | Result: 等边精工建站 | Used: 0.006169795989990234
+
+[XDlog] 20:54:12 Begin g_pinyin | [BOT] ARTnend : kan kan sha shi hou you wei zhi
+[Pinyin] Loop ['kan', 'kan', 'sha', 'shi', 'hou', 'you', 'wei', 'zhi']
+[Pinyin] Success ['看看', '杀', '时候', '有', '位置']
+[Pinyin] Count Fail/All: 0/8
+[XDlog] 20:54:12 Finish pinyin | [BOT] ARTnend : kan kan sha shi hou you wei zhi | Result: 看看杀时候有位置 | Used: 0.0018396377563476562
+
+[XDlog] 20:55:14 Begin init |  : 
+[XDlog] 20:55:14 Finish init |  :  | Result: ['\x1b[33m21:00:00\x1b[0m 整！\x1b[38;2;254;198;195m _(≧v≦」∠)_', 285] | Used: 0.00019407272338867188
+
+[XDlog] 21:01:07 Begin g_pinyin | [BOT] ARTnend : xiao ma bang wo kan kan gong jian fu you mei you ren
+[Pinyin] Loop ['xiao', 'ma', 'bang', 'wo', 'kan', 'kan', 'gong', 'jian', 'fu', 'you', 'mei', 'you', 'ren']
+[Pinyin] Success ['小马', '帮我', '看看', '共建', '富有', '没有', '人']
+[Pinyin] Count Fail/All: 0/13
+[XDlog] 21:01:07 Finish pinyin | [BOT] ARTnend : xiao ma bang wo kan kan gong jian fu you mei you ren | Result: 小马帮我看看共建富有没有人 | Used: 0.004136800765991211
+
+[XDlog] 21:01:27 Begin server_name | [BOT] Pathstar_XD : 攻坚
+[XDlog] Get服务器...
+[XDlog] 21:01:27 Finish server_name | [BOT] Pathstar_XD : 攻坚 | Result: [{'playerCount': 5, 'name': '[摸鱼服]边境\x1b[33m攻坚\x1b[0m战'}] | Used: 0.2086350917816162
+
+[XDlog] 21:03:03 Begin init |  : 
+[XDlog] 21:03:03 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;254;250;195m (^・ω・^)', 1616] | Used: 0.0001392364501953125
+
+[XDlog] 21:06:40 Begin g_pinyin | [射我逼里] yancheng3134 : tai jiu mei da bian cai le
+[Pinyin] Loop ['tai', 'jiu', 'mei', 'da', 'bian', 'cai', 'le']
+[Pinyin] Success ['太久', '美达', '辩才', '了']
+[Pinyin] Count Fail/All: 0/7
+[XDlog] 21:06:40 Finish pinyin | [射我逼里] yancheng3134 : tai jiu mei da bian cai le | Result: 太久美达辩才了 | Used: 0.0008985996246337891
+
+[XDlog] 21:07:09 Begin g_pinyin | [射我逼里] yancheng3134 : bei dang ren ji shua
+[Pinyin] Loop ['bei', 'dang', 'ren', 'ji', 'shua']
+[Pinyin] Success ['北', '党人', '机', '刷']
+[Pinyin] Count Fail/All: 0/5
+[XDlog] 21:07:09 Finish pinyin | [射我逼里] yancheng3134 : bei dang ren ji shua | Result: 北党人机刷 | Used: 0.0009038448333740234
+
+[XDlog] 21:10:37 Begin g_pinyin | [BOT] ARTnend : HAO WAN DE
+[Pinyin] Loop ['hao', 'wan', 'de']
+[Pinyin] Success ['好玩', '的']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 21:10:37 Finish pinyin | [BOT] ARTnend : HAO WAN DE | Result: 好玩的 | Used: 0.0019075870513916016
+
+[XDlog] 21:10:51 Begin init |  : 
+[XDlog] 21:10:51 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;205;214;210m ╮(￣▽￣)╭', 1148] | Used: 0.0001361370086669922
+
+[XDlog] 21:11:33 Begin g_pinyin | [BOT] ARTnend : WO SHI HAO REN
+[Pinyin] Loop ['wo', 'shi', 'hao', 'ren']
+[Pinyin] Success ['我是', '好人']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 21:11:33 Finish pinyin | [BOT] ARTnend : WO SHI HAO REN | Result: 我是好人 | Used: 0.0015912055969238281
+
+[XDlog] 21:12:12 Begin g_pinyin | [射我逼里] yancheng3134 : ZHI BU GUO SHI YI GE DUO YVE MEI WAN LE BU ZHI YV XAING RENG JI YIYANG
+[Pinyin] Loop ['zhi', 'bu', 'guo', 'shi', 'yi', 'ge', 'duo', 'yve', 'mei', 'wan', 'le', 'bu', 'zhi']
+[Pinyin] Success ['只不过是', '一个', '多月', '每晚', '了', '不知']
+[Pinyin] Loop ['reng', 'ji']
+[Pinyin] Success ['仍', '机']
+[Pinyin] Count Fail/All: 2/17
+[XDlog] 21:12:12 Finish pinyin | [射我逼里] yancheng3134 : ZHI BU GUO SHI YI GE DUO YVE MEI WAN LE BU ZHI YV XAING RENG JI YIYANG | Result: 只不过是一个多月每晚了不知YV XAING仍机YIYANG | Used: 0.0028145313262939453
+
+[XDlog] 21:12:45 Begin g_pinyin | [射我逼里] yancheng3134 : YAO QV LE !!!
+[Pinyin] Loop ['yao', 'qu', 'le']
+[Pinyin] Success ['要', '去了']
+[Pinyin] Count Fail/All: 1/4
+[XDlog] 21:12:45 Finish pinyin | [射我逼里] yancheng3134 : YAO QV LE !!! | Result: 要去了!!! | Used: 0.002095937728881836
+
+[XDlog] 21:13:05 Begin g_pinyin | [射我逼里] yancheng3134 : EN A KIMOJI
+[Pinyin] Loop ['en', 'a']
+[Pinyin] Success ['恩', '阿']
+[Pinyin] Count Fail/All: 1/3
+[XDlog] 21:13:05 Finish pinyin | [射我逼里] yancheng3134 : EN A KIMOJI | Result: 恩阿KIMOJI | Used: 0.0014858245849609375
+
+[XDlog] 21:13:16 Begin g_pinyin | [BOT] ARTnend : BIE XIAO
+[Pinyin] Loop ['bie', 'xiao']
+[Pinyin] Success ['别笑']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 21:13:16 Finish pinyin | [BOT] ARTnend : BIE XIAO | Result: 别笑 | Used: 0.0016214847564697266
+
+[XDlog] 21:13:25 Begin g_pinyin | [BOT] FADURANE : o ho ho ho o ho
+[Pinyin] Loop ['o']
+[Pinyin] Success ['哦']
+[Pinyin] Loop ['o']
+[Pinyin] Success ['哦']
+[Pinyin] Count Fail/All: 2/4
+[Pinyin] Failed to Convert: o ho ho ho o ho
+[XDlog] 21:13:25 Finish pinyin | [BOT] FADURANE : o ho ho ho o ho | Result:  | Used: 0.0036232471466064453
+
+[XDlog] 21:13:41 Begin g_pinyin | [BOT] ARTnend : bu gao su ni
+[Pinyin] Loop ['bu', 'gao', 'su', 'ni']
+[Pinyin] Success ['不告诉你']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 21:13:41 Finish pinyin | [BOT] ARTnend : bu gao su ni | Result: 不告诉你 | Used: 0.0018172264099121094
+
+[XDlog] 21:15:26 Begin g_pinyin | [射我逼里] yancheng3134 : NONG DE WO HAO SHU FU
+[Pinyin] Loop ['nong', 'de', 'wo', 'hao', 'shu', 'fu']
+[Pinyin] Success ['弄得', '我好', '舒服']
+[Pinyin] Count Fail/All: 0/6
+[XDlog] 21:15:26 Finish pinyin | [射我逼里] yancheng3134 : NONG DE WO HAO SHU FU | Result: 弄得我好舒服 | Used: 0.0020067691802978516
+
+[XDlog] 21:16:34 Begin g_pinyin | [BOT] ARTnend : DAO CHU LA SHI ZHE YI KUAI
+[Pinyin] Loop ['dao', 'chu', 'la', 'shi', 'zhe', 'yi', 'kuai']
+[Pinyin] Success ['到处', '拉屎', '这', '一块']
+[Pinyin] Count Fail/All: 0/7
+[XDlog] 21:16:34 Finish pinyin | [BOT] ARTnend : DAO CHU LA SHI ZHE YI KUAI | Result: 到处拉屎这一块 | Used: 0.0017971992492675781
+
+[XDlog] 21:18:15 Begin g_pinyin | [射我逼里] yancheng3134 : ji ran zai jia zhuang ghua ji
+[Pinyin] Loop ['ji', 'ran', 'zai', 'jia', 'zhuang']
+[Pinyin] Success ['既然', '在', '假装']
+[Pinyin] Loop ['ji']
+[Pinyin] Success ['机']
+[Pinyin] Count Fail/All: 1/7
+[XDlog] 21:18:15 Finish pinyin | [射我逼里] yancheng3134 : ji ran zai jia zhuang ghua ji | Result: 既然在假装ghua机 | Used: 0.0024955272674560547
+
+[XDlog] 21:21:01 Begin g_pinyin | [射我逼里] yancheng3134 : tong shi si?
+[Pinyin] Loop ['tong', 'shi', 'si']
+[Pinyin] Success ['同时', '司']
+[Pinyin] Count Fail/All: 1/4
+[XDlog] 21:21:01 Finish pinyin | [射我逼里] yancheng3134 : tong shi si? | Result: 同时司? | Used: 0.0019259452819824219
+
+[XDlog] 21:23:19 Begin g_pinyin | [BOT] ARTnend : KE W
+[Pinyin] Loop ['ke']
+[Pinyin] Success ['可']
+[Pinyin] Count Fail/All: 1/2
+[Pinyin] Failed to Convert: KE W
+[XDlog] 21:23:19 Finish pinyin | [BOT] ARTnend : KE W | Result:  | Used: 0.0037660598754882812
+
+[XDlog] 21:24:14 Begin g_pinyin | [BOT] ARTnend : XIAN XI ZAO
+[Pinyin] Loop ['xian', 'xi', 'zao']
+[Pinyin] Success ['现', '洗澡']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 21:24:14 Finish pinyin | [BOT] ARTnend : XIAN XI ZAO | Result: 现洗澡 | Used: 0.0017917156219482422
+
+[XDlog] 21:24:27 Begin init |  : 
+[XDlog] 21:24:27 Finish init |  :  | Result: ['\x1b[33m21:30:00\x1b[0m！\x1b[38;2;199;245;190m (≧▽≦)/', 332] | Used: 0.00018668174743652344
+
+[XDlog] 21:24:42 Begin g_pinyin | [射我逼里] yancheng3134 : YOU SHI ZHE SI REN TU
+[Pinyin] Loop ['you', 'shi', 'zhe', 'si', 'ren', 'tu']
+[Pinyin] Success ['优势', '这四', '人', '图']
+[Pinyin] Count Fail/All: 0/6
+[XDlog] 21:24:42 Finish pinyin | [射我逼里] yancheng3134 : YOU SHI ZHE SI REN TU | Result: 优势这四人图 | Used: 0.0014598369598388672
+
+[XDlog] 21:26:03 Begin g_pinyin | [BOT] ARTnend : BIAN JING MAN REN LE
+[Pinyin] Loop ['bian', 'jing', 'man', 'ren', 'le']
+[Pinyin] Success ['边境', '满人', '了']
+[Pinyin] Count Fail/All: 0/5
+[XDlog] 21:26:03 Finish pinyin | [BOT] ARTnend : BIAN JING MAN REN LE | Result: 边境满人了 | Used: 0.00033593177795410156
+
+[XDlog] 21:27:00 Begin g_pinyin | [射我逼里] yancheng3134 : hao shuang a
+[Pinyin] Loop ['hao', 'shuang', 'a']
+[Pinyin] Success ['好爽啊']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 21:27:00 Finish pinyin | [射我逼里] yancheng3134 : hao shuang a | Result: 好爽啊 | Used: 0.00035500526428222656
+
+[XDlog] 21:31:10 Begin g_pinyin | [BOT] ARTnend : you ren zhan xi zao wei le
+[Pinyin] Loop ['you', 'ren', 'zhan', 'xi', 'zao', 'wei', 'le']
+[Pinyin] Success ['有人', '展', '洗澡', '为了']
+[Pinyin] Count Fail/All: 0/7
+[XDlog] 21:31:10 Finish pinyin | [BOT] ARTnend : you ren zhan xi zao wei le | Result: 有人展洗澡为了 | Used: 0.0006241798400878906
+
+[XDlog] 21:33:17 Begin g_pinyin | [BOT] ARTnend : DENG WO BIAO GE XI ZAO ING
+[Pinyin] Loop ['deng', 'wo', 'biao', 'ge', 'xi', 'zao']
+[Pinyin] Success ['等我', '表格', '洗澡']
+[Pinyin] Count Fail/All: 1/7
+[XDlog] 21:33:17 Finish pinyin | [BOT] ARTnend : DENG WO BIAO GE XI ZAO ING | Result: 等我表格洗澡ING | Used: 0.001194000244140625
+
+[XDlog] 21:33:44 Begin init |  : 
+[XDlog] 21:33:44 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (^・ω・^)', 1575] | Used: 0.00015425682067871094
+
+[XDlog] 21:39:17 Begin init |  : 
+[XDlog] 21:39:17 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (｡>﹏<｡)', 1242] | Used: 0.0002522468566894531
+
+[XDlog] 21:44:01 Begin g_pinyin | [BOT] ARTnend : XIAO CHAN MAO
+[Pinyin] Loop ['xiao', 'chan', 'mao']
+[Pinyin] Success ['小产', '猫']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 21:44:01 Finish pinyin | [BOT] ARTnend : XIAO CHAN MAO | Result: 小产猫 | Used: 0.001092672348022461
+
+[XDlog] 21:44:25 Begin pinyin_add | [BOT] Pathstar_XD : xiao chan mao 小馋猫
+[Pinyin Add] Success merge new "xiao,chan,mao": "小馋猫"
+[XDlog] 21:44:25 Finish pinyin_add | [BOT] Pathstar_XD : xiao chan mao 小馋猫 | Result: 添加成功: "xiao,chan,mao": "小馋猫" | Used: 0.003178119659423828
+
+[XDlog] 21:48:45 Begin g_pinyin | [BOT] ARTnend : HAO WAN
+[Pinyin] Loop ['hao', 'wan']
+[Pinyin] Success ['好玩']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 21:48:45 Finish pinyin | [BOT] ARTnend : HAO WAN | Result: 好玩 | Used: 0.0003676414489746094
+
+[XDlog] 21:48:59 Begin init |  : 
+[XDlog] 21:48:59 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (｀・ω・´)', 660] | Used: 0.00019168853759765625
+
+[XDlog] 21:55:59 Begin init |  : 
+[XDlog] 21:55:59 Finish init |  :  | Result: ['\x1b[33m22:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (｡>ω<｡)', 240] | Used: 0.0001876354217529297
+
+[XDlog] 22:01:33 Begin init |  : 
+[XDlog] 22:01:33 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;175;238;238m ～(つˆДˆ)つ', 1706] | Used: 0.00015234947204589844
+
+[XDlog] 22:03:00 Begin g_pinyin | [BOT] ARTnend : XI ZAO QU
+[Pinyin] Loop ['xi', 'zao', 'qu']
+[Pinyin] Success ['洗澡', '去']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 22:03:00 Finish pinyin | [BOT] ARTnend : XI ZAO QU | Result: 洗澡去 | Used: 0.0009725093841552734
+
+[XDlog] 22:10:11 Begin init |  : 
+[XDlog] 22:10:11 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;254;250;195m _(:з」∠)_', 1188] | Used: 0.00016236305236816406
+
+[XDlog] 22:13:34 Begin init |  : 
+[XDlog] 22:13:34 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;216;191;216m ～(つˆДˆ)つ', 985] | Used: 0.00015306472778320312
+
+[XDlog] 22:22:28 Begin init |  : 
+[XDlog] 22:22:28 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;144;238;144m (｡･ω･｡)', 451] | Used: 0.0001742839813232422
+
+[XDlog] 22:28:48 Begin init |  : 
+[XDlog] 22:28:48 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;254;250;195m (〜￣△￣)〜', 71] | Used: 0.00021719932556152344
+
+[XDlog] 22:29:01 Begin init |  : 
+[XDlog] 22:29:01 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;199;245;190m (｡>﹏<｡)', 58] | Used: 0.0001647472381591797
+
+[XDlog] 22:29:07 Begin init |  : 
+[XDlog] 22:29:07 Finish init |  :  | Result: ['\x1b[33m22:30:00\x1b[0m！\x1b[38;2;216;191;216m (〜￣△￣)〜', 52] | Used: 0.00015664100646972656
+
+[XDlog] 22:35:02 Begin init |  : 
+[XDlog] 22:35:02 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (^・ω・^)', 1497] | Used: 0.00018477439880371094
+
+[XDlog] 22:42:53 Begin init |  : 
+[XDlog] 22:42:53 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (・ω< )☆', 1026] | Used: 0.0004353523254394531
+
+[XDlog] 22:51:55 Begin init |  : 
+[XDlog] 22:51:55 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;221;160;221m (=^･ω･^=)', 484] | Used: 0.00017714500427246094
+
+[XDlog] 22:52:12 Begin init |  : 
+[XDlog] 22:52:12 Finish init |  :  | Result: ['\x1b[33m23:00:00\x1b[0m 整！\x1b[38;2;175;238;238m _(:з」∠)_', 467] | Used: 0.0004494190216064453
+
+[XDlog] 23:02:58 Begin init |  : 
+[XDlog] 23:02:58 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;254;219;193m (=・ω・=)', 1621] | Used: 0.00027751922607421875
+
+[XDlog] 23:03:08 Begin g_pinyin | [BOT] FADURANE : wc 今天玩了好久
+[Pinyin] Count Fail/All: 1/1
+[Pinyin] Failed to Convert: wc 今天玩了好久
+[XDlog] 23:03:08 Finish pinyin | [BOT] FADURANE : wc 今天玩了好久 | Result:  | Used: 0.0011489391326904297
+
+[XDlog] 23:03:35 Begin time | Pathstar_XD : 
+[XDlog] 23:03:35 Finish time | Pathstar_XD :  | Result: 23:03:35 | Used: 0.00016164779663085938
+
+[XDlog] 23:12:16 Begin init |  : 
+[XDlog] 23:12:16 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;135;206;235m (｀・ω・´)', 1063] | Used: 0.0006666183471679688
+
+[XDlog] 23:19:01 Begin init |  : 
+[XDlog] 23:19:01 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;254;219;193m (=^･ω･^=)', 658] | Used: 0.00019097328186035156
+
+[XDlog] 23:29:19 Begin init |  : 
+[XDlog] 23:29:19 Finish init |  :  | Result: ['\x1b[33m23:30:00\x1b[0m！\x1b[38;2;173;216;230m _(≧v≦」∠)_', 40] | Used: 0.00016760826110839844
+
+[XDlog] 23:40:30 Begin init |  : 
+[XDlog] 23:40:30 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (。-ω-)zzz', 1169] | Used: 0.0003769397735595703
+
+[XDlog] 23:48:23 Begin g_pinyin | s001king : NE ZHE
+[Pinyin] Loop ['ne', 'zhe']
+[Pinyin] Success ['呢', '这']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 23:48:23 Finish pinyin | s001king : NE ZHE | Result: 呢这 | Used: 0.0015823841094970703
+
+[XDlog] 23:49:42 Begin g_pinyin | s001king : EVA 8 HAO WAN
+[Pinyin] Loop ['hao', 'wan']
+[Pinyin] Success ['好玩']
+[Pinyin] Count Fail/All: 1/3
+[XDlog] 23:49:42 Finish pinyin | s001king : EVA 8 HAO WAN | Result: EVA 8好玩 | Used: 0.0006647109985351562
+
+[XDlog] 23:49:52 Begin init |  : 
+[XDlog] 23:49:52 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (。-ω-)zzz', 607] | Used: 0.00014162063598632812
+
+[XDlog] 23:56:51 Begin init |  : 
+[XDlog] 23:56:51 Finish init |  :  | Result: ['\x1b[33m00:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (。-ω-)zzz', 188] | Used: 0.0001761913299560547
+
+[XDlog] 00:03:35 Begin init |  : 
+[XDlog] 00:03:35 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;254;250;195m (。-ω-)zzz', 1584] | Used: 0.0001842975616455078
+
+[XDlog] 00:09:12 Begin g_pinyin | s001king : AI ZHONG LI XING
+[Pinyin] Loop ['ai', 'zhong', 'li', 'xing']
+[Pinyin] Success ['癌肿', '理性']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 00:09:12 Finish pinyin | s001king : AI ZHONG LI XING | Result: 癌肿理性 | Used: 0.0025157928466796875
+
+[XDlog] 00:10:26 Begin init |  : 
+[XDlog] 00:10:26 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;254;198;195m (。-ω-)zzz', 1173] | Used: 0.0001361370086669922
+
+[XDlog] 00:10:30 Begin init |  : 
+[XDlog] 00:10:30 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;144;238;144m (。-ω-)zzz', 1169] | Used: 0.00043654441833496094
+
+[XDlog] 00:11:53 Begin init |  : 
+[XDlog] 00:11:53 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;175;238;238m (。-ω-)zzz', 1086] | Used: 0.00032258033752441406
+
+[XDlog] 00:12:03 Begin init |  : 
+[XDlog] 00:12:03 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;254;250;195m (。-ω-)zzz', 1076] | Used: 0.00015497207641601562
+
+[XDlog] 00:12:08 Begin init |  : 
+[XDlog] 00:12:08 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;240;128;128m (。-ω-)zzz', 1071] | Used: 0.00010919570922851562
+
+[XDlog] 00:12:13 Begin init |  : 
+[XDlog] 00:12:13 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;199;245;190m (。-ω-)zzz', 1066] | Used: 0.00011563301086425781
+
+[XDlog] 00:12:21 Begin g_pinyin | Linddss : tie dui tie dou you lian sha jiang li le
+[Pinyin] Loop ['tie', 'dui', 'tie', 'dou', 'you', 'lian', 'sha', 'jiang', 'li', 'le']
+[Pinyin] Success ['帖', '对', '帖', '都有', '联', '砂浆', '里了']
+[Pinyin] Count Fail/All: 0/10
+[XDlog] 00:12:21 Finish pinyin | Linddss : tie dui tie dou you lian sha jiang li le | Result: 帖对帖都有联砂浆里了 | Used: 0.008327007293701172
+
+[XDlog] 00:19:41 Begin init |  : 
+[XDlog] 00:19:41 Finish init |  :  | Result: ['\x1b[33m00:30:00\x1b[0m！\x1b[38;2;240;128;128m (。-ω-)zzz', 618] | Used: 0.0004119873046875
+
+[XDlog] 00:19:44 Begin g_pinyin | [塵緣] Wh1TeSNP : you are welcome
+[Pinyin] Loop ['you']
+[Pinyin] Success ['有']
+[Pinyin] Count Fail/All: 1/2
+[Pinyin] Failed to Convert: you are welcome
+[XDlog] 00:19:44 Finish pinyin | [塵緣] Wh1TeSNP : you are welcome | Result:  | Used: 0.00044226646423339844
+
+[XDlog] 00:27:05 Begin g_pinyin | s001king : XIA WO YI TIAO
+[Pinyin] Loop ['xia', 'wo', 'yi', 'tiao']
+[Pinyin] Success ['下', '我', '一条']
+[Pinyin] Count Fail/All: 0/4
+[XDlog] 00:27:05 Finish pinyin | s001king : XIA WO YI TIAO | Result: 下我一条 | Used: 0.0013971328735351562
+
+[XDlog] 00:30:23 Begin init |  : 
+[XDlog] 00:30:23 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (。-ω-)zzz', 1776] | Used: 0.0001518726348876953
+
+[XDlog] 00:36:52 Begin g_pinyin | s001king : GE WEI , WO XIANG DA YI XIA SU CAI
+[Pinyin] Loop ['ge', 'wei']
+[Pinyin] Success ['各位']
+[Pinyin] Loop ['wo', 'xiang', 'da', 'yi', 'xia', 'su', 'cai']
+[Pinyin] Success ['我想', '大', '一下', '素材']
+[Pinyin] Count Fail/All: 1/10
+[XDlog] 00:36:52 Finish pinyin | s001king : GE WEI , WO XIANG DA YI XIA SU CAI | Result: 各位,我想大一下素材 | Used: 0.003290414810180664
+
+[XDlog] 00:36:59 Begin g_pinyin | s001king : HUI YOU DUN QI QING JIE
+[Pinyin] Loop ['hui', 'you', 'dun', 'qi', 'qing', 'jie']
+[Pinyin] Success ['会有', '钝器', '情节']
+[Pinyin] Count Fail/All: 0/6
+[XDlog] 00:36:59 Finish pinyin | s001king : HUI YOU DUN QI QING JIE | Result: 会有钝器情节 | Used: 0.0048007965087890625
+
+[XDlog] 00:37:02 Begin g_pinyin | s001king : DUN QI
+[Pinyin] Loop ['dun', 'qi']
+[Pinyin] Success ['钝器']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 00:37:02 Finish pinyin | s001king : DUN QI | Result: 钝器 | Used: 0.0005207061767578125
+
+[XDlog] 00:37:12 Begin g_pinyin | s001king : JIAN LIANG YI XIA XIE XIE L
+[Pinyin] Loop ['jian', 'liang', 'yi', 'xia', 'xie', 'xie']
+[Pinyin] Success ['见谅', '一下', '谢谢']
+[Pinyin] Count Fail/All: 1/7
+[XDlog] 00:37:12 Finish pinyin | s001king : JIAN LIANG YI XIA XIE XIE L | Result: 见谅一下谢谢L | Used: 0.002462148666381836
+
+[XDlog] 00:38:08 Begin g_pinyin | s001king : OK LE
+[Pinyin] Loop ['le']
+[Pinyin] Success ['了']
+[Pinyin] Count Fail/All: 1/2
+[Pinyin] Failed to Convert: OK LE
+[XDlog] 00:38:08 Finish pinyin | s001king : OK LE | Result:  | Used: 0.0006351470947265625
+
+[XDlog] 00:38:10 Begin g_pinyin | s001king : XIE XIE
+[Pinyin] Loop ['xie', 'xie']
+[Pinyin] Success ['谢谢']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 00:38:10 Finish pinyin | s001king : XIE XIE | Result: 谢谢 | Used: 0.0005807876586914062
+
+[XDlog] 00:39:16 Begin g_pinyin | s001king : ZHE GE GENG YOU XIAO GUO()
+[Pinyin] Loop ['zhe', 'ge', 'geng', 'you', 'xiao', 'guo']
+[Pinyin] Success ['这个', '更有', '效果']
+[Pinyin] Count Fail/All: 1/7
+[XDlog] 00:39:16 Finish pinyin | s001king : ZHE GE GENG YOU XIAO GUO() | Result: 这个更有效果() | Used: 0.0029489994049072266
+
+[XDlog] 00:39:20 Begin g_pinyin | ZLPMKOFGBVE : LI JIE
+[Pinyin] Loop ['li', 'jie']
+[Pinyin] Success ['理解']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 00:39:20 Finish pinyin | ZLPMKOFGBVE : LI JIE | Result: 理解 | Used: 0.0005574226379394531
+
+[XDlog] 00:39:30 Begin g_pinyin | s001king : XIE XIE))W
+[Pinyin] Loop ['xie', 'xie']
+[Pinyin] Success ['谢谢']
+[Pinyin] Count Fail/All: 1/3
+[XDlog] 00:39:30 Finish pinyin | s001king : XIE XIE))W | Result: 谢谢))W | Used: 0.0003390312194824219
+
+[XDlog] 00:41:06 Begin init |  : 
+[XDlog] 00:41:06 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (。-ω-)zzz', 1133] | Used: 0.0006530284881591797
+
+[XDlog] 00:41:11 Begin init |  : 
+[XDlog] 00:41:11 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (。-ω-)zzz', 1128] | Used: 0.0003647804260253906
+
+[XDlog] 00:42:26 Begin g_pinyin | s001king : BYE ))
+[Pinyin] Count Fail/All: 1/1
+[Pinyin] Failed to Convert: BYE ))
+[XDlog] 00:42:26 Finish pinyin | s001king : BYE )) | Result:  | Used: 0.0002906322479248047
+
+[XDlog] 00:42:31 Begin g_pinyin | s001king : JIAN SHI PING
+[Pinyin] Loop ['jian', 'shi', 'ping']
+[Pinyin] Success ['间', '时评']
+[Pinyin] Count Fail/All: 0/3
+[XDlog] 00:42:31 Finish pinyin | s001king : JIAN SHI PING | Result: 间时评 | Used: 0.0009658336639404297
+
+[XDlog] 00:42:44 Begin init |  : 
+[XDlog] 00:42:44 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (。-ω-)zzz', 1035] | Used: 0.0004379749298095703
+
+[XDlog] 00:43:06 Begin init |  : 
+[XDlog] 00:43:06 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (。-ω-)zzz', 1013] | Used: 0.0004909038543701172
+
+[XDlog] 00:43:12 Begin init |  : 
+[XDlog] 00:43:12 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;198;195m (。-ω-)zzz', 1007] | Used: 0.0003452301025390625
+
+[XDlog] 00:43:45 Begin init |  : 
+[XDlog] 00:43:45 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (。-ω-)zzz', 974] | Used: 0.0003974437713623047
+
+[XDlog] 00:43:50 Begin init |  : 
+[XDlog] 00:43:50 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;219;193m (。-ω-)zzz', 969] | Used: 0.0004429817199707031
+
+[XDlog] 00:44:03 Begin init |  : 
+[XDlog] 00:44:03 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;250;195m (。-ω-)zzz', 956] | Used: 0.0001442432403564453
+
+[XDlog] 00:44:10 Begin init |  : 
+[XDlog] 00:44:10 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (。-ω-)zzz', 949] | Used: 0.0004413127899169922
+
+[XDlog] 00:44:15 Begin init |  : 
+[XDlog] 00:44:15 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;175;238;238m (。-ω-)zzz', 944] | Used: 0.0003447532653808594
+
+[XDlog] 00:44:21 Begin init |  : 
+[XDlog] 00:44:21 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (。-ω-)zzz', 938] | Used: 0.00018596649169921875
+
+[XDlog] 00:44:39 Begin init |  : 
+[XDlog] 00:44:39 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (。-ω-)zzz', 920] | Used: 0.0004038810729980469
+
+[XDlog] 00:44:47 Begin init |  : 
+[XDlog] 00:44:47 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (。-ω-)zzz', 912] | Used: 0.00018930435180664062
+
+[XDlog] 00:44:53 Begin init |  : 
+[XDlog] 00:44:53 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (。-ω-)zzz', 906] | Used: 0.00015044212341308594
+
+[XDlog] 00:44:59 Begin init |  : 
+[XDlog] 00:44:59 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;194;245;194m (。-ω-)zzz', 900] | Used: 0.0005202293395996094
+
+[XDlog] 00:45:10 Begin init |  : 
+[XDlog] 00:45:10 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (。-ω-)zzz', 889] | Used: 0.0001823902130126953
+
+[XDlog] 00:59:34 Begin init |  : 
+[XDlog] 00:59:34 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;173;216;230m (。-ω-)zzz', 25] | Used: 0.00017142295837402344
+
+[XDlog] 01:02:12 Begin g_pinyin | [塵緣] Wh1TeSNP : man \
+[Pinyin] Loop ['man']
+[Pinyin] Success ['满']
+[Pinyin] Count Fail/All: 1/2
+[Pinyin] Failed to Convert: man \
+[XDlog] 01:02:12 Finish pinyin | [塵緣] Wh1TeSNP : man \ | Result:  | Used: 0.0007646083831787109
+
+[XDlog] 01:09:11 Begin g_pinyin | [塵緣] Wh1TeSNP : wo chao
+[Pinyin] Loop ['wo', 'chao']
+[Pinyin] Success ['我朝']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 01:09:11 Finish pinyin | [塵緣] Wh1TeSNP : wo chao | Result: 我朝 | Used: 0.0008852481842041016
+
+[XDlog] 01:13:46 Begin init |  : 
+[XDlog] 01:13:46 Finish init |  :  | Result: ['\x1b[33m01:30:00\x1b[0m！\x1b[38;2;144;238;144m (。-ω-)zzz', 973] | Used: 0.00035691261291503906
+

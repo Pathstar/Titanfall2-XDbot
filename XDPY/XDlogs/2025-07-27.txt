@@ -1,0 +1,44 @@
+[Pinyin Init] pinyin Time Used: 0.3428316116333008
+[XDInit] ----init Finished----
+[XDInit] init Time Used: 1.1296076774597168
+[XDInit] else Time Used: 0.0017337799072265625
+[XDlog] 15:35:42 Monitoring Squirrel Messages...
+
+[XDlog] 15:40:58 Begin init |  : 
+[XDlog] 15:40:58 Finish init |  :  | Result: ['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;221;160;221m ╮(￣▽￣)╭', 1141] | Used: 0.00016355514526367188
+
+[XDlog] 15:41:08 Begin init |  : 
+[XDlog] 15:41:08 Finish init |  :  | Result: ['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (^・ω・^)', 1131] | Used: 0.00011587142944335938
+
+[XDlog] 15:41:17 Begin init |  : 
+[XDlog] 15:41:17 Finish init |  :  | Result: ['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;175;238;238m ╮(￣▽￣)╭', 1122] | Used: 0.00011229515075683594
+
+[XDlog] 15:58:59 Begin init |  : 
+[XDlog] 15:58:59 Finish init |  :  | Result: ['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;135;206;235m (=^･ω･^=)', 60] | Used: 0.00018477439880371094
+
+[XDlog] 15:59:12 Begin init |  : 
+[XDlog] 15:59:12 Finish init |  :  | Result: ['\x1b[33m16:00:00\x1b[0m 整！\x1b[38;2;248;131;121m (ﾉ≧∀≦)ﾉ', 47] | Used: 0.00012969970703125
+
+[XDlog] 15:59:17 Begin g_pinyin | [BOT] Pathstar_XD : a a
+[Pinyin] Loop ['a', 'a']
+[Pinyin] Success ['啊啊']
+[Pinyin] Count Fail/All: 0/2
+[XDlog] 15:59:17 Finish pinyin | [BOT] Pathstar_XD : a a | Result: 啊啊 | Used: 0.0010352134704589844
+
+[XDlog] 15:59:21 Begin g_pinyin | [BOT] Pathstar_XD : me too
+[Pinyin] Loop ['me']
+[Pinyin] Success ['么']
+[Pinyin] Count Fail/All: 1/2
+[Pinyin] Failed to Convert: me too
+[XDlog] 15:59:21 Finish pinyin | [BOT] Pathstar_XD : me too | Result:  | Used: 0.0006392002105712891
+
+[XDlog] 15:59:41 Begin g_pinyin | [BOT] Pathstar_XD : aaaaaa a
+[Pinyin] Loop ['a']
+[Pinyin] Success ['阿']
+[Pinyin] Count Fail/All: 1/2
+[Pinyin] Failed to Convert: aaaaaa a
+[XDlog] 15:59:41 Finish pinyin | [BOT] Pathstar_XD : aaaaaa a | Result:  | Used: 0.0020368099212646484
+
+[XDlog] 16:14:44 Begin init |  : 
+[XDlog] 16:14:44 Finish init |  :  | Result: ['\x1b[33m16:30:00\x1b[0m！\x1b[38;2;254;250;195m (ﾉ≧∀≦)ﾉ', 915] | Used: 0.0002961158752441406
+

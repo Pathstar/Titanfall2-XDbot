@@ -411,3 +411,38 @@
 [Pinyin] Count Fail/All: 0/5
 [XDlog] 00:29:54 Finish pinyin | [QAQ] Fire09-OwO : wo chu qu yi xia | Result: 我出去一下 | Used: 0.004090547561645508
 
+[XDlog] 00:31:06 Begin init |  : 
+[XDlog] 00:31:06 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;199;245;190m (。-ω-)zzz', 1733] | Used: 0.002715587615966797
+
+[XDlog] 00:41:45 Begin init |  : 
+[XDlog] 00:41:45 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (。-ω-)zzz', 1094] | Used: 0.0003654956817626953
+
+[XDlog] 00:42:50 Begin pinyin_del | [BOT] Pathstar_XD : shi de
+[Pinyin Del] Success merge "shi,de": "是的" 0.21 | Next "使得"
+[XDlog] 00:42:50 Finish pinyin_del | [BOT] Pathstar_XD : shi de | Result: 已删除: "shi,de": "是的" | Used: 0.004004001617431641
+
+[XDlog] 00:47:58 Begin server | [BOT] Pathstar_XD : ['name', '小图']
+[XDlog] Get服务器...
+[XDlog] 00:47:58 Finish server | [BOT] Pathstar_XD : ['name', '小图'] | Result: 现在没有任何人！-> [CN]坏逼们的服务器#[33m小图[0m铁对铁 | Used: 0.188981294631958
+
+[XDlog] 00:52:29 Begin init |  : 
+[XDlog] 00:52:29 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;144;238;144m (。-ω-)zzz', 450] | Used: 0.00037789344787597656
+
+[XDlog] 00:55:59 Begin ai | [BOT] Pathstar_XD : 泰坦陨落2如何改转生等级
+{'id': 'gen-1753203365-Bf0d8eigxG0YFV0bWyBt', 'provider': 'Alibaba', 'model': 'qwen/qwen2.5-vl-72b-instruct:free', 'object': 'chat.completion', 'created': 1753203365, 'choices': [{'logprobs': None, 'finish_reason': 'stop', 'native_finish_reason': 'stop', 'index': 0, 'message': {'role': 'assistant', 'content': '在泰坦陨落2中，转生等级是通过游戏内购买或完成特定挑战来提升的，无法直接修改。如果你想提升转生等级，建议通过游戏内活动或购买来实现。游戏设计如此，旨在保持游戏平衡和玩家体验。', 'refusal': None, 'reasoning': None}}], 'system_fingerprint': None, 'usage': {'prompt_tokens': 163, 'completion_tokens': 61, 'total_tokens': 224}}
+---
+
+[XDlog] emoji: 在泰坦陨落2中，转生等级是通过游戏内购买或完成特定挑战来提升的，无法直接修改。如果你想提升转生等级，建议通过游戏内活动或购买来实现。游戏设计如此，旨在保持游戏平衡和玩家体验。
+[XDlog] sq长度:  27
+[XDlog] py长度:  72 14
+[XDlog] 00:56:04 Finish ai | [BOT] Pathstar_XD : 泰坦陨落2如何改转生等级 | Result: ['在泰坦陨落2中，转生等级是通过游戏内购买或完成特定挑战来提升的，无法直接修改。如果你想提升转生等级，建议通过游戏内活动或购买来实现。游戏设计如此', '旨在保持游戏平衡和玩家体验。'] | Used: 5.162625312805176
+
+[XDlog] 00:57:17 Begin init |  : 
+[XDlog] 00:57:17 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;254;208;175m (。-ω-)zzz', 162] | Used: 0.000335693359375
+
+[XDlog] 00:57:36 Begin init |  : 
+[XDlog] 00:57:36 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;205;214;210m (。-ω-)zzz', 143] | Used: 0.0003426074981689453
+
+[XDlog] 00:57:43 Begin init |  : 
+[XDlog] 00:57:43 Finish init |  :  | Result: ['\x1b[33m01:00:00\x1b[0m 整！\x1b[38;2;216;191;216m (。-ω-)zzz', 136] | Used: 0.0002982616424560547
+
