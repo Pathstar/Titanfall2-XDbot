@@ -220,8 +220,7 @@ def monitor_file():
                 except Exception as e:
                     print(
                         f"[XDlog] {time.strftime('%H:%M:%S')} \033[31mError Failed to read JSON {os.path.basename(json_file_path)}\n{e}\033[0m")
-                    save_temp_data("load_message_error", '\n'.join(log_buffer) + "\n\n" + (
-                        json.dumps(data, ensure_ascii=False) if 'data' in locals() else "data not defined"))
+                    save_temp_data("load_message_error", (json.dumps(data, ensure_ascii=False) if 'data' in locals() else "data not defined") + "\n\n" + '\n'.join(log_buffer))
                     write_log()
 
 
