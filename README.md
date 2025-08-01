@@ -21,7 +21,7 @@
 > | `@xd meow`                     | 喵喵妙妙妙妙妙妙妙妙                                         |
 > | `@xd meme`                     | 随机输出一个meme笑话（待补充）                               |
 > | `@xd pinyin (拼音)`            | 拼音转文字，保留不可转的内容<br/>已被全局转文字替代，但该指令不会检测失败<br/>(python库 [Pinyin2Hanzi](https://github.com/letiantian/Pinyin2Hanzi)) |
-> | `@xd pinyin add (拼音) (汉字)` | 拼音转文字添加转义<br/>格式见：拼音转义添加/删除             |
+> | `@xd pinyin add (拼音) (汉字)` | 拼音转文字添加转义<br/>格式见：[拼音转义添加/删除]https://github.com/Pathstar/Titanfall2-XDbot#%E6%8B%BC%E9%9F%B3%E8%BD%AC%E4%B9%89%E6%B7%BB%E5%8A%A0%E5%88%A0%E9%99%A4             |
 > | `@xd roll`                     | 随机返回1~6                                                  |
 > | `@xd time`                     | 返回当前实际时间                                             |
 > | `@xd wiki`                     | 返回bilibili专栏链接和github README.md网址                   |
