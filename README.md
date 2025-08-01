@@ -20,7 +20,7 @@
 > | `@xd help`                     | 返回可用指令摘要                                             |
 > | `@xd meow`                     | 喵喵妙妙妙妙妙妙妙妙                                         |
 > | `@xd meme`                     | 随机输出一个meme笑话（待补充）                               |
-> | `@xd pinyin (拼音)`            | 拼音转文字，保留不可转的内容<br/>已被全局转拼音替代，但该指令不会检测失败<br/>(python库 [Pinyin2Hanzi](https://github.com/letiantian/Pinyin2Hanzi)) |
+> | `@xd pinyin (拼音)`            | 拼音转文字，保留不可转的内容<br/>已被全局转文字替代，但该指令不会检测失败<br/>(python库 [Pinyin2Hanzi](https://github.com/letiantian/Pinyin2Hanzi)) |
 > | `@xd pinyin add (拼音) (汉字)` | 拼音转文字添加转义<br/>格式见：拼音转义添加/删除             |
 > | `@xd roll`                     | 随机返回1~6                                                  |
 > | `@xd time`                     | 返回当前实际时间                                             |
@@ -64,7 +64,7 @@
 > *上下调整视角没找到命令，所以实现不了*
 > *如果是我忘记退了还能远端控制让我退出去uwu*
 >
-> #### 全局转拼音系统
+> #### 全局转文字系统
 >
 > - 通过`@xd pinyin start/stop`控制开关
 > - 通过空格分割，大致规则为失败数量<成功数量，且第一/第二段长度<=12，同时首字母为字母时，才触发拼音转文字，具体规则见XD.nut -> globalTransToChinese
