@@ -21,7 +21,7 @@
 > | `@xd meow`                     | 喵喵妙妙妙妙妙妙妙妙                                         |
 > | `@xd meme`                     | 随机输出一个meme笑话（待补充）                               |
 > | `@xd pinyin (拼音)`            | 拼音转文字，保留不可转的内容<br/>已被全局转文字替代，但该指令不会检测失败<br/>(python库 [Pinyin2Hanzi](https://github.com/letiantian/Pinyin2Hanzi)) |
-> | `@xd pinyin add (拼音) (汉字)` | 拼音转文字添加转义<br/>格式见：[拼音转义添加/删除](https://github.com/Pathstar/Titanfall2-XDbot?tab=readme-ov-file#%E6%8B%BC%E9%9F%B3%E8%BD%AC%E4%B9%89%E6%B7%BB%E5%8A%A0%E5%88%A0%E9%99%A4)             |
+> | `@xd pinyin add (拼音) (汉字)` | 拼音转文字添加转义<br/>格式见：拼音转义添加/删除 [[jump]](https://github.com/Pathstar/Titanfall2-XDbot?tab=readme-ov-file#%E6%8B%BC%E9%9F%B3%E8%BD%AC%E4%B9%89%E6%B7%BB%E5%8A%A0%E5%88%A0%E9%99%A4)             |
 > | `@xd roll`                     | 随机返回1~6                                                  |
 > | `@xd time`                     | 返回当前实际时间                                             |
 > | `@xd wiki`                     | 返回bilibili专栏链接和github README.md网址                   |
@@ -31,8 +31,8 @@
 > | `@xd 查询武器 (模糊武器名)`    | 查询拿着该武器的玩家，支持交集检索多个<br/>例如：`@xd 查询武器 隐身 手雷` |
 > | `@xd 井字棋`                   | 两人输入后开启井字棋<br/>可用 `@xd 3 1` 落子到第三列第一行   |
 > | `@xd 打开/关闭连杀播报`        | 控制连杀播报开关                                             |
-> | `@xd 进入/退出操控模式`        | 远程操控我自己，格式见：操控模式指令                         |
-> | `@xd 服务器 模式/名称 (名)`    | 模糊查询服务器人数，格式见：查询服务器指令                   |
+> | `@xd 进入/退出操控模式`        | 远程操控我自己，格式见：操控模式指令 [[jump]](https://github.com/Pathstar/Titanfall2-XDbot?tab=readme-ov-file#%E6%93%8D%E6%8E%A7%E6%A8%A1%E5%BC%8F%E6%8C%87%E4%BB%A4)                         |
+> | `@xd 服务器 模式/名称 (名)`    | 模糊查询服务器人数，格式见：查询服务器指令 [[jump]](https://github.com/Pathstar/Titanfall2-XDbot?tab=readme-ov-file#%E6%9F%A5%E8%AF%A2%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8C%87%E4%BB%A4)                   |
 >
 > 
 >
