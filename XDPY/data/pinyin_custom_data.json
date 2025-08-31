@@ -455,6 +455,24 @@
                 "梓宝",
                 0.21
             ]
+        ],
+        "shi,ba": [
+            [
+                "是吧",
+                0.21
+            ]
+        ],
+        "bao,de": [
+            [
+                "包的",
+                0.21
+            ]
+        ],
+        "sha,qing,kuang": [
+            [
+                "啥情况",
+                0.5
+            ]
         ]
     },
     "custom_pinyin_dict": {
@@ -473,6 +491,7 @@
         "blue": "\u001b[34m",
         "purple": "\u001b[35m",
         "cyan": "\u001b[36m",
-        "limbo": "\u001b[35m FOCES..."
+        "limbo": "\u001b[35m FOCES...",
+        "mvp": "我得了MVP!"
     }
 }

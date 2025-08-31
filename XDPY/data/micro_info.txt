@@ -1,0 +1,116 @@
+Microsoft Sound Mapper - Input 0
+Voicemeeter Out B1 (VB-Audio Vo 1
+麦克风 (Steam Streaming Microphone 2
+Voicemeeter Out B2 (VB-Audio Vo 3
+Voicemeeter Out A3 (VB-Audio Vo 4
+Voicemeeter Out B3 (VB-Audio Vo 5
+麦克风阵列 (英特尔® 智音技术) 6
+Voicemeeter Out A1 (VB-Audio Vo 7
+Headset Microphone (Realtek Hig 8
+Voicemeeter Out A4 (VB-Audio Vo 9
+麦克风 (Screaming Bee Audio) 10
+Voicemeeter Out A2 (VB-Audio Vo 11
+Voicemeeter Out A5 (VB-Audio Vo 12
+Microsoft Sound Mapper - Output 13
+Headphone (Realtek High Definit 14
+Voicemeeter In 1 (VB-Audio Voic 15
+loudspeaker (Steam Streaming Mi 16
+Voicemeeter Input (VB-Audio Voi 17
+Speaker (Realtek High Definitio 18
+Voicemeeter In 3 (VB-Audio Voic 19
+Voicemeeter VAIO3 Input (VB-Aud 20
+Voicemeeter In 5 (VB-Audio Voic 21
+loudspeaker (Steam Streaming Sp 22
+Voicemeeter In 2 (VB-Audio Voic 23
+Voicemeeter In 4 (VB-Audio Voic 24
+Voicemeeter AUX Input (VB-Audio 25
+主声音捕获驱动程序 26
+---- 再往下都是虚假的idk why----
+
+
+Voicemeeter Out B1 (VB-Audio Voicemeeter VAIO) 27
+麦克风 (Steam Streaming Microphone) 28
+Voicemeeter Out B2 (VB-Audio Voicemeeter VAIO) 29
+Voicemeeter Out A3 (VB-Audio Voicemeeter VAIO) 30
+Voicemeeter Out B3 (VB-Audio Voicemeeter VAIO) 31
+麦克风阵列 (英特尔® 智音技术) 32
+Voicemeeter Out A1 (VB-Audio Voicemeeter VAIO) 33
+Headset Microphone (Realtek High Definition Audio) 34
+Voicemeeter Out A4 (VB-Audio Voicemeeter VAIO) 35
+麦克风 (Screaming Bee Audio) 36
+Voicemeeter Out A2 (VB-Audio Voicemeeter VAIO) 37
+Voicemeeter Out A5 (VB-Audio Voicemeeter VAIO) 38
+主声音驱动程序 39
+Headphone (Realtek High Definition Audio) 40
+Voicemeeter In 1 (VB-Audio Voicemeeter VAIO) 41
+loudspeaker (Steam Streaming Microphone) 42
+Voicemeeter Input (VB-Audio Voicemeeter VAIO) 43
+Speaker (Realtek High Definition Audio) 44
+Voicemeeter In 3 (VB-Audio Voicemeeter VAIO) 45
+Voicemeeter VAIO3 Input (VB-Audio Voicemeeter VAIO) 46
+Voicemeeter In 5 (VB-Audio Voicemeeter VAIO) 47
+loudspeaker (Steam Streaming Speakers) 48
+Voicemeeter In 2 (VB-Audio Voicemeeter VAIO) 49
+Voicemeeter In 4 (VB-Audio Voicemeeter VAIO) 50
+Voicemeeter AUX Input (VB-Audio Voicemeeter VAIO) 51
+Voicemeeter In 1 (VB-Audio Voicemeeter VAIO) 52
+Headphone (Realtek High Definition Audio) 53
+loudspeaker (Steam Streaming Microphone) 54
+Voicemeeter Input (VB-Audio Voicemeeter VAIO) 55
+Speaker (Realtek High Definition Audio) 56
+Voicemeeter In 3 (VB-Audio Voicemeeter VAIO) 57
+Voicemeeter VAIO3 Input (VB-Audio Voicemeeter VAIO) 58
+Voicemeeter In 5 (VB-Audio Voicemeeter VAIO) 59
+loudspeaker (Steam Streaming Speakers) 60
+Voicemeeter In 2 (VB-Audio Voicemeeter VAIO) 61
+Voicemeeter In 4 (VB-Audio Voicemeeter VAIO) 62
+Voicemeeter AUX Input (VB-Audio Voicemeeter VAIO) 63
+麦克风 (Steam Streaming Microphone) 64
+Voicemeeter Out B2 (VB-Audio Voicemeeter VAIO) 65
+Voicemeeter Out A3 (VB-Audio Voicemeeter VAIO) 66
+Voicemeeter Out B3 (VB-Audio Voicemeeter VAIO) 67
+麦克风阵列 (英特尔® 智音技术) 68
+Voicemeeter Out B1 (VB-Audio Voicemeeter VAIO) 69
+Voicemeeter Out A1 (VB-Audio Voicemeeter VAIO) 70
+Headset Microphone (Realtek High Definition Audio) 71
+Voicemeeter Out A4 (VB-Audio Voicemeeter VAIO) 72
+麦克风 (Screaming Bee Audio) 73
+Voicemeeter Out A2 (VB-Audio Voicemeeter VAIO) 74
+Voicemeeter Out A5 (VB-Audio Voicemeeter VAIO) 75
+Voicemeeter Out 5 (Voicemeeter Point 5) 76
+Voicemeeter Out 8 (Voicemeeter Point 8) 77
+Output (Voicemeeter Point 1) 78
+Input (Voicemeeter Point 1) 79
+Output (Voicemeeter Point 4) 80
+Input (Voicemeeter Point 4) 81
+Output (Voicemeeter Point 7) 82
+Input (Voicemeeter Point 7) 83
+Voicemeeter Out 3 (Voicemeeter Point 3) 84
+Voicemeeter Out 6 (Voicemeeter Point 6) 85
+Output (Voicemeeter Point 2) 86
+Input (Voicemeeter Point 2) 87
+Output (Voicemeeter Point 5) 88
+Input (Voicemeeter Point 5) 89
+Output (Voicemeeter Point 8) 90
+Input (Voicemeeter Point 8) 91
+Voicemeeter Out 1 (Voicemeeter Point 1) 92
+Voicemeeter Out 4 (Voicemeeter Point 4) 93
+Voicemeeter Out 7 (Voicemeeter Point 7) 94
+Output (Voicemeeter Point 3) 95
+Input (Voicemeeter Point 3) 96
+Output (Voicemeeter Point 6) 97
+Input (Voicemeeter Point 6) 98
+Voicemeeter Out 2 (Voicemeeter Point 2) 99
+麦克风 (Voicemod VAD Wave) 100
+Line Out (Voicemod VAD Wave) 101
+Speakers (Realtek HD Audio output) 102
+Headphones (Realtek HD Audio 2nd output) 103
+麦克风 (Realtek HD Audio Mic input) 104
+麦克风 (Steam Streaming Microphone Wave) 105
+Speakers (Steam Streaming Microphone Wave) 106
+Input (Steam Streaming Speakers Wave) 107
+Speakers (Steam Streaming Speakers Wave) 108
+麦克风阵列 1 (英特尔(R) 智音技术麦克风) 109
+麦克风阵列 2 (英特尔(R) 智音技术麦克风) 110
+麦克风阵列 3 (英特尔(R) 智音技术麦克风) 111
+麦克风 (Screaming Bee Wave) 112
