@@ -5,9 +5,19 @@ os.system('cls' if os.name == 'nt' else 'clear')
 import time
 
 init_start_time = time.time()
-start_time_dict = {"import": time.time()}
+start_time_dict = {"import": init_start_time}
 used_time_dict = {}
 log_buffer = []
+
+ori_print = print
+
+
+# 自定义print，同时写入日志文件
+def print(*args, **kwargs):
+    ori_print(*args, **kwargs)
+    message = " ".join(map(str, args))
+    log_buffer.append(message)
+    return print
 
 
 def print_use_time(log_prefix, time_name):
@@ -21,15 +31,21 @@ import emoji
 import json
 from Pinyin2Hanzi import dag, DefaultDagParams
 # from pypinyin import lazy_pinyin
+# from pynput.keyboard import Key, Controller
+
 import random
 import re
-# ↓ use 0.4s
+# ↓ requests use 0.4s
 import requests
 import threading
+# ↓ sounddevice use 1.0s
+# import sounddevice
+# import soundfile
 from unidecode import unidecode
 import win32file
 import win32con
 import winsound
+import DevilRoulette
 
 # 环境安装：
 # pip install emoji Pinyin2Hanzi pywin32 pypinyin requests unidecode
@@ -41,10 +57,13 @@ g_ai_char_limit = 200
 g_ai_save_history = True
 g_ai_limit = False
 
-# play_xdsound_in_team
+# micro_play_sound
 g_microphone_key = ";"
+# g_micro_device = "Voicemeeter Input"
+g_micro_device = "Voicemeeter Input (VB-Audio Voi"
 
 print_use_time("XDInit", "import")
+
 
 # [
 #   {
@@ -148,26 +167,34 @@ class SetIsAiLimit(CommandHandler):
 class RunWinSound(CommandHandler):
     def handle(self, args):
         # Alarm03 2 Alarm01 1 Alarm04
-        play_sounds(args["message"])
+        AudioPlayer.play_win_sounds(args["message"])
 
 
 # string (any in dict(winsound))
-@CommandHandler.register("run_xdsound")
+@CommandHandler.register("run_play_sound")
 class RunXDSound(CommandHandler):
     def handle(self, args):
         # xd sound limbo bloodbath sonic wave tidal wave congregation
-        play_sounds(args["message"])
+        # micro_play_sound(args["message"])
+        print("a")
+        # current_thread = threading.Thread(target=micro_play_sound, args=(args["message"], "Voicemeeter Input", 0.5))
+        # current_thread.start()
 
 
 # ---- 返回型命令 ---- #
 
 # string (any in dict(winsound))
-@CommandHandler.register("play_xdsound_in_team")
-class RunXDSound(CommandHandler):
+@CommandHandler.register("run_micro_sound")
+class RunMicroSound(CommandHandler):
     def handle(self, args):
         # xd sound limbo bloodbath sonic wave tidal wave congregation
-        # return "name"
-        play_sounds(args["message"])
+        AudioPlayer.play_sound( args["message"], g_micro_device, args["option"].get("volume", 0.1) )
+        # current_thread = threading.Thread(target=AudioPlayer.play_sound,
+        #                                   args=(args["message"], g_micro_device, args["option"].get("volume", 0.1)))
+        # current_thread.start()
+
+
+#         循环 join break
 
 
 # no arg
@@ -224,18 +251,113 @@ class Ai(CommandHandler):
                         option.get("save_history", True))
 
 
-# string (any in str(mode))
+# string (any in serverMode)
 @CommandHandler.register("server_mode")
 class ServerMode(CommandHandler):
     def handle(self, args):
         return get_server("mode", args["message"])
 
 
-# string (any in str(name))
+# string (any in serverName)
 @CommandHandler.register("server_name")
 class ServerName(CommandHandler):
     def handle(self, args):
         return get_server("name", args["message"])
+
+
+# Inter
+@CommandHandler.register("dr_enter")
+class DrEnter(CommandHandler):
+    def handle(self, args):
+        option = args["option"]
+        player_name = args["player_name"]
+        if "is_pc" in args["option"]:
+            # AI player
+            try:
+                option = args["option"]
+
+                print(f"[DR] room_id = {option.get('room_id', -1)}")
+                print(f"[DR] DevilRoulette.g_dr_player_index_table: {DevilRoulette.g_dr_player_index_table}")
+                room = DevilRoulette.g_dr_room_list[option.get("room_id", -1)]
+                room.message_buffer.clear()
+                room.enter_pc(player_name)
+                return room.message_buffer
+            except Exception as e:
+                return [["say", {"message": f"添加 电脑 出现问题：{e}"}]]
+        else:
+            # player
+            try:
+                if "color_reset" in option:
+                    DevilRoulette.color_reset = option["color_reset"]
+                # [['set_room_id', {'room_id': 0}], ['say', {'message': '你已经在游戏里了'}]]
+                print(f"[DR] g_dr_room_index: {DevilRoulette.g_dr_room_index}")
+                room = self.get_or_create_room(DevilRoulette.g_dr_room_index)
+                room.message_buffer.clear()
+
+                # 如果应当创建新房间且当然room不是新房间，且里面的玩家不是这个玩家，创建新房间加入
+                player_dict = room.player_dict
+                if args.get("is_new_room", False) and len(player_dict) == 1 and player_name not in player_dict:
+                    room = self.get_or_create_room(len(DevilRoulette.g_dr_room_list))
+                room.enter_game(player_name)
+                return [["set_room_id", {"room_id": room.room_id}]] + room.message_buffer
+            except Exception as e:
+                return [["say", {"message": f"进入房间出现问题：{e}"}]]
+
+    @staticmethod
+    def get_or_create_room(index):
+        # 如果房间已存在，直接返回
+        if index < len(DevilRoulette.g_dr_room_list):
+            return DevilRoulette.g_dr_room_list[index]
+
+        # 否则创建新房间并加入列表
+        new_room = DevilRoulette.DevilRouletteRoom(index)
+        return new_room
+
+    # if len(DevilRoulette.g_dr_room_list)-1 == DevilRoulette.g_dr_room_index:
+    #     DevilRoulette.g_dr_room_list[DevilRoulette.g_dr_room_index].enter_game(args["player_name"])
+    # # index 数量比 房间长度多1，需要创建
+    # else:
+    #     new_room = DevilRoulette.DevilRouletteRoom(DevilRoulette.g_dr_room_index)
+    #     new_room.enter_game(args["player_name"])
+
+
+# Inter
+@CommandHandler.register("dr_play")
+class DrPlay(CommandHandler):
+    def handle(self, args):
+        try:
+            option = args["option"]
+            player_name = args["player_name"]
+            choice = args["message"]
+            room = DevilRoulette.g_dr_room_list[
+                option.get("room_id", DevilRoulette.g_dr_player_index_table[player_name])]
+            room.message_buffer.clear()
+            if room.status == "waiting":
+                # setting
+                room.setting_entry(player_name, choice)
+            else:
+                # play
+                room.game.player_entrance(player_name, choice)
+            return room.message_buffer
+        except Exception as e:
+            return [["say", {"message": f"进行游玩时出现问题：{e}"}]]
+
+
+# Inter
+@CommandHandler.register("dr_add_pc")
+class DrAddPC(CommandHandler):
+    def handle(self, args):
+        try:
+            option = args["option"]
+            player_name = args["message"]
+            print(f"[DR] room_id = {option.get('room_id', -1)}")
+            print(f"DevilRoulette.g_dr_player_index_table: {DevilRoulette.g_dr_player_index_table}")
+            room = DevilRoulette.g_dr_room_list[option.get("room_id", -1)]
+            room.message_buffer.clear()
+            room.enter_pc(player_name)
+            return room.message_buffer
+        except Exception as e:
+            return [["say", {"message": f"添加 电脑 出现问题：{e}"}]]
 
 
 # no arg
@@ -253,30 +375,37 @@ class Default(CommandHandler):
         return f"没有找到命令 \"{args['command']}\""
 
 
-def process_entry(timestamp: str, player_name: str, command: str, message: str, say: str):
+def process_entry(timestamp: str, kwargs):
     try:
         local_index = thread_index
         # 可能的统计失败时间刻在进入到这里的时间 squirrel应当同时计算 在结果不相同时发出警报
+        player_name = kwargs["player_name"]
+        command = kwargs["command"]
+        message = kwargs["message"]
+        say = kwargs["say"]
+        option = kwargs['option']
 
         handler = CommandHandler.registry.get(command)
         if handler is None:
             print(f"[XDlog] \033[31mError Command {command} not found | Count: {local_index}\033[0m\n")
             write_log()
             time.sleep(1)
-            processing_set.remove((timestamp, player_name))
+            processing_set.remove(timestamp)
             return
 
         start_time = time.time()
         start_strftime = time.strftime("%H:%M:%S")
         str_is_say_team = "[Team]" if say == "say_team " else ""
-        print(f"[XDlog] {start_strftime} Begin {command} | {str_is_say_team}{player_name} : {message}")
 
-        kwargs = {
-            "player_name": player_name,
-            "command": command,
-            "message": message,
-            "option": {}
-        }
+        str_option = f" | {option}" if option else ""
+        print(f"[XDlog] {start_strftime} Begin {command} | {str_is_say_team}{player_name} : {message}{str_option}")
+
+        # kwargs = {
+        #     "player_name": player_name,
+        #     "command": command,
+        #     "message": message,
+        #     "option": {}
+        # }
         # ori_print(CommandHandler.registry)
         # {'set_pinyin_reload': <__main__.PinyinReload object at 0x0000013913C3BE00>, 'set_ai_new_chat': <__main__.SetAiNewChat object at 0x0000013913DAC050>, 'set_ai_chat_len': <__main__.SetAiChatLen object at 0x0000013913DAC1A0>, 'set_ai_chars_len': <__main__.SetAiCharsLen object at 0x0000013913DAC2F0>, 'set_is_ai_limit': <__main__.SetIsAiLimit object at 0x0000013913DAC440>, 'set_init': <__main__.Init object at 0x0000013913DAC590>, 'g_pinyin': <__main__.GPinyin object at 0x0000013913DAC6E0>, 'pinyin_add': <__main__.PinyinAdd object at 0x0000013913DAC830>, 'pinyin_del': <__main__.PinyinDel object at 0x0000013913DAC980>, 'pinyin': <__main__.Pinyin object at 0x0000013913DACAD0>, 'ai': <__main__.Ai object at 0x0000013913DACC20>, 'server_mode': <__main__.ServerMode object at 0x0000013913DACD70>, 'server_name': <__main__.ServerName object at 0x0000013913DACEC0>, 'time': <__main__.Time object at 0x0000013913DAD010>, 'set_none': <__main__.Default object at 0x0000013913DAD160>}
 
@@ -315,6 +444,7 @@ def process_entry(timestamp: str, player_name: str, command: str, message: str, 
 
         # processing
         py_message = handler.handle(kwargs)
+
         end_time = time.time()
         process_time = end_time - start_time
         # 以下的代码占用大致0.007秒
@@ -363,8 +493,11 @@ def process_entry(timestamp: str, player_name: str, command: str, message: str, 
         # 于是不会触发第二次
         # print(f"real time: {time.time() - start_time}")
         time.sleep(1)
-        processing_set.remove((timestamp, player_name))
+        processing_set.remove(timestamp)
     except Exception as e:
+        player_name = kwargs["player_name"]
+        command = kwargs["command"]
+        message = kwargs["message"]
         print(
             f"[XDlog] {time.strftime('%H:%M:%S')} \033[31mError Failed to Process {command} | {player_name} : {message}\n{e}\033[0m\n")
         save_temp_data("load_message_error", '\n'.join(log_buffer))
@@ -373,34 +506,43 @@ def process_entry(timestamp: str, player_name: str, command: str, message: str, 
 
 # 用法举例
 # asyncio.run(process_entry(...))
-def process_no_return(timestamp: str, player_name: str, command: str, message: str):
+def process_no_return(timestamp: str, kwargs):
     try:
+        player_name = kwargs["player_name"]
+        command = kwargs["command"]
+        message = kwargs["message"]
+        # say = kwargs["say"]
+        option = kwargs['option']
+
         handler = CommandHandler.registry.get(command)
         if handler is None:
             print(f"[XDlog] \033[31mError Command {command} not found (no_return) | Count: {thread_index}\033[0m\n")
             write_log()
             time.sleep(1)
-            processing_set.remove((timestamp, player_name))
+            processing_set.remove(timestamp)
             return
 
         start_strftime = time.strftime("%H:%M:%S")
-        kwargs = {
-            "player_name": player_name,
-            "command": command,
-            "message": message,
-            "option": {}
-        }
+        # kwargs = {
+        #     "player_name": player_name,
+        #     "command": command,
+        #     "message": message,
+        #     "option": {}
+        # }
         handler.handle(kwargs)
-
-        print(f"[XDlog] {start_strftime} No Return {command} | {player_name} : {message}\n")
+        str_option = f" | {option}" if option else ""
+        print(f"[XDlog] {start_strftime} No Return {command} | {player_name} : {message}{str_option}\n")
         #                   index                        process_time
         save_command_record(f"\t{log_date}\t{start_strftime}\t\t{command}\t{player_name}\t{message}\t\n")
         write_log()
 
         time.sleep(1)
-        processing_set.remove((timestamp, player_name))
+        processing_set.remove(timestamp)
         return
     except Exception as e:
+        player_name = kwargs["player_name"]
+        command = kwargs["command"]
+        message = kwargs["message"]
         print(
             f"[XDlog] {time.strftime('%H:%M:%S')} \033[31mError Failed to Process {command} | {player_name} : {message}\n{e}\033[0m\n")
         save_temp_data("load_message_error", '\n'.join(log_buffer))
@@ -441,25 +583,15 @@ def monitor_file():
                         with open(json_file_path, 'r', encoding='utf-8') as f:
                             data = json.load(f)
                         # print(f"\n{time.time()}\n")
-                        for timestamp, player_info in data.items():
-                            for player_name, details in player_info.items():
-                                if (timestamp, player_name) not in processing_set:
-                                    processing_set.add((timestamp, player_name))
-                                    # print(f"{timestamp} + {player_name}")
-                                    if details["is_return"]:
-                                        thread_index += 1
-                                        threading.Thread(target=process_entry,
-                                                         args=(
-                                                             timestamp, player_name,
-                                                             details["command"], details["message"], details["say"]
-                                                         )).start()
-                                    else:
-                                        threading.Thread(target=process_no_return,
-                                                         args=(
-                                                             timestamp, player_name,
-                                                             details["command"], details["message"]
-                                                         )).start()
-
+                        for timestamp, kwargs in data.items():
+                            if timestamp not in processing_set:
+                                processing_set.add(timestamp)
+                                # print(f"{timestamp} + {player_name}")
+                                if kwargs["is_return"]:
+                                    thread_index += 1
+                                    threading.Thread(target=process_entry, args=(timestamp, kwargs)).start()
+                                else:
+                                    threading.Thread(target=process_no_return, args=(timestamp, kwargs)).start()
                                 # else:
                                 #     print("\033[33mCatch (timestamp, player_name) in processing_set\033[0m")
                         last_m_time = current_m_time
@@ -519,31 +651,135 @@ def read_json(filename, log_prefix):
     return {}
 
 
-def play_sounds(sequence):
-    try:
-        # 解析输入字符串，提取声音文件名和可能的等待时间
-        pattern = re.compile(r'([A-Za-z0-9]+|\d+)')
-        matches = pattern.findall(sequence)
-        for match in matches:
-            try:
-                if match.isdigit():
-                    # wait
-                    wait_time = int(match)
-                    print(f"[Sound] Wait {wait_time}")
-                    time.sleep(wait_time)
-                else:
-                    # 如果没有此声音则会播放 winsound.MessageBeep()
-                    sound_file = f"C:/Windows/Media/{match}.wav"
-                    print(f"[Sound] Play {sound_file}")
-                    winsound.PlaySound(sound_file, winsound.SND_FILENAME)
-            except ValueError:
-                print(f"[Sound] \033[31mError: Failed to convert wait time to integer\033[0m")
-            except Exception as e:
-                print(f"[Sound] \033[31mError: Failed to play sound - {e}\033[0m")
-    except re.error:
-        print(f"[Sound] \033[31mError: Failed to compile regular expression\033[0m")
-    except Exception as e:
-        print(f"[Sound] \033[31mError: Failed to process input sequence - {e}\033[0m")
+class AudioPlayer:
+    def __init__(self):
+        # 配置
+        self.LAZY_IMPORT = True
+
+        # micro_player
+        self.sounddevice = None
+        self.soundfile = None
+        # self.device_table = {}
+        # self.device_id = None
+        self.device_index_dict = {}
+
+        # micro_button
+        self.keyboard = None
+
+        # 变量
+        self.is_has_lazy_init = False
+        self.is_playing = False
+        self.micro_button_index = 0
+
+        if not self.LAZY_IMPORT:
+            self.lazy_init()
+
+    def lazy_init(self):
+        if self.is_has_lazy_init:
+            return
+        print(f"[Sound Init] time.time")
+        # ↓ sounddevice use 0.9-1.0s
+        import sounddevice
+        import soundfile
+        from pynput.keyboard import Controller
+        self.sounddevice = sounddevice
+        self.soundfile = soundfile
+        self.keyboard = Controller()
+        device_index_dict = self.device_index_dict
+        for i, device in enumerate(sounddevice.query_devices()):
+            print(f"{device['name']} {device['index']}")
+            device_index_dict[device['name']] = device['index']
+        if g_micro_device not in device_index_dict:
+            print(f"[Sound Init] Fail: {g_micro_device} device not found")
+        self.is_has_lazy_init = True
+
+    def play_sound(self, file_path, device_name, volume=0.5):
+        """播放音频文件到指定的音频设备，并调整音量"""
+        self.lazy_init()
+        sounddevice = self.sounddevice
+        keyboard = self.keyboard
+        print(f"[Sound] Play {file_path}")
+        # 读取音频文件
+        data, samplerate = self.soundfile.read(file_path)
+
+        # 调整音量
+        data = data * volume
+        device_index_dict = self.device_index_dict
+        # if self.device_id is None:
+        if device_name not in device_index_dict:
+            print(f"未找到麦克风设备 '{g_micro_device}' ")
+            return
+        device_id = device_index_dict[device_name]
+        # 使用指定的设备播放音频
+        local_index = self.micro_button_index
+        self.micro_button_index += 1
+        if local_index == 0:
+            keyboard.press(';')
+        sounddevice.play(data, samplerate=samplerate, device=device_id)
+        sounddevice.wait()
+        self.micro_button_index -= 1
+        if self.micro_button_index == 0:
+            keyboard.release(';')
+        # with sd.OutputStream(samplerate=samplerate, device=device_id, channels=data.shape[1]) as stream:
+        #     stream.write(data) 修改成每次独立播放失败
+
+    @staticmethod
+    def play_win_sounds(sequence):
+        try:
+            # 解析输入字符串，提取声音文件名和可能的等待时间
+            # pattern = re.compile(r'([A-Za-z0-9]+|\d+)')
+            # matches = pattern.findall(sequence)
+            matches = sequence.split(',')
+            for match_part in matches:
+                match_part = match_part.strip()
+                try:
+                    if match_part.isdigit():
+                        # wait
+                        wait_time = int(match_part)
+                        print(f"[Sound] Wait {wait_time}")
+                        time.sleep(wait_time)
+                    else:
+                        # 如果没有此声音则会播放 winsound.MessageBeep()
+                        sound_file = f"C:/Windows/Media/{match_part}.wav"
+                        print(f"[Sound] Play {sound_file}")
+                        winsound.PlaySound(sound_file, winsound.SND_FILENAME)
+                except ValueError:
+                    print(f"[Sound] \033[31mError: Failed to convert wait time to integer\033[0m")
+                except Exception as e:
+                    print(f"[Sound] \033[31mError: Failed to play sound - {e}\033[0m")
+        except re.error:
+            print(f"[Sound] \033[31mError: Failed to compile regular expression\033[0m")
+        except Exception as e:
+            print(f"[Sound] \033[31mError: Failed to process input sequence - {e}\033[0m")
+
+
+# def micro_play_sound(file_path, device_name, volume=0.5):
+#     """播放音频文件到指定的音频设备，并调整音量"""
+#     if file_path:
+#         print(file_path)
+#         # 读取音频文件
+#         data, samplerate = soundfile.read(file_path)
+#
+#         # 调整音量
+#         data = data * volume
+#
+#         if device_id is not None:
+#             # 使用指定的设备播放音频
+#             local_index = index_tool["micro_sound"]
+#             index_tool["micro_sound"] += 1
+#             if local_index == 0:
+#                 keyboard.press(';')
+#             sounddevice.play(data, samplerate=samplerate, device=device_id)
+#             sounddevice.wait()
+#             index_tool["micro_sound"] -= 1
+#             if index_tool["micro_sound"] == 0:
+#                 keyboard.release(';')
+#             # with sd.OutputStream(samplerate=samplerate, device=device_id, channels=data.shape[1]) as stream:
+#             #     stream.write(data) 修改成每次独立播放失败
+#         else:
+#             print(f"未找到名为 '{device_name}' 的设备")
+#     else:
+#         print("未选择文件")
 
 
 def next_half_or_full_hour_final():
@@ -668,8 +904,8 @@ class PinyinChineseConverter:
         # 查找第一个汉字
         for idx, c in enumerate(s):
             is_h_cmd = False
-            if c == "-" and idx+1<len(s):
-                if s[idx+1] == "h":
+            if c == "-" and idx + 1 < len(s):
+                if s[idx + 1] == "h":
                     is_h_cmd = True
             if is_chinese(c) or is_h_cmd:
                 pinyin_raw = s[:idx].rstrip()
@@ -940,8 +1176,8 @@ def deepseek(name, message, ai_content="", is_save_history=g_ai_save_history):
         messages = chat_history + messages
 
     # print(messages)
-        # if len(chat_history) > chat_history_len:
-        #     chat_history = chat_history[2:]
+    # if len(chat_history) > chat_history_len:
+    #     chat_history = chat_history[2:]
     # messages.extend(chat_history)
     data = ""
     try:
@@ -1341,16 +1577,6 @@ os.makedirs(log_dir, exist_ok=True)
 # 日志文件完整路径
 log_file_path = os.path.join(log_dir, f"{log_date}.txt")
 
-ori_print = print
-
-
-# 自定义print，同时写入日志文件
-def print(*args, **kwargs):
-    ori_print(*args, **kwargs)
-    message = " ".join(map(str, args))
-    log_buffer.append(message)
-    return print
-
 
 # with open(log_file_path, "a", encoding="utf-8") as log_file:
 #     log_file.write(message + "\n")
@@ -1407,6 +1633,17 @@ emoji_list = [
     "_(:з」∠)_", "(=・ω・=)", "_(≧v≦」∠)_", "(〜￣△￣)〜", "╮(￣▽￣)╭", "(・ω< )☆", "(^・ω・^)", "(｡･ω･｡)"
 ]
 # NIGHT_EMOJI = "(。-ω-)zzz"
+
+# play sound init
+AudioPlayer = AudioPlayer()
+# keyboard = Controller()
+# # 查找设备 ID
+# device_id = None
+# for i, device in enumerate(sounddevice.query_devices()):
+#     if g_micro_device in device['name']:
+#         device_id = i
+#         break
+# index_tool["micro_sound"] = 0
 
 # 转拼音 初始化模型参数 todo 是你的
 start_time_dict["pinyin"] = time.time()

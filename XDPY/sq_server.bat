@@ -34,9 +34,15 @@ if not "!PID_LIST!"=="" (
 
 :: Run the new Python program
 echo Starting Python script...
-:: start "" cmd /k python !PYNAME!
+@REM 用无标题新窗口cmd打开
+@REM start "" cmd /k python !PYNAME!
+
+@REM 本窗口cmd打开
+@REM python !PYNAME!
+
+@REM 新窗口python打开
 start "sq_server" python !PYNAME!
-:: python !PYNAME!
+
 
 if "!PID_LIST!"=="" (
     exit /b
