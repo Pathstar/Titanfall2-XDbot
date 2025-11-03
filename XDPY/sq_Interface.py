@@ -45,7 +45,7 @@ from unidecode import unidecode
 import win32file
 import win32con
 import winsound
-import DevilRoulette
+import DevilRoulette as Dr
 
 # 环境安装：
 # pip install emoji Pinyin2Hanzi pywin32 pypinyin requests unidecode
@@ -133,6 +133,7 @@ class SetAiChatLen(CommandHandler):
         global g_chat_history_len
         try:
             g_chat_history_len = int(args["message"]) * 2
+            print(f"[XDAI Set] Success set_ai_chat_len: {g_chat_history_len}")
         except ValueError:
             print(f"[XDAI Set] \033[31mError set_ai_chat_len: '{args['message']}' is not a valid integer\033[0m")
 
@@ -188,7 +189,8 @@ class RunXDSound(CommandHandler):
 class RunMicroSound(CommandHandler):
     def handle(self, args):
         # xd sound limbo bloodbath sonic wave tidal wave congregation
-        AudioPlayer.play_sound( args["message"], g_micro_device, args["option"].get("volume", 0.1) )
+        option = args["option"]
+        AudioPlayer.play_sound(args["message"], g_micro_device, option.get("volume", 0.1), option.get("microMode", -1))
         # current_thread = threading.Thread(target=AudioPlayer.play_sound,
         #                                   args=(args["message"], g_micro_device, args["option"].get("volume", 0.1)))
         # current_thread.start()
@@ -201,14 +203,20 @@ class RunMicroSound(CommandHandler):
 @CommandHandler.register("run_init")
 class Init(CommandHandler):
     def handle(self, args):
-        return next_half_or_full_hour_final()
+        # list
+        time_indicator_info = next_half_or_full_hour()
+        bubble_status = BubbleWindow.get_status()
+        return {
+            "time_info": time_indicator_info,
+            "bubble_status": bubble_status
+        }
 
 
 # no arg
 @CommandHandler.register("run_time_indicator")
 class Init(CommandHandler):
     def handle(self, args):
-        return next_half_or_full_hour_final()
+        return next_half_or_full_hour()
 
 
 # string (any)
@@ -277,10 +285,10 @@ class DrEnter(CommandHandler):
                 option = args["option"]
 
                 print(f"[DR] room_id = {option.get('room_id', -1)}")
-                print(f"[DR] DevilRoulette.g_dr_player_index_table: {DevilRoulette.g_dr_player_index_table}")
-                room = DevilRoulette.g_dr_room_list[option.get("room_id", -1)]
+                print(f"[DR] dr.g_dr_player_index_table: {Dr.g_dr_player_index_table}")
+                room = Dr.g_dr_room_list[option.get("room_id", -1)]
                 room.message_buffer.clear()
-                room.enter_pc(player_name)
+                room.enter_game(args["message"], True)
                 return room.message_buffer
             except Exception as e:
                 return [["say", {"message": f"添加 电脑 出现问题：{e}"}]]
@@ -288,16 +296,23 @@ class DrEnter(CommandHandler):
             # player
             try:
                 if "color_reset" in option:
-                    DevilRoulette.color_reset = option["color_reset"]
+                    Dr.color_reset = option["color_reset"]
                 # [['set_room_id', {'room_id': 0}], ['say', {'message': '你已经在游戏里了'}]]
-                print(f"[DR] g_dr_room_index: {DevilRoulette.g_dr_room_index}")
-                room = self.get_or_create_room(DevilRoulette.g_dr_room_index)
+                print(f"[DR] g_dr_room_index: {Dr.g_dr_room_index}")
+                room = self.get_or_create_room(Dr.g_dr_room_index)
                 room.message_buffer.clear()
 
                 # 如果应当创建新房间且当然room不是新房间，且里面的玩家不是这个玩家，创建新房间加入
                 player_dict = room.player_dict
-                if args.get("is_new_room", False) and len(player_dict) == 1 and player_name not in player_dict:
-                    room = self.get_or_create_room(len(DevilRoulette.g_dr_room_list))
+                is_new_room = option.get("is_new_room", False)
+                print(f"[Debug] {is_new_room} | {option.get('is_new_room', False)} | {player_dict} | {player_name}")
+                #  and player_name not in player_dict
+                if option.get("is_new_room", False) and len(player_dict) != 0:
+                    if len(room.player_info_list) != 0:
+                        Dr.g_dr_room_index += 1
+                    print(f"[Debug] New Room: {Dr.g_dr_room_index}")
+                    room = self.get_or_create_room(len(Dr.g_dr_room_list))
+                    print(f"[Debug] New Room Player Dict: {room.player_dict}")
                 room.enter_game(player_name)
                 return [["set_room_id", {"room_id": room.room_id}]] + room.message_buffer
             except Exception as e:
@@ -306,18 +321,18 @@ class DrEnter(CommandHandler):
     @staticmethod
     def get_or_create_room(index):
         # 如果房间已存在，直接返回
-        if index < len(DevilRoulette.g_dr_room_list):
-            return DevilRoulette.g_dr_room_list[index]
+        if index < len(Dr.g_dr_room_list):
+            return Dr.g_dr_room_list[index]
 
         # 否则创建新房间并加入列表
-        new_room = DevilRoulette.DevilRouletteRoom(index)
+        new_room = Dr.DevilRouletteRoom(index)
         return new_room
 
-    # if len(DevilRoulette.g_dr_room_list)-1 == DevilRoulette.g_dr_room_index:
-    #     DevilRoulette.g_dr_room_list[DevilRoulette.g_dr_room_index].enter_game(args["player_name"])
+    # if len(dr.g_dr_room_list)-1 == dr.g_dr_room_index:
+    #     dr.g_dr_room_list[dr.g_dr_room_index].enter_game(args["player_name"])
     # # index 数量比 房间长度多1，需要创建
     # else:
-    #     new_room = DevilRoulette.DevilRouletteRoom(DevilRoulette.g_dr_room_index)
+    #     new_room = dr.DevilRouletteRoom(dr.g_dr_room_index)
     #     new_room.enter_game(args["player_name"])
 
 
@@ -329,8 +344,8 @@ class DrPlay(CommandHandler):
             option = args["option"]
             player_name = args["player_name"]
             choice = args["message"]
-            room = DevilRoulette.g_dr_room_list[
-                option.get("room_id", DevilRoulette.g_dr_player_index_table[player_name])]
+            room = Dr.g_dr_room_list[
+                option.get("room_id", Dr.g_dr_player_index_table[player_name])]
             room.message_buffer.clear()
             if room.status == "waiting":
                 # setting
@@ -343,21 +358,38 @@ class DrPlay(CommandHandler):
             return [["say", {"message": f"进行游玩时出现问题：{e}"}]]
 
 
-# Inter
-@CommandHandler.register("dr_add_pc")
-class DrAddPC(CommandHandler):
+# None
+@CommandHandler.register("dr_replay")
+class DrPlay(CommandHandler):
     def handle(self, args):
         try:
             option = args["option"]
-            player_name = args["message"]
-            print(f"[DR] room_id = {option.get('room_id', -1)}")
-            print(f"DevilRoulette.g_dr_player_index_table: {DevilRoulette.g_dr_player_index_table}")
-            room = DevilRoulette.g_dr_room_list[option.get("room_id", -1)]
-            room.message_buffer.clear()
-            room.enter_pc(player_name)
-            return room.message_buffer
+            # player_name = args["player_name"]
+            # choice = args["message"]
+            room_list = Dr.g_dr_room_list
+            if room_list:
+                return room_list[option.get("room_id", len(room_list) - 1)].message_buffer
+            else:
+                return []
         except Exception as e:
-            return [["say", {"message": f"添加 电脑 出现问题：{e}"}]]
+            return [["say", {"message": f"获取回放出现问题：{e}"}]]
+
+
+# # Inter 弃用
+# @CommandHandler.register("dr_add_pc")s
+# class DrAddPC(CommandHandler):
+#     def handle(self, args):
+#         try:
+#             option = args["option"]
+#             player_name = args["message"]
+#             print(f"[DR] room_id = {option.get('room_id', -1)}")
+#             print(f"dr.g_dr_player_index_table: {Dr.g_dr_player_index_table}")
+#             room = Dr.g_dr_room_list[option.get("room_id", -1)]
+#             room.message_buffer.clear()
+#             room.enter_pc(player_name)
+#             return room.message_buffer
+#         except Exception as e:
+#             return [["say", {"message": f"添加 电脑 出现问题：{e}"}]]
 
 
 # no arg
@@ -365,6 +397,46 @@ class DrAddPC(CommandHandler):
 class Time(CommandHandler):
     def handle(self, args):
         return time.strftime("%H:%M:%S")
+
+
+# ---- XD 命令 ---- #
+@CommandHandler.register("set_bubble_status")
+class SetBubbleStatus(CommandHandler):
+    def handle(self, args):
+        message = args["message"]
+        if len(message) < 1:
+            return
+        message = message[0]
+        if message == "t":
+            BubbleWindow.show()
+        elif message == "f":
+            BubbleWindow.hide()
+
+
+@CommandHandler.register("set_bubble_toggle")
+class SetBubbleToggle(CommandHandler):
+    def handle(self, args):
+        # 后执行也是还没修改状态完毕
+        is_visible = not BubbleWindow.get_status()
+        print(f"[Bubble Toggle] {is_visible}")
+        BubbleWindow.toggle()
+        return is_visible
+
+
+@CommandHandler.register("set_bubble_click_toggle")
+class SetBubbleToggle(CommandHandler):
+    def handle(self, args):
+        BubbleWindow.click_toggle()
+
+
+@CommandHandler.register("bubble_send")
+class BubbleShow(CommandHandler):
+    def handle(self, args):
+        try:
+            message = args["message"]
+            BubbleWindow.send(message)
+        except Exception as e:
+            print(e)
 
 
 # error
@@ -487,11 +559,13 @@ def process_entry(timestamp: str, kwargs):
         save_command_record(
             f"{local_index}\t{log_date}\t{start_strftime}\t{process_time}\t{command}\t{player_name}\t{message}\t{py_message}\n{str_is_say_team}")
         write_log()
-
+        if "is_need_load" in kwargs and kwargs["is_need_load"]:
+            load_py_message()
         # 可能的触发第二次 1754044881.524703 - 1754044881.522453 = 0.00225 最大差值
         # 使用time操作 real time: 0.007288455963134766
         # 于是不会触发第二次
         # print(f"real time: {time.time() - start_time}")
+
         time.sleep(1)
         processing_set.remove(timestamp)
     except Exception as e:
@@ -535,7 +609,8 @@ def process_no_return(timestamp: str, kwargs):
         #                   index                        process_time
         save_command_record(f"\t{log_date}\t{start_strftime}\t\t{command}\t{player_name}\t{message}\t\n")
         write_log()
-
+        if "is_need_load" in kwargs and kwargs["is_need_load"]:
+            load_py_message()
         time.sleep(1)
         processing_set.remove(timestamp)
         return
@@ -651,6 +726,110 @@ def read_json(filename, log_prefix):
     return {}
 
 
+def load_py_message():
+    with open(isHasPy_file_path, 'w'):
+        pass
+
+
+class BubbleWindow:
+    def __init__(self):
+        # 配置
+        self.LAZY_IMPORT = True
+
+        self.is_has_lazy_init = False
+        self.bub = None
+        self.ansi_to_html = None
+        self.cache = {}
+        self.pattern = None
+        self.replace_dict = None
+        if not self.LAZY_IMPORT:
+            self.lazy_init()
+
+    def lazy_init(self):
+        if self.is_has_lazy_init:
+            return
+        print(f"[Bubble Init] {time.strftime('%H:%M:%S')} Begin")
+        start_time = time.time()
+        import pin_PyQt5_test
+        from ansi2html import Ansi2HTMLConverter
+        self.bub = pin_PyQt5_test
+        self.ansi_to_html = Ansi2HTMLConverter(inline=True)
+        print(f"[Bubble Init] {time.strftime('%H:%M:%S')} Used: {time.time() - start_time}")
+        self.replace_dict = {
+            "[111m": "[38;2;52;234;254m",
+            "[112m": "[38;2;254;100;52m"
+        }
+        # 231;82;6m
+        self.pattern = re.compile("|".join(re.escape(k) for k in self.replace_dict))
+        self.is_has_lazy_init = True
+
+    def simple_replace(self, text):
+        return self.pattern.sub(lambda m: self.replace_dict[m.group(0)], text)
+
+    def show(self):
+        self.lazy_init()
+        self.bub.create_or_show()
+
+    def hide(self):
+        bub = self.bub
+        if bub is not None:
+            bub.bubble.hide_signal.emit()
+            # bub.bubble.hide()
+
+    def toggle(self):
+        bub = self.bub
+        if bub is None:
+            self.show()
+            # bub.bubble.show
+        else:
+            bub.bubble.toggle_signal.emit()
+
+    def click_toggle(self):
+        bub = self.bub
+        if bub is not None:
+            bub.bubble.click_toggle()
+
+
+    def send(self, message):
+        bub = self.bub
+        if bub is not None:
+            if isinstance(message, list):
+                message = "\n".join(message)
+            html = "<br>" + self.ansi_to_html.convert(self.simple_replace(message), full=False).replace("\n", "<br>")
+            self.cache[message] = html
+            bub.bubble.send_to_display_signal.emit(html)
+            print(f"[Bubble] {time.strftime('%H:%M:%S')} HTML: \n{html}\n")
+
+    def cache_send(self, message):
+        """
+        用于缓存，如果消息有时间的存在那我完了
+        :param message:
+        :return:
+        """
+        bub = self.bub
+        if bub is not None:
+            if isinstance(message, list):
+                message = "\n".join(message)
+            if message in self.cache:
+                message = self.cache[message]
+                bub.bubble.send_to_display_signal.emit(message)
+                print(f"[Bubble] {time.strftime('%H:%M:%S')} Get From Cache...")
+            else:
+                html = "<br>" + self.ansi_to_html.convert(self.simple_replace(message), full=False).replace("\n", "<br>")
+                self.cache[message] = html
+                bub.bubble.send_to_display_signal.emit(html)
+                print(f"[Bubble] {time.strftime('%H:%M:%S')} HTML: \n{html}")
+            # bub.bubble.send_to_display(message)
+            # bub.bubble.send_to_display(message)
+
+    def get_status(self):
+        bub = self.bub
+        if bub is None:
+            return False
+        else:
+            return bub.bubble.isVisible()
+
+
 class AudioPlayer:
     def __init__(self):
         # 配置
@@ -677,7 +856,7 @@ class AudioPlayer:
     def lazy_init(self):
         if self.is_has_lazy_init:
             return
-        print(f"[Sound Init] time.time")
+        print(f"[Sound Init] {time.time}")
         # ↓ sounddevice use 0.9-1.0s
         import sounddevice
         import soundfile
@@ -687,13 +866,13 @@ class AudioPlayer:
         self.keyboard = Controller()
         device_index_dict = self.device_index_dict
         for i, device in enumerate(sounddevice.query_devices()):
-            print(f"{device['name']} {device['index']}")
+            # print(f"{device['name']} {device['index']}")
             device_index_dict[device['name']] = device['index']
         if g_micro_device not in device_index_dict:
             print(f"[Sound Init] Fail: {g_micro_device} device not found")
         self.is_has_lazy_init = True
 
-    def play_sound(self, file_path, device_name, volume=0.5):
+    def play_sound(self, file_path, device_name, volume=0.5, microMode=-1):
         """播放音频文件到指定的音频设备，并调整音量"""
         self.lazy_init()
         sounddevice = self.sounddevice
@@ -714,12 +893,14 @@ class AudioPlayer:
         local_index = self.micro_button_index
         self.micro_button_index += 1
         if local_index == 0:
-            keyboard.press(';')
+            if microMode == 1:
+                keyboard.press(g_microphone_key)
         sounddevice.play(data, samplerate=samplerate, device=device_id)
         sounddevice.wait()
         self.micro_button_index -= 1
         if self.micro_button_index == 0:
-            keyboard.release(';')
+            if microMode == 1:
+                keyboard.release(g_microphone_key)
         # with sd.OutputStream(samplerate=samplerate, device=device_id, channels=data.shape[1]) as stream:
         #     stream.write(data) 修改成每次独立播放失败
 
@@ -782,7 +963,7 @@ class AudioPlayer:
 #         print("未选择文件")
 
 
-def next_half_or_full_hour_final():
+def next_half_or_full_hour():
     now = datetime.now()
     # now = datetime(2024, 6, 30, 23, 40, 0)
     h, m = now.hour, now.minute
@@ -804,12 +985,6 @@ def next_half_or_full_hour_final():
     result_str = f"{result_str}{random.choice(ansi_colors)} {text_emoji}"
 
     return [result_str, seconds_to_next]
-
-
-# 转拼音：
-def simple_replace(text, replace_dict):
-    pattern = re.compile("|".join(re.escape(k) for k in replace_dict))
-    return pattern.sub(lambda m: replace_dict[m.group(0)], text)
 
 
 # def simple_replace(text, replace_dict, special_dict):
@@ -836,13 +1011,18 @@ class PinyinChineseConverter:
         self.data = {}
         self.merge_pinyin_dict = {}
         self.custom_pinyin_dict = {}
-        self.weight = 0.21
+        self.weight = 0.30
         self.long_weight = 0.50
         # start_time_dict["pinyin_custom"] = time.time()
         self.load_pinyin_custom_dict()
+        self.block_words_pattern = re.compile("|".join(re.escape(k) for k in self.block_words))
+        self.pinyin_pattern = re.compile(r'\b(' + '|'.join(map(re.escape, self.custom_pinyin_dict)) + r')\b', flags=re.IGNORECASE)
         self.pinyin_custom_data_backup()
         # print_use_time("Pinyin Init", "pinyin_custom")
         # 0.002371072769165039
+
+    def simple_replace(self, text):
+        return self.block_words_pattern.sub(lambda m: self.block_words[m.group(0)], text)
 
     def pinyin_custom_data_backup(self):
         output_file = f"temp\\{date_timestamp}_pinyin_custom_data.json"
@@ -939,10 +1119,10 @@ class PinyinChineseConverter:
                             return f"已有 (受保护): {str_dict}"
                         else:
                             # 不在dag表第一个，正常添加，如果这个词比原本权重高应在init中提醒
-                            if dag_pin_info[1] > 0.21:
+                            if dag_pin_info[1] > self.weight:
                                 higher_weight_warning = f"{str_dict} | {dag_pin_info[0]} {dag_pin_info[1]}"
                                 print(
-                                    f"[Pinyin Add] \033[33mWarning merge greater than 0.21 {higher_weight_warning} > 0.21\033[0m")
+                                    f"[Pinyin Add] \033[33mWarning merge greater than {self.weight} {higher_weight_warning} > {self.weight}\033[0m")
                                 if dag_pin_info[1] > weight:
                                     print(
                                         f"[Pinyin Add] \033[31mWarning merge higher weight {higher_weight_warning} > {weight}\033[0m")
@@ -1030,7 +1210,7 @@ class PinyinChineseConverter:
         第一步，替换custom词典
         """
         # \b 表示单词边界，用于确保匹配的是完整的单词。
-        pattern = re.compile(r'\b(' + '|'.join(map(re.escape, self.custom_pinyin_dict)) + r')\b', flags=re.IGNORECASE)
+        # pattern = re.compile(r'\b(' + '|'.join(map(re.escape, self.custom_pinyin_dict)) + r')\b', flags=re.IGNORECASE)
 
         def replacement(match):
             pinyin = match.group()
@@ -1042,7 +1222,7 @@ class PinyinChineseConverter:
                 return values
             return pinyin
 
-        return pattern.sub(replacement, text)
+        return self.pinyin_pattern.sub(replacement, text)
 
     @staticmethod
     def split_text_by_pinyin_group(text, count_dict):
@@ -1134,7 +1314,7 @@ class PinyinChineseConverter:
 
         final_result_str = ''.join(final_result)
         # 最后屏蔽词过滤 包含颜色代码
-        process_result = simple_replace(final_result_str, self.block_words)
+        process_result = self.simple_replace(final_result_str)
         # ↓ 用print
         # if "" in process_result:
         #     process_result += "[0m"
@@ -1218,6 +1398,19 @@ def deepseek(name, message, ai_content="", is_save_history=g_ai_save_history):
     print(data)
     print("---\n")
     try:
+        # 25.9.1判断限额方法
+        if "error" in data:
+            {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1761436800000'}, 'provider_name': None}}, 'user_id': 'user_2wzbf3BGAy0XqHYndjQfOQ7mKKs'}
+            error_message = data.get("error", {}).get("message", "")
+            if "per-min" in error_message:
+                # 'Rate limit exceeded: free-models-per-min. ', 'code': 429
+                return [f"AI响应发生错误: 触及模型API每分钟数量限制，稍作等待"]
+            if "Rate limit" in error_message:
+                # 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429
+                g_ai_limit = True
+                # content = deepseek(name, message)
+                return [f"AI响应发生错误: 到达每日限额...TvT"]
+            return [f"AI响应发生错误: {error_message}"]
         # content = data['choices'][0]['message']['content']
         # content = data.get('choices', [{}])[0].get('message', {}).get('content', '')
         content = data.get('choices', [{}])[0].get('message', {}).get('content')
@@ -1399,6 +1592,7 @@ def get_server(query_type, message):
             try:
                 response = requests.get("https://nscn.wolf109909.top/client/servers")
                 servers = response.json()
+                # with open(servers_json, "w", encoding="utf-8", errors="ignore") as file:
                 with open(servers_json, "w", encoding="utf-8") as file:
                     # noinspection PyTypeChecker
                     json.dump(servers, file, ensure_ascii=False, indent=4)
@@ -1602,6 +1796,7 @@ json_file_path = os.path.join(ttf_data_path, 'XD.json')
 result_file_path = os.path.join(ttf_data_path, 'py_XD.json')
 state_file_path = os.path.join(ttf_data_path, 'state.txt')
 private_file_path = os.path.join(ttf_data_path, 'private_data.json')
+isHasPy_file_path = os.path.join(ttf_data_path, "data", "isHasPy.txt")
 
 watch_dir = os.path.dirname(json_file_path)
 target_file = os.path.basename(json_file_path)
@@ -1636,6 +1831,7 @@ emoji_list = [
 
 # play sound init
 AudioPlayer = AudioPlayer()
+BubbleWindow = BubbleWindow()
 # keyboard = Controller()
 # # 查找设备 ID
 # device_id = None
@@ -1713,7 +1909,7 @@ def pinyin2hanzi_init():
         "妈": "马",
         # adun 转化
         "阿盾": "A盾",
-        "码": "吗"
+        "热45": "RE45"
     }
 
     '''
@@ -1779,7 +1975,7 @@ trans_to_gamemode = {
 print(f"[XDInit] ----init Finished----")
 # print(f"[XDInit] else Time Used: {use_time_dict.get('init', 0) - sum(value for key, value in use_time_dict.items() if key != 'init')}")
 print(
-    f"[XDInit] XDInit Time Used: {(init_used_time := time.time() - init_start_time)}\n[XDInit] else Time Used: {init_used_time - sum(value for key, value in used_time_dict.items() if key != 'init')}")
+    f"[XDInit] XDInit Time Used: {(init_used_time := time.time() - init_start_time)}\n[XDInit] Other Time Used: {init_used_time - sum(value for key, value in used_time_dict.items() if key != 'init')}")
 if __name__ == "__main__":
     # 检测文件
     monitor_file()

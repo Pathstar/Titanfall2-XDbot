@@ -179,7 +179,7 @@ class DevilRoulettePlayer:
         # return f"{self.name} 道具: {self.items}"
 
     def show_status_and_items(self, format_num=0):
-        return f"{self.name:<{format_num}} 血量: {self.hp_and_max()} | 道具: {' | '.join([f'{LOCALIZE(item)}' for i, item in enumerate(self.items)])}"
+        return f"{self.name:<{format_num}} 血量: {self.hp_and_max()} | 道具: {'、'.join([f'{LOCALIZE(item)}' for i, item in enumerate(self.items)])}"
 
         # return f"{self.name} 血量: {color_red(self.hp)} | 道具: {' | '.join([f'{color_yellow(i + 1)}. {LOCALIZE(item, item)}' for i, item in enumerate(self.items)])}"
 
@@ -800,6 +800,7 @@ class DevilRouletteRoom:
         print(f"[Debug] self.player_dict: {self.player_dict}")
         if player_name in self.player_dict:
             if is_pc:
+                print(f"[DR] player_dict: {self.player_dict}")
                 self.say(f"这个电脑已经在房间里了")
             else:
                 self.say(f"你已经在房间里啦，正在等待另一位玩家...")
